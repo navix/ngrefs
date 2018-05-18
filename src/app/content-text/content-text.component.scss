@@ -1,0 +1,14 @@
+:host {
+  display: block;
+  &.type {
+    &-tip {
+      padding: 16px;
+      background: #36cadb;
+      color: #ffffff;
+      p {
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+}

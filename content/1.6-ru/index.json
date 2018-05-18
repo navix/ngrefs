@@ -1,0 +1,89 @@
+{
+  "ver": "1.6",
+  "lang": "ru",
+  "content": [
+    {
+      "menu": "Обзор",
+      "url": "overview",
+      "file": "./overview.md"
+    },
+    {
+      "menu": "Команды",
+      "children": [
+        {
+          "menu": "ng new",
+          "url": "command-ng-new",
+          "file": "./commands/new.md",
+          "toc": true
+        },
+        {
+          "menu": "ng serve",
+          "url": "command-ng-serve",
+          "file": "./commands/serve.md",
+          "toc": true
+        },
+        {
+          "menu": "ng generate",
+          "url": "command-ng-generate",
+          "file": "./commands/generate.md",
+          "toc": true
+        },
+        {
+          "menu": "ng lint",
+          "url": "command-ng-lint",
+          "file": "./commands/lint.md",
+          "toc": true
+        },
+        {
+          "menu": "ng test",
+          "url": "command-ng-test",
+          "file": "./commands/test.md",
+          "toc": true
+        },
+        {
+          "menu": "ng e2e",
+          "url": "command-ng-e2e",
+          "file": "./commands/e2e.md",
+          "toc": true
+        },
+        {
+          "menu": "ng build",
+          "url": "command-ng-build",
+          "file": "./commands/build.md",
+          "toc": true
+        },
+        {
+          "menu": "ng set",
+          "url": "command-ng-set",
+          "file": "./commands/set.md"
+        },
+        {
+          "menu": "ng get",
+          "url": "command-ng-get",
+          "file": "./commands/get.md"
+        },
+        {
+          "menu": "ng eject",
+          "url": "command-ng-eject",
+          "file": "./commands/eject.md"
+        },
+        {
+          "menu": "ng xi18n",
+          "url": "command-ng-xi18n",
+          "file": "./commands/xi18n.md",
+          "toc": true
+        },
+        {
+          "menu": "ng doc",
+          "url": "command-ng-doc",
+          "file": "./commands/doc.md"
+        },
+        {
+          "menu": "ng version",
+          "url": "command-ng-version",
+          "file": "./commands/version.md"
+        }
+      ]
+    }
+  ]
+}

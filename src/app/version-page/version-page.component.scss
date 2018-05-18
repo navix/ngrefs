@@ -1,0 +1,35 @@
+@import "params";
+
+:host {
+  display: flex;
+  flex-direction: row;
+}
+
+.side {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  min-height: calc(100vh - #{$header});
+  padding: 32px 32px 32px 0;
+  width: $side;
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li {
+      padding: 0;
+      margin: 0;
+      > ul {
+        padding-left: 16px;
+      }
+    }
+    a.-active {
+      font-weight: 600;
+    }
+  }
+}
+.content {
+  flex-grow: 1;
+  border-left: 1px solid #dcf2f3;
+  padding: 32px 0 32px 64px;
+  overflow: hidden;
+}

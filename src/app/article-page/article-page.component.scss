@@ -1,0 +1,25 @@
+:host {
+  display: flex;
+  flex-direction: row;
+}
+
+.body {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.toc-container {
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.toc {
+  box-sizing: border-box;
+  font-size: 0.9rem;
+  padding: 16px;
+  width: 200px;
+  &.-sticky {
+    position: fixed;
+    top: 0;
+  }
+}
