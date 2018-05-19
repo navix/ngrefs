@@ -86,34 +86,34 @@ ng t
 
 ## `--port`
 
-Аналогично с [`ng serve --port`](#ng-serve-port)
+Аналогично с [`ng serve --port`](../command-ng-serve#--port)
 
 
 ## `--environment`
 
-Аналогично с [`ng build --environment`](#ng-build-environment)
+Аналогично с [`ng build --environment`](../command-ng-build#--environment)
 
 
 ## `--poll`
 
-Аналогично с [`ng build --poll`](#ng-build-poll)
+Аналогично с [`ng build --poll`](../command-ng-build#--poll)
 
 
 ## `--progress`
 
-Аналогично с [`ng build --progress`](#ng-build-progress)
+Аналогично с [`ng build --progress`](../command-ng-build#--progress)
 
 
 ## `--preserve-symlinks`
 
-Аналогично с [`ng build --preserve-symlinks`](#ng-build-preserve-symlinks)
+Аналогично с [`ng build --preserve-symlinks`](../command-ng-build#--preserve-symlinks)
 
 
 ## `--sourcemaps`
 
-Аналогично с [`ng build --sourcemaps`](#ng-build-sourcemaps)
+Аналогично с [`ng build --sourcemaps`](../command-ng-build#--sourcemaps)
 
 
 ## `--watch`
 
-Аналогично с [`ng build --watch`](#ng-build-watch)
+Аналогично с [`ng build --watch`](../command-ng-build#--watch)

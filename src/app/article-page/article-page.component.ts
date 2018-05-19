@@ -1,8 +1,10 @@
 import { DOCUMENT } from '@angular/common';
-import { Component, HostListener, Inject, OnInit } from '@angular/core';
+import { Component, HostListener, Inject, NgZone, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { SafeHtml } from '@angular/platform-browser/src/security/dom_sanitization_service';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router, UrlTree } from '@angular/router';
+import { uuid } from '@ngx-kit/core';
+import { take } from 'rxjs/operators';
 import { ContentItem } from '../meta';
 import { VersionPageComponent } from '../version-page/version-page.component';
 
@@ -20,13 +22,19 @@ export class ArticlePageComponent implements OnInit {
 
   stickyToc = false;
 
+  links = new Map<string, UrlTree>();
+
   hrefReplacer = (str: any, href: any, offset: any, s: any): string => {
-    if (href[0] === '#') {
-      // Add url before '#" for proper local handling
-      return `href="${this.router.url.split('#')[0]}${href}"`;
-    } else if (href[0] === '.') {
+    if (href[0] === '.' || href[0] === '#') {
       // Mark link as router-handled
-      return `router-link="${href}" href="${this.router.createUrlTree([href], {relativeTo: this.route})}"`;
+      const chunks = href.split('#');
+      const compiledHref = this.router.createUrlTree(
+        [chunks[0] || './'],
+        {relativeTo: this.route, fragment: chunks[1]},
+      );
+      const id = uuid();
+      this.links.set(id, compiledHref);
+      return `router-link="${id}" href="${compiledHref}"`;
     } else {
       return `${str} target="_blank"`;
     }
@@ -38,6 +46,7 @@ export class ArticlePageComponent implements OnInit {
     private parent: VersionPageComponent,
     private sanitizer: DomSanitizer,
     @Inject(DOCUMENT) private document: any,
+    private zone: NgZone,
   ) {
   }
 
@@ -50,6 +59,14 @@ export class ArticlePageComponent implements OnInit {
       this.toc = this.item.toc
         ? this.sanitizer.bypassSecurityTrustHtml(this.item.tocBody.replace(/href\=\"(.*)\"/g, this.hrefReplacer))
         : null;
+    });
+    this.router.events.subscribe(s => {
+      if (s instanceof NavigationEnd) {
+        const tree = this.router.parseUrl(this.router.url);
+        if (tree.fragment) {
+          this.scrollTo(tree.fragment);
+        }
+      }
     });
   }
 
@@ -64,9 +81,24 @@ export class ArticlePageComponent implements OnInit {
     if (a) {
       const routerLink = a.getAttribute('router-link');
       if (routerLink) {
-        this.router.navigate([routerLink], {relativeTo: this.route});
+        this.router.navigateByUrl(this.links.get(routerLink));
         event.preventDefault();
       }
     }
+  }
+
+  private scrollTo(fragment: string) {
+    this.zone.onStable
+      .pipe(take(1))
+      .subscribe(() => {
+        const element = this.document.querySelector('#' + fragment);
+        if (element) {
+          element.scrollIntoView(element);
+          element.classList.add('-highlight');
+          setTimeout(() => {
+            element.classList.remove('-highlight');
+          }, 1000);
+        }
+      });
   }
 }

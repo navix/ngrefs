@@ -153,12 +153,12 @@ ng b
 
 ## `--i18n-format`
 
-Аналогично с [`ng xi18n --i18n-format`](#ng-xi18n-i18n-format)
+Аналогично с [`ng xi18n --i18n-format`](../command-ng-xi18n#--i18n-format)
 
 
 ## `--locale`
 
-Аналогично с [`ng xi18n --locale`](#ng-xi18n-locale)
+Аналогично с [`ng xi18n --locale`](../command-ng-xi18n#--locale)
 
 
 ## `--missing-translation`

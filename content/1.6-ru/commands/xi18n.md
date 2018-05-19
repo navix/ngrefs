@@ -51,7 +51,7 @@ ng xi18n
 
 ## `--progress`
 
-Аналогично с [`ng build --progress`](#ng-build-progress)
+Аналогично с [`ng build --progress`](../command-ng-build#--progress)
 
 
 ## `--verbose`
@@ -61,4 +61,4 @@ ng xi18n
 * По-умолчанию: ``
 * .angular-cli.json: ``
 
-Аналогично с [`ng build --verbose`](#ng-build-verbose)
+Аналогично с [`ng build --verbose`](../command-ng-build#--verbose)

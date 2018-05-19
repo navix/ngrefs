@@ -8,6 +8,11 @@
       "file": "./overview.md"
     },
     {
+      "menu": ".angular-cli.json",
+      "url": "angular-cli-json",
+      "file": "angular-cli-json.md"
+    },
+    {
       "menu": "Команды",
       "children": [
         {

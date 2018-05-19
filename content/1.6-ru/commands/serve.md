@@ -143,94 +143,94 @@ URL для подключения клиента, который автомат�
 
 ## `--aot`
 
-Аналогично с [`ng build --aot`](#ng-build-aot)
+Аналогично с [`ng build --aot`](../command-ng-build#--aot)
 
 
 ## `--base-href`
 
-Аналогично с [`ng build --base-href`](#ng-build-base-href)
+Аналогично с [`ng build --base-href`](../command-ng-build#--base-href)
 
 
 ## `--deploy-url`
 
-Аналогично с [`ng build --deploy-url`](#ng-build-deploy-url)
+Аналогично с [`ng build --deploy-url`](../command-ng-build#--deploy-url)
 
 
 ## `--environment`
 
-Аналогично с [`ng build --environment`](#ng-build-environment)
+Аналогично с [`ng build --environment`](../command-ng-build#--environment)
 
 
 ## `--extract-css`
 
-Аналогично с [`ng build --extract-css`](#ng-build-extract-css)
+Аналогично с [`ng build --extract-css`](../command-ng-build#--extract-css)
 
 
 ## `--i18n-file`
 
-Аналогично с [`ng build --i18n-file`](#ng-build-i18n-file)
+Аналогично с [`ng build --i18n-file`](../command-ng-build#--i18n-file)
 
 
 ## `--i18n-format`
 
-Аналогично с [`ng xi18n --i18n-format`](#ng-xi18n-i18n-format)
+Аналогично с [`ng xi18n --i18n-format`](../command-ng-xi18n#--i18n-format)
 
 
 ## `--locale`
 
-Аналогично с [`ng xi18n --locale`](#ng-xi18n-locale)
+Аналогично с [`ng xi18n --locale`](../command-ng-xi18n#--locale)
 
 
 ## `--missing-translation`
 
-Аналогично с [`ng build --missing-translation`](#ng-build-missing-translation)
+Аналогично с [`ng build --missing-translation`](../command-ng-build#--missing-translation)
 
 
 ## `--output-hashing`
 
-Аналогично с [`ng build --output-hashing`](#ng-build-output-hashing)
+Аналогично с [`ng build --output-hashing`](../command-ng-build#--output-hashing)
 
 
 ## `--output-path`
 
-Аналогично с [`ng build --output-path`](#ng-build-output-path)
+Аналогично с [`ng build --output-path`](../command-ng-build#--output-path)
 
 
 ## `--poll`
 
-Аналогично с [`ng build --poll`](#ng-build-poll)
+Аналогично с [`ng build --poll`](../command-ng-build#--poll)
 
 
 ## `--progress`
 
-Аналогично с [`ng build --progress`](#ng-build-progress)
+Аналогично с [`ng build --progress`](../command-ng-build#--progress)
 
 
 ## `--sourcemaps`
 
-Аналогично с [`ng build --sourcemaps`](#ng-build-sourcemaps)
+Аналогично с [`ng build --sourcemaps`](../command-ng-build#--sourcemaps)
 
 
 ## `--target`
 
-Аналогично с [`ng build --target`](#ng-build-target)
+Аналогично с [`ng build --target`](../command-ng-build#--target)
 
 
 ## `--vendor-chunk`
 
-Аналогично с [`ng build --vendor-chunk`](#ng-build-vendor-chunk)
+Аналогично с [`ng build --vendor-chunk`](../command-ng-build#--vendor-chunk)
 
 
 ## `--common-chunk`
 
-Аналогично с [`ng build --common-chunk`](#ng-build-common-chunk)
+Аналогично с [`ng build --common-chunk`](../command-ng-build#--common-chunk)
 
 
 ## `--verbose`
 
-Аналогично с [`ng build --verbose`](#ng-build-verbose)
+Аналогично с [`ng build --verbose`](../command-ng-build#--verbose)
 
 
 ## `--watch`
 
-Аналогично с [`ng build --watch`](#ng-build-watch)
+Аналогично с [`ng build --watch`](../command-ng-build#--watch)

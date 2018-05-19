@@ -11,6 +11,8 @@ import { ContentItem, ContentVersion } from '../meta';
 export class VersionPageComponent implements OnInit {
 
   content: ContentVersion;
+  cv: boolean = false;
+
 
   constructor(private route: ActivatedRoute) {
   }

@@ -14,16 +14,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #314766;
 }
 
-h1 {
-  font-size: 2.4rem;
-  margin: 0;
-}
-
-h3 {
-  font-size: 1.6rem;
-  margin: 48px 0 24px 0;
-}
-
 a {
   color: #e84b56;
 }
@@ -53,6 +43,37 @@ blockquote {
 ul {
   p {
     margin: 0;
+  }
+}
+
+.article-body {
+  h1 {
+    font-size: 2.4rem;
+    margin: 0 0 32px 0;
+  }
+  h2 {
+    font-size: 1.8rem;
+    margin: 48px 0 12px 0;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eeeeee;
+  }
+  h3 {
+    font-size: 1.55rem;
+  }
+  .-highlight {
+    animation: 800ms linear highlight-effect;
+  }
+}
+
+@keyframes highlight-effect {
+  0% {
+    background: #fff;
+  }
+  30% {
+    background: yellow;
+  }
+  100% {
+    background: #fff;
   }
 }
 

@@ -56,9 +56,9 @@
 
 ## `--port`
 
-Аналогично с [`ng serve --port`](#ng-serve-port)
+Аналогично с [`ng serve --port`](../command-ng-serve#--port)
 
 
 ## `--watch`
 
-Аналогично с [`ng build --watch`](#ng-build-watch)
+Аналогично с [`ng build --watch`](../command-ng-build#--watch)
