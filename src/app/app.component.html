@@ -1,9 +1,15 @@
 <div class="header">
   <div class="wrapper">
-    <h1><a routerLink="/">Angular CLI Reference</a></h1>
+    <h1><a [routerLink]="currentVersion ? [currentVersion.index.lang, currentVersion.index.ver] : '/'">
+      Angular CLI {{ currentVersion?.index.ver }} Reference
+    </a></h1>
     <div class="actions">
-      <select>
-        <option *ngFor="let version of versions">Angular CLI {{ version.index.ver }} ({{ version.index.lang }})</option>
+      <select [(ngModel)]="currentVersionId"
+              (ngModelChange)="switchVersion($event)">
+        <option *ngFor="let version of versions; let index = index"
+                [value]="index">
+          Angular CLI {{ version.index.ver }} ({{ version.index.lang }})
+        </option>
       </select>
     </div>
   </div>

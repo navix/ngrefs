@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ArticlePageComponent } from './article-page/article-page.component';
 import { versions } from './content/versions';
 import { VersionPageComponent } from './version-page/version-page.component';
 
@@ -14,7 +13,6 @@ const routes: Routes = [
   },
   {
     path: ':lang/:version',
-    component: VersionPageComponent,
     children: [
       {
         path: '',
@@ -23,7 +21,7 @@ const routes: Routes = [
       },
       {
         path: ':url',
-        component: ArticlePageComponent,
+        component: VersionPageComponent,
       },
     ],
   },

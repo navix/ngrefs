@@ -1,17 +1,27 @@
-<div class="side">
-  <ul>
-    <ng-container *ngTemplateOutlet="menuItems; context: {$implicit: content.index.content}"></ng-container>
-  </ul>
-</div>
+<ng-container *ngIf="content?.index?.content">
+  <div class="side">
+    <ul>
+      <ng-container *ngTemplateOutlet="menuItems; context: {$implicit: content.index.content}"></ng-container>
+    </ul>
+  </div>
 
-<div class="content">
-  <router-outlet></router-outlet>
-</div>
+  <div class="content">
+    <div class="article-body">
+      <div [innerHtml]="body" (click)="clickHandler($event)"></div>
+    </div>
+    <div *ngIf="item.toc"
+         class="toc-container">
+      <div class="toc" [class.-sticky]="stickyToc">
+        <div [innerHtml]="toc" (click)="clickHandler($event)"></div>
+      </div>
+    </div>
+  </div>
+</ng-container>
 
 <ng-template #menuItems let-items>
   <li *ngFor="let item of items">
     <a *ngIf="item.url"
-       [routerLink]="['./', item.url]"
+       [routerLink]="['../', item.url]"
        routerLinkActive="-active">
       {{ item.menu }}
     </a>

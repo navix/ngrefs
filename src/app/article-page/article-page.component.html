@@ -1,9 +1,0 @@
-<div class="article-body">
-  <div [innerHtml]="body" (click)="clickHandler($event)"></div>
-</div>
-<div *ngIf="item.toc"
-     class="toc-container">
-  <div class="toc" [class.-sticky]="stickyToc">
-    <div [innerHtml]="toc" (click)="clickHandler($event)"></div>
-  </div>
-</div>

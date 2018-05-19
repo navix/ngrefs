@@ -27,9 +27,34 @@
     }
   }
 }
+
 .content {
-  flex-grow: 1;
   border-left: 1px solid #dcf2f3;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
   padding: 32px 0 32px 64px;
   overflow: hidden;
+}
+
+
+.article-body {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.toc-container {
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.toc {
+  box-sizing: border-box;
+  font-size: 0.9rem;
+  padding: 16px;
+  width: 200px;
+  &.-sticky {
+    position: fixed;
+    top: 0;
+  }
 }
