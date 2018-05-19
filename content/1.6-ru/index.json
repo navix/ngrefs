@@ -89,6 +89,11 @@
           "file": "./commands/version.md"
         }
       ]
+    },
+    {
+      "menu": "Ссылки",
+      "url": "links",
+      "file": "links.md"
     }
   ]
 }

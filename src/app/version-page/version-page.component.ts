@@ -2,7 +2,7 @@ import { DOCUMENT } from '@angular/common';
 import { Component, HostListener, Inject, NgZone, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { SafeHtml } from '@angular/platform-browser/src/security/dom_sanitization_service';
-import { ActivatedRoute, NavigationEnd, Router, UrlTree } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { uuid } from '@ngx-kit/core';
 import { take } from 'rxjs/operators';
 import { AppComponent } from '../app.component';
@@ -26,16 +26,16 @@ export class VersionPageComponent implements OnInit {
 
   stickyToc = false;
 
-  links = new Map<string, UrlTree>();
+  links = new Map<string, string>();
 
   hrefReplacer = (str: any, href: any, offset: any, s: any): string => {
     if (href[0] === '.' || href[0] === '#') {
       // Mark link as router-handled
       const chunks = href.split('#');
-      const compiledHref = this.router.createUrlTree(
+      const compiledHref = decodeURI(this.router.createUrlTree(
         [chunks[0] || './'],
         {relativeTo: this.route, fragment: chunks[1]},
-      );
+      ) as any);
       const id = uuid();
       this.links.set(id, compiledHref);
       return `router-link="${id}" href="${compiledHref}"`;
@@ -69,24 +69,24 @@ export class VersionPageComponent implements OnInit {
           ? this.sanitizer.bypassSecurityTrustHtml(this.item.tocBody.replace(/href\=\"(.*)\"/g, this.hrefReplacer))
           : null;
       });
+    // Handle anchor scrolling
     this.router.events.subscribe(s => {
       if (s instanceof NavigationEnd) {
-        const tree = this.router.parseUrl(this.router.url);
-        if (tree.fragment) {
-          this.scrollTo(tree.fragment);
-        }
+        this.scrollTo();
       }
     });
+    this.scrollTo();
   }
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const windowScroll = this.document.documentElement.scrollTop;
-    this.stickyToc = windowScroll > 100;
+    this.stickyToc = windowScroll > 128;
   }
 
   clickHandler(event: any) {
-    const a = event.path.find(n => n.nodeName === 'A');
+    const path = event.path || (event.composedPath && event.composedPath());
+    const a = path.find(n => n.nodeName === 'A');
     if (a) {
       const routerLink = a.getAttribute('router-link');
       if (routerLink) {
@@ -115,18 +115,25 @@ export class VersionPageComponent implements OnInit {
     }
   }
 
-  private scrollTo(fragment: string) {
-    this.zone.onStable
-      .pipe(take(1))
-      .subscribe(() => {
-        const element = this.document.querySelector('#' + fragment);
-        if (element) {
-          element.scrollIntoView(element);
-          element.classList.add('-highlight');
-          setTimeout(() => {
-            element.classList.remove('-highlight');
-          }, 1000);
-        }
-      });
+  private scrollTo() {
+    const tree = this.router.parseUrl(this.router.url);
+    if (tree.fragment) {
+      this.zone.onStable
+        .pipe(take(1))
+        .subscribe(() => {
+          const element = this.document.querySelector('#' + decodeURI(tree.fragment));
+          if (element) {
+            element.scrollIntoView(element);
+            element.classList.add('-highlight');
+            setTimeout(() => {
+              element.classList.remove('-highlight');
+            }, 1000);
+          }
+        });
+    } else {
+      this.document.body.scrollTop = 0;
+      this.document.documentElement.scrollTop = 0;
+    }
+
   }
 }

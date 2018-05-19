@@ -6,33 +6,51 @@ body {
   color: $textColor;
   font-family: 'Fira Sans', sans-serif;
   font-size: 13px;
+  line-height: 1.5;
   margin: 0;
   padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: #314766;
+  overflow-wrap: break-word;
+  code {
+    background: transparent;
+    padding: 0;
+  }
 }
 
 a {
-  color: #e84b56;
+  color: $linkColor;
 }
 
 code, pre {
+  background-color: $codeColor;
+  border-radius: 3px;
   font-family: 'Fira Mono', monospace;
   font-size: 0.85em;
 }
 
+code {
+  margin: 0;
+  padding: 0.2em 0.4em;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+}
+
 pre {
   padding: 16px;
-  background: #eeeeee;
   overflow: auto;
 }
 
 blockquote {
   margin: 0;
-  border-left: 0;
   background: $tipColor;
+  border-left: 0;
+  border-radius: 3px;
   color: #ffffff;
   padding: 2px 16px;
   a {
@@ -49,16 +67,23 @@ ul {
 .article-body {
   h1 {
     font-size: 2.4rem;
-    margin: 0 0 32px 0;
+    margin: 48px 0 16px;
+
+    .package {
+      font-size: 1.4rem;
+      color: #777777;
+    }
   }
   h2 {
     font-size: 1.8rem;
     margin: 48px 0 12px 0;
     padding-bottom: 12px;
-    border-bottom: 1px solid #eeeeee;
   }
   h3 {
-    font-size: 1.55rem;
+    font-size: 1.6rem;
+    margin: 32px 0 8px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eeeeee;
   }
   .-highlight {
     animation: 800ms linear highlight-effect;
@@ -67,13 +92,13 @@ ul {
 
 @keyframes highlight-effect {
   0% {
-    background: #fff;
+    background: #ffffff;
   }
   30% {
     background: yellow;
   }
   100% {
-    background: #fff;
+    background: #ffffff;
   }
 }
 

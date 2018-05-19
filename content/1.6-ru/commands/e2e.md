@@ -6,26 +6,26 @@
 
 ## `--config`
 
-* Тип: `String`
-* Псевдонимы: `-c`
-* .angular-cli.json: `e2e.protractor.config`
+* **Тип**: `String`
+* **Псевдонимы**: `-c`
+* **.angular-cli.json**: `e2e.protractor.config`
 
 Путь к файлу конфига.
 
 
 ## `--element-explorer`
 
-* Тип: `Boolean`
-* Псевдонимы: `-ee`
-* По-умолчанию: `false`
+* **Тип**: `Boolean`
+* **Псевдонимы**: `-ee`
+* **По-умолчанию**: `false`
 
 Запуск [Element Explorer](https://github.com/angular/protractor/blob/master/docs/debugging.md#testing-out-protractor-interactively) для отладки.
 
 
 ## `--specs`
 
-* Тип: `Array`
-* Псевдонимы: `-sp`
+* **Тип**: `Array`
+* **Псевдонимы**: `-sp`
 
 Переназначение спеков в конфиге protractor.
 
@@ -34,18 +34,18 @@
 
 ## `--webdrive-update`
 
-* Тип: `Boolean`
-* Псевдонимы: `-wu`
-* По-умолчанию: `true`
+* **Тип**: `Boolean`
+* **Псевдонимы**: `-wu`
+* **По-умолчанию**: `true`
 
 Автоматическое обновление webdriver.
 
 
 ## `--serve`
 
-* Тип: `Boolean`
-* Псевдонимы: `-s`
-* По-умолчанию: `true`
+* **Тип**: `Boolean`
+* **Псевдонимы**: `-s`
+* **По-умолчанию**: `true`
 
 Билд и запуск приложения. Доступны все соответсвующие опции команды `serve` (например `--port=4400`).
 

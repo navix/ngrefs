@@ -13,8 +13,8 @@ ng l
 
 ## `--fix`
 
-* Тип: `Boolean`
-* По-умолчанию: `false`
+* **Тип**: `Boolean`
+* **По-умолчанию**: `false`
 
 > Линтер может автоматически исправить некоторые ошибки.
 
@@ -23,8 +23,8 @@ ng l
 
 ## `--force`
 
-* Тип: `Boolean`
-* По-умолчанию: `false`
+* **Тип**: `Boolean`
+* **По-умолчанию**: `false`
 
 > Полезно в рамках CI
 
@@ -33,18 +33,18 @@ ng l
 
 ## `--type-check`
 
-* Тип: `Boolean`
-* По-умолчанию: `false`
+* **Тип**: `Boolean`
+* **По-умолчанию**: `false`
 
 Проверять типы при линтинге.
 
 
 ## `--format`
 
-* Тип: `String`
-* Псевдонимы: `-t`
-* По-умолчанию: `prose`
-* Значения: `prose`, `json`, `stylish`, `verbose`, `pmd`, `msbuild`, `checkstyle`, `vso`, `fileslist`
+* **Тип**: `String`
+* **Псевдонимы**: `-t`
+* **По-умолчанию**: `prose`
+* **Значения**: `prose`, `json`, `stylish`, `verbose`, `pmd`, `msbuild`, `checkstyle`, `vso`, `fileslist`
 
 > Полезно в рамках CI
 

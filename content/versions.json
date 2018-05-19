@@ -2,6 +2,9 @@
   "versions": [
     {
       "file": "./1.6-ru/index.json"
+    },
+    {
+      "file": "./6-ru/index.json"
     }
   ]
 }

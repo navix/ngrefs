@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContentTextComponent } from './content-text/content-text.component';
 import { VersionPageComponent } from './version-page/version-page.component';
+import { KekDirective } from './kek.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContentTextComponent,
     VersionPageComponent,
+    KekDirective,
   ],
   imports: [
     BrowserModule,

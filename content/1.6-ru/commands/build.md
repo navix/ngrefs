@@ -11,9 +11,9 @@ ng b
 
 ## `--target`
 
-* Тип: `String` 
-* Псевдонимы: `-t`, `--dev` / `--target=development`, `--prod` / `--target=production`.
-* Значения: `development`, `production` 
+* **Тип**: `String` 
+* **Псевдонимы**: `-t`, `--dev` / `--target=development`, `--prod` / `--target=production`.
+* **Значения**: `development`, `production` 
 
 Важно понимать, что это мета-параметры и предустанавливают другие параметры.
 
@@ -44,8 +44,8 @@ ng b
 
 ## `--environment`
 
-* Тип: `String`
-* Псевдонимы: `-e` 
+* **Тип**: `String`
+* **Псевдонимы**: `-e` 
 
 > Для различных окружений вы можете передавать разные параметры во внутрь приложения. Например, url к бекенду.
 
@@ -54,8 +54,8 @@ ng b
 
 ## `--output-path`
 
-* Тип: `Path`
-* Псевдонимы: `-op`
+* **Тип**: `Path`
+* **Псевдонимы**: `-op`
 
 > Вы можете поменять папку, в которую будут сгенерированы все файлы.
 
@@ -64,45 +64,45 @@ ng b
 
 ## `--aot`
 
-* Тип: `Path`
-* Псевдонимы: `-op`
-* По-умолчанию: `false`
+* **Тип**: `Path`
+* **Псевдонимы**: `-op`
+* **По-умолчанию**: `false`
 
 > AOT-компиляция позволяет сократить обьем кода и ускорить рендеринг, полезна для продакшен билдов.
 
 
 ## `--sourcemaps`
 
-* Тип: `Boolean`
-* Псевдонимы: `-sm`, `--sourcemap`
-* .angular-cli.json: `defaults.build.sourcemaps`
+* **Тип**: `Boolean`
+* **Псевдонимы**: `-sm`, `--sourcemap`
+* **.angular-cli.json**: `defaults.build.sourcemaps`
 
 > [Sourcemaps нужны](https://habrahabr.ru/post/148098/) для быстрого поиска ошибок и навигации по исходному коду через браузер.
 
 
 ## `--vendor-chunk`
 
-* Тип: `Boolean`
-* Псевдонимы: `-vc`
-* По-умолчанию: `true`
+* **Тип**: `Boolean`
+* **Псевдонимы**: `-vc`
+* **По-умолчанию**: `true`
 
 Генерация отдельного бандла (файла) для всего вендор-кода.
 
 
 ## `--common-chunk`
 
-* Тип: `Boolean`
-* Псевдонимы: `-cc`
-* По-умолчанию: `true`
+* **Тип**: `Boolean`
+* **Псевдонимы**: `-cc`
+* **По-умолчанию**: `true`
 
 Генерация отдельного бандла (файла) для кода, который используется в нескольких модулях.
 
 
 ## `--base-href`
 
-* Тип: `String`
-* Псевдонимы: `-bh`
-* .angular-cli.json: `defaults.build.baseHref`
+* **Тип**: `String`
+* **Псевдонимы**: `-bh`
+* **.angular-cli.json**: `defaults.build.baseHref`
 
 > Необходимо, если ваше приложение загружается не в корне сайта.
 
@@ -113,8 +113,8 @@ ng b
  
 ## `--deploy-url`
 
-* Тип: `String`
-* Псевдонимы: `-d`
+* **Тип**: `String`
+* **Псевдонимы**: `-d`
 
 > Основной кейс: использование CDN, когда домен ресурсов отличается от того, на котором развернуто приложение.
 
@@ -123,9 +123,9 @@ ng b
 
 ## `--verbose`
 
-* Тип: `Boolean`
-* Псевдонимы: `-v`
-* По-умолчанию: `false`
+* **Тип**: `Boolean`
+* **Псевдонимы**: `-v`
+* **По-умолчанию**: `false`
 
 > Если во время билда возникают ошибки и вы хотите получить больше информации.
 
@@ -134,17 +134,17 @@ ng b
 
 ## `--progress`
 
-* Тип: `Boolean`
-* Псевдонимы: `-pr`
-* По-умолчанию: `true`
-* .angular-cli.json: `defaults.build.progress`
+* **Тип**: `Boolean`
+* **Псевдонимы**: `-pr`
+* **По-умолчанию**: `true`
+* **.angular-cli.json**: `defaults.build.progress`
 
 > Возможность скрыть прогресс билда, например, чтобы не засорять лог CI.
 
 
 ## `--i18n-file`
 
-* Тип: `String`
+* **Тип**: `String`
 
 > Команда необходимая, если у вас мультиязычное приложение. 
 
@@ -163,9 +163,9 @@ ng b
 
 ## `--missing-translation`
 
-* Тип: `String`
-* Значения: `error`, `warning`, `ignore`
-* По-умолчанию: `error`
+* **Тип**: `String`
+* **Значения**: `error`, `warning`, `ignore`
+* **По-умолчанию**: `error`
 
 > Не редки случаи, когда при измении шаблонов, забывают обновить файлы перевода и приложение перестает работать. С помощью этого параметра можно поменять это поведение.
 
@@ -174,9 +174,9 @@ ng b
 
 ## `--extract-css`
 
-* Тип: `Boolean`
-* Псевдонимы: `-ec`
-* По-умолчанию: `false`
+* **Тип**: `Boolean`
+* **Псевдонимы**: `-ec`
+* **По-умолчанию**: `false`
 
 > Иногда есть необходимость в хранении .css вне бандла.
 
@@ -185,18 +185,18 @@ ng b
 
 ## `--watch`
 
-* Тип: `Boolean`
-* Псевдонимы: `w`
-* По-умолчанию: `false`
+* **Тип**: `Boolean`
+* **Псевдонимы**: `w`
+* **По-умолчанию**: `false`
 
 Слежение за изменениями файлов и автоматическим запуском билда.
 
 
 ## `--output-hashing`
 
-* Тип: `String`
-* Псевдонимы: `-oh`
-* Значения: `none`, `all`, `media`, `bundles`
+* **Тип**: `String`
+* **Псевдонимы**: `-oh`
+* **Значения**: `none`, `all`, `media`, `bundles`
 
 > Использется, чтобы кеширование (на cdn или в браузере клиента) не нарушало работоспособность вашего приложения.
 
@@ -205,8 +205,8 @@ ng b
 
 ## `--poll`
 
-* Тип: `Number`
-* .angular-cli.json: `defaults.build.poll`
+* **Тип**: `Number`
+* **.angular-cli.json**: `defaults.build.poll`
 
 > Если у вас слабая машина, то вы можете выставить этот параметр, чтобы снизить нагрузку.
 
@@ -215,8 +215,8 @@ ng b
 
 ## `--app`
 
-* Тип: `String`
-* Псевдонимы: `-a`
+* **Тип**: `String`
+* **Псевдонимы**: `-a`
 
 > В `.angular-cli.json` вы можете добавить несколько конфигураций в раздел `apps`, билд запускается только для одной из них. 
 
@@ -242,10 +242,10 @@ ng b
 
 ## `--delete-output-path`
 
-* Тип: `Boolean`
-* Псевдонимы: `-dop`
-* По-умолчанию: `true`
-* .angular-cli.json: `defaults.build.deleteOutputPath`
+* **Тип**: `Boolean`
+* **Псевдонимы**: `-dop`
+* **По-умолчанию**: `true`
+* **.angular-cli.json**: `defaults.build.deleteOutputPath`
 
 > Вы можете отключить удаление папки ./dist, например, если перед билдом туда добавляются другие файлы.
 
@@ -254,8 +254,8 @@ ng b
 
 ## `--preserve-symlinks`
 
-* Тип: `Boolean`
-* .angular-cli.json: `defaults.build.preserveSymlinks`
+* **Тип**: `Boolean`
+* **.angular-cli.json**: `defaults.build.preserveSymlinks`
 
 >>> Буду благодарен за информацию по этому параметру
 
@@ -264,8 +264,8 @@ Do not use the real path when resolving modules.
 
 ## `--extract-licenses`
 
-* Тип: `Boolean`
-* По-умолчанию: `true`
+* **Тип**: `Boolean`
+* **По-умолчанию**: `true`
 
 Сбор всех лицензий из исходных файлов в файл `3rdpartylicenses.txt`. 
 
@@ -274,28 +274,28 @@ Do not use the real path when resolving modules.
 
 ## `--show-circular-dependencies`
 
-* Тип: `Boolean`
-* Псевдонимы: `-scd`
-* По-умолчанию: `true`
-* .angular-cli.json: `defaults.build.showCircularDependencies`
+* **Тип**: `Boolean`
+* **Псевдонимы**: `-scd`
+* **По-умолчанию**: `true`
+* **.angular-cli.json**: `defaults.build.showCircularDependencies`
 
 Вывод предупреждения о циклической DI-зависимости.
 
 
 ## `--build-optimizer`
 
-* Тип: `Boolean`
-* По-умолчанию: `false`
+* **Тип**: `Boolean`
+* **По-умолчанию**: `false`
 
 Включение @angular-devkit/build-optimizer для `--aot`.
 
 
 ## `--named-chunks`
 
-* Тип: `Boolean`
-* Псевдонимы: `-nc`
-* По-умолчанию: `true`
-* .angular-cli.json: `defaults.build.namedChunks`
+* **Тип**: `Boolean`
+* **Псевдонимы**: `-nc`
+* **По-умолчанию**: `true`
+* **.angular-cli.json**: `defaults.build.namedChunks`
 
 > По-умолчанию для `prod` билда файлы с вашими модулями пронумерованы, а не используют свое имя.
 
@@ -306,9 +306,9 @@ Do not use the real path when resolving modules.
 
 ## `--subresource-integrity`
 
-* Тип: `Boolean`
-* Псевдонимы: `-sri`
-* По-умолчанию: `false`
+* **Тип**: `Boolean`
+* **Псевдонимы**: `-sri`
+* **По-умолчанию**: `false`
 
 > Позволяет повысить безопасность вашего приложения.
 
@@ -317,8 +317,8 @@ Do not use the real path when resolving modules.
 
 ## `--stats-json`
 
-* Тип: `Boolean`
-* По-умолчанию: `false`
+* **Тип**: `Boolean`
+* **По-умолчанию**: `false`
 
 > При росте приложения разростается и бандл, особенно вендоры. Полезно узнать что именно попало в билд и какой обьем занимает.
 
@@ -327,24 +327,24 @@ Do not use the real path when resolving modules.
 
 ## `--bundle-dependencies`
 
-* Тип: `none`, `all`
-* По-умолчанию: `none`
+* **Тип**: `none`, `all`
+* **По-умолчанию**: `none`
 
 Доступно только для `platform-server`. Добавление всех зависимостей в бандл. По-умолчанию все зависимости из `node_modules` запрашиваются через `require`.
 
 
 ## `--service-worker`
 
-* Тип: `Boolean`
-* Псевдонимы: `-sw`
-* По-умолчанию: `true`
+* **Тип**: `Boolean`
+* **Псевдонимы**: `-sw`
+* **По-умолчанию**: `true`
 
 Добавляет service worker, если такая настройка есть в `.angular-cli.json`.
 
 
 ## `--skip-app-shell`
 
-* Тип: `Boolean`
-* По-умолчанию: `false`
+* **Тип**: `Boolean`
+* **По-умолчанию**: `false`
 
 >>> Flag to prevent building an app shell

@@ -11,16 +11,16 @@ ng t
 
 ## `--app`
 
-* Тип: `Number|String`
-* Псевдонимы: `-a`
-* По-умолчанию: первая аппа в `.angular-cli.json` 
+* **Тип**: `Number|String`
+* **Псевдонимы**: `-a`
+* **По-умолчанию**: первая аппа в `.angular-cli.json` 
 
 Индекс или имя аппы из `.angular-cli.json`.
 
 
 ## `--browsers`
 
-* Тип: `String`
+* **Тип**: `String`
 
 Браузеры, в которых запускаются тесты.
 
@@ -29,9 +29,9 @@ ng t
 
 ## `--code-coverage`
 
-* Тип: `Boolean`
-* Псевдонимы: `-cc`
-* По-умолчанию: `false`
+* **Тип**: `Boolean`
+* **Псевдонимы**: `-cc`
+* **По-умолчанию**: `false`
 
 > Позволяет быстро понять, какие части кода не протестированы.
 
@@ -40,33 +40,33 @@ ng t
 
 ## `--colors`
 
-* Тип: `Boolean`
-* По-умолчанию: `true`
+* **Тип**: `Boolean`
+* **По-умолчанию**: `true`
 
 Использовать цвета в отчетах и логах.
 
 
 ## `--config`
 
-* Тип: `String`
-* Псевдонимы: `-c`
-* .angular-cli.json: `test.karma.config`
+* **Тип**: `String`
+* **Псевдонимы**: `-c`
+* **.angular-cli.json**: `test.karma.config`
 
 Путь к файлу конфига Karma.
 
 
 ## `--log-level`
 
-* Тип: `String`
-* По-умолчанию: `info`
-* Значения: `disable`, `error`, `warn`, `info`, `debug`
+* **Тип**: `String`
+* **По-умолчанию**: `info`
+* **Значения**: `disable`, `error`, `warn`, `info`, `debug`
 
 Уровень логирования.
 
 
 ## `--reporters`
 
-* Тип: `String`
+* **Тип**: `String`
 
 > Вы можете настроить самые [разнообразные способы вывода](https://www.npmjs.com/browse/keyword/karma-reporter) (изменение формата в консоли, в браузере, использование других каналов), есть и вот такой вариант: [![](./index/karma-nyan-reporter-error-output.png)](https://www.npmjs.com/package/karma-nyan-reporter)
 
@@ -75,9 +75,9 @@ ng t
 
 ## `--single-run`
 
-* Тип: `Boolean`
-* Псевдонимы: `-sr`
-* По-умолчанию: `false`
+* **Тип**: `Boolean`
+* **Псевдонимы**: `-sr`
+* **По-умолчанию**: `false`
 
 > Необходимо для CI
 

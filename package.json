@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "gen-content": "node gen-content"
+    "gen-content": "node gen-content",
+    "json-to-md": "node json-to-md"
   },
   "private": true,
   "dependencies": {

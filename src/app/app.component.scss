@@ -18,11 +18,11 @@
   border-bottom: 1px solid #dcf2f3;
   height: $header;
   .wrapper {
+    align-items: center;
     display: flex;
     flex-direction: row;
     flex-grow: 1;
     height: $header;
-    line-height: $header;
     margin: 0 auto;
     max-width: $width;
     h1 {
@@ -30,11 +30,14 @@
       margin: 0 auto;
       padding: 0;
       font-size: 1.6rem;
-      height: $header;
-      line-height: $header;
       a {
+        align-items: center;
         color: $textColor;
+        display: flex;
         text-decoration: none;
+      }
+      img {
+        margin-right: 8px;
       }
     }
     .actions {
