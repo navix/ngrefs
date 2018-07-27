@@ -20,6 +20,10 @@ export class MenuItemComponent implements OnInit {
 
   @Output() remove = new EventEmitter();
 
+  @Output() moveUp = new EventEmitter();
+
+  @Output() moveDown = new EventEmitter();
+
   displayModal = false;
 
   constructor(

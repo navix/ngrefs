@@ -64,4 +64,10 @@ export class DataService {
   logData() {
     console.log('DATA', this.data);
   }
+
+  move(array: any[], from: number, to: number) {
+    if (to >= 0 && to < array.length) {
+      array.splice(to, 0, array.splice(from, 1)[0]);
+    }
+  }
 }

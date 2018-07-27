@@ -30,6 +30,7 @@ export interface ContentMenuItem {
   urlFragment?: string;
   sub?: ContentMenu;
   subActiveOpt?: boolean;
+  asGroup?: boolean;
   // Display page entries links instead one item
   // Uses `head` prop of entry for label and and `headId` for urlFragment
   usePageEntries?: boolean;

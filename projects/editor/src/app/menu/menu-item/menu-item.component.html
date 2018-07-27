@@ -5,8 +5,8 @@
   <div class="actions">
     <button uiButton size="sm" (click)="displayModal = true">Edit</button>
     <button uiButton size="sm" (click)="remove.emit()">Remove</button>
-    <button uiButton size="sm">Move up</button>
-    <button uiButton size="sm">Move down</button>
+    <button uiButton size="sm" (click)="moveUp.emit()">Move up</button>
+    <button uiButton size="sm" (click)="moveDown.emit()">Move down</button>
   </div>
 </div>
 
@@ -29,35 +29,40 @@
     <form uiForm
           #ngForm="ngForm"
           class="layout-aligned">
-      <ui-form-field *ngIf="!item.usePageEntries"
-                     label="Label">
-        <app-message [(ngModel)]="item.label"
-                     name="label"
-                     context="Menu item">
-        </app-message>
-        <span *kitFormError="'required'">Field is required</span>
-      </ui-form-field>
+      <ng-container *ngIf="!item.usePageEntries">
+        <ui-form-field label="Label">
+          <app-message [(ngModel)]="item.label"
+                       name="label"
+                       context="Menu item">
+          </app-message>
+          <span *kitFormError="'required'">Field is required</span>
+        </ui-form-field>
 
-      <ui-form-field *ngIf="!item.usePageEntries"
-                     label="Url">
-        <input [(ngModel)]="item.url"
-               uiText
-               name="url">
-      </ui-form-field>
+        <ui-form-field label="Url">
+          <input [(ngModel)]="item.url"
+                 uiText
+                 name="url">
+        </ui-form-field>
 
-      <ui-form-field *ngIf="!item.usePageEntries"
-                     label="Url Fragment">
-        <input [(ngModel)]="item.urlFragment"
-               uiText
-               name="urlFragment">
-      </ui-form-field>
+        <ui-form-field label="Url Fragment">
+          <input [(ngModel)]="item.urlFragment"
+                 uiText
+                 name="urlFragment">
+        </ui-form-field>
 
-      <ui-form-field *ngIf="!item.usePageEntries"
-                     label="Hide sub if not active">
-        <input [(ngModel)]="item.subActiveOpt"
+        <ui-form-field label="Hide sub if not active">
+          <input [(ngModel)]="item.subActiveOpt"
+                 uiCheckbox
+                 type="checkbox"
+                 name="subActiveOpt">
+        </ui-form-field>
+      </ng-container>
+
+      <ui-form-field label="As Group">
+        <input [(ngModel)]="item.asGroup"
                uiCheckbox
                type="checkbox"
-               name="subActiveOpt">
+               name="asGroup">
       </ui-form-field>
 
       <ui-form-field label="Use Page Entries">

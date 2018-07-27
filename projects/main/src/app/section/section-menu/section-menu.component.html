@@ -1,6 +1,6 @@
 <ul *ngFor="let item of items"
     class="item">
-  <li>
+  <li [class.-group]="item.asGroup">
     <ng-container *ngIf="!item.usePageEntries">
       <a *ngIf="item.url"
          [routerLink]="['.', item.url]"

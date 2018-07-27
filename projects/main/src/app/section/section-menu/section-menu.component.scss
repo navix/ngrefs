@@ -14,30 +14,36 @@
       &.-with-subs {
         margin: 12px 0;
       }
+      &.-group {
+        margin-top: $grid * 2;
+        padding-top: $grid;
+        border-top: 1px solid #dddddd;
+        > a, > span {
+          font-weight: 600;
+        }
+      }
     }
     a, span {
       border-radius: 3px;
       display: block;
       font-size: .9rem;
       margin: 2px 0;
-      padding: $grid / 2 $grid;
+      padding: $grid / 4 $grid / 2;
     }
     a {
       color: $linkColorLight;
       transition: background .3s;
       &:hover {
-        background: #f3f3f3;
+        background: #ebebeb;
         color: $linkColor;
       }
       &.-active {
-
-        font-weight: 600;
-        background: #eeeeee;
+        background: #e6e6e6;
         color: $linkColor;
       }
     }
     span {
-      color: #777777;
+      color: #989898;
     }
   }
   .footer {
@@ -46,6 +52,17 @@
     margin-top: 16px;
     padding-top: 16px;
     text-align: center;
+  }
+}
+
+:host(.-active-opt) {
+  padding-bottom: $grid;
+  ul {
+    li {
+      a {
+        font-size: .8rem;
+      }
+    }
   }
 }
 

@@ -26,4 +26,12 @@ export class MenuItemsComponent implements OnInit {
   remove(index: number) {
     this.items.splice(index, 1);
   }
+
+  moveUp(index: number) {
+    this.data.move(this.items, index, index - 1);
+  }
+
+  moveDown(index: number) {
+    this.data.move(this.items, index, index + 1);
+  }
 }

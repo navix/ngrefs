@@ -1,7 +1,9 @@
 <div *ngFor="let item of items; let index = index"
      class="item-wrapper">
   <app-menu-item [item]="item"
-                 (remove)="remove(index)">
+                 (remove)="remove(index)"
+                 (moveUp)="moveUp(index)"
+                 (moveDown)="moveDown(index)">
   </app-menu-item>
 </div>
 
