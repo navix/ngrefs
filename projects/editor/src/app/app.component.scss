@@ -1,0 +1,17 @@
+@import "params";
+
+.nav {
+  background: #bbbbbb;
+  .title {
+    background: #ffdf20;
+    color: #333333;
+  }
+  .file {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    button {
+      margin-right: $grid;
+    }
+  }
+}

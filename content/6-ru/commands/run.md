@@ -1,8 +1,8 @@
 # `ng run`
 
 ```
-ng run [project]:[target]
-ng run [project]:[target]:[configuration]
+ng run [project]:[target] [--[argument]=[value]]
+ng run [project]:[target]:[configuration] [--[argument]=[value]]
 ```
 
 Основная команда для запуска различных билдов.

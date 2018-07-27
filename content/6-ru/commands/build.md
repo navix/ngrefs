@@ -3,7 +3,7 @@
 Сompiles the application into an output directory.
 
 ```
-ng build
+ng build [--[argument]=[value]]
 ```
 
 Псевдоним для команды:

@@ -1,0 +1,9 @@
+:host {
+  &.layout {
+    &-inline {
+      align-items: flex-start;
+      display: flex;
+      flex-flow: row wrap;
+    }
+  }
+}

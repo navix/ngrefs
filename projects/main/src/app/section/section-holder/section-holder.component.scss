@@ -1,0 +1,26 @@
+@import "../../../styles/params";
+
+:host {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+}
+
+.menu {
+  flex-shrink: 0;
+  overflow-y: auto;
+  padding: $grid * 3;
+  width: $sideWidth;
+}
+
+.content {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.content-wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: $contentWidth;
+  padding: 0 $grid * 4 $grid * 8;
+}

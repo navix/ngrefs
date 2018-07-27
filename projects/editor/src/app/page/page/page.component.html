@@ -1,0 +1,30 @@
+<div class="content-wrapper">
+  <h1>Page</h1>
+
+  <form uiForm
+        #ngForm="ngForm"
+        class="layout-aligned">
+    <ui-form-field label="Title">
+      <app-message [(ngModel)]="page.title"
+                   name="title"
+                   context="Page title">
+      </app-message>
+    </ui-form-field>
+
+    <ui-form-field label="Url">
+      <input [(ngModel)]="page.url"
+             uiText
+             name="url"
+             required>
+      <span *kitFormError="'required'">Field is required</span>
+    </ui-form-field>
+  </form>
+
+  <div>
+    <div *ngFor="let entry of page.entries"
+         class="entry-wrapper">
+      <app-entry [entry]="entry"></app-entry>
+    </div>
+    <button uiButton (click)="createEntry()">Create entry</button>
+  </div>
+</div>

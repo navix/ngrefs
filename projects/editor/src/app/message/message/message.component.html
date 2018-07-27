@@ -1,0 +1,59 @@
+<div class="output" (click)="displayModal = true">
+  {{ message?.locales[0]?.text || state?.id }}
+</div>
+<div class="edit">
+  <button uiButton
+          size="sm"
+          (click)="displayModal = true">
+    Edit
+  </button>
+</div>
+
+<kit-modal (close)="displayModal = false">
+  <ui-modal *kitOverlay="displayModal"
+            header="Edit text"
+            size="xl">
+    <form uiForm
+          #ngForm="ngForm">
+      <ui-form-field label="Context">
+        <input [(ngModel)]="message.context"
+               uiText
+               name="message"
+               required>
+        <span *kitFormError="'required'">Field is required</span>
+      </ui-form-field>
+    </form>
+    <div>
+      <div *ngFor="let locale of message.locales"
+           class="locale-wrapper">
+        <form uiForm
+              #ngForm="ngForm">
+          <ui-form-field label="Lang">
+            <select [(ngModel)]="locale.lang"
+                    uiSelect
+                    name="lang"
+                    required>
+              <option *ngFor="let lang of langs"
+                      [value]="lang">
+                {{ lang }}
+              </option>
+            </select>
+            <span *kitFormError="'required'">Field is required</span>
+          </ui-form-field>
+          <ui-form-field label="Text">
+            <textarea [(ngModel)]="locale.text"
+                      uiText
+                      name="text"
+                      required>
+            </textarea>
+            <span *kitFormError="'required'">Field is required</span>
+          </ui-form-field>
+        </form>
+      </div>
+      <button uiButton (click)="createLocale()">Create locale</button>
+    </div>
+    <ui-modal-footer>
+      <button uiButton (click)="displayModal = false">Close</button>
+    </ui-modal-footer>
+  </ui-modal>
+</kit-modal>

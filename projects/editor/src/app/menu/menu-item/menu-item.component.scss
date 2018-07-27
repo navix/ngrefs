@@ -1,0 +1,20 @@
+@import "params";
+
+:host {
+  display: block;
+  border-bottom: 1px solid $tableBdColor;
+  padding: $grid 0;
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+}
+
+.label {
+  flex-grow: 1;
+}
+
+.sub {
+  margin-left: $grid * 5;
+}

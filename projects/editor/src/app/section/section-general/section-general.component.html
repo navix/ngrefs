@@ -1,0 +1,31 @@
+<div class="content-wrapper">
+  <form uiForm
+        #ngForm="ngForm">
+    <ui-form-field label="Title">
+      <app-message [(ngModel)]="section.title"
+                   name="title"
+                   context="Section title">
+      </app-message>
+    </ui-form-field>
+
+    <ui-form-field label="Color">
+      <input [(ngModel)]="section.color"
+             name="color"
+             required>
+      <span *kitFormError="'required'">Field is required</span>
+    </ui-form-field>
+
+    <ui-form-field label="Url">
+      <input [(ngModel)]="section.url"
+             name="url"
+             required>
+      <span *kitFormError="'required'">Field is required</span>
+    </ui-form-field>
+
+    <ui-form-field label="Disabled">
+      <input [(ngModel)]="section.disabled"
+             type="checkbox"
+             name="disabled">
+    </ui-form-field>
+  </form>
+</div>

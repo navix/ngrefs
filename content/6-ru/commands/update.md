@@ -3,7 +3,7 @@
 Updates the current application to latest versions.
 
 ```
-ng update [package]
+ng update [package] [--[argument]=[value]]
 ```
 
 ## Параметры

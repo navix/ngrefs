@@ -1,0 +1,35 @@
+<div class="header">
+  <div class="main">
+    <div class="top">
+      <div class="brand">
+        <button class="selector">{{ version.title }}</button>
+        References
+      </div>
+    </div>
+    <div class="nav">
+      <ul class="sections">
+        <li *ngFor="let section of version.sections">
+          <a
+            [routerLink]="[section.url]"
+            routerLinkActive="-active"
+            [style.border-color]="section.color"
+          >
+            <app-content-message [ref]="section.title"></app-content-message>
+          </a>
+        </li>
+      </ul>
+      <div class="controls">
+        <label>
+          <input type="checkbox" checked> Show hints
+        </label>
+        <div class="langs">
+          <a *ngFor="let versionLang of version.langs">{{ versionLang }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="body">
+  <router-outlet></router-outlet>
+</div>

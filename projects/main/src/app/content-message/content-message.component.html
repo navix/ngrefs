@@ -1,0 +1,9 @@
+<div *ngIf="!highlight"
+     [innerHtml]="html"
+     (click)="clickHandler($event)">
+</div>
+
+<span *ngIf="highlight"
+      class="highlight">
+  {{ text }}
+</span>

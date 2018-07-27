@@ -1,0 +1,54 @@
+:host {
+  display: block;
+  margin-bottom: 8px;
+}
+
+:host-context([uiForm].layout-aligned,ui-form-field.layout-aligned) {
+  display: flex;
+  flex-direction: row;
+  label {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-shrink: 0;
+    font-weight: 600;
+    width: 150px;
+    .required {
+      margin-right: 4px;
+    }
+  }
+  .control {
+    padding-left: 8px;
+  }
+}
+
+:host-context([uiForm].layout-inline,ui-form-field.layout-inline) {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0;
+  margin-right: 16px;
+  label {
+    display: flex;
+    flex-direction: row-reverse;
+    .required {
+      margin-right: 4px;
+    }
+  }
+  .control {
+    padding-left: 8px;
+  }
+}
+
+label {
+  .required {
+    color: #ff0c09;
+  }
+}
+
+.errors {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  .error {
+    color: #ff0c09;
+  }
+}

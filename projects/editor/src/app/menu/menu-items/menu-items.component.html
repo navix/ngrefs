@@ -1,0 +1,10 @@
+<div *ngFor="let item of items; let index = index"
+     class="item-wrapper">
+  <app-menu-item [item]="item"
+                 (remove)="remove(index)">
+  </app-menu-item>
+</div>
+
+<div class="actions">
+  <button uiButton size="sm" (click)="createItem()">Create menu item</button>
+</div>

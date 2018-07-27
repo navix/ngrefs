@@ -1,0 +1,82 @@
+<div class="line">
+  <div *ngIf="!item.usePageEntries" class="label">{{ (item.label | message) || item.id }}</div>
+  <div *ngIf="item.usePageEntries" class="label">Page entries of {{ item.usePageUrl }}</div>
+  <div *ngIf="!item.usePageEntries">{{ item.url }} / {{ item.urlFragment }}</div>
+  <div class="actions">
+    <button uiButton size="sm" (click)="displayModal = true">Edit</button>
+    <button uiButton size="sm" (click)="remove.emit()">Remove</button>
+    <button uiButton size="sm">Move up</button>
+    <button uiButton size="sm">Move down</button>
+  </div>
+</div>
+
+<div class="sub">
+  <div *ngIf="item.sub">
+    <app-menu-items [items]="item.sub.items"></app-menu-items>
+  </div>
+
+  <button *ngIf="!item.sub"
+          uiButton
+          size="sm"
+          (click)="enableSub()">
+    Enable sub-menu
+  </button>
+</div>
+
+<kit-modal (close)="displayModal = false">
+  <ui-modal *kitOverlay="displayModal"
+            header="Edit menu item">
+    <form uiForm
+          #ngForm="ngForm"
+          class="layout-aligned">
+      <ui-form-field *ngIf="!item.usePageEntries"
+                     label="Label">
+        <app-message [(ngModel)]="item.label"
+                     name="label"
+                     context="Menu item">
+        </app-message>
+        <span *kitFormError="'required'">Field is required</span>
+      </ui-form-field>
+
+      <ui-form-field *ngIf="!item.usePageEntries"
+                     label="Url">
+        <input [(ngModel)]="item.url"
+               uiText
+               name="url">
+      </ui-form-field>
+
+      <ui-form-field *ngIf="!item.usePageEntries"
+                     label="Url Fragment">
+        <input [(ngModel)]="item.urlFragment"
+               uiText
+               name="urlFragment">
+      </ui-form-field>
+
+      <ui-form-field *ngIf="!item.usePageEntries"
+                     label="Hide sub if not active">
+        <input [(ngModel)]="item.subActiveOpt"
+               uiCheckbox
+               type="checkbox"
+               name="subActiveOpt">
+      </ui-form-field>
+
+      <ui-form-field label="Use Page Entries">
+        <input [(ngModel)]="item.usePageEntries"
+               uiCheckbox
+               type="checkbox"
+               name="usePageEntries">
+      </ui-form-field>
+
+      <ui-form-field *ngIf="item.usePageEntries"
+                     label="Use Page URL">
+        <input [(ngModel)]="item.usePageUrl"
+               uiText
+               name="usePageUrl">
+      </ui-form-field>
+    </form>
+    <ui-modal-footer>
+      <button uiButton (click)="displayModal = false">Close</button>
+    </ui-modal-footer>
+  </ui-modal>
+</kit-modal>
+

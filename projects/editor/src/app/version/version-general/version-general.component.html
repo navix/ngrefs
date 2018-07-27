@@ -1,0 +1,36 @@
+<div class="content-wrapper">
+  <h1>Version {{ version.title }}</h1>
+
+  <form uiForm
+        #ngForm="ngForm">
+    <ui-form-field label="Title">
+      <input [(ngModel)]="version.title"
+             name="title"
+             required>
+      <span *kitFormError="'required'">Field is required</span>
+    </ui-form-field>
+
+    <ui-form-field label="Url">
+      <input [(ngModel)]="version.url"
+             name="url"
+             required>
+      <span *kitFormError="'required'">Field is required</span>
+    </ui-form-field>
+
+    <ui-form-field label="Default">
+      <input [(ngModel)]="version.default"
+             type="checkbox"
+             name="default">
+    </ui-form-field>
+
+    <ui-form-field label="Disabled">
+      <input [(ngModel)]="version.disabled"
+             type="checkbox"
+             name="disabled">
+    </ui-form-field>
+  </form>
+
+  <div>
+    Langs: {{ version.langs | json }}
+  </div>
+</div>

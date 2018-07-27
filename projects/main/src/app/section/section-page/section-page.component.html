@@ -1,0 +1,21 @@
+<div class="page-content">
+  <h1>
+    <app-content-message [ref]="page.title"></app-content-message>
+  </h1>
+
+  <div class="entries">
+    <ng-container *ngFor="let entry of page.entries">
+      <ng-container [ngSwitch]="entry.type">
+        <div *ngSwitchCase="'text'">
+          <app-page-text-entry [entry]="entry"></app-page-text-entry>
+        </div>
+        <div *ngSwitchCase="'command-param'">
+          <app-page-command-param-entry [entry]="entry"></app-page-command-param-entry>
+        </div>
+        <div *ngSwitchDefault>
+          {{ entry | json }}
+        </div>
+      </ng-container>
+    </ng-container>
+  </div>
+</div>

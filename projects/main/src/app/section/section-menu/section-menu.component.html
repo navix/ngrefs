@@ -1,0 +1,30 @@
+<ul *ngFor="let item of items"
+    class="item">
+  <li>
+    <ng-container *ngIf="!item.usePageEntries">
+      <a *ngIf="item.url"
+         [routerLink]="['.', item.url]"
+         [routerLinkActive]="!item.urlFragment ? '-active' : 'noop'"
+         [fragment]="item.urlFragment">
+        <app-content-message [ref]="item.label"></app-content-message>
+      </a>
+      <span *ngIf="!item.url">
+        <app-content-message [ref]="item.label"></app-content-message>
+      </span>
+    </ng-container>
+    <ng-container *ngIf="item.usePageEntries">
+      <ng-container *ngFor="let entryItem of getPageEntries(item.usePageUrl)">
+        <a *ngIf="entryItem.head && entryItem.headId"
+           [routerLink]="['.', item.usePageUrl]"
+           [fragment]="entryItem.headId">
+          <app-content-message [ref]="entryItem.head"></app-content-message>
+        </a>
+      </ng-container>
+    </ng-container>
+    <app-section-menu *ngIf="item.sub"
+                      [items]="item.sub.items"
+                      class="children"
+                      [class.-active-opt]="item.subActiveOpt">
+    </app-section-menu>
+  </li>
+</ul>

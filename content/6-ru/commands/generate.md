@@ -1,8 +1,8 @@
 # `ng generate`
 
 ```
-ng generate [schematic-name] [name]
-ng g [schematic-name] [name]
+ng generate [schematic-name] [name] [--[argument]=[value]]
+ng g
 ```
 
 Angular CLI предоставляет универсальный механизм для генерации, который вы можете использовать для подключения сторонних генераторов:

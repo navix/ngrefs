@@ -1,0 +1,20 @@
+<div class="nav">
+  <div class="title">
+    {{ (section.title | message) || section.id }}
+  </div>
+  <div class="items">
+    <a routerLink="./"
+       routerLinkActive="-active"
+       [routerLinkActiveOptions]="{exact: true}">
+      General
+    </a>
+    <a routerLink="./menu"
+       routerLinkActive="-active"
+       [routerLinkActiveOptions]="{exact: true}">
+      Menu
+    </a>
+    <a routerLink="./pages" routerLinkActive="-active">Pages</a>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Lora');
+@import "params";
+
+html {
+}
+
+body {
+  background: #ffffff;
+  color: #444444;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #222222;
+  font-family: 'Lora', serif;
+}
+
+table {
+  tr {
+  }
+  td {
+    border-bottom: 1px solid #eeeeee;
+  }
+}
+
+.nav {
+  color: #222222;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 -5px 7px rgba(0, 0, 0, .1);
+  .title {
+    background: rgba(0, 0, 0, .3);
+    font-weight: 600;
+    padding: $grid * 1.5 $grid * 2;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 150px;
+  }
+  .items {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    padding: $grid $grid * 2;
+    a {
+      color: #222222;
+      border-radius: 3px;
+      display: block;
+      padding: $grid / 2 $grid * 2;
+      margin-right: $grid;
+      text-decoration: none;
+      &:hover {
+        background: rgba(255, 255, 255, .1);
+      }
+      &.-active {
+        background: rgba(255, 255, 255, .25);
+      }
+    }
+  }
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: $grid * 4;
+}

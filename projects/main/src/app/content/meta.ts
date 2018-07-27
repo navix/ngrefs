@@ -1,0 +1,83 @@
+export interface ContentVersion {
+  id: string;
+  title?: string;
+  url?: string;
+  disabled?: boolean;
+  default?: boolean;
+  langs: string[];
+  sections: ContentSection[];
+  messages: ContentMessage[];
+}
+
+export interface ContentSection {
+  id: string;
+  url?: string;
+  color?: string;
+  title?: ContentMessageRef;
+  disabled?: boolean;
+  menu: ContentMenu;
+  pages: ContentPage[];
+}
+
+export interface ContentMenu {
+  items: ContentMenuItem[];
+}
+
+export interface ContentMenuItem {
+  id: string;
+  label?: ContentMessageRef;
+  url?: string;
+  urlFragment?: string;
+  sub?: ContentMenu;
+  subActiveOpt?: boolean;
+  // Display page entries links instead one item
+  // Uses `head` prop of entry for label and and `headId` for urlFragment
+  usePageEntries?: boolean;
+  usePageUrl?: string;
+}
+
+export interface ContentPage {
+  id: string;
+  url?: string;
+  title?: ContentMessageRef;
+  menuItems?: ContentMenuItem[];
+  entries: (ContentEntry | ContentTextEntry | ContentCommandParamEntry)[];
+}
+
+export type ContentEntryType = 'text' | 'command-param';
+
+export interface ContentEntry {
+  id: string;
+  type: ContentEntryType;
+  head?: ContentMessageRef;
+  headId?: string;
+}
+
+export interface ContentTextEntry extends ContentEntry {
+  type: 'text';
+  text: ContentMessageRef;
+}
+
+export interface ContentCommandParamEntry extends ContentEntry {
+  type: 'command-param';
+  name: string;
+  paramType?: string;
+  values?: string;
+  default?: string;
+  aliases?: string;
+  description?: ContentMessageRef;
+}
+
+export interface ContentMessage {
+  id: string;
+  context: string;
+  locales: {
+    lang: string;
+    text: string;
+  }[];
+}
+
+export interface ContentMessageRef {
+  id?: string;
+  text?: string;
+}

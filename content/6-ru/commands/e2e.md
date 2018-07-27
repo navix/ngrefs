@@ -1,7 +1,7 @@
 # `ng e2e`
 
 ```
-ng e2e
+ng e2e [--[argument]=[value]]
 ```
 
 Псевдоним для команды:

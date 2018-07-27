@@ -1,0 +1,24 @@
+<div class="nav">
+  <div class="title">Editor</div>
+  <div class="items">
+    <a routerLink="/versions" routerLinkActive="-active">Versions</a>
+    <a routerLink="/messages" routerLinkActive="-active">Messages</a>
+  </div>
+  <div class="file">
+    <button uiButton
+            size="sm"
+            color="primary"
+            uiFileHolder>
+      Pick a file
+      <input uiFile
+             #uiFile="uiFile"
+             type="file"
+             (select)="open($event)">
+    </button>
+    <button uiButton
+            size="sm"
+            (click)="save()">Save</button>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

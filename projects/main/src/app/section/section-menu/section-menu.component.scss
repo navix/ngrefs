@@ -1,0 +1,62 @@
+@import "../../../styles/params";
+
+:host {
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li {
+      padding: 0;
+      margin: 0;
+      > ul {
+        padding-left: 16px;
+      }
+      &.-with-subs {
+        margin: 12px 0;
+      }
+    }
+    a, span {
+      border-radius: 3px;
+      display: block;
+      font-size: .9rem;
+      margin: 2px 0;
+      padding: $grid / 2 $grid;
+    }
+    a {
+      color: $linkColorLight;
+      transition: background .3s;
+      &:hover {
+        background: #f3f3f3;
+        color: $linkColor;
+      }
+      &.-active {
+
+        font-weight: 600;
+        background: #eeeeee;
+        color: $linkColor;
+      }
+    }
+    span {
+      color: #777777;
+    }
+  }
+  .footer {
+    border-top: 1px solid #eeeeee;
+    font-size: .8rem;
+    margin-top: 16px;
+    padding-top: 16px;
+    text-align: center;
+  }
+}
+
+.children {
+  display: block;
+  padding-left: $grid * 2;
+  &.-active-opt {
+    display: none;
+  }
+}
+
+a.-active + .children.-active-opt {
+  display: block;
+}

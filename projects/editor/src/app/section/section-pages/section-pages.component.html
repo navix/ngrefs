@@ -1,0 +1,24 @@
+<div class="content-wrapper">
+  <h1>
+    Pages
+    <div class="actions">
+      <button uiButton (click)="createPage()">Create page</button>
+    </div>
+  </h1>
+
+  <table>
+    <tr *ngFor="let page of pages">
+      <td>
+        <a [routerLink]="[page.id]">
+          {{ (page.title | message) || page.id }}
+        </a>
+      </td>
+      <td>{{ page.url }}</td>
+      <td class="actions">
+        <button uiButton size="sm">Move up</button>
+        <button uiButton size="sm">Move down</button>
+        <button uiButton size="sm">Remove</button>
+      </td>
+    </tr>
+  </table>
+</div>

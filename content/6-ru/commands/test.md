@@ -1,7 +1,7 @@
 # `ng test`
 
 ```
-ng test
+ng test [--[argument]=[value]]
 ```
 
 Псевдоним для команды:

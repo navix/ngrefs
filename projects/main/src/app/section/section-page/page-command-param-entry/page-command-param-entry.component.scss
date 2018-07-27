@@ -1,0 +1,12 @@
+h3 {
+  align-items: baseline;
+  display: flex;
+  flex-direction: row;
+  .name {
+    flex-grow: 1;
+  }
+  code {
+    font-weight: 400;
+    font-size: 0.55em;
+  }
+}

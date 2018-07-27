@@ -1,0 +1,23 @@
+<form uiForm
+      #ngForm="ngForm"
+      class="layout-aligned">
+  <ui-form-field label="Head">
+    <app-message [(ngModel)]="entry.head"
+                 name="head"
+                 context="Entry head">
+    </app-message>
+  </ui-form-field>
+
+  <ui-form-field label="Head ID">
+    <input [(ngModel)]="entry.headId"
+           uiText
+           name="headId">
+  </ui-form-field>
+
+  <ui-form-field label="Text">
+    <app-message [(ngModel)]="entry.text"
+                 name="text"
+                 context="Entry text">
+    </app-message>
+  </ui-form-field>
+</form>

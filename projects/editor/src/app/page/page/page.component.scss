@@ -1,0 +1,7 @@
+@import "params";
+
+.entry-wrapper {
+  padding: $grid * 6 $grid * 3;
+  border-top: 2px solid #e4e4e4;
+  background-image: linear-gradient(#f2f2f2, #ffffff);
+}
