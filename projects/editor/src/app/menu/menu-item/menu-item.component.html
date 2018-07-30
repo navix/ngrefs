@@ -4,7 +4,7 @@
   <div *ngIf="!item.usePageEntries">{{ item.url }} / {{ item.urlFragment }}</div>
   <div class="actions">
     <button uiButton size="sm" (click)="displayModal = true">Edit</button>
-    <button uiButton size="sm" (click)="remove.emit()">Remove</button>
+    <button uiButton size="sm" (click)="delete.emit()">Remove</button>
     <button uiButton size="sm" (click)="moveUp.emit()">Move up</button>
     <button uiButton size="sm" (click)="moveDown.emit()">Move down</button>
   </div>

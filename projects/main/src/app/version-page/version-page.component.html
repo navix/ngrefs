@@ -20,7 +20,10 @@
       </ul>
       <div class="controls">
         <label>
-          <input type="checkbox" checked> Show hints
+          <input type="checkbox"
+                 uiCheckbox
+                 [(ngModel)]="showHints">
+          Show hints & tutorials
         </label>
         <div class="langs">
           <a *ngFor="let versionLang of version.langs">{{ versionLang }}</a>

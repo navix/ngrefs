@@ -21,9 +21,12 @@
   </form>
 
   <div>
-    <div *ngFor="let entry of page.entries"
-         class="entry-wrapper">
-      <app-entry [entry]="entry"></app-entry>
+    <div *ngFor="let entry of page.entries; let index = index">
+      <app-entry [entry]="entry"
+                 (delete)="deleteEntry(index)"
+                 (moveUp)="moveUpEntry(index)"
+                 (moveDown)="moveDownEntry(index)">
+      </app-entry>
     </div>
     <button uiButton (click)="createEntry()">Create entry</button>
   </div>

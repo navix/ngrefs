@@ -4,8 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { EntryCommandParamComponent } from './entry/entry-command-param/entry-command-param.component';
-import { EntryTextComponent } from './entry/entry-text/entry-text.component';
+import { CommandParamEntryComponent } from './entry/command-param-entry/command-param-entry.component';
+import { TextEntryComponent } from './entry/text-entry/text-entry.component';
 import { EntryComponent } from './entry/entry.component';
 import { MenuItemComponent } from './menu/menu-item/menu-item.component';
 import { MenuItemsComponent } from './menu/menu-items/menu-items.component';
@@ -27,6 +27,8 @@ import { VersionGeneralComponent } from './version/version-general/version-gener
 import { VersionSectionsComponent } from './version/version-sections/version-sections.component';
 import { VersionComponent } from './version/version/version.component';
 import { VersionsListComponent } from './version/versions-list/versions-list.component';
+import { HintEntryComponent } from './entry/hint-entry/hint-entry.component';
+import { TutorialsEntryComponent } from './entry/tutorials-entry/tutorials-entry.component';
 
 @NgModule({
   declarations: [
@@ -37,9 +39,9 @@ import { VersionsListComponent } from './version/versions-list/versions-list.com
     MenuItemComponent,
     PageComponent,
     EntryComponent,
-    EntryTextComponent,
+    TextEntryComponent,
     MessageComponent,
-    EntryCommandParamComponent,
+    CommandParamEntryComponent,
     VersionsListComponent,
     VersionGeneralComponent,
     VersionSectionsComponent,
@@ -47,6 +49,8 @@ import { VersionsListComponent } from './version/versions-list/versions-list.com
     SectionPagesComponent,
     MenuItemsComponent,
     MessagePipe,
+    HintEntryComponent,
+    TutorialsEntryComponent,
   ],
   imports: [
     // angular

@@ -29,4 +29,18 @@ export class PageComponent implements OnInit {
   createEntry() {
     this.page.entries.push(this.data.createEntry());
   }
+
+  deleteEntry(index: number) {
+    if (confirm('Delete the entry?')) {
+      this.data.delete(this.page.entries, index);
+    }
+  }
+
+  moveUpEntry(index: number) {
+    this.data.move(this.page.entries, index, index - 1);
+  }
+
+  moveDownEntry(index: number) {
+    this.data.move(this.page.entries, index, index + 1);
+  }
 }

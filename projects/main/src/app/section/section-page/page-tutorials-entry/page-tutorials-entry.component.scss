@@ -1,0 +1,23 @@
+@import "params";
+
+.entry {
+  display: block;
+  border: 2px solid $tutorialsColor;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  margin: $grid 0;
+  padding: 0;
+}
+
+.title {
+  background: $tutorialsColor;
+  color: #ffffff;
+  font-size: 0.8rem;
+  padding: 0 $grid;
+}
+
+.content {
+  list-style: none;
+  margin: 0;
+  padding: $grid * 2;
+}

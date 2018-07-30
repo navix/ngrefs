@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EntryTextComponent } from './entry-text.component';
+import { CommandParamEntryComponent } from './command-param-entry.component';
 
-describe('EntryTextComponent', () => {
-  let component: EntryTextComponent;
-  let fixture: ComponentFixture<EntryTextComponent>;
+describe('EntryCommandParamComponent', () => {
+  let component: CommandParamEntryComponent;
+  let fixture: ComponentFixture<CommandParamEntryComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ EntryTextComponent ]
+      declarations: [ CommandParamEntryComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(EntryTextComponent);
+    fixture = TestBed.createComponent(CommandParamEntryComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,0 +1,37 @@
+<h4>
+  Links
+  <button uiButton
+          size="sm"
+          (click)="create()">
+    Create link
+  </button>
+</h4>
+<div *ngFor="let link of entry.links">
+  <form uiForm
+        #ngForm="ngForm"
+        class="layout-aligned">
+    <ui-form-field label="Url">
+      <input [(ngModel)]="link.url"
+             name="url">
+    </ui-form-field>
+
+    <ui-form-field label="Label">
+      <app-message [(ngModel)]="link.label"
+                   name="text"
+                   context="Link label">
+      </app-message>
+    </ui-form-field>
+
+    <ui-form-field label="Lang">
+      <select [(ngModel)]="link.lang"
+              uiSelect
+              name="lang"
+              required>
+        <option *ngFor="let lang of langs"
+                [value]="lang">
+          {{ lang }}
+        </option>
+      </select>
+    </ui-form-field>
+  </form>
+</div>

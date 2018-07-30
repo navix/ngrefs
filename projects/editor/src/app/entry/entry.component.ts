@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { ContentEntry } from '../../../../main/src/app/content/meta';
 
 @Component({
@@ -8,12 +8,30 @@ import { ContentEntry } from '../../../../main/src/app/content/meta';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class EntryComponent implements OnInit {
+  @Output() delete = new EventEmitter();
+
+  @Output() moveUp = new EventEmitter();
+
+  @Output() moveDown = new EventEmitter();
+
+  colors = {
+    text: 'grey',
+    'command-param': 'pink',
+    hint: 'blue',
+    tutorials: 'green',
+  };
+
   @Input() entry: ContentEntry;
 
   constructor() {
   }
 
-  ngOnInit() {
+  get color() {
+    if (this.entry) {
+      return this.colors[this.entry.type];
+    }
   }
 
+  ngOnInit() {
+  }
 }

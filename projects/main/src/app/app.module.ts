@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { MdRenderModule, MdRenderService } from '@nvxme/ngx-md-render';
+import { UiModule } from 'ui';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContentMessageComponent } from './content-message/content-message.component';
@@ -12,6 +13,8 @@ import { VersionPageComponent } from './version-page/version-page.component';
 import { SectionMenuComponent } from './section/section-menu/section-menu.component';
 import { PageTextEntryComponent } from './section/section-page/page-text-entry/page-text-entry.component';
 import { PageCommandParamEntryComponent } from './section/section-page/page-command-param-entry/page-command-param-entry.component';
+import { PageHintEntryComponent } from './section/section-page/page-hint-entry/page-hint-entry.component';
+import { PageTutorialsEntryComponent } from './section/section-page/page-tutorials-entry/page-tutorials-entry.component';
 
 @NgModule({
   declarations: [
@@ -24,12 +27,15 @@ import { PageCommandParamEntryComponent } from './section/section-page/page-comm
     SectionMenuComponent,
     PageTextEntryComponent,
     PageCommandParamEntryComponent,
+    PageHintEntryComponent,
+    PageTutorialsEntryComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
     MdRenderModule,
+    UiModule,
   ],
   providers: [
     MdRenderService,

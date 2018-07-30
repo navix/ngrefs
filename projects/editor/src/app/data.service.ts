@@ -65,6 +65,10 @@ export class DataService {
     console.log('DATA', this.data);
   }
 
+  delete(array: any, index: number) {
+    array.splice(index, 1);
+  }
+
   move(array: any[], from: number, to: number) {
     if (to >= 0 && to < array.length) {
       array.splice(to, 0, array.splice(from, 1)[0]);

@@ -42,10 +42,10 @@ export interface ContentPage {
   url?: string;
   title?: ContentMessageRef;
   menuItems?: ContentMenuItem[];
-  entries: (ContentEntry | ContentTextEntry | ContentCommandParamEntry)[];
+  entries: (ContentEntry | ContentTextEntry | ContentCommandParamEntry | ContentHintEntry | ContentTutorialsEntry)[];
 }
 
-export type ContentEntryType = 'text' | 'command-param';
+export type ContentEntryType = 'text' | 'command-param' | 'hint' | 'tutorials';
 
 export interface ContentEntry {
   id: string;
@@ -67,6 +67,20 @@ export interface ContentCommandParamEntry extends ContentEntry {
   default?: string;
   aliases?: string;
   description?: ContentMessageRef;
+}
+
+export interface ContentHintEntry extends ContentEntry {
+  type: 'hint';
+  text: ContentMessageRef;
+}
+
+export interface ContentTutorialsEntry extends ContentEntry {
+  type: 'tutorials';
+  links: {
+    url?: string;
+    label?: ContentMessageRef;
+    lang: string;
+  }[];
 }
 
 export interface ContentMessage {

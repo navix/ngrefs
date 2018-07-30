@@ -3,6 +3,7 @@ import { Component, Inject, NgZone, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { take } from 'rxjs/operators';
 import { ContentPage } from '../../content/meta';
+import { VersionPageComponent } from '../../version-page/version-page.component';
 import { SectionHolderComponent } from '../section-holder/section-holder.component';
 
 @Component({
@@ -19,7 +20,12 @@ export class SectionPageComponent implements OnInit {
     private zone: NgZone,
     @Inject(DOCUMENT) private document: any,
     private sectionHolder: SectionHolderComponent,
+    private versionComponent: VersionPageComponent,
   ) {
+  }
+
+  get showHints() {
+    return this.versionComponent.showHints;
   }
 
   ngOnInit() {

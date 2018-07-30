@@ -3,7 +3,7 @@ import { Component, Inject, NgZone, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AppComponent } from '../app.component';
-import { ContentSection, ContentVersion } from '../content/meta';
+import { ContentVersion } from '../content/meta';
 import { versions } from '../content/versions';
 
 @Component({
@@ -15,6 +15,8 @@ export class VersionPageComponent implements OnInit {
   version: ContentVersion;
 
   lang: string;
+
+  showHints = true;
 
 //  hrefReplacer = (str: any, href: any, offset: any, s: any): string => {
 //    if (href[0] === '.' || href[0] === '#') {

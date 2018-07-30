@@ -346,13 +346,62 @@
                   },
                   "description": {
                     "id": "c9cc4e46-db29-b80d-1331-91920b774ea1"
+                  },
+                  "head": {
+                    "id": "8a31bb95-540d-4ac9-80f4-be17bae5336e"
                   }
                 },
                 {
-                  "id": "cdd76273-8733-9e0a-8b3b-2377823f6a83",
-                  "type": "text",
+                  "id": "f034a269-e9e3-007b-47a6-86d6e24447fa",
+                  "type": "hint",
+                  "head": {
+                    "id": "296a1cf4-3ca3-7df1-9442-29d654da3d32"
+                  },
                   "text": {
-                    "id": "3068f24e-a900-b22b-1e73-93fb791671b9"
+                    "id": "bdb4679b-4ec8-349c-efcf-9806388a56b2"
+                  }
+                },
+                {
+                  "id": "e68053df-176b-5110-9078-87adb5d8bca5",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "02990e7c-994c-cbc8-d33c-e30f8b102bf2"
+                  },
+                  "text": {
+                    "id": "2f2bdad5-4620-670f-dfcc-47e198142506"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "035d2a9e-d944-6371-b916-6be90ba5fffc"
+                      },
+                      "url": "https://google.com",
+                      "lang": "en"
+                    },
+                    {
+                      "label": {
+                        "id": "af2a47d1-7b97-332d-d7d2-e30ad2be8e92"
+                      },
+                      "url": "https://twitter.com",
+                      "lang": "en"
+                    },
+                    {
+                      "label": {
+                        "id": "434320a4-0f39-e623-aade-b49030a84c35"
+                      },
+                      "url": "http://github.com",
+                      "lang": "ru"
+                    }
+                  ]
+                },
+                {
+                  "id": "9a79b23b-a221-9efb-6e1a-aa71120045fa",
+                  "type": "text",
+                  "head": {
+                    "id": "2e0df2e5-2fe0-5077-52ad-5b9f2e68960e"
+                  },
+                  "text": {
+                    "id": "cf177173-ca43-d40d-8413-759adf429985"
                   }
                 }
               ],
@@ -3679,11 +3728,11 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Я постарался собрать в максимально удобном и полном виде информацию по работе с Angular CLI. Частично из wiki официального репозитория, частично из исходных кодов.\n\nВерсия Angular CLI на момент актуализации материалов: **1.6.1**.\n\n> Так будут выделены подсказки о том, зачем нужен функционал. Читая только их, вы cможете быстро ознакомиться с задачами, которые можно выполнить.\n\n## Контакты\n\nБуду рад узнать о предложениях, пожеланиях и правках. В комментариях или на [email](mailto:alex@nvx.me).\n"
+              "text": "Я постарался собрать в максимально удобном и полном виде информацию по работе с Angular CLI. Частично из wiki официального репозитория, частично из исходных кодов.\n\n\n"
             },
             {
               "lang": "ru",
-              "text": "Я постарался собрать в максимально удобном и полном виде информацию по работе с Angular CLI. Частично из wiki официального репозитория, частично из исходных кодов.\n\nВерсия Angular CLI на момент актуализации материалов: **1.6.1**.\n\n> Так будут выделены подсказки о том, зачем нужен функционал. Читая только их, вы cможете быстро ознакомиться с задачами, которые можно выполнить.\n\n## Контакты\n\nБуду рад узнать о предложениях, пожеланиях и правках. В комментариях или на [email](mailto:alex@nvx.me).\n"
+              "text": "Я постарался собрать в максимально удобном и полном виде информацию по работе с Angular CLI. Частично из wiki официального репозитория, частично из исходных кодов.\n\n"
             }
           ]
         },
@@ -17273,6 +17322,448 @@
             {
               "lang": "en",
               "text": ""
+            }
+          ]
+        },
+        {
+          "id": "43701f74-cfac-661a-38e0-a45bbdd750bb",
+          "context": "Section title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d0e96dc4-9b18-3552-5fad-1ff1310de1aa",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "900fdc03-5d92-936d-d438-6bac6e79a26c",
+          "context": "Entry head",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8a31bb95-540d-4ac9-80f4-be17bae5336e",
+          "context": "Entry head",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "8319b2c7-d139-f38d-b717-66c27d0c1853",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "e2fb8b84-2382-74b5-f123-a5779fa7f288",
+          "context": "Entry head",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "fc4037e9-6274-30bd-1afa-42c7ff4af551",
+          "context": "Entry head",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "35bffc79-355b-eabc-66fa-8ef832c398e5",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1577ae01-4db0-e1cc-970f-a4db5170fa22",
+          "context": "Entry head",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "296a1cf4-3ca3-7df1-9442-29d654da3d32",
+          "context": "Entry head",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "11474721-6f19-4848-cbf9-e16decb99dfa",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "bdb4679b-4ec8-349c-efcf-9806388a56b2",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Так будут выделены подсказки о том, зачем нужен функционал. Читая только их, вы cможете быстро ознакомиться с задачами, которые можно выполнить."
+            },
+            {
+              "lang": "ru",
+              "text": "Так будут выделены подсказки о том, зачем нужен функционал. Читая только их, вы cможете быстро ознакомиться с задачами, которые можно выполнить."
+            }
+          ]
+        },
+        {
+          "id": "2d6a4bff-015c-5207-5925-629cb962fbb7",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "d62ce4cf-211a-3cbd-51ec-1d42db1151c4",
+          "context": "Entry head",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2e0df2e5-2fe0-5077-52ad-5b9f2e68960e",
+          "context": "Entry head",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c66b0a24-eb22-9699-af32-78c57f65e953",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "cf177173-ca43-d40d-8413-759adf429985",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Контакты\n\nБуду рад узнать о предложениях, пожеланиях и правках. В комментариях или на [email](mailto:alex@nvx.me)."
+            },
+            {
+              "lang": "ru",
+              "text": "## Контакты\n\nБуду рад узнать о предложениях, пожеланиях и правках. В комментариях или на [email](mailto:alex@nvx.me)."
+            }
+          ]
+        },
+        {
+          "id": "6bdf7696-fdd0-1127-8bfa-bd1f94f9e03c",
+          "context": "Section title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "39b7bf0c-67dc-c42b-b3e4-aa7ccba57fec",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "b307662b-798d-e00a-35c3-ca7133292a37",
+          "context": "Entry head",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "01ef1475-541b-2a0b-2c45-06f660445026",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3f15cfdf-058c-95fd-2fa0-0c268077673f",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "59e48209-fcfe-12fb-5101-dd4bd919c2db",
+          "context": "Entry head",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "ea173ac1-1302-76e3-2daa-3f5197ed8d0c",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "68c1e5a9-3c01-d5f4-029e-2ebed3c32fa8",
+          "context": "Entry head",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "02990e7c-994c-cbc8-d33c-e30f8b102bf2",
+          "context": "Entry head",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "1f5a3e43-8bdc-7edf-c929-909ddd16e533",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "2f2bdad5-4620-670f-dfcc-47e198142506",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "633cde30-ab1f-fae6-8456-6fe5bc4db9de",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "035d2a9e-d944-6371-b916-6be90ba5fffc",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Google"
+            }
+          ]
+        },
+        {
+          "id": "3ab4fada-a033-46d0-c1bc-246e673bd60f",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "af2a47d1-7b97-332d-d7d2-e30ad2be8e92",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Link to twitter"
+            }
+          ]
+        },
+        {
+          "id": "72632d4f-1924-ad67-c89c-a7d5e2496ac0",
+          "context": "Section title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "c161adf5-57bb-1edf-9814-8d331cc2afd5",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "3ed999b5-71ad-0451-ddce-e632efb3e292",
+          "context": "Entry head",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "619c9c15-8f8d-8b1e-bd8b-fc45cb9b5704",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "5867a5cb-7e4f-0dbe-c9fe-666116319997",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "60036843-236e-4a73-d76f-0f731b6bc76b",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "a75d1fa9-5367-d75b-414c-6b86b7bc1aa2",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "823ae73a-a92a-f17d-9629-b23fff474079",
+          "context": "Entry head",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "f78acb7e-26a0-61e2-cfda-ef2ec6c715c9",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "61495dc5-5c6d-c1d0-78a9-e02b64e6d5cc",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "id": "434320a4-0f39-e623-aade-b49030a84c35",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ""
+            },
+            {
+              "lang": "ru",
+              "text": "GitHub RU LINK"
             }
           ]
         }

@@ -1,22 +1,52 @@
-<form uiForm
-      #ngForm="ngForm"
-      class="layout-aligned">
-  <ui-form-field label="Type">
-    <select [(ngModel)]="entry.type"
-            uiSelect
-            name="type"
-            required>
-      <option value="text">Text</option>
-      <option value="command-param">Command param</option>
-    </select>
-    <span *kitFormError="'required'">Field is required</span>
-  </ui-form-field>
-</form>
+<div class="entry" [style.borderColor]="color">
+  <form uiForm
+        #ngForm="ngForm"
+        class="layout-aligned">
+    <ui-form-field label="Type">
+      <select [(ngModel)]="entry.type"
+              uiSelect
+              name="type"
+              required>
+        <option value="text">Text</option>
+        <option value="hint">Hint</option>
+        <option value="tutorials">Tutorials</option>
+        <option value="command-param">Command param</option>
+      </select>
+      <span *kitFormError="'required'">Field is required</span>
+    </ui-form-field>
+  </form>
 
-<app-entry-text *ngIf="entry.type === 'text'"
-                [entry]="entry">
-</app-entry-text>
+  <app-text-entry *ngIf="entry.type === 'text'"
+                  [entry]="entry">
+  </app-text-entry>
 
-<app-entry-command-param *ngIf="entry.type === 'command-param'"
-                         [entry]="entry">
-</app-entry-command-param>
+  <app-command-param-entry *ngIf="entry.type === 'command-param'"
+                           [entry]="entry">
+  </app-command-param-entry>
+
+  <app-hint-entry *ngIf="entry.type === 'hint'"
+                  [entry]="entry">
+  </app-hint-entry>
+
+  <app-tutorials-entry *ngIf="entry.type === 'tutorials'"
+                  [entry]="entry">
+  </app-tutorials-entry>
+
+  <div class="actions">
+    <button uiButton
+            size="sm"
+            (click)="delete.emit()">
+      Delete
+    </button>
+    <button uiButton
+            size="sm"
+            (click)="moveUp.emit()">
+      Move up
+    </button>
+    <button uiButton
+            size="sm"
+            (click)="moveDown.emit()">
+      Move down
+    </button>
+  </div>
+</div>

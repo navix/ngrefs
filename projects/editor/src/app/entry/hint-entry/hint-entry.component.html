@@ -1,0 +1,10 @@
+<form uiForm
+      #ngForm="ngForm"
+      class="layout-aligned">
+  <ui-form-field label="Text">
+    <app-message [(ngModel)]="entry.text"
+                 name="text"
+                 context="Entry text">
+    </app-message>
+  </ui-form-field>
+</form>

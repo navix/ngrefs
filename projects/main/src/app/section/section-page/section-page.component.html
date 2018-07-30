@@ -6,12 +6,22 @@
   <div class="entries">
     <ng-container *ngFor="let entry of page.entries">
       <ng-container [ngSwitch]="entry.type">
-        <div *ngSwitchCase="'text'">
+        <ng-container *ngSwitchCase="'text'">
           <app-page-text-entry [entry]="entry"></app-page-text-entry>
-        </div>
-        <div *ngSwitchCase="'command-param'">
+        </ng-container>
+        <ng-container *ngSwitchCase="'command-param'">
           <app-page-command-param-entry [entry]="entry"></app-page-command-param-entry>
-        </div>
+        </ng-container>
+        <ng-container *ngSwitchCase="'hint'">
+          <ng-container *ngIf="showHints">
+            <app-page-hint-entry [entry]="entry"></app-page-hint-entry>
+          </ng-container>
+        </ng-container>
+        <ng-container *ngSwitchCase="'tutorials'">
+          <ng-container *ngIf="showHints">
+            <app-page-tutorials-entry [entry]="entry"></app-page-tutorials-entry>
+          </ng-container>
+        </ng-container>
         <div *ngSwitchDefault>
           {{ entry | json }}
         </div>
