@@ -5,7 +5,6 @@ import { ContentTextEntry } from '../../../content/meta';
   selector: 'app-page-text-entry',
   templateUrl: './page-text-entry.component.html',
   styleUrls: ['./page-text-entry.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PageTextEntryComponent implements OnInit {
   @Input() entry: ContentTextEntry;

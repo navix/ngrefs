@@ -5,7 +5,6 @@ import { ContentCommandParamEntry } from '../../../content/meta';
   selector: 'app-page-command-param-entry',
   templateUrl: './page-command-param-entry.component.html',
   styleUrls: ['./page-command-param-entry.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PageCommandParamEntryComponent implements OnInit {
   @Input() entry: ContentCommandParamEntry;

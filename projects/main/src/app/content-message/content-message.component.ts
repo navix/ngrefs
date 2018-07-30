@@ -1,6 +1,6 @@
 import { Component, HostBinding, Input, OnChanges, OnInit } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { uuid } from '@ngx-kit/core';
 import { MdRenderService } from '@nvxme/ngx-md-render';
 import { ContentMessageRef } from '../content/meta';
@@ -21,6 +21,8 @@ export class ContentMessageComponent implements OnInit, OnChanges {
   html: SafeHtml;
 
   links = new Map<string, string>();
+
+  lang: string;
 
   hrefReplacer = (str: any, href: any, offset: any, s: any): string => {
     if (href[0] === '.' || href[0] === '#') {
@@ -52,18 +54,42 @@ export class ContentMessageComponent implements OnInit, OnChanges {
   }
 
   ngOnInit() {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        if (this.lang !== this.versionPage.lang) {
+          this.update();
+        }
+      }
+    });
   }
 
   ngOnChanges() {
+    this.update();
+  }
+
+  clickHandler(event: any) {
+    const path = event.path || (event.composedPath && event.composedPath());
+    const a = path.find(n => n.nodeName === 'A');
+    if (a) {
+      const routerLink = a.getAttribute('router-link');
+      if (routerLink) {
+        this.router.navigateByUrl(this.links.get(routerLink));
+        event.preventDefault();
+      }
+    }
+  }
+
+  private update() {
+    this.lang = this.versionPage.lang;
     if (this.ref.id) {
       const message = this.versionPage.version.messages.find(m => m.id === this.ref.id);
       if (message) {
-        const locale = message.locales.find(l => l.lang === this.versionPage.lang);
+        const locale = message.locales.find(l => l.lang === this.lang);
         if (locale) {
           this.text = locale.text;
           this.highlight = false;
         } else {
-          console.warn(`ContentMessage: Lang "${this.versionPage.lang}" for Message with id "${this.ref.id}" not found!`);
+          console.warn(`ContentMessage: Lang "${this.lang}" for Message with id "${this.ref.id}" not found!`);
           this.text = this.ref.id;
           this.highlight = true;
         }
@@ -82,18 +108,6 @@ export class ContentMessageComponent implements OnInit, OnChanges {
       this.highlight = false;
     } else {
       console.warn(`ContentNode: Invalid ContentMessageRef`);
-    }
-  }
-
-  clickHandler(event: any) {
-    const path = event.path || (event.composedPath && event.composedPath());
-    const a = path.find(n => n.nodeName === 'A');
-    if (a) {
-      const routerLink = a.getAttribute('router-link');
-      if (routerLink) {
-        this.router.navigateByUrl(this.links.get(routerLink));
-        event.preventDefault();
-      }
     }
   }
 }

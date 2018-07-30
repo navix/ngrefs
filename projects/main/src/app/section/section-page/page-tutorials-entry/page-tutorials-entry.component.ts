@@ -6,7 +6,6 @@ import { VersionPageComponent } from '../../../version-page/version-page.compone
   selector: 'app-page-tutorials-entry',
   templateUrl: './page-tutorials-entry.component.html',
   styleUrls: ['./page-tutorials-entry.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PageTutorialsEntryComponent implements OnInit, OnChanges {
   @Input() entry: ContentTutorialsEntry;

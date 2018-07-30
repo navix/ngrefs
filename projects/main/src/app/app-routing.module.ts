@@ -9,7 +9,7 @@ const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: `ru/${defVersion.url}`,
+    redirectTo: `en/${defVersion.url}`,
   },
   {
     path: ':lang/:versionUrl',

@@ -1,5 +1,5 @@
 import { DOCUMENT } from '@angular/common';
-import { Component, Inject, NgZone, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, Inject, NgZone, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AppComponent } from '../app.component';
@@ -41,6 +41,7 @@ export class VersionPageComponent implements OnInit {
     @Inject(DOCUMENT) private document: any,
     private zone: NgZone,
     private app: AppComponent,
+    private cdr: ChangeDetectorRef,
   ) {
   }
 

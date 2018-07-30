@@ -26,7 +26,8 @@
           Show hints & tutorials
         </label>
         <div class="langs">
-          <a *ngFor="let versionLang of version.langs">{{ versionLang }}</a>
+          <a *ngFor="let versionLang of version.langs"
+             [routerLink]="['/', versionLang, version.url]">{{ versionLang }}</a>
         </div>
       </div>
     </div>
