@@ -1,0 +1,14 @@
+@import "params";
+
+.link {
+  border-top: 1px solid #bbbbbb;
+  margin-top: $grid * 2;
+  padding-top: $grid * 2;
+  .actions {
+    padding: $grid;
+    text-align: center;
+    button {
+      margin-right: $grid;
+    }
+  }
+}

@@ -15,6 +15,7 @@ import { PageTextEntryComponent } from './section/section-page/page-text-entry/p
 import { PageCommandParamEntryComponent } from './section/section-page/page-command-param-entry/page-command-param-entry.component';
 import { PageHintEntryComponent } from './section/section-page/page-hint-entry/page-hint-entry.component';
 import { PageTutorialsEntryComponent } from './section/section-page/page-tutorials-entry/page-tutorials-entry.component';
+import { UiMessageComponent } from './ui-message/ui-message.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { PageTutorialsEntryComponent } from './section/section-page/page-tutoria
     PageCommandParamEntryComponent,
     PageHintEntryComponent,
     PageTutorialsEntryComponent,
+    UiMessageComponent,
   ],
   imports: [
     BrowserModule,

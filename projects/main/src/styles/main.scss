@@ -100,6 +100,18 @@ ul {
   .-highlight {
     animation: 800ms linear highlight-effect;
   }
+  table {
+    border-collapse: collapse;
+    tr {
+      td {
+        border: 1px solid #f3f3f3;
+        padding: $grid / 2 $grid;
+        &:first-child {
+          min-width: 75px;
+        }
+      }
+    }
+  }
 }
 
 @keyframes highlight-effect {

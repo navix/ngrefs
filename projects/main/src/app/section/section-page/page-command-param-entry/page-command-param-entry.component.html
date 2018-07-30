@@ -6,28 +6,28 @@
 <table>
   <tr *ngIf="entry.paramType">
     <td>
-      <app-content-message [ref]="{id: 'Type'}"></app-content-message>
+      <app-ui-message id="CommandParam_Type"></app-ui-message>
     </td>
     <td><code>{{ entry.paramType }}</code></td>
   </tr>
 
   <tr *ngIf="entry.values">
     <td>
-      <app-content-message [ref]="{id: 'Values'}"></app-content-message>
+      <app-ui-message id="CommandParam_Values"></app-ui-message>
     </td>
     <td><code>{{ entry.values }}</code></td>
   </tr>
 
   <tr *ngIf="entry.default">
     <td>
-      <app-content-message [ref]="{id: 'Default'}"></app-content-message>
+      <app-ui-message id="CommandParam_Default"></app-ui-message>
     </td>
     <td><code>{{ entry.default }}</code></td>
   </tr>
 
   <tr *ngIf="entry.aliases">
     <td>
-      <app-content-message [ref]="{id: 'Aliases'}"></app-content-message>
+      <app-ui-message id="CommandParam_Aliases"></app-ui-message>
     </td>
     <td><code>{{ entry.aliases }}</code></td>
   </tr>

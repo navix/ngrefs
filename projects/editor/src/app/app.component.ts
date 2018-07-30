@@ -30,7 +30,11 @@ export class AppComponent {
   }
 
   save() {
-    const blob = new Blob([JSON.stringify(this.data.data, null, 2)], {type: 'text/plain;charset=utf-8'});
+    this.data.cleanUpMessages();
+    const blob = new Blob(
+      [JSON.stringify(this.data.data, null, 2)],
+      {type: 'text/plain;charset=utf-8'},
+    );
     saveAs(blob, 'content.json');
   }
 }

@@ -6,7 +6,8 @@
     Create link
   </button>
 </h4>
-<div *ngFor="let link of entry.links">
+<div *ngFor="let link of entry.links; let index = index"
+     class="link">
   <form uiForm
         #ngForm="ngForm"
         class="layout-aligned">
@@ -34,4 +35,9 @@
       </select>
     </ui-form-field>
   </form>
+  <div class="actions">
+    <button uiButton size="sm" (click)="delete(index)">Delete</button>
+    <button uiButton size="sm" (click)="moveUp(index)">Move Up</button>
+    <button uiButton size="sm" (click)="moveDown(index)">Move Down</button>
+  </div>
 </div>

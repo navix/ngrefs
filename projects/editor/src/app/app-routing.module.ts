@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MenuComponent } from './menu/menu/menu.component';
+import { MessagesListComponent } from './message/messages-list/messages-list.component';
 import { PageComponent } from './page/page/page.component';
 import { SectionGeneralComponent } from './section/section-general/section-general.component';
 import { SectionPagesComponent } from './section/section-pages/section-pages.component';
@@ -50,6 +51,10 @@ const routes: Routes = [
         ],
       },
     ],
+  },
+  {
+    path: 'messages',
+    component: MessagesListComponent,
   },
 ];
 

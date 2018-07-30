@@ -96,3 +96,10 @@ export interface ContentMessageRef {
   id?: string;
   text?: string;
 }
+
+export interface ContentUiMessage {
+  id: string;
+  locales: {
+    [key: string]: string;
+  };
+}

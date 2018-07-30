@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input, OnChanges, OnInit } from '@angular/core';
 import { ContentTutorialsEntry } from '../../../../../main/src/app/content/meta';
+import { DataService } from '../../data.service';
 import { VersionComponent } from '../../version/version/version.component';
 
 @Component({
@@ -15,6 +16,7 @@ export class TutorialsEntryComponent implements OnInit, OnChanges {
 
   constructor(
     private versionComponent: VersionComponent,
+    private data: DataService,
   ) {
   }
 
@@ -30,5 +32,19 @@ export class TutorialsEntryComponent implements OnInit, OnChanges {
 
   create() {
     this.entry.links.push({});
+  }
+
+  delete(index: number) {
+    if (confirm('Delete link?')) {
+      this.data.delete(this.entry.links, index);
+    }
+  }
+
+  moveUp(index: number) {
+    this.data.move(this.entry.links, index, index - 1);
+  }
+
+  moveDown(index: number) {
+    this.data.move(this.entry.links, index, index + 1);
   }
 }

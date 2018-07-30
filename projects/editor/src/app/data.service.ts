@@ -74,4 +74,22 @@ export class DataService {
       array.splice(to, 0, array.splice(from, 1)[0]);
     }
   }
+
+  cleanUpMessages() {
+    this.data.versions.forEach(v => {
+      v.messages = v.messages.filter(m => {
+        if (m.locales) {
+          if (m.locales.find(l => !!l.text)) {
+            return true;
+          } else {
+            // Message has locales but with empty text
+            return false;
+          }
+        } else {
+          // No locales defined in the message
+          return false;
+        }
+      });
+    });
+  }
 }
