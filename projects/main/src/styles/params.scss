@@ -4,7 +4,7 @@ $contentWidth: 800px;
 $sideWidth: 240px;
 $header: 75px;
 
-$darkBg: #444444;
+$darkBg: #292c32;
 $white: #ffffff;
 $textColor: #314766;
 $codeColor: rgba(27, 31, 35, 0.05);
@@ -16,3 +16,7 @@ $linkColorLight: #345678;
 
 $smallShadow: 0 2px 6px 0 rgba(35, 39, 42, 0.15);
 $mediumShadow: 0 9px 30px 0 rgba(35, 39, 42, .1);
+
+$sansSerif: "Roboto", "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+//$serif: 'Lora', serif;
+$monospace: "Consolas", "Inconsolata", "Monaco", "Courier", monospace;

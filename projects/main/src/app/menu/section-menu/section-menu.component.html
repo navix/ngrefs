@@ -21,10 +21,10 @@
         </a>
       </ng-container>
     </ng-container>
-    <app-section-menu *ngIf="item.sub"
+    <main-section-menu *ngIf="item.sub"
                       [items]="item.sub.items"
                       class="children"
                       [class.-active-opt]="item.subActiveOpt">
-    </app-section-menu>
+    </main-section-menu>
   </li>
 </ul>

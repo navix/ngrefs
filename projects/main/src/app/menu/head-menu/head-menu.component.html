@@ -1,0 +1,15 @@
+<div class="brand">
+  <button class="selector">{{ version.title }}</button>
+  <span>References</span>
+</div>
+
+<ul class="sections">
+  <li *ngFor="let section of version.sections">
+    <a *ngIf="!section.disabled"
+       [routerLink]="['../', section.url]"
+       routerLinkActive="-active"
+       [style.border-color]="section.color">
+      <app-content-message [ref]="section.title"></app-content-message>
+    </a>
+  </li>
+</ul>

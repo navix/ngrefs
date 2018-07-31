@@ -1,0 +1,60 @@
+@import "params";
+
+:host {
+  background: $darkBg;
+  box-shadow: $mediumShadow;
+  box-sizing: border-box;
+  color: $white;
+  display: flex;
+  flex-direction: row;
+  padding: 0 $grid * 2;
+  flex-shrink: 0;
+  border-bottom: 1px solid #dcf2f3;
+}
+
+.brand {
+  align-items: baseline;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: $grid 0;
+  .selector {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px dashed $white;
+    color: $white;
+    font-size: 1em;
+    font-weight: 600;
+  }
+}
+
+.sections {
+  list-style: none;
+  margin: $grid 0;
+  padding: 0;
+  li {
+    display: inline-block;
+  }
+  a {
+    border-left: 2px solid transparent;
+    border-radius: 2px;
+    color: $white;
+    display: inline-block;
+    margin-right: $grid;
+    padding: $grid / 2 $grid;
+    text-decoration: none;
+    transition-property: background, box-shadow;
+    transition-duration: .25s;
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 3px;
+      box-shadow: $smallShadow;
+    }
+    &.-active {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 4px;
+      box-shadow: $smallShadow;
+    }
+  }
+}

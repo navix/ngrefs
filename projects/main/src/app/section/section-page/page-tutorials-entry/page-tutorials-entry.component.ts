@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input, OnChanges, OnInit } from '@angular/core';
 import { ContentTutorialsEntry } from '../../../content/meta';
-import { VersionPageComponent } from '../../../version-page/version-page.component';
+import { VersionComponent } from '../../../version/version.component';
 
 @Component({
   selector: 'app-page-tutorials-entry',
@@ -13,7 +13,7 @@ export class PageTutorialsEntryComponent implements OnInit, OnChanges {
   display: boolean;
 
   constructor(
-    private versionComponent: VersionPageComponent,
+    private versionComponent: VersionComponent,
   ) {
   }
 

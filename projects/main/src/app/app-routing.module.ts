@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { defVersion } from './content/versions';
-import { SectionHolderComponent } from './section/section-holder/section-holder.component';
 import { SectionPageComponent } from './section/section-page/section-page.component';
-import { VersionPageComponent } from './version-page/version-page.component';
+import { SectionComponent } from './section/section/section.component';
+import { VersionComponent } from './version/version.component';
 
 const routes: Routes = [
   {
@@ -13,17 +13,22 @@ const routes: Routes = [
   },
   {
     path: ':lang/:versionUrl',
-    component: VersionPageComponent,
+    component: VersionComponent,
     children: [
       {
         path: '',
         pathMatch: 'full',
-        redirectTo: 'cli/intro',
+        redirectTo: 'cli',
       },
       {
         path: ':sectionUrl',
-        component: SectionHolderComponent,
+        component: SectionComponent,
         children: [
+          {
+            path: '',
+            pathMatch: 'full',
+            redirectTo: 'intro',
+          },
           {
             path: ':pageUrl',
             component: SectionPageComponent,
@@ -35,7 +40,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    scrollPositionRestoration: 'enabled',
+  })],
   exports: [RouterModule],
 })
 export class AppRoutingModule {

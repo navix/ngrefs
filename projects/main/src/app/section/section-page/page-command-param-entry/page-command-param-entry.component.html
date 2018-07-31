@@ -1,38 +1,39 @@
 <h3 [id]="entry.name">
-  <span class="name">{{ entry.name }}</span>
-  <code>--{{ entry.name }}</code>
+  <code>{{ entry.name }}</code>
 </h3>
 
-<table>
-  <tr *ngIf="entry.paramType">
-    <td>
-      <app-ui-message id="CommandParam_Type"></app-ui-message>
-    </td>
-    <td><code>{{ entry.paramType }}</code></td>
-  </tr>
+<div class="body">
+  <app-content-message *ngIf="entry.description"
+                       [ref]="entry.description">
+  </app-content-message>
 
-  <tr *ngIf="entry.values">
-    <td>
-      <app-ui-message id="CommandParam_Values"></app-ui-message>
-    </td>
-    <td><code>{{ entry.values }}</code></td>
-  </tr>
+  <table>
+    <tr *ngIf="entry.paramType">
+      <td>
+        <app-ui-message id="CommandParam_Type"></app-ui-message>
+      </td>
+      <td><code>{{ entry.paramType }}</code></td>
+    </tr>
 
-  <tr *ngIf="entry.default">
-    <td>
-      <app-ui-message id="CommandParam_Default"></app-ui-message>
-    </td>
-    <td><code>{{ entry.default }}</code></td>
-  </tr>
+    <tr *ngIf="entry.values">
+      <td>
+        <app-ui-message id="CommandParam_Values"></app-ui-message>
+      </td>
+      <td><code>{{ entry.values }}</code></td>
+    </tr>
 
-  <tr *ngIf="entry.aliases">
-    <td>
-      <app-ui-message id="CommandParam_Aliases"></app-ui-message>
-    </td>
-    <td><code>{{ entry.aliases }}</code></td>
-  </tr>
-</table>
+    <tr *ngIf="entry.default">
+      <td>
+        <app-ui-message id="CommandParam_Default"></app-ui-message>
+      </td>
+      <td><code>{{ entry.default }}</code></td>
+    </tr>
 
-<app-content-message *ngIf="entry.description"
-                     [ref]="entry.description">
-</app-content-message>
+    <tr *ngIf="entry.aliases">
+      <td>
+        <app-ui-message id="CommandParam_Aliases"></app-ui-message>
+      </td>
+      <td><code>{{ entry.aliases }}</code></td>
+    </tr>
+  </table>
+</div>

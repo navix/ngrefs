@@ -18,7 +18,7 @@ import { ContentMenuItem } from '../../../../../main/src/app/content/meta';
 export class MenuItemComponent implements OnInit {
   @Input() item: ContentMenuItem;
 
-  @Output() remove = new EventEmitter();
+  @Output() delete = new EventEmitter();
 
   @Output() moveUp = new EventEmitter();
 

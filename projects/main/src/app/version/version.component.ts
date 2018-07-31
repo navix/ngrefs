@@ -3,20 +3,37 @@ import { ChangeDetectorRef, Component, Inject, NgZone, OnInit } from '@angular/c
 import { DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AppComponent } from '../app.component';
-import { ContentVersion } from '../content/meta';
+import { ContentMenu, ContentVersion } from '../content/meta';
 import { versions } from '../content/versions';
 
 @Component({
-  selector: 'app-version-page',
-  templateUrl: './version-page.component.html',
-  styleUrls: ['./version-page.component.scss'],
+  selector: 'main-version',
+  templateUrl: './version.component.html',
+  styleUrls: ['./version.component.scss'],
 })
-export class VersionPageComponent implements OnInit {
+export class VersionComponent implements OnInit {
   version: ContentVersion;
 
   lang: string;
 
   showHints = true;
+
+  private _menu: ContentMenu;
+
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    private sanitizer: DomSanitizer,
+    @Inject(DOCUMENT) private document: any,
+    private zone: NgZone,
+    private app: AppComponent,
+    private cdr: ChangeDetectorRef,
+  ) {
+  }
+
+  get menu() {
+    return this._menu;
+  }
 
 //  hrefReplacer = (str: any, href: any, offset: any, s: any): string => {
 //    if (href[0] === '.' || href[0] === '#') {
@@ -34,15 +51,9 @@ export class VersionPageComponent implements OnInit {
 //    }
 //  }
 
-  constructor(
-    private route: ActivatedRoute,
-    private router: Router,
-    private sanitizer: DomSanitizer,
-    @Inject(DOCUMENT) private document: any,
-    private zone: NgZone,
-    private app: AppComponent,
-    private cdr: ChangeDetectorRef,
-  ) {
+  set menu(menu: ContentMenu) {
+    this._menu = menu;
+    this.cdr.detectChanges();
   }
 
   ngOnInit() {

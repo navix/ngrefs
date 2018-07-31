@@ -23,8 +23,10 @@ export class MenuItemsComponent implements OnInit {
     this.items.push(this.data.createMenuItem());
   }
 
-  remove(index: number) {
-    this.items.splice(index, 1);
+  delete(index: number) {
+    if (confirm('Delete menu items?')) {
+      this.items.splice(index, 1);
+    }
   }
 
   moveUp(index: number) {

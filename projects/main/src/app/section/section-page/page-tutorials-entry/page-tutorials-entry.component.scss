@@ -17,7 +17,6 @@
 }
 
 .content {
-  list-style: none;
   margin: 0;
-  padding: $grid * 2;
+  padding: $grid * 2 $grid * 2 $grid * 2 $grid * 4;
 }

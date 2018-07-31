@@ -3,11 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng-cli-ref": {
+    "main": {
       "root": "projects/main/",
       "sourceRoot": "projects/main/src",
       "projectType": "application",
-      "prefix": "app",
+      "prefix": "main",
       "schematics": {
         "@schematics/angular:component": {
           "styleext": "scss",
@@ -136,7 +136,7 @@
       "root": "projects/editor/",
       "sourceRoot": "projects/editor/src",
       "projectType": "application",
-      "prefix": "app",
+      "prefix": "editor",
       "schematics": {
         "@schematics/angular:component": {
           "styleext": "scss",

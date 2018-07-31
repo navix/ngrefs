@@ -1,6 +1,8 @@
 <div *ngIf="display"
      class="entry">
-  <div class="title">Tutorials</div>
+  <div class="title">
+    <app-ui-message id="Tutorials"></app-ui-message>
+  </div>
   <ul class="content">
     <ng-container *ngFor="let link of entry.links">
       <li *ngIf="link.lang === 'en' || link.lang === lang">

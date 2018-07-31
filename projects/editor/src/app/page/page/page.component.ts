@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { isDefined } from '@ngx-kit/core';
 import { ContentPage } from '../../../../../main/src/app/content/meta';
 import { DataService } from '../../data.service';
 import { SectionComponent } from '../../section/section/section.component';
@@ -26,8 +27,11 @@ export class PageComponent implements OnInit {
     });
   }
 
-  createEntry() {
+  createEntry(index?: number) {
     this.page.entries.push(this.data.createEntry());
+    if (isDefined(index)) {
+      this.data.move(this.page.entries, this.page.entries.length - 1, index + 1);
+    }
   }
 
   deleteEntry(index: number) {

@@ -3,8 +3,8 @@ import { Component, Inject, NgZone, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { take } from 'rxjs/operators';
 import { ContentPage } from '../../content/meta';
-import { VersionPageComponent } from '../../version-page/version-page.component';
-import { SectionHolderComponent } from '../section-holder/section-holder.component';
+import { VersionComponent } from '../../version/version.component';
+import { SectionComponent } from '../section/section.component';
 
 @Component({
   selector: 'app-section-page',
@@ -19,18 +19,18 @@ export class SectionPageComponent implements OnInit {
     private router: Router,
     private zone: NgZone,
     @Inject(DOCUMENT) private document: any,
-    private sectionHolder: SectionHolderComponent,
-    private versionComponent: VersionPageComponent,
+    private sectionComponent: SectionComponent,
+    private versionComponent: VersionComponent,
   ) {
   }
 
   get showHints() {
-    return this.versionComponent.showHints;
+    return this.sectionComponent.showHints;
   }
 
   ngOnInit() {
     this.route.params.subscribe(({pageUrl}) => {
-      this.page = this.sectionHolder.section.pages.find(p => p.url === pageUrl);
+      this.page = this.sectionComponent.section.pages.find(p => p.url === pageUrl);
     });
     // Handle anchor scrolling
     this.router.events.subscribe(s => {
@@ -57,8 +57,8 @@ export class SectionPageComponent implements OnInit {
           }
         });
     } else {
-      this.document.body.scrollTop = 0;
-      this.document.documentElement.scrollTop = 0;
+//      this.document.body.scrollTop = 0;
+//      this.document.documentElement.scrollTop = 0;
     }
   }
 }

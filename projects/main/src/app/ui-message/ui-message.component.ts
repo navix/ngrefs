@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { uiMessages } from '../content/versions';
-import { VersionPageComponent } from '../version-page/version-page.component';
+import { VersionComponent } from '../version/version.component';
 
 @Component({
   selector: 'app-ui-message',
@@ -10,8 +10,10 @@ import { VersionPageComponent } from '../version-page/version-page.component';
 export class UiMessageComponent implements OnInit {
   @Input() id: string;
 
+  @Input() affix = '';
+
   constructor(
-    private versionComponent: VersionPageComponent,
+    private versionComponent: VersionComponent,
   ) {
   }
 

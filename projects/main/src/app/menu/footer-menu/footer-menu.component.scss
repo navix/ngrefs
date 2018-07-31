@@ -1,0 +1,33 @@
+@import "params";
+
+:host {
+  padding: $grid * 2;
+  text-align: center;
+  > div {
+    margin-bottom: $grid;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.show-hints {
+}
+
+.langs {
+  a {
+    margin: 0 $grid / 2;
+    color: $linkColorLight;
+    &.-active {
+      font-weight: 600;
+      color: $linkColor;
+    }
+  }
+}
+
+.copy {
+  border-top: 1px solid #aaaaaa;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding-top: $grid;
+}

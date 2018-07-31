@@ -15,8 +15,4 @@ export class MessagesListComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  get messages() {
-  }
-
 }

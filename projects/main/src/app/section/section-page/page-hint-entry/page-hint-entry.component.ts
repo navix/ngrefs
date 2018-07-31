@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
-import { VersionPageComponent } from '../../../version-page/version-page.component';
+import { VersionComponent } from '../../../version/version.component';
 
 @Component({
   selector: 'app-page-hint-entry',

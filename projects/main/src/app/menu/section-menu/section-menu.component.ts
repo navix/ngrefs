@@ -1,9 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ContentEntry, ContentMenuItem } from '../../content/meta';
-import { SectionHolderComponent } from '../section-holder/section-holder.component';
+import { SectionComponent } from '../../section/section/section.component';
 
 @Component({
-  selector: 'app-section-menu',
+  selector: 'main-section-menu',
   templateUrl: './section-menu.component.html',
   styleUrls: ['./section-menu.component.scss'],
 })
@@ -11,7 +11,7 @@ export class SectionMenuComponent implements OnInit {
   @Input() items: ContentMenuItem[];
 
   constructor(
-    private sectionComponent: SectionHolderComponent,
+    private sectionComponent: SectionComponent,
   ) {
   }
 

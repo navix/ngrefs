@@ -29,10 +29,14 @@
   </app-hint-entry>
 
   <app-tutorials-entry *ngIf="entry.type === 'tutorials'"
-                  [entry]="entry">
+                       [entry]="entry">
   </app-tutorials-entry>
 
   <div class="actions">
+    <button uiButton
+            (click)="create.emit()">
+      Insert new entry
+    </button>
     <button uiButton
             (click)="delete.emit()">
       Delete

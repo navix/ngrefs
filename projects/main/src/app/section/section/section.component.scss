@@ -1,0 +1,38 @@
+@import "../../../styles/params";
+
+.menu {
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: $sideWidth;
+  main-head-menu {
+    display: block;
+    background: $darkBg;
+    color: $white;
+  }
+  main-section-menu {
+    background: #f9f9f9;
+    display: block;
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: $grid * 2;
+  }
+  main-footer-menu {
+    background: #f0f0f0;
+  }
+}
+
+.content {
+  margin-left: $sideWidth;
+}
+
+.content-wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: $contentWidth;
+  padding: 0 $grid * 4 $grid * 8;
+}

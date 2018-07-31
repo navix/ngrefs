@@ -14,6 +14,8 @@ export class EntryComponent implements OnInit {
 
   @Output() moveDown = new EventEmitter();
 
+  @Output() create = new EventEmitter();
+
   colors = {
     text: 'grey',
     'command-param': 'pink',

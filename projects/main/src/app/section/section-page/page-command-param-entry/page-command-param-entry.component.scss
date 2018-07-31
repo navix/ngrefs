@@ -1,12 +1,25 @@
+@import "params";
+
+:host {
+  display: block;
+  border-radius: 4px;
+  box-shadow: $mediumShadow;
+  margin-bottom: $grid * 4;
+  overflow: hidden;
+}
+
 h3 {
-  align-items: baseline;
-  display: flex;
-  flex-direction: row;
-  .name {
-    flex-grow: 1;
-  }
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0;
   code {
-    font-weight: 400;
-    font-size: 0.55em;
+    box-sizing: border-box;
+    display: block;
+    padding: $grid * 2;
+    width: 100%;
   }
+}
+
+.body {
+  padding: $grid $grid * 2 $grid * 3;
 }

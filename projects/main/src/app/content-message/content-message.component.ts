@@ -1,10 +1,10 @@
-import { Component, HostBinding, Input, OnChanges, OnInit } from '@angular/core';
+import { Component, HostBinding, Input, isDevMode, OnChanges, OnInit } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { uuid } from '@ngx-kit/core';
 import { MdRenderService } from '@nvxme/ngx-md-render';
 import { ContentMessageRef } from '../content/meta';
-import { VersionPageComponent } from '../version-page/version-page.component';
+import { VersionComponent } from '../version/version.component';
 
 @Component({
   selector: 'app-content-message',
@@ -42,7 +42,7 @@ export class ContentMessageComponent implements OnInit, OnChanges {
 
   constructor(
     private md: MdRenderService,
-    private versionPage: VersionPageComponent,
+    private versionPage: VersionComponent,
     private router: Router,
     private route: ActivatedRoute,
     private sanitizer: DomSanitizer,
@@ -85,18 +85,27 @@ export class ContentMessageComponent implements OnInit, OnChanges {
       const message = this.versionPage.version.messages.find(m => m.id === this.ref.id);
       if (message) {
         const locale = message.locales.find(l => l.lang === this.lang);
-        if (locale) {
+        if (locale && locale.text) {
           this.text = locale.text;
           this.highlight = false;
         } else {
-          console.warn(`ContentMessage: Lang "${this.lang}" for Message with id "${this.ref.id}" not found!`);
-          this.text = this.ref.id;
-          this.highlight = true;
+          const enLocal = message.locales.find(l => l.lang === 'en');
+          if (enLocal && enLocal.text) {
+            this.text = enLocal.text;
+          } else {
+            this.text = this.ref.id;
+          }
+          if (isDevMode()) {
+            console.warn(`ContentMessage: Lang "en" for Message with id "${this.ref.id}" not found!`);
+            this.highlight = true;
+          }
         }
       } else {
-        console.warn(`ContentNode: Message with id "${this.ref.id}" not found!`);
+        if (isDevMode()) {
+          console.warn(`ContentNode: Message with id "${this.ref.id}" not found!`);
+          this.highlight = true;
+        }
         this.text = this.ref.id;
-        this.highlight = true;
       }
       const rendered = this.md.render(this.text);
       this.html = this.sanitizer.bypassSecurityTrustHtml(

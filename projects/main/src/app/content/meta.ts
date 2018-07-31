@@ -79,7 +79,7 @@ export interface ContentTutorialsEntry extends ContentEntry {
   links: {
     url?: string;
     label?: ContentMessageRef;
-    lang: string;
+    lang?: string;
   }[];
 }
 

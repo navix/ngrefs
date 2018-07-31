@@ -86,8 +86,9 @@ export class MessageComponent implements OnInit, ControlValueAccessor {
 
   private findMessage() {
     if (this.state && this.state.id) {
-      return this.versionComponent.version.messages
+      const message = this.versionComponent.version.messages
         .find(m => m.id === this.state.id);
+      return message || this.createMessage();
     }
   }
 

@@ -1,0 +1,21 @@
+<div class="langs">
+  <app-ui-message id="Lang" affix=":"></app-ui-message>
+  <a *ngFor="let versionLang of version.langs"
+     [routerLink]="['/', versionLang, version.url]"
+     routerLinkActive="-active">{{ versionLang }}</a>
+</div>
+
+<div class="show-hints">
+  <label>
+    <input type="checkbox"
+           uiCheckbox
+           [ngModel]="showHints"
+           (ngModelChange)="showHintsChange.emit($event)">
+    <app-ui-message id="Footer_ShowHints"></app-ui-message>
+  </label>
+</div>
+
+<div class="copy">
+  &copy; {{ year }} <a href="https://github.com/navix" target="_blank">Sasha Novyk</a>
+  | <a href="https://github.com/navix/ngrefs" target="_blank">GitHub</a>
+</div>
