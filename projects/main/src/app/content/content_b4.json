@@ -352,43 +352,14 @@
                       "label": {
                         "id": "c0bc0089-7155-e04a-ed36-b07b6397c5fc"
                       },
-                      "url": "schematic-application",
-                      "sub": {
-                        "items": [
-                          {
-                            "id": "93ebd70f-832c-281b-cd56-bbd35e1a1a23",
-                            "sub": {
-                              "items": []
-                            },
-                            "label": {
-                              "id": "aa7aa440-1d83-159d-4674-3fb2b1abdb33"
-                            },
-                            "usePageEntries": true,
-                            "usePageUrl": "schematic-application"
-                          }
-                        ]
-                      },
-                      "subActiveOpt": true
+                      "url": "schematic-application"
                     },
                     {
                       "id": "de7a362d-859f-c30a-4903-38f2a030af49",
                       "label": {
                         "id": "f7b9ff16-df14-f437-941b-d61cb52bd508"
                       },
-                      "url": "schematic-app-shell",
-                      "sub": {
-                        "items": [
-                          {
-                            "id": "4f5e807e-b35d-488e-2fa5-9be7f22043fe",
-                            "label": {
-                              "id": "dd2074bf-ff04-5ff2-b409-31bcaf5a4eca"
-                            },
-                            "usePageEntries": true,
-                            "usePageUrl": "schematic-app-shell"
-                          }
-                        ]
-                      },
-                      "subActiveOpt": true
+                      "url": "schematic-app-shell"
                     },
                     {
                       "id": "3bfeb759-31fc-882b-0e92-95262637a8ec",
@@ -399,9 +370,9 @@
                       "sub": {
                         "items": [
                           {
-                            "id": "7521d679-7c7f-b6f5-9297-36eda69646f0",
+                            "id": "192e5936-1bd7-ffff-96ef-2407307f5078",
                             "label": {
-                              "id": "412da38e-91fe-d62f-ff49-ba7fe7c9147c"
+                              "id": "540f0c82-9f9d-3042-ed2d-7fa416545879"
                             },
                             "usePageEntries": true,
                             "usePageUrl": "schematic-class"
@@ -455,60 +426,21 @@
                       "label": {
                         "id": "2d88d0bb-d4c6-ffcf-4a6b-ca12c171644c"
                       },
-                      "url": "schematic-enum",
-                      "sub": {
-                        "items": [
-                          {
-                            "id": "bc977e3c-b678-545b-92e5-7e2c0d400edc",
-                            "label": {
-                              "id": "262a6512-4386-97c4-ea72-71fa20754e41"
-                            },
-                            "usePageEntries": true,
-                            "usePageUrl": "schematic-enum"
-                          }
-                        ]
-                      },
-                      "subActiveOpt": true
+                      "url": "schematic-enum"
                     },
                     {
                       "id": "055a0f9a-9529-0b15-609f-c568200d9c86",
                       "label": {
                         "id": "34971b9c-c946-3526-656f-0006d4b39ced"
                       },
-                      "url": "schematic-guard",
-                      "sub": {
-                        "items": [
-                          {
-                            "id": "94c3fcdd-80e4-e7d3-e8db-f3fa483d93c4",
-                            "label": {
-                              "id": "d104a201-1298-ce84-7a24-2faf8cf18a40"
-                            },
-                            "usePageEntries": true,
-                            "usePageUrl": "schematic-guard"
-                          }
-                        ]
-                      },
-                      "subActiveOpt": true
+                      "url": "schematic-guard"
                     },
                     {
                       "id": "a960a241-a2e8-ab6b-617d-6192d6e11f8a",
                       "label": {
                         "id": "f61f5283-d394-51fb-ee6a-9e4ab37dd59f"
                       },
-                      "url": "schematic-interface",
-                      "sub": {
-                        "items": [
-                          {
-                            "id": "94ea63fe-cbd1-207e-9e94-470493412eec",
-                            "label": {
-                              "id": "fb47aec4-0d2b-84c8-d920-b21231984d78"
-                            },
-                            "usePageEntries": true,
-                            "usePageUrl": "schematic-interface"
-                          }
-                        ]
-                      },
-                      "subActiveOpt": true
+                      "url": "schematic-interface"
                     },
                     {
                       "id": "5752c802-0106-025e-16c6-4efe2e3d2923",
@@ -516,101 +448,35 @@
                         "id": "239cf7f8-ddad-4bb3-039b-c6a8cdc9769b"
                       },
                       "url": "schematic-library",
-                      "urlFragment": "",
-                      "sub": {
-                        "items": [
-                          {
-                            "id": "9edb9709-a9c8-7eb8-34a0-f56024500f07",
-                            "label": {
-                              "id": "afc98211-c906-366c-0aad-aa7509e7b291"
-                            },
-                            "usePageEntries": true,
-                            "usePageUrl": "schematic-library"
-                          }
-                        ]
-                      },
-                      "subActiveOpt": true
+                      "urlFragment": ""
                     },
                     {
                       "id": "afbe7104-ccb2-6f80-d13a-52fd22428397",
                       "label": {
                         "id": "beacea77-7cc6-f166-c6b7-5bdc4ef77c63"
                       },
-                      "url": "schematic-module",
-                      "sub": {
-                        "items": [
-                          {
-                            "id": "55b39e45-8155-387b-c5db-ec654296833b",
-                            "label": {
-                              "id": "8b09a8b6-1965-4087-513d-abd3475eab29"
-                            },
-                            "usePageEntries": true,
-                            "usePageUrl": "schematic-module"
-                          }
-                        ]
-                      },
-                      "subActiveOpt": true
+                      "url": "schematic-module"
                     },
                     {
                       "id": "e592a7f2-3aca-63a9-dc56-8061bcb3ccf2",
                       "label": {
                         "id": "d6707a0e-704f-2f09-a7de-737682ba6128"
                       },
-                      "url": "schematic-pipe",
-                      "sub": {
-                        "items": [
-                          {
-                            "id": "4b7b2ffa-fe5d-f48f-7052-f7b475fdfe11",
-                            "label": {
-                              "id": "c759fa55-e9fb-4411-0b0e-e46e21587ae7"
-                            },
-                            "usePageEntries": true,
-                            "usePageUrl": "schematic-pipe"
-                          }
-                        ]
-                      },
-                      "subActiveOpt": true
+                      "url": "schematic-pipe"
                     },
                     {
                       "id": "8a473d28-845d-243a-4154-1107f5116b57",
                       "label": {
                         "id": "49e9f466-f3e0-9657-bb2c-582628426bb2"
                       },
-                      "url": "schematic-service",
-                      "sub": {
-                        "items": [
-                          {
-                            "id": "1857e898-0a56-a05e-4b70-9ad2f49df4f5",
-                            "label": {
-                              "id": "3df8fec4-ddc6-9b72-9845-da109f1ab727"
-                            },
-                            "usePageEntries": true,
-                            "usePageUrl": "schematic-service"
-                          }
-                        ]
-                      },
-                      "subActiveOpt": true
+                      "url": "schematic-service"
                     },
                     {
                       "id": "0f2e1d7d-e2ed-8b80-d414-51a7036b14cb",
                       "label": {
                         "id": "58bfc6cd-8875-6779-6929-55a676cb55e8"
                       },
-                      "url": "schematic-universal",
-                      "sub": {
-                        "items": [
-                          {
-                            "id": "eeb42d05-f58b-5e49-ce55-e76257c3b82a",
-                            "label": {
-                              "id": "319358ff-4de4-bed2-dad8-7fa90477e9ba"
-                            },
-                            "asGroup": false,
-                            "usePageEntries": true,
-                            "usePageUrl": "schematic-universal"
-                          }
-                        ]
-                      },
-                      "subActiveOpt": true
+                      "url": "schematic-universal"
                     }
                   ]
                 },
@@ -1608,45 +1474,6 @@
                   },
                   "text": {
                     "id": "b413a7de-e4a2-01d4-3004-15fce73a1ac1"
-                  }
-                },
-                {
-                  "id": "8af2912b-46a9-2c90-f740-90e1e16f56b2",
-                  "type": "hint",
-                  "head": {
-                    "id": "f8f3bd9b-24fa-63b1-d88c-b7469435e4b2"
-                  },
-                  "text": {
-                    "id": "bf4d05a5-b93f-d780-3184-68e1364bcac6"
-                  }
-                },
-                {
-                  "id": "672c8574-b973-5edc-e4e0-673627733071",
-                  "type": "tutorials",
-                  "head": {
-                    "id": "dc6cb15a-7b6b-bb8f-f64c-9afa0fdbb074"
-                  },
-                  "text": {
-                    "id": "049c50d3-50a6-3810-1c7b-33b7411f4f12"
-                  },
-                  "links": [
-                    {
-                      "label": {
-                        "id": "1e2996b3-f352-b072-4c1e-898e05c1bf70"
-                      },
-                      "url": "https://blog.angular-university.io/angular-app-shell/",
-                      "lang": "en"
-                    }
-                  ]
-                },
-                {
-                  "id": "2a6f4b52-eca4-01cf-03af-1b4c3d1e5b48",
-                  "type": "text",
-                  "head": {
-                    "id": "07dd6880-a313-f937-f6eb-80357fefa98d"
-                  },
-                  "text": {
-                    "id": "429025e0-f5a1-470e-6c23-40459d616223"
                   }
                 },
                 {
@@ -4155,157 +3982,6 @@
                   "text": {
                     "id": "114c627c-877a-d98b-bac0-0d9a3b460dd2"
                   }
-                },
-                {
-                  "id": "ce0fb899-081d-eeaf-2a92-864ce56004c5",
-                  "type": "text",
-                  "head": {
-                    "id": "80d79f96-2aa2-fe50-f072-ea6a12229c1d"
-                  },
-                  "text": {
-                    "id": "6cc8dc8f-b1a2-a60f-fbe5-2b618f45eb8d"
-                  }
-                },
-                {
-                  "id": "982a6e6c-82a2-0fdb-dd58-b20cbc2c648d",
-                  "type": "command-param",
-                  "head": {
-                    "text": "inlineStyle"
-                  },
-                  "text": {
-                    "id": "81cfdb1e-2d72-a317-f332-2ad079e4b50c"
-                  },
-                  "description": {
-                    "id": "c80018fa-3b01-db11-8181-fcd262e54698"
-                  },
-                  "name": "inlineStyle",
-                  "headId": "inlineStyle",
-                  "paramType": "boolean",
-                  "default": "false",
-                  "aliases": "s"
-                },
-                {
-                  "id": "8f313915-a85f-9478-9391-e7bb535da743",
-                  "type": "command-param",
-                  "head": {
-                    "text": "inlineTemplate"
-                  },
-                  "text": {
-                    "id": "3a69b885-8cd8-fd4f-5495-37a1f9db63b3"
-                  },
-                  "description": {
-                    "id": "3f1c22d8-42aa-0a0e-4841-94c95e72de23"
-                  },
-                  "name": "inlineTemplate",
-                  "headId": "inlineTemplate",
-                  "paramType": "boolean",
-                  "default": "false",
-                  "aliases": "t"
-                },
-                {
-                  "id": "c5d245bc-ba9c-7c40-5ac7-365de7bd5e53",
-                  "type": "command-param",
-                  "head": {
-                    "text": "viewEncapsulation"
-                  },
-                  "text": {
-                    "id": "720d72cf-0180-75c9-77f3-ad00be854f6a"
-                  },
-                  "description": {
-                    "id": "7e7ec6b6-a090-a308-667e-3d194af9aa93"
-                  },
-                  "name": "viewEncapsulation",
-                  "headId": "viewEncapsulation",
-                  "paramType": "string",
-                  "values": "Emulated, Native, None",
-                  "default": "Emulated"
-                },
-                {
-                  "id": "555bc5f4-f113-03f5-7264-a6388c459f02",
-                  "type": "command-param",
-                  "head": {
-                    "text": "routing"
-                  },
-                  "text": {
-                    "id": "da751d04-a481-5351-ceef-aa5df9a6e99c"
-                  },
-                  "description": {
-                    "id": "833fab1f-d01d-bfc8-9e28-9ab0aa2df357"
-                  },
-                  "name": "routing",
-                  "headId": "routing",
-                  "paramType": "boolean",
-                  "default": "false"
-                },
-                {
-                  "id": "7d971293-964d-0f26-8ad3-aa2e56c1b610",
-                  "type": "command-param",
-                  "head": {
-                    "text": "prefix"
-                  },
-                  "text": {
-                    "id": "69c970f6-8c4e-4397-d92e-bd158c3acacf"
-                  },
-                  "description": {
-                    "id": "3a16e686-3b78-c9bd-c122-4545d50167c9"
-                  },
-                  "name": "prefix",
-                  "headId": "prefix",
-                  "paramType": "string",
-                  "default": "app",
-                  "aliases": "p"
-                },
-                {
-                  "id": "b094e78e-57ba-9978-b904-100ebf849b10",
-                  "type": "command-param",
-                  "head": {
-                    "text": "style"
-                  },
-                  "text": {
-                    "id": "738d3193-f7ca-f101-96ee-c954c2c00e56"
-                  },
-                  "description": {
-                    "id": "4fcc7b51-a2b4-bd7f-2f53-f1bf53f105d2"
-                  },
-                  "name": "style",
-                  "headId": "style",
-                  "paramType": "string",
-                  "default": "css"
-                },
-                {
-                  "id": "94b36cae-ed64-6bf1-a15e-b73b5c5bcdba",
-                  "type": "command-param",
-                  "head": {
-                    "text": "skipTests"
-                  },
-                  "text": {
-                    "id": "b2961ab7-adbe-c219-c7e3-0b678c000b76"
-                  },
-                  "description": {
-                    "id": "774ff075-671d-d22f-8788-7b5391c2bd4b"
-                  },
-                  "name": "skipTests",
-                  "headId": "skipTests",
-                  "paramType": "boolean",
-                  "default": "false",
-                  "aliases": "S"
-                },
-                {
-                  "id": "eaeccfda-ba96-d13e-2fcb-305e34529ea6",
-                  "type": "command-param",
-                  "head": {
-                    "text": "skipPackageJson"
-                  },
-                  "text": {
-                    "id": "e2432dca-882c-d74d-a65e-076d9e88a9a6"
-                  },
-                  "description": {
-                    "id": "1fd85698-876e-f1b3-0185-c5e3eb100bfa"
-                  },
-                  "name": "skipPackageJson",
-                  "headId": "skipPackageJson",
-                  "paramType": "boolean",
-                  "default": "false"
                 }
               ],
               "title": {
@@ -4362,13 +4038,6 @@
                       },
                       "url": "https://github.com/angular/angular-cli/blob/master/docs/documentation/stories/app-shell.md",
                       "lang": "en"
-                    },
-                    {
-                      "label": {
-                        "id": "9f8d620f-d96e-4826-8883-62e536d36e18"
-                      },
-                      "lang": "en",
-                      "url": "https://blog.angular-university.io/angular-app-shell/"
                     }
                   ]
                 },
@@ -4381,276 +4050,6 @@
                   "text": {
                     "id": "9aa456ef-6c3a-9d47-741c-c5abac37a52f"
                   }
-                },
-                {
-                  "id": "322d4626-07a4-43c3-8a84-7fe5e9dd4af3",
-                  "type": "command-param",
-                  "head": {
-                    "text": "clientProject"
-                  },
-                  "text": {
-                    "id": "e032e4d0-ccbe-3ba9-ff51-d29e2dafb4be"
-                  },
-                  "description": {
-                    "id": "3ed3fda3-def4-ff67-ccfe-ff38d2ed4008"
-                  },
-                  "name": "clientProject",
-                  "headId": "clientProject",
-                  "paramType": "string"
-                },
-                {
-                  "id": "c423d73f-926a-5669-beb4-ed67935bb2f9",
-                  "type": "command-param",
-                  "head": {
-                    "text": "universalProject"
-                  },
-                  "text": {
-                    "id": "e3b4ac37-b0d1-26cc-b402-ae7331515712"
-                  },
-                  "description": {
-                    "id": "9071fc5a-fab6-d8dc-dc40-1055f6271aa3"
-                  },
-                  "name": "universalProject",
-                  "headId": "universalProject",
-                  "paramType": "string"
-                },
-                {
-                  "id": "1a8d8531-c838-5c64-45ec-500ba34f3cda",
-                  "type": "command-param",
-                  "head": {
-                    "text": "route"
-                  },
-                  "text": {
-                    "id": "44cf5dd1-29c2-f9e1-cd20-d7464ca7c01a"
-                  },
-                  "description": {
-                    "id": "9a58f0f8-796a-86c2-c0a5-fbabf40a65d5"
-                  },
-                  "name": "route",
-                  "headId": "route",
-                  "paramType": "string",
-                  "default": "shell"
-                },
-                {
-                  "id": "f3c8d729-21cc-e20e-4d09-1b97ac0204a1",
-                  "type": "command-param",
-                  "head": {
-                    "text": "name"
-                  },
-                  "text": {
-                    "id": "93bd09d6-f17b-cc1e-3d7e-8144f29a142b"
-                  },
-                  "description": {
-                    "id": "4adcc4dc-5ba5-7918-b8c3-fe0896f52b63"
-                  },
-                  "name": "name",
-                  "headId": "name",
-                  "paramType": "string"
-                },
-                {
-                  "id": "0e6603d3-2212-0d71-9491-2b323a974ca8",
-                  "type": "command-param",
-                  "head": {
-                    "text": "appId"
-                  },
-                  "text": {
-                    "id": "2075a7fc-2ebd-4131-9fff-e996487e1387"
-                  },
-                  "description": {
-                    "id": "16c8af68-453e-f1a2-5cb6-d00944d28817"
-                  },
-                  "name": "appId",
-                  "headId": "appId",
-                  "paramType": "string",
-                  "default": "serverApp"
-                },
-                {
-                  "id": "a7870f1f-a4a8-a3b6-ac31-47eb799cb6a8",
-                  "type": "command-param",
-                  "head": {
-                    "text": "outDir"
-                  },
-                  "text": {
-                    "id": "156e9a85-f39e-ecea-101c-31d262410c1a"
-                  },
-                  "description": {
-                    "id": "f1bd6544-2260-336d-9cb0-beadf7b8d2dc"
-                  },
-                  "name": "outDir",
-                  "headId": "outDir",
-                  "paramType": "string",
-                  "default": "dist-server"
-                },
-                {
-                  "id": "b80c13d6-83a0-f64e-4120-11e18bb4c7dc",
-                  "type": "command-param",
-                  "head": {
-                    "text": "root"
-                  },
-                  "text": {
-                    "id": "3d322595-3650-2b1c-bf13-245b13e5d268"
-                  },
-                  "description": {
-                    "id": "e23d8a2b-5d38-852a-40ad-c3e6a9f7bb90"
-                  },
-                  "name": "root",
-                  "headId": "root",
-                  "paramType": "string",
-                  "default": "src"
-                },
-                {
-                  "id": "35d8b9b5-c388-290d-b59a-64123fe0f6cc",
-                  "type": "command-param",
-                  "head": {
-                    "text": "index"
-                  },
-                  "text": {
-                    "id": "780f4e44-24c0-e475-5cef-1e14472c4471"
-                  },
-                  "description": {
-                    "id": "5663aa03-e6a8-41ca-78e0-1cc116e4cb52"
-                  },
-                  "name": "index",
-                  "headId": "index",
-                  "paramType": "string",
-                  "default": "index.html"
-                },
-                {
-                  "id": "004b5fea-20fc-f864-70b8-51726f78b42c",
-                  "type": "command-param",
-                  "head": {
-                    "text": "main"
-                  },
-                  "text": {
-                    "id": "36c3b415-4e7c-f455-f102-a0fb189b7601"
-                  },
-                  "description": {
-                    "id": "1ddcc76d-c547-045b-2751-40e31e7b5596"
-                  },
-                  "name": "main",
-                  "headId": "main",
-                  "paramType": "string",
-                  "default": "main.server.ts"
-                },
-                {
-                  "id": "1755d247-a7e0-7eb9-6d66-478cef2f26ed",
-                  "type": "command-param",
-                  "head": {
-                    "text": "test"
-                  },
-                  "text": {
-                    "id": "47f87f4b-12d0-4ec6-4810-c11e7e6aac99"
-                  },
-                  "description": {
-                    "id": "c50e8edd-5f46-e1c5-0a4e-ec474e35f47c"
-                  },
-                  "name": "test",
-                  "headId": "test",
-                  "paramType": "string"
-                },
-                {
-                  "id": "43004fee-e0ce-5c3a-13b5-ff4494d46fdd",
-                  "type": "command-param",
-                  "head": {
-                    "text": "tsconfigFileName"
-                  },
-                  "text": {
-                    "id": "e6f42c97-fdd9-5e12-4089-c294be071467"
-                  },
-                  "links": [],
-                  "description": {
-                    "id": "26949692-d094-509f-6439-de67ec1c4b8b"
-                  },
-                  "name": "tsconfigFileName",
-                  "headId": "tsconfigFileName",
-                  "paramType": "string",
-                  "default": "tsconfig.server"
-                },
-                {
-                  "id": "85d616af-28af-f9c1-eee5-81d9c01ee6e0",
-                  "type": "command-param",
-                  "head": {
-                    "text": "testTsconfigFileName"
-                  },
-                  "text": {
-                    "id": "218734d8-4c0b-c77e-caf7-3f95873aa455"
-                  },
-                  "description": {
-                    "id": "85609bdc-23a6-8db1-85ed-5f7788e0d8d4"
-                  },
-                  "name": "testTsconfigFileName",
-                  "headId": "testTsconfigFileName",
-                  "paramType": "string",
-                  "default": "tsconfig.spec"
-                },
-                {
-                  "id": "9035e052-5cd1-fbb2-dd1a-02a4d7c6f263",
-                  "type": "command-param",
-                  "head": {
-                    "text": "appDir"
-                  },
-                  "text": {
-                    "id": "0e706190-96cb-d589-7a39-a360b40cc89f"
-                  },
-                  "description": {
-                    "id": "9e0ba4d4-91b1-93d9-8372-718fbe19ef88"
-                  },
-                  "name": "appDir",
-                  "headId": "appDir",
-                  "paramType": "string",
-                  "default": "app"
-                },
-                {
-                  "id": "35640ce5-1dce-2f3a-d44f-2378bce3074c",
-                  "type": "command-param",
-                  "head": {
-                    "text": "rootModuleFileName"
-                  },
-                  "text": {
-                    "id": "2a9b79d3-b81c-8102-fd64-b30b90bdabe8"
-                  },
-                  "description": {
-                    "id": "45ed2957-ddc1-59a9-d2ac-ddca24ba7fe4"
-                  },
-                  "name": "rootModuleFileName",
-                  "headId": "rootModuleFileName",
-                  "paramType": "string",
-                  "default": "app.server.module.ts"
-                },
-                {
-                  "id": "037f4062-4828-9ee4-3597-a16994a24f4d",
-                  "type": "command-param",
-                  "head": {
-                    "text": "rootModuleClassName"
-                  },
-                  "text": {
-                    "id": "1230ba94-8122-d9ea-bf2f-13a5a8653444"
-                  },
-                  "description": {
-                    "id": "87d51a0b-0400-0a06-cbd2-4f61b148a872"
-                  },
-                  "name": "rootModuleClassName",
-                  "headId": "rootModuleClassName",
-                  "paramType": "string",
-                  "default": "AppServerModule"
-                },
-                {
-                  "id": "c74d1f6a-7f3f-a934-263c-eb36115b8891",
-                  "type": "command-param",
-                  "head": {
-                    "text": "sourceDir"
-                  },
-                  "text": {
-                    "id": "2ff1498f-7ec5-4b0f-7f2d-ca1d3c2cbae7"
-                  },
-                  "description": {
-                    "id": "f67d3cf2-a8e9-a120-e087-ad39d950b178"
-                  },
-                  "name": "sourceDir",
-                  "headId": "sourceDir",
-                  "paramType": "string",
-                  "default": "src",
-                  "aliases": "D"
                 }
               ],
               "title": {
@@ -5229,50 +4628,6 @@
                   "text": {
                     "id": "66cdcf15-1eb7-d2c1-9e05-75afbe07e092"
                   }
-                },
-                {
-                  "id": "1d1cb9f6-92ac-cfda-fd79-509e0e904c57",
-                  "type": "text",
-                  "head": {
-                    "id": "74c98435-7108-a86a-1cfd-a3cea8ec65be"
-                  },
-                  "text": {
-                    "id": "dbf327bd-4a24-0f32-2b91-57f53576391f"
-                  }
-                },
-                {
-                  "id": "3ce0ed46-02f2-e8ba-43d0-dfbdb09a2236",
-                  "type": "command-param",
-                  "head": {
-                    "text": "project"
-                  },
-                  "text": {
-                    "id": "f8adf52d-2273-6284-6e7a-3a0dc29f9e71"
-                  },
-                  "description": {
-                    "id": "1f2b8487-505f-899f-6ffe-5811ae0f83e0"
-                  },
-                  "name": "project",
-                  "headId": "project",
-                  "paramType": "string",
-                  "default": ""
-                },
-                {
-                  "id": "3f9cdd54-a41c-d8f3-632c-27f105777af6",
-                  "type": "command-param",
-                  "head": {
-                    "text": "lintFix"
-                  },
-                  "text": {
-                    "id": "ada0eabc-0688-45af-3e73-725c66f9cbfc"
-                  },
-                  "description": {
-                    "id": "c39df382-1967-e46a-98d2-af6e7dfe65bc"
-                  },
-                  "name": "lintFix",
-                  "headId": "lintFix",
-                  "paramType": "boolean",
-                  "default": "false"
                 }
               ],
               "title": {
@@ -5302,83 +4657,6 @@
                   "text": {
                     "id": "cb587c0b-a365-4b25-6c50-8dd6c637e725"
                   }
-                },
-                {
-                  "id": "d212abac-ed69-a3e9-83a3-63572d4dbcea",
-                  "type": "text",
-                  "head": {
-                    "id": "aa8288ce-288c-0560-9782-f75c1bcf3bde"
-                  },
-                  "text": {
-                    "id": "4d7be281-b96b-923d-9ee5-3346f85285bc"
-                  }
-                },
-                {
-                  "id": "598710a6-0dd5-c74f-ff8a-ea497382ea5c",
-                  "type": "command-param",
-                  "head": {
-                    "text": "spec"
-                  },
-                  "text": {
-                    "id": "af34844c-2b38-1ab8-4202-af7271289e6e"
-                  },
-                  "description": {
-                    "id": "44cfb16b-6b0e-cc26-ce4f-3f7a5488082c"
-                  },
-                  "name": "spec",
-                  "headId": "spec",
-                  "paramType": "boolean",
-                  "default": "true"
-                },
-                {
-                  "id": "97009875-201e-39f1-0f11-747cbad2315f",
-                  "type": "command-param",
-                  "head": {
-                    "text": "flat"
-                  },
-                  "text": {
-                    "id": "da674dff-8628-27a0-18d6-4abc60ec6d2f"
-                  },
-                  "description": {
-                    "id": "6d282609-cb2b-5403-bd47-058ff490f014"
-                  },
-                  "name": "flat",
-                  "headId": "flat",
-                  "paramType": "boolean",
-                  "default": "true"
-                },
-                {
-                  "id": "90615816-9f8c-e74b-d732-cb8a8739f2d5",
-                  "type": "command-param",
-                  "head": {
-                    "text": "project"
-                  },
-                  "text": {
-                    "id": "bbd40017-d497-6fa3-4fad-ad9bb5cfcb50"
-                  },
-                  "description": {
-                    "id": "a8696a2c-c6e6-5662-c42a-4d7e2c81bc9d"
-                  },
-                  "name": "project",
-                  "headId": "project",
-                  "paramType": "string"
-                },
-                {
-                  "id": "b984ec66-5e3e-8a3a-a090-479f2b81c448",
-                  "type": "command-param",
-                  "head": {
-                    "text": "lintFix"
-                  },
-                  "text": {
-                    "id": "370132da-91b1-94c5-20c4-9c76ca4d860e"
-                  },
-                  "description": {
-                    "id": "7659832f-793d-23ca-64ea-4313b71d7f7f"
-                  },
-                  "name": "lintFix",
-                  "headId": "lintFix",
-                  "paramType": "boolean",
-                  "default": "false"
                 }
               ],
               "title": {
@@ -5408,65 +4686,6 @@
                   "text": {
                     "id": "98852ac3-43f3-4d21-533e-dc1eecbfbb09"
                   }
-                },
-                {
-                  "id": "a9b58460-8ea0-d632-036b-39bab534e8a9",
-                  "type": "text",
-                  "head": {
-                    "id": "643f0531-a825-94bf-56c3-5086d086a5a6"
-                  },
-                  "text": {
-                    "id": "b9990cfc-ce9b-301b-7db9-8643601528de"
-                  }
-                },
-                {
-                  "id": "af1e26f8-5ec5-f848-c25f-afdb32244567",
-                  "type": "command-param",
-                  "head": {
-                    "text": "project"
-                  },
-                  "text": {
-                    "id": "0f7f0196-5e67-48c3-2544-e81553aa4e9e"
-                  },
-                  "description": {
-                    "id": "a3f87bf1-60fe-2f3b-c11e-3dc49717fe60"
-                  },
-                  "name": "project",
-                  "headId": "project",
-                  "paramType": "string"
-                },
-                {
-                  "id": "8239b8c7-37c9-6797-071b-23076d9d161a",
-                  "type": "command-param",
-                  "head": {
-                    "text": "prefix"
-                  },
-                  "text": {
-                    "id": "d8882bbe-22e4-e4f2-8a2c-2f3199623805"
-                  },
-                  "description": {
-                    "id": "9ab63309-3672-4031-c099-8f95fc577b5a"
-                  },
-                  "name": "prefix",
-                  "headId": "prefix",
-                  "paramType": "string"
-                },
-                {
-                  "id": "ce00fe7c-9bbf-c7ab-c32a-a8e229b550d7",
-                  "type": "command-param",
-                  "head": {
-                    "text": "lintFix"
-                  },
-                  "text": {
-                    "id": "1c6796e6-012c-9d5d-1a4c-36ae165c7bd6"
-                  },
-                  "description": {
-                    "id": "d4aefbb7-4fcc-aeb7-69fb-21a0db1f0ccf"
-                  },
-                  "name": "lintFix",
-                  "headId": "lintFix",
-                  "paramType": "boolean",
-                  "default": "false"
                 }
               ],
               "title": {
@@ -5496,85 +4715,6 @@
                   "text": {
                     "id": "6d5bc196-35e0-a505-2d91-74843c9e48b8"
                   }
-                },
-                {
-                  "id": "f0387384-6035-e8dc-d5e8-ebf0a22ac144",
-                  "type": "text",
-                  "head": {
-                    "id": "db3c1755-c5b5-8256-9fdf-48b256d9213a"
-                  },
-                  "text": {
-                    "id": "4d503a6c-ca84-5ee3-855f-72492734286b"
-                  }
-                },
-                {
-                  "id": "b3bb7eda-7ea6-1e59-d582-46523cf274fb",
-                  "type": "command-param",
-                  "head": {
-                    "text": "entryFile"
-                  },
-                  "text": {
-                    "id": "29398991-3bef-64d1-5df0-88b01cb59eb2"
-                  },
-                  "description": {
-                    "id": "08983c9c-0c46-2c01-9c79-51d0aefa97b0"
-                  },
-                  "name": "entryFile",
-                  "headId": "entryFile",
-                  "paramType": "string",
-                  "default": "public_api"
-                },
-                {
-                  "id": "42f5bba7-9507-690d-82e5-9cdf51b868db",
-                  "type": "command-param",
-                  "head": {
-                    "text": "prefix"
-                  },
-                  "text": {
-                    "id": "a978bf74-e211-dea4-dd6e-ccfcb719fc8c"
-                  },
-                  "description": {
-                    "id": "cb3682d3-045f-3cc4-3a9d-25a4b4dd0d84"
-                  },
-                  "name": "prefix",
-                  "headId": "prefix",
-                  "paramType": "string",
-                  "default": "lib",
-                  "aliases": "p"
-                },
-                {
-                  "id": "02ff13e3-c953-a80d-f847-ed7705e1888b",
-                  "type": "command-param",
-                  "head": {
-                    "text": "skipPackageJson"
-                  },
-                  "text": {
-                    "id": "42bbf371-3292-f209-2696-8437f4604bc5"
-                  },
-                  "description": {
-                    "id": "201d1e0d-9261-8e2e-7020-011ad2bcc5fa"
-                  },
-                  "name": "skipPackageJson",
-                  "headId": "skipPackageJson",
-                  "paramType": "boolean",
-                  "default": "false"
-                },
-                {
-                  "id": "41c0c3c1-2967-e360-989c-a9baeba1463f",
-                  "type": "command-param",
-                  "head": {
-                    "text": "skipTsConfig"
-                  },
-                  "text": {
-                    "id": "7798cc58-fada-9221-7657-7fe5accc6db5"
-                  },
-                  "description": {
-                    "id": "6edfd3ed-fff3-5b2a-3715-b2c77e6ff1e1"
-                  },
-                  "name": "skipTsConfig",
-                  "headId": "skipTsConfig",
-                  "paramType": "boolean",
-                  "default": "false"
                 }
               ],
               "title": {
@@ -5604,120 +4744,6 @@
                   "text": {
                     "id": "550780fc-4e1f-629e-2a80-dc4c3da2d1f0"
                   }
-                },
-                {
-                  "id": "0b0ace55-d851-d21e-0ab2-52d40b21e079",
-                  "type": "text",
-                  "head": {
-                    "id": "372fa4b2-12da-9b74-622e-8c51db0e38e7"
-                  },
-                  "text": {
-                    "id": "fb04f9a5-cc73-2b09-54a9-414ec198f0db"
-                  }
-                },
-                {
-                  "id": "f8e8a541-6606-3dc1-3706-a6070985a822",
-                  "type": "command-param",
-                  "head": {
-                    "text": "project"
-                  },
-                  "text": {
-                    "id": "4a3f4482-272c-6411-6e9f-94e4325c65da"
-                  },
-                  "description": {
-                    "id": "7ed3b357-13e6-f06d-d593-1d04b270856d"
-                  },
-                  "name": "project",
-                  "headId": "project",
-                  "paramType": "string",
-                  "aliases": ""
-                },
-                {
-                  "id": "e2d15cf2-f261-0e34-72cb-c9d9e8ee0d6f",
-                  "type": "command-param",
-                  "head": {
-                    "text": "routing"
-                  },
-                  "text": {
-                    "id": "fb92e5eb-6ea4-f86d-957a-f3bfab84339f"
-                  },
-                  "description": {
-                    "id": "d3fb601d-8312-5bf4-3d30-5988fca396ab"
-                  },
-                  "name": "routing",
-                  "headId": "routing",
-                  "paramType": "boolean",
-                  "default": "false"
-                },
-                {
-                  "id": "82902672-c65e-ff26-5b17-e9bda1999b35",
-                  "type": "command-param",
-                  "head": {
-                    "text": "routingScope"
-                  },
-                  "text": {
-                    "id": "5838da56-c52d-d0ed-0424-bf59d27e6c5b"
-                  },
-                  "description": {
-                    "id": "e1e3cfbb-dfaf-dd08-e678-b8055d1cc570"
-                  },
-                  "name": "routingScope",
-                  "headId": "routingScope",
-                  "paramType": "string",
-                  "values": "Child, Root",
-                  "default": "Child"
-                },
-                {
-                  "id": "d6df7b69-fdac-31a7-4d6d-fba967de5d95",
-                  "type": "command-param",
-                  "head": {
-                    "text": "spec"
-                  },
-                  "text": {
-                    "id": "5441b9a1-1f2c-2a27-46e1-3ba36dbce9b5"
-                  },
-                  "description": {
-                    "id": "ff4b0a1d-b30c-8915-1ab8-6bf7c2831df3"
-                  },
-                  "name": "spec",
-                  "headId": "spec",
-                  "paramType": "boolean",
-                  "default": "true"
-                },
-                {
-                  "id": "d8e2cdf2-ce2f-77a2-c1db-b1b7c35d9bb8",
-                  "type": "command-param",
-                  "head": {
-                    "text": "flat"
-                  },
-                  "text": {
-                    "id": "a60d1e86-5176-c3fb-f910-369377a375e3"
-                  },
-                  "description": {
-                    "id": "b59831ed-37f1-02a2-da60-20ceffae41d9"
-                  },
-                  "name": "flat",
-                  "headId": "flat",
-                  "paramType": "boolean",
-                  "default": "false"
-                },
-                {
-                  "id": "1836733c-74d5-3385-22b4-e8f38e98f1ca",
-                  "type": "command-param",
-                  "head": {
-                    "text": "module"
-                  },
-                  "text": {
-                    "id": "effa4d49-92ea-9850-78d8-5c1087a7ab0c"
-                  },
-                  "description": {
-                    "id": "5c424c99-aa99-a6e7-1920-f2ecfd7ce210"
-                  },
-                  "name": "module",
-                  "headId": "module",
-                  "paramType": "string",
-                  "default": "",
-                  "aliases": "m"
                 }
               ],
               "title": {
@@ -5747,135 +4773,6 @@
                   "text": {
                     "id": "9427990d-d257-edc8-7b27-897460a7ad42"
                   }
-                },
-                {
-                  "id": "3d35a137-fc2c-6558-3c91-4a2b51c1e96f",
-                  "type": "text",
-                  "head": {
-                    "id": "59b7ba7d-2822-15cd-2247-057290bc506b"
-                  },
-                  "text": {
-                    "id": "1a6ec3b7-2a6b-8df7-0601-0055700ffae0"
-                  }
-                },
-                {
-                  "id": "e19d3159-49a9-edd5-6873-11069feb02d8",
-                  "type": "command-param",
-                  "head": {
-                    "text": "project"
-                  },
-                  "text": {
-                    "id": "020decfd-4852-6dd1-0d40-180434923fdd"
-                  },
-                  "description": {
-                    "id": "fe1f5f1c-f2d8-8783-426f-3d9f6847fc0d"
-                  },
-                  "name": "project",
-                  "headId": "project",
-                  "paramType": "string"
-                },
-                {
-                  "id": "a48db271-ff50-7a3c-fdf6-d51756daab18",
-                  "type": "command-param",
-                  "head": {
-                    "text": "flat"
-                  },
-                  "text": {
-                    "id": "14d6342b-643a-fb48-669d-2d7dcf885973"
-                  },
-                  "description": {
-                    "id": "f964ea81-123d-c72d-3527-db5f7228c2be"
-                  },
-                  "name": "flat",
-                  "headId": "flat",
-                  "default": "true",
-                  "paramType": "boolean"
-                },
-                {
-                  "id": "58366bde-b9ff-18d2-df52-1d41c8d8e912",
-                  "type": "command-param",
-                  "head": {
-                    "text": "spec"
-                  },
-                  "text": {
-                    "id": "1405581b-6d26-5424-9368-73678b087c99"
-                  },
-                  "description": {
-                    "id": "f98bc0cb-d8bc-dd0c-261b-daaf887a7564"
-                  },
-                  "name": "spec",
-                  "headId": "spec",
-                  "paramType": "boolean",
-                  "default": "true"
-                },
-                {
-                  "id": "4836b0ae-d7f4-773f-dade-df21226e0263",
-                  "type": "command-param",
-                  "head": {
-                    "text": "skipImport"
-                  },
-                  "text": {
-                    "id": "9f135489-7236-1563-1bde-e1da8035e0a7"
-                  },
-                  "description": {
-                    "id": "fe441d76-147a-9343-cb7a-cea655131b4d"
-                  },
-                  "name": "skipImport",
-                  "headId": "skipImport",
-                  "paramType": "boolean",
-                  "default": "false"
-                },
-                {
-                  "id": "ecb5d0b0-f9b6-4235-0c3e-9e8a70e36386",
-                  "type": "command-param",
-                  "head": {
-                    "text": "module"
-                  },
-                  "text": {
-                    "id": "1eff4580-0893-5569-6686-94f4f89130a2"
-                  },
-                  "description": {
-                    "id": "7e81485a-1c2b-10c3-efe7-213c64f68379"
-                  },
-                  "name": "module",
-                  "headId": "module",
-                  "paramType": "string",
-                  "aliases": "m"
-                },
-                {
-                  "id": "9f4be75f-b99e-ea64-bac0-88c44fd4f521",
-                  "type": "command-param",
-                  "head": {
-                    "text": "export"
-                  },
-                  "text": {
-                    "id": "e2985fdc-854c-ff96-4516-bed0a27c6b69"
-                  },
-                  "description": {
-                    "id": "088c54d2-c329-7ece-104d-c0a63f3ef363"
-                  },
-                  "name": "export",
-                  "headId": "export",
-                  "paramType": "boolean",
-                  "default": "false"
-                },
-                {
-                  "id": "cb65c393-dbef-b3a2-7ff7-dc8f29053bd2",
-                  "type": "command-param",
-                  "head": {
-                    "text": "lintFix"
-                  },
-                  "text": {
-                    "id": "e8bffd32-164b-921c-4d22-6385c3f554e0"
-                  },
-                  "description": {
-                    "id": "ce87a2ac-00bb-6a0b-86be-072ea5400c89"
-                  },
-                  "name": "lintFix",
-                  "headId": "lintFix",
-                  "paramType": "boolean",
-                  "values": "",
-                  "default": "false"
                 }
               ],
               "title": {
@@ -5905,83 +4802,6 @@
                   "text": {
                     "id": "c9fa2e36-dd57-ed95-6041-27b7679c4bf9"
                   }
-                },
-                {
-                  "id": "d54b4c00-f88b-e8b1-cb7f-93b53c43af76",
-                  "type": "text",
-                  "head": {
-                    "id": "a0d32693-c276-8027-e9c5-8d954793e8e6"
-                  },
-                  "text": {
-                    "id": "da35b792-afca-848f-9e22-fff0e061ad98"
-                  }
-                },
-                {
-                  "id": "9f463ea3-8ce8-a690-53a2-bd31a272db94",
-                  "type": "command-param",
-                  "head": {
-                    "text": "project"
-                  },
-                  "text": {
-                    "id": "00faaabf-3db5-0114-c30c-f657eee34a0f"
-                  },
-                  "description": {
-                    "id": "afb9f23e-a688-af37-90c5-b55097d73bb1"
-                  },
-                  "name": "project",
-                  "headId": "project",
-                  "paramType": "string"
-                },
-                {
-                  "id": "013ad01c-5c3f-fb0a-542b-3a69aefc4872",
-                  "type": "command-param",
-                  "head": {
-                    "text": "flat"
-                  },
-                  "text": {
-                    "id": "5e901113-c530-4e9e-33e4-4d396009439c"
-                  },
-                  "description": {
-                    "id": "7161182d-e6ff-4efd-eec6-a3440b354e88"
-                  },
-                  "name": "flat",
-                  "headId": "flat",
-                  "paramType": "boolean",
-                  "default": "true"
-                },
-                {
-                  "id": "86a19f68-d7fd-f196-8d47-4468f05be98e",
-                  "type": "command-param",
-                  "head": {
-                    "text": "spec"
-                  },
-                  "text": {
-                    "id": "6791bcda-c7d4-9583-646b-7e64ddb65ba7"
-                  },
-                  "description": {
-                    "id": "1b869102-ac5a-a006-804d-460b321b557b"
-                  },
-                  "name": "spec",
-                  "headId": "spec",
-                  "paramType": "boolean",
-                  "default": "true"
-                },
-                {
-                  "id": "11b43851-9709-3ba0-105b-6b732862cf59",
-                  "type": "command-param",
-                  "head": {
-                    "text": "lintFix"
-                  },
-                  "text": {
-                    "id": "901b0626-0caa-9c36-d919-be0fa2024103"
-                  },
-                  "description": {
-                    "id": "79e8c623-7cfe-49f5-ae10-b250feaac2c0"
-                  },
-                  "name": "lintFix",
-                  "headId": "lintFix",
-                  "paramType": "boolean",
-                  "default": "false"
                 }
               ],
               "title": {
@@ -6011,185 +4831,6 @@
                   "text": {
                     "id": "2de89942-caa5-ba37-3a58-4841fdb264dd"
                   }
-                },
-                {
-                  "id": "74d4442f-3a39-a3f9-ba54-2ffda6fad004",
-                  "type": "text",
-                  "head": {
-                    "id": "a3f0bb6e-5fe3-fb44-31c2-b43962aa3f68"
-                  },
-                  "text": {
-                    "id": "d88c7b05-32c3-bab1-3ae8-21a8d129bd0f"
-                  }
-                },
-                {
-                  "id": "ff4ed975-cd4e-5bf8-38c5-43f425ea0f31",
-                  "type": "command-param",
-                  "head": {
-                    "text": "clientProject"
-                  },
-                  "text": {
-                    "id": "ed033c47-bce2-fa9b-8b74-1414c670accb"
-                  },
-                  "description": {
-                    "id": "60917052-76ba-c988-baff-36b514e0cb08"
-                  },
-                  "name": "clientProject",
-                  "headId": "clientProject",
-                  "paramType": "string"
-                },
-                {
-                  "id": "c90faf8d-d9d4-c990-a7d5-5f2eedf397b4",
-                  "type": "command-param",
-                  "head": {
-                    "text": "appId"
-                  },
-                  "text": {
-                    "id": "a18f6a91-474e-cc98-6e9d-2703e1b8551d"
-                  },
-                  "description": {
-                    "id": "f83bef78-0efe-d1a2-92a6-be5d449f2e81"
-                  },
-                  "name": "appId",
-                  "headId": "appId",
-                  "paramType": "string",
-                  "default": "serverApp"
-                },
-                {
-                  "id": "0a886da9-8ed3-65d4-bbf2-5ed4926d5b28",
-                  "type": "command-param",
-                  "head": {
-                    "text": "main"
-                  },
-                  "text": {
-                    "id": "9d9ef1de-2a7e-7b29-ff9b-f768833f5236"
-                  },
-                  "description": {
-                    "id": "f37b73d9-9865-c096-2850-f465ba44c495"
-                  },
-                  "name": "main",
-                  "headId": "main",
-                  "paramType": "string",
-                  "default": "main.server.ts"
-                },
-                {
-                  "id": "33ef9601-e31d-0741-bd2a-074f6234d16a",
-                  "type": "command-param",
-                  "head": {
-                    "text": "test"
-                  },
-                  "text": {
-                    "id": "aa128028-46b1-2ff3-5f81-3a61bb1a44ba"
-                  },
-                  "description": {
-                    "id": "c388deca-5abc-fee8-2e94-b7e2bf194bf9"
-                  },
-                  "name": "test",
-                  "headId": "test",
-                  "paramType": "string"
-                },
-                {
-                  "id": "62351baf-2261-1514-db82-6411181d4ea5",
-                  "type": "command-param",
-                  "head": {
-                    "text": "tsconfigFileName"
-                  },
-                  "text": {
-                    "id": "c8159e1e-7a5d-3d1b-2738-3adaac7550fc"
-                  },
-                  "description": {
-                    "id": "d613e3c0-6b71-80b5-1b70-a2cfe135234e"
-                  },
-                  "name": "tsconfigFileName",
-                  "headId": "tsconfigFileName",
-                  "paramType": "string",
-                  "default": "tsconfig.server"
-                },
-                {
-                  "id": "1b600b10-dbeb-a78e-3465-d2c8aa9f5705",
-                  "type": "command-param",
-                  "head": {
-                    "text": "testTsconfigFileName"
-                  },
-                  "text": {
-                    "id": "5cb14c4a-6b49-19b6-4208-af3771ca3614"
-                  },
-                  "description": {
-                    "id": "80c00e6d-fed1-fb97-8de5-99c145356d43"
-                  },
-                  "name": "testTsconfigFileName",
-                  "headId": "testTsconfigFileName",
-                  "paramType": "string",
-                  "default": "tsconfig.spec"
-                },
-                {
-                  "id": "dff6757f-d6c6-fcf1-5736-c59a4b501d06",
-                  "type": "command-param",
-                  "head": {
-                    "text": "appDir"
-                  },
-                  "text": {
-                    "id": "150b4f5c-a2a7-396e-256f-65a746c51089"
-                  },
-                  "links": [],
-                  "description": {
-                    "id": "21ec3f0f-be5e-05e3-283a-bc82107bf1aa"
-                  },
-                  "name": "appDir",
-                  "headId": "appDir",
-                  "paramType": "string",
-                  "default": "app"
-                },
-                {
-                  "id": "4bc1b6b0-f1fa-63d7-79af-ed188e17b510",
-                  "type": "command-param",
-                  "head": {
-                    "text": "rootModuleFileName"
-                  },
-                  "text": {
-                    "id": "7d4a2678-bb31-d3bf-292f-4939f09a2a66"
-                  },
-                  "description": {
-                    "id": "0c8dd623-6174-17e5-6e90-44b1e859597b"
-                  },
-                  "name": "rootModuleFileName",
-                  "headId": "rootModuleFileName",
-                  "paramType": "string",
-                  "default": "app.server.module.ts"
-                },
-                {
-                  "id": "9b5d865b-ba12-9cdf-56a8-b852c3188d4b",
-                  "type": "command-param",
-                  "head": {
-                    "text": "rootModuleClassName"
-                  },
-                  "text": {
-                    "id": "44f855b0-0d22-9988-0088-fa7355e950c8"
-                  },
-                  "description": {
-                    "id": "09aeaacb-1707-f004-0368-46f7117b3108"
-                  },
-                  "name": "rootModuleClassName",
-                  "headId": "rootModuleClassName",
-                  "paramType": "string",
-                  "default": "AppServerModule"
-                },
-                {
-                  "id": "de06fa09-217f-494d-dcab-1f4d9e9a29a3",
-                  "type": "command-param",
-                  "head": {
-                    "text": "skipInstall"
-                  },
-                  "text": {
-                    "id": "17e7fb95-7822-016d-3c5a-239fcfa470f6"
-                  },
-                  "description": {
-                    "id": "25198248-8e14-c2bc-a356-f7a5c386d27f"
-                  },
-                  "name": "skipInstall",
-                  "headId": "skipInstall",
-                  "paramType": "boolean",
-                  "default": "false"
                 }
               ],
               "title": {
@@ -6299,7 +4940,7 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "ng new"
             }
           ]
         },
@@ -6599,7 +5240,7 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "ng serve"
             }
           ]
         },
@@ -6655,7 +5296,7 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "dev-server"
             }
           ]
         },
@@ -6741,7 +5382,7 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "ng build"
             }
           ]
         },
@@ -6755,7 +5396,7 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "ng test"
             }
           ]
         },
@@ -6769,7 +5410,7 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "ng e2e"
             }
           ]
         },
@@ -6783,7 +5424,7 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "ng lint"
             }
           ]
         },
@@ -6797,7 +5438,7 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "ng run"
             }
           ]
         },
@@ -6811,7 +5452,7 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "ng generate"
             }
           ]
         },
@@ -6825,7 +5466,7 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "ng xi18n"
             }
           ]
         },
@@ -6839,7 +5480,7 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "ng update"
             }
           ]
         },
@@ -6853,7 +5494,7 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "ng config"
             }
           ]
         },
@@ -6867,7 +5508,7 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "ng-doc"
             }
           ]
         },
@@ -6881,7 +5522,7 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "app-shell"
             }
           ]
         },
@@ -6895,7 +5536,7 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "browser"
             }
           ]
         },
@@ -6909,7 +5550,7 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "extract-i18n"
             }
           ]
         },
@@ -6923,7 +5564,7 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "karma"
             }
           ]
         },
@@ -6937,7 +5578,7 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "protractor"
             }
           ]
         },
@@ -6951,7 +5592,7 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "server"
             }
           ]
         },
@@ -6965,7 +5606,7 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "tslint"
             }
           ]
         },
@@ -7437,7 +6078,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "ID: `@angular-devkit/build-angular:app-shell`\n\n"
+              "text": "ID: `@angular-devkit/build-angular:app-shell`\n\n## Options"
             },
             {
               "lang": "ru",
@@ -9269,7 +7910,7 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "class"
             }
           ]
         },
@@ -9341,7 +7982,7 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "component"
             }
           ]
         },
@@ -9355,7 +7996,7 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "ng add"
             }
           ]
         },
@@ -9447,7 +8088,7 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "directive"
             }
           ]
         },
@@ -9759,7 +8400,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```\nng generate interface [name] [type] [--[argument]=[value]]\nng generate i\n```\n"
+              "text": "```\nng generate interface [name] [--[argument]=[value]]\nng generate i\n```\n"
             }
           ]
         },
@@ -9769,7 +8410,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Create an interface.\n"
+              "text": "Create an interface.\n\n## Options\n"
             }
           ]
         },
@@ -9779,7 +8420,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Create a guard.\n\n"
+              "text": "Create a guard.\n\n## Options"
             }
           ]
         },
@@ -9789,7 +8430,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Create an enumeration."
+              "text": "Create an enumeration.\n\n## Options"
             }
           ]
         },
@@ -9853,7 +8494,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Create an Angular module.\n"
+              "text": "Create an Angular module.\n\n## Options"
             }
           ]
         },
@@ -9883,7 +8524,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Create an Angular pipe.\n"
+              "text": "Create an Angular pipe.\n\n## Options"
             }
           ]
         },
@@ -9913,7 +8554,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Create an Angular service.\n"
+              "text": "Create an Angular service.\n\n## Options\n"
             }
           ]
         },
@@ -9943,7 +8584,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Create an Angular application."
+              "text": "Create an Angular application.\n\n## Options"
             }
           ]
         },
@@ -9973,7 +8614,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Create an Angular universal app.\n\n"
+              "text": "Create an Angular universal app.\n\n## Options\n"
             }
           ]
         },
@@ -10037,7 +8678,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Generate a library project for Angular.\n\n"
+              "text": "Generate a library project for Angular.\n\n## Options"
             }
           ]
         },
@@ -10168,776 +8809,6 @@
             {
               "lang": "en",
               "text": "## Options"
-            }
-          ]
-        },
-        {
-          "id": "9f8d620f-d96e-4826-8883-62e536d36e18",
-          "context": "Link label",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Angular App Shell - Boosting Application Startup Performance"
-            }
-          ]
-        },
-        {
-          "id": "429025e0-f5a1-470e-6c23-40459d616223",
-          "context": "Entry text",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "## Options"
-            }
-          ]
-        },
-        {
-          "id": "1e2996b3-f352-b072-4c1e-898e05c1bf70",
-          "context": "Link label",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Angular App Shell - Boosting Application Startup Performance"
-            }
-          ]
-        },
-        {
-          "id": "bf4d05a5-b93f-d780-3184-68e1364bcac6",
-          "context": "Entry text",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "App shell is a way to render a portion of your application via a route at build time. This gives users a meaningful first paint of your application because the browser does not need to initialize any JavaScript, just rendering the HTML."
-            }
-          ]
-        },
-        {
-          "id": "6cc8dc8f-b1a2-a60f-fbe5-2b618f45eb8d",
-          "context": "Entry text",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "## Options"
-            }
-          ]
-        },
-        {
-          "id": "c80018fa-3b01-db11-8181-fcd262e54698",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Specifies if the style will be in the ts file."
-            }
-          ]
-        },
-        {
-          "id": "3f1c22d8-42aa-0a0e-4841-94c95e72de23",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Specifies if the template will be in the ts file."
-            }
-          ]
-        },
-        {
-          "id": "7e7ec6b6-a090-a308-667e-3d194af9aa93",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Specifies the view encapsulation strategy."
-            }
-          ]
-        },
-        {
-          "id": "833fab1f-d01d-bfc8-9e28-9ab0aa2df357",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Generates a routing module."
-            }
-          ]
-        },
-        {
-          "id": "3a16e686-3b78-c9bd-c122-4545d50167c9",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "The prefix to apply to generated selectors."
-            }
-          ]
-        },
-        {
-          "id": "4fcc7b51-a2b4-bd7f-2f53-f1bf53f105d2",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "The file extension to be used for style files."
-            }
-          ]
-        },
-        {
-          "id": "774ff075-671d-d22f-8788-7b5391c2bd4b",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Skip creating spec files."
-            }
-          ]
-        },
-        {
-          "id": "1fd85698-876e-f1b3-0185-c5e3eb100bfa",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Do not add dependencies to `package.json`."
-            }
-          ]
-        },
-        {
-          "id": "3ed3fda3-def4-ff67-ccfe-ff38d2ed4008",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Name of related client app."
-            }
-          ]
-        },
-        {
-          "id": "9071fc5a-fab6-d8dc-dc40-1055f6271aa3",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Name of related universal app."
-            }
-          ]
-        },
-        {
-          "id": "9a58f0f8-796a-86c2-c0a5-fbabf40a65d5",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Route path used to produce the app shell."
-            }
-          ]
-        },
-        {
-          "id": "4adcc4dc-5ba5-7918-b8c3-fe0896f52b63",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Name of the universal app."
-            }
-          ]
-        },
-        {
-          "id": "16c8af68-453e-f1a2-5cb6-d00944d28817",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "The appId to use withServerTransition."
-            }
-          ]
-        },
-        {
-          "id": "f1bd6544-2260-336d-9cb0-beadf7b8d2dc",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "The output directory for build results."
-            }
-          ]
-        },
-        {
-          "id": "e23d8a2b-5d38-852a-40ad-c3e6a9f7bb90",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "The root directory of the app."
-            }
-          ]
-        },
-        {
-          "id": "5663aa03-e6a8-41ca-78e0-1cc116e4cb52",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Name of the index file"
-            }
-          ]
-        },
-        {
-          "id": "1ddcc76d-c547-045b-2751-40e31e7b5596",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "The name of the main entry-point file."
-            }
-          ]
-        },
-        {
-          "id": "c50e8edd-5f46-e1c5-0a4e-ec474e35f47c",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "The name of the test entry-point file."
-            }
-          ]
-        },
-        {
-          "id": "26949692-d094-509f-6439-de67ec1c4b8b",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "The name of the TypeScript configuration file."
-            }
-          ]
-        },
-        {
-          "id": "85609bdc-23a6-8db1-85ed-5f7788e0d8d4",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "The name of the TypeScript configuration file for tests."
-            }
-          ]
-        },
-        {
-          "id": "9e0ba4d4-91b1-93d9-8372-718fbe19ef88",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "The name of the application directory."
-            }
-          ]
-        },
-        {
-          "id": "45ed2957-ddc1-59a9-d2ac-ddca24ba7fe4",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "The name of the root module file."
-            }
-          ]
-        },
-        {
-          "id": "87d51a0b-0400-0a06-cbd2-4f61b148a872",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "The name of the root module class."
-            }
-          ]
-        },
-        {
-          "id": "f67d3cf2-a8e9-a120-e087-ad39d950b178",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "The path of the source directory."
-            }
-          ]
-        },
-        {
-          "id": "dbf327bd-4a24-0f32-2b91-57f53576391f",
-          "context": "Entry text",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "## Options"
-            }
-          ]
-        },
-        {
-          "id": "1f2b8487-505f-899f-6ffe-5811ae0f83e0",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "The name of the project."
-            }
-          ]
-        },
-        {
-          "id": "c39df382-1967-e46a-98d2-af6e7dfe65bc",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Specifies whether to apply lint fixes after generating the enum."
-            }
-          ]
-        },
-        {
-          "id": "4d7be281-b96b-923d-9ee5-3346f85285bc",
-          "context": "Entry text",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "## Options"
-            }
-          ]
-        },
-        {
-          "id": "44cfb16b-6b0e-cc26-ce4f-3f7a5488082c",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Specifies if a spec file is generated."
-            }
-          ]
-        },
-        {
-          "id": "6d282609-cb2b-5403-bd47-058ff490f014",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Flag to indicate if a dir is created."
-            }
-          ]
-        },
-        {
-          "id": "a8696a2c-c6e6-5662-c42a-4d7e2c81bc9d",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "The name of the project."
-            }
-          ]
-        },
-        {
-          "id": "7659832f-793d-23ca-64ea-4313b71d7f7f",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Specifies whether to apply lint fixes after generating the guard."
-            }
-          ]
-        },
-        {
-          "id": "b9990cfc-ce9b-301b-7db9-8643601528de",
-          "context": "Entry text",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "## Options"
-            }
-          ]
-        },
-        {
-          "id": "a3f87bf1-60fe-2f3b-c11e-3dc49717fe60",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "The name of the project."
-            }
-          ]
-        },
-        {
-          "id": "9ab63309-3672-4031-c099-8f95fc577b5a",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Specifies the prefix to use."
-            }
-          ]
-        },
-        {
-          "id": "d4aefbb7-4fcc-aeb7-69fb-21a0db1f0ccf",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Specifies whether to apply lint fixes after generating the directive."
-            }
-          ]
-        },
-        {
-          "id": "4d503a6c-ca84-5ee3-855f-72492734286b",
-          "context": "Entry text",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "## Options"
-            }
-          ]
-        },
-        {
-          "id": "08983c9c-0c46-2c01-9c79-51d0aefa97b0",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "The path to create the library's public API file."
-            }
-          ]
-        },
-        {
-          "id": "cb3682d3-045f-3cc4-3a9d-25a4b4dd0d84",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "The prefix to apply to generated selectors."
-            }
-          ]
-        },
-        {
-          "id": "201d1e0d-9261-8e2e-7020-011ad2bcc5fa",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Do not add dependencies to `package.json`."
-            }
-          ]
-        },
-        {
-          "id": "6edfd3ed-fff3-5b2a-3715-b2c77e6ff1e1",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Do not update `tsconfig.json` for development experience."
-            }
-          ]
-        },
-        {
-          "id": "fb04f9a5-cc73-2b09-54a9-414ec198f0db",
-          "context": "Entry text",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "## Options"
-            }
-          ]
-        },
-        {
-          "id": "7ed3b357-13e6-f06d-d593-1d04b270856d",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "The name of the project."
-            }
-          ]
-        },
-        {
-          "id": "d3fb601d-8312-5bf4-3d30-5988fca396ab",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Generates a routing module."
-            }
-          ]
-        },
-        {
-          "id": "e1e3cfbb-dfaf-dd08-e678-b8055d1cc570",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "The scope for the generated routing."
-            }
-          ]
-        },
-        {
-          "id": "ff4b0a1d-b30c-8915-1ab8-6bf7c2831df3",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Specifies if a spec file is generated."
-            }
-          ]
-        },
-        {
-          "id": "b59831ed-37f1-02a2-da60-20ceffae41d9",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Flag to indicate if a dir is created."
-            }
-          ]
-        },
-        {
-          "id": "5c424c99-aa99-a6e7-1920-f2ecfd7ce210",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Allows specification of the declaring module."
-            }
-          ]
-        },
-        {
-          "id": "1a6ec3b7-2a6b-8df7-0601-0055700ffae0",
-          "context": "Entry text",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "## Options"
-            }
-          ]
-        },
-        {
-          "id": "fe1f5f1c-f2d8-8783-426f-3d9f6847fc0d",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "The name of the project."
-            }
-          ]
-        },
-        {
-          "id": "f964ea81-123d-c72d-3527-db5f7228c2be",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Flag to indicate if a dir is created."
-            }
-          ]
-        },
-        {
-          "id": "f98bc0cb-d8bc-dd0c-261b-daaf887a7564",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Specifies if a spec file is generated."
-            }
-          ]
-        },
-        {
-          "id": "fe441d76-147a-9343-cb7a-cea655131b4d",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Allows for skipping the module import."
-            }
-          ]
-        },
-        {
-          "id": "7e81485a-1c2b-10c3-efe7-213c64f68379",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Allows specification of the declaring module."
-            }
-          ]
-        },
-        {
-          "id": "088c54d2-c329-7ece-104d-c0a63f3ef363",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Specifies if declaring module exports the pipe."
-            }
-          ]
-        },
-        {
-          "id": "ce87a2ac-00bb-6a0b-86be-072ea5400c89",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Specifies whether to apply lint fixes after generating the pipe."
-            }
-          ]
-        },
-        {
-          "id": "da35b792-afca-848f-9e22-fff0e061ad98",
-          "context": "Entry text",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "## Options"
-            }
-          ]
-        },
-        {
-          "id": "afb9f23e-a688-af37-90c5-b55097d73bb1",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "The name of the project."
-            }
-          ]
-        },
-        {
-          "id": "7161182d-e6ff-4efd-eec6-a3440b354e88",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Flag to indicate if a dir is created."
-            }
-          ]
-        },
-        {
-          "id": "1b869102-ac5a-a006-804d-460b321b557b",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Specifies if a spec file is generated."
-            }
-          ]
-        },
-        {
-          "id": "79e8c623-7cfe-49f5-ae10-b250feaac2c0",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Specifies whether to apply lint fixes after generating the pipe."
-            }
-          ]
-        },
-        {
-          "id": "d88c7b05-32c3-bab1-3ae8-21a8d129bd0f",
-          "context": "Entry text",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "## Options"
-            }
-          ]
-        },
-        {
-          "id": "60917052-76ba-c988-baff-36b514e0cb08",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Name of related client app."
-            }
-          ]
-        },
-        {
-          "id": "f83bef78-0efe-d1a2-92a6-be5d449f2e81",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "The appId to use withServerTransition."
-            }
-          ]
-        },
-        {
-          "id": "f37b73d9-9865-c096-2850-f465ba44c495",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "The name of the main entry-point file."
-            }
-          ]
-        },
-        {
-          "id": "c388deca-5abc-fee8-2e94-b7e2bf194bf9",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "The name of the test entry-point file."
-            }
-          ]
-        },
-        {
-          "id": "d613e3c0-6b71-80b5-1b70-a2cfe135234e",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "The name of the TypeScript configuration file."
-            }
-          ]
-        },
-        {
-          "id": "80c00e6d-fed1-fb97-8de5-99c145356d43",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "The name of the TypeScript configuration file for tests."
-            }
-          ]
-        },
-        {
-          "id": "21ec3f0f-be5e-05e3-283a-bc82107bf1aa",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "The name of the application directory."
-            }
-          ]
-        },
-        {
-          "id": "0c8dd623-6174-17e5-6e90-44b1e859597b",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "The name of the root module file."
-            }
-          ]
-        },
-        {
-          "id": "09aeaacb-1707-f004-0368-46f7117b3108",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "The name of the root module class."
-            }
-          ]
-        },
-        {
-          "id": "25198248-8e14-c2bc-a356-f7a5c386d27f",
-          "context": "Command param entry description",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "Skip installing dependency packages."
             }
           ]
         }
