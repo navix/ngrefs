@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { ContentHintEntry } from '../../../content/meta';
 import { VersionComponent } from '../../../version/version.component';
 
 @Component({
@@ -7,5 +8,5 @@ import { VersionComponent } from '../../../version/version.component';
   styleUrls: ['./page-hint-entry.component.scss'],
 })
 export class PageHintEntryComponent {
-  @Input() entry: PageHintEntryComponent;
+  @Input() entry: ContentHintEntry;
 }

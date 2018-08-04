@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
+import { KitPlatformService } from '@ngx-kit/core';
 import { extractMessage } from '../../content-message/extract-message';
 import { ContentSection } from '../../content/meta';
 import { SeoService } from '../../seo.service';
@@ -22,11 +23,8 @@ export class SectionComponent implements OnInit {
     private router: Router,
     private versionComponent: VersionComponent,
     private seo: SeoService,
+    private platform: KitPlatformService,
   ) {
-  }
-
-  get version() {
-    return this.versionComponent.version;
   }
 
   ngOnInit() {
@@ -41,5 +39,13 @@ export class SectionComponent implements OnInit {
         this.displayNav = false;
       }
     });
+  }
+
+  get version() {
+    return this.versionComponent.version;
+  }
+
+  get isServer() {
+    return this.platform.isServer();
   }
 }

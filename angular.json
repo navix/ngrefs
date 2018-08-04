@@ -22,10 +22,11 @@
             "index": "projects/main/src/index.html",
             "main": "projects/main/src/main.ts",
             "polyfills": "projects/main/src/polyfills.ts",
-            "tsConfig": "projects/main/src/tsconfig.app.json",
+            "tsConfig": "projects/main/tsconfig.app.json",
             "assets": [
               "projects/main/src/favicon.ico",
-              "projects/main/src/assets"
+              "projects/main/src/assets",
+              "projects/main/src/robots.txt"
             ],
             "styles": [
               "projects/main/src/styles/main.scss"
@@ -106,6 +107,19 @@
             "exclude": [
               "**/node_modules/**"
             ]
+          }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/main-server",
+            "main": "projects/main/src/main.server.ts",
+            "tsConfig": "projects/main/tsconfig.server.json",
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "projects/ui/src/styles"
+              ]
+            }
           }
         }
       }

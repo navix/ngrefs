@@ -8,16 +8,15 @@ import { UiModule } from 'ui';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContentMessageComponent } from './content-message/content-message.component';
-import { ContentTextComponent } from './content-text/content-text.component';
 import { FooterMenuComponent } from './menu/footer-menu/footer-menu.component';
 import { HeadMenuComponent } from './menu/head-menu/head-menu.component';
 import { SectionMenuComponent } from './menu/section-menu/section-menu.component';
+import { SectionNavComponent } from './section/section-nav/section-nav.component';
 import { PageCommandParamEntryComponent } from './section/section-page/page-command-param-entry/page-command-param-entry.component';
 import { PageHintEntryComponent } from './section/section-page/page-hint-entry/page-hint-entry.component';
 import { PageTextEntryComponent } from './section/section-page/page-text-entry/page-text-entry.component';
 import { PageTutorialsEntryComponent } from './section/section-page/page-tutorials-entry/page-tutorials-entry.component';
 import { SectionPageComponent } from './section/section-page/section-page.component';
-import { SectionNavComponent } from './section/section-nav/section-nav.component';
 import { SectionComponent } from './section/section/section.component';
 import { UiMessageComponent } from './ui-message/ui-message.component';
 import { VersionComponent } from './version/version.component';
@@ -25,7 +24,6 @@ import { VersionComponent } from './version/version.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ContentTextComponent,
     VersionComponent,
     ContentMessageComponent,
     SectionComponent,
@@ -41,7 +39,7 @@ import { VersionComponent } from './version/version.component';
     SectionNavComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({appId: 'serverApp'}),
     BrowserAnimationsModule,
     FormsModule,
     AppRoutingModule,

@@ -10124,7 +10124,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```\nng generate universal [name] [--[argument]=[value]]\n```"
+              "text": "```\nng generate universal [--[argument]=[value]]\n```"
             }
           ]
         },
