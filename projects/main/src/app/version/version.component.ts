@@ -5,6 +5,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { AppComponent } from '../app.component';
 import { ContentMenu, ContentVersion } from '../content/meta';
 import { versions } from '../content/versions';
+import { SeoService } from '../seo.service';
 
 @Component({
   selector: 'main-version',
@@ -28,32 +29,8 @@ export class VersionComponent implements OnInit {
     private zone: NgZone,
     private app: AppComponent,
     private cdr: ChangeDetectorRef,
+    private seo: SeoService,
   ) {
-  }
-
-  get menu() {
-    return this._menu;
-  }
-
-//  hrefReplacer = (str: any, href: any, offset: any, s: any): string => {
-//    if (href[0] === '.' || href[0] === '#') {
-//      // Mark link as router-handled
-//      const chunks = href.split('#');
-//      const compiledHref = decodeURI(this.router.createUrlTree(
-//        [chunks[0] || './'],
-//        {relativeTo: this.route, fragment: chunks[1]},
-//      ) as any);
-//      const id = uuid();
-//      this.links.set(id, compiledHref);
-//      return `router-link="${id}" href="${compiledHref}"`;
-//    } else {
-//      return `${str} target="_blank"`;
-//    }
-//  }
-
-  set menu(menu: ContentMenu) {
-    this._menu = menu;
-    this.cdr.detectChanges();
   }
 
   ngOnInit() {
@@ -61,6 +38,7 @@ export class VersionComponent implements OnInit {
       .subscribe(({lang, versionUrl}) => {
         this.lang = lang;
         this.version = versions.find(v => v.url === versionUrl);
+        this.seo.setAffix(`${this.version.title} References`);
       });
 //    this.route.params
 //      .subscribe(({lang, version, url}) => {
@@ -83,6 +61,31 @@ export class VersionComponent implements OnInit {
 //      }
 //    });
 //    this.scrollTo();
+  }
+
+//  hrefReplacer = (str: any, href: any, offset: any, s: any): string => {
+//    if (href[0] === '.' || href[0] === '#') {
+//      // Mark link as router-handled
+//      const chunks = href.split('#');
+//      const compiledHref = decodeURI(this.router.createUrlTree(
+//        [chunks[0] || './'],
+//        {relativeTo: this.route, fragment: chunks[1]},
+//      ) as any);
+//      const id = uuid();
+//      this.links.set(id, compiledHref);
+//      return `router-link="${id}" href="${compiledHref}"`;
+//    } else {
+//      return `${str} target="_blank"`;
+//    }
+//  }
+
+  get menu() {
+    return this._menu;
+  }
+
+  set menu(menu: ContentMenu) {
+    this._menu = menu;
+    this.cdr.detectChanges();
   }
 
 //  @HostListener('window:scroll', [])

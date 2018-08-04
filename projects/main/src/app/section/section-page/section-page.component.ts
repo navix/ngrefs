@@ -2,7 +2,9 @@ import { DOCUMENT } from '@angular/common';
 import { Component, Inject, NgZone, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { take } from 'rxjs/operators';
+import { extractMessage } from '../../content-message/extract-message';
 import { ContentPage } from '../../content/meta';
+import { SeoService } from '../../seo.service';
 import { VersionComponent } from '../../version/version.component';
 import { SectionComponent } from '../section/section.component';
 
@@ -21,16 +23,15 @@ export class SectionPageComponent implements OnInit {
     @Inject(DOCUMENT) private document: any,
     private sectionComponent: SectionComponent,
     private versionComponent: VersionComponent,
+    private seo: SeoService,
   ) {
-  }
-
-  get showHints() {
-    return this.sectionComponent.showHints;
   }
 
   ngOnInit() {
     this.route.params.subscribe(({pageUrl}) => {
       this.page = this.sectionComponent.section.pages.find(p => p.url === pageUrl);
+      const title = extractMessage(this.versionComponent.version.messages, this.page.title, this.versionComponent.lang);
+      this.seo.setPage(title);
     });
     // Handle anchor scrolling
     this.router.events.subscribe(s => {
@@ -39,6 +40,10 @@ export class SectionPageComponent implements OnInit {
       }
     });
     this.scrollTo();
+  }
+
+  get showHints() {
+    return this.sectionComponent.showHints;
   }
 
   private scrollTo() {

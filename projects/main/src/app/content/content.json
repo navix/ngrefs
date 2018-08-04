@@ -6229,7 +6229,8 @@
             },
             {
               "lang": "ru",
-              "text": "CLI"
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -6257,7 +6258,8 @@
             },
             {
               "lang": "ru",
-              "text": "angular.json"
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -6299,7 +6301,8 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -6313,7 +6316,8 @@
             },
             {
               "lang": "ru",
-              "text": "dryRun"
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -6327,7 +6331,8 @@
             },
             {
               "lang": "ru",
-              "text": "force"
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -6369,7 +6374,8 @@
             },
             {
               "lang": "ru",
-              "text": "ng new"
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -6397,7 +6403,7 @@
             },
             {
               "lang": "ru",
-              "text": "> В основном используется для тестов.\n\nЗапуск без каких-либо реальных изменений. Список созданных файлов выводится в консоль."
+              "text": "Запуск без каких-либо реальных изменений. Список созданных файлов выводится в консоль."
             }
           ]
         },
@@ -6425,7 +6431,7 @@
             },
             {
               "lang": "ru",
-              "text": "> Если во время создания аппы возникают ошибки и вы хотите получить больше информации.\n\nВывод более детальной информации."
+              "text": "Вывод более детальной информации."
             }
           ]
         },
@@ -6478,6 +6484,10 @@
             {
               "lang": "en",
               "text": "Specifies the view encapsulation strategy."
+            },
+            {
+              "lang": "ru",
+              "text": "Стратегия инкапсуляции отображения."
             }
           ]
         },
@@ -6543,7 +6553,11 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Do not add dependencies to package.json."
+              "text": "Do not add dependencies to `package.json`."
+            },
+            {
+              "lang": "ru",
+              "text": "Не добавлять зависимости в `package.json`."
             }
           ]
         },
@@ -6557,7 +6571,8 @@
             },
             {
               "lang": "ru",
-              "text": "ng serve"
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -6599,7 +6614,8 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -6655,7 +6671,8 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -6665,11 +6682,12 @@
           "locales": [
             {
               "lang": "en",
-              "text": "dev-server"
+              "text": "Dev-server builder"
             },
             {
               "lang": "ru",
-              "text": "dev-server"
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -6694,6 +6712,10 @@
             {
               "lang": "en",
               "text": "Target to serve."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя билда для наследования настроек."
             }
           ]
         },
@@ -6704,6 +6726,10 @@
             {
               "lang": "en",
               "text": "Port to listen on."
+            },
+            {
+              "lang": "ru",
+              "text": "Порт на котором хостится приложение."
             }
           ]
         },
@@ -6714,6 +6740,10 @@
             {
               "lang": "en",
               "text": "Host to listen on."
+            },
+            {
+              "lang": "ru",
+              "text": "Хост по которому доступно приложение."
             }
           ]
         },
@@ -6741,7 +6771,8 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -6755,7 +6786,8 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -6769,7 +6801,8 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -6783,7 +6816,8 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -6797,7 +6831,8 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -6811,7 +6846,8 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -6825,7 +6861,8 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -6839,7 +6876,8 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -6853,7 +6891,8 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -6867,7 +6906,8 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -6881,7 +6921,8 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -6895,7 +6936,8 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -6909,7 +6951,8 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -6923,7 +6966,8 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -6937,7 +6981,8 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -6951,7 +6996,8 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -6965,7 +7011,8 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -6979,7 +7026,8 @@
             },
             {
               "lang": "ru",
-              "text": "ng build"
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -7007,7 +7055,8 @@
             },
             {
               "lang": "ru",
-              "text": "ng test"
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -7035,7 +7084,8 @@
             },
             {
               "lang": "ru",
-              "text": "ng e2e"
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -7063,7 +7113,8 @@
             },
             {
               "lang": "ru",
-              "text": "ng lint"
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -7091,7 +7142,8 @@
             },
             {
               "lang": "ru",
-              "text": "ng run"
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -7119,7 +7171,8 @@
             },
             {
               "lang": "ru",
-              "text": "ng generate"
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -7175,7 +7228,8 @@
             },
             {
               "lang": "ru",
-              "text": "ng xi18n"
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -7203,7 +7257,8 @@
             },
             {
               "lang": "ru",
-              "text": "ng update"
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -7217,7 +7272,7 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "```\nng update [package] [--[argument]=[value]]\n```\n\nОбновление приложения до последней версии.\n\n## Параметры"
             }
           ]
         },
@@ -7228,6 +7283,10 @@
             {
               "lang": "en",
               "text": "Run through without making any changes. "
+            },
+            {
+              "lang": "ru",
+              "text": "Запуск без каких-либо реальных изменений. Список созданных файлов выводится в консоль."
             }
           ]
         },
@@ -7251,11 +7310,11 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Whether to update all packages in package.json."
+              "text": "Whether to update all packages in `package.json`."
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "Обновление всех пакетов в `package.json`."
             }
           ]
         },
@@ -7266,6 +7325,10 @@
             {
               "lang": "en",
               "text": "Use the largest version, including beta and RCs."
+            },
+            {
+              "lang": "ru",
+              "text": "Использовать самые последние версии, включая беты и RC."
             }
           ]
         },
@@ -7276,6 +7339,10 @@
             {
               "lang": "en",
               "text": "Only perform a migration, does not update the installed version."
+            },
+            {
+              "lang": "ru",
+              "text": "Запустить только миграцию, не обновляя установленную версию."
             }
           ]
         },
@@ -7286,6 +7353,10 @@
             {
               "lang": "en",
               "text": "Version from which to migrate from. Only available with a single package being updated, and only on migration only."
+            },
+            {
+              "lang": "ru",
+              "text": "Версия с которой нужно мигрировать. Доступно только при обновлении одного пакета."
             }
           ]
         },
@@ -7296,6 +7367,10 @@
             {
               "lang": "en",
               "text": "Version up to which to apply migrations. Only available with a single package being updated, and only on migrations only. Requires from to be specified. Default to the installed version detected."
+            },
+            {
+              "lang": "ru",
+              "text": "Версия до которой применяются миграции. Доступно только при обновлении одного пакета. \n\nПо-умолчанию используется текущая установленная версия."
             }
           ]
         },
@@ -7306,6 +7381,10 @@
             {
               "lang": "en",
               "text": "The NPM registry to use."
+            },
+            {
+              "lang": "ru",
+              "text": "NPM регистр."
             }
           ]
         },
@@ -7319,7 +7398,8 @@
             },
             {
               "lang": "ru",
-              "text": "ng config"
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -7333,7 +7413,7 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "```\nng config [key] [value]\n```\n\nЧтение/установка настроек. `[key]` должен быть в формате JSON пути. Например: `a[3].foo.bar[2]`. \n\nЕсли указан только `[key]`, то будет возвращено значение. Если и `[key]`, и `[value]`, то значение будет установлено.\n\n\n## Параметры"
             }
           ]
         },
@@ -7347,7 +7427,8 @@
             },
             {
               "lang": "ru",
-              "text": "ng doc"
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -7361,7 +7442,7 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "```\nng doc [search term]\n```\n\nОткрывает официальную документацию Angular API с указанной поисковой фразой.\n\n## Параметры"
             }
           ]
         },
@@ -7375,7 +7456,8 @@
             },
             {
               "lang": "ru",
-              "text": "angular.json"
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -7400,6 +7482,10 @@
             {
               "lang": "en",
               "text": "Install Angular CLI:\n```\nnpm i @angular/cli -g\n```\n\nCreate a new project:\n```\nng new my-app\n```\n\nServe the application:\n```\ncd my-app\nng serve\n```\n"
+            },
+            {
+              "lang": "ru",
+              "text": "Установка Angular CLI:\n```\nnpm i @angular/cli -g\n```\n\nСоздание нового проекта:\n```\nng new my-app\n```\n\nЗапуск приложения:\n```\ncd my-app\nng serve\n```\n"
             }
           ]
         },
@@ -7423,11 +7509,12 @@
           "locales": [
             {
               "lang": "en",
-              "text": "app-shell"
+              "text": "App-shell builder"
             },
             {
               "lang": "ru",
-              "text": "app-shell"
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -7441,7 +7528,8 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -7452,6 +7540,10 @@
             {
               "lang": "en",
               "text": "Target to build."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя билда для наследования настроек."
             }
           ]
         },
@@ -7462,6 +7554,10 @@
             {
               "lang": "en",
               "text": "Server target to use for rendering the app shell."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя серверного билда для рендера шелла."
             }
           ]
         },
@@ -7482,6 +7578,10 @@
             {
               "lang": "en",
               "text": "The route to render."
+            },
+            {
+              "lang": "ru",
+              "text": "Путь роутера для рендера."
             }
           ]
         },
@@ -7511,11 +7611,12 @@
           "locales": [
             {
               "lang": "en",
-              "text": "browser"
+              "text": "Browser builder"
             },
             {
               "lang": "ru",
-              "text": "browser"
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -7540,6 +7641,10 @@
             {
               "lang": "en",
               "text": "List of static application assets."
+            },
+            {
+              "lang": "ru",
+              "text": "Список статичных ассетов."
             }
           ]
         },
@@ -7550,6 +7655,10 @@
             {
               "lang": "en",
               "text": "The name of the main entry-point file."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя основного стартового файла."
             }
           ]
         },
@@ -7560,6 +7669,10 @@
             {
               "lang": "en",
               "text": "The name of the polyfills file."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя файла с полифилами."
             }
           ]
         },
@@ -7570,6 +7683,10 @@
             {
               "lang": "en",
               "text": "The name of the TypeScript configuration file."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя файла TypeScript настроек."
             }
           ]
         },
@@ -7580,6 +7697,10 @@
             {
               "lang": "en",
               "text": "Global scripts to be included in the build."
+            },
+            {
+              "lang": "ru",
+              "text": "Глобальные скрипты для добавления в билд."
             }
           ]
         },
@@ -7590,6 +7711,10 @@
             {
               "lang": "en",
               "text": "Global styles to be included in the build."
+            },
+            {
+              "lang": "ru",
+              "text": "Глобальные стили для добавления в билд."
             }
           ]
         },
@@ -8149,11 +8274,12 @@
           "locales": [
             {
               "lang": "en",
-              "text": "extract-i18n"
+              "text": "Extract-i18n builder"
             },
             {
               "lang": "ru",
-              "text": "extract-i18n"
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -8227,11 +8353,12 @@
           "locales": [
             {
               "lang": "en",
-              "text": "karma"
+              "text": "Karma builder"
             },
             {
               "lang": "ru",
-              "text": "karma"
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -8435,11 +8562,12 @@
           "locales": [
             {
               "lang": "en",
-              "text": "protractor"
+              "text": "Protractor builder"
             },
             {
               "lang": "ru",
-              "text": "protractor"
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -8563,11 +8691,12 @@
           "locales": [
             {
               "lang": "en",
-              "text": "server"
+              "text": "Server builder"
             },
             {
               "lang": "ru",
-              "text": "server"
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -8851,11 +8980,12 @@
           "locales": [
             {
               "lang": "en",
-              "text": "tslint"
+              "text": "Tslint builder"
             },
             {
               "lang": "ru",
-              "text": "tslint"
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -9023,10 +9153,6 @@
           "id": "434320a4-0f39-e623-aade-b49030a84c35",
           "context": "Link label",
           "locales": [
-            {
-              "lang": "en",
-              "text": ""
-            },
             {
               "lang": "ru",
               "text": "GitHub RU LINK"
@@ -9197,11 +9323,12 @@
           "locales": [
             {
               "lang": "en",
-              "text": "сlass"
+              "text": "Class generator"
             },
             {
               "lang": "ru",
-              "text": "сlass"
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -9269,7 +9396,8 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -9313,11 +9441,12 @@
           "locales": [
             {
               "lang": "en",
-              "text": "component"
+              "text": "Component generator"
             },
             {
               "lang": "ru",
-              "text": "component"
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -9341,7 +9470,8 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -9355,7 +9485,8 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -9369,7 +9500,8 @@
             },
             {
               "lang": "ru",
-              "text": "ng add"
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -9419,7 +9551,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "directive"
+              "text": "Directive generator"
             },
             {
               "lang": "ru",
@@ -9447,7 +9579,8 @@
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -9488,6 +9621,10 @@
             {
               "lang": "en",
               "text": "Specifies the view encapsulation strategy."
+            },
+            {
+              "lang": "ru",
+              "text": "Стратегия инкапсуляции отображения."
             }
           ]
         },
@@ -9697,11 +9834,12 @@
           "locales": [
             {
               "lang": "en",
-              "text": "enum"
+              "text": "Enum generator"
             },
             {
               "lang": "ru",
-              "text": "enum"
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -9721,11 +9859,12 @@
           "locales": [
             {
               "lang": "en",
-              "text": "guard"
+              "text": "Guard generator"
             },
             {
               "lang": "ru",
-              "text": "guard"
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -9745,11 +9884,12 @@
           "locales": [
             {
               "lang": "en",
-              "text": "interface"
+              "text": "Interface generator"
             },
             {
               "lang": "ru",
-              "text": "interface"
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -9829,11 +9969,12 @@
           "locales": [
             {
               "lang": "en",
-              "text": "module"
+              "text": "Module generator"
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -9863,7 +10004,12 @@
           "locales": [
             {
               "lang": "en",
-              "text": "pipe"
+              "text": "Pipe generator"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -9893,7 +10039,12 @@
           "locales": [
             {
               "lang": "en",
-              "text": "service"
+              "text": "Service generator"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -9923,7 +10074,12 @@
           "locales": [
             {
               "lang": "en",
-              "text": "application"
+              "text": "Application generator"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -9953,7 +10109,12 @@
           "locales": [
             {
               "lang": "en",
-              "text": "universal"
+              "text": "Universal generator"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -9983,11 +10144,12 @@
           "locales": [
             {
               "lang": "en",
-              "text": "appShell"
+              "text": "AppShell generator"
             },
             {
               "lang": "ru",
-              "text": ""
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -10017,7 +10179,12 @@
           "locales": [
             {
               "lang": "en",
-              "text": "library"
+              "text": "Library generator"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -10048,6 +10215,11 @@
             {
               "lang": "en",
               "text": "application"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -10058,6 +10230,11 @@
             {
               "lang": "en",
               "text": "appShell"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -10068,6 +10245,11 @@
             {
               "lang": "en",
               "text": "enum"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -10078,6 +10260,11 @@
             {
               "lang": "en",
               "text": "guard"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -10088,6 +10275,11 @@
             {
               "lang": "en",
               "text": "interface"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -10098,6 +10290,11 @@
             {
               "lang": "en",
               "text": "library"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -10108,6 +10305,11 @@
             {
               "lang": "en",
               "text": "module"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -10118,6 +10320,11 @@
             {
               "lang": "en",
               "text": "pipe"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -10128,6 +10335,11 @@
             {
               "lang": "en",
               "text": "service"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -10138,6 +10350,11 @@
             {
               "lang": "en",
               "text": "universal"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -10168,6 +10385,10 @@
             {
               "lang": "en",
               "text": "## Options"
+            },
+            {
+              "lang": "ru",
+              "text": "## Параметры"
             }
           ]
         },
@@ -10188,6 +10409,10 @@
             {
               "lang": "en",
               "text": "## Options"
+            },
+            {
+              "lang": "ru",
+              "text": "## Параметры"
             }
           ]
         },
@@ -10218,6 +10443,10 @@
             {
               "lang": "en",
               "text": "## Options"
+            },
+            {
+              "lang": "ru",
+              "text": "## Параметры"
             }
           ]
         },
@@ -10248,6 +10477,10 @@
             {
               "lang": "en",
               "text": "Specifies the view encapsulation strategy."
+            },
+            {
+              "lang": "ru",
+              "text": "Стратегия инкапсуляции отображения."
             }
           ]
         },
@@ -10468,6 +10701,10 @@
             {
               "lang": "en",
               "text": "## Options"
+            },
+            {
+              "lang": "ru",
+              "text": "## Параметры"
             }
           ]
         },
@@ -10498,6 +10735,10 @@
             {
               "lang": "en",
               "text": "## Options"
+            },
+            {
+              "lang": "ru",
+              "text": "## Параметры"
             }
           ]
         },
@@ -10548,6 +10789,10 @@
             {
               "lang": "en",
               "text": "## Options"
+            },
+            {
+              "lang": "ru",
+              "text": "## Параметры"
             }
           ]
         },
@@ -10588,6 +10833,10 @@
             {
               "lang": "en",
               "text": "## Options"
+            },
+            {
+              "lang": "ru",
+              "text": "## Параметры"
             }
           ]
         },
@@ -10638,6 +10887,10 @@
             {
               "lang": "en",
               "text": "## Options"
+            },
+            {
+              "lang": "ru",
+              "text": "## Параметры"
             }
           ]
         },
@@ -10708,6 +10961,10 @@
             {
               "lang": "en",
               "text": "## Options"
+            },
+            {
+              "lang": "ru",
+              "text": "## Параметры"
             }
           ]
         },
@@ -10788,6 +11045,10 @@
             {
               "lang": "en",
               "text": "## Options"
+            },
+            {
+              "lang": "ru",
+              "text": "## Параметры"
             }
           ]
         },
@@ -10838,6 +11099,10 @@
             {
               "lang": "en",
               "text": "## Options"
+            },
+            {
+              "lang": "ru",
+              "text": "## Параметры"
             }
           ]
         },

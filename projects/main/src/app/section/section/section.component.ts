@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
+import { extractMessage } from '../../content-message/extract-message';
 import { ContentSection } from '../../content/meta';
+import { SeoService } from '../../seo.service';
 import { VersionComponent } from '../../version/version.component';
 
 @Component({
@@ -19,6 +21,7 @@ export class SectionComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     private versionComponent: VersionComponent,
+    private seo: SeoService,
   ) {
   }
 
@@ -30,6 +33,8 @@ export class SectionComponent implements OnInit {
     this.route.params.subscribe(({sectionUrl}) => {
       this.section = Object.values(this.version.sections)
         .find(s => s.url === sectionUrl);
+      const title = extractMessage(this.version.messages, this.section.title, this.versionComponent.lang);
+      this.seo.setPrefix(title);
     });
     this.router.events.subscribe(e => {
       if (e instanceof NavigationEnd) {
