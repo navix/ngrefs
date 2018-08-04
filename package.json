@@ -2,16 +2,16 @@
   "name": "ng-cli-ref",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng run main:serve",
-    "build": "ng run main:build",
-    "gen-content": "node gen-content",
-    "json-to-md": "node json-to-md",
-    "compile-messages": "node compile-messages",
-    "editor:serve": "ng run editor:serve",
+    "clean": "rimraf ./dist",
+    "main:start": "ng run main:serve",
+    "main:build": "ng run main:build",
     "main:server:build": "ng run main:server",
     "main:server:bundle": "webpack --config ./projects/main/webpack.server.config.js --progress --colors",
-    "main:server:serve": "node ./dist/server"
+    "main:server:serve": "node ./dist/server",
+    "main:docker:build": "docker build -t dhub.nvx.me:443/ngrefs-main .",
+    "main:docker:push": "docker push dhub.nvx.me:443/ngrefs-main",
+    "main:deploy": "npm run clean && npm run main:build && npm run main:server:build && npm run main:server:bundle && npm run main:docker:build && npm run main:docker:push",
+    "editor:serve": "ng run editor:serve"
   },
   "private": true,
   "dependencies": {
