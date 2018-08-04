@@ -31,3 +31,36 @@
   font-weight: 600;
   padding-top: $grid;
 }
+
+.link-wrapper {
+  position: relative;
+  button {
+    position: absolute;
+    top: $grid;
+    right: $grid;
+    color: #ffffff;
+    background: transparent;
+    border: 0;
+  }
+  .link {
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: $smallShadow;
+  }
+  .link.-sula {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    color: #ffffff;
+    font-size: 1.05rem;
+    height: 100px;
+    text-decoration: none;
+    .brand {
+      font-size: 1.7rem;
+      font-weight: 600;
+    }
+  }
+}

@@ -18,3 +18,14 @@
   &copy; {{ year }} <a href="https://github.com/navix" target="_blank">Sasha Novyk</a>
   | <a href="https://github.com/navix/ngrefs" target="_blank">GitHub</a>
 </div>
+
+<div *ngIf="showLink"
+     class="link-wrapper">
+  <button (click)="showLink = false">X</button>
+  <a class="link -sula"
+     href="https://sula.ngx-kit.com?utm_source=ngrefs"
+     target="_blank">
+    <span class="brand">Sula</span>
+    <span>Angular UI-Kit</span>
+  </a>
+</div>

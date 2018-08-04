@@ -17,6 +17,8 @@ export class FooterMenuComponent implements OnInit {
 
   year = (new Date()).getFullYear();
 
+  showLink = true;
+
   constructor(
     public sectionComponent: SectionComponent,
   ) {
