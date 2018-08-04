@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { ContentSection } from '../../content/meta';
 import { VersionComponent } from '../../version/version.component';
 
@@ -13,8 +13,11 @@ export class SectionComponent implements OnInit {
 
   showHints = true;
 
+  displayNav = false;
+
   constructor(
     private route: ActivatedRoute,
+    private router: Router,
     private versionComponent: VersionComponent,
   ) {
   }
@@ -27,6 +30,11 @@ export class SectionComponent implements OnInit {
     this.route.params.subscribe(({sectionUrl}) => {
       this.section = Object.values(this.version.sections)
         .find(s => s.url === sectionUrl);
+    });
+    this.router.events.subscribe(e => {
+      if (e instanceof NavigationEnd) {
+        this.displayNav = false;
+      }
     });
   }
 }

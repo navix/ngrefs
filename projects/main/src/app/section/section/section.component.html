@@ -1,10 +1,28 @@
-<div class="menu">
-  <main-head-menu [version]="version"></main-head-menu>
-  <main-section-menu [items]="section.menu.items"></main-section-menu>
-  <main-footer-menu [version]="version"
-                    [(showHints)]="showHints">
-  </main-footer-menu>
-</div>
+<main-section-nav *kitMq="{from: 'tablet'}"
+                  [version]="version"
+                  [section]="section">
+</main-section-nav>
+
+<ng-container *kitMq="{until: 'tablet'}">
+  <button *ngIf="!displayNav"
+          class="menu-toggle"
+          title="Show menu"
+          (click)="displayNav = true">
+    <kit-icon name="menu" size="32px"></kit-icon>
+  </button>
+  <div class="mobile-header">
+    <span>{{ version.title }} References</span>
+    <span>/</span>
+    <app-content-message [ref]="section.title"></app-content-message>
+  </div>
+  <kit-modal (close)="displayNav = false">
+    <main-section-nav *kitOverlay="displayNav"
+                      class="side"
+                      [version]="version"
+                      [section]="section">
+    </main-section-nav>
+  </kit-modal>
+</ng-container>
 
 <div class="content">
   <div class="content-wrapper">

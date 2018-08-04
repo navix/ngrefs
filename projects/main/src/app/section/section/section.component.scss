@@ -1,38 +1,38 @@
-@import "../../../styles/params";
-
-.menu {
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  left: 0;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: $sideWidth;
-  main-head-menu {
-    display: block;
-    background: $darkBg;
-    color: $white;
-  }
-  main-section-menu {
-    background: #f9f9f9;
-    display: block;
-    flex-grow: 1;
-    overflow-y: auto;
-    padding: $grid * 2;
-  }
-  main-footer-menu {
-    background: #f0f0f0;
-  }
-}
-
-.content {
-  margin-left: $sideWidth;
-}
+@import "params";
+@import "mq";
 
 .content-wrapper {
   box-sizing: border-box;
   margin: 0 auto;
   max-width: $contentWidth;
   padding: 0 $grid * 4 $grid * 8;
+}
+
+.menu-toggle {
+  position: fixed;
+  flex-shrink: 0;
+  top: 0;
+  left: 0;
+  padding: $grid;
+  background: transparent;
+  border: none;
+}
+
+.mobile-header {
+  height: $grid * 2 + 32px;
+  align-items: center;
+  justify-content: center;
+  background: #eeeeee;
+  display: flex;
+  flex-direction: row;
+  font-size: 0.95rem;
+  span {
+    margin-right: $grid;
+  }
+}
+
+@include mq($from: tablet) {
+  .content {
+    margin-left: $sideWidth;
+  }
 }

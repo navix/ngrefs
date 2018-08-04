@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { ContentVersion } from '../../content/meta';
+import { SectionComponent } from '../../section/section/section.component';
 
 @Component({
   selector: 'main-footer-menu',
@@ -16,7 +17,9 @@ export class FooterMenuComponent implements OnInit {
 
   year = (new Date()).getFullYear();
 
-  constructor() {
+  constructor(
+    public sectionComponent: SectionComponent,
+  ) {
   }
 
   ngOnInit() {

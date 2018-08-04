@@ -89,6 +89,7 @@ export interface ContentMessage {
   locales: {
     lang: string;
     text: string;
+    useSource?: boolean;
   }[];
 }
 

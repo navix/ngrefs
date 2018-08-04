@@ -49,10 +49,6 @@ export class ContentMessageComponent implements OnInit, OnChanges {
   ) {
   }
 
-  @HostBinding('class.-highlight') get highlightClass() {
-    return this.highlight;
-  }
-
   ngOnInit() {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
@@ -65,6 +61,10 @@ export class ContentMessageComponent implements OnInit, OnChanges {
 
   ngOnChanges() {
     this.update();
+  }
+
+  @HostBinding('class.-highlight') get highlightClass() {
+    return this.highlight;
   }
 
   clickHandler(event: any) {
@@ -85,7 +85,7 @@ export class ContentMessageComponent implements OnInit, OnChanges {
       const message = this.versionPage.version.messages.find(m => m.id === this.ref.id);
       if (message) {
         const locale = message.locales.find(l => l.lang === this.lang);
-        if (locale && locale.text) {
+        if (locale && locale.text && !locale.useSource) {
           this.text = locale.text;
           this.highlight = false;
         } else {
@@ -94,10 +94,12 @@ export class ContentMessageComponent implements OnInit, OnChanges {
             this.text = enLocal.text;
           } else {
             this.text = this.ref.id;
+            if (isDevMode()) {
+              console.warn(`ContentMessage: Lang "en" for Message with id "${this.ref.id}" not found!`);
+            }
           }
           if (isDevMode()) {
-            console.warn(`ContentMessage: Lang "en" for Message with id "${this.ref.id}" not found!`);
-            this.highlight = true;
+            this.highlight = locale ? !locale.useSource : true;
           }
         }
       } else {

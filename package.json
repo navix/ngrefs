@@ -3,11 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
+    "start": "ng run main:serve",
+    "build": "ng run main:build",
     "gen-content": "node gen-content",
     "json-to-md": "node json-to-md",
     "compile-messages": "node compile-messages",
