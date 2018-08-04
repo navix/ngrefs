@@ -1,5 +1,5 @@
 <div class="output" (click)="displayModal = true">
-  {{ message?.locales[0]?.text || state?.id }}
+  <span [innerHtml]="(message?.locales[0]?.text || state?.id) | nl2br"></span>
 </div>
 <div class="edit">
   <button uiButton
@@ -40,13 +40,22 @@
             </select>
             <span *kitFormError="'required'">Field is required</span>
           </ui-form-field>
-          <ui-form-field label="Text">
+          <ui-form-field *ngIf="!locale.useSource"
+                         label="Text">
             <textarea [(ngModel)]="locale.text"
                       uiText
                       name="text"
                       required>
             </textarea>
             <span *kitFormError="'required'">Field is required</span>
+          </ui-form-field>
+          <ui-form-field *ngIf="locale.lang !== source"
+                         label="Use source"
+                         class="layout-inline">
+            <input uiCheckbox
+                   type="checkbox"
+                   [(ngModel)]="locale.useSource"
+                   name="useSource">
           </ui-form-field>
         </form>
       </div>

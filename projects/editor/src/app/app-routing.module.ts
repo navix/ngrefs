@@ -7,6 +7,7 @@ import { SectionGeneralComponent } from './section/section-general/section-gener
 import { SectionPagesComponent } from './section/section-pages/section-pages.component';
 import { SectionComponent } from './section/section/section.component';
 import { VersionGeneralComponent } from './version/version-general/version-general.component';
+import { VersionMessagesComponent } from './version/version-messages/version-messages.component';
 import { VersionSectionsComponent } from './version/version-sections/version-sections.component';
 import { VersionComponent } from './version/version/version.component';
 import { VersionsListComponent } from './version/versions-list/versions-list.component';
@@ -49,6 +50,10 @@ const routes: Routes = [
             component: PageComponent,
           },
         ],
+      },
+      {
+        path: 'messages',
+        component: VersionMessagesComponent,
       },
     ],
   },

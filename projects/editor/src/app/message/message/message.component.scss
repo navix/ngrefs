@@ -20,3 +20,9 @@
 textarea {
   min-height: 200px;
 }
+
+.locale-wrapper {
+  margin-bottom: $grid;
+  padding: $grid 0;
+  border-bottom: 1px solid #cccccc;
+}

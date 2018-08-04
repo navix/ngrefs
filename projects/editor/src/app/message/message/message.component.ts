@@ -24,6 +24,8 @@ export class MessageComponent implements OnInit, ControlValueAccessor {
    */
   @Input() context: string;
 
+  readonly source = 'en';
+
   state?: ContentMessageRef;
 
   disabled = false;

@@ -1,0 +1,11 @@
+@import "params";
+
+textarea {
+  min-height: 200px;
+}
+
+.locales {
+  h4 {
+    margin-bottom: $grid / 2;
+  }
+}

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { uuid } from '@ngx-kit/core';
+import { isArray, isObject, uuid } from '@ngx-kit/core';
 import {
   ContentEntry,
   ContentMenuItem,
@@ -17,6 +17,8 @@ export class DataService {
   } = {
     versions: [],
   };
+
+  readonly sourceLang = 'en';
 
   constructor() {
     this.logData();
@@ -77,19 +79,79 @@ export class DataService {
 
   cleanUpMessages() {
     this.data.versions.forEach(v => {
-      v.messages = v.messages.filter(m => {
-        if (m.locales) {
-          if (m.locales.find(l => !!l.text)) {
-            return true;
+      v.messages = v.messages
+        // Filter messages without any texts
+        .filter(m => {
+          if (m.locales) {
+            if (m.locales.find(l => !!l.text)) {
+              return true;
+            } else {
+              // Message has locales but with empty text
+              return false;
+            }
           } else {
-            // Message has locales but with empty text
+            // No locales defined in the message
             return false;
           }
-        } else {
-          // No locales defined in the message
-          return false;
-        }
-      });
+        })
+        // Clean up useSource locales
+        .map(m => {
+          // Remove empty
+          m.locales = m.locales.filter(l => l.text || l.useSource);
+          // Remove text if useSource
+          m.locales.forEach(l => {
+            if (l.useSource && l.text) {
+              l.text = '';
+            }
+          });
+          return m;
+        });
     });
+  }
+
+  findMessagePath(id: number): any[] | undefined {
+    for (const versionKey in this.data.versions) {
+      const version = this.data.versions[versionKey];
+      for (const sectionKey in version.sections) {
+        const section = version.sections[sectionKey];
+        if (this.isMessageRefExist(section.title, id)) {
+          return ['versions', version.id, 'sections', section.id];
+        }
+        if (this.isMessageRefExist(section.menu, id)) {
+          return ['versions', version.id, 'sections', section.id, 'menu'];
+        }
+        for (const pageKey in section.pages) {
+          const page = section.pages[pageKey];
+          if (this.isMessageRefExist(page, id)) {
+            return ['versions', version.id, 'sections', section.id, 'pages', page.id];
+          }
+        }
+      }
+    }
+  }
+
+  isMessageRefExist(data: any, id: number): boolean {
+    if (data) {
+      if (data.id && data.id === id) {
+        return true;
+      }
+      if (isArray(data)) {
+        for (const item of data) {
+          if (this.isMessageRefExist(item, id)) {
+            return true;
+          }
+        }
+      }
+      if (isObject(data)) {
+        for (const dataKey in data) {
+          if (this.isMessageRefExist(data[dataKey], id)) {
+            return true;
+          }
+        }
+      }
+      return false;
+    } else {
+      return false;
+    }
   }
 }
