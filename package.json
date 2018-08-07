@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "clean": "rimraf ./dist",
-    "main:start": "ng run main:serve",
+    "main:serve": "ng run main:serve",
     "main:build": "ng run main:build",
     "main:server:build": "ng run main:server",
     "main:server:bundle": "webpack --config ./projects/main/webpack.server.config.js --progress --colors",

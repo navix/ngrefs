@@ -6515,7 +6515,7 @@
             },
             {
               "lang": "ru",
-              "text": "Префикс для генерируемых компонентов."
+              "text": "Префикс для генерируемых селекторов."
             }
           ]
         },
@@ -7568,6 +7568,10 @@
             {
               "lang": "en",
               "text": "Script that exports the Server AppModule to render. This should be the main JavaScript outputted by the server target. By default we will resolve the outputPath of the serverTarget and find a bundle named 'main' in it (whether or not there's a hash tag)."
+            },
+            {
+              "lang": "ru",
+              "text": "Скрипт экспортирующий серверный `AppModule` для рендера. По-умолчанию ищет `main` бандл в `outputPath` серверного билда."
             }
           ]
         },
@@ -7591,7 +7595,11 @@
           "locales": [
             {
               "lang": "en",
-              "text": "The input path for the index.html file. By default uses the output index.html of the browser target."
+              "text": "The input path for the `index.html` file. By default uses the output index.html of the browser target."
+            },
+            {
+              "lang": "ru",
+              "text": "Путь к исходному `index.html` файлу. По умолчанию использует файл, указанный для `browser` билда."
             }
           ]
         },
@@ -7602,6 +7610,10 @@
             {
               "lang": "en",
               "text": "The output path of the index.html file. By default will overwrite the input file."
+            },
+            {
+              "lang": "ru",
+              "text": "Путь для вывода `index.html` файла. По-умолчанию перезаписывает исходный файл."
             }
           ]
         },
@@ -7672,7 +7684,7 @@
             },
             {
               "lang": "ru",
-              "text": "Имя файла с полифилами."
+              "text": "Путь к файлу с полифилами."
             }
           ]
         },
@@ -7686,7 +7698,7 @@
             },
             {
               "lang": "ru",
-              "text": "Имя файла TypeScript настроек."
+              "text": "Путь к файлу конфигурации TypeScript."
             }
           ]
         },
@@ -7725,6 +7737,10 @@
             {
               "lang": "en",
               "text": "Options to pass to style preprocessors."
+            },
+            {
+              "lang": "ru",
+              "text": "Параметры для передачи в препроцессоры стилей."
             }
           ]
         },
@@ -7735,6 +7751,10 @@
             {
               "lang": "en",
               "text": "Replace files with other files in the build."
+            },
+            {
+              "lang": "ru",
+              "text": "Замена файлов на другие в процессе билда."
             }
           ]
         },
@@ -7745,6 +7765,10 @@
             {
               "lang": "en",
               "text": "Path where output will be placed."
+            },
+            {
+              "lang": "ru",
+              "text": "Путь для вывода файлов."
             }
           ]
         },
@@ -7755,6 +7779,10 @@
             {
               "lang": "en",
               "text": "Build using Ahead of Time compilation."
+            },
+            {
+              "lang": "ru",
+              "text": "Билд с использованием AoT-компиляции."
             }
           ]
         },
@@ -7765,6 +7793,10 @@
             {
               "lang": "en",
               "text": "Output sourcemaps."
+            },
+            {
+              "lang": "ru",
+              "text": "Вывод sourcemaps."
             }
           ]
         },
@@ -7775,6 +7807,10 @@
             {
               "lang": "en",
               "text": "Output in-file eval sourcemaps."
+            },
+            {
+              "lang": "ru",
+              "text": "Вывод встроенных в файл sourcemaps."
             }
           ]
         },
@@ -7785,6 +7821,10 @@
             {
               "lang": "en",
               "text": "Use a separate bundle containing only vendor libraries."
+            },
+            {
+              "lang": "ru",
+              "text": "Использовать отдельный бандл для кода сторонних библиотек (вендоров)."
             }
           ]
         },
@@ -7795,6 +7835,10 @@
             {
               "lang": "en",
               "text": "Use a separate bundle containing code used across multiple bundles."
+            },
+            {
+              "lang": "ru",
+              "text": "Использовать отдельный бандл для кода, который используется в нескольких бандлах."
             }
           ]
         },
@@ -7804,7 +7848,11 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Base url for the application being built."
+              "text": "Base URL for the application being built."
+            },
+            {
+              "lang": "ru",
+              "text": "Базовый URL приложения."
             }
           ]
         },
@@ -7815,6 +7863,10 @@
             {
               "lang": "en",
               "text": "URL where files will be deployed."
+            },
+            {
+              "lang": "ru",
+              "text": "URL для деплоя файлов."
             }
           ]
         },
@@ -7825,6 +7877,10 @@
             {
               "lang": "en",
               "text": "Adds more details to output logging."
+            },
+            {
+              "lang": "ru",
+              "text": "Вывод более детальной информации."
             }
           ]
         },
@@ -7835,6 +7891,10 @@
             {
               "lang": "en",
               "text": "Log progress to the console while building."
+            },
+            {
+              "lang": "ru",
+              "text": "Вывод логов в консоль во время билда."
             }
           ]
         },
@@ -7845,6 +7905,10 @@
             {
               "lang": "en",
               "text": "Localization file to use for i18n."
+            },
+            {
+              "lang": "ru",
+              "text": "Путь к i18n файлу."
             }
           ]
         },
@@ -7855,6 +7919,10 @@
             {
               "lang": "en",
               "text": "Locale to use for i18n."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя локали, используемой для i18n."
             }
           ]
         },
@@ -7865,6 +7933,10 @@
             {
               "lang": "en",
               "text": "How to handle missing translations for i18n."
+            },
+            {
+              "lang": "ru",
+              "text": "Способ обработки случаев отсутствия перевода для строки."
             }
           ]
         },
@@ -7875,6 +7947,10 @@
             {
               "lang": "en",
               "text": "Run build when files change."
+            },
+            {
+              "lang": "ru",
+              "text": "Слежение за изменениями файлов и автоматическим запуском билда."
             }
           ]
         },
@@ -7885,6 +7961,10 @@
             {
               "lang": "en",
               "text": "Define the output filename cache-busting hashing mode."
+            },
+            {
+              "lang": "ru",
+              "text": "Добавление хеша к имени файлов."
             }
           ]
         },
@@ -7895,6 +7975,10 @@
             {
               "lang": "en",
               "text": "Enable and define the file watching poll time period in milliseconds."
+            },
+            {
+              "lang": "ru",
+              "text": "Интервал проверки изменений в файлах для `watch`-режима."
             }
           ]
         },
@@ -7905,6 +7989,10 @@
             {
               "lang": "en",
               "text": "Delete the output path before building."
+            },
+            {
+              "lang": "ru",
+              "text": "Удаление папки, в которую будет сгенерирован код, перед началом билда."
             }
           ]
         },
@@ -7915,6 +8003,10 @@
             {
               "lang": "en",
               "text": "Do not use the real path when resolving modules."
+            },
+            {
+              "lang": "ru",
+              "text": "Не использовать реальные пути при вычислении пути к модулям."
             }
           ]
         },
@@ -7925,6 +8017,10 @@
             {
               "lang": "en",
               "text": "Extract all licenses in a separate file, in the case of production builds only."
+            },
+            {
+              "lang": "ru",
+              "text": "Сбор всех лицензий из исходных файлов в файл 3rdpartylicenses.txt."
             }
           ]
         },
@@ -7935,6 +8031,10 @@
             {
               "lang": "en",
               "text": "Show circular dependency warnings on builds."
+            },
+            {
+              "lang": "ru",
+              "text": "Вывод предупреждения о циклической DI-зависимости."
             }
           ]
         },
@@ -7945,6 +8045,10 @@
             {
               "lang": "en",
               "text": "Enables @angular-devkit/build-optimizer optimizations when using the 'aot' option."
+            },
+            {
+              "lang": "ru",
+              "text": "Использовать оптимизации из @angular-devkit/build-optimizer для включенного `aot`."
             }
           ]
         },
@@ -7955,6 +8059,10 @@
             {
               "lang": "en",
               "text": "Use file name for lazy loaded chunks."
+            },
+            {
+              "lang": "ru",
+              "text": "Использование имени модуля для имени файлов, которые загружаются через LazyLoading."
             }
           ]
         },
@@ -7964,7 +8072,11 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Enables the use of subresource integrity validation."
+              "text": "Enables the use of [subresource integrity](https://www.maxcdn.com/one/visual-glossary/subresource-integrity/) validation."
+            },
+            {
+              "lang": "ru",
+              "text": "Включение [subresource integrity](https://www.maxcdn.com/one/visual-glossary/subresource-integrity/)."
             }
           ]
         },
@@ -7975,6 +8087,10 @@
             {
               "lang": "en",
               "text": "Generates a service worker config for production builds."
+            },
+            {
+              "lang": "ru",
+              "text": "Генерация service worker конфига для прод-билда."
             }
           ]
         },
@@ -7985,6 +8101,10 @@
             {
               "lang": "en",
               "text": "Flag to prevent building an app shell."
+            },
+            {
+              "lang": "ru",
+              "text": "Не генерировать app shell. "
             }
           ]
         },
@@ -7995,6 +8115,10 @@
             {
               "lang": "en",
               "text": "The name of the index HTML file."
+            },
+            {
+              "lang": "ru",
+              "text": "Путь к основному (index) HTML-файлу."
             }
           ]
         },
@@ -8004,7 +8128,11 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Generates a 'stats.json' file which can be analyzed using tools such as: #webpack-bundle-analyzer' or https: //webpack.github.io/analyse."
+              "text": "Generates a 'stats.json' file which can be analyzed using tools such as: `#webpack-bundle-analyzer` or https://webpack.github.io/analyse."
+            },
+            {
+              "lang": "ru",
+              "text": "Генерирует файл статистики `stats.json`, который используется при анализе бандла с помощью `webpack-bundle-analyzer` или https://webpack.github.io/analyse."
             }
           ]
         },
@@ -8015,6 +8143,10 @@
             {
               "lang": "en",
               "text": "Run the TypeScript type checker in a forked process."
+            },
+            {
+              "lang": "ru",
+              "text": "Проверка TypeScript типов в отдельном процессе."
             }
           ]
         },
@@ -8025,6 +8157,10 @@
             {
               "lang": "en",
               "text": "List of additional NgModule files that will be lazy loaded. Lazy router modules with be discovered automatically."
+            },
+            {
+              "lang": "ru",
+              "text": "Список модулей для ленивой загрузки. Модули, подключаемые через роутер, обрабатываются автоматически."
             }
           ]
         },
@@ -8035,6 +8171,10 @@
             {
               "lang": "en",
               "text": "Budget thresholds to ensure parts of your application stay within boundaries which you set.\n"
+            },
+            {
+              "lang": "ru",
+              "text": "Параметры для контролирования размера бандла."
             }
           ]
         },
@@ -8045,6 +8185,10 @@
             {
               "lang": "en",
               "text": "Proxy configuration file."
+            },
+            {
+              "lang": "ru",
+              "text": "Путь к файлу настроек для проксирования запросов на другой хост."
             }
           ]
         },
@@ -8055,6 +8199,10 @@
             {
               "lang": "en",
               "text": "Serve using HTTPS."
+            },
+            {
+              "lang": "ru",
+              "text": "Использовать HTTPS."
             }
           ]
         },
@@ -8065,6 +8213,10 @@
             {
               "lang": "en",
               "text": "SSL key to use for serving HTTPS."
+            },
+            {
+              "lang": "ru",
+              "text": "Путь к файлу SSL-ключа для HTTPS."
             }
           ]
         },
@@ -8075,6 +8227,10 @@
             {
               "lang": "en",
               "text": "SSL certificate to use for serving HTTPS."
+            },
+            {
+              "lang": "ru",
+              "text": "Путь к файлу SSL-сертификата для HTTPS."
             }
           ]
         },
@@ -8085,6 +8241,10 @@
             {
               "lang": "en",
               "text": "Opens the url in default browser."
+            },
+            {
+              "lang": "ru",
+              "text": "Открыть приложение в браузере по готовности."
             }
           ]
         },
@@ -8095,6 +8255,10 @@
             {
               "lang": "en",
               "text": "Whether to reload the page on change, using live-reload."
+            },
+            {
+              "lang": "ru",
+              "text": "Перезагрузка страницы браузера по завершению билда."
             }
           ]
         },
@@ -8105,6 +8269,10 @@
             {
               "lang": "en",
               "text": "Specify the URL that the browser client will use."
+            },
+            {
+              "lang": "ru",
+              "text": "URL для подключения клиента, который автоматически обновляет страницу при изменениях."
             }
           ]
         },
@@ -8115,6 +8283,10 @@
             {
               "lang": "en",
               "text": "The pathname where the app will be served."
+            },
+            {
+              "lang": "ru",
+              "text": "Путь на котором будет развернуто приложение."
             }
           ]
         },
@@ -8125,6 +8297,10 @@
             {
               "lang": "en",
               "text": "Don't verify connected clients are part of allowed hosts."
+            },
+            {
+              "lang": "ru",
+              "text": "Разрешать подключение с хостов, не указанных к конфиге."
             }
           ]
         },
@@ -8135,6 +8311,10 @@
             {
               "lang": "en",
               "text": "Enable hot module replacement."
+            },
+            {
+              "lang": "ru",
+              "text": "Включение Hot Module Replacement."
             }
           ]
         },
@@ -8145,6 +8325,10 @@
             {
               "lang": "en",
               "text": "Rebuild on change."
+            },
+            {
+              "lang": "ru",
+              "text": "Слежение за изменениями файлов и автоматическим запуском билда."
             }
           ]
         },
@@ -8155,6 +8339,10 @@
             {
               "lang": "en",
               "text": "Show a warning when the --hmr option is enabled."
+            },
+            {
+              "lang": "ru",
+              "text": "Показывать предупреждение, если `hmr` включен."
             }
           ]
         },
@@ -8165,6 +8353,10 @@
             {
               "lang": "en",
               "text": "Show a warning when deploy-url/base-href use unsupported serve path values."
+            },
+            {
+              "lang": "ru",
+              "text": "Показывать предупреждение, когда для deploy-url/base-href указаны неподдерживаемые значения."
             }
           ]
         },
@@ -8175,6 +8367,10 @@
             {
               "lang": "en",
               "text": "Defines the optimization level of the build."
+            },
+            {
+              "lang": "ru",
+              "text": "Уровень оптимизации для билда."
             }
           ]
         },
@@ -8185,6 +8381,10 @@
             {
               "lang": "en",
               "text": "Build using Ahead of Time compilation."
+            },
+            {
+              "lang": "ru",
+              "text": "Билд с использованием AoT-компиляции."
             }
           ]
         },
@@ -8195,6 +8395,10 @@
             {
               "lang": "en",
               "text": "Output sourcemaps."
+            },
+            {
+              "lang": "ru",
+              "text": "Вывод sourcemaps."
             }
           ]
         },
@@ -8205,6 +8409,10 @@
             {
               "lang": "en",
               "text": "Output in-file eval sourcemaps."
+            },
+            {
+              "lang": "ru",
+              "text": "Вывод встроенных в файл sourcemaps."
             }
           ]
         },
@@ -8215,6 +8423,10 @@
             {
               "lang": "en",
               "text": "Use a separate bundle containing only vendor libraries."
+            },
+            {
+              "lang": "ru",
+              "text": "Использовать отдельный бандл для кода сторонних библиотек (вендоров)."
             }
           ]
         },
@@ -8225,6 +8437,10 @@
             {
               "lang": "en",
               "text": "Use a separate bundle containing code used across multiple bundles."
+            },
+            {
+              "lang": "ru",
+              "text": "Использовать отдельный бандл для кода, который используется в нескольких бандлах."
             }
           ]
         },
@@ -8235,6 +8451,10 @@
             {
               "lang": "en",
               "text": "Base url for the application being built."
+            },
+            {
+              "lang": "ru",
+              "text": "Базовый URL приложения."
             }
           ]
         },
@@ -8245,6 +8465,10 @@
             {
               "lang": "en",
               "text": "URL where files will be deployed."
+            },
+            {
+              "lang": "ru",
+              "text": "URL для деплоя файлов."
             }
           ]
         },
@@ -8255,6 +8479,10 @@
             {
               "lang": "en",
               "text": "Adds more details to output logging."
+            },
+            {
+              "lang": "ru",
+              "text": "Вывод более детальной информации."
             }
           ]
         },
@@ -8265,6 +8493,10 @@
             {
               "lang": "en",
               "text": "Log progress to the console while building."
+            },
+            {
+              "lang": "ru",
+              "text": "Вывод логов в консоль во время билда."
             }
           ]
         },
@@ -8304,6 +8536,10 @@
             {
               "lang": "en",
               "text": "Target to extract from."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя билда для получения сообщений."
             }
           ]
         },
@@ -8314,6 +8550,10 @@
             {
               "lang": "en",
               "text": "Output format for the generated file."
+            },
+            {
+              "lang": "ru",
+              "text": "Формат i18n-файла."
             }
           ]
         },
@@ -8324,6 +8564,10 @@
             {
               "lang": "en",
               "text": "Specifies the source language of the application."
+            },
+            {
+              "lang": "ru",
+              "text": "Исходный язык приложения."
             }
           ]
         },
@@ -8334,6 +8578,10 @@
             {
               "lang": "en",
               "text": "Path where output will be placed."
+            },
+            {
+              "lang": "ru",
+              "text": "Путь для вывода файлов."
             }
           ]
         },
@@ -8344,6 +8592,10 @@
             {
               "lang": "en",
               "text": "Name of the file to output."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя сгенерированного файла."
             }
           ]
         },
@@ -8383,6 +8635,10 @@
             {
               "lang": "en",
               "text": "The name of the main entry-point file."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя основного стартового файла."
             }
           ]
         },
@@ -8393,6 +8649,10 @@
             {
               "lang": "en",
               "text": "The name of the TypeScript configuration file.\n"
+            },
+            {
+              "lang": "ru",
+              "text": "Путь к файлу конфигурации TypeScript."
             }
           ]
         },
@@ -8403,6 +8663,10 @@
             {
               "lang": "en",
               "text": "The name of the Karma configuration file."
+            },
+            {
+              "lang": "ru",
+              "text": "Путь к файлу конфига Karma."
             }
           ]
         },
@@ -8413,6 +8677,10 @@
             {
               "lang": "en",
               "text": "The name of the polyfills file."
+            },
+            {
+              "lang": "ru",
+              "text": "Путь к файлу с полифилами."
             }
           ]
         },
@@ -8423,6 +8691,10 @@
             {
               "lang": "en",
               "text": "List of static application assets."
+            },
+            {
+              "lang": "ru",
+              "text": "Список статичных ассетов."
             }
           ]
         },
@@ -8433,6 +8705,10 @@
             {
               "lang": "en",
               "text": "Global scripts to be included in the build."
+            },
+            {
+              "lang": "ru",
+              "text": "Глобальные скрипты для добавления в билд."
             }
           ]
         },
@@ -8443,6 +8719,10 @@
             {
               "lang": "en",
               "text": "Global styles to be included in the build."
+            },
+            {
+              "lang": "ru",
+              "text": "Глобальные стили для добавления в билд."
             }
           ]
         },
@@ -8452,7 +8732,11 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Options to pass to style preprocessors"
+              "text": "Options to pass to style preprocessors."
+            },
+            {
+              "lang": "ru",
+              "text": "Параметры для передачи в препроцессоры стилей."
             }
           ]
         },
@@ -8463,6 +8747,10 @@
             {
               "lang": "en",
               "text": "Defines the build environment."
+            },
+            {
+              "lang": "ru",
+              "text": "Параметры окружения."
             }
           ]
         },
@@ -8473,6 +8761,10 @@
             {
               "lang": "en",
               "text": "Output sourcemaps."
+            },
+            {
+              "lang": "ru",
+              "text": "Вывод sourcemaps."
             }
           ]
         },
@@ -8483,6 +8775,10 @@
             {
               "lang": "en",
               "text": "Log progress to the console while building."
+            },
+            {
+              "lang": "ru",
+              "text": "Вывод логов в консоль во время билда."
             }
           ]
         },
@@ -8493,6 +8789,10 @@
             {
               "lang": "en",
               "text": "Run build when files change."
+            },
+            {
+              "lang": "ru",
+              "text": "Слежение за изменениями файлов и автоматическим запуском билда."
             }
           ]
         },
@@ -8503,6 +8803,10 @@
             {
               "lang": "en",
               "text": "Enable and define the file watching poll time period in milliseconds."
+            },
+            {
+              "lang": "ru",
+              "text": "Интервал проверки изменений в файлах для `watch`-режима."
             }
           ]
         },
@@ -8513,6 +8817,10 @@
             {
               "lang": "en",
               "text": "Do not use the real path when resolving modules."
+            },
+            {
+              "lang": "ru",
+              "text": "Не использовать реальные пути при вычислении пути к модулям."
             }
           ]
         },
@@ -8523,6 +8831,10 @@
             {
               "lang": "en",
               "text": "Override which browsers tests are run against."
+            },
+            {
+              "lang": "ru",
+              "text": "Браузеры, в которых запускаются тесты."
             }
           ]
         },
@@ -8533,6 +8845,10 @@
             {
               "lang": "en",
               "text": "Output a code coverage report."
+            },
+            {
+              "lang": "ru",
+              "text": "Сгенерировать отчет о покрытии тестами."
             }
           ]
         },
@@ -8543,6 +8859,10 @@
             {
               "lang": "en",
               "text": "Globs to exclude from code coverage."
+            },
+            {
+              "lang": "ru",
+              "text": "Файлы, которые не нужно учитывать для отчета покрытия."
             }
           ]
         },
@@ -8553,6 +8873,10 @@
             {
               "lang": "en",
               "text": "Replace files with other files in the build."
+            },
+            {
+              "lang": "ru",
+              "text": "Замена файлов на другие в процессе билда."
             }
           ]
         },
@@ -8592,6 +8916,10 @@
             {
               "lang": "en",
               "text": "The name of the Protractor configuration file."
+            },
+            {
+              "lang": "ru",
+              "text": "Путь к файлу конфигурации Protractor."
             }
           ]
         },
@@ -8602,6 +8930,10 @@
             {
               "lang": "en",
               "text": "Dev server target to run tests against."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя билда на котором будут запущены тесты."
             }
           ]
         },
@@ -8612,6 +8944,10 @@
             {
               "lang": "en",
               "text": "Override specs in the protractor config."
+            },
+            {
+              "lang": "ru",
+              "text": "Переназначение спеков в конфиге protractor."
             }
           ]
         },
@@ -8622,6 +8958,10 @@
             {
               "lang": "en",
               "text": "Override suite in the protractor config."
+            },
+            {
+              "lang": "ru",
+              "text": "Переназначение кейсов в конфиге protractor."
             }
           ]
         },
@@ -8631,7 +8971,11 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Start Protractor's Element Explorer for debugging."
+              "text": "Start Protractor's [Element Explorer](https://github.com/angular/protractor/blob/master/docs/debugging.md#testing-out-protractor-interactively) for debugging."
+            },
+            {
+              "lang": "ru",
+              "text": "Запуск [Element Explorer](https://github.com/angular/protractor/blob/master/docs/debugging.md#testing-out-protractor-interactively) для отладки."
             }
           ]
         },
@@ -8642,6 +8986,10 @@
             {
               "lang": "en",
               "text": "Try to update webdriver."
+            },
+            {
+              "lang": "ru",
+              "text": "Автоматическое обновление webdriver."
             }
           ]
         },
@@ -8652,6 +9000,10 @@
             {
               "lang": "en",
               "text": "Compile and Serve the app."
+            },
+            {
+              "lang": "ru",
+              "text": "Билд и запуск приложения."
             }
           ]
         },
@@ -8662,6 +9014,10 @@
             {
               "lang": "en",
               "text": "The port to use to serve the application."
+            },
+            {
+              "lang": "ru",
+              "text": "Порт на котором хостится приложение."
             }
           ]
         },
@@ -8672,6 +9028,10 @@
             {
               "lang": "en",
               "text": "Host to listen on."
+            },
+            {
+              "lang": "ru",
+              "text": "Хост по которому доступно приложение."
             }
           ]
         },
@@ -8682,6 +9042,10 @@
             {
               "lang": "en",
               "text": "Base URL for protractor to connect to."
+            },
+            {
+              "lang": "ru",
+              "text": "Базовый URL, к которому подключается Protractor."
             }
           ]
         },
@@ -8721,6 +9085,10 @@
             {
               "lang": "en",
               "text": "The name of the main entry-point file."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя основного стартового файла."
             }
           ]
         },
@@ -8731,6 +9099,10 @@
             {
               "lang": "en",
               "text": "The name of the TypeScript configuration file."
+            },
+            {
+              "lang": "ru",
+              "text": "Путь к файлу конфигурации TypeScript."
             }
           ]
         },
@@ -8740,7 +9112,11 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Options to pass to style preprocessors\n"
+              "text": "Options to pass to style preprocessors.\n"
+            },
+            {
+              "lang": "ru",
+              "text": "Параметры для передачи в препроцессоры стилей."
             }
           ]
         },
@@ -8751,6 +9127,10 @@
             {
               "lang": "en",
               "text": "Defines the optimization level of the build."
+            },
+            {
+              "lang": "ru",
+              "text": "Уровень оптимизации для билда."
             }
           ]
         },
@@ -8761,6 +9141,10 @@
             {
               "lang": "en",
               "text": "Replace files with other files in the build."
+            },
+            {
+              "lang": "ru",
+              "text": "Замена файлов на другие в процессе билда."
             }
           ]
         },
@@ -8771,6 +9155,10 @@
             {
               "lang": "en",
               "text": "Path where output will be placed."
+            },
+            {
+              "lang": "ru",
+              "text": "Путь для вывода файлов."
             }
           ]
         },
@@ -8781,6 +9169,10 @@
             {
               "lang": "en",
               "text": "Output sourcemaps."
+            },
+            {
+              "lang": "ru",
+              "text": "Вывод sourcemaps."
             }
           ]
         },
@@ -8791,6 +9183,10 @@
             {
               "lang": "en",
               "text": "Output in-file eval sourcemaps.\n"
+            },
+            {
+              "lang": "ru",
+              "text": "Вывод встроенных в файл sourcemaps."
             }
           ]
         },
@@ -8801,6 +9197,10 @@
             {
               "lang": "en",
               "text": "Use a separate bundle containing only vendor libraries."
+            },
+            {
+              "lang": "ru",
+              "text": "Использовать отдельный бандл для кода сторонних библиотек (вендоров)."
             }
           ]
         },
@@ -8811,6 +9211,10 @@
             {
               "lang": "en",
               "text": "Use a separate bundle containing code used across multiple bundles."
+            },
+            {
+              "lang": "ru",
+              "text": "Использовать отдельный бандл для кода, который используется в нескольких бандлах."
             }
           ]
         },
@@ -8821,6 +9225,10 @@
             {
               "lang": "en",
               "text": "Adds more details to output logging."
+            },
+            {
+              "lang": "ru",
+              "text": "Вывод более детальной информации."
             }
           ]
         },
@@ -8831,6 +9239,10 @@
             {
               "lang": "en",
               "text": "Log progress to the console while building."
+            },
+            {
+              "lang": "ru",
+              "text": "Вывод логов в консоль во время билда."
             }
           ]
         },
@@ -8841,6 +9253,10 @@
             {
               "lang": "en",
               "text": "Localization file to use for i18n."
+            },
+            {
+              "lang": "ru",
+              "text": "Путь к i18n файлу."
             }
           ]
         },
@@ -8851,6 +9267,10 @@
             {
               "lang": "en",
               "text": "Format of the localization file specified with --i18n-file."
+            },
+            {
+              "lang": "ru",
+              "text": "Формат i18n-файла."
             }
           ]
         },
@@ -8861,6 +9281,10 @@
             {
               "lang": "en",
               "text": "Locale to use for i18n."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя локали, используемой для i18n."
             }
           ]
         },
@@ -8871,6 +9295,10 @@
             {
               "lang": "en",
               "text": "How to handle missing translations for i18n.\n"
+            },
+            {
+              "lang": "ru",
+              "text": "Способ обработки случаев отсутствия перевода для строки."
             }
           ]
         },
@@ -8881,6 +9309,10 @@
             {
               "lang": "en",
               "text": "Define the output filename cache-busting hashing mode."
+            },
+            {
+              "lang": "ru",
+              "text": "Добавление хеша к имени файлов."
             }
           ]
         },
@@ -8890,7 +9322,11 @@
           "locales": [
             {
               "lang": "en",
-              "text": "delete-output-path"
+              "text": "Delete the output path before building."
+            },
+            {
+              "lang": "ru",
+              "text": "Удаление папки, в которую будет сгенерирован код, перед началом билда."
             }
           ]
         },
@@ -8901,6 +9337,10 @@
             {
               "lang": "en",
               "text": "Do not use the real path when resolving modules."
+            },
+            {
+              "lang": "ru",
+              "text": "Не использовать реальные пути при вычислении пути к модулям."
             }
           ]
         },
@@ -8911,6 +9351,10 @@
             {
               "lang": "en",
               "text": "Extract all licenses in a separate file, in the case of production builds only."
+            },
+            {
+              "lang": "ru",
+              "text": "Сбор всех лицензий из исходных файлов в файл 3rdpartylicenses.txt."
             }
           ]
         },
@@ -8921,6 +9365,10 @@
             {
               "lang": "en",
               "text": "Show circular dependency warnings on builds."
+            },
+            {
+              "lang": "ru",
+              "text": "Вывод предупреждения о циклической DI-зависимости."
             }
           ]
         },
@@ -8931,6 +9379,10 @@
             {
               "lang": "en",
               "text": "Use file name for lazy loaded chunks."
+            },
+            {
+              "lang": "ru",
+              "text": "Использование имени модуля для имени файлов, которые загружаются через LazyLoading."
             }
           ]
         },
@@ -8941,6 +9393,10 @@
             {
               "lang": "en",
               "text": "Available on server platform only. Which external dependencies to bundle into the module. By default, all of node_modules will be kept as requires."
+            },
+            {
+              "lang": "ru",
+              "text": "Доступно только для серверной платформы. Добавление всех зависимостей в бандл. По-умолчанию все зависимости из `node_modules` запрашиваются через `require`."
             }
           ]
         },
@@ -8950,7 +9406,11 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Generates a 'stats.json' file which can be analyzed using tools such as: #webpack-bundle-analyzer' or https: //webpack.github.io/analyse."
+              "text": "Generates a 'stats.json' file which can be analyzed using tools such as: `#webpack-bundle-analyzer` or https://webpack.github.io/analyse."
+            },
+            {
+              "lang": "ru",
+              "text": "Генерирует файл статистики `stats.json`, который используется при анализе бандла с помощью `webpack-bundle-analyzer` или https://webpack.github.io/analyse."
             }
           ]
         },
@@ -8961,6 +9421,10 @@
             {
               "lang": "en",
               "text": "Run the TypeScript type checker in a forked process."
+            },
+            {
+              "lang": "ru",
+              "text": "Проверка TypeScript типов в отдельном процессе."
             }
           ]
         },
@@ -8971,6 +9435,10 @@
             {
               "lang": "en",
               "text": "List of additional NgModule files that will be lazy loaded. Lazy router modules with be discovered automatically."
+            },
+            {
+              "lang": "ru",
+              "text": "Список модулей для ленивой загрузки. Модули, подключаемые через роутер, обрабатываются автоматически."
             }
           ]
         },
@@ -9010,6 +9478,10 @@
             {
               "lang": "en",
               "text": "The name of the TSLint configuration file."
+            },
+            {
+              "lang": "ru",
+              "text": "Путь к файлу конфигурации TSLint."
             }
           ]
         },
@@ -9020,6 +9492,10 @@
             {
               "lang": "en",
               "text": "The name of the TypeScript configuration file."
+            },
+            {
+              "lang": "ru",
+              "text": "Путь к файлу конфигурации TypeScript."
             }
           ]
         },
@@ -9030,6 +9506,10 @@
             {
               "lang": "en",
               "text": "Fixes linting errors (may overwrite linted files)."
+            },
+            {
+              "lang": "ru",
+              "text": "Исправить ошибки линтера (может перезаписать файлы)."
             }
           ]
         },
@@ -9040,6 +9520,10 @@
             {
               "lang": "en",
               "text": "Controls the type check for linting."
+            },
+            {
+              "lang": "ru",
+              "text": "Проверять типы при линтинге."
             }
           ]
         },
@@ -9050,6 +9534,10 @@
             {
               "lang": "en",
               "text": "Succeeds even if there was linting errors."
+            },
+            {
+              "lang": "ru",
+              "text": "Скрипт завершается корректно, даже если есть ошибки линтинга."
             }
           ]
         },
@@ -9060,6 +9548,10 @@
             {
               "lang": "en",
               "text": "Show output text."
+            },
+            {
+              "lang": "ru",
+              "text": "Показывать результат."
             }
           ]
         },
@@ -9069,7 +9561,11 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Output format (prose, json, stylish, verbose, pmd, msbuild, checkstyle, vso, fileslist)."
+              "text": "Output format."
+            },
+            {
+              "lang": "ru",
+              "text": "Формат вывода."
             }
           ]
         },
@@ -9080,6 +9576,10 @@
             {
               "lang": "en",
               "text": "Files to exclude from linting."
+            },
+            {
+              "lang": "ru",
+              "text": "Файлы для пропуска."
             }
           ]
         },
@@ -9090,6 +9590,10 @@
             {
               "lang": "en",
               "text": "Files to include in linting."
+            },
+            {
+              "lang": "ru",
+              "text": "Дополнительные файлы для обработки."
             }
           ]
         },
@@ -9194,6 +9698,10 @@
             {
               "lang": "en",
               "text": "Specify the configuration to use. "
+            },
+            {
+              "lang": "ru",
+              "text": "Имя конфигурации."
             }
           ]
         },
@@ -9204,6 +9712,10 @@
             {
               "lang": "en",
               "text": "Specify the configuration to use. "
+            },
+            {
+              "lang": "ru",
+              "text": "Имя конфигурации."
             }
           ]
         },
@@ -9213,7 +9725,11 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Flag to set configuration to \"prod\". \n\nAlias for the command:\n\n```\nng run [default-project]:build:production\n```\n"
+              "text": "Flag to set configuration to `production`. \n\nAlias for the command:\n\n```\nng run [default-project]:build:production\n```\n"
+            },
+            {
+              "lang": "ru",
+              "text": "Использовать конфигурацию `production`.\n\nПсевдоним для команды:\n\n```\nng run [default-project]:build:production\n```\n"
             }
           ]
         },
@@ -9223,7 +9739,11 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Flag to set configuration to \"prod\". \n\nAlias for the command:\n\n```\nng run [default-project]:test:production\n```"
+              "text": "Flag to set configuration to `production`. \n\nAlias for the command:\n\n```\nng run [default-project]:test:production\n```"
+            },
+            {
+              "lang": "ru",
+              "text": "Использовать конфигурацию `production`.\n\nПсевдоним для команды:\n\n```\nng run [default-project]:test:production\n```"
             }
           ]
         },
@@ -9234,6 +9754,10 @@
             {
               "lang": "en",
               "text": "Specify the configuration to use. "
+            },
+            {
+              "lang": "ru",
+              "text": "Имя конфигурации."
             }
           ]
         },
@@ -9243,7 +9767,11 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Flag to set configuration to \"prod\". \n\nAlias for the command:\n\n```\nng run [default-project]:e2e:production\n```"
+              "text": "Flag to set configuration to `production`. \n\nAlias for the command:\n\n```\nng run [default-project]:e2e:production\n```"
+            },
+            {
+              "lang": "ru",
+              "text": "Использовать конфигурацию `production`.\n\nПсевдоним для команды:\n\n```\nng run [default-project]:e2e:production\n```"
             }
           ]
         },
@@ -9254,6 +9782,10 @@
             {
               "lang": "en",
               "text": "Specify the configuration to use. "
+            },
+            {
+              "lang": "ru",
+              "text": "Имя конфигурации."
             }
           ]
         },
@@ -9264,6 +9796,10 @@
             {
               "lang": "en",
               "text": "Specify the configuration to use. "
+            },
+            {
+              "lang": "ru",
+              "text": "Имя конфигурации."
             }
           ]
         },
@@ -9274,6 +9810,10 @@
             {
               "lang": "en",
               "text": "Get/set the value in the global configuration (in your home directory). "
+            },
+            {
+              "lang": "ru",
+              "text": "Сохранение настройки в глобальный конфиг Angular CLI."
             }
           ]
         },
@@ -9284,6 +9824,10 @@
             {
               "lang": "en",
               "text": "Search whole angular.io instead of just api. "
+            },
+            {
+              "lang": "ru",
+              "text": "Поиск по всему сайту angular.io, а не только API."
             }
           ]
         },
@@ -9294,6 +9838,10 @@
             {
               "lang": "en",
               "text": "Defines the optimization level of the build."
+            },
+            {
+              "lang": "ru",
+              "text": "Уровень оптимизации для билда."
             }
           ]
         },
@@ -9304,6 +9852,10 @@
             {
               "lang": "en",
               "text": "Format of the localization file specified with `i18nFile`."
+            },
+            {
+              "lang": "ru",
+              "text": "Формат i18n-файла."
             }
           ]
         },
@@ -9314,6 +9866,10 @@
             {
               "lang": "en",
               "text": "Extract css from global styles onto css files instead of js ones."
+            },
+            {
+              "lang": "ru",
+              "text": "Сохранять глобальный css в css-файлы вместо js-файлов."
             }
           ]
         },
@@ -9339,6 +9895,11 @@
             {
               "lang": "en",
               "text": "```\nng generate class [name] [--[argument]=[value]]\nng generate cl\n```\n"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -9349,6 +9910,10 @@
             {
               "lang": "en",
               "text": "The name of the project."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя проекта."
             }
           ]
         },
@@ -9359,6 +9924,10 @@
             {
               "lang": "en",
               "text": "Specifies if a spec file is generated."
+            },
+            {
+              "lang": "ru",
+              "text": "Генерировать spec-файлы."
             }
           ]
         },
@@ -9369,6 +9938,10 @@
             {
               "lang": "en",
               "text": "Specifies the type of class."
+            },
+            {
+              "lang": "ru",
+              "text": "Тип класса."
             }
           ]
         },
@@ -9421,7 +9994,12 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Schematics — An Introduction"
+              "text": "Schematics — An Introduction"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -9431,7 +10009,11 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Schematics is a workflow tool for the modern web; it can apply transforms to your project, such as create a new component, or updating your code to fix breaking changes in a dependency. Or maybe you want to add a new configuration option or framework to an existing project.\n\nIn Angular CLI you can run schematics by [`ng generate`](../command-ng-generate).\n\nAlso [`ng add`](../command-ng-add) uses schematics.\n"
+              "text": "Schematics is a workflow tool for the modern web; it can apply transforms to your project, such as create a new component, or updating your code to fix breaking changes in a dependency. Or maybe you want to add a new configuration option or framework to an existing project.\n\nIn Angular CLI you can run schematics by [`ng generate`](../command-ng-generate).\n\nAlso [`ng add`](../command-ng-add) uses Schematics.\n"
+            },
+            {
+              "lang": "ru",
+              "text": "Schematics генераторы — инструмент для автоматизации работы, позволяет быстро вносить изменения в ваш проект. Например, генерируя компоненты, обновляя код после обновления или устанавливая сторонние библиотеки.\n\nВ Angular CLI генераторы запускаются командой [`ng generate`](../command-ng-generate).\n\nТакже [`ng add`](../command-ng-add) использует Schematics.\n"
             }
           ]
         },
@@ -9457,6 +10039,11 @@
             {
               "lang": "en",
               "text": "```\nng generate component [name] [--[argument]=[value]]\nng generate c\n```\n"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -9512,6 +10099,10 @@
             {
               "lang": "en",
               "text": "```\nng add [name]\n```\n\nAdd support for a library to your project.\n\n"
+            },
+            {
+              "lang": "ru",
+              "text": "```\nng add [name]\n```\n\nДобавляет библиотеку в ваш проект."
             }
           ]
         },
@@ -9522,6 +10113,11 @@
             {
               "lang": "en",
               "text": "Using schematics in WebStorm"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -9532,6 +10128,10 @@
             {
               "lang": "en",
               "text": "`ng add` helps you add new capabilities to your app — this command will install the dependencies and then \ninvoke the installation script which will take care of all the rest."
+            },
+            {
+              "lang": "ru",
+              "text": "`ng add` помогает добавить возможности в ваше приложение - устанавливает зависимости и потом запускает специальный скрипт, который делает все необходимые изменения в настройках и коде."
             }
           ]
         },
@@ -9542,6 +10142,11 @@
             {
               "lang": "en",
               "text": "Version 6 of Angular Now Available"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -9566,6 +10171,11 @@
             {
               "lang": "en",
               "text": "```\nng generate directive [name] [--[argument]=[value]]\nng generate d\n```\n\n"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -9591,6 +10201,10 @@
             {
               "lang": "en",
               "text": "The name of the project."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя проекта."
             }
           ]
         },
@@ -9601,6 +10215,10 @@
             {
               "lang": "en",
               "text": "Specifies if the style will be in the ts file."
+            },
+            {
+              "lang": "ru",
+              "text": "Генерировать компоненты, которые стилизуются через `styles`, а не `styleUrls`."
             }
           ]
         },
@@ -9611,6 +10229,10 @@
             {
               "lang": "en",
               "text": "Specifies if the template will be in the ts file."
+            },
+            {
+              "lang": "ru",
+              "text": "Генерировать компоненты, которые хранят шаблоны в `template`, а не `templateUrl`."
             }
           ]
         },
@@ -9635,6 +10257,10 @@
             {
               "lang": "en",
               "text": "Specifies the change detection strategy."
+            },
+            {
+              "lang": "ru",
+              "text": "Сhange detection стратегия."
             }
           ]
         },
@@ -9645,6 +10271,10 @@
             {
               "lang": "en",
               "text": "The prefix to apply to generated selectors."
+            },
+            {
+              "lang": "ru",
+              "text": "Префикс для генерируемых селекторов."
             }
           ]
         },
@@ -9655,6 +10285,10 @@
             {
               "lang": "en",
               "text": "The file extension to be used for style files."
+            },
+            {
+              "lang": "ru",
+              "text": "> Можно выбрать один из популярных css-препроцессоров.\n\nРасширение файлов для подключемых файлов стилей, для генерируемых компонентов."
             }
           ]
         },
@@ -9665,6 +10299,10 @@
             {
               "lang": "en",
               "text": "Specifies if a spec file is generated."
+            },
+            {
+              "lang": "ru",
+              "text": "Генерировать spec-файлы."
             }
           ]
         },
@@ -9675,6 +10313,10 @@
             {
               "lang": "en",
               "text": "Flag to indicate if a dir is created."
+            },
+            {
+              "lang": "ru",
+              "text": "Создавать директорию."
             }
           ]
         },
@@ -9685,6 +10327,10 @@
             {
               "lang": "en",
               "text": "Flag to skip the module import."
+            },
+            {
+              "lang": "ru",
+              "text": "Не импортировать в модуль."
             }
           ]
         },
@@ -9695,6 +10341,10 @@
             {
               "lang": "en",
               "text": "The selector to use for the component."
+            },
+            {
+              "lang": "ru",
+              "text": "Селектор компонента."
             }
           ]
         },
@@ -9705,6 +10355,10 @@
             {
               "lang": "en",
               "text": "Allows specification of the declaring module."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя модуля для декларации."
             }
           ]
         },
@@ -9715,6 +10369,10 @@
             {
               "lang": "en",
               "text": "Specifies if declaring module exports the component."
+            },
+            {
+              "lang": "ru",
+              "text": "Экспортировать компонент из модуля, в котором он объявлен."
             }
           ]
         },
@@ -9725,6 +10383,10 @@
             {
               "lang": "en",
               "text": "Specifies if the component is an entry component of declaring module."
+            },
+            {
+              "lang": "ru",
+              "text": "Добавить компонент в `entryComponents` модуля."
             }
           ]
         },
@@ -9735,6 +10397,10 @@
             {
               "lang": "en",
               "text": "Specifies whether to apply lint fixes after generating the component."
+            },
+            {
+              "lang": "ru",
+              "text": "Применить исправления tslint после генерации."
             }
           ]
         },
@@ -9745,6 +10411,10 @@
             {
               "lang": "en",
               "text": "The name of the project."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя проекта."
             }
           ]
         },
@@ -9755,6 +10425,10 @@
             {
               "lang": "en",
               "text": "The prefix to apply to generated selectors."
+            },
+            {
+              "lang": "ru",
+              "text": "Префикс для генерируемых компонентов."
             }
           ]
         },
@@ -9765,6 +10439,10 @@
             {
               "lang": "en",
               "text": "Specifies if a spec file is generated."
+            },
+            {
+              "lang": "ru",
+              "text": "Генерировать spec-файлы."
             }
           ]
         },
@@ -9775,6 +10453,10 @@
             {
               "lang": "en",
               "text": "Flag to skip the module import."
+            },
+            {
+              "lang": "ru",
+              "text": "Не импортировать в модуль."
             }
           ]
         },
@@ -9785,6 +10467,10 @@
             {
               "lang": "en",
               "text": "The selector to use for the directive."
+            },
+            {
+              "lang": "ru",
+              "text": "Селектор для директивы."
             }
           ]
         },
@@ -9795,6 +10481,10 @@
             {
               "lang": "en",
               "text": "Flag to indicate if a dir is created."
+            },
+            {
+              "lang": "ru",
+              "text": "Создавать директорию."
             }
           ]
         },
@@ -9805,6 +10495,10 @@
             {
               "lang": "en",
               "text": "Allows specification of the declaring module."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя модуля для декларации."
             }
           ]
         },
@@ -9815,6 +10509,10 @@
             {
               "lang": "en",
               "text": "Specifies if declaring module exports the directive."
+            },
+            {
+              "lang": "ru",
+              "text": "Экспортировать директиву из модуля, в котором она объявлена."
             }
           ]
         },
@@ -9825,6 +10523,10 @@
             {
               "lang": "en",
               "text": "Specifies whether to apply lint fixes after generating the directive."
+            },
+            {
+              "lang": "ru",
+              "text": "Применить исправления tslint после генерации."
             }
           ]
         },
@@ -9850,6 +10552,11 @@
             {
               "lang": "en",
               "text": "```\nng generate enum [name] [--[argument]=[value]]\nng generate e\n```\n"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -9875,6 +10582,11 @@
             {
               "lang": "en",
               "text": "```\nng generate guard [name] [--[argument]=[value]]\nng generate g\n```\n"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -9900,6 +10612,11 @@
             {
               "lang": "en",
               "text": "```\nng generate interface [name] [type] [--[argument]=[value]]\nng generate i\n```\n"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -9910,6 +10627,10 @@
             {
               "lang": "en",
               "text": "Create an interface.\n"
+            },
+            {
+              "lang": "ru",
+              "text": "Сгенерировать интерфейс."
             }
           ]
         },
@@ -9920,6 +10641,10 @@
             {
               "lang": "en",
               "text": "Create a guard.\n\n"
+            },
+            {
+              "lang": "ru",
+              "text": "Сгенерировать guard."
             }
           ]
         },
@@ -9930,6 +10655,10 @@
             {
               "lang": "en",
               "text": "Create an enumeration."
+            },
+            {
+              "lang": "ru",
+              "text": "Сгенерировать enum."
             }
           ]
         },
@@ -9940,6 +10669,10 @@
             {
               "lang": "en",
               "text": "Create an Angular directive.\n\n## Options"
+            },
+            {
+              "lang": "ru",
+              "text": "Сгенерировать Agnular директиву.\n\n## Options"
             }
           ]
         },
@@ -9950,6 +10683,10 @@
             {
               "lang": "en",
               "text": "Create an Angular component.\n\n## Options"
+            },
+            {
+              "lang": "ru",
+              "text": "Сгенерировать Angular компонент.\n\n## Options"
             }
           ]
         },
@@ -9960,6 +10697,10 @@
             {
               "lang": "en",
               "text": "Create a class.\n\n## Options"
+            },
+            {
+              "lang": "ru",
+              "text": "Сгенерировать класс.\n\n## Options"
             }
           ]
         },
@@ -9985,6 +10726,11 @@
             {
               "lang": "en",
               "text": "```\nng generate module [name] [--[argument]=[value]]\nng generate m\n```\n"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -9995,6 +10741,10 @@
             {
               "lang": "en",
               "text": "Create an Angular module.\n"
+            },
+            {
+              "lang": "ru",
+              "text": "Сгенерировать Angular модуль."
             }
           ]
         },
@@ -10020,6 +10770,11 @@
             {
               "lang": "en",
               "text": "```\nng generate pipe [name] [--[argument]=[value]]\nng generate p\n```"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -10030,6 +10785,10 @@
             {
               "lang": "en",
               "text": "Create an Angular pipe.\n"
+            },
+            {
+              "lang": "ru",
+              "text": "Сгенерировать Angular пайп."
             }
           ]
         },
@@ -10055,6 +10814,11 @@
             {
               "lang": "en",
               "text": "```\nng generate service [name] [--[argument]=[value]]\nng generate s\n```\n"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -10065,6 +10829,10 @@
             {
               "lang": "en",
               "text": "Create an Angular service.\n"
+            },
+            {
+              "lang": "ru",
+              "text": "Сгенерировать Angular сервис."
             }
           ]
         },
@@ -10090,6 +10858,11 @@
             {
               "lang": "en",
               "text": "```\nng generate application [name] [--[argument]=[value]]\nng generate app\n```\n"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -10100,6 +10873,10 @@
             {
               "lang": "en",
               "text": "Create an Angular application."
+            },
+            {
+              "lang": "ru",
+              "text": "Сгенерировать Angular приложение."
             }
           ]
         },
@@ -10125,6 +10902,11 @@
             {
               "lang": "en",
               "text": "```\nng generate universal [--[argument]=[value]]\n```"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -10135,6 +10917,10 @@
             {
               "lang": "en",
               "text": "Create an Angular universal app.\n\n"
+            },
+            {
+              "lang": "ru",
+              "text": "Добавить серверный билд в приложение."
             }
           ]
         },
@@ -10160,6 +10946,11 @@
             {
               "lang": "en",
               "text": "```\nng generate appShell [name] [--[argument]=[value]]\nng generate app-shell\n```"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -10170,6 +10961,10 @@
             {
               "lang": "en",
               "text": "Create an app shell.\n"
+            },
+            {
+              "lang": "ru",
+              "text": "Сгенерировать app shell."
             }
           ]
         },
@@ -10195,6 +10990,11 @@
             {
               "lang": "en",
               "text": "```\nng generate library [name] [--[argument]=[value]]\nng generate lib\n```"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -10205,6 +11005,10 @@
             {
               "lang": "en",
               "text": "Generate a library project for Angular.\n\n"
+            },
+            {
+              "lang": "ru",
+              "text": "Сгенерировать Angular библиотеку."
             }
           ]
         },
@@ -10365,6 +11169,10 @@
             {
               "lang": "en",
               "text": "App shell is a way to render a portion of your application via a route at build time. This gives users a meaningful first paint of your application because the browser does not need to initialize any JavaScript, just rendering the HTML."
+            },
+            {
+              "lang": "ru",
+              "text": "App shell позволяет сгенерировать часть вашего приложения на этапе билда. Это дает возможность показать пользователю часть приложения до загрузки JavaScript."
             }
           ]
         },
@@ -10375,6 +11183,11 @@
             {
               "lang": "en",
               "text": "App shell documentation in angular-cli repository"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -10399,6 +11212,11 @@
             {
               "lang": "en",
               "text": "Angular App Shell - Boosting Application Startup Performance"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -10423,6 +11241,11 @@
             {
               "lang": "en",
               "text": "Angular App Shell - Boosting Application Startup Performance"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -10433,6 +11256,10 @@
             {
               "lang": "en",
               "text": "App shell is a way to render a portion of your application via a route at build time. This gives users a meaningful first paint of your application because the browser does not need to initialize any JavaScript, just rendering the HTML."
+            },
+            {
+              "lang": "ru",
+              "text": "App shell позволяет сгенерировать часть вашего приложения на этапе билда. Это дает возможность показать пользователю часть приложения до загрузки JavaScript."
             }
           ]
         },
@@ -10457,6 +11284,10 @@
             {
               "lang": "en",
               "text": "Specifies if the style will be in the ts file."
+            },
+            {
+              "lang": "ru",
+              "text": "Генерировать компоненты, которые стилизуются через `styles`, а не `styleUrls`."
             }
           ]
         },
@@ -10467,6 +11298,10 @@
             {
               "lang": "en",
               "text": "Specifies if the template will be in the ts file."
+            },
+            {
+              "lang": "ru",
+              "text": "Генерировать компоненты, которые хранят шаблоны в `template`, а не `templateUrl`."
             }
           ]
         },
@@ -10491,6 +11326,10 @@
             {
               "lang": "en",
               "text": "Generates a routing module."
+            },
+            {
+              "lang": "ru",
+              "text": "Добавление `app-routing.module` при генерации."
             }
           ]
         },
@@ -10501,6 +11340,10 @@
             {
               "lang": "en",
               "text": "The prefix to apply to generated selectors."
+            },
+            {
+              "lang": "ru",
+              "text": "Префикс для генерируемых компонентов."
             }
           ]
         },
@@ -10511,6 +11354,10 @@
             {
               "lang": "en",
               "text": "The file extension to be used for style files."
+            },
+            {
+              "lang": "ru",
+              "text": "Расширение файлов для подключемых файлов стилей, для генерируемых компонентов."
             }
           ]
         },
@@ -10521,6 +11368,10 @@
             {
               "lang": "en",
               "text": "Skip creating spec files."
+            },
+            {
+              "lang": "ru",
+              "text": "Не создавать `.spec` файлы и не добавлять функционал для e2e-тестирования."
             }
           ]
         },
@@ -10531,6 +11382,10 @@
             {
               "lang": "en",
               "text": "Do not add dependencies to `package.json`."
+            },
+            {
+              "lang": "ru",
+              "text": "Не добавлять зависимости в `package.json`."
             }
           ]
         },
@@ -10541,6 +11396,10 @@
             {
               "lang": "en",
               "text": "Name of related client app."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя клиентского приложения."
             }
           ]
         },
@@ -10551,6 +11410,10 @@
             {
               "lang": "en",
               "text": "Name of related universal app."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя серверного приложения."
             }
           ]
         },
@@ -10561,6 +11424,10 @@
             {
               "lang": "en",
               "text": "Route path used to produce the app shell."
+            },
+            {
+              "lang": "ru",
+              "text": "Путь роутера для app shell."
             }
           ]
         },
@@ -10570,7 +11437,11 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Name of the universal app."
+              "text": "Name of the app."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя приложения."
             }
           ]
         },
@@ -10581,6 +11452,10 @@
             {
               "lang": "en",
               "text": "The appId to use withServerTransition."
+            },
+            {
+              "lang": "ru",
+              "text": "`appId` для `withServerTransition`."
             }
           ]
         },
@@ -10591,6 +11466,10 @@
             {
               "lang": "en",
               "text": "The output directory for build results."
+            },
+            {
+              "lang": "ru",
+              "text": "Директория для вывода результатов билда."
             }
           ]
         },
@@ -10601,6 +11480,10 @@
             {
               "lang": "en",
               "text": "The root directory of the app."
+            },
+            {
+              "lang": "ru",
+              "text": "Корневая директория приложения."
             }
           ]
         },
@@ -10610,7 +11493,11 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Name of the index file"
+              "text": "Name of the index file."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя `index`-файла."
             }
           ]
         },
@@ -10621,6 +11508,10 @@
             {
               "lang": "en",
               "text": "The name of the main entry-point file."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя основного стартового файла."
             }
           ]
         },
@@ -10631,6 +11522,10 @@
             {
               "lang": "en",
               "text": "The name of the test entry-point file."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя основного стартового файла для тестов."
             }
           ]
         },
@@ -10641,6 +11536,10 @@
             {
               "lang": "en",
               "text": "The name of the TypeScript configuration file."
+            },
+            {
+              "lang": "ru",
+              "text": "Путь к файлу конфигурации TypeScript."
             }
           ]
         },
@@ -10651,6 +11550,10 @@
             {
               "lang": "en",
               "text": "The name of the TypeScript configuration file for tests."
+            },
+            {
+              "lang": "ru",
+              "text": "Путь к файлу конфигурации TypeScript для тестов."
             }
           ]
         },
@@ -10661,6 +11564,10 @@
             {
               "lang": "en",
               "text": "The name of the application directory."
+            },
+            {
+              "lang": "ru",
+              "text": "Путь к приложению."
             }
           ]
         },
@@ -10671,6 +11578,10 @@
             {
               "lang": "en",
               "text": "The name of the root module file."
+            },
+            {
+              "lang": "ru",
+              "text": "Путь к файлу корневого модуля."
             }
           ]
         },
@@ -10681,6 +11592,10 @@
             {
               "lang": "en",
               "text": "The name of the root module class."
+            },
+            {
+              "lang": "ru",
+              "text": "Класс корневого модуля."
             }
           ]
         },
@@ -10691,6 +11606,10 @@
             {
               "lang": "en",
               "text": "The path of the source directory."
+            },
+            {
+              "lang": "ru",
+              "text": "Путь к директории с исходниками."
             }
           ]
         },
@@ -10715,6 +11634,10 @@
             {
               "lang": "en",
               "text": "The name of the project."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя проекта."
             }
           ]
         },
@@ -10725,6 +11648,10 @@
             {
               "lang": "en",
               "text": "Specifies whether to apply lint fixes after generating the enum."
+            },
+            {
+              "lang": "ru",
+              "text": "Применить исправления tslint после генерации."
             }
           ]
         },
@@ -10749,6 +11676,10 @@
             {
               "lang": "en",
               "text": "Specifies if a spec file is generated."
+            },
+            {
+              "lang": "ru",
+              "text": "Генерировать spec-файлы."
             }
           ]
         },
@@ -10759,6 +11690,10 @@
             {
               "lang": "en",
               "text": "Flag to indicate if a dir is created."
+            },
+            {
+              "lang": "ru",
+              "text": "Создавать директорию."
             }
           ]
         },
@@ -10769,6 +11704,10 @@
             {
               "lang": "en",
               "text": "The name of the project."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя проекта."
             }
           ]
         },
@@ -10779,6 +11718,10 @@
             {
               "lang": "en",
               "text": "Specifies whether to apply lint fixes after generating the guard."
+            },
+            {
+              "lang": "ru",
+              "text": "Применить исправления tslint после генерации."
             }
           ]
         },
@@ -10803,6 +11746,10 @@
             {
               "lang": "en",
               "text": "The name of the project."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя проекта."
             }
           ]
         },
@@ -10813,6 +11760,10 @@
             {
               "lang": "en",
               "text": "Specifies the prefix to use."
+            },
+            {
+              "lang": "ru",
+              "text": "Префикс."
             }
           ]
         },
@@ -10822,7 +11773,11 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Specifies whether to apply lint fixes after generating the directive."
+              "text": "Specifies whether to apply lint fixes after generating."
+            },
+            {
+              "lang": "ru",
+              "text": "Применить исправления tslint после генерации."
             }
           ]
         },
@@ -10847,6 +11802,10 @@
             {
               "lang": "en",
               "text": "The path to create the library's public API file."
+            },
+            {
+              "lang": "ru",
+              "text": "Путь к публичному API файлу библиотеки."
             }
           ]
         },
@@ -10857,6 +11816,10 @@
             {
               "lang": "en",
               "text": "The prefix to apply to generated selectors."
+            },
+            {
+              "lang": "ru",
+              "text": "Префикс для генерируемых селекторов."
             }
           ]
         },
@@ -10867,6 +11830,10 @@
             {
               "lang": "en",
               "text": "Do not add dependencies to `package.json`."
+            },
+            {
+              "lang": "ru",
+              "text": "Не добавлять зависимости в `package.json`."
             }
           ]
         },
@@ -10877,6 +11844,10 @@
             {
               "lang": "en",
               "text": "Do not update `tsconfig.json` for development experience."
+            },
+            {
+              "lang": "ru",
+              "text": "Не обновлять `tsconfig.json`."
             }
           ]
         },
@@ -10901,6 +11872,10 @@
             {
               "lang": "en",
               "text": "The name of the project."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя проекта."
             }
           ]
         },
@@ -10911,6 +11886,10 @@
             {
               "lang": "en",
               "text": "Generates a routing module."
+            },
+            {
+              "lang": "ru",
+              "text": "Добавление `app-routing.module` при генерации."
             }
           ]
         },
@@ -10921,6 +11900,10 @@
             {
               "lang": "en",
               "text": "The scope for the generated routing."
+            },
+            {
+              "lang": "ru",
+              "text": "Тип роутинга."
             }
           ]
         },
@@ -10931,6 +11914,10 @@
             {
               "lang": "en",
               "text": "Specifies if a spec file is generated."
+            },
+            {
+              "lang": "ru",
+              "text": "Генерировать spec-файлы."
             }
           ]
         },
@@ -10941,6 +11928,10 @@
             {
               "lang": "en",
               "text": "Flag to indicate if a dir is created."
+            },
+            {
+              "lang": "ru",
+              "text": "Создавать директорию."
             }
           ]
         },
@@ -10951,6 +11942,10 @@
             {
               "lang": "en",
               "text": "Allows specification of the declaring module."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя модуля для декларации."
             }
           ]
         },
@@ -10975,6 +11970,10 @@
             {
               "lang": "en",
               "text": "The name of the project."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя проекта."
             }
           ]
         },
@@ -10985,6 +11984,10 @@
             {
               "lang": "en",
               "text": "Flag to indicate if a dir is created."
+            },
+            {
+              "lang": "ru",
+              "text": "Создавать директорию."
             }
           ]
         },
@@ -10995,6 +11998,10 @@
             {
               "lang": "en",
               "text": "Specifies if a spec file is generated."
+            },
+            {
+              "lang": "ru",
+              "text": "Генерировать spec-файлы."
             }
           ]
         },
@@ -11005,6 +12012,10 @@
             {
               "lang": "en",
               "text": "Allows for skipping the module import."
+            },
+            {
+              "lang": "ru",
+              "text": "Пропустить импорт в модуль."
             }
           ]
         },
@@ -11015,6 +12026,10 @@
             {
               "lang": "en",
               "text": "Allows specification of the declaring module."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя модуля для декларации."
             }
           ]
         },
@@ -11025,6 +12040,10 @@
             {
               "lang": "en",
               "text": "Specifies if declaring module exports the pipe."
+            },
+            {
+              "lang": "ru",
+              "text": "Экспортировать пайп из модуля, в котором он объявлен."
             }
           ]
         },
@@ -11035,6 +12054,10 @@
             {
               "lang": "en",
               "text": "Specifies whether to apply lint fixes after generating the pipe."
+            },
+            {
+              "lang": "ru",
+              "text": "Применить исправления tslint после генерации."
             }
           ]
         },
@@ -11059,6 +12082,10 @@
             {
               "lang": "en",
               "text": "The name of the project."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя проекта."
             }
           ]
         },
@@ -11069,6 +12096,10 @@
             {
               "lang": "en",
               "text": "Flag to indicate if a dir is created."
+            },
+            {
+              "lang": "ru",
+              "text": "Создавать директорию."
             }
           ]
         },
@@ -11079,6 +12110,10 @@
             {
               "lang": "en",
               "text": "Specifies if a spec file is generated."
+            },
+            {
+              "lang": "ru",
+              "text": "Генерировать spec-файлы."
             }
           ]
         },
@@ -11088,7 +12123,11 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Specifies whether to apply lint fixes after generating the pipe."
+              "text": "Specifies whether to apply lint fixes after generating."
+            },
+            {
+              "lang": "ru",
+              "text": "Применить исправления tslint после генерации."
             }
           ]
         },
@@ -11113,6 +12152,10 @@
             {
               "lang": "en",
               "text": "Name of related client app."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя клиентского приложения."
             }
           ]
         },
@@ -11123,6 +12166,10 @@
             {
               "lang": "en",
               "text": "The appId to use withServerTransition."
+            },
+            {
+              "lang": "ru",
+              "text": "`appId` для `withServerTransition`."
             }
           ]
         },
@@ -11133,6 +12180,10 @@
             {
               "lang": "en",
               "text": "The name of the main entry-point file."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя основного стартового файла."
             }
           ]
         },
@@ -11143,6 +12194,10 @@
             {
               "lang": "en",
               "text": "The name of the test entry-point file."
+            },
+            {
+              "lang": "ru",
+              "text": "Имя основного стартового файла для тестов."
             }
           ]
         },
@@ -11153,6 +12208,10 @@
             {
               "lang": "en",
               "text": "The name of the TypeScript configuration file."
+            },
+            {
+              "lang": "ru",
+              "text": "Путь к файлу конфигурации TypeScript."
             }
           ]
         },
@@ -11163,6 +12222,10 @@
             {
               "lang": "en",
               "text": "The name of the TypeScript configuration file for tests."
+            },
+            {
+              "lang": "ru",
+              "text": "Путь к файлу конфигурации TypeScript для тестов."
             }
           ]
         },
@@ -11173,6 +12236,10 @@
             {
               "lang": "en",
               "text": "The name of the application directory."
+            },
+            {
+              "lang": "ru",
+              "text": "Путь к приложению."
             }
           ]
         },
@@ -11183,6 +12250,10 @@
             {
               "lang": "en",
               "text": "The name of the root module file."
+            },
+            {
+              "lang": "ru",
+              "text": "Путь к файлу корневого модуля."
             }
           ]
         },
@@ -11193,6 +12264,10 @@
             {
               "lang": "en",
               "text": "The name of the root module class."
+            },
+            {
+              "lang": "ru",
+              "text": "Класс корневого модуля."
             }
           ]
         },
@@ -11203,6 +12278,10 @@
             {
               "lang": "en",
               "text": "Skip installing dependency packages."
+            },
+            {
+              "lang": "ru",
+              "text": "Не устанавливать зависимости."
             }
           ]
         }
