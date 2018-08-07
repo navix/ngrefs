@@ -8,6 +8,7 @@ import { UiModule } from 'ui';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContentMessageComponent } from './content-message/content-message.component';
+import { MsgPipe } from './content-message/msg.pipe';
 import { HomeComponent } from './home/home.component';
 import { FooterMenuComponent } from './menu/footer-menu/footer-menu.component';
 import { HeadMenuComponent } from './menu/head-menu/head-menu.component';
@@ -39,6 +40,7 @@ import { VersionComponent } from './version/version/version.component';
     FooterMenuComponent,
     SectionNavComponent,
     HomeComponent,
+    MsgPipe,
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'serverApp'}),

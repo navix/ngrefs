@@ -1,6 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ContentEntry, ContentMenuItem } from '../../content/meta';
 import { SectionComponent } from '../../section/section/section.component';
+import { VersionComponent } from '../../version/version/version.component';
 
 @Component({
   selector: 'main-section-menu',
@@ -12,7 +14,11 @@ export class SectionMenuComponent implements OnInit {
 
   constructor(
     private sectionComponent: SectionComponent,
+    private versionComponent: VersionComponent,
+    private router: Router,
+    private route: ActivatedRoute,
   ) {
+
   }
 
   ngOnInit() {
@@ -23,5 +29,9 @@ export class SectionMenuComponent implements OnInit {
     return page
       ? page.entries
       : [];
+  }
+
+  isLinkActive(url: any[], exact = false): boolean {
+    return this.router.isActive(this.router.createUrlTree(url, {relativeTo: this.route}), exact);
   }
 }
