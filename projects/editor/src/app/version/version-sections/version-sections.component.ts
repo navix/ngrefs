@@ -16,18 +16,28 @@ export class VersionSectionsComponent implements OnInit {
   ) {
   }
 
-  get sections() {
-    return this.versionComponent.version.sections;
+  ngOnInit() {
   }
 
-  ngOnInit() {
+  get sections() {
+    return this.versionComponent.version.sections;
   }
 
   createSection() {
     this.sections.push(this.data.createSection());
   }
 
+  moveUp(index: number) {
+    this.data.move(this.sections, index, index - 1);
+  }
+
+  moveDown(index: number) {
+    this.data.move(this.sections, index, index + 1);
+  }
+
   remove(index: number) {
-    this.sections.splice(index, 1);
+    if (confirm('Delete section?')) {
+      this.sections.splice(index, 1);
+    }
   }
 }

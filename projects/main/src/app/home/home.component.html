@@ -1,0 +1,33 @@
+<h1>Angular References</h1>
+
+<p>
+  References for Web developers describe tools and concepts of <a href="https://angular.io" target="_blank">Angular
+  framework</a>.
+</p>
+
+<ul>
+  <ng-container *ngFor="let version of versions">
+    <li *ngIf="!versionUrl || version.url === versionUrl">
+      <h2>{{ version.title }}</h2>
+      <ul>
+        <li *ngFor="let section of version.sections">
+          <h3>
+            <a *ngIf="!section.disabled"
+               [routerLink]="['/', lang, version.url, section.url, 'intro']"
+               [style.border-color]="section.color">
+              {{ extractMessage(version.messages, section.title) }}
+            </a>
+            <span *ngIf="section.disabled">
+              {{ extractMessage(version.messages, section.title) }} (Soon)
+            </span>
+          </h3>
+        </li>
+      </ul>
+    </li>
+  </ng-container>
+</ul>
+
+<div class="footer">
+  &copy; {{ year }} <a href="https://github.com/navix" target="_blank">Sasha Novyk</a>
+  | <a href="https://github.com/navix/ngrefs" target="_blank">GitHub</a>
+</div>

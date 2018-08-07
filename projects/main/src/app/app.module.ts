@@ -8,6 +8,7 @@ import { UiModule } from 'ui';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContentMessageComponent } from './content-message/content-message.component';
+import { HomeComponent } from './home/home.component';
 import { FooterMenuComponent } from './menu/footer-menu/footer-menu.component';
 import { HeadMenuComponent } from './menu/head-menu/head-menu.component';
 import { SectionMenuComponent } from './menu/section-menu/section-menu.component';
@@ -19,7 +20,7 @@ import { PageTutorialsEntryComponent } from './section/section-page/page-tutoria
 import { SectionPageComponent } from './section/section-page/section-page.component';
 import { SectionComponent } from './section/section/section.component';
 import { UiMessageComponent } from './ui-message/ui-message.component';
-import { VersionComponent } from './version/version.component';
+import { VersionComponent } from './version/version/version.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { VersionComponent } from './version/version.component';
     HeadMenuComponent,
     FooterMenuComponent,
     SectionNavComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'serverApp'}),

@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { uiMessages } from '../content/versions';
-import { VersionComponent } from '../version/version.component';
+import { VersionComponent } from '../version/version/version.component';
 
 @Component({
   selector: 'app-ui-message',

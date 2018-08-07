@@ -6205,6 +6205,19 @@
           "url": "cli"
         },
         {
+          "id": "1d7d1307-5627-adab-6544-bf9836cda217",
+          "menu": {
+            "items": []
+          },
+          "pages": [],
+          "title": {
+            "id": "52e1788d-e5ee-41f1-572c-1844f21e9bc3"
+          },
+          "color": "green",
+          "url": "core",
+          "disabled": true
+        },
+        {
           "id": "9705d447-3d27-8405-f165-c67e410846f6",
           "menu": {
             "items": []
@@ -6215,6 +6228,45 @@
           },
           "color": "#c9e14f",
           "url": "templates",
+          "disabled": true
+        },
+        {
+          "id": "cf9867c0-c7ba-5d8b-92db-838948f086f5",
+          "menu": {
+            "items": []
+          },
+          "pages": [],
+          "title": {
+            "id": "e2ac9fe4-ea5d-7739-1599-a609ec64579c"
+          },
+          "color": "green",
+          "url": "styling",
+          "disabled": true
+        },
+        {
+          "id": "4efb0a19-7319-04b8-2a91-fabd3d069e2d",
+          "menu": {
+            "items": []
+          },
+          "pages": [],
+          "title": {
+            "id": "7854bb82-1791-c246-3761-312f63e9ccfb"
+          },
+          "color": "green",
+          "url": "router",
+          "disabled": true
+        },
+        {
+          "id": "c3ec4722-f73d-e0d3-6bb6-7e9cbded0c0c",
+          "menu": {
+            "items": []
+          },
+          "pages": [],
+          "title": {
+            "id": "132ef073-ebdf-bf61-af21-5342bb9d347e"
+          },
+          "color": "green",
+          "url": "forms",
           "disabled": true
         }
       ],
@@ -12282,6 +12334,64 @@
             {
               "lang": "ru",
               "text": "Не устанавливать зависимости."
+            }
+          ]
+        },
+        {
+          "id": "52e1788d-e5ee-41f1-572c-1844f21e9bc3",
+          "context": "Section title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Core"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
+            }
+          ]
+        },
+        {
+          "id": "e2ac9fe4-ea5d-7739-1599-a609ec64579c",
+          "context": "Section title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Styling"
+            },
+            {
+              "lang": "ru",
+              "text": "Стили",
+              "useSource": false
+            }
+          ]
+        },
+        {
+          "id": "7854bb82-1791-c246-3761-312f63e9ccfb",
+          "context": "Section title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Router"
+            },
+            {
+              "lang": "ru",
+              "text": "Роутер"
+            }
+          ]
+        },
+        {
+          "id": "132ef073-ebdf-bf61-af21-5342bb9d347e",
+          "context": "Section title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Forms"
+            },
+            {
+              "lang": "ru",
+              "text": "Формы"
             }
           ]
         }

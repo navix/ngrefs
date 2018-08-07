@@ -1,0 +1,45 @@
+@import "params";
+
+:host {
+  display: block;
+  margin: $grid * 2 auto;
+  max-width: 350px;
+  padding: $grid * 2;
+}
+
+h1 {
+  padding: $grid 0;
+}
+
+h2 {
+  border-bottom: 1px solid #dddddd;
+  padding: $grid 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h3 {
+  font-weight: 400;
+  margin: 0;
+  a, span {
+    display: block;
+    padding: $grid;
+    border-left: 2px solid #eeeeee;
+  }
+  a:hover {
+    background: $codeColor;
+  }
+  span {
+    color: #999999;
+  }
+}
+
+.footer {
+  padding: $grid * 2;
+  margin: $grid * 2 0;
+  text-align: center;
+}

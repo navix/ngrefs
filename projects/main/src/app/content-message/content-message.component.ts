@@ -4,7 +4,7 @@ import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { uuid } from '@ngx-kit/core';
 import { MdRenderService } from '@nvxme/ngx-md-render';
 import { ContentMessageRef } from '../content/meta';
-import { VersionComponent } from '../version/version.component';
+import { VersionComponent } from '../version/version/version.component';
 
 @Component({
   selector: 'app-content-message',

@@ -4,7 +4,7 @@ import { KitPlatformService } from '@ngx-kit/core';
 import { extractMessage } from '../../content-message/extract-message';
 import { ContentSection } from '../../content/meta';
 import { SeoService } from '../../seo.service';
-import { VersionComponent } from '../../version/version.component';
+import { VersionComponent } from '../../version/version/version.component';
 
 @Component({
   selector: 'main-section',

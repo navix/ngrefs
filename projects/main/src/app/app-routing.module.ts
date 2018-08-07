@@ -1,37 +1,44 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { defVersion } from './content/versions';
+import { HomeComponent } from './home/home.component';
 import { SectionPageComponent } from './section/section-page/section-page.component';
 import { SectionComponent } from './section/section/section.component';
-import { VersionComponent } from './version/version.component';
+import { VersionComponent } from './version/version/version.component';
 
 const routes: Routes = [
   {
     path: '',
-    pathMatch: 'full',
-    redirectTo: `en/${defVersion.url}`,
+    component: HomeComponent,
   },
   {
-    path: ':lang/:versionUrl',
-    component: VersionComponent,
+    path: ':lang',
     children: [
       {
         path: '',
-        pathMatch: 'full',
-        redirectTo: 'cli',
+        component: HomeComponent,
       },
       {
-        path: ':sectionUrl',
-        component: SectionComponent,
+        path: ':versionUrl',
+        component: VersionComponent,
         children: [
           {
             path: '',
-            pathMatch: 'full',
-            redirectTo: 'intro',
+            component: HomeComponent,
           },
           {
-            path: ':pageUrl',
-            component: SectionPageComponent,
+            path: ':sectionUrl',
+            component: SectionComponent,
+            children: [
+              {
+                path: '',
+                pathMatch: 'full',
+                redirectTo: 'intro',
+              },
+              {
+                path: ':pageUrl',
+                component: SectionPageComponent,
+              },
+            ],
           },
         ],
       },

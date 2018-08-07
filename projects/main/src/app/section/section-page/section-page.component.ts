@@ -5,7 +5,7 @@ import { take } from 'rxjs/operators';
 import { extractMessage } from '../../content-message/extract-message';
 import { ContentPage } from '../../content/meta';
 import { SeoService } from '../../seo.service';
-import { VersionComponent } from '../../version/version.component';
+import { VersionComponent } from '../../version/version/version.component';
 import { SectionComponent } from '../section/section.component';
 
 @Component({
