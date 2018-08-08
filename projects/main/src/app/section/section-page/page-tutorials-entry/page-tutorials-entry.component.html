@@ -8,7 +8,7 @@
       <li *ngIf="link.lang === 'en' || link.lang === lang">
         <a [href]="link.url"
            target="_blank">
-          <app-content-message [ref]="link.label"></app-content-message>
+          {{ link.label | msg }}
         </a>
       </li>
     </ng-container>

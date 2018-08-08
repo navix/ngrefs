@@ -9,7 +9,7 @@
        [routerLink]="['../', section.url]"
        routerLinkActive="-active"
        [style.border-color]="section.color">
-      <app-content-message [ref]="section.title"></app-content-message>
+      {{ section.title | msg }}
     </a>
   </li>
 </ul>

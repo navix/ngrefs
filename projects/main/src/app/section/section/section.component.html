@@ -19,7 +19,7 @@
   <div class="mobile-header">
     <span>{{ version.title }} References</span>
     <span>/</span>
-    <app-content-message [ref]="section.title"></app-content-message>
+    {{ section.title | msg }}
   </div>
   <kit-modal (close)="displayNav = false">
     <main-section-nav *kitOverlay="displayNav"
