@@ -1,6 +1,9 @@
-<h3 [id]="entry.name">
-  <code>{{ entry.name }}</code>
-</h3>
+<a routerLink="."
+   [fragment]="entry.name">
+  <h3 [id]="entry.name">
+    <code>{{ entry.name }}</code>
+  </h3>
+</a>
 
 <div class="body">
   <main-message *ngIf="entry.description"
