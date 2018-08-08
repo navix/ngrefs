@@ -1,6 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import { ContentMessageRef } from '../content/meta';
-import { VersionComponent } from '../version/version/version.component';
+import { VersionComponent } from '../version/version.component';
 import { extractMessage } from './extract-message';
 
 @Pipe({

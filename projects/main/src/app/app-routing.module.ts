@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { SectionPageComponent } from './section/section-page/section-page.component';
+import { PageComponent } from './page/page.component';
 import { SectionComponent } from './section/section/section.component';
-import { VersionComponent } from './version/version/version.component';
+import { VersionComponent } from './version/version.component';
 
 const routes: Routes = [
   {
@@ -36,7 +36,7 @@ const routes: Routes = [
               },
               {
                 path: ':pageUrl',
-                component: SectionPageComponent,
+                component: PageComponent,
               },
             ],
           },

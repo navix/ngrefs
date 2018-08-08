@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ContentEntry, ContentMenuItem } from '../../content/meta';
 import { SectionComponent } from '../../section/section/section.component';
-import { VersionComponent } from '../../version/version/version.component';
+import { VersionComponent } from '../../version/version.component';
 
 @Component({
   selector: 'main-section-menu',

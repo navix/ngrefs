@@ -1,6 +1,6 @@
 import { Optional, Pipe, PipeTransform } from '@angular/core';
 import { uiMessages } from '../content/versions';
-import { VersionComponent } from '../version/version/version.component';
+import { VersionComponent } from '../version/version.component';
 
 @Pipe({
   name: 'ui',

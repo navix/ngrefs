@@ -2,10 +2,10 @@ import { DOCUMENT } from '@angular/common';
 import { ChangeDetectorRef, Component, Inject, NgZone, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
-import { AppComponent } from '../../app.component';
-import { ContentMenu, ContentVersion } from '../../content/meta';
-import { versions } from '../../content/versions';
-import { SeoService } from '../../seo.service';
+import { AppComponent } from '../app.component';
+import { ContentMenu, ContentVersion } from '../content/meta';
+import { versions } from '../content/versions';
+import { SeoService } from '../seo.service';
 
 @Component({
   selector: 'main-version',

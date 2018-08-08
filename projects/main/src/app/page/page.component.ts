@@ -2,18 +2,18 @@ import { DOCUMENT } from '@angular/common';
 import { Component, Inject, NgZone, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { take } from 'rxjs/operators';
-import { extractMessage } from '../../message/extract-message';
-import { ContentPage } from '../../content/meta';
-import { SeoService } from '../../seo.service';
-import { VersionComponent } from '../../version/version/version.component';
-import { SectionComponent } from '../section/section.component';
+import { extractMessage } from '../message/extract-message';
+import { ContentPage } from '../content/meta';
+import { SeoService } from '../seo.service';
+import { VersionComponent } from '../version/version.component';
+import { SectionComponent } from '../section/section/section.component';
 
 @Component({
-  selector: 'app-section-page',
-  templateUrl: './section-page.component.html',
-  styleUrls: ['./section-page.component.scss'],
+  selector: 'main-page',
+  templateUrl: './page.component.html',
+  styleUrls: ['./page.component.scss'],
 })
-export class SectionPageComponent implements OnInit {
+export class PageComponent implements OnInit {
   page?: ContentPage;
 
   constructor(

@@ -4,14 +4,14 @@ import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { uuid } from '@ngx-kit/core';
 import { MdRenderService } from '@nvxme/ngx-md-render';
 import { ContentMessageRef } from '../../content/meta';
-import { VersionComponent } from '../../version/version/version.component';
+import { VersionComponent } from '../../version/version.component';
 
 @Component({
-  selector: 'app-content-message',
-  templateUrl: './content-message.component.html',
-  styleUrls: ['./content-message.component.scss'],
+  selector: 'main-message',
+  templateUrl: './message.component.html',
+  styleUrls: ['./message.component.scss'],
 })
-export class ContentMessageComponent implements OnInit, OnChanges {
+export class MessageComponent implements OnInit, OnChanges {
   @Input() ref: ContentMessageRef;
 
   text: string;

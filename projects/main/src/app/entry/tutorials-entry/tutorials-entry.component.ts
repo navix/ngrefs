@@ -1,13 +1,13 @@
 import { ChangeDetectionStrategy, Component, Input, OnChanges, OnInit } from '@angular/core';
-import { ContentTutorialsEntry } from '../../../content/meta';
-import { VersionComponent } from '../../../version/version/version.component';
+import { ContentTutorialsEntry } from '../../content/meta';
+import { VersionComponent } from '../../version/version.component';
 
 @Component({
-  selector: 'app-page-tutorials-entry',
-  templateUrl: './page-tutorials-entry.component.html',
-  styleUrls: ['./page-tutorials-entry.component.scss'],
+  selector: 'main-tutorials-entry',
+  templateUrl: './tutorials-entry.component.html',
+  styleUrls: ['./tutorials-entry.component.scss'],
 })
-export class PageTutorialsEntryComponent implements OnInit, OnChanges {
+export class TutorialsEntryComponent implements OnInit, OnChanges {
   @Input() entry: ContentTutorialsEntry;
 
   display: boolean;
