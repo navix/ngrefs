@@ -175,7 +175,7 @@
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
-                "projects/editor/src/styles"
+                "projects/ui/src/styles"
               ]
             },
             "scripts": []
