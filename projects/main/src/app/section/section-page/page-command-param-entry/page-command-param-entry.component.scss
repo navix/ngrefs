@@ -23,3 +23,8 @@ h3 {
 .body {
   padding: $grid $grid * 2 $grid * 3;
 }
+
+.table-wrapper {
+  max-width: 100%;
+  overflow: auto;
+}
