@@ -63,22 +63,18 @@ ul {
 .page-content {
   font-size: 1rem;
   h1 {
-    font-size: 2.4rem;
-    margin: 48px 0 16px;
-    .package {
-      font-size: 1.4rem;
-      color: #777777;
-    }
+    font-size: 1.8rem;
+    margin: $grid * 3 0 $grid * 2;
   }
   h2 {
-    font-size: 1.8rem;
-    margin: 48px 0 12px 0;
-    padding-bottom: 12px;
+    font-size: 1.5rem;
+    margin: $grid * 3 0 $grid 0;
+    padding-bottom: $grid / 2;
   }
   h3 {
-    font-size: 1.6rem;
-    margin: 32px 0 8px 0;
-    padding-bottom: 8px;
+    font-size: 1.4rem;
+    margin: $grid * 2 0 $grid / 2 0;
+    padding-bottom: $grid / 2;
   }
   .-highlight {
     animation: 800ms linear highlight-effect;
@@ -97,6 +93,44 @@ ul {
   }
 }
 
+@include mq($from: tablet) {
+  .page-content {
+    h1 {
+      font-size: 2rem;
+      margin: $grid * 4 0 $grid * 2;
+    }
+    h2 {
+      font-size: 1.6rem;
+      margin: $grid * 4 0 $grid * 1.5 0;
+      padding-bottom: $grid * 1.5;
+    }
+    h3 {
+      font-size: 1.4rem;
+      margin: $grid * 3 0 $grid 0;
+      padding-bottom: $grid;
+    }
+  }
+}
+
+@include mq($from: desktop) {
+  .page-content {
+    h1 {
+      font-size: 2.4rem;
+      margin: $grid * 6 0 $grid * 2;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin: $grid * 6 0 $grid * 1.5 0;
+      padding-bottom: $grid * 1.5;
+    }
+    h3 {
+      font-size: 1.6rem;
+      margin: $grid * 4 0 $grid 0;
+      padding-bottom: $grid;
+    }
+  }
+}
+
 @keyframes highlight-effect {
   0% {
     background: #ffffff;
@@ -106,11 +140,5 @@ ul {
   }
   100% {
     background: #ffffff;
-  }
-}
-
-@include mq($from: tablet) {
-  html {
-    //height: 100%;
   }
 }
