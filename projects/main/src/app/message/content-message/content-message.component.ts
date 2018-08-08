@@ -3,8 +3,8 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { uuid } from '@ngx-kit/core';
 import { MdRenderService } from '@nvxme/ngx-md-render';
-import { ContentMessageRef } from '../content/meta';
-import { VersionComponent } from '../version/version/version.component';
+import { ContentMessageRef } from '../../content/meta';
+import { VersionComponent } from '../../version/version/version.component';
 
 @Component({
   selector: 'app-content-message',

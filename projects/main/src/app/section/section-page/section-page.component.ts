@@ -2,7 +2,7 @@ import { DOCUMENT } from '@angular/common';
 import { Component, Inject, NgZone, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { take } from 'rxjs/operators';
-import { extractMessage } from '../../content-message/extract-message';
+import { extractMessage } from '../../message/extract-message';
 import { ContentPage } from '../../content/meta';
 import { SeoService } from '../../seo.service';
 import { VersionComponent } from '../../version/version/version.component';

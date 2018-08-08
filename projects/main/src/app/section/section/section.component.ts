@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { KitPlatformService } from '@ngx-kit/core';
-import { extractMessage } from '../../content-message/extract-message';
+import { extractMessage } from '../../message/extract-message';
 import { ContentSection } from '../../content/meta';
 import { SeoService } from '../../seo.service';
 import { VersionComponent } from '../../version/version/version.component';

@@ -1,5 +1,5 @@
 <div class="langs">
-  <app-ui-message id="Lang" affix=":"></app-ui-message>
+  {{ 'Lang' | ui }}:
   <a *ngFor="let versionLang of version.langs"
      [routerLink]="['/', versionLang, version.url]"
      routerLinkActive="-active">{{ versionLang }}</a>
@@ -10,7 +10,7 @@
     <input type="checkbox"
            uiCheckbox
            [(ngModel)]="sectionComponent.showHints">
-    <app-ui-message id="Footer_ShowHints"></app-ui-message>
+    {{ 'Footer_ShowHints' | ui }}
   </label>
 </div>
 

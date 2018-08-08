@@ -17,6 +17,7 @@ export class MsgPipe implements PipeTransform {
     if (ref.text) {
       return ref.text;
     } else {
+      // @todo missing warnings
       return extractMessage(this.versionComponent.version.messages, ref, this.versionComponent.lang);
     }
   }

@@ -12410,6 +12410,13 @@
       }
     },
     {
+      "id": "Intro",
+      "locales": {
+        "en": "References for Web developers describe tools and concepts of Angular framework.",
+        "ru": "Справочники по инструментам и концентам Angular для веб-разработчиков."
+      }
+    },
+    {
       "id": "Footer_ShowHints",
       "locales": {
         "en": "Show hints & tutorials",

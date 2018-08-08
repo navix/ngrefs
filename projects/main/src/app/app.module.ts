@@ -7,12 +7,13 @@ import { MdRenderModule, MdRenderService } from '@nvxme/ngx-md-render';
 import { UiModule } from 'ui';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ContentMessageComponent } from './content-message/content-message.component';
-import { MsgPipe } from './content-message/msg.pipe';
 import { HomeComponent } from './home/home.component';
 import { FooterMenuComponent } from './menu/footer-menu/footer-menu.component';
 import { HeadMenuComponent } from './menu/head-menu/head-menu.component';
 import { SectionMenuComponent } from './menu/section-menu/section-menu.component';
+import { ContentMessageComponent } from './message/content-message/content-message.component';
+import { MsgPipe } from './message/msg.pipe';
+import { UiPipe } from './message/ui.pipe';
 import { SectionNavComponent } from './section/section-nav/section-nav.component';
 import { PageCommandParamEntryComponent } from './section/section-page/page-command-param-entry/page-command-param-entry.component';
 import { PageHintEntryComponent } from './section/section-page/page-hint-entry/page-hint-entry.component';
@@ -20,7 +21,6 @@ import { PageTextEntryComponent } from './section/section-page/page-text-entry/p
 import { PageTutorialsEntryComponent } from './section/section-page/page-tutorials-entry/page-tutorials-entry.component';
 import { SectionPageComponent } from './section/section-page/section-page.component';
 import { SectionComponent } from './section/section/section.component';
-import { UiMessageComponent } from './ui-message/ui-message.component';
 import { VersionComponent } from './version/version/version.component';
 
 @NgModule({
@@ -35,12 +35,12 @@ import { VersionComponent } from './version/version/version.component';
     PageCommandParamEntryComponent,
     PageHintEntryComponent,
     PageTutorialsEntryComponent,
-    UiMessageComponent,
     HeadMenuComponent,
     FooterMenuComponent,
     SectionNavComponent,
     HomeComponent,
     MsgPipe,
+    UiPipe,
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'serverApp'}),
