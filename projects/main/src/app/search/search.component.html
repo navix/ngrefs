@@ -1,7 +1,7 @@
 <div class="head">
   <input name="search"
          placeholder="Search&hellip;"
-         autocomplete="false"
+         autocomplete="off"
          ngModel
          (ngModelChange)="queryChanges.next($event)">
   <button (click)="close()">
