@@ -22,6 +22,7 @@ import { TutorialsEntryComponent } from './entry/tutorials-entry/tutorials-entry
 import { PageComponent } from './page/page.component';
 import { SectionComponent } from './section/section/section.component';
 import { VersionComponent } from './version/version.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { VersionComponent } from './version/version.component';
     HomeComponent,
     MsgPipe,
     UiPipe,
+    SearchComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'serverApp'}),

@@ -1,0 +1,77 @@
+@import "params";
+@import "mq";
+
+:host {
+  background: $white;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  padding: $grid * 3;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  margin-right: - $grid * 2;
+  max-width: 100%;
+  input {
+    flex-grow: 1;
+    font-size: 1.5rem;
+    padding: $grid $grid * 2;
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    box-shadow: $smallShadow;
+    min-width: 30px;
+  }
+  button {
+    flex-shrink: 0;
+    border: 0;
+    background: transparent;
+  }
+}
+
+.results {
+  flex-grow: 1;
+  margin-top: $grid * 2;
+  overflow-y: auto;
+  a {
+    display: block;
+    font-size: 1.15rem;
+    padding: $grid $grid / 2;
+    border-bottom: 1px solid $tableBdColor;
+    &:hover, &:active, &:focus {
+      background: #eeeeee;
+    }
+  }
+  .empty-search {
+    text-align: center;
+    padding: $grid * 2;
+    color: #888888;
+  }
+}
+
+@include mq($from: tablet) {
+  :host {
+    top: $grid * 4;
+    right: $grid * 4;
+    bottom: $grid * 4;
+    left: $grid * 4;
+    border-radius: 4px;
+    box-shadow: $mediumShadow;
+  }
+}
+
+@include mq($from: desktop) {
+  :host {
+    right: 20%;
+    left: 20%;
+  }
+}

@@ -29,6 +29,26 @@
   }
 }
 
+.controls {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding: $grid 0;
+  button {
+    background: transparent;
+    border: 0;
+    padding: 0;
+  }
+  button, a {
+    display: flex;
+    background: rgba(255, 255, 255, .1);
+    border-radius: 4px;
+    color: $white;
+    margin-right: $grid;
+    padding: $grid / 2 $grid;
+  }
+}
+
 .sections {
   list-style: none;
   margin: $grid 0;

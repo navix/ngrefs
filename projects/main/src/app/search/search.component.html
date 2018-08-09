@@ -1,0 +1,25 @@
+<div class="head">
+  <input name="search"
+         placeholder="Search&hellip;"
+         autocomplete="false"
+         ngModel
+         (ngModelChange)="queryChanges.next($event)">
+  <button (click)="close()">
+    <kit-icon name="close" size="32px"></kit-icon>
+  </button>
+</div>
+
+<div class="results">
+  <a *ngFor="let res of searchResults"
+     [routerLink]="['/', lang, version.url, res.sectionUrl, res.pageUrl]"
+     [fragment]="res.fragment"
+     class="result"
+     (click)="close()">
+    {{ res.sectionTitle }}&nbsp;&rarr;
+    {{ res.pageTitle }}<span *ngIf="res.entryTitle">, {{ res.entryTitle }}</span>
+  </a>
+  <div *ngIf="query && searchResults.length === 0"
+       class="empty-search">
+    Nothing found.
+  </div>
+</div>

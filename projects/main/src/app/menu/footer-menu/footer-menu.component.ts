@@ -11,10 +11,6 @@ import { SectionComponent } from '../../section/section/section.component';
 export class FooterMenuComponent implements OnInit {
   @Input() version: ContentVersion;
 
-  @Input() showHints: boolean;
-
-  @Output() showHintsChange = new EventEmitter<boolean>();
-
   year = (new Date()).getFullYear();
 
   showLink = true;

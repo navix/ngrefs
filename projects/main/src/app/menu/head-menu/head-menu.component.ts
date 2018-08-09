@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 import { ContentVersion } from '../../content/meta';
+import { SectionComponent } from '../../section/section/section.component';
 
 @Component({
   selector: 'main-head-menu',
@@ -10,7 +11,11 @@ import { ContentVersion } from '../../content/meta';
 export class HeadMenuComponent implements OnInit {
   @Input() version: ContentVersion;
 
-  constructor() {
+  showSearch = false;
+
+  constructor(
+    public sectionComponent: SectionComponent,
+  ) {
   }
 
   ngOnInit() {

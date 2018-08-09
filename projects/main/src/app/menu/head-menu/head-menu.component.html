@@ -3,6 +3,20 @@
   <span>References</span>
 </div>
 
+<div class="controls">
+  <button (click)="showSearch = true">
+    <kit-icon name="search" size="24px"></kit-icon>
+  </button>
+  <button [title]="'Footer_ShowHints' | ui"
+          [style.color]="sectionComponent.showHints ? '#fff' : '#777'"
+          (click)="sectionComponent.showHints = !sectionComponent.showHints">
+    <kit-icon name="hints" size="24px"></kit-icon>
+  </button>
+  <a href="mailto:alex@nvx.me">
+    <kit-icon name="mail" size="24px"></kit-icon>
+  </a>
+</div>
+
 <ul class="sections">
   <li *ngFor="let section of version.sections">
     <a *ngIf="!section.disabled"
@@ -13,3 +27,7 @@
     </a>
   </li>
 </ul>
+
+<kit-modal (close)="showSearch = false">
+  <main-search *kitOverlay="showSearch"></main-search>
+</kit-modal>
