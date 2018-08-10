@@ -11,12 +11,14 @@
 h3 {
   font-size: 1.3rem;
   margin: 0;
-  padding: 0;
+  padding: $grid * 2;
+  background: $codeColor;
+  a {
+    font-size: 1.1rem;
+    text-decoration: none;
+  }
   code {
-    box-sizing: border-box;
-    display: block;
-    padding: $grid * 2;
-    width: 100%;
+    background: transparent;
   }
 }
 
