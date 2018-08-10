@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { KitIconsRegistryService } from '@ngx-kit/core';
 import { versions } from './content/versions';
+import { SeoService } from './seo.service';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +13,7 @@ export class AppComponent {
 
   constructor(
     private icons: KitIconsRegistryService,
+    private seo: SeoService, // Inject to force title rendering
   ) {
     this.icons.add([
       {
