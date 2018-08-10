@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { extractMessage } from '../message/extract-message';
 import { ContentMessage, ContentMessageRef } from '../content/meta';
 import { versions } from '../content/versions';
+import { extractMessage } from '../message/extract-message';
 
 @Component({
   selector: 'main-home',

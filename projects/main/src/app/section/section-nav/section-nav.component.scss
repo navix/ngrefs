@@ -27,14 +27,14 @@
   }
 }
 
-:host(.ssr) {
+:host(.static) {
   .menu {
     display: none;
   }
 }
 
 @include mq($from: tablet) {
-  :host(.ssr) {
+  :host(.static) {
     .menu {
       display: flex;
     }

@@ -1,12 +1,7 @@
-<main-section-nav *ngIf="isServer"
+<main-section-nav *kitMq="{from: 'tablet', server: true}"
                   [version]="version"
                   [section]="section"
-                  class="ssr">
-</main-section-nav>
-
-<main-section-nav *kitMq="{from: 'tablet'}"
-                  [version]="version"
-                  [section]="section">
+                  class="static">
 </main-section-nav>
 
 <ng-container *kitMq="{until: 'tablet'}">
