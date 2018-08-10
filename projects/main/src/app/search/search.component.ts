@@ -89,10 +89,10 @@ export class SearchComponent implements OnInit {
               case 'command-param':
                 entryTitle = entry.name;
                 fields = [
-                  entry.name,
-                  entry.values,
-                  entry.default,
-                  entry.aliases,
+                  entry.name ? entry.name.toLowerCase() : undefined,
+                  entry.values ? entry.values.toLowerCase() : undefined,
+                  entry.default ? entry.default.toLowerCase() : undefined,
+                  entry.aliases ? entry.aliases.toLowerCase() : undefined,
                   extractMessage(this.version.messages, entry.description, this.lang).toLowerCase(),
                 ];
             }
