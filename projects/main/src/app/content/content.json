@@ -730,6 +730,35 @@
                   "text": {
                     "id": "25698557-beef-da6c-7feb-211be044c78f"
                   }
+                },
+                {
+                  "id": "7e5ec02b-68d9-38e6-eb6f-091d80a091b2",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "5eff0b11-83db-2bb1-3453-aed168d232de"
+                  },
+                  "text": {
+                    "id": "7f6e6bd9-ca0f-d9ba-e579-1a7dafa10918"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "9852a89f-8491-f97f-6fc6-14211c509592"
+                      },
+                      "url": "https://nitayneeman.com/posts/understanding-the-angular-cli-workspace-file/",
+                      "lang": "en"
+                    }
+                  ]
+                },
+                {
+                  "id": "35503297-e158-2769-3c75-132225ed84eb",
+                  "type": "text",
+                  "head": {
+                    "id": "fce2ff4d-0d00-7dd2-56a6-0303287efdcf"
+                  },
+                  "text": {
+                    "id": "dca2c6bf-0c48-ad6e-da78-a2eb08c062a9"
+                  }
                 }
               ],
               "title": {
@@ -748,6 +777,35 @@
                   },
                   "head": {
                     "id": "3ed9f556-970e-f032-cb5b-427cf07a2155"
+                  }
+                },
+                {
+                  "id": "28408a01-ed3e-fc82-5afc-33dee1e13731",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "26338bad-8364-4012-5765-8cabe8bc3551"
+                  },
+                  "text": {
+                    "id": "42aa75cf-786a-5b5e-2925-39c2c809fd30"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "e19b1c16-fee3-8e78-5b9c-e070fed245dd"
+                      },
+                      "url": "https://angular.io/guide/quickstart",
+                      "lang": "en"
+                    }
+                  ]
+                },
+                {
+                  "id": "0925973b-d612-defb-6c6e-cdb6122d09e6",
+                  "type": "text",
+                  "head": {
+                    "id": "0b02b0ed-ebc9-ac25-d362-683d65c82f9d"
+                  },
+                  "text": {
+                    "id": "4c0b5700-438f-6201-d239-dac79d128ba0"
                   }
                 },
                 {
@@ -1035,6 +1093,35 @@
                   }
                 },
                 {
+                  "id": "11d6a32d-f141-7888-d5ea-2560ff8d9b70",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "964e6106-0cf6-1d69-0e62-3c3e4565fa91"
+                  },
+                  "text": {
+                    "id": "d6fd367c-f1ea-1927-f5a7-0598c1d21a52"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "dfcca67d-a548-78a0-5c34-74b7ae52fdaf"
+                      },
+                      "url": "https://angular.io/guide/deployment",
+                      "lang": "en"
+                    }
+                  ]
+                },
+                {
+                  "id": "80edb8c0-1702-00cd-9b86-b653f8872696",
+                  "type": "text",
+                  "head": {
+                    "id": "841587ec-5812-a2f5-59e1-ead6bc896c0c"
+                  },
+                  "text": {
+                    "id": "2bcb0700-b1cd-095e-bac9-78744ab8c1b4"
+                  }
+                },
+                {
                   "id": "23b68d99-6530-c1ef-d139-07f4d5a320dc",
                   "type": "command-param",
                   "head": {
@@ -1068,6 +1155,35 @@
                   },
                   "text": {
                     "id": "12274bfa-c982-9a3b-3c7c-45db530e1bf9"
+                  }
+                },
+                {
+                  "id": "c20944b3-6c95-6239-87f0-9d00df096770",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "e3a10953-b7c4-702f-34bd-bfab1b4b4ea6"
+                  },
+                  "text": {
+                    "id": "f8bc7d11-319a-cec5-e3dc-b5e93ec1095f"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "10956996-d593-9a1b-0788-69dac8c6c53e"
+                      },
+                      "url": "https://angular.io/guide/testing",
+                      "lang": "en"
+                    }
+                  ]
+                },
+                {
+                  "id": "b10777fa-bb43-52ff-bcfc-7aa2b8bbbc2b",
+                  "type": "text",
+                  "head": {
+                    "id": "5344702b-fa34-b92e-a8e3-4af1a5494332"
+                  },
+                  "text": {
+                    "id": "aa95e2b5-e6ee-88ca-6896-bb23bc98f92b"
                   }
                 },
                 {
@@ -1120,6 +1236,35 @@
                   },
                   "text": {
                     "id": "2a4aba7e-2b07-3bdc-64bf-0e44a02404b8"
+                  }
+                },
+                {
+                  "id": "00ccb206-32e7-ec10-699e-0713273220e7",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "62310065-2158-6ea7-3d60-a4997ab45b0a"
+                  },
+                  "text": {
+                    "id": "e2778fa1-ed87-a1f6-345f-934eb14823b5"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "3a2bb589-739b-c291-dfda-ce555d886ba8"
+                      },
+                      "url": "https://coryrylan.com/blog/introduction-to-e2e-testing-with-the-angular-cli-and-protractor",
+                      "lang": "en"
+                    }
+                  ]
+                },
+                {
+                  "id": "d414b194-51e7-148f-555c-b1d6685e51a9",
+                  "type": "text",
+                  "head": {
+                    "id": "7ee2c943-fa0a-32ca-fb8e-4a69344a1f36"
+                  },
+                  "text": {
+                    "id": "8ec81e56-34fd-6df2-f48b-5e5471ee0c90"
                   }
                 },
                 {
@@ -1333,6 +1478,42 @@
                   }
                 },
                 {
+                  "id": "2c9272e3-aea1-3954-13c8-a1a6ba0aac65",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "62a97801-95b5-dd93-aaef-c9bd3409ce35"
+                  },
+                  "text": {
+                    "id": "1956392d-3f50-d398-f4f0-c6f31a79d490"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "6a5df9b4-28fa-95c2-538d-b921b06b8930"
+                      },
+                      "url": "https://angular.io/guide/i18n",
+                      "lang": "en"
+                    },
+                    {
+                      "label": {
+                        "id": "98fb91d9-13f6-9e28-c51d-9f2ec3da3cec"
+                      },
+                      "url": "https://medium.com/frontend-fun/angular-introduction-to-internationalization-i18n-28226a85e04e",
+                      "lang": "en"
+                    }
+                  ]
+                },
+                {
+                  "id": "16273aad-a1b8-d70e-8c56-48b68e32ff7c",
+                  "type": "text",
+                  "head": {
+                    "id": "9f5a6758-eae2-b7c4-9e0a-94b59e46a8d0"
+                  },
+                  "text": {
+                    "id": "acc82b47-3285-be5e-d531-1fe432df894a"
+                  }
+                },
+                {
                   "id": "10e16371-4cdc-6255-d1cc-9aa5bad5ecb7",
                   "type": "command-param",
                   "head": {
@@ -1366,6 +1547,42 @@
                   },
                   "text": {
                     "id": "8a43615e-db1b-6b55-4479-173739f55359"
+                  }
+                },
+                {
+                  "id": "1e30bc24-1a1f-0f5d-0642-045cd04b4aa2",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "f6d9a69f-e8a7-4105-56d3-edfd26e12a5f"
+                  },
+                  "text": {
+                    "id": "6457859f-5af5-bf6b-710f-8b8965de52ce"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "d8e27707-8d4a-2b9b-4c82-b0c8cdcf8166"
+                      },
+                      "url": "https://angular.io/guide/updating",
+                      "lang": "en"
+                    },
+                    {
+                      "label": {
+                        "id": "a926d9f2-a0e1-be90-a7c2-6598a7a20a5c"
+                      },
+                      "url": "https://update.angular.io/",
+                      "lang": "en"
+                    }
+                  ]
+                },
+                {
+                  "id": "592f6a66-f7af-89a1-19ac-e99a1b3efa52",
+                  "type": "text",
+                  "head": {
+                    "id": "a03f6d89-0d30-766f-8fe8-4ce219f13a22"
+                  },
+                  "text": {
+                    "id": "cc73c55f-516a-824c-ec75-aab2ec6365aa"
                   }
                 },
                 {
@@ -1590,6 +1807,25 @@
                   "text": {
                     "id": "635f8756-e1f7-28b0-681b-90637f42260a"
                   }
+                },
+                {
+                  "id": "54f0e8e0-b97b-d6c6-2d6e-c4c9654cab4f",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "af0955da-5574-1d64-12d7-9dcadc76416b"
+                  },
+                  "text": {
+                    "id": "4595dddc-21f9-1c0f-7eb5-75982f782278"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "be4ccdf7-60d1-746a-4818-67892034238d"
+                      },
+                      "url": "https://nitayneeman.com/posts/understanding-the-angular-cli-workspace-file/",
+                      "lang": "en"
+                    }
+                  ]
                 }
               ],
               "title": {
@@ -1909,6 +2145,25 @@
                   "name": "fileReplacements",
                   "headId": "fileReplacements",
                   "paramType": "array"
+                },
+                {
+                  "id": "1e77b9c0-8203-61de-fa29-245704feb09c",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "eeb5f62c-f276-8506-8923-cddfe7f9abf8"
+                  },
+                  "text": {
+                    "id": "e66b8b2a-8ccc-3414-1dba-ad2de36ca9fb"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "9aac1012-2731-c8e5-3a18-d6aed7e40742"
+                      },
+                      "url": "https://blog.angularindepth.com/becoming-an-angular-environmentalist-45a48f7c20d8",
+                      "lang": "en"
+                    }
+                  ]
                 },
                 {
                   "id": "f5901ded-a8b8-ff3d-dc5b-09db7a3bb4a4",
@@ -2896,6 +3151,32 @@
                   }
                 },
                 {
+                  "id": "b53189a9-6f34-c851-f91c-9aa07674c482",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "b14ece00-325b-b20e-df7d-89ec6890967e"
+                  },
+                  "text": {
+                    "id": "acc20dd2-b6d1-5132-23d7-658855a2d343"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "25bd0164-8ee1-8fa1-575e-4f8b2bf48c9c"
+                      },
+                      "url": "https://angular.io/guide/i18n",
+                      "lang": "en"
+                    },
+                    {
+                      "label": {
+                        "id": "55b585ec-0dd3-4d99-f0cb-2434a3cb7482"
+                      },
+                      "url": "https://medium.com/frontend-fun/angular-introduction-to-internationalization-i18n-28226a85e04e",
+                      "lang": "en"
+                    }
+                  ]
+                },
+                {
                   "id": "7e05f660-d17d-e09a-17f6-a2bc9330111b",
                   "type": "command-param",
                   "head": {
@@ -2994,6 +3275,35 @@
                   },
                   "text": {
                     "id": "e8384fe4-9ca8-8494-8267-93368d9df52e"
+                  }
+                },
+                {
+                  "id": "adcf8658-d495-97ca-22f7-6bdde13bd0a0",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "48e50572-384c-b040-3e44-e1fd6654b8b9"
+                  },
+                  "text": {
+                    "id": "87d25fc6-9ef9-712b-ded0-0b05e032e993"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "7b582c61-17dd-69d3-9f09-d399c0f99c41"
+                      },
+                      "url": "https://angular.io/guide/testing",
+                      "lang": "en"
+                    }
+                  ]
+                },
+                {
+                  "id": "10261daf-6f29-62bd-d9b6-57aa8f55e377",
+                  "type": "text",
+                  "head": {
+                    "id": "b6339e30-3d0d-9733-6603-cfc946756571"
+                  },
+                  "text": {
+                    "id": "147066c0-5dbd-e75b-0242-c82fb30d2ab3"
                   }
                 },
                 {
@@ -3304,6 +3614,35 @@
                   },
                   "text": {
                     "id": "0feffac9-aa0d-5502-f033-f56cf70af3a4"
+                  }
+                },
+                {
+                  "id": "5a33411f-a6a9-83c2-3f8f-08248812de1d",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "9b98194e-8277-b8e3-6497-ef02581e5d0c"
+                  },
+                  "text": {
+                    "id": "0e585473-7380-9022-d5b2-dbd238866da4"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "c40b156d-d800-0d4f-130b-c4199a38dabc"
+                      },
+                      "url": "https://coryrylan.com/blog/introduction-to-e2e-testing-with-the-angular-cli-and-protractor",
+                      "lang": "en"
+                    }
+                  ]
+                },
+                {
+                  "id": "034f98cb-1d0c-913d-a6ed-ebe2660dab5b",
+                  "type": "text",
+                  "head": {
+                    "id": "9604647a-fa94-81fc-0704-d8686ad57384"
+                  },
+                  "text": {
+                    "id": "1ce4c7fe-f0a1-00dd-f5f9-9b2e00df735f"
                   }
                 },
                 {
@@ -3935,6 +4274,16 @@
                   },
                   "text": {
                     "id": "a8a4a9c6-8073-58fa-6811-6708020d5903"
+                  }
+                },
+                {
+                  "id": "6c307f0f-7d90-208c-eeb7-08869677c15e",
+                  "type": "text",
+                  "head": {
+                    "id": "91c87de3-a29f-fae0-dd4f-68426edb1055"
+                  },
+                  "text": {
+                    "id": "ae1eb473-3dcf-6a2b-3d9e-a38ca2adaa96"
                   }
                 },
                 {
@@ -5498,6 +5847,25 @@
                   }
                 },
                 {
+                  "id": "fc9ba922-818f-a991-ac8e-143f32d94125",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "172dc86a-cc62-0b37-8637-9918900a5c93"
+                  },
+                  "text": {
+                    "id": "70b50218-80e3-6c7f-4bca-6f25693ec9a5"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "1d69bad3-fba9-2fe7-9f7d-f9203d6d79c1"
+                      },
+                      "url": "https://blog.angularindepth.com/creating-a-library-in-angular-6-87799552e7e5",
+                      "lang": "en"
+                    }
+                  ]
+                },
+                {
                   "id": "f0387384-6035-e8dc-d5e8-ebf0a22ac144",
                   "type": "text",
                   "head": {
@@ -6437,11 +6805,11 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```\nng new [name] [--[argument]=[value]]\nng n\n```\n\nCreates a new angular application.\n\nDefault applications are created in a directory of the same name, with an initialized Angular application.\n\n## Options\n"
+              "text": "```\nng new [name] [--[argument]=[value]]\nng n\n```\n\nCreates a new angular application.\n\nDefault applications are created in a directory of the same name, with an initialized Angular application.\n"
             },
             {
               "lang": "ru",
-              "text": "```\nng new [name] [--[argument]=[value]]\nng n\n```\n\n> С этой команды начинается работа с Angular.\n\nСоздание скелета Angular приложения, готового к разработке и запуску.\n\n\n## Параметры\n"
+              "text": "```\nng new [name] [--[argument]=[value]]\nng n\n```\n\nСоздание скелета Angular приложения, готового к разработке и запуску.\n\n"
             }
           ]
         },
@@ -6497,7 +6865,7 @@
             },
             {
               "lang": "ru",
-              "text": "> [Schematics](../schematics) очень мощный инструмент, вся генерация кода (как и начального приложения, так и дальнейших компонентов) декларируется в отдельном пакете и вы можете использовать Angular CLI с шаблонами от других поставщиков.\n\nПакет генераторов для скелета и последующего использования. "
+              "text": "Пакет генераторов для скелета и последующего использования. "
             }
           ]
         },
@@ -6553,7 +6921,7 @@
             },
             {
               "lang": "ru",
-              "text": "> Удобный параметр, т.к чаще всего нам нужен роутинг в приложении.\n\nДобавление `app-routing.module` при генерации."
+              "text": "Добавление `app-routing.module` при генерации."
             }
           ]
         },
@@ -6581,7 +6949,7 @@
             },
             {
               "lang": "ru",
-              "text": "> Можно выбрать один из популярных css-препроцессоров.\n\nРасширение файлов для подключемых файлов стилей, для генерируемых компонентов."
+              "text": "Расширение файлов для подключемых файлов стилей, для генерируемых компонентов."
             }
           ]
         },
@@ -7118,11 +7486,11 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```\nng test [--[argument]=[value]]\n```\n\nAlias for the command:\n \n```\nng run [project]:test\n```\n\nIn the default configuration for `ng test` using builder [`karma`](../builder-karma).\n\nWith this command you can override any builder's option.\n\n\n## Options"
+              "text": "```\nng test [--[argument]=[value]]\n```\n\nAlias for the command:\n \n```\nng run [project]:test\n```\n\nIn the default configuration for `ng test` using builder [`karma`](../builder-karma).\n\nWith this command you can override any builder's option.\n"
             },
             {
               "lang": "ru",
-              "text": "```\nng test [--[argument]=[value]]\n```\n\nПсевдоним для команды:\n \n```\nng run [project]:test\n```\n\nВ стандартной конфигурации для `ng test` используется билдер [`karma`](../builder-karma).\n\nПри использовании команды вы можете переобъявить любой параметр билдера.\n\n\n## Параметры"
+              "text": "```\nng test [--[argument]=[value]]\n```\n\nПсевдоним для команды:\n \n```\nng run [project]:test\n```\n\nВ стандартной конфигурации для `ng test` используется билдер [`karma`](../builder-karma).\n\nПри использовании команды вы можете переобъявить любой параметр билдера.\n"
             }
           ]
         },
@@ -7147,11 +7515,11 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```\nng e2e [--[argument]=[value]]\n```\n\nAlias for the command:\n \n```\nng run [project]:e2e\n```\n\nIn the default configuration for `ng e2e` using builder [`protractor`](../builder-protractor).\n\nWith this command you can override any builder's option.\n\n\n## Options"
+              "text": "```\nng e2e [--[argument]=[value]]\n```\n\nAlias for the command:\n \n```\nng run [project]:e2e\n```\n\nIn the default configuration for `ng e2e` using builder [`protractor`](../builder-protractor).\n\nWith this command you can override any builder's option.\n"
             },
             {
               "lang": "ru",
-              "text": "```\nng e2e [--[argument]=[value]]\n```\n\nПсевдоним для команды:\n \n```\nng run [project]:e2e\n```\n\nВ стандартной конфигурации для `ng e2e` используется билдер [`protractor`](../builder-protractor).\n\nПри использовании команды вы можете переобъявить любой параметр билдера.\n\n\n## Параметры"
+              "text": "```\nng e2e [--[argument]=[value]]\n```\n\nПсевдоним для команды:\n \n```\nng run [project]:e2e\n```\n\nВ стандартной конфигурации для `ng e2e` используется билдер [`protractor`](../builder-protractor).\n\nПри использовании команды вы можете переобъявить любой параметр билдера.\n"
             }
           ]
         },
@@ -7291,11 +7659,11 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```\nng xi18n [--[argument]=[value]]\n```\n\nExtract i18n messages from the templates.\n\nAlias for the command:\n \n```\nng run [project]:extract-i18n\n```\n\nIn the default configuration for `ng xi18n` using builder [`extract-i18n`](../builder-extract-i18n).\n\nWith this command you can override any builder's option.\n\n\n## Options\n"
+              "text": "```\nng xi18n [--[argument]=[value]]\n```\n\nExtract i18n messages from the templates.\n\nAlias for the command:\n \n```\nng run [project]:extract-i18n\n```\n\nIn the default configuration for `ng xi18n` using builder [`extract-i18n`](../builder-extract-i18n).\n\nWith this command you can override any builder's option.\n"
             },
             {
               "lang": "ru",
-              "text": "```\nng xi18n [--[argument]=[value]]\n```\n\nИзвлечение строк для перевода из шаблонов.\n\nПсевдоним для команды:\n \n```\nng run [project]:extract-i18n\n```\n\nВ стандартной конфигурации для `ng xi18n` используется билдер [`extract-i18n`](../builder-extract-i18n).\n\nПри использовании команды вы можете переобъявить любой параметр билдера.\n\n\n## Парамерты\n"
+              "text": "```\nng xi18n [--[argument]=[value]]\n```\n\nИзвлечение строк для перевода из шаблонов.\n\nПсевдоним для команды:\n \n```\nng run [project]:extract-i18n\n```\n\nВ стандартной конфигурации для `ng xi18n` используется билдер [`extract-i18n`](../builder-extract-i18n).\n\nПри использовании команды вы можете переобъявить любой параметр билдера.\n"
             }
           ]
         },
@@ -7320,11 +7688,11 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```\nng update [package] [--[argument]=[value]]\n```\n\nUpdates the current application to latest versions.\n\n## Options"
+              "text": "```\nng update [package] [--[argument]=[value]]\n```\n\nUpdates the current application to latest versions.\n"
             },
             {
               "lang": "ru",
-              "text": "```\nng update [package] [--[argument]=[value]]\n```\n\nОбновление приложения до последней версии.\n\n## Параметры"
+              "text": "```\nng update [package] [--[argument]=[value]]\n```\n\nОбновление приложения до последней версии.\n"
             }
           ]
         },
@@ -7547,11 +7915,11 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Main Angular CLI configuration file.\n\n## Schema\n\n- **version** (`integer`): File format version. This is currently `\"1\"`.\n\n- **newProjectRoot** (`string`): Path where new projects will be created.\n\n- **defaultProject** (`string`): Default project name used in commands.\n\n- **cli**: Workspace configuration options for Angular CLI.\n  - *defaultCollection* (`string`): The default schematics collection to use.\n  - *packageManager* (`string`): Specify which package manager tool to use.\n  - *warnings* (`object`): Warning configuration.\n    - *versionMismatch* (`boolean`): Show a warning when the global version is newer than the local one.\n    - *typescriptMismatch* (`boolean`): The name of the project.\n\n- **schematics** (`object`): Workspace configuration options for Schematics.\n  - *schematic-package:schematic-name* (`object`): Object containing options for this schematic. JSON Schema for default schematics:\n    - [@schematics/angular:component](https://github.com/angular/angular-cli/blob/v6.0.0-rc.8/packages/%40angular/cli/lib/config/schema.json#L74-L144)\n    - [@schematics/angular:directive](https://github.com/angular/angular-cli/blob/v6.0.0-rc.8/packages/%40angular/cli/lib/config/schema.json#L145-L186)\n    - [@schematics/angular:module](https://github.com/angular/angular-cli/blob/v6.0.0-rc.8/packages/%40angular/cli/lib/config/schema.json#L187-L223)\n    - [@schematics/angular:service](https://github.com/angular/angular-cli/blob/v6.0.0-rc.8/packages/%40angular/cli/lib/config/schema.json#L224-L238)\n    - [@schematics/angular:pipe](https://github.com/angular/angular-cli/blob/v6.0.0-rc.8/packages/%40angular/cli/lib/config/schema.json#L239-L269)\n    - [@schematics/angular:class](https://github.com/angular/angular-cli/blob/v6.0.0-rc.8/packages/%40angular/cli/lib/config/schema.json#L270-L279)\n\n\n- **projects**: Configuration options for each project in the workspace.\n  - *root* (`string`): Root of the project files.\n  - *sourceRoot* (`string`): The root of the source files, assets and index.html file structure..\n  - *projectType* (`string`): the type of this project, `application` or `library`.\n  - *prefix* (`string`): The prefix to apply to generated selectors.\n  - *schematics* (`object`): Project configuration options for Schematics. Has the same format as top level Schematics configuration).\n  - *architect* (`string`): Project configuration for Architect targets.\n    - *targetName* (`string`): Name of this target.\n      - *builder* (`string`): Builder for this target, in the format `package-name:builder-name`.\n      - *options* (`string`): Options for this builder.\n        JSON Schema for default schematics:\n        - [@angular-devkit/build-angular:app-shell](../builder-app-shell)\n        - [@angular-devkit/build-angular:browser](../builder-browser)\n        - [@angular-devkit/build-angular:dev-server](../builder-dev-server)\n        - [@angular-devkit/build-angular:extract-i18n](../builder-extract-i18n)\n        - [@angular-devkit/build-angular:karma](../builder-karma)\n        - [@angular-devkit/build-angular:protractor](../builder-protractor)\n        - [@angular-devkit/build-angular:server](../builder-server)\n        - [@angular-devkit/build-angular:tslint](../builder-tslint)\n      - *configurations* (`object`): A map of alternative target options.\n        - *configurationName* (`object`): Partial options override for this builder.\n"
+              "text": "Main Angular CLI configuration file.\n\n"
             },
             {
               "lang": "ru",
-              "text": "Основной файл конфигурации для Angular CLI.\n\n## Схема\n\n- **version** (`integer`): File format version. This is currently `\"1\"`.\n\n- **newProjectRoot** (`string`): Path where new projects will be created.\n\n- **defaultProject** (`string`): Default project name used in commands.\n\n- **cli**: Workspace configuration options for Angular CLI.\n  - *defaultCollection* (`string`): The default schematics collection to use.\n  - *packageManager* (`string`): Specify which package manager tool to use.\n  - *warnings* (`object`): Warning configuration.\n    - *versionMismatch* (`boolean`): Show a warning when the global version is newer than the local one.\n    - *typescriptMismatch* (`boolean`): The name of the project.\n\n- **schematics** (`object`): Workspace configuration options for Schematics.\n  - *schematic-package:schematic-name* (`object`): Object containing options for this schematic. JSON Schema for default schematics:\n    - [@schematics/angular:component](https://github.com/angular/angular-cli/blob/v6.0.0-rc.8/packages/%40angular/cli/lib/config/schema.json#L74-L144)\n    - [@schematics/angular:directive](https://github.com/angular/angular-cli/blob/v6.0.0-rc.8/packages/%40angular/cli/lib/config/schema.json#L145-L186)\n    - [@schematics/angular:module](https://github.com/angular/angular-cli/blob/v6.0.0-rc.8/packages/%40angular/cli/lib/config/schema.json#L187-L223)\n    - [@schematics/angular:service](https://github.com/angular/angular-cli/blob/v6.0.0-rc.8/packages/%40angular/cli/lib/config/schema.json#L224-L238)\n    - [@schematics/angular:pipe](https://github.com/angular/angular-cli/blob/v6.0.0-rc.8/packages/%40angular/cli/lib/config/schema.json#L239-L269)\n    - [@schematics/angular:class](https://github.com/angular/angular-cli/blob/v6.0.0-rc.8/packages/%40angular/cli/lib/config/schema.json#L270-L279)\n\n\n- **projects**: Configuration options for each project in the workspace.\n  - *root* (`string`): Root of the project files.\n  - *sourceRoot* (`string`): The root of the source files, assets and index.html file structure..\n  - *projectType* (`string`): the type of this project, `application` or `library`.\n  - *prefix* (`string`): The prefix to apply to generated selectors.\n  - *schematics* (`object`): Project configuration options for Schematics. Has the same format as top level Schematics configuration).\n  - *architect* (`string`): Project configuration for Architect targets.\n    - *targetName* (`string`): Name of this target.\n      - *builder* (`string`): Builder for this target, in the format `package-name:builder-name`.\n      - *options* (`string`): Options for this builder.\n        JSON Schema for default schematics:\n        - [@angular-devkit/build-angular:app-shell](../builder-app-shell)\n        - [@angular-devkit/build-angular:browser](../builder-browser)\n        - [@angular-devkit/build-angular:dev-server](../builder-dev-server)\n        - [@angular-devkit/build-angular:extract-i18n](../builder-extract-i18n)\n        - [@angular-devkit/build-angular:karma](../builder-karma)\n        - [@angular-devkit/build-angular:protractor](../builder-protractor)\n        - [@angular-devkit/build-angular:server](../builder-server)\n        - [@angular-devkit/build-angular:tslint](../builder-tslint)\n      - *configurations* (`object`): A map of alternative target options.\n        - *configurationName* (`object`): Partial options override for this builder.\n"
+              "text": "Основной файл конфигурации для Angular CLI.\n\n\n"
             }
           ]
         },
@@ -8672,11 +9040,11 @@
           "locales": [
             {
               "lang": "en",
-              "text": "ID: `@angular-devkit/build-angular:karma`\n\n## Options"
+              "text": "ID: `@angular-devkit/build-angular:karma`\n"
             },
             {
               "lang": "ru",
-              "text": "ID: `@angular-devkit/build-angular:karma`\n\nБилдер для юнит-тестирования с помощью [karma]().\n\n## Параметры "
+              "text": "ID: `@angular-devkit/build-angular:karma`\n\nБилдер для юнит-тестирования с помощью [karma]().\n"
             }
           ]
         },
@@ -8953,11 +9321,11 @@
           "locales": [
             {
               "lang": "en",
-              "text": "ID: `@angular-devkit/build-angular:protractor`\n\n## Options"
+              "text": "ID: `@angular-devkit/build-angular:protractor`\n"
             },
             {
               "lang": "ru",
-              "text": "ID: `@angular-devkit/build-angular:protractor`\n\nБилдер для e2e-тестирования с помощью [protractor]().\n\n\n## Параметры "
+              "text": "ID: `@angular-devkit/build-angular:protractor`\n\nБилдер для e2e-тестирования с помощью [protractor](https://www.protractortest.org/#/).\n"
             }
           ]
         },
@@ -9515,11 +9883,11 @@
           "locales": [
             {
               "lang": "en",
-              "text": "ID: `@angular-devkit/build-angular:tslint`\n\n## Options"
+              "text": "ID: `@angular-devkit/build-angular:tslint`\n"
             },
             {
               "lang": "ru",
-              "text": "ID: `@angular-devkit/build-angular:tslint`\n\nБилдер для линтинга.\n\n\n## Параметры "
+              "text": "ID: `@angular-devkit/build-angular:tslint`\n\nБилдер для линтинга.\n"
             }
           ]
         },
@@ -9687,7 +10055,8 @@
             },
             {
               "lang": "ru",
-              "text": "Быстрый старт с Angular"
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -9725,7 +10094,8 @@
             },
             {
               "lang": "ru",
-              "text": "Быстрый старт с Angular"
+              "text": "",
+              "useSource": true
             }
           ]
         },
@@ -12392,6 +12762,376 @@
             {
               "lang": "ru",
               "text": "Формы"
+            }
+          ]
+        },
+        {
+          "id": "dca2c6bf-0c48-ad6e-da78-a2eb08c062a9",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Schema\n\n- **version** (`integer`): File format version. This is currently `\"1\"`.\n\n- **newProjectRoot** (`string`): Path where new projects will be created.\n\n- **defaultProject** (`string`): Default project name used in commands.\n\n- **cli**: Workspace configuration options for Angular CLI.\n  - *defaultCollection* (`string`): The default schematics collection to use.\n  - *packageManager* (`string`): Specify which package manager tool to use.\n  - *warnings* (`object`): Warning configuration.\n    - *versionMismatch* (`boolean`): Show a warning when the global version is newer than the local one.\n    - *typescriptMismatch* (`boolean`): Check TypeScript version.\n\n- **schematics** (`object`): Workspace configuration options for Schematics.\n  - *schematic-package:schematic-name* (`object`): Object containing options for this schematic. JSON Schema for default schematics:\n    - [@schematics/angular:component](https://github.com/angular/angular-cli/blob/v6.0.0-rc.8/packages/%40angular/cli/lib/config/schema.json#L74-L144)\n    - [@schematics/angular:directive](https://github.com/angular/angular-cli/blob/v6.0.0-rc.8/packages/%40angular/cli/lib/config/schema.json#L145-L186)\n    - [@schematics/angular:module](https://github.com/angular/angular-cli/blob/v6.0.0-rc.8/packages/%40angular/cli/lib/config/schema.json#L187-L223)\n    - [@schematics/angular:service](https://github.com/angular/angular-cli/blob/v6.0.0-rc.8/packages/%40angular/cli/lib/config/schema.json#L224-L238)\n    - [@schematics/angular:pipe](https://github.com/angular/angular-cli/blob/v6.0.0-rc.8/packages/%40angular/cli/lib/config/schema.json#L239-L269)\n    - [@schematics/angular:class](https://github.com/angular/angular-cli/blob/v6.0.0-rc.8/packages/%40angular/cli/lib/config/schema.json#L270-L279)\n\n\n- **projects**: Configuration options for each project in the workspace.\n  - *root* (`string`): Root of the project files.\n  - *sourceRoot* (`string`): The root of the source files, assets and index.html file structure..\n  - *projectType* (`string`): the type of this project, `application` or `library`.\n  - *prefix* (`string`): The prefix to apply to generated selectors.\n  - *schematics* (`object`): Project configuration options for Schematics. Has the same format as top level Schematics configuration).\n  - *architect* (`string`): Project configuration for Architect targets.\n    - *targetName* (`string`): Name of this target.\n      - *builder* (`string`): Builder for this target, in the format `package-name:builder-name`.\n      - *options* (`string`): Options for this builder.\n        Default schematics options:\n        - [@angular-devkit/build-angular:app-shell](../builder-app-shell)\n        - [@angular-devkit/build-angular:browser](../builder-browser)\n        - [@angular-devkit/build-angular:dev-server](../builder-dev-server)\n        - [@angular-devkit/build-angular:extract-i18n](../builder-extract-i18n)\n        - [@angular-devkit/build-angular:karma](../builder-karma)\n        - [@angular-devkit/build-angular:protractor](../builder-protractor)\n        - [@angular-devkit/build-angular:server](../builder-server)\n        - [@angular-devkit/build-angular:tslint](../builder-tslint)\n      - *configurations* (`object`): A map of alternative target options.\n        - *configurationName* (`object`): Partial options override for this builder.\n"
+            },
+            {
+              "lang": "ru",
+              "text": "## Схема\n\n- **version** (`integer`): Версия формата. Текущая: `\"1\"`.\n\n- **newProjectRoot** (`string`): Путь для новых проектов.\n\n- **defaultProject** (`string`): Проект по-умолчанию для использования в CLI.\n\n- **cli**: Настройки окружения для Angular CLI.\n  - *defaultCollection* (`string`): Schematics коллекция по-умолчанию.\n  - *packageManager* (`string`): Пакетный менеджер.\n  - *warnings* (`object`): Настройки предупреждений.\n    - *versionMismatch* (`boolean`): Показывать предупреждение, если глобальная версия выше локальной.\n    - *typescriptMismatch* (`boolean`): Показывать предупреждение, если используется не поддерживаемая версия TypeScript.\n\n- **schematics** (`object`): Настройки для Schematics.\n  - *schematic-package:schematic-name* (`object`): Объект настроек для конкретных пакета/генератора. Схемы для стандартных генераторов:\n    - [@schematics/angular:component](https://github.com/angular/angular-cli/blob/v6.0.0-rc.8/packages/%40angular/cli/lib/config/schema.json#L74-L144)\n    - [@schematics/angular:directive](https://github.com/angular/angular-cli/blob/v6.0.0-rc.8/packages/%40angular/cli/lib/config/schema.json#L145-L186)\n    - [@schematics/angular:module](https://github.com/angular/angular-cli/blob/v6.0.0-rc.8/packages/%40angular/cli/lib/config/schema.json#L187-L223)\n    - [@schematics/angular:service](https://github.com/angular/angular-cli/blob/v6.0.0-rc.8/packages/%40angular/cli/lib/config/schema.json#L224-L238)\n    - [@schematics/angular:pipe](https://github.com/angular/angular-cli/blob/v6.0.0-rc.8/packages/%40angular/cli/lib/config/schema.json#L239-L269)\n    - [@schematics/angular:class](https://github.com/angular/angular-cli/blob/v6.0.0-rc.8/packages/%40angular/cli/lib/config/schema.json#L270-L279)\n\n\n- **projects**: Настройки проектов.\n  - *root* (`string`): Корневая папка проекта.\n  - *sourceRoot* (`string`): Корневая папка для исходных файлов, ассетов и `index.html` файла.\n  - *projectType* (`string`): Тип проекта, `application` или `library`.\n  - *prefix* (`string`): Префикс для селекторов (используется генераторами).\n  - *schematics* (`object`): Настройки для Schematics. Тот же формат, что и для глобального конфига.\n  - *architect* (`string`): Настройки билдов.\n    - *targetName* (`string`): Имя билда.\n      - *builder* (`string`): Билдер, в формате `package-name:builder-name`.\n      - *options* (`string`): Настройки билдера.\n        Настройки для стандартных билдеров:\n        - [@angular-devkit/build-angular:app-shell](../builder-app-shell)\n        - [@angular-devkit/build-angular:browser](../builder-browser)\n        - [@angular-devkit/build-angular:dev-server](../builder-dev-server)\n        - [@angular-devkit/build-angular:extract-i18n](../builder-extract-i18n)\n        - [@angular-devkit/build-angular:karma](../builder-karma)\n        - [@angular-devkit/build-angular:protractor](../builder-protractor)\n        - [@angular-devkit/build-angular:server](../builder-server)\n        - [@angular-devkit/build-angular:tslint](../builder-tslint)\n      - *configurations* (`object`): Альтернативные конфигурации билда.\n        - *configurationName* (`object`): Объект с параметрами для переназначения."
+            }
+          ]
+        },
+        {
+          "id": "9852a89f-8491-f97f-6fc6-14211c509592",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Understanding the Angular CLI Workspace File"
+            }
+          ]
+        },
+        {
+          "id": "4c0b5700-438f-6201-d239-dac79d128ba0",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Options"
+            },
+            {
+              "lang": "ru",
+              "text": "## Параметры"
+            }
+          ]
+        },
+        {
+          "id": "e19b1c16-fee3-8e78-5b9c-e070fed245dd",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Agnular QuickStart"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
+            }
+          ]
+        },
+        {
+          "id": "2bcb0700-b1cd-095e-bac9-78744ab8c1b4",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Options"
+            },
+            {
+              "lang": "ru",
+              "text": "## Параметры"
+            }
+          ]
+        },
+        {
+          "id": "dfcca67d-a548-78a0-5c34-74b7ae52fdaf",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular Deployment"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
+            }
+          ]
+        },
+        {
+          "id": "aa95e2b5-e6ee-88ca-6896-bb23bc98f92b",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Options"
+            },
+            {
+              "lang": "ru",
+              "text": "## Параметры"
+            }
+          ]
+        },
+        {
+          "id": "10956996-d593-9a1b-0788-69dac8c6c53e",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular Testing"
+            }
+          ]
+        },
+        {
+          "id": "8ec81e56-34fd-6df2-f48b-5e5471ee0c90",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Options"
+            },
+            {
+              "lang": "ru",
+              "text": "## Параметры"
+            }
+          ]
+        },
+        {
+          "id": "3a2bb589-739b-c291-dfda-ce555d886ba8",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Introduction to E2E Testing with the Angular CLI and Protractor"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
+            }
+          ]
+        },
+        {
+          "id": "acc82b47-3285-be5e-d531-1fe432df894a",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Options"
+            },
+            {
+              "lang": "ru",
+              "text": "## Парамерты"
+            }
+          ]
+        },
+        {
+          "id": "6a5df9b4-28fa-95c2-538d-b921b06b8930",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular Internationalization (i18n)"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
+            }
+          ]
+        },
+        {
+          "id": "98fb91d9-13f6-9e28-c51d-9f2ec3da3cec",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular: Introduction to Internationalization (i18n)"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
+            }
+          ]
+        },
+        {
+          "id": "cc73c55f-516a-824c-ec75-aab2ec6365aa",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Options"
+            },
+            {
+              "lang": "ru",
+              "text": "## Параметры"
+            }
+          ]
+        },
+        {
+          "id": "d8e27707-8d4a-2b9b-4c82-b0c8cdcf8166",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Updating your Angular projects"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
+            }
+          ]
+        },
+        {
+          "id": "a926d9f2-a0e1-be90-a7c2-6598a7a20a5c",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular Update Guide"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
+            }
+          ]
+        },
+        {
+          "id": "be4ccdf7-60d1-746a-4818-67892034238d",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Understanding the Angular CLI Workspace File"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
+            }
+          ]
+        },
+        {
+          "id": "25bd0164-8ee1-8fa1-575e-4f8b2bf48c9c",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular Internationalization (i18n)"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
+            }
+          ]
+        },
+        {
+          "id": "55b585ec-0dd3-4d99-f0cb-2434a3cb7482",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular: Introduction to Internationalization (i18n)"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
+            }
+          ]
+        },
+        {
+          "id": "ae1eb473-3dcf-6a2b-3d9e-a38ca2adaa96",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Options"
+            },
+            {
+              "lang": "ru",
+              "text": "## Параметры "
+            }
+          ]
+        },
+        {
+          "id": "147066c0-5dbd-e75b-0242-c82fb30d2ab3",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Options"
+            },
+            {
+              "lang": "ru",
+              "text": "## Параметры "
+            }
+          ]
+        },
+        {
+          "id": "7b582c61-17dd-69d3-9f09-d399c0f99c41",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular Testing"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
+            }
+          ]
+        },
+        {
+          "id": "1ce4c7fe-f0a1-00dd-f5f9-9b2e00df735f",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Options"
+            },
+            {
+              "lang": "ru",
+              "text": "## Параметры "
+            }
+          ]
+        },
+        {
+          "id": "c40b156d-d800-0d4f-130b-c4199a38dabc",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Introduction to E2E Testing with the Angular CLI and Protractor"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
+            }
+          ]
+        },
+        {
+          "id": "9aac1012-2731-c8e5-3a18-d6aed7e40742",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Becoming an Angular Environmentalist"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
+            }
+          ]
+        },
+        {
+          "id": "1d69bad3-fba9-2fe7-9f7d-f9203d6d79c1",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The Angular Library Series - Creating a Library with the Angular CLI"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
             }
           ]
         }
