@@ -4,8 +4,11 @@
   display: block;
   border-radius: 4px;
   box-shadow: $mediumShadow;
-  margin-bottom: $grid * 4;
+  margin-top: $grid * 4;
   overflow: hidden;
+  &:first-of-type {
+    margin-top: 0;
+  }
 }
 
 h3 {
