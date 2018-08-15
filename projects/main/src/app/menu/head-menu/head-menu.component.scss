@@ -16,7 +16,7 @@
   align-items: baseline;
   display: flex;
   flex-direction: row;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
   padding: $grid 0;
   .selector {
@@ -61,6 +61,7 @@
     border-radius: 2px;
     color: $white;
     display: inline-block;
+    font-size: 0.8rem;
     margin-right: $grid;
     padding: $grid / 2 $grid;
     text-decoration: none;

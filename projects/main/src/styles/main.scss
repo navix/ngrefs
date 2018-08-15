@@ -2,14 +2,16 @@
 @import "mq";
 
 html {
-}
-
-body {
   background: #ffffff;
   color: $textColor;
   font-family: $sansSerif;
-  font-size: 13px;
+  font-size: 18px;
   line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+body {
   margin: 0;
   padding: 0;
 }
