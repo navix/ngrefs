@@ -2114,6 +2114,32 @@
                   "paramType": "object"
                 },
                 {
+                  "id": "aa797718-f413-7763-4085-903e46e4f1a8",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "7a4d9c53-1d76-91e8-1bb7-7680b88a6982"
+                  },
+                  "text": {
+                    "id": "512a687d-58ac-2088-ad78-d4fb5c81d4fc"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "842d7ac4-d2b6-25f6-58c4-e30d06064a7d"
+                      },
+                      "lang": "ru",
+                      "url": "https://dev.nvx.me/angular-cli-scss-include-paths-in-angular-5/"
+                    },
+                    {
+                      "label": {
+                        "id": "5a2155f6-78be-8fda-25bf-cd8e97521688"
+                      },
+                      "url": "https://scotch.io/tutorials/angular-shortcut-to-importing-styles-files-in-components",
+                      "lang": "en"
+                    }
+                  ]
+                },
+                {
                   "id": "6317853c-03b2-8c96-cb8b-63d83e2d60cb",
                   "type": "command-param",
                   "head": {
@@ -2639,6 +2665,32 @@
                   "name": "statsJson",
                   "headId": "statsJson",
                   "paramType": "boolean"
+                },
+                {
+                  "id": "0919b234-61e0-d3d1-2a61-e349ccf49ad8",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "ec034c1d-7af5-abe3-daa4-79cb4f9521df"
+                  },
+                  "text": {
+                    "id": "69b02e95-7cc4-8828-5414-3310d92d643d"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "a079885c-5c41-18a2-53a1-2decb47f1d33"
+                      },
+                      "url": "https://dev.nvx.me/angular-5-bundle-analyzer/",
+                      "lang": "ru"
+                    },
+                    {
+                      "label": {
+                        "id": "ccdcb3f4-5824-6074-7aef-73c2bf1cef99"
+                      },
+                      "url": "https://coryrylan.com/blog/analyzing-bundle-size-with-the-angular-cli-and-webpack",
+                      "lang": "en"
+                    }
+                  ]
                 },
                 {
                   "id": "0b7823dc-e0ea-f9e0-54cb-4cf7c5429afa",
@@ -13127,6 +13179,64 @@
             {
               "lang": "en",
               "text": "The Angular Library Series - Creating a Library with the Angular CLI"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
+            }
+          ]
+        },
+        {
+          "id": "5a2155f6-78be-8fda-25bf-cd8e97521688",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Shortcut to Importing Styles Files in Components"
+            },
+            {
+              "lang": "ru",
+              "text": "",
+              "useSource": true
+            }
+          ]
+        },
+        {
+          "id": "842d7ac4-d2b6-25f6-58c4-e30d06064a7d",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Упрощение импортов scss/less/styl в Angular 5"
+            },
+            {
+              "lang": "ru",
+              "text": "Упрощение импортов scss/less/styl в Angular 5"
+            }
+          ]
+        },
+        {
+          "id": "a079885c-5c41-18a2-53a1-2decb47f1d33",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Анализ и оптимизация бандла Angular 5 приложения"
+            },
+            {
+              "lang": "ru",
+              "text": "Анализ и оптимизация бандла Angular 5 приложения"
+            }
+          ]
+        },
+        {
+          "id": "ccdcb3f4-5824-6074-7aef-73c2bf1cef99",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Analyzing bundle size with the Angular CLI and Webpack"
             },
             {
               "lang": "ru",
