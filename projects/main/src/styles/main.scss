@@ -78,7 +78,7 @@ ul {
     padding-bottom: $grid / 2;
   }
   h3 {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     margin: $grid * 2 0 $grid / 2 0;
     padding-bottom: $grid / 2;
   }
@@ -102,16 +102,16 @@ ul {
 @include mq($from: tablet) {
   .page-content {
     h1 {
-      font-size: 2rem;
+      font-size: 1.9rem;
       margin: $grid * 4 0 $grid * 2;
     }
     h2 {
-      font-size: 1.6rem;
+      font-size: 1.55rem;
       margin: $grid * 4 0 $grid * 1.5 0;
       padding-bottom: $grid * 1.5;
     }
     h3 {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       margin: $grid * 3 0 $grid 0;
       padding-bottom: $grid;
     }
@@ -121,16 +121,16 @@ ul {
 @include mq($from: desktop) {
   .page-content {
     h1 {
-      font-size: 2.4rem;
+      font-size: 2.2rem;
       margin: $grid * 6 0 $grid * 2;
     }
     h2 {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       margin: $grid * 6 0 $grid * 1.5 0;
       padding-bottom: $grid * 1.5;
     }
     h3 {
-      font-size: 1.6rem;
+      font-size: 1.25rem;
       margin: $grid * 4 0 $grid 0;
       padding-bottom: $grid;
     }

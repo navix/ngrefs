@@ -24,7 +24,7 @@
         <ng-container *ngFor="let entryItem of getPageEntries(item.usePageUrl)">
           <a *ngIf="entryItem.head && entryItem.headId"
              [routerLink]="['.', item.usePageUrl]"
-             [fragment]="entryItem.headId">
+             [fragment]="entryItem.headId | fragment">
             {{ entryItem.head | msg }}
           </a>
         </ng-container>

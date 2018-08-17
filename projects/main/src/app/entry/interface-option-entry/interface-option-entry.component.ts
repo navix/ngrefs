@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 import { ContentInterfaceOptionEntry } from '../../content/meta';
 
 @Component({
@@ -10,10 +11,9 @@ import { ContentInterfaceOptionEntry } from '../../content/meta';
 export class InterfaceOptionEntryComponent implements OnInit {
   @Input() entry: ContentInterfaceOptionEntry;
 
-  constructor() {
+  constructor(private sanitizer: DomSanitizer) {
   }
 
   ngOnInit() {
   }
-
 }

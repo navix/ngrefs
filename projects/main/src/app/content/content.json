@@ -6660,7 +6660,7 @@
                 "label": {
                   "id": "6dd75aa6-7f4d-0815-f65c-0fe75a3ce524"
                 },
-                "asGroup": false,
+                "asGroup": true,
                 "sub": {
                   "items": [
                     {
@@ -6688,14 +6688,40 @@
                       "label": {
                         "id": "c635204f-33f9-b59d-5c9e-c94e331b6eaa"
                       },
-                      "url": "directive"
+                      "url": "directive",
+                      "sub": {
+                        "items": [
+                          {
+                            "id": "a09ad2c2-1cc6-a856-24b5-0d7f10dd58b5",
+                            "label": {
+                              "id": "ad4e757f-32dc-06ec-1340-52451f59993f"
+                            },
+                            "usePageEntries": true,
+                            "usePageUrl": "directive"
+                          }
+                        ]
+                      },
+                      "subActiveOpt": true
                     },
                     {
                       "id": "dbb3ba14-fabf-c6bd-7adc-4603fb463564",
                       "label": {
                         "id": "09c94e80-c709-a587-8277-6583380ee65c"
                       },
-                      "url": "component"
+                      "url": "component",
+                      "sub": {
+                        "items": [
+                          {
+                            "id": "5856a40a-d2d6-d8bd-1df2-58eb67d6d519",
+                            "label": {
+                              "id": "5be64818-3322-8b57-8d74-01ea27c80f50"
+                            },
+                            "usePageEntries": true,
+                            "usePageUrl": "component"
+                          }
+                        ]
+                      },
+                      "subActiveOpt": true
                     },
                     {
                       "id": "37d67109-2ed1-e2b5-9a6f-22ebb2520472",
@@ -6713,7 +6739,7 @@
                     }
                   ]
                 },
-                "url": "class-decorators",
+                "url": "",
                 "usePageEntries": false,
                 "subActiveOpt": false
               },
@@ -6730,13 +6756,6 @@
                         "id": "5e9eba37-d128-10fb-2501-e9adba7c1759"
                       },
                       "url": "input"
-                    },
-                    {
-                      "id": "e479067d-8c4e-70a5-acb6-39e581033639",
-                      "label": {
-                        "id": "556f45b2-fdbe-bf61-68ce-7cccce23d621"
-                      },
-                      "url": "attribute"
                     },
                     {
                       "id": "2e19fbdb-4a88-11a7-b2be-37782e0551ee",
@@ -6758,10 +6777,17 @@
                         "id": "7888839f-c903-a3d9-2eb0-3b1c27ceb5a7"
                       },
                       "url": "host-listener"
+                    },
+                    {
+                      "id": "e479067d-8c4e-70a5-acb6-39e581033639",
+                      "label": {
+                        "id": "556f45b2-fdbe-bf61-68ce-7cccce23d621"
+                      },
+                      "url": "attribute"
                     }
                   ]
                 },
-                "url": "binding-decorators",
+                "url": "",
                 "asGroup": true
               },
               {
@@ -6802,8 +6828,76 @@
                     }
                   ]
                 },
-                "url": "query-decorators",
+                "url": "",
                 "asGroup": true
+              },
+              {
+                "id": "2798e897-274a-8a5e-7e50-6689ae593e17",
+                "label": {
+                  "id": "67b1b3d2-c9e3-decb-d32a-7c4096a8a2f6"
+                },
+                "url": "lifecycle-hooks",
+                "asGroup": true,
+                "sub": {
+                  "items": [
+                    {
+                      "id": "5069ab2d-add0-578a-eb7e-963dda244b67",
+                      "label": {
+                        "id": "453e84fd-d3a2-0927-8886-75cfc9948792"
+                      },
+                      "url": "ng-on-changes"
+                    },
+                    {
+                      "id": "e048539c-aea1-d493-899e-72efb0fd120e",
+                      "label": {
+                        "id": "8d00ce57-f86f-0c1b-d6ef-9726782a5127"
+                      },
+                      "url": "ng-on-init"
+                    },
+                    {
+                      "id": "1043c02d-81b9-0762-7fc0-b52ce68b1d11",
+                      "label": {
+                        "id": "6cd233b7-1305-0ff5-d2cc-d0af02bd3db5"
+                      },
+                      "url": "ng-do-check"
+                    },
+                    {
+                      "id": "2e69ba6c-3d9e-9205-f673-8a3049f8eff3",
+                      "label": {
+                        "id": "04746287-8cb3-24da-cdee-041907d6e9cb"
+                      },
+                      "url": "ng-after-content-init"
+                    },
+                    {
+                      "id": "6a92b1e4-0323-ba21-161e-084bcb645344",
+                      "label": {
+                        "id": "10a05b9f-62a4-f483-e137-430a3eff6a2d"
+                      },
+                      "url": "ng-after-content-checked"
+                    },
+                    {
+                      "id": "d0971bcb-29b3-e82c-a9f5-2c64527f01de",
+                      "label": {
+                        "id": "d726bd04-c658-f958-05d9-68ee4907801d"
+                      },
+                      "url": "ng-after-view-init"
+                    },
+                    {
+                      "id": "5cd4440e-cfb2-9712-bfa2-29ba8ef03b43",
+                      "label": {
+                        "id": "87d3cddb-df84-cdd5-4296-2f89b0bad696"
+                      },
+                      "url": "ng-after-view-checked"
+                    },
+                    {
+                      "id": "fa21ada9-f9e8-500e-2020-339f96e44ade",
+                      "label": {
+                        "id": "704bdf04-f419-1216-2668-da3b6061a448"
+                      },
+                      "url": "ng-on-destroy"
+                    }
+                  ]
+                }
               },
               {
                 "id": "b0f4fde8-7ebc-4986-6d02-45ad2eeb6927",
@@ -6813,6 +6907,26 @@
                 "sub": {
                   "items": [
                     {
+                      "id": "d6bd0ef6-66c3-6361-c104-136f6b1acaa4",
+                      "label": {
+                        "id": "12ec9f2a-fcf2-cc6d-6c0d-16e65253e168"
+                      },
+                      "url": "change-detector-ref",
+                      "sub": {
+                        "items": [
+                          {
+                            "id": "137afe83-11bf-4792-7fd4-4221f1cb158f",
+                            "label": {
+                              "id": "dd2ac4cd-fba9-07ba-3c29-53207722f2e7"
+                            },
+                            "usePageEntries": true,
+                            "usePageUrl": "change-detector-ref"
+                          }
+                        ]
+                      },
+                      "subActiveOpt": true
+                    },
+                    {
                       "id": "b6e406e7-2741-4da5-ba10-820a1684df7e",
                       "label": {
                         "id": "c5e01be4-2db6-9efe-94bf-ac46e6360bb0"
@@ -6820,18 +6934,45 @@
                       "url": "injection-token"
                     },
                     {
-                      "id": "d6bd0ef6-66c3-6361-c104-136f6b1acaa4",
-                      "label": {
-                        "id": "12ec9f2a-fcf2-cc6d-6c0d-16e65253e168"
-                      },
-                      "url": "change-detector-ref"
-                    },
-                    {
                       "id": "e38a3e42-eb9e-a53d-694c-9bcb6dc294e5",
                       "label": {
                         "id": "34b8e3f9-07e6-c976-2172-c9a9ddb82011"
                       },
                       "url": "forward-ref"
+                    },
+                    {
+                      "id": "cfc7adab-125e-ad58-bd1a-bbcbde9f68ae",
+                      "label": {
+                        "id": "2633dad6-68de-0c44-a327-d808259d182c"
+                      },
+                      "sub": {
+                        "items": [
+                          {
+                            "id": "18d891ea-b84a-5872-05c3-a699802a640f",
+                            "label": {
+                              "id": "7c18aedf-6d80-ded8-5d9f-08bb959ac4f4"
+                            }
+                          },
+                          {
+                            "id": "8bb3543f-e196-1cc7-f659-1d144aa0ed30",
+                            "label": {
+                              "id": "4be4c7a6-c7af-a386-ac76-cf26816e66f1"
+                            }
+                          },
+                          {
+                            "id": "eb523c63-a539-b235-5617-d02fc3abd4d6",
+                            "label": {
+                              "id": "d2ab75e9-51e1-325d-e9fb-9642ecaebf06"
+                            }
+                          },
+                          {
+                            "id": "825e8c94-0611-defa-6caa-6418d6c59e72",
+                            "label": {
+                              "id": "36ff0a45-4dba-e4fe-3034-7d0f3f4e04ad"
+                            }
+                          }
+                        ]
+                      }
                     },
                     {
                       "id": "beb37e81-0c20-2c86-d537-4305c4376bd5",
@@ -6893,86 +7034,18 @@
                 "asGroup": true
               },
               {
-                "id": "2798e897-274a-8a5e-7e50-6689ae593e17",
+                "id": "4bd68800-13ce-385a-c094-752d86e18707",
                 "label": {
-                  "id": "67b1b3d2-c9e3-decb-d32a-7c4096a8a2f6"
+                  "id": "3e865dd8-34f2-a873-a541-b065c98d1f60"
                 },
-                "url": "lifecycle-hooks",
-                "asGroup": true,
                 "sub": {
                   "items": [
                     {
-                      "id": "5069ab2d-add0-578a-eb7e-963dda244b67",
-                      "label": {
-                        "id": "453e84fd-d3a2-0927-8886-75cfc9948792"
-                      },
-                      "url": "ng-on-changes"
-                    },
-                    {
-                      "id": "e048539c-aea1-d493-899e-72efb0fd120e",
-                      "label": {
-                        "id": "8d00ce57-f86f-0c1b-d6ef-9726782a5127"
-                      },
-                      "url": "ng-on-init"
-                    },
-                    {
-                      "id": "1043c02d-81b9-0762-7fc0-b52ce68b1d11",
-                      "label": {
-                        "id": "6cd233b7-1305-0ff5-d2cc-d0af02bd3db5"
-                      },
-                      "url": "ng-do-check"
-                    },
-                    {
-                      "id": "160c77dd-4648-198e-80d1-61caad0debeb",
-                      "label": {
-                        "id": "aef6354d-b7f8-17bf-0733-ce8a3ba69bdc"
-                      },
-                      "url": "on-destroy"
-                    },
-                    {
-                      "id": "2e69ba6c-3d9e-9205-f673-8a3049f8eff3",
-                      "label": {
-                        "id": "04746287-8cb3-24da-cdee-041907d6e9cb"
-                      },
-                      "url": "ng-after-content-init"
-                    },
-                    {
-                      "id": "6a92b1e4-0323-ba21-161e-084bcb645344",
-                      "label": {
-                        "id": "10a05b9f-62a4-f483-e137-430a3eff6a2d"
-                      },
-                      "url": "ng-after-content-checked"
-                    },
-                    {
-                      "id": "d0971bcb-29b3-e82c-a9f5-2c64527f01de",
-                      "label": {
-                        "id": "d726bd04-c658-f958-05d9-68ee4907801d"
-                      },
-                      "url": "ng-after-view-init"
-                    },
-                    {
-                      "id": "5cd4440e-cfb2-9712-bfa2-29ba8ef03b43",
-                      "label": {
-                        "id": "87d3cddb-df84-cdd5-4296-2f89b0bad696"
-                      },
-                      "url": "ng-after-view-checked"
-                    },
-                    {
-                      "id": "fa21ada9-f9e8-500e-2020-339f96e44ade",
-                      "label": {
-                        "id": "704bdf04-f419-1216-2668-da3b6061a448"
-                      },
-                      "url": "ng-on-destroy"
-                    },
-                    {
-                      "id": "20cb06c1-5b04-46c2-7d15-a7a10d0d9454",
-                      "label": {
-                        "id": "317afeb0-5f3d-1e6a-80e7-3cde420c1583"
-                      },
-                      "url": "ng-do-bootstrap"
+                      "id": "04dc95db-0cab-f2dc-99ea-b1a202368c6a"
                     }
                   ]
-                }
+                },
+                "asGroup": true
               }
             ]
           },
@@ -7282,6 +7355,2248 @@
                 "id": "7ccfe702-74d7-ba14-02f0-9e44205fb102"
               },
               "url": "ng-module"
+            },
+            {
+              "id": "d4f9ba36-36cf-8a0f-4682-5e852b1883e9",
+              "entries": [
+                {
+                  "id": "163e8186-c1dd-abf7-5186-78a60f21db85",
+                  "type": "text",
+                  "head": {
+                    "id": "88a97718-6a5f-3923-c37c-6b2982a57bee"
+                  },
+                  "text": {
+                    "id": "bd3f1d6c-ea40-d95d-ca90-d9bd9be89b3a"
+                  }
+                },
+                {
+                  "id": "a7d0976e-6fb2-a421-6164-5f981137df25",
+                  "type": "text",
+                  "head": {
+                    "id": "7552671a-7b01-82e5-08b7-9684f170af25"
+                  },
+                  "text": {
+                    "id": "888b58cf-7eef-c9f7-1345-67d8a14d57d0"
+                  }
+                },
+                {
+                  "id": "7349f1c2-02cd-d6a4-60e0-7bbfeef0f1e7",
+                  "type": "text",
+                  "head": {
+                    "id": "47b77208-fbc8-6033-29d9-ad227b0f597c"
+                  },
+                  "text": {
+                    "id": "8817052f-1bd0-3b66-557e-e113f390735f"
+                  }
+                },
+                {
+                  "id": "0323f128-2682-c264-7897-59efd074b265",
+                  "type": "text",
+                  "head": {
+                    "id": "490c2b8f-0ecc-5ab5-8edd-5c420debf022"
+                  },
+                  "text": {
+                    "id": "e2cf5644-58d0-1100-5970-2d03ff3b462d"
+                  }
+                },
+                {
+                  "id": "651c2ca0-7fee-e25c-0a39-31e01d91d37c",
+                  "type": "toc",
+                  "head": {
+                    "id": "ed0981f7-2f50-b4ca-6c3c-0fa228281bf5"
+                  },
+                  "text": {
+                    "id": "cfa2d3b7-ad34-1116-bacb-214acf09dd0f"
+                  }
+                },
+                {
+                  "id": "dae4e9cb-d1c6-4953-013b-71b35c1d5e53",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "selector"
+                  },
+                  "text": {
+                    "id": "19513215-6033-6f05-2704-101a9deb1db9"
+                  },
+                  "description": {
+                    "id": "bd0e8362-787e-3f2a-02e6-71e482622081"
+                  },
+                  "name": "selector",
+                  "headId": "selector",
+                  "interface": "selector: string",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "708cfdaf-8614-6fbf-b921-c49dab73b9cb"
+                  }
+                },
+                {
+                  "id": "f9dfac0d-b6d6-9714-fc87-5edfd540ca0c",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "inputs"
+                  },
+                  "text": {
+                    "id": "8434c856-4c44-5da4-c259-8b4428ba987c"
+                  },
+                  "description": {
+                    "id": "48be9e46-494d-63e0-7ebc-002a47007bf7"
+                  },
+                  "name": "inputs",
+                  "headId": "inputs",
+                  "interface": "inputs: string[]",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "cf7e1c4f-3d0c-2c91-bda6-a305d451fec8"
+                  }
+                },
+                {
+                  "id": "c93f90ab-ba58-a4eb-98ce-067d48b27fc6",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "outputs"
+                  },
+                  "text": {
+                    "id": "6edfe899-e515-529b-f5ce-90cecc20ba3d"
+                  },
+                  "description": {
+                    "id": "1fc1d6ea-8eaf-0353-5e02-30a5dd411dc8"
+                  },
+                  "name": "outputs",
+                  "headId": "outputs",
+                  "interface": "outputs: string[]",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "83d47472-adb6-b5e6-339e-d5bf580cd649"
+                  }
+                },
+                {
+                  "id": "18963a17-06b2-58ed-8510-c46f3f851d1d",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "providers"
+                  },
+                  "text": {
+                    "id": "38cafe13-4c5c-4d6c-3915-697e566c094c"
+                  },
+                  "description": {
+                    "id": "a3d067c4-92cb-73f6-a5bd-29253b2b7b10"
+                  },
+                  "name": "providers",
+                  "headId": "providers",
+                  "interface": "providers: Provider[]"
+                },
+                {
+                  "id": "080aa22d-0d63-9b90-39bb-d64fac505229",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "exportAs"
+                  },
+                  "text": {
+                    "id": "82cf5c1c-3d88-6776-d1f5-7bb39e2572f4"
+                  },
+                  "description": {
+                    "id": "75974e0c-7b59-373d-1579-3b3fc0708201"
+                  },
+                  "name": "exportAs",
+                  "headId": "exportAs",
+                  "interface": "exportAs: string"
+                },
+                {
+                  "id": "16e75109-a5aa-e27b-b108-0852ba75211a",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "queries"
+                  },
+                  "text": {
+                    "id": "37831d93-c65a-4a25-7264-f36d68933b0d"
+                  },
+                  "description": {
+                    "id": "c0556877-0c40-4b49-2612-6e1f5a02ca96"
+                  },
+                  "name": "queries",
+                  "headId": "queries",
+                  "interface": "queries: {     [key: string]: any; }",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "ecff0bb4-4069-8c7e-cf3d-79586a20beaf"
+                  }
+                },
+                {
+                  "id": "6def4d1f-da76-21bf-fc2f-ce9b1382e34c",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "jit"
+                  },
+                  "text": {
+                    "id": "e8f659f9-ea81-a584-88a8-07b6995d29ba"
+                  },
+                  "description": {
+                    "id": "ae325d1a-256a-beb1-4946-e0c3f8125c26"
+                  },
+                  "name": "jit",
+                  "headId": "jit",
+                  "interface": "jit: boolean",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "cefded23-dddd-8a3b-03ef-784a9ab98485"
+                  }
+                },
+                {
+                  "id": "115b9a2c-37c0-9ab8-1dc8-f9812d5e5b70",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "host"
+                  },
+                  "text": {
+                    "id": "80ad3933-3661-7670-fb08-1546306a0150"
+                  },
+                  "description": {
+                    "id": "ff3089df-d42e-ed87-41c4-a8d5462d0d26"
+                  },
+                  "name": "host",
+                  "headId": "host",
+                  "interface": "host: {     [key: string]: string; }",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "1ffc5f97-8395-9812-350b-29da6c8ce348"
+                  }
+                }
+              ],
+              "title": {
+                "id": "c82c5098-7542-0595-c8ab-e3053e9ee01e"
+              },
+              "url": "directive"
+            },
+            {
+              "id": "f5bc0217-5164-3c62-bd92-96eb37e54095",
+              "entries": [
+                {
+                  "id": "bdc4561c-3525-ef10-0a2f-33a01e725549",
+                  "type": "text",
+                  "head": {
+                    "id": "17569760-0f3a-0fcd-7a36-3f11233d55c9"
+                  },
+                  "text": {
+                    "id": "a1da3aac-1217-c098-93fd-e31f7a36481b"
+                  }
+                },
+                {
+                  "id": "e8df2a71-8021-29d9-435f-4561faccee91",
+                  "type": "text",
+                  "head": {
+                    "id": "9b0f19f3-0a9c-5f4b-2fbc-c399b11d7812"
+                  },
+                  "text": {
+                    "id": "8e1ae151-770d-490d-0999-656aee3ef43c"
+                  }
+                },
+                {
+                  "id": "2b18c05a-021c-7b35-4cc7-1e8287a3bf68",
+                  "type": "text",
+                  "head": {
+                    "id": "6671e137-ea2b-c557-f43f-d8172bfbeaac"
+                  },
+                  "text": {
+                    "id": "5b60064a-bc82-7c59-239a-94987720c42d"
+                  }
+                },
+                {
+                  "id": "46fe9e1c-ce52-251d-55bf-05ba0f370330",
+                  "type": "toc",
+                  "head": {
+                    "id": "743182c0-4d87-4b30-c17f-e1bea8818f4c"
+                  },
+                  "text": {
+                    "id": "460d34cf-7e3f-aebc-bfe2-9035f8a28f6c"
+                  }
+                },
+                {
+                  "id": "e6c57abf-be6f-df38-c374-ada8d32a7b18",
+                  "type": "text",
+                  "head": {
+                    "id": "81a753ce-4e27-3ad5-3814-07081d825bc7"
+                  },
+                  "text": {
+                    "id": "351aaeb7-9202-ce7a-f4e7-7fa24ad097ff"
+                  }
+                },
+                {
+                  "id": "5a2e2f62-10f7-a115-bea3-f2909ef38100",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "changeDetection"
+                  },
+                  "text": {
+                    "id": "60188253-a6d8-ef7b-ef32-eb8959d2f218"
+                  },
+                  "description": {
+                    "id": "2e3d8e17-83eb-3f12-6f5e-d404a50f37f0"
+                  },
+                  "name": "changeDetection",
+                  "headId": "changeDetection",
+                  "interface": "changeDetection: ChangeDetectionStrategy",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "beb9cf88-f9b2-e603-7f8c-f610a1f2d6cc"
+                  }
+                },
+                {
+                  "id": "4d988fea-6907-47e9-a636-b9f080b770fc",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "viewProviders"
+                  },
+                  "text": {
+                    "id": "fdd4ac28-7902-d1dd-9ad5-c5e58cd10588"
+                  },
+                  "description": {
+                    "id": "fa9d7e1e-b7a6-a20b-de75-95dcc03dd5af"
+                  },
+                  "name": "viewProviders",
+                  "headId": "viewProviders",
+                  "interface": "viewProviders: Provider[]"
+                },
+                {
+                  "id": "cf187f7c-0925-1e5f-080d-efd340af590b",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "moduleId"
+                  },
+                  "text": {
+                    "id": "7e7cb7da-f668-42c4-60db-094c404dd0a0"
+                  },
+                  "description": {
+                    "id": "a8187e3c-e434-7083-b84f-774032d37859"
+                  },
+                  "name": "moduleId",
+                  "headId": "moduleId",
+                  "interface": "moduleId: string"
+                },
+                {
+                  "id": "017e3c7c-8bd3-b8c0-7516-a04251ba773e",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "templateUrl"
+                  },
+                  "text": {
+                    "id": "33f560cc-5ad6-c116-5cf3-807585236377"
+                  },
+                  "description": {
+                    "id": "e5749172-48eb-6094-5696-814ccf5d0727"
+                  },
+                  "name": "templateUrl",
+                  "headId": "templateUrl",
+                  "interface": "templateUrl: string"
+                },
+                {
+                  "id": "3f3a16ab-2b6d-7a1d-d887-0632d01c09ca",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "template"
+                  },
+                  "text": {
+                    "id": "b5af1f35-c33b-347f-4ba5-fdfe2d83206e"
+                  },
+                  "description": {
+                    "id": "b97fa212-dca6-2460-b245-817c1713650d"
+                  },
+                  "name": "template",
+                  "headId": "template",
+                  "interface": "template: string"
+                },
+                {
+                  "id": "68383538-a266-499e-f57d-70dd8c77df11",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "styleUrls"
+                  },
+                  "text": {
+                    "id": "3881c6b5-6213-2d62-341d-5323a44ac3ba"
+                  },
+                  "description": {
+                    "id": "bd1f602a-35b3-2789-0437-a991740b9a92"
+                  },
+                  "name": "styleUrls",
+                  "headId": "styleUrls",
+                  "interface": "styleUrls: string[]"
+                },
+                {
+                  "id": "37c84ce9-1f41-1302-86a6-4d95508f1d14",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "styles"
+                  },
+                  "text": {
+                    "id": "97908b1a-6fc5-65b1-10ab-64474176db0e"
+                  },
+                  "description": {
+                    "id": "876d1c97-eba7-d2f6-bb7d-2708c7a6d48f"
+                  },
+                  "name": "styles",
+                  "headId": "styles",
+                  "interface": "styles: string[]"
+                },
+                {
+                  "id": "8f484994-a9b8-d657-3991-48e96145c4fb",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "animations"
+                  },
+                  "text": {
+                    "id": "60f828b1-c91f-26fa-bf2c-3092ca65ea9b"
+                  },
+                  "description": {
+                    "id": "fbbd09f2-398b-ec58-5793-77d1ab0602e7"
+                  },
+                  "name": "animations",
+                  "headId": "animations",
+                  "interface": "animations: any[]"
+                },
+                {
+                  "id": "0461ddba-ec08-2c79-236d-12bf76ef4c55",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "encapsulation"
+                  },
+                  "text": {
+                    "id": "42be845b-03f0-f299-bcda-5af57b70cbd8"
+                  },
+                  "description": {
+                    "id": "29b29b4a-0132-e44a-d3e1-43d40bb82f75"
+                  },
+                  "name": "encapsulation",
+                  "headId": "encapsulation",
+                  "interface": "encapsulation: ViewEncapsulation",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "a29ba29b-16c3-bff1-b0d1-583bf35243a8"
+                  }
+                },
+                {
+                  "id": "dcfb685a-88d5-be19-9be2-193d8b4df2d2",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "interpolation"
+                  },
+                  "text": {
+                    "id": "7849118b-e86e-7541-6e57-5b427578e853"
+                  },
+                  "description": {
+                    "id": "520dfe93-cf57-954c-fc88-f67e94b468fa"
+                  },
+                  "name": "interpolation",
+                  "headId": "interpolation",
+                  "interface": "interpolation: [string, string]"
+                },
+                {
+                  "id": "6e7020e1-df9e-e900-8e83-fd2b1804c864",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "entryComponents"
+                  },
+                  "text": {
+                    "id": "41e6ecc0-9e45-4138-82e5-6d5c2768eeb0"
+                  },
+                  "description": {
+                    "id": "3d466343-8b0a-71ee-64ac-8c75e4d33aa8"
+                  },
+                  "name": "entryComponents",
+                  "headId": "entryComponents",
+                  "interface": "entryComponents: Array<Type<any> | any[]>"
+                },
+                {
+                  "id": "bbb4e7e7-2a41-d75d-c0f7-b2d948645c42",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "preserveWhitespaces"
+                  },
+                  "text": {
+                    "id": "e43ec95b-26aa-9c57-b689-c718abdaf530"
+                  },
+                  "description": {
+                    "id": "2732ae69-3b2b-9451-a365-d6207bca78e6"
+                  },
+                  "name": "preserveWhitespaces",
+                  "headId": "preserveWhitespaces",
+                  "interface": "preserveWhitespaces: boolean"
+                }
+              ],
+              "title": {
+                "id": "2d79e10c-9535-4006-ee38-2b2ad447c8c1"
+              },
+              "url": "component"
+            },
+            {
+              "id": "f626ff88-c7f9-2188-e343-0a177fa34f4e",
+              "entries": [
+                {
+                  "id": "828f8cf2-ebaf-e873-c2f9-1374a324e431",
+                  "type": "text",
+                  "head": {
+                    "id": "333dd416-11ea-b458-5c74-cc4fb1983cdf"
+                  },
+                  "text": {
+                    "id": "2f284d54-56cf-0d20-144f-9cecb1e90a37"
+                  }
+                },
+                {
+                  "id": "be515057-0344-e79c-7fd4-df2a177d50b0",
+                  "type": "text",
+                  "head": {
+                    "id": "f9887ce7-554e-1859-a442-2fd09aeb3318"
+                  },
+                  "text": {
+                    "id": "4e6e1a40-c839-3839-081e-9cc39da5541c"
+                  }
+                },
+                {
+                  "id": "e9b86f84-5908-050e-5bcb-59c6ca68a95b",
+                  "type": "text",
+                  "head": {
+                    "id": "16bbc140-db29-46fa-79b5-47e0dcf1a11b"
+                  },
+                  "text": {
+                    "id": "6ae77f0b-34f7-f272-6350-5c365c6efd67"
+                  }
+                },
+                {
+                  "id": "598e8ac2-3510-1d1e-16af-7b31caa5e767",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "name"
+                  },
+                  "text": {
+                    "id": "b41b1e7d-c3a6-875e-65ca-0ea545e726a1"
+                  },
+                  "description": {
+                    "id": "baec49f3-16ee-3d52-63e5-1cca9bb61a9e"
+                  },
+                  "name": "name",
+                  "headId": "name",
+                  "interface": "name: string"
+                },
+                {
+                  "id": "db9ac6ce-248f-03c9-ae0e-d6aa27c7fc05",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "pure"
+                  },
+                  "text": {
+                    "id": "1afb2bd1-6edb-e7b5-a062-02067fcf79c9"
+                  },
+                  "description": {
+                    "id": "d5e28e9c-e446-8721-aee9-634a9afc818f"
+                  },
+                  "name": "pure",
+                  "headId": "pure",
+                  "interface": "pure: boolean",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "75b9e759-1323-1262-6c6f-fbf51f865e97"
+                  }
+                }
+              ],
+              "title": {
+                "id": "c316c659-b5f8-8c3d-d281-554464bcf009"
+              },
+              "url": "pipe"
+            },
+            {
+              "id": "0f7b7b16-a596-37ab-2c4e-aea6a01c4b45",
+              "entries": [
+                {
+                  "id": "8757331f-2f7c-395d-b4ed-216fa2047c30",
+                  "type": "text",
+                  "head": {
+                    "id": "2fb0f147-0ca7-a990-811b-256b52feeb3f"
+                  },
+                  "text": {
+                    "id": "4cd7c6f8-a115-fc3f-5d58-a80bb2c1ecad"
+                  }
+                },
+                {
+                  "id": "4795a5cd-70ea-1069-74c4-fda88b8273ee",
+                  "type": "text",
+                  "head": {
+                    "id": "c0a2c6e9-f7fe-c088-d6be-2852e77f311b"
+                  },
+                  "text": {
+                    "id": "de13a982-c886-b626-d33a-65dcdb5ff982"
+                  }
+                },
+                {
+                  "id": "be36f026-7385-d967-18e2-e04f7ad76baf",
+                  "type": "text",
+                  "head": {
+                    "id": "08626f96-9ea3-9f6d-11e4-d12b1412b706"
+                  },
+                  "text": {
+                    "id": "2db2a12d-6554-5df4-c086-e4709d70cea3"
+                  }
+                },
+                {
+                  "id": "b36602b0-11bb-c285-6a2f-679f3590b674",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "providedIn"
+                  },
+                  "text": {
+                    "id": "850ae404-7a60-2892-5aaa-ce5da9e4dbcc"
+                  },
+                  "description": {
+                    "id": "4080bf2a-da59-acee-0d3b-6d8f8cc1ba23"
+                  },
+                  "name": "providedIn",
+                  "headId": "providedIn",
+                  "interface": "providedIn?: Type<any>|'root'|null",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "9fffb3cb-99e1-c675-a05f-278b79f8f0c2"
+                  }
+                }
+              ],
+              "title": {
+                "id": "3973b593-270d-e358-aaa1-c9156703c557"
+              },
+              "url": "injectable"
+            },
+            {
+              "id": "84169e02-37a1-9bd6-5960-a1303455d23a",
+              "entries": [
+                {
+                  "id": "222c1064-c3ac-e412-0a6c-72d25f1be06a",
+                  "type": "text",
+                  "head": {
+                    "id": "a7f1ea75-31b9-5746-e2c9-9e578896c06e"
+                  },
+                  "text": {
+                    "id": "c255fa7f-5bfe-8d10-6afd-e1c12ba88e8f"
+                  }
+                },
+                {
+                  "id": "d5119ee3-5dde-724d-837f-505af054d3ae",
+                  "type": "text",
+                  "head": {
+                    "id": "17b8d8c1-7e67-b6d9-6fd8-1134f3c3d7a1"
+                  },
+                  "text": {
+                    "id": "aeeb0f9b-58da-c90f-50fb-36622179722b"
+                  }
+                },
+                {
+                  "id": "c9c524b5-e83f-e54c-93a6-d09c2e76bcaf",
+                  "type": "text",
+                  "head": {
+                    "id": "598f2d65-5f83-4069-6545-a39f7639075b"
+                  },
+                  "text": {
+                    "id": "a9ab06f2-5845-18da-31b8-bb5d00542ab9"
+                  }
+                },
+                {
+                  "id": "3114a9ac-ac4e-705f-ad14-b097571061a3",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "bindingPropertyName"
+                  },
+                  "text": {
+                    "id": "2a6d20ed-04d2-7204-8f34-875e39804b5c"
+                  },
+                  "description": {
+                    "id": "cc633cb2-20c2-4fac-691a-49b90a273657"
+                  },
+                  "name": "bindingPropertyName",
+                  "headId": "bindingPropertyName",
+                  "interface": "bindingPropertyName: string",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "5dc112d5-62fa-547d-28b2-8b7adb8a3092"
+                  }
+                }
+              ],
+              "title": {
+                "id": "68727825-b753-76d9-9bb7-6149147257f0"
+              },
+              "url": "input"
+            },
+            {
+              "id": "88bd94fe-05cc-f21d-2b49-9019162907ce",
+              "entries": [
+                {
+                  "id": "bf1991fa-d74b-d557-b009-8572493228f7",
+                  "type": "text",
+                  "head": {
+                    "id": "c2ed4358-919f-863c-9c17-d3c54af3dab1"
+                  },
+                  "text": {
+                    "id": "735c7919-56d6-3216-9a74-c4493637d42b"
+                  }
+                },
+                {
+                  "id": "69361b5b-db4e-4989-94b2-7eb282058124",
+                  "type": "text",
+                  "head": {
+                    "id": "55bd1d22-170e-67a1-f308-7ee9f85acd3e"
+                  },
+                  "text": {
+                    "id": "18afa1bc-e8eb-401a-49b7-95b12feb213c"
+                  }
+                },
+                {
+                  "id": "66bf3fcd-8edd-f9a8-80b8-ff8443ffdc86",
+                  "type": "text",
+                  "head": {
+                    "id": "bfc65f4f-219c-ec1a-7918-b34a97bfe9f3"
+                  },
+                  "text": {
+                    "id": "874a7bb2-b814-6dc0-72c8-982dff26db43"
+                  }
+                },
+                {
+                  "id": "9171ace9-3ac2-1c30-ca86-d2fc16b72714",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "bindingPropertyName"
+                  },
+                  "text": {
+                    "id": "e10d17db-75e6-55a1-4569-c26de878add5"
+                  },
+                  "description": {
+                    "id": "43e95e27-798f-23ce-de02-e417e89a10f1"
+                  },
+                  "name": "bindingPropertyName",
+                  "headId": "bindingPropertyName",
+                  "interface": "bindingPropertyName: string",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "3ccd7fe0-6541-a34c-ea66-88182da5e88b"
+                  }
+                }
+              ],
+              "title": {
+                "id": "52be0e55-8a08-e768-12dc-41b99c46a877"
+              },
+              "url": "output"
+            },
+            {
+              "id": "5a891eec-d6ae-8611-539d-ff0bf398a30d",
+              "entries": [
+                {
+                  "id": "2f7e3baa-0c13-4490-0216-0008320943ed",
+                  "type": "text",
+                  "head": {
+                    "id": "89bae4c6-4594-844a-77fa-1cc9ff66a4f4"
+                  },
+                  "text": {
+                    "id": "9a387c5e-aa92-fea1-126e-db86afb8228a"
+                  }
+                },
+                {
+                  "id": "c14f9cef-d9c9-5fff-2301-52a444209717",
+                  "type": "text",
+                  "head": {
+                    "id": "a7d63bb4-737c-5429-56f3-699d2d6061e4"
+                  },
+                  "text": {
+                    "id": "49320240-25c4-5fb2-e482-86c18cc12294"
+                  }
+                },
+                {
+                  "id": "3fbe5bee-ffcb-484d-8616-e55bfc3c9a1c",
+                  "type": "text",
+                  "head": {
+                    "id": "5f6893ff-fd2e-f7a7-2445-58ddc1fb991b"
+                  },
+                  "text": {
+                    "id": "09e23a83-4052-c95d-83e5-8d9e8f736f13"
+                  }
+                },
+                {
+                  "id": "b62ab6e4-9fc6-e622-9610-15e1a16207c5",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "5f8c2c0d-9871-d543-768e-9025b4b0bf71"
+                  },
+                  "text": {
+                    "id": "430645a6-b0e4-c880-7e9b-f37f479e5e19"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "4af0ebd9-7c98-b30b-bfc7-e50e505c850d"
+                      },
+                      "url": "https://alligator.io/angular/hostbinding-hostlistener/",
+                      "lang": "en"
+                    }
+                  ]
+                }
+              ],
+              "title": {
+                "id": "b5f7f217-b733-0cfc-3eec-ea3c0461b871"
+              },
+              "url": "host-binding"
+            },
+            {
+              "id": "1f55b67c-8bec-f0d9-f22a-438bc1618746",
+              "entries": [
+                {
+                  "id": "a13797a2-b850-f57b-3697-bb593ad18c9c",
+                  "type": "text",
+                  "head": {
+                    "id": "7942a642-09fc-cc8c-cd19-af0731c205d8"
+                  },
+                  "text": {
+                    "id": "51f2f755-2ff7-32a1-79e8-fbd1bc029a9b"
+                  }
+                },
+                {
+                  "id": "ff52720b-2c54-3f7f-4c49-13cb6d7dfc77",
+                  "type": "text",
+                  "head": {
+                    "id": "8a0a2b0b-dcf8-e1fb-3079-f7fda76a48c0"
+                  },
+                  "text": {
+                    "id": "23251ea3-5bd7-5d27-89fd-f21afed1dd74"
+                  }
+                },
+                {
+                  "id": "953a2992-07e9-304d-3d7a-d69e3382bbf4",
+                  "type": "text",
+                  "head": {
+                    "id": "a1522e87-603a-45bf-e079-e6d25fd05376"
+                  },
+                  "text": {
+                    "id": "91ffbf27-02bf-1fac-7bda-50fbfbd2c5a1"
+                  }
+                },
+                {
+                  "id": "e030634c-f88d-951c-0e98-eacdc7797e80",
+                  "type": "text",
+                  "head": {
+                    "id": "cab34c82-acda-668d-f96a-9b82de5a5dce"
+                  },
+                  "text": {
+                    "id": "190c5d0d-b39a-2f41-3b96-764f8e2d2f53"
+                  }
+                },
+                {
+                  "id": "44d81a12-2b66-60c8-e0c2-69850132530e",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "eab5d51a-be81-e0d4-3b83-f9006a01cec2"
+                  },
+                  "text": {
+                    "id": "d7ccb13c-9a46-6b18-61d6-5763716ab56b"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "2b42ec06-da60-fbf5-f3de-ca9359099f32"
+                      },
+                      "url": "https://alligator.io/angular/hostbinding-hostlistener/",
+                      "lang": "en"
+                    }
+                  ]
+                },
+                {
+                  "id": "8dd26fa8-f55c-70d0-e3a7-1b728903cee4",
+                  "type": "text",
+                  "head": {
+                    "id": "977f806a-5d40-5221-65da-480ff25b4a9a"
+                  },
+                  "text": {
+                    "id": "83f532c2-5c0e-e007-dcc7-596a4e84f3ac"
+                  },
+                  "description": {
+                    "id": "fec275ca-00d4-23cb-c817-47f0b50059de"
+                  }
+                },
+                {
+                  "id": "8c2e1691-5bec-50ea-d361-791210f6a6e3",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "eventName"
+                  },
+                  "text": {
+                    "id": "197ef2c8-6250-ca01-8979-3d8de70a4602"
+                  },
+                  "description": {
+                    "id": "2bc69303-4bdb-ef8a-3549-521d6f1d631d"
+                  },
+                  "name": "eventName",
+                  "headId": "eventName",
+                  "interface": "eventName: string"
+                },
+                {
+                  "id": "33be5cb4-eb17-25be-52ea-c4ba33edb10d",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "args"
+                  },
+                  "text": {
+                    "id": "0736b378-d210-79cf-6c13-5d3d93a8e9a9"
+                  },
+                  "description": {
+                    "id": "afe35d26-79e2-5d0e-7b68-a843d45bb082"
+                  },
+                  "name": "args",
+                  "headId": "args",
+                  "interface": "args: string[]"
+                }
+              ],
+              "title": {
+                "id": "0efc485b-cfeb-63d5-2d41-0b169168571e"
+              },
+              "url": "host-listener"
+            },
+            {
+              "id": "1328b290-53ab-ef6a-73cc-d9b0a511e1e4",
+              "entries": [
+                {
+                  "id": "b38000f4-0072-c92f-3b07-4e7808fb2a73",
+                  "type": "text",
+                  "head": {
+                    "id": "dc57f8d3-95e1-6a5c-9f52-640b2ee5f9ab"
+                  },
+                  "text": {
+                    "id": "45f9dd01-83d5-0e4e-f05b-88085e0de53d"
+                  }
+                },
+                {
+                  "id": "bc6584cf-fe05-b31e-05ba-06365b0cb8ed",
+                  "type": "text",
+                  "head": {
+                    "id": "786ebdb3-e04b-10b7-9410-99ea33ebfd4f"
+                  },
+                  "text": {
+                    "id": "d66b7876-d2e4-137d-cc89-a86cb3c6a432"
+                  }
+                },
+                {
+                  "id": "e83b28ba-e835-e57f-95fe-99ccea9040aa",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "2e3bc82c-c79c-823e-4e73-8e20ac3e277e"
+                  },
+                  "text": {
+                    "id": "f66a7313-3a67-162f-d16e-8b888b92c689"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "073cb29b-1faf-9f46-4f0f-7947c9e17e38"
+                      },
+                      "url": "https://netbasal.com/getting-to-know-the-attribute-decorator-in-angular-4f7c9fb61243",
+                      "lang": "en"
+                    }
+                  ]
+                }
+              ],
+              "title": {
+                "id": "7d021957-e4f7-5186-2325-560939bd6e98"
+              },
+              "url": "attribute"
+            },
+            {
+              "id": "04e30588-8dab-9d60-6615-8095ba5aa8eb",
+              "entries": [
+                {
+                  "id": "7f8dda4f-17f5-c28b-78bf-f977511185b4",
+                  "type": "text",
+                  "head": {
+                    "id": "0d13dc09-d207-c83b-6834-aafb548ada7a"
+                  },
+                  "text": {
+                    "id": "d40b0976-0aae-67ff-30d9-4bda398237e3"
+                  }
+                },
+                {
+                  "id": "1dbff7ef-42c4-003c-09df-28ea91421618",
+                  "type": "text",
+                  "head": {
+                    "id": "86c1beef-ef8f-31c1-05e0-f6b61f8013c9"
+                  },
+                  "text": {
+                    "id": "c3376eef-fd02-ff0e-14a0-37f8d4b1948e"
+                  }
+                },
+                {
+                  "id": "4a3af8ba-2a25-2bc6-e905-6f13b2ce84bb",
+                  "type": "text",
+                  "head": {
+                    "id": "d9f5a6dc-7210-a5ca-8c89-be1379c5d6e5"
+                  },
+                  "text": {
+                    "id": "67f70ef7-dd47-47ac-3bd4-689ab6a19286"
+                  }
+                },
+                {
+                  "id": "686ecbd4-7e3d-a13d-a2d9-ea3b62a5d2da",
+                  "type": "text",
+                  "head": {
+                    "id": "55261213-a613-ea68-01ce-bef4d231a599"
+                  },
+                  "text": {
+                    "id": "64929deb-43d0-646b-e384-10e616ee069c"
+                  }
+                },
+                {
+                  "id": "39982c95-6437-167b-747f-55c35626cb07",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "0df48c40-107c-7ada-f3c9-5f71e270153f"
+                  },
+                  "text": {
+                    "id": "34b685d5-cd96-a141-75dd-e5abd86394e0"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "819295fd-496d-38d7-0b39-2f6f109c5c9f"
+                      },
+                      "url": "https://netbasal.com/understanding-viewchildren-contentchildren-and-querylist-in-angular-896b0c689f6e",
+                      "lang": "en"
+                    }
+                  ]
+                },
+                {
+                  "id": "6150e0b5-53d9-cfae-0729-12d3b2e32637",
+                  "type": "text",
+                  "head": {
+                    "id": "a9d823ac-a699-a79a-f6e3-79da875bcaf6"
+                  },
+                  "text": {
+                    "id": "c22b0ea9-5c1f-c3c4-5eb7-4376eda2d202"
+                  }
+                },
+                {
+                  "id": "29daa2ca-b0d8-279a-c2ff-e4352c4eec2d",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "selector"
+                  },
+                  "text": {
+                    "id": "e3869c79-147a-c57d-5dcc-db934b707506"
+                  },
+                  "description": {
+                    "id": "cc89659b-b712-de57-a8dc-b0a1d6cc90f2"
+                  },
+                  "name": "selector",
+                  "headId": "selector",
+                  "interface": "selector: Type<any>|Function|string",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "cf3a3e1a-867e-5d06-1f17-42cf9b08a7cf"
+                  }
+                },
+                {
+                  "id": "1ab2b863-8c98-d0f8-3462-9c8bcb0de5aa",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "opts"
+                  },
+                  "text": {
+                    "id": "386e4b0b-c11d-d8bd-db93-f50d4fd3b76a"
+                  },
+                  "description": {
+                    "id": "ccf601e1-38bd-2b81-4a24-3815541668d4"
+                  },
+                  "name": "opts",
+                  "headId": "opts",
+                  "interface": "opts?: {descendants?: boolean, read?: any}",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "0291a474-9653-5bdf-77f0-17b04a5b62c6"
+                  }
+                }
+              ],
+              "title": {
+                "id": "49a157cf-b6f4-8c41-9eb6-38cf4db6ce47"
+              },
+              "url": "content-children"
+            },
+            {
+              "id": "1a217c09-06eb-3b2b-a429-aed5cf1c9978",
+              "entries": [
+                {
+                  "id": "a46dafc8-7a87-c4a7-0dbd-eb0b51db45ba",
+                  "type": "text",
+                  "head": {
+                    "id": "69e5853f-a63d-cbf2-597c-08cf3d0da007"
+                  },
+                  "text": {
+                    "id": "b3447cbe-addf-0db5-ef24-f5251e730aa1"
+                  }
+                },
+                {
+                  "id": "7062c7af-4fce-b1e7-48bd-a6a297501c8f",
+                  "type": "text",
+                  "head": {
+                    "id": "ad49f8cb-ddbd-b92d-c5f1-0e836f3f54b6"
+                  },
+                  "text": {
+                    "id": "8af6b0b0-1546-ced6-752e-b9c363ff9823"
+                  }
+                },
+                {
+                  "id": "2baf0abe-eac2-ae3d-f3ae-b9ba30da4121",
+                  "type": "text",
+                  "head": {
+                    "id": "fb1e6316-cb41-1088-9797-8dc8cd134ebf"
+                  },
+                  "text": {
+                    "id": "afb7946f-40d4-23ba-e6c2-7205d5f0bfec"
+                  }
+                },
+                {
+                  "id": "4096b4fb-3f1d-7fda-49f0-1ddc7df19d6a",
+                  "type": "text",
+                  "head": {
+                    "id": "809978c6-6ff0-0df3-21e7-06126ecacefb"
+                  },
+                  "text": {
+                    "id": "cff5f7b3-24ef-c200-9890-0a2aad0952de"
+                  }
+                },
+                {
+                  "id": "88c45db4-3a47-6e44-9d25-0fb0769e8ad4",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "selector"
+                  },
+                  "text": {
+                    "id": "f4834d3e-0e05-bc21-843c-6fac66a32155"
+                  },
+                  "description": {
+                    "id": "eb234c55-2b55-0764-dc7e-3aa71c5906b5"
+                  },
+                  "name": "selector",
+                  "headId": "selector",
+                  "interface": "selector: Type<any>|Function|string",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "c4985f36-9cc1-e163-8a67-492c2c37333a"
+                  }
+                },
+                {
+                  "id": "440ff0d3-5f39-a6cd-1392-4be2dd460239",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "opts"
+                  },
+                  "text": {
+                    "id": "2ad0fb25-2afb-5a70-7a3e-d564252f7aae"
+                  },
+                  "description": {
+                    "id": "620b9331-874e-55f1-4875-4a251de25cd6"
+                  },
+                  "name": "opts",
+                  "headId": "opts",
+                  "interface": "opts?: {read?: any}",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "a2689495-2d19-a5c5-2979-9d690ccb1b84"
+                  }
+                }
+              ],
+              "title": {
+                "id": "4a5915b8-3af2-b143-b594-26542a3d129f"
+              },
+              "url": "content-child"
+            },
+            {
+              "id": "dca50057-6b53-5c5e-6aa5-3682bb1a6e51",
+              "entries": [
+                {
+                  "id": "a0c607c7-9461-18d8-7eba-4d588f49e3cb",
+                  "type": "text",
+                  "head": {
+                    "id": "c7dd1525-7028-f708-87d7-cfa6fd995ac8"
+                  },
+                  "text": {
+                    "id": "0cde8a47-6b52-cc5d-3445-3b9a4f2522f5"
+                  }
+                },
+                {
+                  "id": "5bdb7f85-8674-58f3-c364-39d9e178ad43",
+                  "type": "text",
+                  "head": {
+                    "id": "279baae1-6be9-8ebb-4736-9c641065eecd"
+                  },
+                  "text": {
+                    "id": "d5d9a441-38e7-4b0d-8896-ed802ffb9506"
+                  }
+                },
+                {
+                  "id": "55b15e57-5ec4-aac2-ddea-a3ac0c081099",
+                  "type": "text",
+                  "head": {
+                    "id": "369fe643-fc80-8c45-da78-eab0ae6e7d9f"
+                  },
+                  "text": {
+                    "id": "22f77c33-adfc-fbfa-ebf1-984eb7b3a378"
+                  }
+                },
+                {
+                  "id": "418d97ff-745c-7617-978a-c449ee08c309",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "aa7503db-2936-68a2-2081-1d482e6036b3"
+                  },
+                  "text": {
+                    "id": "71af45d5-649d-9639-8792-72b7e461e0f1"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "27c6ccab-2b63-ad34-f356-44581d651ff5"
+                      },
+                      "url": "https://netbasal.com/understanding-viewchildren-contentchildren-and-querylist-in-angular-896b0c689f6e",
+                      "lang": "en"
+                    }
+                  ]
+                },
+                {
+                  "id": "d33c6b8d-b3fd-720c-5a8b-dd1bcc6fd505",
+                  "type": "text",
+                  "head": {
+                    "id": "b407b5fa-782d-15ff-99b5-c3e33c298b99"
+                  },
+                  "text": {
+                    "id": "6189e9c7-6e9c-9dbc-cb35-06ec8fe4500c"
+                  }
+                },
+                {
+                  "id": "37ec0f11-523f-f42e-ff77-4f12090c48e0",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "selector"
+                  },
+                  "text": {
+                    "id": "c96fcf7a-79cd-4382-dc8c-2d0388522d0c"
+                  },
+                  "description": {
+                    "id": "4f8e9f04-dddf-c558-a213-37d6ca0ed03a"
+                  },
+                  "interface": "selector: Type<any>|Function|string",
+                  "name": "selector",
+                  "headId": "selector",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "39d8c108-81d6-1900-0247-681591ae8d77"
+                  }
+                },
+                {
+                  "id": "fcd72f7e-5851-c75e-fc26-feb160e85f33",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "opts"
+                  },
+                  "text": {
+                    "id": "daa734b7-2c02-6509-a8b5-1a7eaeaf40f5"
+                  },
+                  "description": {
+                    "id": "17275b21-9d74-b3b8-dd67-7be6f052f744"
+                  },
+                  "name": "opts",
+                  "headId": "opts",
+                  "interface": "opts?: {read?: any}",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "d6505a15-451d-505d-ce4a-88495e5b02d4"
+                  }
+                }
+              ],
+              "title": {
+                "id": "5128cac6-725f-ea01-c6b0-09b1b0fb7daf"
+              },
+              "url": "view-children"
+            },
+            {
+              "id": "3cfe6c81-843b-a989-51a6-0bf748ebb209",
+              "entries": [
+                {
+                  "id": "a5debb98-d267-b1f3-df4f-7a6c830f2324",
+                  "type": "text",
+                  "head": {
+                    "id": "9d6e08f3-fed0-f84a-67c7-70a18f53549b"
+                  },
+                  "text": {
+                    "id": "21ea7298-eeb3-f2e5-1a6b-46a628752867"
+                  }
+                },
+                {
+                  "id": "eca4723b-689d-9d88-b760-42cc05ef8b1a",
+                  "type": "text",
+                  "head": {
+                    "id": "05998c83-a0c8-0e5c-ed3e-325991593c87"
+                  },
+                  "text": {
+                    "id": "f5109c86-df26-584f-1b71-e48738abd46a"
+                  }
+                },
+                {
+                  "id": "41a7b2e2-b3f4-6af7-f98f-740bbc5fb90e",
+                  "type": "text",
+                  "head": {
+                    "id": "5d2f159c-8a3d-be97-0257-1c98a8d1b1a8"
+                  },
+                  "text": {
+                    "id": "08669460-4201-5e12-7db1-254295c16aa3"
+                  }
+                },
+                {
+                  "id": "94a00c91-8493-ded9-c38f-b9a3336a36c3",
+                  "type": "text",
+                  "head": {
+                    "id": "01e96223-a76b-5d99-ea5a-8a185bdbb2a8"
+                  },
+                  "text": {
+                    "id": "756882ca-11d2-bf80-9e2f-1b12dfb771e6"
+                  }
+                },
+                {
+                  "id": "261dceec-30d4-2aea-2629-459654879900",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "selector"
+                  },
+                  "text": {
+                    "id": "37e0aac5-7798-1f26-f351-33b3a94f830a"
+                  },
+                  "description": {
+                    "id": "0643d45b-58f8-3e85-af5e-00dc82d1e457"
+                  },
+                  "name": "selector",
+                  "headId": "selector",
+                  "interface": "selector: Type<any>|Function|string",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "e0bb2562-623e-03d4-8f45-1aa3752f0482"
+                  }
+                },
+                {
+                  "id": "1865105a-7051-090a-a858-4f5d567245e1",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "opts"
+                  },
+                  "text": {
+                    "id": "7581b504-c193-3ceb-ddb2-7af9b491053a"
+                  },
+                  "description": {
+                    "id": "ce460b4a-c3d6-cc5f-92c3-2ff37567fad0"
+                  },
+                  "name": "opts",
+                  "headId": "opts",
+                  "interface": "opts?: {read?: any}",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "26b2fcac-f325-12c1-e3ce-fd780d947f2f"
+                  }
+                }
+              ],
+              "title": {
+                "id": "239ff28d-a3c0-1cce-91a8-51ce9f8535f4"
+              },
+              "url": "view-child"
+            },
+            {
+              "id": "92205ec1-1710-2fb5-97cb-55dc72b767cf",
+              "entries": [
+                {
+                  "id": "b408473d-30b8-7062-9a79-1dc843966e5e",
+                  "type": "text",
+                  "head": {
+                    "id": "280f7db9-65f1-761c-c603-d51cdc979e29"
+                  },
+                  "text": {
+                    "id": "116acdf4-d07e-6f3b-0e7b-73ec4ab78a04"
+                  }
+                },
+                {
+                  "id": "d7c8f520-2df6-cf2f-e23d-fe59a48df7bd",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "44c274fe-9f0b-29dd-369f-2f223d11f964"
+                  },
+                  "text": {
+                    "id": "21f20e4b-81d0-891b-b21f-9cf16d09efc4"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "b7e009ab-e5ff-a076-2d5a-f6a91d5bdf7a"
+                      },
+                      "url": "https://angular.io/guide/dependency-injection-pattern",
+                      "lang": "en"
+                    },
+                    {
+                      "label": {
+                        "id": "e773879a-5615-0654-c0be-c1908ba78fec"
+                      },
+                      "url": "https://angular.io/guide/dependency-injection",
+                      "lang": "en"
+                    },
+                    {
+                      "label": {
+                        "id": "db00dd01-ae04-e751-42df-fdd23c486c85"
+                      },
+                      "url": "https://angular.io/guide/hierarchical-dependency-injection",
+                      "lang": "en"
+                    },
+                    {
+                      "label": {
+                        "id": "91c398d5-c6da-8e05-340b-2cbbbecf1477"
+                      },
+                      "url": "https://angular.io/guide/dependency-injection-in-action",
+                      "lang": "en"
+                    },
+                    {
+                      "label": {
+                        "id": "44def6f0-2190-807c-3c67-a5a443790e2a"
+                      },
+                      "url": "https://blog.angularindepth.com/everything-you-need-to-know-about-change-detection-in-angular-8006c51d206f",
+                      "lang": "en"
+                    }
+                  ]
+                }
+              ],
+              "title": {
+                "id": "0a41014b-48c3-4983-1ede-cf34a0026b43"
+              },
+              "url": "dependency-injection"
+            },
+            {
+              "id": "2ce7e124-b64d-20f2-4396-71dc96acc65a",
+              "entries": [
+                {
+                  "id": "bbe1a31d-bb12-02be-5993-46d221108fb9",
+                  "type": "text",
+                  "head": {
+                    "id": "246e1199-a356-0bbc-e0b9-8aadefb5cb7b"
+                  },
+                  "text": {
+                    "id": "7742ff92-a2ae-5ea7-91db-b3befef1767e"
+                  }
+                },
+                {
+                  "id": "68d472ad-b9bb-cb0d-9af2-daabeff21412",
+                  "type": "text",
+                  "head": {
+                    "id": "66edfcb4-d197-f51e-5362-f7ebc6b27e97"
+                  },
+                  "text": {
+                    "id": "d22ad736-39ca-39b8-6dde-8fd29399292f"
+                  }
+                },
+                {
+                  "id": "55677ae0-b07c-bc2d-1262-bcc2f9bb1c43",
+                  "type": "text",
+                  "head": {
+                    "id": "d52804a8-56a6-3958-52bc-62b004050cc1"
+                  },
+                  "text": {
+                    "id": "6b8c5bab-25d4-afab-df08-d4b084211fb4"
+                  }
+                },
+                {
+                  "id": "bdf2206c-809c-a29b-58ff-e6946cc317d5",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "e42a3f92-35da-2285-3086-501364bbbdb4"
+                  },
+                  "text": {
+                    "id": "c23c2900-0cdb-8cca-4b76-ac7934d86821"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "055a49e8-438d-2fc8-2a25-2395cc81d7b7"
+                      },
+                      "url": "https://alligator.io/angular/change-detection-strategy/",
+                      "lang": "en"
+                    },
+                    {
+                      "label": {
+                        "id": "08a4c739-a75f-09f9-65bc-8cff8160785b"
+                      },
+                      "url": "https://blog.angularindepth.com/everything-you-need-to-know-about-change-detection-in-angular-8006c51d206f",
+                      "lang": "en"
+                    }
+                  ]
+                },
+                {
+                  "id": "222c1014-8942-8b4e-bd8f-61d50c95fc5b",
+                  "type": "text",
+                  "head": {
+                    "id": "13acc382-660a-df5a-a593-52924aa1827b"
+                  },
+                  "text": {
+                    "id": "e74c8e9b-241d-11d6-a714-a58653b63534"
+                  }
+                },
+                {
+                  "id": "49567c5a-44c3-7ca9-1111-ee60a7a2739b",
+                  "type": "toc",
+                  "head": {
+                    "id": "22d03f6b-c661-8df0-ebfb-c25d835ad237"
+                  },
+                  "text": {
+                    "id": "7e28d8fe-0a7b-0683-9d52-5fdc0007269b"
+                  }
+                },
+                {
+                  "id": "b3179f90-7912-d6cb-cf8e-6045680aefa2",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "markForCheck()"
+                  },
+                  "text": {
+                    "id": "368afe1b-2cee-852c-e4a2-836906eae2fe"
+                  },
+                  "description": {
+                    "id": "858f37b6-3cbc-64cf-592d-bbeb9265dfa4"
+                  },
+                  "name": "markForCheck()",
+                  "headId": "markForCheck()",
+                  "interface": "markForCheck(): void",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "1f0e4c40-0a6b-746e-3891-ff31a57844ec"
+                  }
+                },
+                {
+                  "id": "37e0784f-34b6-d87d-8532-d526cb27829d",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "detach()"
+                  },
+                  "text": {
+                    "id": "3c1cd356-9134-7a44-076d-c19588bc11da"
+                  },
+                  "description": {
+                    "id": "f3522249-2675-21ec-237f-49083f4547bf"
+                  },
+                  "name": "detach()",
+                  "headId": "detach()",
+                  "interface": "detach(): void",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "347e62d0-b624-1e4d-047f-0cd2fda67771"
+                  }
+                },
+                {
+                  "id": "772b4197-9cb9-66d5-d7c6-4768af372b1f",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "detectChanges()"
+                  },
+                  "text": {
+                    "id": "d1596867-3ac8-0043-8908-77caef049d7d"
+                  },
+                  "description": {
+                    "id": "ea19a062-20c6-e9ca-51ff-e520dbe94869"
+                  },
+                  "name": "detectChanges()",
+                  "headId": "detectChanges()",
+                  "interface": "detectChanges(): void"
+                },
+                {
+                  "id": "694262ee-b1b7-8f67-97d4-5b315c10e5e0",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "checkNoChanges()"
+                  },
+                  "text": {
+                    "id": "809f3928-4ad7-3082-97f7-fe20ad74c64a"
+                  },
+                  "description": {
+                    "id": "fa22cd26-5cbf-f3e2-7a66-fc1dd938a838"
+                  },
+                  "name": "checkNoChanges()",
+                  "headId": "checkNoChanges()",
+                  "interface": "checkNoChanges(): void",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "7fca4032-630a-111e-3d8c-eac905ed3dc0"
+                  }
+                },
+                {
+                  "id": "15342f05-ffd6-71c2-fd53-00e40cbe55a6",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "reattach()"
+                  },
+                  "text": {
+                    "id": "82061661-708d-41ff-ebe8-d61fec57042d"
+                  },
+                  "description": {
+                    "id": "6b94dcd3-d933-d9ea-c788-317b803cd749"
+                  },
+                  "name": "reattach()",
+                  "headId": "reattach()",
+                  "interface": "reattach(): void"
+                }
+              ],
+              "title": {
+                "id": "d83341b5-20c4-2fce-75a0-286b6650f530"
+              },
+              "url": "change-detector-ref"
+            },
+            {
+              "id": "294a9573-a0da-0e1f-e877-e417539ecdfa",
+              "entries": [
+                {
+                  "id": "e279ad9f-a698-fb5f-372f-ea9c7bd913db",
+                  "type": "text",
+                  "head": {
+                    "id": "96712828-40db-6bd8-f878-6e712ba175b4"
+                  },
+                  "text": {
+                    "id": "ed93f724-47ce-adde-b50d-621df93793b4"
+                  }
+                },
+                {
+                  "id": "5357894a-927b-e192-9b2c-ed84b2221317",
+                  "type": "text",
+                  "head": {
+                    "id": "84629a0a-7c77-299f-75f4-24d3e9d14f39"
+                  },
+                  "text": {
+                    "id": "bcbf7b38-587e-3fdb-353d-a56b5e00729a"
+                  }
+                },
+                {
+                  "id": "9406a90e-393b-6f00-3461-4d5cc11529c8",
+                  "type": "text",
+                  "head": {
+                    "id": "f895baeb-9244-8b63-f81b-336fe3f707ed"
+                  },
+                  "text": {
+                    "id": "43d3252a-c0a3-ae3f-b5bb-7131b1d4047e"
+                  }
+                },
+                {
+                  "id": "d66037ea-8163-4b52-cd31-5e2e60a13990",
+                  "type": "text",
+                  "head": {
+                    "id": "78c9d31e-b035-472e-a132-e1fcad3c71a6"
+                  },
+                  "text": {
+                    "id": "222ce5b8-75ea-d8fc-76b6-babd8af15229"
+                  }
+                },
+                {
+                  "id": "6a74ff31-1cc5-cc38-60e0-62db454bad79",
+                  "type": "text",
+                  "head": {
+                    "id": "944a0337-2dcf-ecad-5aa5-a592118a2bb6"
+                  },
+                  "text": {
+                    "id": "904d134d-ae4b-4a15-19d9-2efcbe4b1a87"
+                  }
+                },
+                {
+                  "id": "b0120c84-6d89-532a-b080-099a9a3af8c0",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "_desc"
+                  },
+                  "text": {
+                    "id": "6a1a9cd1-2a57-83cb-1b05-bab8cb1da7fa"
+                  },
+                  "description": {
+                    "id": "76dc60f7-95f8-7d1a-1c94-005b76503ba7"
+                  },
+                  "name": "_desc",
+                  "headId": "_desc",
+                  "interface": "_desc: string"
+                },
+                {
+                  "id": "092139b0-f7f6-d91d-72d9-8b0ab887a928",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "options"
+                  },
+                  "text": {
+                    "id": "df7bb3d4-f374-7459-3320-e4beaffc84c9"
+                  },
+                  "description": {
+                    "id": "1be5f75b-74b4-553b-2841-db29e2af7095"
+                  },
+                  "name": "options",
+                  "headId": "options",
+                  "interface": "options?: {     providedIn?: Type<any> | 'root' | null;     factory: () => T; }",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "8c0cd5a6-c39c-ab0d-51a6-85ddaf657530"
+                  }
+                }
+              ],
+              "title": {
+                "id": "fdabe440-b102-62fb-a2fc-cba66bacc665"
+              },
+              "url": "injection-token"
+            },
+            {
+              "id": "6565c60a-0db7-9d9d-da7e-f0e1cd86062a",
+              "entries": [
+                {
+                  "id": "5cae07ad-208a-967a-60dd-85ea0bcff52d",
+                  "type": "text",
+                  "head": {
+                    "id": "9ea55c89-797f-50bc-74bf-4fa76333ded1"
+                  },
+                  "text": {
+                    "id": "6c461429-3c9f-b310-961b-de45691b684c"
+                  }
+                },
+                {
+                  "id": "e402d38b-db1f-e77c-9d2e-3776d9e729c5",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "4b50559a-30ca-967b-04b8-fe562c09dc6a"
+                  },
+                  "text": {
+                    "id": "429f4ee3-7165-8f1f-5f36-6044cb3faf27"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "faea2840-74d7-18d4-75c5-d5728185f8a7"
+                      },
+                      "url": "https://angular.io/guide/lifecycle-hooks",
+                      "lang": "en"
+                    }
+                  ]
+                }
+              ],
+              "title": {
+                "id": "de1b582b-b4a9-b7fc-abc9-f02517815671"
+              },
+              "url": "lifecycle-hooks"
+            },
+            {
+              "id": "c60d7522-e3a6-2157-7161-187c0492285b",
+              "entries": [
+                {
+                  "id": "022c8094-1bec-02f7-a1ca-47517f5a922f",
+                  "type": "text",
+                  "head": {
+                    "id": "3577037e-a63c-b833-0551-84b4653b2964"
+                  },
+                  "text": {
+                    "id": "ea846e80-eb9c-8744-04b6-a779d3909d77"
+                  }
+                },
+                {
+                  "id": "17e95b3c-a42a-9ae7-4729-d9826dbbe449",
+                  "type": "text",
+                  "head": {
+                    "id": "40f340d4-eb3a-1d65-c852-ebb98219e79e"
+                  },
+                  "text": {
+                    "id": "a9456a71-f53a-9ff9-c6d0-dd7e9737d437"
+                  }
+                },
+                {
+                  "id": "fefba782-a940-7801-d975-90f17715823d",
+                  "type": "text",
+                  "head": {
+                    "id": "ddf6c7b2-56a7-24ed-fcd6-da6b014a8aec"
+                  },
+                  "text": {
+                    "id": "6789a9b5-0d30-174c-40fc-ab2c1f3787fb"
+                  }
+                },
+                {
+                  "id": "083089bb-0a69-f68f-ed8c-6ac27dc8994e",
+                  "type": "text",
+                  "head": {
+                    "id": "ec45c414-b64d-63ed-399d-8de18faab671"
+                  },
+                  "text": {
+                    "id": "348eebf5-9f26-4977-eb6b-adf1fb6eb8af"
+                  }
+                },
+                {
+                  "id": "909eff00-0786-92d2-7554-93f72dde7cc1",
+                  "type": "text",
+                  "head": {
+                    "id": "a968a623-8d2e-0752-58c0-9e7d09be75f1"
+                  },
+                  "text": {
+                    "id": "f822dea2-f71a-dc26-578f-7f7a9d6c0381"
+                  }
+                }
+              ],
+              "title": {
+                "id": "649396d8-5f29-b824-b634-f87806b2ee20"
+              },
+              "url": "ng-on-changes"
+            },
+            {
+              "id": "50367a95-a570-e864-a3c1-ad320dbcd6c6",
+              "entries": [
+                {
+                  "id": "3f877290-e3ae-7d35-d2d3-1d2e8a9296ca",
+                  "type": "text",
+                  "head": {
+                    "id": "e13fb887-fd76-81df-525c-6a2ba1113523"
+                  },
+                  "text": {
+                    "id": "8b5bf11f-136a-5e90-184f-98a40e7603b7"
+                  }
+                },
+                {
+                  "id": "85a98ff4-034b-89e1-7232-ef8510efcfd9",
+                  "type": "text",
+                  "head": {
+                    "id": "c2829ba9-ff99-367c-ff29-360b4b5ed5a9"
+                  },
+                  "text": {
+                    "id": "7b639d96-fcc4-0e70-e6de-3e157bb6c54e"
+                  }
+                },
+                {
+                  "id": "b5c76bfd-305c-a19c-9f11-891088645d1b",
+                  "type": "text",
+                  "head": {
+                    "id": "a46ab66e-40e7-1cf6-a589-02007a3dcb6f"
+                  },
+                  "text": {
+                    "id": "25500eea-ce95-2007-13d4-e926c620815c"
+                  }
+                },
+                {
+                  "id": "c1961899-f112-0c19-3437-a04be78d09d4",
+                  "type": "text",
+                  "head": {
+                    "id": "32de6330-83aa-0e8e-12e5-9bd95177917d"
+                  },
+                  "text": {
+                    "id": "aaa0b310-91fe-8aca-cd27-8579b2ce6f96"
+                  }
+                },
+                {
+                  "id": "04398a2d-2249-1126-4576-81c7701961ee",
+                  "type": "text",
+                  "head": {
+                    "id": "1ffda8d9-e571-d388-405a-ea84d80879ff"
+                  },
+                  "text": {
+                    "id": "8a572c15-1139-802b-e365-92f3e821ae5a"
+                  }
+                }
+              ],
+              "title": {
+                "id": "5bc1803e-c4f0-b790-2a81-f2f03ae11762"
+              },
+              "url": "ng-on-init"
+            },
+            {
+              "id": "5f129cd7-b63e-c07b-5263-40f969f3b0e3",
+              "entries": [
+                {
+                  "id": "faa25e91-b054-9309-1cd0-73ca3228083d",
+                  "type": "text",
+                  "head": {
+                    "id": "b83f2a00-f897-02e5-cb03-d19908be0fad"
+                  },
+                  "text": {
+                    "id": "26c2a028-7608-0218-a321-104bb74526cc"
+                  }
+                },
+                {
+                  "id": "31a52d3f-95b6-4c51-b7a9-cb354418a86b",
+                  "type": "text",
+                  "head": {
+                    "id": "ed5d1a6d-87f4-38ca-60ef-6a588fba1d76"
+                  },
+                  "text": {
+                    "id": "baadb4b9-64d7-fcd8-b1a0-f8a6a980de18"
+                  }
+                },
+                {
+                  "id": "55595e2e-d1c7-ec4a-cf07-ca20aab9f4f4",
+                  "type": "text",
+                  "head": {
+                    "id": "8684747a-c92d-7867-9537-99a20ce01a94"
+                  },
+                  "text": {
+                    "id": "8ee21488-c436-bf07-5d04-fad53649e4f8"
+                  }
+                },
+                {
+                  "id": "a9b378ca-1448-d1c8-eb9f-06b695ecc396",
+                  "type": "text",
+                  "head": {
+                    "id": "d4eb679f-badd-b1f5-b92e-11068c344cdc"
+                  },
+                  "text": {
+                    "id": "ee2fcc47-1c55-dcf9-e334-85bf8001767b"
+                  }
+                },
+                {
+                  "id": "2e8a5ed5-137c-3f07-7f7c-75cd5f1a4268",
+                  "type": "text",
+                  "head": {
+                    "id": "20e17d64-fb50-cfe9-a6d1-114b875e4751"
+                  },
+                  "text": {
+                    "id": "d47a8cb0-e00f-7d54-fa88-27bcc7f4dcfb"
+                  }
+                }
+              ],
+              "title": {
+                "id": "9efde354-76aa-da6d-6f4d-78974474441c"
+              },
+              "url": "ng-do-check"
+            },
+            {
+              "id": "2b7bc4a7-a825-a200-6cc2-2ffe850ceb48",
+              "entries": [
+                {
+                  "id": "ecf22900-8c22-96ee-c5ab-2b41a60c5ac8",
+                  "type": "text",
+                  "head": {
+                    "id": "3f1920bf-950c-80b5-11f4-c74886a57eec"
+                  },
+                  "text": {
+                    "id": "e0117457-b23a-578c-8018-06a1b79eaf71"
+                  }
+                },
+                {
+                  "id": "780c73dd-3c58-5fe9-e6ce-876471600af7",
+                  "type": "text",
+                  "head": {
+                    "id": "062cf786-3c7a-c941-241f-dba5597e56d1"
+                  },
+                  "text": {
+                    "id": "47a176d9-846b-79f8-1a38-b1a1064ccbde"
+                  }
+                },
+                {
+                  "id": "500a62f5-ac8c-08ab-ed54-a2bd69ec7136",
+                  "type": "text",
+                  "head": {
+                    "id": "b67f3c31-1304-27c9-7e3c-49876e3b9133"
+                  },
+                  "text": {
+                    "id": "b3e331d1-ae63-64ea-a33c-4f3c319d65a6"
+                  }
+                },
+                {
+                  "id": "7761a721-1547-65da-66ea-1993224f1199",
+                  "type": "text",
+                  "head": {
+                    "id": "65905d4d-3ce0-2cac-558b-cc410388858b"
+                  },
+                  "text": {
+                    "id": "8aaa3a3f-d438-3890-c3b8-bbea6ce28ad2"
+                  }
+                },
+                {
+                  "id": "20e45f59-275d-5a03-100e-9fedbcd4b64d",
+                  "type": "text",
+                  "head": {
+                    "id": "0b0599c6-8d31-4beb-2863-62170eb59ea4"
+                  },
+                  "text": {
+                    "id": "24a4181b-1430-5d91-25b1-f7f675315668"
+                  }
+                }
+              ],
+              "title": {
+                "id": "57ecc64c-2ddb-83cc-eacf-faae7b608755"
+              },
+              "url": "ng-after-content-init"
+            },
+            {
+              "id": "20aa0a64-eacf-3812-17ff-054222577a9b",
+              "entries": [
+                {
+                  "id": "5cd1bee8-fdc3-75db-3c36-4c7dd81c8093",
+                  "type": "text",
+                  "head": {
+                    "id": "77969356-12a4-f5b1-9c5c-39e9db16962d"
+                  },
+                  "text": {
+                    "id": "b3ee8679-b40c-3e23-aa73-5c1d09ec8290"
+                  }
+                },
+                {
+                  "id": "0cf7d14a-fe2b-4a8a-d6ce-4f2def2571c2",
+                  "type": "text",
+                  "head": {
+                    "id": "21cf01fb-2299-9f2a-8898-a30785d7f5b4"
+                  },
+                  "text": {
+                    "id": "531d3175-2b34-cefa-3340-5eae9d4fdcd2"
+                  }
+                },
+                {
+                  "id": "7fa65b97-ca08-cc55-1f79-7be1d63e174a",
+                  "type": "text",
+                  "head": {
+                    "id": "3b661861-5304-1f17-f6e5-e91d4639d9c9"
+                  },
+                  "text": {
+                    "id": "2c091493-8ae3-6201-80be-4b281705fda7"
+                  }
+                },
+                {
+                  "id": "26aef03c-ff5a-3e5c-35d2-74eb2eccbc71",
+                  "type": "text",
+                  "head": {
+                    "id": "c400dede-a748-64cc-b5ab-7f2d742756da"
+                  },
+                  "text": {
+                    "id": "509b0953-fa73-762b-08d6-59b14164d969"
+                  }
+                },
+                {
+                  "id": "f00be05a-5a45-ea4b-42ad-3e7aed0fc535",
+                  "type": "text",
+                  "head": {
+                    "id": "7aa9cd5b-2992-dc15-9f45-c4f00d70a456"
+                  },
+                  "text": {
+                    "id": "ab9869ed-b6eb-055a-3d34-dc6dcf9b053e"
+                  }
+                }
+              ],
+              "title": {
+                "id": "884ac84d-c10e-e49a-2465-bda492bdc56f"
+              },
+              "url": "ng-after-content-checked"
+            },
+            {
+              "id": "37ff2fb3-ae0b-d369-3f3e-4307760a3fbf",
+              "entries": [
+                {
+                  "id": "648bcd7f-0f97-bf6e-c0d9-8a372113281e",
+                  "type": "text",
+                  "head": {
+                    "id": "f6409154-38bb-89ba-46c1-91261ad00210"
+                  },
+                  "text": {
+                    "id": "f3e98a8a-cb72-d6f2-676c-69cd9ba7dee3"
+                  }
+                },
+                {
+                  "id": "b9da475c-a087-7fd5-5fae-5d4b9b0cc00c",
+                  "type": "text",
+                  "head": {
+                    "id": "33924ec2-106c-63e3-3e43-378fdc216e80"
+                  },
+                  "text": {
+                    "id": "fcc6bdfe-5aca-49e8-9c47-f6d3326829d8"
+                  }
+                },
+                {
+                  "id": "1a17ca75-0d23-b9f1-40bb-5d0676a13abd",
+                  "type": "text",
+                  "head": {
+                    "id": "7970ebf2-80af-4656-0648-073f7743621e"
+                  },
+                  "text": {
+                    "id": "4eabd8a8-8769-2bae-0032-5c71a0968d13"
+                  }
+                },
+                {
+                  "id": "c4ad05ef-a25d-5e3d-7437-ec6f49cf4e70",
+                  "type": "text",
+                  "head": {
+                    "id": "8225c19c-e19e-06cf-ecb1-975bb9464701"
+                  },
+                  "text": {
+                    "id": "cd745a6f-b02c-988f-25de-04e4d15b5579"
+                  }
+                },
+                {
+                  "id": "0bc3305e-8bd1-73c8-fe39-83d54f6aad68",
+                  "type": "text",
+                  "head": {
+                    "id": "680cfc61-5e01-266b-f62b-aafa7c9917a5"
+                  },
+                  "text": {
+                    "id": "69e1c75b-8f3d-451c-d3ff-859ad6f7a240"
+                  }
+                }
+              ],
+              "title": {
+                "id": "66938566-7106-b248-8fa0-e3b4046202c2"
+              },
+              "url": "ng-after-view-init"
+            },
+            {
+              "id": "c5caed9f-3c9c-97e8-f383-9d30ad0f3c66",
+              "entries": [
+                {
+                  "id": "79b73b0d-f88a-9707-4b51-d05184d1cb4b",
+                  "type": "text",
+                  "head": {
+                    "id": "10fe27e4-b817-bbc9-9516-323dd8626506"
+                  },
+                  "text": {
+                    "id": "c1facddf-e747-9961-3a67-cc9fa2169fbf"
+                  }
+                },
+                {
+                  "id": "bd20e5dd-406b-fd0c-4d91-7b08dddca640",
+                  "type": "text",
+                  "head": {
+                    "id": "3134f2ee-53ba-6314-d2cc-c4c773b7fd19"
+                  },
+                  "text": {
+                    "id": "1322dbe3-6463-8b26-2786-388eb627593c"
+                  }
+                },
+                {
+                  "id": "a9223fae-aded-d6e1-0c33-a455692fa934",
+                  "type": "text",
+                  "head": {
+                    "id": "9d28a547-dd93-ebfb-cb52-43b69f989637"
+                  },
+                  "text": {
+                    "id": "f8b12509-ce9b-9761-664f-acca0557cd64"
+                  }
+                },
+                {
+                  "id": "70979f4f-fdf3-bec7-473e-b0c3c5496d1d",
+                  "type": "text",
+                  "head": {
+                    "id": "ccbb479c-466f-2d37-8f05-b0e21301f75c"
+                  },
+                  "text": {
+                    "id": "28254ca6-b8d0-dd93-ccea-a0c31e15d5a5"
+                  }
+                },
+                {
+                  "id": "a0843248-4e94-943b-75af-884bad712abf",
+                  "type": "text",
+                  "head": {
+                    "id": "115d2e87-ae05-54a7-5cb6-a10f3910d50c"
+                  },
+                  "text": {
+                    "id": "4194801a-8262-bd5a-ce8a-d1bd351e9dc7"
+                  }
+                }
+              ],
+              "title": {
+                "id": "9d1b0bc2-9e7f-ea34-e1b7-b6837b4b6e3a"
+              },
+              "url": "ng-after-view-checked"
+            },
+            {
+              "id": "e1c925dd-f2f4-a880-a4c9-da0c5588f570",
+              "entries": [
+                {
+                  "id": "0b3ddb01-d3b6-eacf-d51f-b15439bc75e5",
+                  "type": "text",
+                  "head": {
+                    "id": "ad6dc028-f79a-7292-8f57-fd4e5d95539f"
+                  },
+                  "text": {
+                    "id": "fabff49e-640e-56ca-2ee0-9c520151b2c3"
+                  }
+                },
+                {
+                  "id": "f75fc11c-761e-b06e-1be9-bec4fa860801",
+                  "type": "text",
+                  "head": {
+                    "id": "17b68132-a4fa-f419-5d0a-60f3aebadd84"
+                  },
+                  "text": {
+                    "id": "f126e079-9267-14fb-f107-d68e37c4f2ac"
+                  }
+                },
+                {
+                  "id": "3b928e1f-27b0-fcf6-f02e-21fc1e172387",
+                  "type": "text",
+                  "head": {
+                    "id": "6c85e713-d593-a4af-eb5c-ce46d5ddd5ee"
+                  },
+                  "text": {
+                    "id": "7c63bd14-9fec-c90d-2e25-9b494726af5e"
+                  }
+                },
+                {
+                  "id": "a225f1f6-ab45-e30b-c826-4e03e725f289",
+                  "type": "text",
+                  "head": {
+                    "id": "8bc52720-ba71-58cc-b2d4-d5109fdc6b83"
+                  },
+                  "text": {
+                    "id": "b501a6cc-8fa8-1e93-306d-e7a1a9316abd"
+                  }
+                },
+                {
+                  "id": "ec49dbc5-f4b1-8770-556a-29d273101910",
+                  "type": "text",
+                  "head": {
+                    "id": "4066dc4a-5b50-1b1f-6498-70abc5132abf"
+                  },
+                  "text": {
+                    "id": "e8d04219-e961-101d-44af-e56368bda26d"
+                  }
+                }
+              ],
+              "title": {
+                "id": "efcfa3a5-f750-afa3-f8d4-e3420a2540a5"
+              },
+              "url": "ng-on-destroy"
+            },
+            {
+              "id": "56bb53be-d88a-fed8-67fc-56520800641e",
+              "entries": [
+                {
+                  "id": "4d11223c-28ea-5353-9c52-534fb1af8c07",
+                  "type": "text",
+                  "head": {
+                    "id": "dc44877c-4810-61bc-a7e4-ca6b8857a9f8"
+                  },
+                  "text": {
+                    "id": "d089dd2a-8d58-7377-4262-c39674ff7cc9"
+                  }
+                },
+                {
+                  "id": "7ece4831-a38b-d9f5-82c8-fdc7d1222370",
+                  "type": "text",
+                  "head": {
+                    "id": "645e32e9-0c78-3aef-c3a2-c3f55ba99dda"
+                  },
+                  "text": {
+                    "id": "a9a7761e-b30c-91a5-4c47-dd74379ec686"
+                  }
+                },
+                {
+                  "id": "a95f0dd8-25e1-f92e-c007-d23c77b530d3",
+                  "type": "text",
+                  "head": {
+                    "id": "f9f02b35-06e4-5460-3210-009a3ec89caa"
+                  },
+                  "text": {
+                    "id": "df58afee-1c65-2f2d-a853-d41bfa444c3e"
+                  }
+                },
+                {
+                  "id": "a78cbc2f-2665-39bd-b1f0-a97d685fa2ba",
+                  "type": "text",
+                  "head": {
+                    "id": "3394273f-8898-ff23-9eb5-b95bdcf238c2"
+                  },
+                  "text": {
+                    "id": "1053b6b9-b616-478c-daf5-60e9738bdcd2"
+                  }
+                }
+              ],
+              "title": {
+                "id": "8408734b-ec18-4656-d9a5-3e6d791bc342"
+              },
+              "url": "forward-ref"
             }
           ],
           "title": {
@@ -14289,7 +16604,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "onDestroy()"
+              "text": "ngOnDestroy()"
             }
           ]
         },
@@ -14594,6 +16909,2216 @@
             {
               "lang": "en",
               "text": "This exists to support future Ivy work and has no effect currently."
+            }
+          ]
+        },
+        {
+          "id": "c82c5098-7542-0595-c8ab-e3053e9ee01e",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@Directive"
+            }
+          ]
+        },
+        {
+          "id": "bd3f1d6c-ea40-d95d-ca90-d9bd9be89b3a",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Marks a class as an Angular directive. You can define your own directives to attach custom behavior to elements in the DOM. The options provide configuration metadata that determines how the directive should be processed, instantiated and used at runtime."
+            }
+          ]
+        },
+        {
+          "id": "888b58cf-7eef-c9f7-1345-67d8a14d57d0",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example\n\nTo define a directive, mark the class with the decorator and provide metadata.\n\n```typescript\nimport {Directive} from '@angular/core';\n\n@Directive({\n  selector: 'my-directive',\n})\nexport class MyDirective {\n...\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "e2cf5644-58d0-1100-5970-2d03ff3b462d",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Options"
+            }
+          ]
+        },
+        {
+          "id": "bd0e8362-787e-3f2a-02e6-71e482622081",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The CSS selector that identifies this directive in a template\nand triggers instantiation of the directive."
+            }
+          ]
+        },
+        {
+          "id": "708cfdaf-8614-6fbf-b921-c49dab73b9cb",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Declare as one of the following:\n\n- `element-name`: Select by element name.\n- `.class`: Select by class name.\n- `[attribute]`: Select by attribute name.\n- `[attribute=value]`: Select by attribute name and value.\n- `:not(sub_selector)`: Select only if the element does not match the `sub_selector`.\n- `selector1, selector2`: Select if either `selector1` or `selector2` matches.\n\nAngular only allows directives to apply on CSS selectors that do not cross\nelement boundaries.\n\nFor the following template HTML, a directive with an `input[type=text]` selector,\nwould be instantiated only on the `<input type=\"text\">` element.\n\n```html\n<form>\n  <input type=\"text\">\n  <input type=\"radio\">\n<form>\n```"
+            }
+          ]
+        },
+        {
+          "id": "48be9e46-494d-63e0-7ebc-002a47007bf7",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Enumerates the set of data-bound input properties for a directive."
+            }
+          ]
+        },
+        {
+          "id": "cf7e1c4f-3d0c-2c91-bda6-a305d451fec8",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular automatically updates input properties during change detection.\nThe `inputs` property defines a set of `directiveProperty` to `bindingProperty`\nconfiguration:\n\n- `directiveProperty` specifies the component property where the value is written.\n- `bindingProperty` specifies the DOM property where the value is read from.\n\nWhen `bindingProperty` is not provided, it is assumed to be equal to `directiveProperty`.\n@usageNotes\n\n#### Example\n\nThe following example creates a component with two data-bound properties.\n\n```typescript\n@Component({\n  selector: 'bank-account',\n  inputs: ['bankName', 'id: account-id'],\n  template: `\n    Bank Name: {{bankName}}\n    Account Id: {{id}}\n  `\n})\nclass BankAccount {\n  bankName: string;\n  id: string;\n\n```"
+            }
+          ]
+        },
+        {
+          "id": "1fc1d6ea-8eaf-0353-5e02-30a5dd411dc8",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The set of event-bound output properties.\nWhen an output property emits an event, an event handler attached\nto that event in the template is invoked."
+            }
+          ]
+        },
+        {
+          "id": "83d47472-adb6-b5e6-339e-d5bf580cd649",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Each output property maps a `directiveProperty` to a `bindingProperty`:\n- `directiveProperty` specifies the component property that emits events.\n- `bindingProperty` specifies the HTML attribute the event handler is attached to."
+            }
+          ]
+        },
+        {
+          "id": "a3d067c4-92cb-73f6-a5bd-29253b2b7b10",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Configures the injector of this directive or component with a token that maps to a provider of a dependency."
+            }
+          ]
+        },
+        {
+          "id": "75974e0c-7b59-373d-1579-3b3fc0708201",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The name or names that can be used in the template to assign this directive to a variable. For multiple names, use a comma-separated string."
+            }
+          ]
+        },
+        {
+          "id": "c0556877-0c40-4b49-2612-6e1f5a02ca96",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Configures the queries that will be injected into the directive."
+            }
+          ]
+        },
+        {
+          "id": "ecff0bb4-4069-8c7e-cf3d-79586a20beaf",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Content queries are set before the `ngAfterContentInit` callback is called.\nView queries are set before the `ngAfterViewInit` callback is called."
+            }
+          ]
+        },
+        {
+          "id": "ae325d1a-256a-beb1-4946-e0c3f8125c26",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "If true, this directive/component will be skipped by the AOT compiler and so will always be compiled using JIT."
+            }
+          ]
+        },
+        {
+          "id": "cefded23-dddd-8a3b-03ef-784a9ab98485",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "This exists to support future Ivy work and has no effect currently."
+            }
+          ]
+        },
+        {
+          "id": "ff3089df-d42e-ed87-41c4-a8d5462d0d26",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Maps class properties to host element bindings for properties, attributes, and events, using a set of key-value pairs."
+            }
+          ]
+        },
+        {
+          "id": "1ffc5f97-8395-9812-350b-29da6c8ce348",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular automatically checks host property bindings during change detection.\nIf a binding changes, Angular updates the directive's host element.\n\nWhen the key is a property of the host element, the property value is\nthe propagated to the specified DOM property.\n\nWhen the key is a static attribute in the DOM, the attribute value\nis propagated to the specified property in the host element.\n\nFor event handling:\n- The key is the DOM event that the directive listens to.\nTo listen to global events, add the target to the event name.\nThe target can be `window`, `document` or `body`.\n- The value is the statement to execute when the event occurs. If the\nstatement evalueates to `false`, then `preventDefault` is applied on the DOM\nevent. A handler method can refer to the `$event` local variable."
+            }
+          ]
+        },
+        {
+          "id": "8817052f-1bd0-3b66-557e-e113f390735f",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Declaring directives\n\nDirectives are declarables. They must be declared by an NgModule in order to be usable in an app.\n\nA directive must belong to exactly one NgModule. Do not re-declare a directive imported from another module. List the directive class in the `declarations` field of an NgModule.\n\n```typescript\ndeclarations: [\n AppComponent,\n MyDirective\n],\n```"
+            }
+          ]
+        },
+        {
+          "id": "2d79e10c-9535-4006-ee38-2b2ad447c8c1",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@Component"
+            }
+          ]
+        },
+        {
+          "id": "a1da3aac-1217-c098-93fd-e31f7a36481b",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Components are the most basic UI building block of an Angular app. An Angular app contains a tree of Angular components.\n\nAngular components are a subset of directives, always associated with a template. Unlike other directives, only one component can be instantiated per an element in a template.\n\nA component must belong to an NgModule in order for it to be available to another component or application. To make it a member of an NgModule, list it in the declarations field of the @NgModule metadata.\n\nNote that, in addition to these options for configuring a directive, you can control a component's runtime behavior by implementing life-cycle hooks. For more information, see the Lifecycle Hooks guide."
+            }
+          ]
+        },
+        {
+          "id": "8e1ae151-770d-490d-0999-656aee3ef43c",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example\n\n```typescript\nimport {Component} from '@angular/core';\n\n@Component({\n  selector: 'my-component',\n  template: `Hello there!`\n})\nexport class MyComponent {\n...\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "5b60064a-bc82-7c59-239a-94987720c42d",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Options"
+            }
+          ]
+        },
+        {
+          "id": "351aaeb7-9202-ce7a-f4e7-7fa24ad097ff",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "### Inherited from Directive decorator\n\n* [selector](../directive#selector)\n* [inputs](../directive#inputs)\n* [outputs](../directive#outputs)\n* [providers](../directive#providers)\n* [exportAs](../directive#exportAs)\n* [queries](../directive#queries)\n* [jit](../directive#jit)\n* [host](../directive#host)"
+            }
+          ]
+        },
+        {
+          "id": "2e3d8e17-83eb-3f12-6f5e-d404a50f37f0",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The change-detection strategy to use for this component."
+            }
+          ]
+        },
+        {
+          "id": "beb9cf88-f9b2-e603-7f8c-f610a1f2d6cc",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "When a component is instantiated, Angular creates a change detector,\nwhich is responsible for propagating the component's bindings.\nThe strategy is one of:\n- `ChangeDetectionStrategy#OnPush` sets the strategy to `CheckOnce` (on demand).\n- `ChangeDetectionStrategy#Default` sets the strategy to `CheckAlways`."
+            }
+          ]
+        },
+        {
+          "id": "fa9d7e1e-b7a6-a20b-de75-95dcc03dd5af",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Defines the set of injectable objects that are visible to its view DOM children."
+            }
+          ]
+        },
+        {
+          "id": "a8187e3c-e434-7083-b84f-774032d37859",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The module ID of the module that contains the component.\nThe component must be able to resolve relative URLs for templates and styles.\nSystemJS exposes the `__moduleName` variable within each module.\nIn CommonJS, this can  be set to `module.id`."
+            }
+          ]
+        },
+        {
+          "id": "e5749172-48eb-6094-5696-814ccf5d0727",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The URL of a template file for an Angular component. If provided, do not supply an inline template using `template`."
+            }
+          ]
+        },
+        {
+          "id": "b97fa212-dca6-2460-b245-817c1713650d",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "An inline template for an Angular component. If provided, do not supply a template file using `templateUrl`."
+            }
+          ]
+        },
+        {
+          "id": "bd1f602a-35b3-2789-0437-a991740b9a92",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "One or more URLs for files containing CSS stylesheets to use in this component."
+            }
+          ]
+        },
+        {
+          "id": "876d1c97-eba7-d2f6-bb7d-2708c7a6d48f",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "One or more inline CSS stylesheets to use in this component."
+            }
+          ]
+        },
+        {
+          "id": "fbbd09f2-398b-ec58-5793-77d1ab0602e7",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "One or more animation `trigger()` calls, containing `state()` and `transition()` definitions."
+            }
+          ]
+        },
+        {
+          "id": "29b29b4a-0132-e44a-d3e1-43d40bb82f75",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "An encapsulation policy for the template and CSS styles. One of:\n- `ViewEncapsulation.Native`: Use shadow roots. This works\nonly if natively available on the platform.\n- `ViewEncapsulation.Emulated`: Use shimmed CSS that\nemulates the native behavior.\n- `ViewEncapsulation.None`: Use global CSS without any\nencapsulation."
+            }
+          ]
+        },
+        {
+          "id": "a29ba29b-16c3-bff1-b0d1-583bf35243a8",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "If not supplied, the value is taken from `CompilerOptions`. The default compiler option is\n`ViewEncapsulation.Emulated`.\n\nIf the policy is set to `ViewEncapsulation.Emulated` and the component has no `styles`\nor `styleUrls` specified, the policy is automatically switched to `ViewEncapsulation.None`."
+            }
+          ]
+        },
+        {
+          "id": "520dfe93-cf57-954c-fc88-f67e94b468fa",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Overrides the default encapsulation start and end delimiters (`{{` and `}}`)"
+            }
+          ]
+        },
+        {
+          "id": "3d466343-8b0a-71ee-64ac-8c75e4d33aa8",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A set of components that should be compiled along with this component. For each component listed here, Angular creates a `ComponentFactory` and stores it in the `ComponentFactoryResolver`."
+            }
+          ]
+        },
+        {
+          "id": "2732ae69-3b2b-9451-a365-d6207bca78e6",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "True to preserve or false to remove potentially superfluous whitespace characters from the compiled template. Whitespace characters are those matching the `\\s` character class in JavaScript regular expressions. Default is false, unless overridden in compiler options."
+            }
+          ]
+        },
+        {
+          "id": "c316c659-b5f8-8c3d-d281-554464bcf009",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@Pipe"
+            }
+          ]
+        },
+        {
+          "id": "2f284d54-56cf-0d20-144f-9cecb1e90a37",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A pipe takes in data as input and transforms it to a desired output."
+            }
+          ]
+        },
+        {
+          "id": "4e6e1a40-c839-3839-081e-9cc39da5541c",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example\n\nHere's a custom pipe that doubles a value:\n\n```typescript\nimport { Pipe, PipeTransform } from '@angular/core';\n\n@Pipe({name: 'double'})\nexport class DoublePipe implements PipeTransform {\n  transform(value: number): number {\n    return value * 2;\n  }\n}\n```\n\nUsage:\n\n```html\n{{ value | double }} \n```"
+            }
+          ]
+        },
+        {
+          "id": "6ae77f0b-34f7-f272-6350-5c365c6efd67",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Options"
+            }
+          ]
+        },
+        {
+          "id": "baec49f3-16ee-3d52-63e5-1cca9bb61a9e",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The pipe name to use in template bindings."
+            }
+          ]
+        },
+        {
+          "id": "d5e28e9c-e446-8721-aee9-634a9afc818f",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "When true, the pipe is pure, meaning that the `transform()` method is invoked only when its input arguments change. Pipes are pure by default."
+            }
+          ]
+        },
+        {
+          "id": "75b9e759-1323-1262-6c6f-fbf51f865e97",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "If the pipe has internal state (that is, the result depends on state other than its arguments), set pure to false. In this case, the pipe is invoked on each change-detection cycle, even if the arguments have not changed."
+            }
+          ]
+        },
+        {
+          "id": "3973b593-270d-e358-aaa1-c9156703c557",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@Injectable"
+            }
+          ]
+        },
+        {
+          "id": "4cd7c6f8-a115-fc3f-5d58-a80bb2c1ecad",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The `@Injectable` decorator identifies services and other classes that are intended to be injected. It can also be used to configure a provider for those services."
+            }
+          ]
+        },
+        {
+          "id": "de13a982-c886-b626-d33a-65dcdb5ff982",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example\n\n```typescript\nimport { Injectable } from '@angular/core';\n\n@Injectable()\nexport class MyService {\n  constructor() { }\n}\n```\n"
+            }
+          ]
+        },
+        {
+          "id": "2db2a12d-6554-5df4-c086-e4709d70cea3",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Options"
+            }
+          ]
+        },
+        {
+          "id": "4080bf2a-da59-acee-0d3b-6d8f8cc1ba23",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Tells Angular that the root injector is responsible for creating an instance of the service (by invoking its constructor) and making it available across the application."
+            }
+          ]
+        },
+        {
+          "id": "9fffb3cb-99e1-c675-a05f-278b79f8f0c2",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Sometimes it's not desirable to have a service always be provided in the application root injector. Perhaps users should explicitly opt-in to using the service, or the service should be provided in a lazily-loaded context. In this case, the provider should be associated with a specific `@NgModule` class, and will be used by whichever injector includes that module."
+            }
+          ]
+        },
+        {
+          "id": "900292c5-9def-5954-06e8-2596beadea36",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Binding decorators"
+            }
+          ]
+        },
+        {
+          "id": "68727825-b753-76d9-9bb7-6149147257f0",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@Input"
+            }
+          ]
+        },
+        {
+          "id": "c255fa7f-5bfe-8d10-6afd-e1c12ba88e8f",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "An Input property is a settable property annotated with an `@Input` decorator. Values flow into the property when it is data bound with a property binding."
+            }
+          ]
+        },
+        {
+          "id": "aeeb0f9b-58da-c90f-50fb-36622179722b",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example\n\n```typescript\n@Input() test: any;\n```\n\nAlternatively, you can identify members in the inputs array of the directive metadata:\n\n```\n@Component({\n  inputs: ['test'],\n})\n```"
+            }
+          ]
+        },
+        {
+          "id": "a9ab06f2-5845-18da-31b8-bb5d00542ab9",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Options"
+            }
+          ]
+        },
+        {
+          "id": "cc633cb2-20c2-4fac-691a-49b90a273657",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You can supply an optional name to use in templates when the\ncomponent is instantiated, that maps to the\nname of the bound property. By default, the original\nname of the bound property is used for input binding."
+            }
+          ]
+        },
+        {
+          "id": "5dc112d5-62fa-547d-28b2-8b7adb8a3092",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The following example creates a component with two input properties,\none of which is given a special binding name.\n\n```typescript\n@Component({\n  selector: 'bank-account',\n  template: `\n    Bank Name: {{bankName}}\n    Account Id: {{id}}\n  `\n})\nclass BankAccount {\n  // This property is bound using its original name.\n  @Input() bankName: string;\n  // this property value is bound to a different property name\n  // when this component is instantiated in a template.\n  @Input('account-id') id: string;\n\n  // this property is not bound, and is not automatically updated by Angular\n  normalizedBankName: string;\n}\n\n@Component({\n  selector: 'app',\n  template: `\n    <bank-account bankName=\"RBC\" account-id=\"4747\"></bank-account>\n  `\n})\nclass App {}\n```"
+            }
+          ]
+        },
+        {
+          "id": "7d021957-e4f7-5186-2325-560939bd6e98",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@Attribute"
+            }
+          ]
+        },
+        {
+          "id": "45f9dd01-83d5-0e4e-f05b-88085e0de53d",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The `@Attribute` decorator returns the value of the specified attribute from the host.\n"
+            }
+          ]
+        },
+        {
+          "id": "d66b7876-d2e4-137d-cc89-a86cb3c6a432",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example\n\n```typescript\nexport class MyComponent {\n  constructor(@Attribute('test') public test: string) { }\n}\n```\n\nWill read value from declaration:\n\n```html\n<my-component test=\"hello\"></my-component>\n```"
+            }
+          ]
+        },
+        {
+          "id": "073cb29b-1faf-9f46-4f0f-7947c9e17e38",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Getting to Know the @Attribute Decorator in Angular"
+            }
+          ]
+        },
+        {
+          "id": "e4dee99d-9932-14c4-5f57-98771a9a4d07",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Options"
+            }
+          ]
+        },
+        {
+          "id": "52be0e55-8a08-e768-12dc-41b99c46a877",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@Output"
+            }
+          ]
+        },
+        {
+          "id": "735c7919-56d6-3216-9a74-c4493637d42b",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "An Output property is an observable property annotated with an `@Output` decorator. The property almost always returns an Angular `EventEmitter`. Values flow out of the component as events bound with an event binding."
+            }
+          ]
+        },
+        {
+          "id": "18afa1bc-e8eb-401a-49b7-95b12feb213c",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example\n\n```typescript\n@Output() testEvent = new EventEmitter<any>();\n```\n\nAlternatively, you can identify members in the outputs array of the directive metadata, as in this example:\n\n```typescript\n@Component({\n  outputs: ['testEvent'],\n})\n```"
+            }
+          ]
+        },
+        {
+          "id": "874a7bb2-b814-6dc0-72c8-982dff26db43",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Options"
+            }
+          ]
+        },
+        {
+          "id": "43e95e27-798f-23ce-de02-e417e89a10f1",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You can supply an optional name to use in templates when the\ncomponent is instantiated, that maps to the\nname of the bound property. By default, the original\nname of the bound property is used for output binding."
+            }
+          ]
+        },
+        {
+          "id": "3ccd7fe0-6541-a34c-ea66-88182da5e88b",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The following example creates a component with two output properties,\none of which is given a special binding name.\n\n```typescript\n@Component({\n  selector: 'output-test',\n  ...\n})\nclass BankAccount {\n  // This property is bound using its original name.\n  @Output() test = new EventEmitter();\n  // this property value is bound to a different property name\n  // when this component is instantiated in a template.\n  @Input('test-2') test2 = new EventEmitter();\n}\n\n@Component({\n  selector: 'app',\n  template: `\n    <output-test (test)=\"...\" (test-2)=\"...\"></output-test>\n  `\n})\nclass App {}\n```"
+            }
+          ]
+        },
+        {
+          "id": "b5f7f217-b733-0cfc-3eec-ea3c0461b871",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@HostBinding"
+            }
+          ]
+        },
+        {
+          "id": "9a387c5e-aa92-fea1-126e-db86afb8228a",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Binds a host element property to a directive/component property."
+            }
+          ]
+        },
+        {
+          "id": "49320240-25c4-5fb2-e482-86c18cc12294",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example"
+            }
+          ]
+        },
+        {
+          "id": "09e23a83-4052-c95d-83e5-8d9e8f736f13",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nexport class MyComponent {\n  @HostBinding('class.valid') isValid;\n}\n```\n\nOr use getter for binding:\n\n```typescript\nexport class MyComponent {\n  @HostBinding('class.error') get isError() {\n    ...\n  }\n}\n```\n"
+            }
+          ]
+        },
+        {
+          "id": "4af0ebd9-7c98-b30b-bfc7-e50e505c850d",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Using @HostBinding and @HostListener in Custom Angular Directives"
+            }
+          ]
+        },
+        {
+          "id": "0efc485b-cfeb-63d5-2d41-0b169168571e",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@HostListener"
+            }
+          ]
+        },
+        {
+          "id": "51f2f755-2ff7-32a1-79e8-fbd1bc029a9b",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Binds a CSS event to a host listener and supplies configuration metadata. Angular invokes the supplied handler method when the host element emits the specified event, and updates the bound element with the result. \n\nIf the handler method returns false, applies `preventDefault` on the bound element."
+            }
+          ]
+        },
+        {
+          "id": "23251ea3-5bd7-5d27-89fd-f21afed1dd74",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example"
+            }
+          ]
+        },
+        {
+          "id": "190c5d0d-b39a-2f41-3b96-764f8e2d2f53",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@Directive({selector: 'button[counting]'})\nclass CountClicks {\n  numberOfClicks = 0;\n \n  @HostListener('click', ['$event.target'])\n  onClick(btn) {\n    console.log('button', btn, 'number of clicks:', this.numberOfClicks++);\n }\n}\n \n@Component({\n  selector: 'app',\n  template: '<button counting>Increment</button>',\n})\nclass App {}\n```"
+            }
+          ]
+        },
+        {
+          "id": "91ffbf27-02bf-1fac-7bda-50fbfbd2c5a1",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The following example declares a directive that attaches a click listener to a button and counts clicks."
+            }
+          ]
+        },
+        {
+          "id": "83f532c2-5c0e-e007-dcc7-596a4e84f3ac",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Options"
+            }
+          ]
+        },
+        {
+          "id": "2bc69303-4bdb-ef8a-3549-521d6f1d631d",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The JavaScript event to listen for."
+            }
+          ]
+        },
+        {
+          "id": "afe35d26-79e2-5d0e-7b68-a843d45bb082",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A set of arguments to pass to the handler method when the event occurs."
+            }
+          ]
+        },
+        {
+          "id": "2b42ec06-da60-fbf5-f3de-ca9359099f32",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Using @HostBinding and @HostListener in Custom Angular Directives"
+            }
+          ]
+        },
+        {
+          "id": "0d1ac98a-3d31-a6bd-b30b-ffd709c2279b",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Query Decorators"
+            }
+          ]
+        },
+        {
+          "id": "49a157cf-b6f4-8c41-9eb6-38cf4db6ce47",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@ContentChildren"
+            }
+          ]
+        },
+        {
+          "id": "d40b0976-0aae-67ff-30d9-4bda398237e3",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You can use `ContentChildren` to get the `QueryList` of elements or directives from the content DOM. Any time a child element is added, removed, or moved, the query list will be updated, and the changes observable of the query list will emit a new value.\n\nContent queries are set before the `ngAfterContentInit` callback is called.\n"
+            }
+          ]
+        },
+        {
+          "id": "c22b0ea9-5c1f-c3c4-5eb7-4376eda2d202",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Options"
+            }
+          ]
+        },
+        {
+          "id": "cc89659b-b712-de57-a8dc-b0a1d6cc90f2",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The directive type or the name used for querying."
+            }
+          ]
+        },
+        {
+          "id": "ccf601e1-38bd-2b81-4a24-3815541668d4",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Additional options.\n"
+            }
+          ]
+        },
+        {
+          "id": "0291a474-9653-5bdf-77f0-17b04a5b62c6",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "* `descendants` - include only direct children or all descendants.\n* `read` - read a different token from the queried elements."
+            }
+          ]
+        },
+        {
+          "id": "c3376eef-fd02-ff0e-14a0-37f8d4b1948e",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example"
+            }
+          ]
+        },
+        {
+          "id": "67f70ef7-dd47-47ac-3bd4-689ab6a19286",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Here is a simple demonstration of how the ContentChildren decorator can be used."
+            }
+          ]
+        },
+        {
+          "id": "64929deb-43d0-646b-e384-10e616ee069c",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nimport {AfterContentInit, ContentChildren, Directive, QueryList} from '@angular/core';\n \n@Directive({selector: 'child-directive'})\nclass ChildDirective {\n}\n \n@Directive({selector: 'someDir'})\nclass SomeDir implements AfterContentInit {\n  @ContentChildren(ChildDirective) contentChildren: QueryList<ChildDirective>;\n \n  ngAfterContentInit() {\n    // contentChildren is set\n  }\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "819295fd-496d-38d7-0b39-2f6f109c5c9f",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Understanding ViewChildren, ContentChildren, and QueryList in Angular"
+            }
+          ]
+        },
+        {
+          "id": "4a5915b8-3af2-b143-b594-26542a3d129f",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@ContentChild"
+            }
+          ]
+        },
+        {
+          "id": "b3447cbe-addf-0db5-ef24-f5251e730aa1",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You can use `ContentChild` to get the first element or the directive matching the selector from the content DOM. If the content DOM changes, and a new child matches the selector, the property will be updated.\n\nContent queries are set before the `ngAfterContentInit` callback is called.\n"
+            }
+          ]
+        },
+        {
+          "id": "8af6b0b0-1546-ced6-752e-b9c363ff9823",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example"
+            }
+          ]
+        },
+        {
+          "id": "afb7946f-40d4-23ba-e6c2-7205d5f0bfec",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nimport {AfterContentInit, ContentChild, Directive} from '@angular/core';\n \n@Directive({selector: 'child-directive'})\nclass ChildDirective {\n}\n \n@Directive({selector: 'someDir'})\nclass SomeDir implements AfterContentInit {\n  @ContentChild(ChildDirective) contentChild: ChildDirective;\n \n  ngAfterContentInit() {\n    // contentChild is set\n  }\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "cff5f7b3-24ef-c200-9890-0a2aad0952de",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Options"
+            }
+          ]
+        },
+        {
+          "id": "eb234c55-2b55-0764-dc7e-3aa71c5906b5",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The directive type or the name used for querying."
+            }
+          ]
+        },
+        {
+          "id": "620b9331-874e-55f1-4875-4a251de25cd6",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Additional options.\n"
+            }
+          ]
+        },
+        {
+          "id": "a2689495-2d19-a5c5-2979-9d690ccb1b84",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "* `read` - read a different token from the queried element."
+            }
+          ]
+        },
+        {
+          "id": "8ef871ca-9743-66a4-977e-acb61fa8c16e",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Understanding ViewChildren, ContentChildren, and QueryList in Angular"
+            }
+          ]
+        },
+        {
+          "id": "5128cac6-725f-ea01-c6b0-09b1b0fb7daf",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@ViewChildren"
+            }
+          ]
+        },
+        {
+          "id": "0cde8a47-6b52-cc5d-3445-3b9a4f2522f5",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You can use `ViewChildren` to get the `QueryList` of elements or directives from the view DOM. Any time a child element is added, removed, or moved, the query list will be updated, and the changes observable of the query list will emit a new value.\n\nView queries are set before the `ngAfterViewInit` callback is called."
+            }
+          ]
+        },
+        {
+          "id": "d5d9a441-38e7-4b0d-8896-ed802ffb9506",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example"
+            }
+          ]
+        },
+        {
+          "id": "22f77c33-adfc-fbfa-ebf1-984eb7b3a378",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nimport {AfterViewInit, Component, Directive, QueryList, ViewChildren} from '@angular/core';\n \n@Directive({selector: 'child-directive'})\nclass ChildDirective {\n}\n \n@Component({selector: 'someCmp', templateUrl: 'someCmp.html'})\nclass SomeCmp implements AfterViewInit {\n  @ViewChildren(ChildDirective) viewChildren: QueryList<ChildDirective>;\n \n  ngAfterViewInit() {\n    // viewChildren is set\n  }\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "6189e9c7-6e9c-9dbc-cb35-06ec8fe4500c",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Options\n"
+            }
+          ]
+        },
+        {
+          "id": "4f8e9f04-dddf-c558-a213-37d6ca0ed03a",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The directive type or the name used for querying."
+            }
+          ]
+        },
+        {
+          "id": "17275b21-9d74-b3b8-dd67-7be6f052f744",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Additional options"
+            }
+          ]
+        },
+        {
+          "id": "d6505a15-451d-505d-ce4a-88495e5b02d4",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "* `read` - read a different token from the queried elements."
+            }
+          ]
+        },
+        {
+          "id": "239ff28d-a3c0-1cce-91a8-51ce9f8535f4",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@ViewChild"
+            }
+          ]
+        },
+        {
+          "id": "21ea7298-eeb3-f2e5-1a6b-46a628752867",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Property decorator that configures a view query. The change detector looks for the first element or the directive matching the selector in the view DOM. If the view DOM changes, and a new child matches the selector, the property is updated.\n\nView queries are set before the ngAfterViewInit callback is called."
+            }
+          ]
+        },
+        {
+          "id": "f5109c86-df26-584f-1b71-e48738abd46a",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example"
+            }
+          ]
+        },
+        {
+          "id": "08669460-4201-5e12-7db1-254295c16aa3",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nimport {AfterViewInit, Component, Directive, ViewChild} from '@angular/core';\n \n@Directive({selector: 'child-directive'})\nclass ChildDirective {\n}\n \n@Component({selector: 'someCmp', templateUrl: 'someCmp.html'})\nclass SomeCmp implements AfterViewInit {\n  @ViewChild(ChildDirective) child: ChildDirective;\n \n  ngAfterViewInit() {\n    // child is set\n  }\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "756882ca-11d2-bf80-9e2f-1b12dfb771e6",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Options"
+            }
+          ]
+        },
+        {
+          "id": "0643d45b-58f8-3e85-af5e-00dc82d1e457",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The directive type or the name used for querying."
+            }
+          ]
+        },
+        {
+          "id": "e0bb2562-623e-03d4-8f45-1aa3752f0482",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Supported selectors include:\n\n* any class with the `@Component` or `@Directive` decorator\n* a template reference variable as a string (e.g. query `<my-component #cmp></my-component>` with `@ViewChild('cmp')`)\n* any provider defined in the child component tree of the current component (e.g. `@ViewChild(SomeService) someService: SomeService`)\n* any provider defined through a string token (e.g. `@ViewChild('someToken') someTokenVal: any`)\n* a `TemplateRef` (e.g. query `<ng-template></ng-template>` with `@ViewChild(TemplateRef) template;`)"
+            }
+          ]
+        },
+        {
+          "id": "ce460b4a-c3d6-cc5f-92c3-2ff37567fad0",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Additional options."
+            }
+          ]
+        },
+        {
+          "id": "26b2fcac-f325-12c1-e3ce-fd780d947f2f",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "* `read` - read a different token from the queried elements."
+            }
+          ]
+        },
+        {
+          "id": "39d8c108-81d6-1900-0247-681591ae8d77",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Supported selectors include:\n\n* any class with the `@Component` or `@Directive` decorator\n* a template reference variable as a string (e.g. query `<my-component #cmp></my-component>` with `@ViewChild('cmp')`)\n* any provider defined in the child component tree of the current component (e.g. `@ViewChild(SomeService) someService: SomeService`)\n* any provider defined through a string token (e.g. `@ViewChild('someToken') someTokenVal: any`)\n* a `TemplateRef` (e.g. query `<ng-template></ng-template>` with `@ViewChild(TemplateRef) template;`)"
+            }
+          ]
+        },
+        {
+          "id": "c4985f36-9cc1-e163-8a67-492c2c37333a",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Supported selectors include:\n\n* any class with the `@Component` or `@Directive` decorator\n* a template reference variable as a string (e.g. query `<my-component #cmp></my-component>` with `@ViewChild('cmp')`)\n* any provider defined in the child component tree of the current component (e.g. `@ViewChild(SomeService) someService: SomeService`)\n* any provider defined through a string token (e.g. `@ViewChild('someToken') someTokenVal: any`)\n* a `TemplateRef` (e.g. query `<ng-template></ng-template>` with `@ViewChild(TemplateRef) template;`)"
+            }
+          ]
+        },
+        {
+          "id": "cf3a3e1a-867e-5d06-1f17-42cf9b08a7cf",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Supported selectors include:\n\n* any class with the `@Component` or `@Directive` decorator\n* a template reference variable as a string (e.g. query `<my-component #cmp></my-component>` with `@ViewChild('cmp')`)\n* any provider defined in the child component tree of the current component (e.g. `@ViewChild(SomeService) someService: SomeService`)\n* any provider defined through a string token (e.g. `@ViewChild('someToken') someTokenVal: any`)\n* a `TemplateRef` (e.g. query `<ng-template></ng-template>` with `@ViewChild(TemplateRef) template;`)"
+            }
+          ]
+        },
+        {
+          "id": "27c6ccab-2b63-ad34-f356-44581d651ff5",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Understanding ViewChildren, ContentChildren, and QueryList in Angular"
+            }
+          ]
+        },
+        {
+          "id": "5bc1803e-c4f0-b790-2a81-f2f03ae11762",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ngOnInit()"
+            }
+          ]
+        },
+        {
+          "id": "8b5bf11f-136a-5e90-184f-98a40e7603b7",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A callback method that is invoked immediately after the default change detector has checked the directive's data-bound properties for the first time, and before any of the view or content children have been checked. It is invoked only once when the directive is instantiated."
+            }
+          ]
+        },
+        {
+          "id": "25500eea-ce95-2007-13d4-e926c620815c",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example"
+            }
+          ]
+        },
+        {
+          "id": "aaa0b310-91fe-8aca-cd27-8579b2ce6f96",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The following snippet shows how a component can implement this interface to define its own initialization method."
+            }
+          ]
+        },
+        {
+          "id": "8a572c15-1139-802b-e365-92f3e821ae5a",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@Component({selector: 'my-cmp', template: `...`})\nclass MyComponent implements OnInit {\n  ngOnInit() {\n    // ...\n  }\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "649396d8-5f29-b824-b634-f87806b2ee20",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ngOnChanges()"
+            }
+          ]
+        },
+        {
+          "id": "ea846e80-eb9c-8744-04b6-a779d3909d77",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A callback method that is invoked immediately after the default change detector has checked data-bound properties if at least one has changed, and before the view and content children are checked."
+            }
+          ]
+        },
+        {
+          "id": "a9456a71-f53a-9ff9-c6d0-dd7e9737d437",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nngOnChanges(changes: SimpleChanges): void\n```"
+            }
+          ]
+        },
+        {
+          "id": "6789a9b5-0d30-174c-40fc-ab2c1f3787fb",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example"
+            }
+          ]
+        },
+        {
+          "id": "348eebf5-9f26-4977-eb6b-adf1fb6eb8af",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The following snippet shows how a component can implement this interface to define an on-changes handler for an input property."
+            }
+          ]
+        },
+        {
+          "id": "f822dea2-f71a-dc26-578f-7f7a9d6c0381",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@Component({selector: 'my-cmp', template: `...`})\nclass MyComponent implements OnChanges {\n  @Input() prop: number;\n\n  ngOnChanges(changes: SimpleChanges) {\n    // changes.prop contains the old and the new value...\n  }\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "330b8ded-a513-dc0e-52db-2195b10de7be",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nngOnInit(): void\n```"
+            }
+          ]
+        },
+        {
+          "id": "7b639d96-fcc4-0e70-e6de-3e157bb6c54e",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nngOnInit(): void\n```"
+            }
+          ]
+        },
+        {
+          "id": "9efde354-76aa-da6d-6f4d-78974474441c",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ngDoCheck()"
+            }
+          ]
+        },
+        {
+          "id": "26c2a028-7608-0218-a321-104bb74526cc",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A callback method that performs change-detection, invoked after the default change-detector runs.\n\nThe default change-detection algorithm looks for differences by comparing bound-property values by reference across change detection runs. You can use this hook to check for and respond to changes by some other means.\n\nWhen the default change detector detects changes, it invokes `ngOnChanges()` if supplied, regardless of whether you perform additional change detection. Typically, you should not use both `DoCheck` and `OnChanges` to respond to changes on the same input."
+            }
+          ]
+        },
+        {
+          "id": "baadb4b9-64d7-fcd8-b1a0-f8a6a980de18",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nngDoCheck(): void\n```"
+            }
+          ]
+        },
+        {
+          "id": "8ee21488-c436-bf07-5d04-fad53649e4f8",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example"
+            }
+          ]
+        },
+        {
+          "id": "ee2fcc47-1c55-dcf9-e334-85bf8001767b",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The following snippet shows how a component can implement this interface to invoke it own change-detection cycle."
+            }
+          ]
+        },
+        {
+          "id": "d47a8cb0-e00f-7d54-fa88-27bcc7f4dcfb",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@Component({selector: 'my-cmp', template: `...`})\nclass MyComponent implements DoCheck {\n  ngDoCheck() {\n    // ...\n  }\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "efcfa3a5-f750-afa3-f8d4-e3420a2540a5",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ngOnDestroy()"
+            }
+          ]
+        },
+        {
+          "id": "fabff49e-640e-56ca-2ee0-9c520151b2c3",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A callback method that performs custom clean-up, invoked immediately after a **directive**, **pipe**, or **service** instance is destroyed."
+            }
+          ]
+        },
+        {
+          "id": "f126e079-9267-14fb-f107-d68e37c4f2ac",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nngOnDestroy(): void\n```"
+            }
+          ]
+        },
+        {
+          "id": "7c63bd14-9fec-c90d-2e25-9b494726af5e",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example"
+            }
+          ]
+        },
+        {
+          "id": "b501a6cc-8fa8-1e93-306d-e7a1a9316abd",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The following snippet shows how a component can implement this interface to define its own custom clean-up method."
+            }
+          ]
+        },
+        {
+          "id": "e8d04219-e961-101d-44af-e56368bda26d",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@Component({selector: 'my-cmp', template: `...`})\nclass MyComponent implements OnDestroy {\n  ngOnDestroy() {\n    // ...\n  }\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "57ecc64c-2ddb-83cc-eacf-faae7b608755",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ngAfterContentInit()"
+            }
+          ]
+        },
+        {
+          "id": "e0117457-b23a-578c-8018-06a1b79eaf71",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A callback method that is invoked immediately after Angular has completed initialization of all of the directive's content. It is invoked only once when the directive is instantiated."
+            }
+          ]
+        },
+        {
+          "id": "47a176d9-846b-79f8-1a38-b1a1064ccbde",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nngAfterContentInit(): void\n```"
+            }
+          ]
+        },
+        {
+          "id": "b3e331d1-ae63-64ea-a33c-4f3c319d65a6",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example"
+            }
+          ]
+        },
+        {
+          "id": "8aaa3a3f-d438-3890-c3b8-bbea6ce28ad2",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The following snippet shows how a component can implement this interface to define its own content initialization method."
+            }
+          ]
+        },
+        {
+          "id": "24a4181b-1430-5d91-25b1-f7f675315668",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@Component({selector: 'my-cmp', template: `...`})\nclass MyComponent implements AfterContentInit {\n  ngAfterContentInit() {\n    // ...\n  }\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "884ac84d-c10e-e49a-2465-bda492bdc56f",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ngAfterContentChecked()"
+            }
+          ]
+        },
+        {
+          "id": "b3ee8679-b40c-3e23-aa73-5c1d09ec8290",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A callback method that is invoked immediately after the default change detector has completed checking all of the directive's content."
+            }
+          ]
+        },
+        {
+          "id": "531d3175-2b34-cefa-3340-5eae9d4fdcd2",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nngAfterContentChecked(): void\n```"
+            }
+          ]
+        },
+        {
+          "id": "2c091493-8ae3-6201-80be-4b281705fda7",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example"
+            }
+          ]
+        },
+        {
+          "id": "509b0953-fa73-762b-08d6-59b14164d969",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The following snippet shows how a component can implement this interface to define its own after-check functionality."
+            }
+          ]
+        },
+        {
+          "id": "ab9869ed-b6eb-055a-3d34-dc6dcf9b053e",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@Component({selector: 'my-cmp', template: `...`})\nclass MyComponent implements AfterContentChecked {\n  ngAfterContentChecked() {\n    // ...\n  }\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "66938566-7106-b248-8fa0-e3b4046202c2",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ngAfterViewInit()"
+            }
+          ]
+        },
+        {
+          "id": "f3e98a8a-cb72-d6f2-676c-69cd9ba7dee3",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A callback method that is invoked immediately after Angular has completed initialization of a component's view. It is invoked only once when the view is instantiated."
+            }
+          ]
+        },
+        {
+          "id": "fcc6bdfe-5aca-49e8-9c47-f6d3326829d8",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nngAfterViewInit(): void\n```"
+            }
+          ]
+        },
+        {
+          "id": "4eabd8a8-8769-2bae-0032-5c71a0968d13",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example"
+            }
+          ]
+        },
+        {
+          "id": "cd745a6f-b02c-988f-25de-04e4d15b5579",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The following snippet shows how a component can implement this interface to define its own view initialization method."
+            }
+          ]
+        },
+        {
+          "id": "69e1c75b-8f3d-451c-d3ff-859ad6f7a240",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@Component({selector: 'my-cmp', template: `...`})\nclass MyComponent implements AfterViewInit {\n  ngAfterViewInit() {\n    // ...\n  }\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "9d1b0bc2-9e7f-ea34-e1b7-b6837b4b6e3a",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ngAfterViewChecked()"
+            }
+          ]
+        },
+        {
+          "id": "c1facddf-e747-9961-3a67-cc9fa2169fbf",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A callback method that is invoked immediately after the default change detector has completed one change-check cycle for a component's view."
+            }
+          ]
+        },
+        {
+          "id": "1322dbe3-6463-8b26-2786-388eb627593c",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nngAfterViewChecked(): void\n```"
+            }
+          ]
+        },
+        {
+          "id": "f8b12509-ce9b-9761-664f-acca0557cd64",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example"
+            }
+          ]
+        },
+        {
+          "id": "28254ca6-b8d0-dd93-ccea-a0c31e15d5a5",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The following snippet shows how a component can implement this interface to define its own after-check functionality."
+            }
+          ]
+        },
+        {
+          "id": "4194801a-8262-bd5a-ce8a-d1bd351e9dc7",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@Component({selector: 'my-cmp', template: `...`})\nclass MyComponent implements AfterViewChecked {\n  ngAfterViewChecked() {\n    // ...\n  }\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "de1b582b-b4a9-b7fc-abc9-f02517815671",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Lifecycle Hooks"
+            }
+          ]
+        },
+        {
+          "id": "6c461429-3c9f-b310-961b-de45691b684c",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A component has a lifecycle managed by Angular.\n\nAngular creates it, renders it, creates and renders its children, checks it when its data-bound properties change, and destroys it before removing it from the DOM.\n\nAngular offers lifecycle hooks that provide visibility into these key life moments and the ability to act when they occur.\n\nA directive has the same set of lifecycle hooks."
+            }
+          ]
+        },
+        {
+          "id": "faea2840-74d7-18d4-75c5-d5728185f8a7",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular — Lifecycle Hooks"
+            }
+          ]
+        },
+        {
+          "id": "fdabe440-b102-62fb-a2fc-cba66bacc665",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "InjectionToken"
+            }
+          ]
+        },
+        {
+          "id": "ed93f724-47ce-adde-b50d-621df93793b4",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Use an `InjectionToken` whenever the type you are injecting is not reified (does not have a runtime representation) such as when injecting an interface, callable type, array or parametrized type.\n\n`InjectionToken` is parameterized on `T` which is the type of object which will be returned by the `Injector`. This provides additional level of type safety.\n\n```typescript\ninterface MyInterface {...}\nvar myInterface = injector.get(new InjectionToken<MyInterface>('SomeToken'));\n// myInterface is inferred to be MyInterface.\n```"
+            }
+          ]
+        },
+        {
+          "id": "127f6cce-edaa-bb96-3427-91fc8a82fcc1",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nconstructor(_desc: string, options?: {\n    providedIn?: Type<any> | 'root' | null;\n    factory: () => T;\n})\n```"
+            }
+          ]
+        },
+        {
+          "id": "cb734ee9-2e68-6a82-099e-ccd2a2869209",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Constructor"
+            }
+          ]
+        },
+        {
+          "id": "7498d095-acfa-adf4-c168-b64e9b0fb750",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "* `_desc` — Type: string.\n* `options` — Type: { providedIn?: Type | 'root' | null; factory: () => T; }. Optional. Default is undefined."
+            }
+          ]
+        },
+        {
+          "id": "bcbf7b38-587e-3fdb-353d-a56b5e00729a",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example"
+            }
+          ]
+        },
+        {
+          "id": "43d3252a-c0a3-ae3f-b5bb-7131b1d4047e",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Plain `InjectionToken`:\n\n```typescipt\nconst BASE_URL = new InjectionToken<string>('BaseUrl');\nconst injector =\n    Injector.create({providers: [{provide: BASE_URL, useValue: 'http://localhost'}]});\nconst url = injector.get(BASE_URL);\n// here `url` is inferred to be `string` because `BASE_URL` is `InjectionToken<string>`.\nexpect(url).toBe('http://localhost');\n```"
+            }
+          ]
+        },
+        {
+          "id": "222ce5b8-75ea-d8fc-76b6-babd8af15229",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Tree-shakable `InjectionToken`:\n\n```typescript\nclass MyService {\n  constructor(readonly myDep: MyDep) {}\n}\n \nconst MY_SERVICE_TOKEN = new InjectionToken<MyService>('Manually constructed MyService', {\n  providedIn: 'root',\n  factory: () => new MyService(inject(MyDep)),\n});\n \nconst instance = injector.get(MY_SERVICE_TOKEN);\nexpect(instance instanceof MyService).toBeTruthy();\nexpect(instance.myDep instanceof MyDep).toBeTruthy();\n```"
+            }
+          ]
+        },
+        {
+          "id": "904d134d-ae4b-4a15-19d9-2efcbe4b1a87",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Costructor parameters"
+            }
+          ]
+        },
+        {
+          "id": "76dc60f7-95f8-7d1a-1c94-005b76503ba7",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Description."
+            }
+          ]
+        },
+        {
+          "id": "1be5f75b-74b4-553b-2841-db29e2af7095",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Additional options."
+            }
+          ]
+        },
+        {
+          "id": "8c0cd5a6-c39c-ab0d-51a6-85ddaf657530",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "When creating an `InjectionToken`, you can optionally specify a factory function which returns (possibly by creating) a default value of the parameterized type `T`. This sets up the `InjectionToken` using this factory as a provider as if it was defined explicitly in the application's root injector. If the factory function, which takes zero arguments, needs to inject dependencies, it can do so using the inject function. See below for an example.\n\nAdditionally, if a factory is specified you can also specify the providedIn option, which overrides the above behavior and marks the token as belonging to a particular `@NgModule`. As mentioned above, 'root' is the default value for `providedIn`."
+            }
+          ]
+        },
+        {
+          "id": "0a41014b-48c3-4983-1ede-cf34a0026b43",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Dependency Injection"
+            }
+          ]
+        },
+        {
+          "id": "116acdf4-d07e-6f3b-0e7b-73ec4ab78a04",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Dependency Injection (DI) is a way to create objects that depend upon other objects. A Dependency Injection system supplies the dependent objects (called the dependencies) when it creates an instance of an object."
+            }
+          ]
+        },
+        {
+          "id": "e773879a-5615-0654-c0be-c1908ba78fec",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular Dependency Injection"
+            }
+          ]
+        },
+        {
+          "id": "b7e009ab-e5ff-a076-2d5a-f6a91d5bdf7a",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The Dependency Injection pattern"
+            }
+          ]
+        },
+        {
+          "id": "db00dd01-ae04-e751-42df-fdd23c486c85",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular — Hierarchical Dependency Injectors"
+            }
+          ]
+        },
+        {
+          "id": "91c398d5-c6da-8e05-340b-2cbbbecf1477",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular — DI in Action"
+            }
+          ]
+        },
+        {
+          "id": "d83341b5-20c4-2fce-75a0-286b6650f530",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ChangeDetectorRef\n"
+            }
+          ]
+        },
+        {
+          "id": "7742ff92-a2ae-5ea7-91db-b3befef1767e",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Base class for Angular Views, provides change detection functionality.\nA change-detection tree collects all views that are to be checked for changes.\nUse the methods to add and remove views from the tree, initiate change-detection,\nand explicitly mark views as `_dirty_`, meaning that they have changed and need to be rerendered."
+            }
+          ]
+        },
+        {
+          "id": "44def6f0-2190-807c-3c67-a5a443790e2a",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Everything you need to know about change detection in Angular"
+            }
+          ]
+        },
+        {
+          "id": "d22ad736-39ca-39b8-6dde-8fd29399292f",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example"
+            }
+          ]
+        },
+        {
+          "id": "6b8c5bab-25d4-afab-df08-d4b084211fb4",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Manual change detection run:\n\n```typescript\nexport class MyComponent {\n  constructor(private cdr: ChangeDetectorRef) {\n  }\n\n  runManual() {\n    this.cdr.detectChanges();\n  }\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "e74c8e9b-241d-11d6-a714-a58653b63534",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Methods"
+            }
+          ]
+        },
+        {
+          "id": "858f37b6-3cbc-64cf-592d-bbeb9265dfa4",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "When a view uses the `OnPush` (checkOnce) change detection strategy, explicitly marks the view as changed so that it can be checked again."
+            }
+          ]
+        },
+        {
+          "id": "1f0e4c40-0a6b-746e-3891-ff31a57844ec",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Components are normally marked as dirty (in need of rerendering) when inputs have changed or events have fired in the view. Call this method to ensure that a component is checked even if these triggers have not occured."
+            }
+          ]
+        },
+        {
+          "id": "f3522249-2675-21ec-237f-49083f4547bf",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Detaches this view from the change-detection tree. A detached view is not checked until it is reattached. Use in combination with `detectChanges()` to implement local change detection checks."
+            }
+          ]
+        },
+        {
+          "id": "347e62d0-b624-1e4d-047f-0cd2fda67771",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Detached views are not checked during change detection runs until they are re-attached, even if they are marked as dirty."
+            }
+          ]
+        },
+        {
+          "id": "ea19a062-20c6-e9ca-51ff-e520dbe94869",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Checks this view and its children. Use in combination with detach to implement local change detection checks."
+            }
+          ]
+        },
+        {
+          "id": "fa22cd26-5cbf-f3e2-7a66-fc1dd938a838",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Checks the change detector and its children, and throws if any changes are detected."
+            }
+          ]
+        },
+        {
+          "id": "7fca4032-630a-111e-3d8c-eac905ed3dc0",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Use in development mode to verify that running change detection doesn't introduce other changes."
+            }
+          ]
+        },
+        {
+          "id": "6b94dcd3-d933-d9ea-c788-317b803cd749",
+          "context": "Command param entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Re-attaches the previously detached view to the change detection tree. Views are attached to the tree by default."
+            }
+          ]
+        },
+        {
+          "id": "055a49e8-438d-2fc8-2a25-2395cc81d7b7",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Understanding Change Detection Strategy in Angular"
+            }
+          ]
+        },
+        {
+          "id": "08a4c739-a75f-09f9-65bc-8cff8160785b",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Everything you need to know about change detection in Angular"
+            }
+          ]
+        },
+        {
+          "id": "8408734b-ec18-4656-d9a5-3e6d791bc342",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "forwardRef"
+            }
+          ]
+        },
+        {
+          "id": "d089dd2a-8d58-7377-4262-c39674ff7cc9",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "For instance, `forwardRef` is used when the token which we need to refer to for the purposes of DI is declared, but not yet defined. It is also used when the token which we use when creating a query is not yet defined."
+            }
+          ]
+        },
+        {
+          "id": "a9a7761e-b30c-91a5-4c47-dd74379ec686",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nforwardRef(forwardRefFn: ForwardRefFn): Type<any>\n```"
+            }
+          ]
+        },
+        {
+          "id": "df58afee-1c65-2f2d-a853-d41bfa444c3e",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example"
+            }
+          ]
+        },
+        {
+          "id": "1053b6b9-b616-478c-daf5-60e9738bdcd2",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nclass Door {\n  lock: Lock;\n \n  // Door attempts to inject Lock, despite it not being defined yet.\n  // forwardRef makes this possible.\n  constructor(@Inject(forwardRef(() => Lock)) lock: Lock) { this.lock = lock; }\n}\n \n// Only at this point Lock is defined.\nclass Lock {}\n \nconst injector = ReflectiveInjector.resolveAndCreate([Door, Lock]);\nconst door = injector.get(Door);\nexpect(door instanceof Door).toBeTruthy();\nexpect(door.lock instanceof Lock).toBeTruthy();\n```"
+            }
+          ]
+        },
+        {
+          "id": "2633dad6-68de-0c44-a327-d808259d182c",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Providers"
+            }
+          ]
+        },
+        {
+          "id": "4be4c7a6-c7af-a386-ac76-cf26816e66f1",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "useClass"
+            }
+          ]
+        },
+        {
+          "id": "d2ab75e9-51e1-325d-e9fb-9642ecaebf06",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "useExisting"
+            }
+          ]
+        },
+        {
+          "id": "36ff0a45-4dba-e4fe-3034-7d0f3f4e04ad",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "useFactory"
+            }
+          ]
+        },
+        {
+          "id": "7c18aedf-6d80-ded8-5d9f-08bb959ac4f4",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "useValue"
+            }
+          ]
+        },
+        {
+          "id": "3e865dd8-34f2-a873-a541-b065c98d1f60",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Differs"
             }
           ]
         }

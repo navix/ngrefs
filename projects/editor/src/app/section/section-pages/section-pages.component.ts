@@ -28,7 +28,9 @@ export class SectionPagesComponent implements OnInit {
   }
 
   remove(index: number) {
-    this.pages.splice(index, 1);
+    if (confirm('Remove the page?')) {
+      this.pages.splice(index, 1);
+    }
   }
 
   moveUp(index: number) {
