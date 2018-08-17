@@ -1,0 +1,41 @@
+<form uiForm
+      #ngForm="ngForm"
+      class="layout-aligned">
+  <ui-form-field label="Name">
+    <input [(ngModel)]="entry.name"
+           (ngModelChange)="entry.head = {text: $event}"
+           (ngModelChange)="entry.headId = $event"
+           uiText
+           name="name"
+           required>
+    <span *kitFormError="'required'">Field is required</span>
+  </ui-form-field>
+
+  <ui-form-field label="Interface">
+    <input [(ngModel)]="entry.interface"
+           uiText
+           name="interface">
+  </ui-form-field>
+
+  <ui-form-field label="Description">
+    <app-message [(ngModel)]="entry.description"
+                 name="description"
+                 context="Interface option entry description">
+    </app-message>
+  </ui-form-field>
+
+  <ui-form-field label="Show additional info">
+    <input [(ngModel)]="entry.showAdditional"
+           uiCheckbox
+           type="checkbox"
+           name="showAdditional">
+  </ui-form-field>
+
+  <ui-form-field *ngIf="entry.showAdditional"
+                 label="Additional info">
+    <app-message [(ngModel)]="entry.additional"
+                 name="additional"
+                 context="Interface option entry additional info">
+    </app-message>
+  </ui-form-field>
+</form>

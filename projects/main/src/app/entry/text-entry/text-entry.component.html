@@ -1,1 +1,7 @@
+<h2 *ngIf="entry.headId"
+    [id]="entry.headId">
+  {{ entry.head | msg }}
+  <a routerLink="." [fragment]="entry.headId">#</a>
+</h2>
+
 <main-message [ref]="entry.text"></main-message>

@@ -29,7 +29,8 @@
               "projects/main/src/robots.txt"
             ],
             "styles": [
-              "projects/main/src/styles/main.scss"
+              "projects/main/src/styles/main.scss",
+              "node_modules/highlight.js/styles/github.css"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [

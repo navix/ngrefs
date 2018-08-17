@@ -1,0 +1,10 @@
+<ul>
+  <ng-container *ngFor="let entryItem of page.entries">
+    <li *ngIf="entryItem.head && entryItem.headId">
+      <a [routerLink]="['.']"
+         [fragment]="entryItem.headId">
+        {{ entryItem.head | msg }}
+      </a>
+    </li>
+  </ng-container>
+</ul>

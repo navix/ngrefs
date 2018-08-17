@@ -23,6 +23,8 @@ import { PageComponent } from './page/page.component';
 import { SectionComponent } from './section/section/section.component';
 import { VersionComponent } from './version/version.component';
 import { SearchComponent } from './search/search.component';
+import { InterfaceOptionEntryComponent } from './entry/interface-option-entry/interface-option-entry.component';
+import { TocEntryComponent } from './entry/toc-entry/toc-entry.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,8 @@ import { SearchComponent } from './search/search.component';
     MsgPipe,
     UiPipe,
     SearchComponent,
+    InterfaceOptionEntryComponent,
+    TocEntryComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'serverApp'}),

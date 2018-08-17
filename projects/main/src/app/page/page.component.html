@@ -9,6 +9,9 @@
         <ng-container *ngSwitchCase="'text'">
           <main-text-entry [entry]="entry"></main-text-entry>
         </ng-container>
+        <ng-container *ngSwitchCase="'toc'">
+          <main-toc-entry [page]="page"></main-toc-entry>
+        </ng-container>
         <ng-container *ngSwitchCase="'command-param'">
           <main-command-param-entry [entry]="entry"></main-command-param-entry>
         </ng-container>
@@ -21,6 +24,9 @@
           <ng-container *ngIf="showHints">
             <main-tutorials-entry [entry]="entry"></main-tutorials-entry>
           </ng-container>
+        </ng-container>
+        <ng-container *ngSwitchCase="'interface-option'">
+          <main-interface-option-entry [entry]="entry"></main-interface-option-entry>
         </ng-container>
         <div *ngSwitchDefault>
           {{ entry | json }}

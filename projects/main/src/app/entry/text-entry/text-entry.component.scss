@@ -1,1 +1,12 @@
 @import "params";
+
+h2 {
+  a {
+    display: none;
+  }
+  &:hover {
+    a {
+      display: inline;
+    }
+  }
+}

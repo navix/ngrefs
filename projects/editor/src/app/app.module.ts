@@ -26,6 +26,7 @@ import { VersionMessagesComponent } from './version/version-messages/version-mes
 import { VersionSectionsComponent } from './version/version-sections/version-sections.component';
 import { VersionComponent } from './version/version/version.component';
 import { VersionsListComponent } from './version/versions-list/versions-list.component';
+import { InterfaceOptionEntryComponent } from './entry/interface-option-entry/interface-option-entry.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { VersionsListComponent } from './version/versions-list/versions-list.com
     MessagesListComponent,
     VersionMessagesComponent,
     MessageTranslationComponent,
+    InterfaceOptionEntryComponent,
   ],
   imports: [
     // angular

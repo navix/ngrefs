@@ -31,13 +31,17 @@ button, input, textarea, select {
 }
 
 code, pre {
-  background-color: $codeColor;
   border-radius: 3px;
   font-family: $monospace;
   font-size: 0.85em;
 }
 
+pre {
+  background: #f8f8f8;
+}
+
 code {
+  background-color: $codeColor;
   margin: 0;
   padding: 0.2em 0.4em;
 }

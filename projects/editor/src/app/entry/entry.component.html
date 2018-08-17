@@ -8,9 +8,11 @@
               name="type"
               required>
         <option value="text">Text</option>
+        <option value="toc">Table of content</option>
         <option value="hint">Hint</option>
         <option value="tutorials">Tutorials</option>
         <option value="command-param">Command param</option>
+        <option value="interface-option">Interface option</option>
       </select>
       <span *kitFormError="'required'">Field is required</span>
     </ui-form-field>
@@ -31,6 +33,10 @@
   <app-tutorials-entry *ngIf="entry.type === 'tutorials'"
                        [entry]="entry">
   </app-tutorials-entry>
+
+  <editor-interface-option-entry *ngIf="entry.type === 'interface-option'"
+                                 [entry]="entry">
+  </editor-interface-option-entry>
 
   <div class="actions">
     <button uiButton
