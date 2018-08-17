@@ -2002,6 +2002,26 @@
                   }
                 },
                 {
+                  "id": "6dda87e1-a0a3-59f6-de42-e3e5431d97d0",
+                  "type": "text",
+                  "head": {
+                    "id": "4d4bc19b-b669-ab19-a08b-8ca8a2a7931b"
+                  },
+                  "text": {
+                    "id": "558a0430-8b9e-9963-eadd-cb204b1d9c25"
+                  }
+                },
+                {
+                  "id": "c6406f53-3b4f-6c01-2f82-8df6417c08fa",
+                  "type": "toc",
+                  "head": {
+                    "id": "12311bc6-9182-99c1-ff96-07e2ffe5834c"
+                  },
+                  "text": {
+                    "id": "453062c5-dc59-965d-7c6a-752645ddc781"
+                  }
+                },
+                {
                   "id": "dd54763d-8cf6-3752-e918-f94475f03103",
                   "type": "command-param",
                   "head": {
@@ -6627,9 +6647,643 @@
         {
           "id": "1d7d1307-5627-adab-6544-bf9836cda217",
           "menu": {
-            "items": []
+            "items": [
+              {
+                "id": "69f00f4d-f7dd-a408-4ab9-4c7bdf62ba72",
+                "label": {
+                  "id": "85f8acbb-6c1e-2fdc-bbae-26e857fb6834"
+                },
+                "url": "intro"
+              },
+              {
+                "id": "b686c771-b7ad-1283-3f4c-379467e3a132",
+                "label": {
+                  "id": "6dd75aa6-7f4d-0815-f65c-0fe75a3ce524"
+                },
+                "asGroup": false,
+                "sub": {
+                  "items": [
+                    {
+                      "id": "6bbaa333-c06c-4cfc-f2a6-270654e4ada3",
+                      "label": {
+                        "id": "836b3943-13e5-9f86-5b4b-aa0442c99890"
+                      },
+                      "url": "ng-module",
+                      "subActiveOpt": true,
+                      "sub": {
+                        "items": [
+                          {
+                            "id": "f689c475-20f1-587b-c1e6-65c75ada2ea7",
+                            "label": {
+                              "id": "d76e121e-1303-8fdc-5f6b-0b5b57d22d63"
+                            },
+                            "usePageEntries": true,
+                            "usePageUrl": "ng-module"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "id": "f0d382c3-80e3-2c75-548a-1280023043e6",
+                      "label": {
+                        "id": "c635204f-33f9-b59d-5c9e-c94e331b6eaa"
+                      },
+                      "url": "directive"
+                    },
+                    {
+                      "id": "dbb3ba14-fabf-c6bd-7adc-4603fb463564",
+                      "label": {
+                        "id": "09c94e80-c709-a587-8277-6583380ee65c"
+                      },
+                      "url": "component"
+                    },
+                    {
+                      "id": "37d67109-2ed1-e2b5-9a6f-22ebb2520472",
+                      "label": {
+                        "id": "d066f236-14ae-10a7-08f2-71d128597cdd"
+                      },
+                      "url": "pipe"
+                    },
+                    {
+                      "id": "20fe57e8-cbd5-e495-fd26-071fd8de2868",
+                      "label": {
+                        "id": "11be33bc-15a1-9853-c271-eb1925223e7b"
+                      },
+                      "url": "injectable"
+                    }
+                  ]
+                },
+                "url": "class-decorators",
+                "usePageEntries": false,
+                "subActiveOpt": false
+              },
+              {
+                "id": "5ff20bc0-ff0f-da4d-3126-88ed038a4f02",
+                "label": {
+                  "id": "cfbf1294-5035-963b-935a-3f926831dd32"
+                },
+                "sub": {
+                  "items": [
+                    {
+                      "id": "6417bd9b-9424-f365-5385-5c77b7e8ba0e",
+                      "label": {
+                        "id": "5e9eba37-d128-10fb-2501-e9adba7c1759"
+                      },
+                      "url": "input"
+                    },
+                    {
+                      "id": "e479067d-8c4e-70a5-acb6-39e581033639",
+                      "label": {
+                        "id": "556f45b2-fdbe-bf61-68ce-7cccce23d621"
+                      },
+                      "url": "attribute"
+                    },
+                    {
+                      "id": "2e19fbdb-4a88-11a7-b2be-37782e0551ee",
+                      "label": {
+                        "id": "8b3a6d50-5924-f0f6-2a83-74770f1763bf"
+                      },
+                      "url": "output"
+                    },
+                    {
+                      "id": "5b1e2c2a-193e-d180-16fe-d6c3cd306b2a",
+                      "label": {
+                        "id": "fd3aa17c-0e52-92bd-1bba-ea9088d47574"
+                      },
+                      "url": "host-binding"
+                    },
+                    {
+                      "id": "e9eb4ed1-61cd-5ba9-897e-fd61a36ccebd",
+                      "label": {
+                        "id": "7888839f-c903-a3d9-2eb0-3b1c27ceb5a7"
+                      },
+                      "url": "host-listener"
+                    }
+                  ]
+                },
+                "url": "binding-decorators",
+                "asGroup": true
+              },
+              {
+                "id": "e57f3808-bd7a-d62b-e269-2945c9b09254",
+                "label": {
+                  "id": "a50de225-a118-b75a-a956-764ede3caad9"
+                },
+                "sub": {
+                  "items": [
+                    {
+                      "id": "4ce186b9-676b-f7c4-b6f4-ffed40f98e3f",
+                      "label": {
+                        "id": "8763d555-4c70-7f23-d9da-75844d0b7b7c"
+                      },
+                      "url": "content-children",
+                      "urlFragment": ""
+                    },
+                    {
+                      "id": "0c4daff0-8745-d18e-1d57-685d013492af",
+                      "label": {
+                        "id": "145f8806-cef1-dd22-28cf-5958d33df9a5"
+                      },
+                      "url": "content-child"
+                    },
+                    {
+                      "id": "1f24b471-9764-0e2e-d300-ad0c66b6634e",
+                      "label": {
+                        "id": "46321097-a232-cf88-dec6-bd5e7c3ee9e3"
+                      },
+                      "url": "view-children"
+                    },
+                    {
+                      "id": "73d35ca0-ea8a-f60b-e464-b3a472bef35d",
+                      "label": {
+                        "id": "3bb1b51d-b7e6-314b-79b7-eda5c7456c3c"
+                      },
+                      "url": "view-child"
+                    }
+                  ]
+                },
+                "url": "query-decorators",
+                "asGroup": true
+              },
+              {
+                "id": "b0f4fde8-7ebc-4986-6d02-45ad2eeb6927",
+                "label": {
+                  "id": "bca46b1b-420e-6f37-211d-0f48bbf4db3e"
+                },
+                "sub": {
+                  "items": [
+                    {
+                      "id": "b6e406e7-2741-4da5-ba10-820a1684df7e",
+                      "label": {
+                        "id": "c5e01be4-2db6-9efe-94bf-ac46e6360bb0"
+                      },
+                      "url": "injection-token"
+                    },
+                    {
+                      "id": "d6bd0ef6-66c3-6361-c104-136f6b1acaa4",
+                      "label": {
+                        "id": "12ec9f2a-fcf2-cc6d-6c0d-16e65253e168"
+                      },
+                      "url": "change-detector-ref"
+                    },
+                    {
+                      "id": "e38a3e42-eb9e-a53d-694c-9bcb6dc294e5",
+                      "label": {
+                        "id": "34b8e3f9-07e6-c976-2172-c9a9ddb82011"
+                      },
+                      "url": "forward-ref"
+                    },
+                    {
+                      "id": "beb37e81-0c20-2c86-d537-4305c4376bd5",
+                      "label": {
+                        "id": "c2499b30-4391-dee9-8a81-504c455f6627"
+                      },
+                      "sub": {
+                        "items": [
+                          {
+                            "id": "589cc043-9e67-5c42-bd87-eeaabd212f22",
+                            "label": {
+                              "id": "29197da5-06ef-3f7d-ee40-d6320dd53d47"
+                            },
+                            "url": "injectable"
+                          },
+                          {
+                            "id": "8f8468eb-c688-27d0-7efc-d86a7d11bb52",
+                            "label": {
+                              "id": "6a317d6d-c54c-b83f-1454-191756927480"
+                            },
+                            "url": "inject"
+                          },
+                          {
+                            "id": "55ed4b14-b3c7-f948-13e9-ede98c9c20bb",
+                            "label": {
+                              "id": "3865c1ff-01c2-a16a-a54e-3cba5aa5e00a"
+                            },
+                            "url": "optional"
+                          },
+                          {
+                            "id": "a6799a8e-0ba9-3a32-b1bb-84fea7513cb7",
+                            "label": {
+                              "id": "a7c72ae8-c43c-ad42-763d-7a60d4ff4da2"
+                            },
+                            "url": "self"
+                          },
+                          {
+                            "id": "7eeab96d-5b92-0468-1114-cfdd60a26e0a",
+                            "label": {
+                              "id": "c3df65d7-b148-c766-12fc-5a447695f442"
+                            },
+                            "url": "skip-self"
+                          },
+                          {
+                            "id": "41affb62-3a2e-d78c-41c0-b214d46eebb2",
+                            "label": {
+                              "id": "0dad1ac2-0254-8b37-aeab-68f6f2b6aff2"
+                            },
+                            "url": "host"
+                          }
+                        ]
+                      },
+                      "url": "di-decorators",
+                      "asGroup": false
+                    }
+                  ]
+                },
+                "url": "dependency-injection",
+                "asGroup": true
+              },
+              {
+                "id": "2798e897-274a-8a5e-7e50-6689ae593e17",
+                "label": {
+                  "id": "67b1b3d2-c9e3-decb-d32a-7c4096a8a2f6"
+                },
+                "url": "lifecycle-hooks",
+                "asGroup": true,
+                "sub": {
+                  "items": [
+                    {
+                      "id": "5069ab2d-add0-578a-eb7e-963dda244b67",
+                      "label": {
+                        "id": "453e84fd-d3a2-0927-8886-75cfc9948792"
+                      },
+                      "url": "ng-on-changes"
+                    },
+                    {
+                      "id": "e048539c-aea1-d493-899e-72efb0fd120e",
+                      "label": {
+                        "id": "8d00ce57-f86f-0c1b-d6ef-9726782a5127"
+                      },
+                      "url": "ng-on-init"
+                    },
+                    {
+                      "id": "1043c02d-81b9-0762-7fc0-b52ce68b1d11",
+                      "label": {
+                        "id": "6cd233b7-1305-0ff5-d2cc-d0af02bd3db5"
+                      },
+                      "url": "ng-do-check"
+                    },
+                    {
+                      "id": "160c77dd-4648-198e-80d1-61caad0debeb",
+                      "label": {
+                        "id": "aef6354d-b7f8-17bf-0733-ce8a3ba69bdc"
+                      },
+                      "url": "on-destroy"
+                    },
+                    {
+                      "id": "2e69ba6c-3d9e-9205-f673-8a3049f8eff3",
+                      "label": {
+                        "id": "04746287-8cb3-24da-cdee-041907d6e9cb"
+                      },
+                      "url": "ng-after-content-init"
+                    },
+                    {
+                      "id": "6a92b1e4-0323-ba21-161e-084bcb645344",
+                      "label": {
+                        "id": "10a05b9f-62a4-f483-e137-430a3eff6a2d"
+                      },
+                      "url": "ng-after-content-checked"
+                    },
+                    {
+                      "id": "d0971bcb-29b3-e82c-a9f5-2c64527f01de",
+                      "label": {
+                        "id": "d726bd04-c658-f958-05d9-68ee4907801d"
+                      },
+                      "url": "ng-after-view-init"
+                    },
+                    {
+                      "id": "5cd4440e-cfb2-9712-bfa2-29ba8ef03b43",
+                      "label": {
+                        "id": "87d3cddb-df84-cdd5-4296-2f89b0bad696"
+                      },
+                      "url": "ng-after-view-checked"
+                    },
+                    {
+                      "id": "fa21ada9-f9e8-500e-2020-339f96e44ade",
+                      "label": {
+                        "id": "704bdf04-f419-1216-2668-da3b6061a448"
+                      },
+                      "url": "ng-on-destroy"
+                    },
+                    {
+                      "id": "20cb06c1-5b04-46c2-7d15-a7a10d0d9454",
+                      "label": {
+                        "id": "317afeb0-5f3d-1e6a-80e7-3cde420c1583"
+                      },
+                      "url": "ng-do-bootstrap"
+                    }
+                  ]
+                }
+              }
+            ]
           },
-          "pages": [],
+          "pages": [
+            {
+              "id": "51099a75-5bb4-1f83-6f42-a735b8518002",
+              "entries": [
+                {
+                  "id": "063819d6-b465-e744-1397-c800ac6d8c22",
+                  "type": "text",
+                  "head": {
+                    "id": "40dbbe22-d950-9ed2-d97d-47b6eee2c32d"
+                  },
+                  "text": {
+                    "id": "dc336f91-7812-5845-aa7e-d7b85d8b6a24"
+                  }
+                },
+                {
+                  "id": "8af43abe-c886-aa78-0c31-295c78628e18",
+                  "type": "hint",
+                  "head": {
+                    "id": "731848db-2101-7e0f-0a46-8a15ef1aeddc"
+                  },
+                  "text": {
+                    "id": "c6f2df40-d79e-f7f4-d63f-1925a5df3c2a"
+                  }
+                },
+                {
+                  "id": "cfd0c662-be08-b613-f37a-d761d1444560",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "592d2c98-4d48-e0fa-c540-6cb2b4269ffd"
+                  },
+                  "text": {
+                    "id": "fc6b554a-c23f-521d-85dd-384bd4993991"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "cd3fe342-1741-59ee-4bc8-897baaa26725"
+                      },
+                      "url": "https://angular.io/guide/quickstart",
+                      "lang": "en"
+                    }
+                  ]
+                },
+                {
+                  "id": "54f2f684-1f4e-a058-6e62-322fb3b48179",
+                  "type": "text",
+                  "head": {
+                    "id": "f609722d-5804-daa3-671b-a590ac40c619"
+                  },
+                  "text": {
+                    "id": "4108611b-0308-3637-eb22-872d7d463f4d"
+                  }
+                }
+              ],
+              "title": {
+                "id": "64c0d685-1832-6045-2968-a74894c654af"
+              },
+              "url": "intro"
+            },
+            {
+              "id": "7e533646-b1f7-bcf1-6235-faf3da606c3c",
+              "entries": [
+                {
+                  "id": "701775e6-6231-01b2-c92c-4a710947090c",
+                  "type": "text",
+                  "head": {
+                    "id": "dbc9badd-03c0-536e-a044-59698cfaf370"
+                  },
+                  "text": {
+                    "id": "816f7d77-d973-0110-8f57-88d6865b5543"
+                  }
+                }
+              ],
+              "title": {
+                "id": "125d8f76-1353-ec89-aa8a-c014cbc92ae4"
+              },
+              "url": "class-decorators"
+            },
+            {
+              "id": "ccaf5030-c736-5e61-c835-e0f17f0a6dd8",
+              "entries": [
+                {
+                  "id": "c15ec329-010f-643c-8d57-d5ffc7598a6e",
+                  "type": "text",
+                  "head": {
+                    "id": "540bdfb8-cb6b-5ce0-2be3-e28469360891"
+                  },
+                  "text": {
+                    "id": "0b9d5d15-9d07-e97f-419f-c0ea98118c94"
+                  }
+                },
+                {
+                  "id": "c9ef151e-23f6-efd2-eb5d-cc514b755b43",
+                  "type": "text",
+                  "head": {
+                    "id": "043d1edd-cbdc-d777-8eb2-498714bce728"
+                  },
+                  "text": {
+                    "id": "4bfffb99-62d4-784e-d089-bcbfd9fd7aee"
+                  }
+                },
+                {
+                  "id": "9628f991-b4c5-ca7b-c35f-a4d2f1e70f0a",
+                  "type": "text",
+                  "head": {
+                    "id": "6b988abb-cb7d-2606-6eeb-81cb67baf6c6"
+                  },
+                  "text": {
+                    "id": "9cfccc79-816e-1b10-5a87-4e331cc0b8ca"
+                  }
+                },
+                {
+                  "id": "781ac1ae-5d63-1dfc-3dc4-a67ee2f66e8c",
+                  "type": "toc",
+                  "head": {
+                    "id": "320a2b6c-54cd-a8ba-9e18-3ccd557b89ea"
+                  },
+                  "text": {
+                    "id": "fb501687-9fe8-7894-56ac-d50289f79b08"
+                  }
+                },
+                {
+                  "id": "b20a92e0-39d4-1f12-a3fb-79abf3146da1",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "providers"
+                  },
+                  "text": {
+                    "id": "447a0485-18b8-761d-e5f0-12601f95a263"
+                  },
+                  "description": {
+                    "id": "a11a7215-0ba8-085d-65d7-c0f2776ec86a"
+                  },
+                  "additional": {
+                    "id": "96c592fa-cf25-8894-844b-d5fbc3db6d72"
+                  },
+                  "name": "providers",
+                  "headId": "providers",
+                  "interface": "providers: Provider[]",
+                  "showAdditional": true
+                },
+                {
+                  "id": "edeeb718-336e-7723-c2bd-d54e00df6945",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "declarations"
+                  },
+                  "text": {
+                    "id": "aa0795e7-db0d-27ac-8da4-6c8df1bd396f"
+                  },
+                  "description": {
+                    "id": "d56168ad-2ea7-8203-f0da-d96839bc946f"
+                  },
+                  "additional": {
+                    "id": "1d444f7c-e59d-4152-c7b2-147a0d1092b4"
+                  },
+                  "name": "declarations",
+                  "headId": "declarations",
+                  "interface": "declarations: Array<Type<any> | any[]>",
+                  "showAdditional": true
+                },
+                {
+                  "id": "9976b0cc-11cb-40eb-774d-4c3510563ab1",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "imports"
+                  },
+                  "text": {
+                    "id": "7229df83-17b2-0987-2762-8230373abb9d"
+                  },
+                  "description": {
+                    "id": "a1c5acfd-6e26-b16f-4ad3-8cb21b4a38bc"
+                  },
+                  "additional": {
+                    "id": "f34eb99d-6b34-5b8a-d300-720bb4fdbaf5"
+                  },
+                  "name": "imports",
+                  "headId": "imports",
+                  "interface": "imports: Array<Type<any> | ModuleWithProviders | any[]>",
+                  "showAdditional": true
+                },
+                {
+                  "id": "471fcd87-133b-198f-4d55-44b08a098054",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "exports"
+                  },
+                  "text": {
+                    "id": "ebcb665b-7821-d00c-0f77-95f4146f36b7"
+                  },
+                  "description": {
+                    "id": "797fd167-0fba-5684-9d42-cf3e56bc232a"
+                  },
+                  "additional": {
+                    "id": "fe270dd1-7c31-632a-57f0-8398dfe6f349"
+                  },
+                  "name": "exports",
+                  "headId": "exports",
+                  "interface": "exports: Array<Type<any> | any[]>",
+                  "showAdditional": true
+                },
+                {
+                  "id": "015410e5-500f-e098-2b3f-6ed45461f7a1",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "entryComponents"
+                  },
+                  "text": {
+                    "id": "51bf51cf-f555-7444-7408-50ec0c5e01b5"
+                  },
+                  "description": {
+                    "id": "1d6a25e8-5054-5f4d-36f8-434c64950a91"
+                  },
+                  "additional": {
+                    "id": "a2e1309a-cea1-683e-90bc-ed248b243248"
+                  },
+                  "name": "entryComponents",
+                  "headId": "entryComponents",
+                  "interface": "entryComponents: Array<Type<any> | any[]>",
+                  "showAdditional": true
+                },
+                {
+                  "id": "c7f2f310-b21d-7921-c19f-44ee29171237",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "bootstrap"
+                  },
+                  "text": {
+                    "id": "bab31d10-67cd-0f44-2880-973400dc4fd8"
+                  },
+                  "description": {
+                    "id": "4eb65905-6fd8-c4b7-bc8f-8ea3b367e9e4"
+                  },
+                  "additional": {
+                    "id": "9cb4631c-531b-91f6-67c7-51e417aa5ac6"
+                  },
+                  "name": "bootstrap",
+                  "headId": "bootstrap",
+                  "interface": "bootstrap: Array<Type<any> | any[]>",
+                  "showAdditional": false
+                },
+                {
+                  "id": "5bc1b768-90bb-de1d-4854-60971a205e83",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "schemas"
+                  },
+                  "text": {
+                    "id": "1abb2ee4-1d98-78fc-35b0-6fcbbe2d61da"
+                  },
+                  "description": {
+                    "id": "4a578ad2-7dfd-1b33-fa7a-b8634e737430"
+                  },
+                  "additional": {
+                    "id": "6ef54222-fcba-402f-efac-d97cd7414a6e"
+                  },
+                  "name": "schemas",
+                  "headId": "schemas",
+                  "interface": "schemas: Array<SchemaMetadata | any[]>",
+                  "showAdditional": true
+                },
+                {
+                  "id": "362b2e59-856c-d76f-a690-3d4dd64ceefb",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "id"
+                  },
+                  "text": {
+                    "id": "432b0380-1139-9548-9717-da5e2d204379"
+                  },
+                  "description": {
+                    "id": "53e781a8-60d6-4ceb-6a10-fec18702897b"
+                  },
+                  "additional": {
+                    "id": "acf16cab-1753-ef77-bb30-68e0cab9560d"
+                  },
+                  "name": "id",
+                  "headId": "id",
+                  "interface": "id: string",
+                  "showAdditional": false
+                },
+                {
+                  "id": "3c14087c-f5eb-ad69-235f-29afd47f28e9",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "jit"
+                  },
+                  "text": {
+                    "id": "aaa75c72-dc9f-6398-becf-288da3a19e39"
+                  },
+                  "description": {
+                    "id": "c141d2ff-c5a2-d2a7-e10f-1b857bc77b34"
+                  },
+                  "additional": {
+                    "id": "904e8af4-18c4-ca29-65e6-b1b747db8549"
+                  },
+                  "name": "jit",
+                  "headId": "jit",
+                  "interface": "jit: boolean",
+                  "showAdditional": true
+                }
+              ],
+              "title": {
+                "id": "7ccfe702-74d7-ba14-02f0-9e44205fb102"
+              },
+              "url": "ng-module"
+            }
+          ],
           "title": {
             "id": "52e1788d-e5ee-41f1-572c-1844f21e9bc3"
           },
@@ -8110,11 +8764,11 @@
           "locales": [
             {
               "lang": "en",
-              "text": "ID: `@angular-devkit/build-angular:browser`\n\n## Options"
+              "text": "ID: `@angular-devkit/build-angular:browser`\n"
             },
             {
               "lang": "ru",
-              "text": "ID: `@angular-devkit/build-angular:browser`\n\n## Параметры"
+              "text": "ID: `@angular-devkit/build-angular:browser`\n"
             }
           ]
         },
@@ -13244,6 +13898,704 @@
               "useSource": true
             }
           ]
+        },
+        {
+          "id": "64c0d685-1832-6045-2968-a74894c654af",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Introduction"
+            },
+            {
+              "lang": "ru",
+              "text": "Введение"
+            }
+          ]
+        },
+        {
+          "id": "dc336f91-7812-5845-aa7e-d7b85d8b6a24",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular Core reference.\n\nList of main Angular concepts in a handy list.\n\n\n## Additional information\n\nExample of hints and tutorials links. You can switch off these panels in the sidebar."
+            }
+          ]
+        },
+        {
+          "id": "c6f2df40-d79e-f7f4-d63f-1925a5df3c2a",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Hint with additional explanation."
+            }
+          ]
+        },
+        {
+          "id": "cd3fe342-1741-59ee-4bc8-897baaa26725",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular Quick Start"
+            }
+          ]
+        },
+        {
+          "id": "4108611b-0308-3637-eb22-872d7d463f4d",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Early version\n\nCurrently ngrefs.com in active development. Thank you for understanding."
+            }
+          ]
+        },
+        {
+          "id": "85f8acbb-6c1e-2fdc-bbae-26e857fb6834",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Introduction"
+            }
+          ]
+        },
+        {
+          "id": "6dd75aa6-7f4d-0815-f65c-0fe75a3ce524",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Class Decorators"
+            }
+          ]
+        },
+        {
+          "id": "836b3943-13e5-9f86-5b4b-aa0442c99890",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@NgModule"
+            }
+          ]
+        },
+        {
+          "id": "c635204f-33f9-b59d-5c9e-c94e331b6eaa",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@Directive"
+            }
+          ]
+        },
+        {
+          "id": "09c94e80-c709-a587-8277-6583380ee65c",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@Component"
+            }
+          ]
+        },
+        {
+          "id": "d066f236-14ae-10a7-08f2-71d128597cdd",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@Pipe"
+            }
+          ]
+        },
+        {
+          "id": "11be33bc-15a1-9853-c271-eb1925223e7b",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@Injectable"
+            }
+          ]
+        },
+        {
+          "id": "cfbf1294-5035-963b-935a-3f926831dd32",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Binding Decorators"
+            }
+          ]
+        },
+        {
+          "id": "5e9eba37-d128-10fb-2501-e9adba7c1759",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@Input"
+            }
+          ]
+        },
+        {
+          "id": "556f45b2-fdbe-bf61-68ce-7cccce23d621",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@Attribute"
+            }
+          ]
+        },
+        {
+          "id": "8b3a6d50-5924-f0f6-2a83-74770f1763bf",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@Output"
+            }
+          ]
+        },
+        {
+          "id": "fd3aa17c-0e52-92bd-1bba-ea9088d47574",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@HostBinding"
+            }
+          ]
+        },
+        {
+          "id": "7888839f-c903-a3d9-2eb0-3b1c27ceb5a7",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@HostListener"
+            }
+          ]
+        },
+        {
+          "id": "a50de225-a118-b75a-a956-764ede3caad9",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Query Decorators"
+            }
+          ]
+        },
+        {
+          "id": "8763d555-4c70-7f23-d9da-75844d0b7b7c",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@ContentChildren"
+            }
+          ]
+        },
+        {
+          "id": "145f8806-cef1-dd22-28cf-5958d33df9a5",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@ContentChild"
+            }
+          ]
+        },
+        {
+          "id": "46321097-a232-cf88-dec6-bd5e7c3ee9e3",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@ViewChildren"
+            }
+          ]
+        },
+        {
+          "id": "3bb1b51d-b7e6-314b-79b7-eda5c7456c3c",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@ViewChild"
+            }
+          ]
+        },
+        {
+          "id": "bca46b1b-420e-6f37-211d-0f48bbf4db3e",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Dependency Injection"
+            }
+          ]
+        },
+        {
+          "id": "c2499b30-4391-dee9-8a81-504c455f6627",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "DI Decorators"
+            }
+          ]
+        },
+        {
+          "id": "29197da5-06ef-3f7d-ee40-d6320dd53d47",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@Injectable"
+            }
+          ]
+        },
+        {
+          "id": "6a317d6d-c54c-b83f-1454-191756927480",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@Inject"
+            }
+          ]
+        },
+        {
+          "id": "3865c1ff-01c2-a16a-a54e-3cba5aa5e00a",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@Optional"
+            }
+          ]
+        },
+        {
+          "id": "a7c72ae8-c43c-ad42-763d-7a60d4ff4da2",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@Self"
+            }
+          ]
+        },
+        {
+          "id": "c3df65d7-b148-c766-12fc-5a447695f442",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@SkipSelf"
+            }
+          ]
+        },
+        {
+          "id": "0dad1ac2-0254-8b37-aeab-68f6f2b6aff2",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@Host"
+            }
+          ]
+        },
+        {
+          "id": "c5e01be4-2db6-9efe-94bf-ac46e6360bb0",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "InjectionToken"
+            }
+          ]
+        },
+        {
+          "id": "12ec9f2a-fcf2-cc6d-6c0d-16e65253e168",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ChangeDetectorRef"
+            }
+          ]
+        },
+        {
+          "id": "34b8e3f9-07e6-c976-2172-c9a9ddb82011",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "forwardRef"
+            }
+          ]
+        },
+        {
+          "id": "67b1b3d2-c9e3-decb-d32a-7c4096a8a2f6",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Lifecycle Hooks"
+            }
+          ]
+        },
+        {
+          "id": "453e84fd-d3a2-0927-8886-75cfc9948792",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ngOnChanges()"
+            }
+          ]
+        },
+        {
+          "id": "8d00ce57-f86f-0c1b-d6ef-9726782a5127",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ngOnInit()"
+            }
+          ]
+        },
+        {
+          "id": "6cd233b7-1305-0ff5-d2cc-d0af02bd3db5",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ngDoCheck()"
+            }
+          ]
+        },
+        {
+          "id": "aef6354d-b7f8-17bf-0733-ce8a3ba69bdc",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "onDestroy()"
+            }
+          ]
+        },
+        {
+          "id": "04746287-8cb3-24da-cdee-041907d6e9cb",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ngAfterContentInit()"
+            }
+          ]
+        },
+        {
+          "id": "10a05b9f-62a4-f483-e137-430a3eff6a2d",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ngAfterContentChecked()"
+            }
+          ]
+        },
+        {
+          "id": "d726bd04-c658-f958-05d9-68ee4907801d",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ngAfterViewInit()"
+            }
+          ]
+        },
+        {
+          "id": "87d3cddb-df84-cdd5-4296-2f89b0bad696",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ngAfterViewChecked()"
+            }
+          ]
+        },
+        {
+          "id": "704bdf04-f419-1216-2668-da3b6061a448",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ngOnDestroy()"
+            }
+          ]
+        },
+        {
+          "id": "317afeb0-5f3d-1e6a-80e7-3cde420c1583",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ngDoBootstrap()"
+            }
+          ]
+        },
+        {
+          "id": "125d8f76-1353-ec89-aa8a-c014cbc92ae4",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Class Decorators"
+            }
+          ]
+        },
+        {
+          "id": "816f7d77-d973-0110-8f57-88d6865b5543",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "[REWRITE] Angular offers us a few class decorators. These are the top-level decorators that we use to express intent for classes. They allow us to tell Angular that a particular class is a component, or module, for example. And the decorator allows us to define this intent without having to actually put any code inside the class."
+            }
+          ]
+        },
+        {
+          "id": "7ccfe702-74d7-ba14-02f0-9e44205fb102",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@NgModule"
+            }
+          ]
+        },
+        {
+          "id": "0b9d5d15-9d07-e97f-419f-c0ea98118c94",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "NgModules configure the injector and the compiler and help organize related things together.\n\n"
+            }
+          ]
+        },
+        {
+          "id": "bbe75974-0a1f-14b0-b478-1cae5f275d7f",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## The basic NgModule\n\n```typescript\n// imports\nimport { BrowserModule } from '@angular/platform-browser';\nimport { NgModule } from '@angular/core';\nimport { FormsModule } from '@angular/forms';\nimport { HttpClientModule } from '@angular/common/http';\n\nimport { AppComponent } from './app.component';\nimport { ItemDirective } from './item.directive';\n\n\n// @NgModule decorator with its metadata\n@NgModule({\n  declarations: [\n    AppComponent,\n    ItemDirective\n  ],\n  imports: [\n    BrowserModule,\n    FormsModule,\n    HttpClientModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n```\n"
+            }
+          ]
+        },
+        {
+          "id": "9cfccc79-816e-1b10-5a87-4e331cc0b8ca",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Options"
+            }
+          ]
+        },
+        {
+          "id": "a11a7215-0ba8-085d-65d7-c0f2776ec86a",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The set of injectable objects that are available in the injector of this module."
+            }
+          ]
+        },
+        {
+          "id": "96c592fa-cf25-8894-844b-d5fbc3db6d72",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Dependencies whose providers are listed here become available for injection\ninto any component, directive, pipe or service that is a child of this injector.\nThe NgModule used for bootstrapping uses the root injector, and can provide dependencies\nto any part of the app.\n\nA lazy-loaded module has its own injector, typically a child of the app root injector.\nLazy-loaded services are scoped to the lazy-loaded module's injector.\nIf a lazy-loaded module also provides the `UserService`, any component created\nwithin that module's context (such as by router navigation) gets the local instance\nof the service, not the instance in the root injector. \nComponents in external modules continue to receive the instance provided by their injectors.\n\n#### Example\n\nThe following example defines a class that is injected in\nthe HelloWorld NgModule:\n\n```typescript\nclass Greeter {\n   greet(name:string) {\n     return 'Hello ' + name + '!';\n   }\n}\n\n@NgModule({\n  providers: [\n    Greeter\n  ]\n})\nclass HelloWorld {\n  greeter:Greeter;\n\n  constructor(greeter:Greeter) {\n    this.greeter = greeter;\n  }\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "d56168ad-2ea7-8203-f0da-d96839bc946f",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The set of components, directives, and pipes (declarables) that belong to this module."
+            }
+          ]
+        },
+        {
+          "id": "1d444f7c-e59d-4152-c7b2-147a0d1092b4",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The set of selectors that are available to a template include those declared here, and\nthose that are exported from imported NgModules.\n\nDeclarables must belong to exactly one module.\nThe compiler emits an error if you try to declare the same class in more than one module.\nBe careful not to declare a class that is imported from another module.\n\n#### Example\n\nThe following example allows the CommonModule to use the `NgFor`\ndirective.\n\n```typescript\n@NgModule({\n  declarations: [NgFor]\n})\nclass CommonModule {\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "a1c5acfd-6e26-b16f-4ad3-8cb21b4a38bc",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The set of NgModules whose exported declarables are available to templates in this module."
+            }
+          ]
+        },
+        {
+          "id": "f34eb99d-6b34-5b8a-d300-720bb4fdbaf5",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A template can use exported declarables from any\nimported module, including those from modules that are imported indirectly\nand re-exported.\nFor example, `ModuleA` imports `ModuleB`, and also exports\nit, which makes the declarables from `ModuleB` available\nwherever `ModuleA` is imported.\n\n#### Example\n\nThe following example allows MainModule to use anthing exported by\n`CommonModule`:\n\n```typescript\n@NgModule({\n  imports: [CommonModule]\n})\nclass MainModule {\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "558a0430-8b9e-9963-eadd-cb204b1d9c25",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Options"
+            },
+            {
+              "lang": "ru",
+              "text": "## Параметры"
+            }
+          ]
+        },
+        {
+          "id": "4bfffb99-62d4-784e-d089-bcbfd9fd7aee",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example\n\nThe CLI generates the following basic app module when creating a new app.\n\n```typescript\n@NgModule({\n  declarations: [\n    AppComponent,\n    ItemDirective\n  ],\n  imports: [\n    BrowserModule,\n    FormsModule,\n    HttpClientModule\n  ],\n  providers: [],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }\n```"
+            }
+          ]
+        },
+        {
+          "id": "797fd167-0fba-5684-9d42-cf3e56bc232a",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The set of components, directives, and pipes declared in this\nNgModule that can be used in the template of any component that is part of an\nNgModule that imports this NgModule. Exported declarations are the module's public API."
+            }
+          ]
+        },
+        {
+          "id": "fe270dd1-7c31-632a-57f0-8398dfe6f349",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A declarable belongs to one and only one NgModule.\nA module can list another module among its exports, in which case all of that module's\npublic declaration are exported.\n\nDeclarations are private by default.\nIf this ModuleA does not export UserComponent, then only the components within this\nModuleA can use UserComponent.\n\nModuleA can import ModuleB and also export it, making exports from ModuleB\navailable to an NgModule that imports ModuleA.\n\n#### Example\n\nThe following example exports the `NgFor` directive from CommonModule.\n\n```javascript\n@NgModule({\n  exports: [NgFor]\n})\nclass CommonModule {\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "1d6a25e8-5054-5f4d-36f8-434c64950a91",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The set of components to compile when this NgModule is defined,\nso that they can be dynamically loaded into the view."
+            }
+          ]
+        },
+        {
+          "id": "a2e1309a-cea1-683e-90bc-ed248b243248",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "For each component listed here, Angular creates a `ComponentFactory`\nand stores it in the `ComponentFactoryResolver`.\n\nAngular automatically adds components in the module's bootstrap\nand route definitions into the `entryComponents` list. Use this\noption to add components that are bootstrapped\nusing one of the imperative techniques, such as `ViewContainerRef.createComponent()`."
+            }
+          ]
+        },
+        {
+          "id": "4eb65905-6fd8-c4b7-bc8f-8ea3b367e9e4",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The set of components that are bootstrapped when\nthis module is bootstrapped. The components listed here\nare automatically added to `entryComponents`."
+            }
+          ]
+        },
+        {
+          "id": "4a578ad2-7dfd-1b33-fa7a-b8634e737430",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The set of schemas that declare elements to be allowed in the NgModule.\nElements and properties that are neither Angular components nor directives\nmust be declared in a schema."
+            }
+          ]
+        },
+        {
+          "id": "6ef54222-fcba-402f-efac-d97cd7414a6e",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Allowed value are `NO_ERRORS_SCHEMA` and `CUSTOM_ELEMENTS_SCHEMA`.\n\nWhen using one of `NO_ERRORS_SCHEMA` or `CUSTOM_ELEMENTS_SCHEMA`\nyou must ensure that allowed elements and properties securely escape inputs."
+            }
+          ]
+        },
+        {
+          "id": "53e781a8-60d6-4ceb-6a10-fec18702897b",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A name or path that uniquely identifies this NgModule in `getModuleFactory`.\nIf left `undefined`, the NgModule is not registered with `getModuleFactory`."
+            }
+          ]
+        },
+        {
+          "id": "c141d2ff-c5a2-d2a7-e10f-1b857bc77b34",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "If true, this module will be skipped by the AOT compiler and so will always be compiled using JIT."
+            }
+          ]
+        },
+        {
+          "id": "904e8af4-18c4-ca29-65e6-b1b747db8549",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "This exists to support future Ivy work and has no effect currently."
+            }
+          ]
         }
       ],
       "title": "Angular 6",
@@ -13320,6 +14672,13 @@
       "locales": {
         "en": "CLI argument:",
         "ru": "Аргумент командной строки:"
+      }
+    },
+    {
+      "id": "TOC",
+      "locales": {
+        "en": "Table of contents",
+        "ru": "Содержание"
       }
     }
   ]
