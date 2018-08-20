@@ -6948,31 +6948,18 @@
                       "sub": {
                         "items": [
                           {
-                            "id": "18d891ea-b84a-5872-05c3-a699802a640f",
+                            "id": "ec497484-1fe2-c01d-621e-9fbf485a2f68",
                             "label": {
-                              "id": "7c18aedf-6d80-ded8-5d9f-08bb959ac4f4"
-                            }
-                          },
-                          {
-                            "id": "8bb3543f-e196-1cc7-f659-1d144aa0ed30",
-                            "label": {
-                              "id": "4be4c7a6-c7af-a386-ac76-cf26816e66f1"
-                            }
-                          },
-                          {
-                            "id": "eb523c63-a539-b235-5617-d02fc3abd4d6",
-                            "label": {
-                              "id": "d2ab75e9-51e1-325d-e9fb-9642ecaebf06"
-                            }
-                          },
-                          {
-                            "id": "825e8c94-0611-defa-6caa-6418d6c59e72",
-                            "label": {
-                              "id": "36ff0a45-4dba-e4fe-3034-7d0f3f4e04ad"
-                            }
+                              "id": "3a1b17fe-0fe7-385e-0970-dfa14ae78fe1"
+                            },
+                            "usePageEntries": true,
+                            "usePageUrl": "providers"
                           }
                         ]
-                      }
+                      },
+                      "url": "providers",
+                      "usePageEntries": false,
+                      "subActiveOpt": true
                     },
                     {
                       "id": "beb37e81-0c20-2c86-d537-4305c4376bd5",
@@ -6981,13 +6968,6 @@
                       },
                       "sub": {
                         "items": [
-                          {
-                            "id": "589cc043-9e67-5c42-bd87-eeaabd212f22",
-                            "label": {
-                              "id": "29197da5-06ef-3f7d-ee40-d6320dd53d47"
-                            },
-                            "url": "injectable"
-                          },
                           {
                             "id": "8f8468eb-c688-27d0-7efc-d86a7d11bb52",
                             "label": {
@@ -7025,7 +7005,7 @@
                           }
                         ]
                       },
-                      "url": "di-decorators",
+                      "url": "",
                       "asGroup": false
                     }
                   ]
@@ -7034,18 +7014,65 @@
                 "asGroup": true
               },
               {
-                "id": "4bd68800-13ce-385a-c094-752d86e18707",
+                "id": "77c0d874-262d-0b3e-82f3-0ef11d45ceb9",
                 "label": {
-                  "id": "3e865dd8-34f2-a873-a541-b065c98d1f60"
+                  "id": "fc525b83-6c69-1264-d939-24389123c57c"
                 },
+                "url": "ng-zone",
+                "asGroup": true,
                 "sub": {
                   "items": [
                     {
-                      "id": "04dc95db-0cab-f2dc-99ea-b1a202368c6a"
+                      "id": "6e73bc6f-aebe-98b1-158d-c8eedf625325",
+                      "label": {
+                        "id": "ad00120c-dd39-8aa0-6316-d9ee35bdf22d"
+                      },
+                      "usePageEntries": true,
+                      "usePageUrl": "ng-zone"
                     }
                   ]
                 },
-                "asGroup": true
+                "subActiveOpt": true
+              },
+              {
+                "id": "ace0bfb1-6f47-922f-5f16-6d0312fa3906",
+                "label": {
+                  "id": "23244535-dae2-cceb-a5dc-c51b38d6f43a"
+                },
+                "url": "renderer2",
+                "sub": {
+                  "items": [
+                    {
+                      "id": "985071dd-44cd-24c3-ac6d-67233510fb9f",
+                      "label": {
+                        "id": "17f96c08-7d04-cf46-bf9d-e7f7855821d4"
+                      },
+                      "usePageEntries": true,
+                      "usePageUrl": "renderer2"
+                    }
+                  ]
+                },
+                "subActiveOpt": true
+              },
+              {
+                "id": "0e630c23-5dce-b431-3ddd-4ec3bed3654e",
+                "label": {
+                  "id": "ab2edbda-e41f-42a9-302d-38d81710ed34"
+                },
+                "url": "dom-sanitizer",
+                "sub": {
+                  "items": [
+                    {
+                      "id": "8558f7f5-8c58-beb7-7e0e-0a6c7ac52d4e",
+                      "label": {
+                        "id": "0924bec7-399c-8453-a1be-0364d2e23415"
+                      },
+                      "usePageEntries": true,
+                      "usePageUrl": "dom-sanitizer"
+                    }
+                  ]
+                },
+                "subActiveOpt": true
               }
             ]
           },
@@ -7994,6 +8021,16 @@
                   }
                 },
                 {
+                  "id": "95aa7a65-44c7-4573-b2b8-139429f3b764",
+                  "type": "text",
+                  "head": {
+                    "id": "b82f26e1-56ba-55f6-37f0-e9f2c2ecf43b"
+                  },
+                  "text": {
+                    "id": "41626dff-2261-327f-aeb6-9f13c56241ef"
+                  }
+                },
+                {
                   "id": "3114a9ac-ac4e-705f-ad14-b097571061a3",
                   "type": "interface-option",
                   "head": {
@@ -8050,6 +8087,16 @@
                   },
                   "text": {
                     "id": "874a7bb2-b814-6dc0-72c8-982dff26db43"
+                  }
+                },
+                {
+                  "id": "05558fa0-bbb9-ff70-6dc9-47349e535ec5",
+                  "type": "text",
+                  "head": {
+                    "id": "f870aaeb-3ae3-8002-3002-60f12b7ceb56"
+                  },
+                  "text": {
+                    "id": "00311cd5-57e0-c980-9add-6c966b5bf878"
                   }
                 },
                 {
@@ -8212,6 +8259,16 @@
                   }
                 },
                 {
+                  "id": "e0b0fba6-053a-30f4-b6a5-165ae353f15f",
+                  "type": "text",
+                  "head": {
+                    "id": "2f2034e9-6d9c-280d-2968-db6a07dd4bd7"
+                  },
+                  "text": {
+                    "id": "f714688f-3513-8700-0d23-d4c1cd16c0a5"
+                  }
+                },
+                {
                   "id": "8c2e1691-5bec-50ea-d361-791210f6a6e3",
                   "type": "interface-option",
                   "head": {
@@ -8370,6 +8427,16 @@
                   }
                 },
                 {
+                  "id": "a158bbcb-ed4c-89c8-ee90-c23fa36520d8",
+                  "type": "text",
+                  "head": {
+                    "id": "c90968bf-69f5-cc1c-57c7-c0d332545033"
+                  },
+                  "text": {
+                    "id": "d7d06e86-e152-9473-b63d-ac9e01432441"
+                  }
+                },
+                {
                   "id": "29daa2ca-b0d8-279a-c2ff-e4352c4eec2d",
                   "type": "interface-option",
                   "head": {
@@ -8456,6 +8523,16 @@
                   },
                   "text": {
                     "id": "cff5f7b3-24ef-c200-9890-0a2aad0952de"
+                  }
+                },
+                {
+                  "id": "645ca80b-6223-4d75-73b7-c5b0f25a86d3",
+                  "type": "text",
+                  "head": {
+                    "id": "6898cb84-8d95-d32b-1f0d-5d138a20c2fc"
+                  },
+                  "text": {
+                    "id": "7f0895ed-a32a-a2fa-6cbf-81addfc804a9"
                   }
                 },
                 {
@@ -8567,6 +8644,16 @@
                   }
                 },
                 {
+                  "id": "156042b0-cfb0-403c-7009-175e9f188f25",
+                  "type": "text",
+                  "head": {
+                    "id": "276eaa12-305e-a818-aa00-e410fe38bfb0"
+                  },
+                  "text": {
+                    "id": "faf837d7-bdb3-f803-8b0b-901f2b754a1d"
+                  }
+                },
+                {
                   "id": "37ec0f11-523f-f42e-ff77-4f12090c48e0",
                   "type": "interface-option",
                   "head": {
@@ -8653,6 +8740,16 @@
                   },
                   "text": {
                     "id": "756882ca-11d2-bf80-9e2f-1b12dfb771e6"
+                  }
+                },
+                {
+                  "id": "7269fda0-18e2-01b8-51a7-477a5e322f53",
+                  "type": "text",
+                  "head": {
+                    "id": "169f1fa3-cff7-cd50-e4f0-376690dc9419"
+                  },
+                  "text": {
+                    "id": "cfdc4d66-e28b-019a-1716-8b4a933fca9f"
                   }
                 },
                 {
@@ -8998,6 +9095,16 @@
                   }
                 },
                 {
+                  "id": "315c2e56-9156-2260-872f-125eb472d1c5",
+                  "type": "text",
+                  "head": {
+                    "id": "b31e84fd-a949-28ff-5110-35501ff3b55a"
+                  },
+                  "text": {
+                    "id": "159cc5b2-adbe-0625-8565-6e09c6720cc7"
+                  }
+                },
+                {
                   "id": "b0120c84-6d89-532a-b080-099a9a3af8c0",
                   "type": "interface-option",
                   "head": {
@@ -9038,6 +9145,392 @@
                 "id": "fdabe440-b102-62fb-a2fc-cba66bacc665"
               },
               "url": "injection-token"
+            },
+            {
+              "id": "56bb53be-d88a-fed8-67fc-56520800641e",
+              "entries": [
+                {
+                  "id": "4d11223c-28ea-5353-9c52-534fb1af8c07",
+                  "type": "text",
+                  "head": {
+                    "id": "dc44877c-4810-61bc-a7e4-ca6b8857a9f8"
+                  },
+                  "text": {
+                    "id": "d089dd2a-8d58-7377-4262-c39674ff7cc9"
+                  }
+                },
+                {
+                  "id": "7ece4831-a38b-d9f5-82c8-fdc7d1222370",
+                  "type": "text",
+                  "head": {
+                    "id": "645e32e9-0c78-3aef-c3a2-c3f55ba99dda"
+                  },
+                  "text": {
+                    "id": "a9a7761e-b30c-91a5-4c47-dd74379ec686"
+                  }
+                },
+                {
+                  "id": "a95f0dd8-25e1-f92e-c007-d23c77b530d3",
+                  "type": "text",
+                  "head": {
+                    "id": "f9f02b35-06e4-5460-3210-009a3ec89caa"
+                  },
+                  "text": {
+                    "id": "df58afee-1c65-2f2d-a853-d41bfa444c3e"
+                  }
+                },
+                {
+                  "id": "a78cbc2f-2665-39bd-b1f0-a97d685fa2ba",
+                  "type": "text",
+                  "head": {
+                    "id": "3394273f-8898-ff23-9eb5-b95bdcf238c2"
+                  },
+                  "text": {
+                    "id": "1053b6b9-b616-478c-daf5-60e9738bdcd2"
+                  }
+                }
+              ],
+              "title": {
+                "id": "8408734b-ec18-4656-d9a5-3e6d791bc342"
+              },
+              "url": "forward-ref"
+            },
+            {
+              "id": "124df87b-a860-95a5-ed6c-3c23e07851d2",
+              "entries": [
+                {
+                  "id": "1db16397-cbc6-27cb-aec3-546c13dca8d2",
+                  "type": "text",
+                  "head": {
+                    "id": "ccc5ec46-1eec-0803-b4ba-40f2b285b8d5"
+                  },
+                  "text": {
+                    "id": "d4d3a4f3-4bb9-04bf-f474-6ef1632e6498"
+                  }
+                },
+                {
+                  "id": "11558b46-5b56-f96d-6a47-cbd0176139d9",
+                  "type": "toc",
+                  "head": {
+                    "id": "62f47bb5-ff9f-90ad-8030-b62d32f87d93"
+                  },
+                  "text": {
+                    "id": "d13f1266-6aa1-05ac-42f3-2b3d41abc61f"
+                  }
+                },
+                {
+                  "id": "25235452-e00f-b3e8-8bad-2703bb6d464b",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "5d671e0d-3750-4b1d-ee42-27d90b3ba05f"
+                  },
+                  "text": {
+                    "id": "b0943ff9-d5ef-0d26-a7ce-fe3969e1de39"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "66009c89-5b6b-7bd7-f018-19690e1c666b"
+                      },
+                      "url": "https://angular.io/guide/dependency-injection",
+                      "lang": "en"
+                    }
+                  ]
+                },
+                {
+                  "id": "61ef9a11-a29d-e041-4921-2e09284119e6",
+                  "type": "text",
+                  "head": {
+                    "id": "162ac3e0-e75f-d6d1-03b0-65cb3da106b9"
+                  },
+                  "text": {
+                    "id": "65b4cfbb-59ad-0e8e-b1b0-46b9f0245afc"
+                  },
+                  "headId": "use-value"
+                },
+                {
+                  "id": "cbf939ee-a9a1-1682-7b32-b13a8cdac6dd",
+                  "type": "text",
+                  "head": {
+                    "id": "4ca5da1a-08ae-bcc5-2d0b-3e40f331bd07"
+                  },
+                  "text": {
+                    "id": "fc444219-8bf5-d742-1789-20e4529b53ef"
+                  },
+                  "headId": "use-class"
+                },
+                {
+                  "id": "5a38ada3-3a6b-dd26-9286-bab87a2efa71",
+                  "type": "text",
+                  "head": {
+                    "id": "c81bc016-bab2-c07b-a1e1-b72804b2c134"
+                  },
+                  "text": {
+                    "id": "c3ac0cce-2733-6af6-7736-9a921e43807a"
+                  },
+                  "headId": "use-existing"
+                },
+                {
+                  "id": "a04c7623-b405-ea15-b81b-22e0255483bc",
+                  "type": "text",
+                  "head": {
+                    "id": "ef6baf4a-33fb-e266-0197-f98a949fe9bf"
+                  },
+                  "text": {
+                    "id": "12cb1830-6038-7233-f574-67d2fe1242a6"
+                  },
+                  "headId": "use-factory"
+                }
+              ],
+              "title": {
+                "id": "38d43332-05da-2c87-c311-52fe571076ef"
+              },
+              "url": "providers"
+            },
+            {
+              "id": "a52f278b-fa42-ea18-f339-a195577deb35",
+              "entries": [
+                {
+                  "id": "5ea73cfd-ae5d-8e2e-bd40-21b937a2c3f2",
+                  "type": "text",
+                  "head": {
+                    "id": "e1ef8bef-ca43-9099-3ff6-92b2b668d7f7"
+                  },
+                  "text": {
+                    "id": "6e590ef1-90fa-8224-31fd-27bc3ae8669b"
+                  }
+                },
+                {
+                  "id": "a7be0697-8a88-decc-a49e-c5af31e68c4f",
+                  "type": "text",
+                  "head": {
+                    "id": "a573c16d-d14e-2760-5d8f-cb6e6d405265"
+                  },
+                  "text": {
+                    "id": "d7886b8f-6bca-51bd-5689-c39067118424"
+                  }
+                },
+                {
+                  "id": "7e26fd31-58a6-0938-683e-afe510560d1f",
+                  "type": "text",
+                  "head": {
+                    "id": "6eae4fdf-e049-53b1-3d69-bb55f3a40e3f"
+                  },
+                  "text": {
+                    "id": "33461f25-cea6-bdd3-3131-014c065250ab"
+                  }
+                },
+                {
+                  "id": "7d49e18f-7861-96c9-0221-1439970a91c1",
+                  "type": "text",
+                  "head": {
+                    "id": "9253b89f-0a10-25f8-5b07-247699d06f35"
+                  },
+                  "text": {
+                    "id": "7252e78f-ddb6-ea10-143c-95c46d8c98f4"
+                  }
+                }
+              ],
+              "title": {
+                "id": "259b8230-9fa1-f0d0-8eca-a7fd05f17460"
+              },
+              "url": "inject"
+            },
+            {
+              "id": "143faa82-9418-fd0f-039c-5f6840a731a4",
+              "entries": [
+                {
+                  "id": "44f0f2be-939a-7532-220b-669dc4b51793",
+                  "type": "text",
+                  "head": {
+                    "id": "d94bdcc9-5443-6dcf-ee9b-c8537f0ff57f"
+                  },
+                  "text": {
+                    "id": "cdfcec61-dd46-9d4c-44ab-d94deba8646f"
+                  }
+                },
+                {
+                  "id": "9550f80c-6f00-5c2c-829f-e0cf0aa687ea",
+                  "type": "text",
+                  "head": {
+                    "id": "46e0c26c-7192-6ea5-c033-b57c6609a2a3"
+                  },
+                  "text": {
+                    "id": "dd10fc58-f0c1-c09f-fcc0-89e08928d5c0"
+                  }
+                },
+                {
+                  "id": "79385180-f498-497c-cccb-232828bbdc33",
+                  "type": "text",
+                  "head": {
+                    "id": "e98d65d7-ac30-d907-69d6-a01f349eac89"
+                  },
+                  "text": {
+                    "id": "595df1e6-19f4-a6ae-eb5f-199e93e5df6a"
+                  }
+                },
+                {
+                  "id": "9462f65c-782f-26ae-7e89-acdb6dcd68eb",
+                  "type": "text",
+                  "head": {
+                    "id": "4dcd97ee-61b1-04fb-d914-2c2f9cff8d6e"
+                  },
+                  "text": {
+                    "id": "43d422f7-33b7-363b-55d7-d086b6a5bdec"
+                  }
+                }
+              ],
+              "title": {
+                "id": "0ad0a920-d11d-a6af-09cf-8734e97b057f"
+              },
+              "url": "optional"
+            },
+            {
+              "id": "84835903-900e-2071-acb7-0e810f8f7f3d",
+              "entries": [
+                {
+                  "id": "e17ee295-df1f-77bb-dab5-344f63275e08",
+                  "type": "text",
+                  "head": {
+                    "id": "d7e5d83c-efeb-d4a7-2c58-4e8353fff7dd"
+                  },
+                  "text": {
+                    "id": "2c108fa6-444a-e936-fe6e-bdd3adcf1e2e"
+                  }
+                },
+                {
+                  "id": "0ef7fa53-cf87-4eb4-09b3-e328c7ab8eea",
+                  "type": "text",
+                  "head": {
+                    "id": "368cf2eb-9f61-5621-52e6-0de7fcc27077"
+                  },
+                  "text": {
+                    "id": "a28102f8-3dee-2499-717a-c623a63cdbbe"
+                  }
+                },
+                {
+                  "id": "b746cc55-509c-36e2-ff11-4b7f4cad801b",
+                  "type": "text",
+                  "head": {
+                    "id": "fc04666f-fa62-67b2-e986-f847f8c380dc"
+                  },
+                  "text": {
+                    "id": "1a8215d1-2453-f4a0-69ca-84fecec80c79"
+                  }
+                },
+                {
+                  "id": "ca3faec8-a050-5347-4860-9d7978c86a8f",
+                  "type": "text",
+                  "head": {
+                    "id": "cfcb4ed8-4579-76f1-6fbf-350856dc2cc4"
+                  },
+                  "text": {
+                    "id": "29f60069-e001-a40e-23de-283dcce870d7"
+                  }
+                }
+              ],
+              "title": {
+                "id": "987b42cc-95e2-77d7-83bb-11be710650f4"
+              },
+              "url": "self"
+            },
+            {
+              "id": "68710180-59fe-4e87-7280-0a71df71f504",
+              "entries": [
+                {
+                  "id": "036f0a84-f68d-2148-f2ee-4fd929cf4b24",
+                  "type": "text",
+                  "head": {
+                    "id": "045f1d8c-599a-1664-ac11-65f462788134"
+                  },
+                  "text": {
+                    "id": "e2c4f3ae-db6c-b9b1-d460-7976027fbc2f"
+                  }
+                },
+                {
+                  "id": "5ac81cc2-c6ee-8d79-4ef1-afc63760c116",
+                  "type": "text",
+                  "head": {
+                    "id": "69bfb8b9-e3bf-e9dc-f5b0-55312007dbdb"
+                  },
+                  "text": {
+                    "id": "02b5d2ee-bb2e-116c-f41d-f90d36439770"
+                  }
+                },
+                {
+                  "id": "40bf24d8-9938-1d0b-2c1f-e32cb29a1acc",
+                  "type": "text",
+                  "head": {
+                    "id": "063f7efb-84de-d853-e032-3ba328275d0b"
+                  },
+                  "text": {
+                    "id": "54534cf0-8fdf-49ef-cba2-7809734602c2"
+                  }
+                },
+                {
+                  "id": "e5897574-c680-17e0-cf44-8c016263d7a5",
+                  "type": "text",
+                  "head": {
+                    "id": "0fbdb855-5210-3927-ed97-461cd73cec48"
+                  },
+                  "text": {
+                    "id": "b73ee48a-50a1-e1b9-652b-632cf8cb0685"
+                  }
+                }
+              ],
+              "title": {
+                "id": "1b4259e8-38ef-d67e-3745-77970c10d3a0"
+              },
+              "url": "skip-self"
+            },
+            {
+              "id": "1d16ff5d-8a24-e6ed-2d73-5b14d1c56109",
+              "entries": [
+                {
+                  "id": "18b24a5e-75ab-86d3-70d2-50fff6a5a37b",
+                  "type": "text",
+                  "head": {
+                    "id": "e7197693-1fcc-e892-cae9-c1d9b895271b"
+                  },
+                  "text": {
+                    "id": "23cae7f3-5888-01d8-f724-73d628562a26"
+                  }
+                },
+                {
+                  "id": "c6b53c5f-16e3-1f8d-e859-bfd733733707",
+                  "type": "text",
+                  "head": {
+                    "id": "c849a117-ea6b-b83f-58a7-2bb45f6ee54a"
+                  },
+                  "text": {
+                    "id": "9c3132a9-b377-b3e8-7d06-e9192f8d289a"
+                  }
+                },
+                {
+                  "id": "a83bc6fc-b891-13c8-bd72-544ab88ef85a",
+                  "type": "text",
+                  "head": {
+                    "id": "93a55210-1d91-4543-3f16-d63c4e117efc"
+                  },
+                  "text": {
+                    "id": "b085d214-bb22-bd62-f26c-2f65501fc064"
+                  }
+                },
+                {
+                  "id": "b94d0739-f35a-5d29-bfa3-4288bb78033e",
+                  "type": "text",
+                  "head": {
+                    "id": "de56d18b-0207-765b-49ce-4961eb1e5b62"
+                  },
+                  "text": {
+                    "id": "803161fc-1be7-7239-775d-94d941e2c0a8"
+                  }
+                }
+              ],
+              "title": {
+                "id": "91e2aeee-3ee7-1809-daa3-6a6511671f96"
+              },
+              "url": "host"
             },
             {
               "id": "6565c60a-0db7-9d9d-da7e-f0e1cd86062a",
@@ -9550,53 +10043,892 @@
               "url": "ng-on-destroy"
             },
             {
-              "id": "56bb53be-d88a-fed8-67fc-56520800641e",
+              "id": "3140bd42-ac5f-8bc5-61d2-fbbb228e10f7",
               "entries": [
                 {
-                  "id": "4d11223c-28ea-5353-9c52-534fb1af8c07",
+                  "id": "8e891ae7-d259-ee55-feb9-234848a0ef3e",
                   "type": "text",
                   "head": {
-                    "id": "dc44877c-4810-61bc-a7e4-ca6b8857a9f8"
+                    "id": "79ee8cdb-d5c9-9abe-8a62-1b65f55e07b8"
                   },
                   "text": {
-                    "id": "d089dd2a-8d58-7377-4262-c39674ff7cc9"
+                    "id": "cabf3840-d9fb-e390-162f-4d51e3d32b3e"
                   }
                 },
                 {
-                  "id": "7ece4831-a38b-d9f5-82c8-fdc7d1222370",
-                  "type": "text",
+                  "id": "7dd1f9e2-5b07-084a-0245-17431215c754",
+                  "type": "tutorials",
                   "head": {
-                    "id": "645e32e9-0c78-3aef-c3a2-c3f55ba99dda"
+                    "id": "6927467d-0727-1ddd-ff37-a333f44dad56"
                   },
                   "text": {
-                    "id": "a9a7761e-b30c-91a5-4c47-dd74379ec686"
+                    "id": "4a2f0b45-5822-223b-2b8b-1b8da9c7d389"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "ac335950-ace6-e04d-44ca-1a616b175c77"
+                      },
+                      "url": "https://blog.thoughtram.io/angular/2017/02/21/using-zones-in-angular-for-better-performance.html",
+                      "lang": "en"
+                    },
+                    {
+                      "label": {
+                        "id": "f4740dd5-283b-5b92-e8d6-72ff1aa2bad8"
+                      },
+                      "url": "https://blog.angularindepth.com/i-reverse-engineered-zones-zone-js-and-here-is-what-ive-found-1f48dc87659b",
+                      "lang": "en"
+                    },
+                    {
+                      "label": {
+                        "id": "eebebcf0-a819-84ba-0ff4-d9b162a84ec8"
+                      },
+                      "url": "https://blog.angularindepth.com/do-you-still-think-that-ngzone-zone-js-is-required-for-change-detection-in-angular-16f7a575afef",
+                      "lang": "en"
+                    }
+                  ]
+                },
+                {
+                  "id": "d0cfa05d-2d97-a89f-b0f0-38725cb92937",
+                  "type": "text",
+                  "head": {
+                    "id": "8ebf4199-2f45-1ee3-033b-b59568198b63"
+                  },
+                  "text": {
+                    "id": "59ff650b-c2bf-9260-d09d-dbfe65b70bbf"
                   }
                 },
                 {
-                  "id": "a95f0dd8-25e1-f92e-c007-d23c77b530d3",
-                  "type": "text",
+                  "id": "f3629b04-9165-e934-08f4-c4ca5ad7c723",
+                  "type": "toc",
                   "head": {
-                    "id": "f9f02b35-06e4-5460-3210-009a3ec89caa"
+                    "id": "133b1032-8e4a-421a-78a6-3b6c4f23ce4f"
                   },
                   "text": {
-                    "id": "df58afee-1c65-2f2d-a853-d41bfa444c3e"
+                    "id": "f27e5b70-0ab7-a76a-c273-451383b0883d"
                   }
                 },
                 {
-                  "id": "a78cbc2f-2665-39bd-b1f0-a97d685fa2ba",
+                  "id": "e0e17db8-adb0-9a22-de92-1b8a6ba49016",
                   "type": "text",
                   "head": {
-                    "id": "3394273f-8898-ff23-9eb5-b95bdcf238c2"
+                    "id": "ee16d066-672d-e768-c594-ee303e50f70b"
                   },
                   "text": {
-                    "id": "1053b6b9-b616-478c-daf5-60e9738bdcd2"
+                    "id": "57749c6c-5747-7b53-33f1-e6ef91e5fc77"
+                  }
+                },
+                {
+                  "id": "7d654bd0-be36-8db5-33dd-5a5fba6527e6",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "run()"
+                  },
+                  "text": {
+                    "id": "08a4b1d8-d82f-d003-0466-2126155af8d6"
+                  },
+                  "description": {
+                    "id": "6ef18bba-10a1-ab24-2277-74be46bf4b0b"
+                  },
+                  "name": "run()",
+                  "headId": "run()",
+                  "interface": "run<T>(fn: (...args: any[]) => T, applyThis?: any, applyArgs?: any[]): T",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "4f99a00d-579a-1dc4-b58f-b1cbb24a23ad"
+                  }
+                },
+                {
+                  "id": "fb9e519d-b81a-b575-0cab-6d3316826985",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "runTask()"
+                  },
+                  "text": {
+                    "id": "5dc7854e-2ddb-2b44-7e92-fea2178cb19c"
+                  },
+                  "description": {
+                    "id": "763e8649-b99a-3526-9c14-f11b74b86d49"
+                  },
+                  "name": "runTask()",
+                  "headId": "runTask()",
+                  "interface": "runTask<T>(fn: (...args: any[]) => T, applyThis?: any, applyArgs?: any[], name?: string): T",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "cc88c04a-d8a4-6edb-ed69-d9bc7faedca1"
+                  }
+                },
+                {
+                  "id": "df540991-1ac3-2a08-4c5b-38b6bb3d8f53",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "runGuarded()"
+                  },
+                  "text": {
+                    "id": "ee58eb4e-7f79-80da-69c6-d29649326f50"
+                  },
+                  "description": {
+                    "id": "e8b9d8e2-d153-7856-f624-750960f7b4de"
+                  },
+                  "name": "runGuarded()",
+                  "headId": "runGuarded()",
+                  "interface": "runGuarded()"
+                },
+                {
+                  "id": "84858152-da55-2d74-bad3-aaf04b0ed460",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "runOutsideAngular()"
+                  },
+                  "text": {
+                    "id": "0660f795-1445-40d8-9dce-01a52f854c16"
+                  },
+                  "description": {
+                    "id": "0225f2ca-509a-eaed-3d1d-57a4ce707549"
+                  },
+                  "name": "runOutsideAngular()",
+                  "headId": "runOutsideAngular()",
+                  "interface": "runOutsideAngular<T>(fn: (...args: any[]) => T): T",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "9f82520b-6011-6512-3b4e-e15c6b0a7a01"
+                  }
+                },
+                {
+                  "id": "083e50bd-269f-d953-d7cf-eaa70d526477",
+                  "type": "text",
+                  "head": {
+                    "id": "128761c8-5620-b346-02fc-6fb05b2e57d1"
+                  },
+                  "text": {
+                    "id": "1f015c9f-3b09-ecb6-2f3b-f7a0c881af9a"
+                  }
+                },
+                {
+                  "id": "97dae8e0-3b4b-6a89-446e-075551407081",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "hasPendingMicrotasks"
+                  },
+                  "text": {
+                    "id": "606d7cac-327c-ac11-82c3-19242aa8e691"
+                  },
+                  "description": {
+                    "id": "a4c921fa-099c-f3ce-a6a2-16f35058d604"
+                  },
+                  "name": "hasPendingMicrotasks",
+                  "headId": "hasPendingMicrotasks",
+                  "interface": "hasPendingMicrotasks: boolean"
+                },
+                {
+                  "id": "4a62224b-9c9c-39e4-c18e-665d90a16a4f",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "hasPendingMacrotasks"
+                  },
+                  "text": {
+                    "id": "32426304-4c3a-1d31-e25b-388526feff2a"
+                  },
+                  "description": {
+                    "id": "f530d999-95b2-dc2c-86bf-c3af92bba078"
+                  },
+                  "name": "hasPendingMacrotasks",
+                  "headId": "hasPendingMacrotasks",
+                  "interface": "hasPendingMacrotasks: boolean"
+                },
+                {
+                  "id": "e7db88d5-4e23-0ed0-4a08-38b0081c6abc",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "isStable"
+                  },
+                  "text": {
+                    "id": "f445a1a0-b752-d300-0264-91593d3ecb2a"
+                  },
+                  "description": {
+                    "id": "ddc7c9f3-8585-99fd-622e-416fb2019790"
+                  },
+                  "name": "isStable",
+                  "headId": "isStable",
+                  "interface": "isStable: boolean"
+                },
+                {
+                  "id": "83805282-7878-b0e6-ab31-4caa51e9b956",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "onUnstable"
+                  },
+                  "text": {
+                    "id": "ca41655d-4416-3eac-696e-0a100895456a"
+                  },
+                  "description": {
+                    "id": "5d1b050a-49b1-39da-3dec-c5e1d1d97321"
+                  },
+                  "name": "onUnstable",
+                  "headId": "onUnstable",
+                  "interface": "onUnstable: EventEmitter<any>"
+                },
+                {
+                  "id": "844473d3-dcea-1076-a188-4cbf716f1b95",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "onMicrotaskEmpty"
+                  },
+                  "text": {
+                    "id": "cfbec589-8821-4703-29cf-d3a24232db3a"
+                  },
+                  "description": {
+                    "id": "756de4b5-7d41-5223-681c-24fdf50d4358"
+                  },
+                  "name": "onMicrotaskEmpty",
+                  "headId": "onMicrotaskEmpty",
+                  "interface": "onMicrotaskEmpty: EventEmitter<any>"
+                },
+                {
+                  "id": "2401e93d-7c2a-0e19-2a08-1f3fe4d52a75",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "onStable"
+                  },
+                  "text": {
+                    "id": "95ef1904-5f3a-c4e8-5aa0-92abfb1d7a91"
+                  },
+                  "description": {
+                    "id": "73f26904-2ec5-cf7b-fe79-f251c9f438c8"
+                  },
+                  "name": "onStable",
+                  "headId": "onStable",
+                  "interface": "onStable: EventEmitter<any>"
+                },
+                {
+                  "id": "ceb18f97-6aa2-8a40-7c3b-5487825741a6",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "onError"
+                  },
+                  "text": {
+                    "id": "a9e48286-8cf6-5ba7-e401-6f078c6f3d26"
+                  },
+                  "description": {
+                    "id": "0291a31f-2eeb-2291-a8fb-194989bda62a"
+                  },
+                  "name": "onError",
+                  "headId": "onError",
+                  "interface": "onError: EventEmitter<any>"
+                }
+              ],
+              "title": {
+                "id": "59cb52a3-8c3a-8249-b4f2-76441363ad70"
+              },
+              "url": "ng-zone"
+            },
+            {
+              "id": "11baf519-b274-048a-6bb6-95d589329a12",
+              "entries": [
+                {
+                  "id": "40e481f0-7c35-8d5f-13ee-36c3c084e393",
+                  "type": "text",
+                  "head": {
+                    "id": "70571069-0994-374b-8367-e232a52a6b42"
+                  },
+                  "text": {
+                    "id": "8e834b8d-9c5d-eed9-fe54-3a58d2c1a231"
+                  }
+                },
+                {
+                  "id": "7545ef21-ff9c-26b6-c941-422e1ea52a98",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "bde0283f-11f7-66c0-12d8-331b9783f22a"
+                  },
+                  "text": {
+                    "id": "a22174be-8905-c42b-2167-241f0bf5e892"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "4ab1620f-df13-6f4a-adff-7caf5ab59de8"
+                      },
+                      "url": "https://medium.com/@kmathy/angular-manipulate-properly-the-dom-with-renderer-16a756508cba",
+                      "lang": "en"
+                    },
+                    {
+                      "label": {
+                        "id": "6ed8b34f-2e24-ebf0-88f9-17c652c365ef"
+                      },
+                      "url": "https://alligator.io/angular/using-renderer2/",
+                      "lang": "en"
+                    }
+                  ]
+                },
+                {
+                  "id": "5f00e8f2-5916-e1fd-5670-cb1b6ea5e5e1",
+                  "type": "text",
+                  "head": {
+                    "id": "0373955f-177b-de88-665c-de0d7e455f8f"
+                  },
+                  "text": {
+                    "id": "7c1e2bbd-d804-cf7b-1e9f-c20e5ccd99be"
+                  }
+                },
+                {
+                  "id": "9eeb3ca6-5af4-bdd9-9e35-148a335fa66e",
+                  "type": "toc",
+                  "head": {
+                    "id": "40d90cc0-f155-5635-e457-2eaa2e7ef561"
+                  },
+                  "text": {
+                    "id": "40c8db06-aaa8-aebc-25c5-37e2cd265c87"
+                  }
+                },
+                {
+                  "id": "b8bba8c5-0f1a-64f5-d9ab-d930276d7d65",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "destroy()"
+                  },
+                  "text": {
+                    "id": "3cbed0e8-ee8f-49e2-1745-520d320d662c"
+                  },
+                  "description": {
+                    "id": "8cd08e8d-e40d-667a-4b1c-2c323d1100fe"
+                  },
+                  "name": "destroy()",
+                  "headId": "destroy()",
+                  "interface": "destroy(): void"
+                },
+                {
+                  "id": "9de51ae2-7648-5c56-d37b-04019f2499ab",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "createElement()"
+                  },
+                  "text": {
+                    "id": "2c3aa6b4-666b-12df-4ca9-a249c27165a3"
+                  },
+                  "description": {
+                    "id": "6c400c41-1dde-b521-68d9-dbefbfeeef07"
+                  },
+                  "name": "createElement()",
+                  "headId": "createElement()",
+                  "interface": "createElement(name: string, namespace?: string | null): any",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "9c04ec49-e2c0-37a0-8c54-3deafcbf4db8"
+                  }
+                },
+                {
+                  "id": "8cef4e23-7982-7bfb-6071-9705124ad239",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "createComment()"
+                  },
+                  "text": {
+                    "id": "b4b9b88e-9e97-d05b-d54a-5e96ef7bc4f6"
+                  },
+                  "description": {
+                    "id": "2b5ad7f8-21dd-b55b-f03a-39245babe4e3"
+                  },
+                  "name": "createComment()",
+                  "headId": "createComment()",
+                  "interface": "createComment(value: string): any"
+                },
+                {
+                  "id": "aac5f9bf-77e8-9cb8-4ce2-ef90ef29ee12",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "createText()"
+                  },
+                  "text": {
+                    "id": "48397463-fdd7-00d5-6977-f8ac6a0b8c62"
+                  },
+                  "description": {
+                    "id": "82960b3a-7479-159a-88bf-4c2573268691"
+                  },
+                  "name": "createText()",
+                  "headId": "createText()",
+                  "interface": "createText(value: string): any"
+                },
+                {
+                  "id": "035e3089-b9f4-ecdd-c16d-63424128eb58",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "appendChild()"
+                  },
+                  "text": {
+                    "id": "e73c63ae-e9a9-46b9-1f91-ba86b3711ca2"
+                  },
+                  "description": {
+                    "id": "2458aaf8-d37c-31cb-1c77-5a1aac751306"
+                  },
+                  "name": "appendChild()",
+                  "headId": "appendChild()",
+                  "interface": "appendChild(parent: any, newChild: any): void"
+                },
+                {
+                  "id": "6bc1d546-5031-6ae8-eb86-588782b256d9",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "insertBefore()"
+                  },
+                  "text": {
+                    "id": "0efe1688-a85b-7553-c131-95687545cb71"
+                  },
+                  "description": {
+                    "id": "ca4885d5-52de-38c0-024a-0a29e017c2dd"
+                  },
+                  "name": "insertBefore()",
+                  "headId": "insertBefore()",
+                  "interface": "insertBefore(parent: any, newChild: any, refChild: any): void",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "13fb48a4-515b-3cf6-64be-92bb3ac9cc0a"
+                  }
+                },
+                {
+                  "id": "a68c7097-a7c1-84cf-a446-fa5b2dcaddaf",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "removeChild()"
+                  },
+                  "text": {
+                    "id": "244d59f6-89be-7351-a246-c9af70324dd7"
+                  },
+                  "description": {
+                    "id": "702a8ab3-1b11-acfa-140d-c19b392a53ae"
+                  },
+                  "name": "removeChild()",
+                  "headId": "removeChild()",
+                  "interface": "removeChild(parent: any, oldChild: any): void"
+                },
+                {
+                  "id": "86c107ff-4b92-8245-8f71-9845962063e9",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "selectRootElement()"
+                  },
+                  "text": {
+                    "id": "230faa21-294f-15b6-5b5e-e3e5184bc07f"
+                  },
+                  "description": {
+                    "id": "596c32a4-182d-d68d-f6b6-8b574d747601"
+                  },
+                  "name": "selectRootElement()",
+                  "headId": "selectRootElement()",
+                  "interface": "selectRootElement(selectorOrNode: string | any): any"
+                },
+                {
+                  "id": "63ffd18c-b4a4-d8a7-6a28-76652918a796",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "parentNode()"
+                  },
+                  "text": {
+                    "id": "1dbf72b0-8d44-8952-2664-e77f0d1dfff5"
+                  },
+                  "description": {
+                    "id": "e01aa7f6-3629-4852-5b50-80e15d213e6a"
+                  },
+                  "name": "parentNode()",
+                  "headId": "parentNode()",
+                  "interface": "parentNode(node: any): any",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "9ee6a2dc-b886-99b9-61f1-7b859013f0fa"
+                  }
+                },
+                {
+                  "id": "90f06618-1885-b3f4-69db-cfb98a05fbe8",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "nextSibling()"
+                  },
+                  "text": {
+                    "id": "c1083414-6540-4e67-2f06-33548b16da3a"
+                  },
+                  "description": {
+                    "id": "31073aea-6260-36b5-b5fb-02a0017b0ef1"
+                  },
+                  "name": "nextSibling()",
+                  "headId": "nextSibling()",
+                  "interface": "nextSibling(node: any): any",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "43d8edb6-f1ae-c33d-4d0b-f016d5a04bb3"
+                  }
+                },
+                {
+                  "id": "dae98f4e-b601-9d5e-8d53-2491396b5d96",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "setAttribute()"
+                  },
+                  "text": {
+                    "id": "5f844aa7-665f-7083-b18f-d71679cbe0d5"
+                  },
+                  "description": {
+                    "id": "cef8e5e3-a57d-52e4-eb72-f77a161fc310"
+                  },
+                  "name": "setAttribute()",
+                  "headId": "setAttribute()",
+                  "interface": "setAttribute(el: any, name: string, value: string, namespace?: string | null): void",
+                  "showAdditional": false,
+                  "additional": {
+                    "id": "2d84e265-4852-bc38-2010-04c3aa438796"
+                  }
+                },
+                {
+                  "id": "2397b1a0-f171-cdc2-1c2a-d3cfe49d2fc7",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "removeAttribute()"
+                  },
+                  "text": {
+                    "id": "e19dd62e-e999-0b17-5786-d2ebabfaa600"
+                  },
+                  "description": {
+                    "id": "5640a475-e647-1086-8f80-a96ecefe8124"
+                  },
+                  "name": "removeAttribute()",
+                  "headId": "removeAttribute()",
+                  "interface": "removeAttribute(el: any, name: string, namespace?: string | null): void"
+                },
+                {
+                  "id": "cca30cb8-b640-8aa1-bad0-004ae3dc845f",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "addClass()"
+                  },
+                  "text": {
+                    "id": "a89f47cb-20f6-1fc0-2aea-312b7e759af5"
+                  },
+                  "description": {
+                    "id": "bc325166-727f-a71b-6cbe-65c8c0be21df"
+                  },
+                  "name": "addClass()",
+                  "headId": "addClass()",
+                  "interface": "addClass(el: any, name: string): void"
+                },
+                {
+                  "id": "39043a48-0d2a-b1cc-6411-68651930335a",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "removeClass()"
+                  },
+                  "text": {
+                    "id": "7655c807-ec4c-4e3f-b0f3-f5e90f01e41c"
+                  },
+                  "description": {
+                    "id": "4d4d823f-7460-eaf6-4b1f-4639e59ee31a"
+                  },
+                  "name": "removeClass()",
+                  "headId": "removeClass()",
+                  "interface": "removeClass(el: any, name: string): void"
+                },
+                {
+                  "id": "ae3d1d76-dcf0-d8f6-7082-a54fc5cb1c31",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "setStyle()"
+                  },
+                  "text": {
+                    "id": "6e8765e2-2116-32cc-5fb9-423ebff8a631"
+                  },
+                  "description": {
+                    "id": "b53e26a8-1e4b-28a5-c54d-0f698334e736"
+                  },
+                  "name": "setStyle()",
+                  "headId": "setStyle()",
+                  "interface": "setStyle(el: any, style: string, value: any, flags?: RendererStyleFlags2): void"
+                },
+                {
+                  "id": "c4375191-8f2c-3eee-6df6-abe386c13861",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "removeStyle()"
+                  },
+                  "text": {
+                    "id": "8568f5de-3f02-597a-5caa-d5958f123ca5"
+                  },
+                  "description": {
+                    "id": "a6e8c022-642d-c1b0-ea8f-9aadabd40806"
+                  },
+                  "name": "removeStyle()",
+                  "headId": "removeStyle()",
+                  "interface": "removeStyle(el: any, style: string, flags?: RendererStyleFlags2): void"
+                },
+                {
+                  "id": "3a361f29-c96a-23cc-6e13-c98951a3d602",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "setProperty()"
+                  },
+                  "text": {
+                    "id": "86c4be97-7464-275e-5c02-b3735209e259"
+                  },
+                  "description": {
+                    "id": "dd7216d0-3b58-e16f-b7d2-871b44a8068c"
+                  },
+                  "name": "setProperty()",
+                  "headId": "setProperty()",
+                  "interface": "setProperty(el: any, name: string, value: any): void"
+                },
+                {
+                  "id": "e9f83c7c-a16f-9213-fbde-8d500495adae",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "setValue()"
+                  },
+                  "text": {
+                    "id": "18015c45-a306-9bc5-816d-34b61247c900"
+                  },
+                  "description": {
+                    "id": "7cb70658-acb3-5a40-e161-94857fa893ff"
+                  },
+                  "name": "setValue()",
+                  "headId": "setValue()",
+                  "interface": "setValue(node: any, value: string): void"
+                },
+                {
+                  "id": "fddbe8c8-dde4-46c3-7062-b7b839ad2e1f",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "listen()"
+                  },
+                  "text": {
+                    "id": "70ea5c4b-23ed-bd36-a2fa-7b3d1961dd5f"
+                  },
+                  "description": {
+                    "id": "72e09b27-7860-5bb5-c3a8-5972e06dc02f"
+                  },
+                  "name": "listen()",
+                  "headId": "listen()",
+                  "interface": "listen(target: 'window' | 'document' | 'body' | any, eventName: string, callback: (event: any) => boolean | void): () => void",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "42a15d21-97bf-4efe-a172-ae8318e86924"
                   }
                 }
               ],
               "title": {
-                "id": "8408734b-ec18-4656-d9a5-3e6d791bc342"
+                "id": "5d62f22e-584d-697e-c626-e33fc7f4168a"
               },
-              "url": "forward-ref"
+              "url": "renderer2"
+            },
+            {
+              "id": "8631a258-f7e2-0ea9-1a37-0a749733a6e9",
+              "entries": [
+                {
+                  "id": "1c535630-47af-2c6c-a4b1-66018a3c4ccd",
+                  "type": "text",
+                  "head": {
+                    "id": "db45403a-3796-de68-41ab-0e341e622d5c"
+                  },
+                  "text": {
+                    "id": "5b88380b-5b9a-70d8-daf2-9533393f4dc9"
+                  }
+                },
+                {
+                  "id": "866af4fd-2fbb-dc43-fab3-265da7539390",
+                  "type": "text",
+                  "head": {
+                    "id": "6f229755-94a6-51e3-65d5-067d14a70c46"
+                  },
+                  "text": {
+                    "id": "0d224132-441e-860c-dd34-f510e62d4012"
+                  }
+                },
+                {
+                  "id": "1120f309-baab-c411-2f77-b5821ffcb0c8",
+                  "type": "text",
+                  "head": {
+                    "id": "7acf7a89-9b56-5383-a35d-07263eaf96a0"
+                  },
+                  "text": {
+                    "id": "2c278a15-4e2f-2285-420a-91e9b1aab910"
+                  }
+                },
+                {
+                  "id": "b5d7721d-65eb-9c6b-0c73-c2ea1d819eb2",
+                  "type": "text",
+                  "head": {
+                    "id": "cb4c4563-720b-bea4-ea5e-a7600c9d6f6d"
+                  },
+                  "text": {
+                    "id": "ba20c757-bcd7-8579-2e7d-611ae39134dc"
+                  }
+                },
+                {
+                  "id": "affa2577-779a-5f97-8ed1-4cb0551818a0",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "8b8d9cf6-79b7-ca41-4f98-27453f9a695d"
+                  },
+                  "text": {
+                    "id": "9e142f09-5af4-4641-10ce-3e242e4ac5dc"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "7042334e-59a5-e8c4-84f1-404414352914"
+                      },
+                      "url": "https://angular.io/guide/security",
+                      "lang": "en"
+                    },
+                    {
+                      "label": {
+                        "id": "75e5685e-c2fe-30ff-e75d-39e043322446"
+                      },
+                      "url": "https://netbasal.com/angular-2-security-the-domsanitizer-service-2202c83bd90",
+                      "lang": "en"
+                    }
+                  ]
+                },
+                {
+                  "id": "300f4e5a-03a6-72c1-1e15-5f36e0ad9854",
+                  "type": "text",
+                  "head": {
+                    "id": "8a891f66-d09a-5bb5-b35e-3771c45e11df"
+                  },
+                  "text": {
+                    "id": "35e399f0-95ad-6557-2c00-ee6d0ac3069e"
+                  }
+                },
+                {
+                  "id": "2a208307-aaa8-4e9c-66ee-5ca3e940664a",
+                  "type": "toc",
+                  "head": {
+                    "id": "9f4e3213-9a7e-7fcc-09e6-2cc0e5742f8c"
+                  },
+                  "text": {
+                    "id": "1cafc744-04ed-319c-5d27-711b7c7b058e"
+                  }
+                },
+                {
+                  "id": "2a199363-c582-5f9d-22f6-0e5281175144",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "sanitize()"
+                  },
+                  "text": {
+                    "id": "747ffc09-8082-71ff-5cea-b7e01af5518e"
+                  },
+                  "description": {
+                    "id": "e5fe9446-77e8-a84d-9802-7a8b5bbea8e8"
+                  },
+                  "name": "sanitize()",
+                  "headId": "sanitize()",
+                  "interface": "sanitize(context: SecurityContext, value: SafeValue | string | null): string | null",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "1c6d9a56-7a4c-d0ad-20c2-544446cdeaf6"
+                  }
+                },
+                {
+                  "id": "94ebbb7b-0259-953a-b77c-6439f4885f92",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "bypassSecurityTrustHtml()"
+                  },
+                  "text": {
+                    "id": "7c488d06-a864-4285-6b8b-cef938047751"
+                  },
+                  "description": {
+                    "id": "d720d15d-bf8a-7e78-79b2-fa020e7e4ce4"
+                  },
+                  "name": "bypassSecurityTrustHtml()",
+                  "headId": "bypassSecurityTrustHtml()",
+                  "interface": "bypassSecurityTrustHtml(value: string): SafeHtml",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "35258287-32ee-cd6b-f473-0d8ecdb2ed3d"
+                  }
+                },
+                {
+                  "id": "9604799c-7ab4-4ede-0b74-11e1d4ab39d4",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "bypassSecurityTrustStyle()"
+                  },
+                  "text": {
+                    "id": "ff535153-c420-4c37-315f-5018b415814e"
+                  },
+                  "description": {
+                    "id": "d594c0c7-afcb-41ae-7841-5cd388dde5d4"
+                  },
+                  "name": "bypassSecurityTrustStyle()",
+                  "headId": "bypassSecurityTrustStyle()",
+                  "interface": "bypassSecurityTrustStyle(value: string): SafeStyle",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "f0d653c3-1ce4-5e03-c8f9-0fd142be11f0"
+                  }
+                },
+                {
+                  "id": "451948b4-d300-7eb4-6874-89399289189b",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "bypassSecurityTrustScript()"
+                  },
+                  "text": {
+                    "id": "8b1c84bb-3708-0481-351e-1053d5c1300a"
+                  },
+                  "description": {
+                    "id": "f7962743-4951-05f3-5c7f-f14c46e5dfbd"
+                  },
+                  "name": "bypassSecurityTrustScript()",
+                  "headId": "bypassSecurityTrustScript()",
+                  "interface": "bypassSecurityTrustScript(value: string): SafeScript",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "da80fef9-b05d-e849-bf54-ec62aa861759"
+                  }
+                },
+                {
+                  "id": "cfe2f823-2b2b-95a7-8d85-2b75b3696bbd",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "bypassSecurityTrustUrl()"
+                  },
+                  "text": {
+                    "id": "4820a2da-0f6f-7b27-8c68-bd6a47b901fb"
+                  },
+                  "description": {
+                    "id": "76b3a981-2da2-58ef-7494-f9c05d29e1ed"
+                  },
+                  "name": "bypassSecurityTrustUrl()",
+                  "headId": "bypassSecurityTrustUrl()",
+                  "interface": "bypassSecurityTrustUrl(value: string): SafeUrl",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "4fe821b5-d7f4-1dde-7285-322cbc076134"
+                  }
+                },
+                {
+                  "id": "fb1f7d9b-144d-d94b-9b41-0281fe7878b8",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "bypassSecurityTrustResourceUrl()"
+                  },
+                  "text": {
+                    "id": "ca43cbe1-f522-8782-24fe-9d0f78d5dd11"
+                  },
+                  "description": {
+                    "id": "03d9f637-f736-dbec-4137-8d3671fb404a"
+                  },
+                  "name": "bypassSecurityTrustResourceUrl()",
+                  "headId": "bypassSecurityTrustResourceUrl()",
+                  "interface": "bypassSecurityTrustResourceUrl(value: string): SafeResourceUrl",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "8e630932-d55c-93c4-45d2-afbf63f0745f"
+                  }
+                }
+              ],
+              "title": {
+                "id": "29e66a63-4dd5-b4d2-5bcb-aa53fa98de33"
+              },
+              "url": "dom-sanitizer"
             }
           ],
           "title": {
@@ -19119,6 +20451,1306 @@
             {
               "lang": "en",
               "text": "Differs"
+            }
+          ]
+        },
+        {
+          "id": "41626dff-2261-327f-aeb6-9f13c56241ef",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@Input(propertyBindingName: string)\n```"
+            }
+          ]
+        },
+        {
+          "id": "f714688f-3513-8700-0d23-d4c1cd16c0a5",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@HostListener(eventName: string, args: string[])\n```"
+            }
+          ]
+        },
+        {
+          "id": "00311cd5-57e0-c980-9add-6c966b5bf878",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@Output(propertyBindingName: string)\n```"
+            }
+          ]
+        },
+        {
+          "id": "d7d06e86-e152-9473-b63d-ac9e01432441",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@ContentChildren(\n  selector: Type<any>|Function|string, \n  opts?: {descendants?: boolean, read?: any},\n)\n```"
+            }
+          ]
+        },
+        {
+          "id": "7f0895ed-a32a-a2fa-6cbf-81addfc804a9",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@ContentChild(\n  selector: Type<any>|Function|string, \n  opts?: {read?: any},\n)\n```"
+            }
+          ]
+        },
+        {
+          "id": "faf837d7-bdb3-f803-8b0b-901f2b754a1d",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@ContentChildren(\n  selector: Type<any>|Function|string, \n  opts?: {read?: any},\n)\n```"
+            }
+          ]
+        },
+        {
+          "id": "cfdc4d66-e28b-019a-1716-8b4a933fca9f",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@ViewChild(\n  selector: Type<any>|Function|string, \n  opts?: {read?: any},\n)\n```"
+            }
+          ]
+        },
+        {
+          "id": "159cc5b2-adbe-0625-8565-6e09c6720cc7",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nInjectionToken<T>(\n  _desc: string,\n  options?: { providedIn?: Type<any> | 'root' | null; factory: () => T; },\n);\n```"
+            }
+          ]
+        },
+        {
+          "id": "f32ab662-7d36-2ff7-75b7-8ad6c549d122",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "IterableDiffer"
+            }
+          ]
+        },
+        {
+          "id": "a95bc06c-1d4d-df8f-a899-468383ae1437",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "KeyvalueDiffer"
+            }
+          ]
+        },
+        {
+          "id": "fc525b83-6c69-1264-d939-24389123c57c",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "NgZone"
+            }
+          ]
+        },
+        {
+          "id": "23244535-dae2-cceb-a5dc-c51b38d6f43a",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Renderer2"
+            }
+          ]
+        },
+        {
+          "id": "ab2edbda-e41f-42a9-302d-38d81710ed34",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "DomSanitizer"
+            }
+          ]
+        },
+        {
+          "id": "3b427dec-3b1e-fc05-63ac-05311e1c98dd",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Linker"
+            }
+          ]
+        },
+        {
+          "id": "9463ca68-60fe-4e95-b976-fe0338ea1251",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ComponentFactory"
+            }
+          ]
+        },
+        {
+          "id": "30fb34bb-71c8-0882-fb82-886dd2db9221",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ComponentFactoryResolver"
+            }
+          ]
+        },
+        {
+          "id": "36c84723-aece-54da-4aba-0d3bf4fe3bf1",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ElementRef"
+            }
+          ]
+        },
+        {
+          "id": "122bd0e4-f1de-a043-606a-360e44d7447d",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "TemplateRef"
+            }
+          ]
+        },
+        {
+          "id": "14742fb7-0530-de7c-d658-e56196876b5f",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ViewRef"
+            }
+          ]
+        },
+        {
+          "id": "a18e7733-9fff-1cae-d2ce-19cc8b84537b",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ViewContainerRef"
+            }
+          ]
+        },
+        {
+          "id": "c363f851-9e73-db1f-a09f-d458ccc74e5b",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "StaticInjector"
+            }
+          ]
+        },
+        {
+          "id": "38d43332-05da-2c87-c311-52fe571076ef",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Providers"
+            }
+          ]
+        },
+        {
+          "id": "d4d3a4f3-4bb9-04bf-f474-6ef1632e6498",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Providers tell the injector how to create the service. Without a provider, the injector would not know that it is responsible for injecting the service nor be able to create the service.\n\n```typescript\nproviders: [Logger]\n```\n\n---\n\nYou can configure the injector with alternative providers that can deliver an object that behaves. You could provide a substitute class. You could provide a service-like object. You could give it a provider that calls a factory function. Any of these approaches might be a good choice under the right circumstances.\n\nWhat matters is that the injector has a provider to go to when it needs a service."
+            }
+          ]
+        },
+        {
+          "id": "259b8230-9fa1-f0d0-8eca-a7fd05f17460",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@Inject"
+            }
+          ]
+        },
+        {
+          "id": "6e590ef1-90fa-8224-31fd-27bc3ae8669b",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A constructor parameter decorator that specifies a custom provider of a dependency.\n"
+            }
+          ]
+        },
+        {
+          "id": "162ac3e0-e75f-d6d1-03b0-65cb3da106b9",
+          "context": "Entry head",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "useValue"
+            }
+          ]
+        },
+        {
+          "id": "65b4cfbb-59ad-0e8e-b1b0-46b9f0245afc",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Sometimes it's easier to provide a ready-made object rather than ask the injector to create it from a class.\n\nThen you register a provider with the `useValue` option:\n\n```typescript\n[{ \n  provide: Config, \n  useValue: {option1: true, options2: false},\n}]\n```\n"
+            }
+          ]
+        },
+        {
+          "id": "4ca5da1a-08ae-bcc5-2d0b-3e40f331bd07",
+          "context": "Entry head",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "useClass"
+            }
+          ]
+        },
+        {
+          "id": "fc444219-8bf5-d742-1789-20e4529b53ef",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Here's the class-provider syntax:\n\n```typescript\nproviders: [Logger]\n```\n\nThis is actually a shorthand expression for a provider registration using a provider object literal with two properties:\n\n```typescript\n[{ provide: Logger, useClass: Logger }]\n```\n\nThe `provide` property holds the token that serves as the key for both locating a dependency value and registering the provider.\n\nThe second property is always a provider definition object, which you can think of as a recipe for creating the dependency value. There are many ways to create dependency values just as there are many ways to write a recipe.\n\nOccasionally you'll ask a different class to provide the service. The following code tells the injector to return a `BetterLogger` when something asks for the `Logger`.\n\n```typescript\n[{ provide: Logger, useClass: BetterLogger }]\n```\n\n"
+            }
+          ]
+        },
+        {
+          "id": "c81bc016-bab2-c07b-a1e1-b72804b2c134",
+          "context": "Entry head",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "useExisting"
+            }
+          ]
+        },
+        {
+          "id": "c3ac0cce-2733-6af6-7736-9a921e43807a",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Allows to declare two providers for the same class with two different tokens.\n\n```typescript\n[ \n  NewLogger,\n  // Alias OldLogger w/ reference to NewLogger\n  { provide: OldLogger, useExisting: NewLogger},\n]\n```\n"
+            }
+          ]
+        },
+        {
+          "id": "ef6baf4a-33fb-e266-0197-f98a949fe9bf",
+          "context": "Entry head",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "useFactory"
+            }
+          ]
+        },
+        {
+          "id": "12cb1830-6038-7233-f574-67d2fe1242a6",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Sometimes you need to create the dependent value dynamically, based on information you won't have until the last possible moment. Maybe the information changes repeatedly in the course of the browser session.\n\nSuppose also that the injectable service has no independent access to the source of this information.\n\nThis situation calls for a factory provider.\n\nA factory provider needs a factory function:\n\n```typescript\nlet heroServiceFactory = (logger: Logger, userService: UserService) => {\n  return new HeroService(logger, userService.user.isAuthorized);\n};\n```\n\nYou inject both the `Logger` and the `UserService` into the factory provider and let the injector pass them along to the factory function:\n\n```typescript\n[{ \n  provide: HeroService,\n  useFactory: heroServiceFactory,\n  deps: [Logger, UserService],\n}]\n```"
+            }
+          ]
+        },
+        {
+          "id": "66009c89-5b6b-7bd7-f018-19690e1c666b",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular Dependency Injection"
+            }
+          ]
+        },
+        {
+          "id": "33461f25-cea6-bdd3-3131-014c065250ab",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example"
+            }
+          ]
+        },
+        {
+          "id": "7252e78f-ddb6-ea10-143c-95c46d8c98f4",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The following example shows a class constructor that specifies a custom provider of a dependency using the parameter decorator.\n\n```typescript\nclass Engine {}\n\n@Injectable()\nclass Car {\n  constructor(@Inject('MyEngine') public engine: Engine) {}\n}\n\nconst injector =\n    ReflectiveInjector.resolveAndCreate([{provide: 'MyEngine', useClass: Engine}, Car]);\n\nexpect(injector.get(Car).engine instanceof Engine).toBe(true);\n```\n\nWhen `@Inject()` is not present, the `Injector` uses the type annotation of the parameter as the provider.\n\n```typescript\nclass Engine {}\n\n@Injectable()\nclass Car {\n  constructor(public engine: Engine) {\n  }  // same as constructor(@Inject(Engine) engine:Engine)\n}\n\nconst injector = ReflectiveInjector.resolveAndCreate([Engine, Car]);\nexpect(injector.get(Car).engine instanceof Engine).toBe(true);\n```"
+            }
+          ]
+        },
+        {
+          "id": "0ad0a920-d11d-a6af-09cf-8734e97b057f",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@Optional"
+            }
+          ]
+        },
+        {
+          "id": "cdfcec61-dd46-9d4c-44ab-d94deba8646f",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A constructor parameter decorator that marks a dependency as optional.\n"
+            }
+          ]
+        },
+        {
+          "id": "dd10fc58-f0c1-c09f-fcc0-89e08928d5c0",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nconstructor(@Optional() service: Service) {}\n```"
+            }
+          ]
+        },
+        {
+          "id": "595df1e6-19f4-a6ae-eb5f-199e93e5df6a",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example"
+            }
+          ]
+        },
+        {
+          "id": "43d422f7-33b7-363b-55d7-d086b6a5bdec",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The DI framework provides null if the dependency is not found. For example, the following code allows the possibility of a null result:\n\n```typescript\nclass Engine {}\n\n@Injectable()\nclass Car {\n  constructor(@Optional() public engine: Engine) {}\n}\n\nconst injector = ReflectiveInjector.resolveAndCreate([Car]);\nexpect(injector.get(Car).engine).toBeNull();\n```"
+            }
+          ]
+        },
+        {
+          "id": "d7886b8f-6bca-51bd-5689-c39067118424",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nconstructor(@Inject(ServiceToken) service: Service) {}\n```"
+            }
+          ]
+        },
+        {
+          "id": "987b42cc-95e2-77d7-83bb-11be710650f4",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@Self"
+            }
+          ]
+        },
+        {
+          "id": "2c108fa6-444a-e936-fe6e-bdd3adcf1e2e",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A constructor parameter decorator that tells the DI framework to retrieve a dependency only from the local injector."
+            }
+          ]
+        },
+        {
+          "id": "a28102f8-3dee-2499-717a-c623a63cdbbe",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nconstructor(@Self() service: Service) {}\n```"
+            }
+          ]
+        },
+        {
+          "id": "1a8215d1-2453-f4a0-69ca-84fecec80c79",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example"
+            }
+          ]
+        },
+        {
+          "id": "29f60069-e001-a40e-23de-283dcce870d7",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "In the following example, the dependency can be resolved by the local injector when instantiating the class itself, but not when instantiating a child.\n\n```typescript\nclass Dependency {}\n \n@Injectable()\nclass NeedsDependency {\n  constructor(@Self() public dependency: Dependency) {}\n}\n \nlet inj = ReflectiveInjector.resolveAndCreate([Dependency, NeedsDependency]);\nconst nd = inj.get(NeedsDependency);\n \nexpect(nd.dependency instanceof Dependency).toBe(true);\n \ninj = ReflectiveInjector.resolveAndCreate([Dependency]);\nconst child = inj.resolveAndCreateChild([NeedsDependency]);\nexpect(() => child.get(NeedsDependency)).toThrowError();\n```\n"
+            }
+          ]
+        },
+        {
+          "id": "1b4259e8-38ef-d67e-3745-77970c10d3a0",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@SkipSelf"
+            }
+          ]
+        },
+        {
+          "id": "e2c4f3ae-db6c-b9b1-d460-7976027fbc2f",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A constructor parameter decorator that tells the DI framework that dependency resolution should start from the parent injector."
+            }
+          ]
+        },
+        {
+          "id": "02b5d2ee-bb2e-116c-f41d-f90d36439770",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nconstructor(@SkipSelf() service: Service) {}\n```"
+            }
+          ]
+        },
+        {
+          "id": "54534cf0-8fdf-49ef-cba2-7809734602c2",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example"
+            }
+          ]
+        },
+        {
+          "id": "b73ee48a-50a1-e1b9-652b-632cf8cb0685",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "In the following example, the dependency can be resolved when instantiating a child, but not when instantiating the class itself.\n\n```typescript\nclass Dependency {}\n \n@Injectable()\nclass NeedsDependency {\n  constructor(@SkipSelf() public dependency: Dependency) { this.dependency = dependency; }\n}\n \nconst parent = ReflectiveInjector.resolveAndCreate([Dependency]);\nconst child = parent.resolveAndCreateChild([NeedsDependency]);\nexpect(child.get(NeedsDependency).dependency instanceof Dependency).toBe(true);\n \nconst inj = ReflectiveInjector.resolveAndCreate([Dependency, NeedsDependency]);\nexpect(() => inj.get(NeedsDependency)).toThrowError();\n```"
+            }
+          ]
+        },
+        {
+          "id": "91e2aeee-3ee7-1809-daa3-6a6511671f96",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@Host"
+            }
+          ]
+        },
+        {
+          "id": "23cae7f3-5888-01d8-f724-73d628562a26",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A constructor parameter decorator that tells the DI framework to retrieve a dependency from any injector until reaching the host element of the current component."
+            }
+          ]
+        },
+        {
+          "id": "9c3132a9-b377-b3e8-7d06-e9192f8d289a",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nconstructor(@Host() service: Service) {}\n```"
+            }
+          ]
+        },
+        {
+          "id": "b085d214-bb22-bd62-f26c-2f65501fc064",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example"
+            }
+          ]
+        },
+        {
+          "id": "803161fc-1be7-7239-775d-94d941e2c0a8",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nclass OtherService {}\nclass HostService {}\n \n@Directive({selector: 'child-directive'})\nclass ChildDirective {\n  logs: string[] = [];\n \n  constructor(@Optional() @Host() os: OtherService, @Optional() @Host() hs: HostService) {\n    // os is null: true\n    this.logs.push(`os is null: ${os === null}`);\n    // hs is an instance of HostService: true\n    this.logs.push(`hs is an instance of HostService: ${hs instanceof HostService}`);\n  }\n}\n \n@Component({\n  selector: 'parent-cmp',\n  viewProviders: [HostService],\n  template: '<child-directive></child-directive>',\n})\nclass ParentCmp {\n}\n \n@Component({\n  selector: 'app',\n  viewProviders: [OtherService],\n  template: '<parent-cmp></parent-cmp>',\n})\nclass App {\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "59cb52a3-8c3a-8249-b4f2-76441363ad70",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "NgZone"
+            }
+          ]
+        },
+        {
+          "id": "cabf3840-d9fb-e390-162f-4d51e3d32b3e",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "An injectable service for executing work inside or outside of the Angular zone.\n\nThe most common use of this service is to optimize performance when starting a work consisting of one or more asynchronous tasks that don't require UI updates or error handling to be handled by Angular. Such tasks can be kicked off via `runOutsideAngular` and if needed, these tasks can reenter the Angular zone via `run`."
+            }
+          ]
+        },
+        {
+          "id": "ac335950-ace6-e04d-44ca-1a616b175c77",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Using Zones an Angular for Better Performance"
+            }
+          ]
+        },
+        {
+          "id": "f4740dd5-283b-5b92-e8d6-72ff1aa2bad8",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "I reverse-engineered Zones (zone.js) and here is what I’ve found"
+            }
+          ]
+        },
+        {
+          "id": "eebebcf0-a819-84ba-0ff4-d9b162a84ec8",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Do you still think that NgZone (zone.js) is required for change detection in Angular?"
+            }
+          ]
+        },
+        {
+          "id": "59ff650b-c2bf-9260-d09d-dbfe65b70bbf",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Interface"
+            }
+          ]
+        },
+        {
+          "id": "e127dfc1-6ce7-4ea9-1d98-9a98b1a09d6b",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "### Static Methods"
+            }
+          ]
+        },
+        {
+          "id": "57749c6c-5747-7b53-33f1-e6ef91e5fc77",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "### Methods"
+            }
+          ]
+        },
+        {
+          "id": "6ef18bba-10a1-ab24-2277-74be46bf4b0b",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Executes the `fn` function synchronously within the Angular zone and returns value returned by the function."
+            }
+          ]
+        },
+        {
+          "id": "4f99a00d-579a-1dc4-b58f-b1cbb24a23ad",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Running functions via `run` allows you to reenter Angular zone from a task that was executed outside of the Angular zone (typically started via `runOutsideAngular`).\n\nAny future tasks or microtasks scheduled from within this function will continue executing from within the Angular zone.\n\nIf a synchronous error happens it will be rethrown and not reported via `onError`."
+            }
+          ]
+        },
+        {
+          "id": "763e8649-b99a-3526-9c14-f11b74b86d49",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Executes the `fn` function synchronously within the Angular zone as a task and returns value returned by the function."
+            }
+          ]
+        },
+        {
+          "id": "cc88c04a-d8a4-6edb-ed69-d9bc7faedca1",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Running functions via `run` allows you to reenter Angular zone from a task that was executed outside of the Angular zone (typically started via `runOutsideAngular`).\n\nAny future tasks or microtasks scheduled from within this function will continue executing from within the Angular zone.\n\nIf a synchronous error happens it will be rethrown and not reported via `onError`."
+            }
+          ]
+        },
+        {
+          "id": "e8b9d8e2-d153-7856-f624-750960f7b4de",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Same as `run`, except that synchronous errors are caught and forwarded via `onError` and not rethrown."
+            }
+          ]
+        },
+        {
+          "id": "0225f2ca-509a-eaed-3d1d-57a4ce707549",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Executes the `fn` function synchronously in Angular's parent zone and returns value returned by the function."
+            }
+          ]
+        },
+        {
+          "id": "9f82520b-6011-6512-3b4e-e15c6b0a7a01",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Running functions via `runOutsideAngular` allows you to escape Angular's zone and do work that doesn't trigger Angular change-detection or is subject to Angular's error handling.\n\nAny future tasks or microtasks scheduled from within this function will continue executing from outside of the Angular zone.\n\nUse `run` to reenter the Angular zone and do work that updates the application model."
+            }
+          ]
+        },
+        {
+          "id": "1f015c9f-3b09-ecb6-2f3b-f7a0c881af9a",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "### Properties"
+            }
+          ]
+        },
+        {
+          "id": "ddc7c9f3-8585-99fd-622e-416fb2019790",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Whether there are no outstanding microtasks or macrotasks."
+            }
+          ]
+        },
+        {
+          "id": "5d1b050a-49b1-39da-3dec-c5e1d1d97321",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Notifies when code enters Angular Zone. This gets fired first on VM Turn."
+            }
+          ]
+        },
+        {
+          "id": "756de4b5-7d41-5223-681c-24fdf50d4358",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Notifies when there is no more microtasks enqueued in the current VM Turn. This is a hint for Angular to do change detection, which may enqueue more microtasks. For this reason this event can fire multiple times per VM Turn."
+            }
+          ]
+        },
+        {
+          "id": "73f26904-2ec5-cf7b-fe79-f251c9f438c8",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Notifies when the last `onMicrotaskEmpty` has run and there are no more microtasks, which implies we are about to relinquish VM turn. This event gets called just once."
+            }
+          ]
+        },
+        {
+          "id": "0291a31f-2eeb-2291-a8fb-194989bda62a",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Notifies that an error has been delivered."
+            }
+          ]
+        },
+        {
+          "id": "a4c921fa-099c-f3ce-a6a2-16f35058d604",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Has pending microtasks."
+            }
+          ]
+        },
+        {
+          "id": "f530d999-95b2-dc2c-86bf-c3af92bba078",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Has pending macrotasks."
+            }
+          ]
+        },
+        {
+          "id": "5d62f22e-584d-697e-c626-e33fc7f4168a",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Renderer2"
+            }
+          ]
+        },
+        {
+          "id": "8e834b8d-9c5d-eed9-fe54-3a58d2c1a231",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The Renderer class is a service that provides an abstraction for UI rendering manipulations. Using it is the recommended approach because it then makes it easier to develop apps that can be rendered in different environments.\n"
+            }
+          ]
+        },
+        {
+          "id": "4ab1620f-df13-6f4a-adff-7caf5ab59de8",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular: Stop manipulating DOM with ElementRef!"
+            }
+          ]
+        },
+        {
+          "id": "6ed8b34f-2e24-ebf0-88f9-17c652c365ef",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Using Renderer2 in Angular"
+            }
+          ]
+        },
+        {
+          "id": "7c1e2bbd-d804-cf7b-1e9f-c20e5ccd99be",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Methods"
+            }
+          ]
+        },
+        {
+          "id": "8cd08e8d-e40d-667a-4b1c-2c323d1100fe",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Destroy the renderer or the host element."
+            }
+          ]
+        },
+        {
+          "id": "6c400c41-1dde-b521-68d9-dbefbfeeef07",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Create an instance of the host element."
+            }
+          ]
+        },
+        {
+          "id": "9c04ec49-e2c0-37a0-8c54-3deafcbf4db8",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "* `name` — an identifying name for the new element, unique within the namespace.\n* `namespace` - the namespace for the new element."
+            }
+          ]
+        },
+        {
+          "id": "2b5ad7f8-21dd-b55b-f03a-39245babe4e3",
+          "context": "Command param entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Add a comment to the DOM of the host element."
+            }
+          ]
+        },
+        {
+          "id": "82960b3a-7479-159a-88bf-4c2573268691",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Add text to the DOM of the host element."
+            }
+          ]
+        },
+        {
+          "id": "2458aaf8-d37c-31cb-1c77-5a1aac751306",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Appends a child to a given parent node in the host element DOM."
+            }
+          ]
+        },
+        {
+          "id": "ca4885d5-52de-38c0-024a-0a29e017c2dd",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Insert a child node at a given position in a parent node in the host element DOM."
+            }
+          ]
+        },
+        {
+          "id": "13fb48a4-515b-3cf6-64be-92bb3ac9cc0a",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "* `parent` — the parent node.\n* `newChild` — the new child nodes.\n* `refChild` — the existing child node that should precede the new node."
+            }
+          ]
+        },
+        {
+          "id": "702a8ab3-1b11-acfa-140d-c19b392a53ae",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Remove a child node from the host element's DOM."
+            }
+          ]
+        },
+        {
+          "id": "596c32a4-182d-d68d-f6b6-8b574d747601",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Prepare an element to be bootstrapped as a root element, and return the element instance."
+            }
+          ]
+        },
+        {
+          "id": "e01aa7f6-3629-4852-5b50-80e15d213e6a",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Get the parent of a given node in the host element's DOM."
+            }
+          ]
+        },
+        {
+          "id": "9ee6a2dc-b886-99b9-61f1-7b859013f0fa",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Returns the parent node, or null if there is no parent. For WebWorkers, always returns true. This is because the check is synchronous, and the caller can't rely on checking for null."
+            }
+          ]
+        },
+        {
+          "id": "31073aea-6260-36b5-b5fb-02a0017b0ef1",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Get the next sibling node of a given node in the host element's DOM."
+            }
+          ]
+        },
+        {
+          "id": "43d8edb6-f1ae-c33d-4d0b-f016d5a04bb3",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Returns the sibling node, or null if there is no sibling. For WebWorkers, always returns a value. This is because the check is synchronous, and the caller can't rely on checking for null.\n"
+            }
+          ]
+        },
+        {
+          "id": "cef8e5e3-a57d-52e4-eb72-f77a161fc310",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Set an attribute value for an element in the DOM."
+            }
+          ]
+        },
+        {
+          "id": "5640a475-e647-1086-8f80-a96ecefe8124",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Remove an attribute from an element in the DOM."
+            }
+          ]
+        },
+        {
+          "id": "bc325166-727f-a71b-6cbe-65c8c0be21df",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Add a class to an element in the DOM."
+            }
+          ]
+        },
+        {
+          "id": "4d4d823f-7460-eaf6-4b1f-4639e59ee31a",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Remove a class from an element in the DOM."
+            }
+          ]
+        },
+        {
+          "id": "b53e26a8-1e4b-28a5-c54d-0f698334e736",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Set a CSS style for an element in the DOM."
+            }
+          ]
+        },
+        {
+          "id": "a6e8c022-642d-c1b0-ea8f-9aadabd40806",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Remove the value from a CSS style for an element in the DOM."
+            }
+          ]
+        },
+        {
+          "id": "dd7216d0-3b58-e16f-b7d2-871b44a8068c",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Set the value of a property of an element in the DOM."
+            }
+          ]
+        },
+        {
+          "id": "7cb70658-acb3-5a40-e161-94857fa893ff",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Set the value of a node in the host element."
+            }
+          ]
+        },
+        {
+          "id": "72e09b27-7860-5bb5-c3a8-5972e06dc02f",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Start an event listener."
+            }
+          ]
+        },
+        {
+          "id": "42a15d21-97bf-4efe-a172-ae8318e86924",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "* `target` — The context in which to listen for events. Can be the entire window or document, the body of the document, or a specific DOM element.\n\n* `eventName` — The event to listen for.\n\n* `callback` — A handler function to invoke when the event occurs."
+            }
+          ]
+        },
+        {
+          "id": "29e66a63-4dd5-b4d2-5bcb-aa53fa98de33",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "DomSanitizer"
+            }
+          ]
+        },
+        {
+          "id": "5b88380b-5b9a-70d8-daf2-9533393f4dc9",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "DomSanitizer helps preventing Cross Site Scripting Security bugs (XSS) by sanitizing values to be safe to use in the different DOM contexts."
+            }
+          ]
+        },
+        {
+          "id": "0d224132-441e-860c-dd34-f510e62d4012",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "For example, when binding a URL in an `<a [href]=\"someValue\">` hyperlink, `someValue` will be sanitized so that an attacker cannot inject e.g. a `javascript:` URL that would execute code on the website.\n\nIn specific situations, it might be necessary to disable sanitization, for example if the application genuinely needs to produce a `javascript:` style link with a dynamic value in it. Users can bypass security by constructing a value with one of the `bypassSecurityTrust...` methods, and then binding to that value from the template.\n\nThese situations should be very rare, and extraordinary care must be taken to avoid creating a Cross Site Scripting (XSS) security bug!\n"
+            }
+          ]
+        },
+        {
+          "id": "7042334e-59a5-e8c4-84f1-404414352914",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular Security Guide"
+            }
+          ]
+        },
+        {
+          "id": "75e5685e-c2fe-30ff-e75d-39e043322446",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular 2 Security — The DomSanitizer Service"
+            }
+          ]
+        },
+        {
+          "id": "35e399f0-95ad-6557-2c00-ee6d0ac3069e",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Methods"
+            }
+          ]
+        },
+        {
+          "id": "747ffc09-8082-71ff-5cea-b7e01af5518e",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "sanitize() \n"
+            }
+          ]
+        },
+        {
+          "id": "e5fe9446-77e8-a84d-9802-7a8b5bbea8e8",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Sanitizes a value for use in the given SecurityContext."
+            }
+          ]
+        },
+        {
+          "id": "1c6d9a56-7a4c-d0ad-20c2-544446cdeaf6",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "If value is trusted for the context, this method will unwrap the contained safe value and use it directly. Otherwise, value will be sanitized to be safe in the given context, for example by replacing URLs that have an unsafe protocol part (such as `javascript:`). The implementation is responsible to make sure that the value can definitely be safely used in the given context.\n"
+            }
+          ]
+        },
+        {
+          "id": "d720d15d-bf8a-7e78-79b2-fa020e7e4ce4",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Bypass security and trust the given value to be safe HTML. Only use this when the bound HTML is unsafe (e.g. contains `<script>` tags) and the code should be executed. The sanitizer will leave safe HTML intact, so in most situations this method should not be used."
+            }
+          ]
+        },
+        {
+          "id": "35258287-32ee-cd6b-f473-0d8ecdb2ed3d",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "**WARNING:** calling this method with untrusted user data exposes your application to XSS security risks!"
+            }
+          ]
+        },
+        {
+          "id": "d594c0c7-afcb-41ae-7841-5cd388dde5d4",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Bypass security and trust the given value to be safe style value (CSS)."
+            }
+          ]
+        },
+        {
+          "id": "f0d653c3-1ce4-5e03-c8f9-0fd142be11f0",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "**WARNING:** calling this method with untrusted user data exposes your application to XSS security risks!"
+            }
+          ]
+        },
+        {
+          "id": "f7962743-4951-05f3-5c7f-f14c46e5dfbd",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Bypass security and trust the given value to be safe JavaScript."
+            }
+          ]
+        },
+        {
+          "id": "da80fef9-b05d-e849-bf54-ec62aa861759",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "**WARNING:** calling this method with untrusted user data exposes your application to XSS security risks!"
+            }
+          ]
+        },
+        {
+          "id": "76b3a981-2da2-58ef-7494-f9c05d29e1ed",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Bypass security and trust the given value to be a safe style URL, i.e. a value that can be used in hyperlinks or `<img src>`."
+            }
+          ]
+        },
+        {
+          "id": "4fe821b5-d7f4-1dde-7285-322cbc076134",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "**WARNING:** calling this method with untrusted user data exposes your application to XSS security risks!"
+            }
+          ]
+        },
+        {
+          "id": "03d9f637-f736-dbec-4137-8d3671fb404a",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Bypass security and trust the given value to be a safe resource URL, i.e. a location that may be used to load executable code from, like `<script src>`, or `<iframe src>`."
+            }
+          ]
+        },
+        {
+          "id": "8e630932-d55c-93c4-45d2-afbf63f0745f",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "**WARNING:** calling this method with untrusted user data exposes your application to XSS security risks!"
+            }
+          ]
+        },
+        {
+          "id": "ba20c757-bcd7-8579-2e7d-611ae39134dc",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nexport class MyComponent {\n  html: SafeHtml;\n\n  constructor(private sanitizer: DomSanitizer) {\n    this.html = sanitizer.bypassSecurityTrustHtml('<h1>DomSanitizer</h1><script>ourSafeCode()</script>') ;\n  }\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "2c278a15-4e2f-2285-420a-91e9b1aab910",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example"
             }
           ]
         }

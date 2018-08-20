@@ -1,9 +1,9 @@
 import { Component, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { saveAs } from 'file-saver';
-import { DataService } from './data.service';
 import { UiFileSelect } from '../../../ui/src/lib/ui-file/meta';
 import { UiFileComponent } from '../../../ui/src/lib/ui-file/ui-file/ui-file.component';
+import { DataService } from './data.service';
 
 @Component({
   selector: 'app-root',
