@@ -93,8 +93,17 @@ export class SearchComponent implements OnInit {
                   entry.values ? entry.values.toLowerCase() : undefined,
                   entry.default ? entry.default.toLowerCase() : undefined,
                   entry.aliases ? entry.aliases.toLowerCase() : undefined,
-                  extractMessage(this.version.messages, entry.description, this.lang).toLowerCase(),
+                  entry.description ? extractMessage(this.version.messages, entry.description, this.lang).toLowerCase() : undefined,
                 ];
+                break;
+              case 'interface-option':
+                entryTitle = entry.name;
+                fields = [
+                  entry.name ? entry.name.toLowerCase() : undefined,
+                  entry.description ? extractMessage(this.version.messages, entry.description, this.lang).toLowerCase() : undefined,
+                  entry.additional ? extractMessage(this.version.messages, entry.additional, this.lang).toLowerCase() : undefined,
+                ];
+                break;
             }
             if (fields.filter(f => !!f).length > 0) {
               this.entriesIndex.push({
