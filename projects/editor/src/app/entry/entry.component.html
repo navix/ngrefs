@@ -13,6 +13,7 @@
         <option value="tutorials">Tutorials</option>
         <option value="command-param">Command param</option>
         <option value="interface-option">Interface option</option>
+        <option value="demo">Demo</option>
       </select>
       <span *kitFormError="'required'">Field is required</span>
     </ui-form-field>
@@ -37,6 +38,10 @@
   <editor-interface-option-entry *ngIf="entry.type === 'interface-option'"
                                  [entry]="entry">
   </editor-interface-option-entry>
+
+  <editor-demo-entry *ngIf="entry.type === 'demo'"
+                     [entry]="entry">
+  </editor-demo-entry>
 
   <div class="actions">
     <button uiButton

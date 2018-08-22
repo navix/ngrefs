@@ -45,7 +45,7 @@ export interface ContentPage {
   entries: (ContentEntry | ContentTextEntry | ContentCommandParamEntry | ContentHintEntry | ContentTutorialsEntry)[];
 }
 
-export type ContentEntryType = 'text' | 'command-param' | 'hint' | 'tutorials' | 'interface-option' | 'toc';
+export type ContentEntryType = 'text' | 'command-param' | 'hint' | 'tutorials' | 'interface-option' | 'toc' | 'demo';
 
 export interface ContentEntry {
   id: string;
@@ -94,6 +94,12 @@ export interface ContentInterfaceOptionEntry extends ContentEntry {
 
 export interface ContentTocEntry extends ContentEntry {
   type: 'toc';
+}
+
+export interface ContentDemoEntry extends ContentEntry {
+  type: 'demo';
+  source: ContentMessageRef;
+  demo: string;
 }
 
 export interface ContentMessage {

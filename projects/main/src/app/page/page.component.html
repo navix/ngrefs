@@ -28,6 +28,9 @@
         <ng-container *ngSwitchCase="'interface-option'">
           <main-interface-option-entry [entry]="entry"></main-interface-option-entry>
         </ng-container>
+        <ng-container *ngSwitchCase="'demo'">
+          <main-demo-entry [entry]="entry"></main-demo-entry>
+        </ng-container>
         <div *ngSwitchDefault>
           {{ entry | json }}
         </div>

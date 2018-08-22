@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UiModule } from 'ui';
+import { DemosModule } from '../../../main/src/app/content/demos/demos.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CommandParamEntryComponent } from './entry/command-param-entry/command-param-entry.component';
@@ -27,6 +28,7 @@ import { VersionSectionsComponent } from './version/version-sections/version-sec
 import { VersionComponent } from './version/version/version.component';
 import { VersionsListComponent } from './version/versions-list/versions-list.component';
 import { InterfaceOptionEntryComponent } from './entry/interface-option-entry/interface-option-entry.component';
+import { DemoEntryComponent } from './entry/demo-entry/demo-entry.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +55,7 @@ import { InterfaceOptionEntryComponent } from './entry/interface-option-entry/in
     VersionMessagesComponent,
     MessageTranslationComponent,
     InterfaceOptionEntryComponent,
+    DemoEntryComponent,
   ],
   imports: [
     // angular
@@ -62,6 +65,7 @@ import { InterfaceOptionEntryComponent } from './entry/interface-option-entry/in
     // app
     AppRoutingModule,
     UiModule,
+    DemosModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

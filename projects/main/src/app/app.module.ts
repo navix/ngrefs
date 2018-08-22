@@ -7,6 +7,7 @@ import { MdRenderModule, MdRenderService } from '@nvxme/ngx-md-render';
 import { UiModule } from 'ui';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DemosModule } from './content/demos/demos.module';
 import { CommandParamEntryComponent } from './entry/command-param-entry/command-param-entry.component';
 import { HintEntryComponent } from './entry/hint-entry/hint-entry.component';
 import { InterfaceOptionEntryComponent } from './entry/interface-option-entry/interface-option-entry.component';
@@ -26,6 +27,7 @@ import { SearchComponent } from './search/search.component';
 import { SectionNavComponent } from './section/section-nav/section-nav.component';
 import { SectionComponent } from './section/section/section.component';
 import { VersionComponent } from './version/version.component';
+import { DemoEntryComponent } from './entry/demo-entry/demo-entry.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +51,7 @@ import { VersionComponent } from './version/version.component';
     InterfaceOptionEntryComponent,
     TocEntryComponent,
     FragmentPipe,
+    DemoEntryComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'serverApp'}),
@@ -61,6 +64,7 @@ import { VersionComponent } from './version/version.component';
     KitModalModule,
     KitOverlayModule,
     KitIconsModule,
+    DemosModule,
   ],
   providers: [
     MdRenderService,

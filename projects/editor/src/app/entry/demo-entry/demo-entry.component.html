@@ -1,0 +1,24 @@
+<form uiForm
+      #ngForm="ngForm"
+      class="layout-aligned">
+  <ui-form-field label="Source">
+    <app-message [(ngModel)]="entry.source"
+                 name="source"
+                 context="Demo-entry: source">
+    </app-message>
+  </ui-form-field>
+
+  <ui-form-field label="Demo">
+    <select [(ngModel)]="entry.demo"
+            name="demo">
+      <option *ngFor="let demo of demos | keyvalue"
+              [value]="demo.key">
+        {{ demo.key }}
+      </option>
+    </select>
+  </ui-form-field>
+
+  <div *ngIf="entry.demo">
+    <ng-container *ngComponentOutlet="demos[entry.demo]"></ng-container>
+  </div>
+</form>
