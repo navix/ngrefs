@@ -19496,7 +19496,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "#### Example\n\n```typescript\n@Input() test: any;\n```\n\nAlternatively, you can identify members in the inputs array of the directive metadata:\n\n```\n@Component({\n  inputs: ['test'],\n})\n```"
+              "text": "#### Example\n\n```typescript\n@Input() test: any;\n```\n\nAlternatively, you can identify members in the inputs array of the directive metadata:\n\n```typescript\n@Component({\n  inputs: ['test'],\n})\n```"
             }
           ]
         },
@@ -20776,7 +20776,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Plain `InjectionToken`:\n\n```typescipt\nconst BASE_URL = new InjectionToken<string>('BaseUrl');\nconst injector =\n    Injector.create({providers: [{provide: BASE_URL, useValue: 'http://localhost'}]});\nconst url = injector.get(BASE_URL);\n// here `url` is inferred to be `string` because `BASE_URL` is `InjectionToken<string>`.\nexpect(url).toBe('http://localhost');\n```"
+              "text": "Plain `InjectionToken`:\n\n```typescript\nconst BASE_URL = new InjectionToken<string>('BaseUrl');\nconst injector =\n    Injector.create({providers: [{provide: BASE_URL, useValue: 'http://localhost'}]});\nconst url = injector.get(BASE_URL);\n// here `url` is inferred to be `string` because `BASE_URL` is `InjectionToken<string>`.\nexpect(url).toBe('http://localhost');\n```"
             }
           ]
         },
@@ -21516,7 +21516,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "The following example shows a class constructor that specifies a custom provider of a dependency using the parameter decorator.\n\n```typescript\nclass Engine {}\n\n@Injectable()\nclass Car {\n  constructor(@Inject('MyEngine') public engine: Engine) {}\n}\n\nconst injector =\n    ReflectiveInjector.resolveAndCreate([{provide: 'MyEngine', useClass: Engine}, Car]);\n\nexpect(injector.get(Car).engine instanceof Engine).toBe(true);\n```\n\nWhen `@Inject()` is not present, the `Injector` uses the type annotation of the parameter as the provider.\n\n```typescript\nclass Engine {}\n\n@Injectable()\nclass Car {\n  constructor(public engine: Engine) {\n  }  // same as constructor(@Inject(Engine) engine:Engine)\n}\n\nconst injector = ReflectiveInjector.resolveAndCreate([Engine, Car]);\nexpect(injector.get(Car).engine instanceof Engine).toBe(true);\n```"
+              "text": "The following example shows a class constructor that specifies a custom provider of a dependency using the parameter decorator.\n\n```typescript\nclass Engine {}\n\n@Injectable()\nclass Car {\n  constructor(@Inject('MyEngine') public engine: Engine) {}\n}\n\nconst injector = ReflectiveInjector.resolveAndCreate([{provide: 'MyEngine', useClass: Engine}, Car]);\n\nexpect(injector.get(Car).engine instanceof Engine).toBe(true);\n```\n\nWhen `@Inject()` is not present, the `Injector` uses the type annotation of the parameter as the provider.\n\n```typescript\nclass Engine {}\n\n@Injectable()\nclass Car {\n  constructor(public engine: Engine) {\n  }  // same as constructor(@Inject(Engine) engine:Engine)\n}\n\nconst injector = ReflectiveInjector.resolveAndCreate([Engine, Car]);\nexpect(injector.get(Car).engine instanceof Engine).toBe(true);\n```"
             }
           ]
         },
@@ -21566,7 +21566,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "The DI framework provides null if the dependency is not found. For example, the following code allows the possibility of a null result:\n\n```typescript\nclass Engine {}\n\n@Injectable()\nclass Car {\n  constructor(@Optional() public engine: Engine) {}\n}\n\nconst injector = ReflectiveInjector.resolveAndCreate([Car]);\nexpect(injector.get(Car).engine).toBeNull();\n```"
+              "text": "The DI framework provides null if the dependency is not found. For example, the following code allows the possibility of a null result:\n\n```typescript\nclass Engine {}\n\n@Injectable()\nclass Car {\n  constructor(@Optional() public engine: Engine) {}\n}\n\nconst injector = ReflectiveInjector.resolveAndCreate([Car]);\nexpect(injector.get(Car).engine).toBeNull();\n\n```"
             }
           ]
         },

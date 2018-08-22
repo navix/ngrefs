@@ -37,6 +37,7 @@ export class VersionComponent implements OnInit {
     this.route.params
       .subscribe(({lang, versionUrl}) => {
         this.lang = lang;
+        this.seo.setLang(this.lang);
         this.version = versions.find(v => v.url === versionUrl);
         this.seo.setAffix(`${this.version.title} References`);
       });
