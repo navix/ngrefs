@@ -71,16 +71,25 @@ ul {
   h1 {
     font-size: 1.8rem;
     margin: $grid * 3 0 $grid * 2;
+    p {
+      margin: 0;
+    }
   }
   h2 {
     font-size: 1.5rem;
     margin: $grid * 3 0 $grid 0;
     padding-bottom: $grid / 2;
+    p {
+      margin: 0;
+    }
   }
   h3 {
     font-size: 1.1rem;
     margin: $grid * 2 0 $grid / 2 0;
     padding-bottom: $grid / 2;
+    p {
+      margin: 0;
+    }
   }
   .-highlight {
     animation: 800ms linear highlight-effect;

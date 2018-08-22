@@ -1,2 +1,28 @@
+@import "params";
+@import "mq";
+
 :host {
+}
+
+.page-content {
+  display: grid;
+  grid-template: auto / 0 0 1fr 1fr 0 0;
+  padding: 0 $grid * 4 $grid * 8;
+}
+
+.title {
+  grid-column: 3 / 5;
+}
+
+.entry {
+  grid-column: 3 / 5;
+  &.-wide {
+    grid-column: 2 / 6;
+  }
+}
+
+@include mq($from: wide) {
+  .page-content {
+    grid-template: auto / 1fr 1fr 400px 400px 1fr 1fr;
+  }
 }

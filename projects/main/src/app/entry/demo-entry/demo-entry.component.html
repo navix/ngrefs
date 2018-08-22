@@ -1,14 +1,10 @@
 <div class="demo">
+  <div class="title -source">Source</div>
   <div class="source">
-    <div class="title">Source</div>
-    <div class="holder">
-      <main-message [ref]="entry.source"></main-message>
-    </div>
+    <main-message [ref]="entry.source"></main-message>
   </div>
-  <div class="result">
-    <div class="title">Result</div>
-    <div *ngIf="entry.demo" class="holder">
-      <ng-container *ngComponentOutlet="demos[entry.demo]"></ng-container>
-    </div>
+  <div class="title -result">Result</div>
+  <div *ngIf="entry.demo" class="result">
+    <ng-container *ngComponentOutlet="demos[entry.demo]"></ng-container>
   </div>
 </div>
