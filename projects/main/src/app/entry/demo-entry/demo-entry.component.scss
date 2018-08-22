@@ -5,7 +5,7 @@
   border-radius: 4px;
   box-shadow: $smallShadow;
   display: grid;
-  grid: 'source-title' 'source' 'result-title' 'result';
+  grid-template-areas: 'source-title' 'source' 'result-title' 'result';
   flex-direction: row;
   font-size: 0.9rem;
   margin: $grid * 2 0 $grid * 4;
@@ -27,18 +27,16 @@
 .source {
   grid-area: source;
   padding: $grid $grid * 2;
-  min-width: 0;
 }
 
 .result {
   grid-area: result;
   padding: $grid * 2;
-  min-width: 0;
 }
 
 @include mq($from: desktop) {
   .demo {
-    grid: 'source-title result-title' 'source result';
-    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'source-title result-title' 'source result';
+    grid-template-columns: 50% 50%;
   }
 }

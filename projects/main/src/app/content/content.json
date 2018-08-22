@@ -7079,7 +7079,7 @@
                   "source": {
                     "id": "55073f20-3845-8238-4b0e-5cfd98d23761"
                   },
-                  "demo": "v6-templates-declar-demo"
+                  "demo": "v6-templates-interpolation1-demo"
                 },
                 {
                   "id": "393bfe1e-89f7-c808-02b5-c1bf777b791a",
@@ -7125,7 +7125,7 @@
                   "source": {
                     "id": "068b64e3-ca3b-bb09-ddfb-7ce12c0421ec"
                   },
-                  "demo": "v6-templates-declar-demo"
+                  "demo": "v6-templates-interpolation2-demo"
                 },
                 {
                   "id": "35e0a343-d5a9-3523-bc77-2d1dcf41f299",
@@ -7149,7 +7149,7 @@
                   "source": {
                     "id": "0d3e154c-322b-7c16-fbab-783aad4781cc"
                   },
-                  "demo": "v6-templates-declar-demo"
+                  "demo": "v6-templates-interpolation3-demo"
                 },
                 {
                   "id": "45ae2172-8163-40c6-8168-941177cdf3b2",
@@ -7173,7 +7173,7 @@
                   "source": {
                     "id": "c8735d85-b3fc-f765-11fb-c5dbbefac996"
                   },
-                  "demo": "v6-templates-declar-demo"
+                  "demo": "v6-templates-interpolation4-demo"
                 },
                 {
                   "id": "33c82ba4-af51-4b4d-e514-98e4c5e21c6f",
@@ -7190,6 +7190,159 @@
                 "id": "cb0412e3-6389-6c34-2e02-da0eb1e95ba7"
               },
               "url": "interpolation"
+            },
+            {
+              "id": "38b2b883-8c43-59d5-be35-0c8febe10672",
+              "entries": [
+                {
+                  "id": "11d30f25-364e-33d3-0831-128a1c401433",
+                  "type": "text",
+                  "head": {
+                    "id": "6b6cbca0-2276-9ffc-d0e8-464dee7d0808"
+                  },
+                  "text": {
+                    "id": "2e83f415-115f-e551-8359-b1bc81489d19"
+                  }
+                },
+                {
+                  "id": "63f61603-1fba-4772-6313-7a132e14532d",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "cfdd7e29-6eab-9464-59ee-65254a9e87e7"
+                  },
+                  "text": {
+                    "id": "f88dc69f-3740-5edf-7f14-92a5ad9ea290"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "2ba64b1d-8a0c-ed93-cef3-0b579254b20e"
+                      },
+                      "url": "https://angular.io/guide/template-syntax#the-safe-navigation-operator----and-null-property-paths",
+                      "lang": "en"
+                    }
+                  ]
+                }
+              ],
+              "title": {
+                "id": "b95cbf38-a90b-2b01-2fa7-b261616b87b9"
+              },
+              "url": "safe-navigation-operator"
+            },
+            {
+              "id": "e933e885-ed2e-0c4c-3bf9-b110622035e9",
+              "entries": [
+                {
+                  "id": "dd528cd1-3d8b-0ce5-744c-a802c7072091",
+                  "type": "text",
+                  "head": {
+                    "id": "ca639aef-45e9-db81-dbfc-3485cf342d89"
+                  },
+                  "text": {
+                    "id": "91be93a8-3492-45f3-1dec-847a30608f0e"
+                  }
+                }
+              ],
+              "title": {
+                "id": "902063c7-d49b-e290-ca2a-17f0f5210763"
+              },
+              "url": "non-null-assertion-operator"
+            },
+            {
+              "id": "c86cb33a-c11d-6fe4-088e-6e504b905c98",
+              "entries": [
+                {
+                  "id": "c0468b4a-3a04-d2dd-0607-0fd823e2369a",
+                  "type": "text",
+                  "head": {
+                    "id": "7fbe5476-a5a8-20b6-d128-69078a4f89fd"
+                  },
+                  "text": {
+                    "id": "1724b470-6c81-f949-58c8-662d100fac38"
+                  }
+                },
+                {
+                  "id": "ebeb4885-15ef-4497-7f39-b3df8b169ac0",
+                  "type": "text",
+                  "head": {
+                    "id": "5c247de3-d246-413a-92d1-89f974f93519"
+                  },
+                  "text": {
+                    "id": "417409f4-95d8-3d06-566d-d39c30a19aa2"
+                  }
+                },
+                {
+                  "id": "49b38ae7-d9e7-b5b1-64be-e1f6618d549f",
+                  "type": "demo",
+                  "head": {
+                    "id": "4aa51a63-44b2-e3de-51c6-7c0c42fbe852"
+                  },
+                  "text": {
+                    "id": "75c80630-fb03-3ab5-b236-806dc4024429"
+                  },
+                  "source": {
+                    "id": "8c4ac2e6-d168-6288-d5f4-eb9a53a95c4f"
+                  },
+                  "demo": "V6TemplatesDirective1DemoComponent"
+                },
+                {
+                  "id": "c7bd63f7-672d-cab7-12c8-6aba1d7bf0c0",
+                  "type": "text",
+                  "head": {
+                    "id": "50a4e25a-1c7a-fda7-09f4-a146246c4b3d"
+                  },
+                  "text": {
+                    "id": "f88fa1f1-9c1f-1459-e422-2b9839f7fdc0"
+                  }
+                }
+              ],
+              "title": {
+                "id": "2fa638e6-9a10-ddbb-b2af-ae73e50102e9"
+              },
+              "url": "directive"
+            },
+            {
+              "id": "b6da2c5d-82be-3621-5f7e-888ba9bf6ff8",
+              "entries": [
+                {
+                  "id": "8a22493e-66c9-9bab-8c76-a12268384977",
+                  "type": "text",
+                  "head": {
+                    "id": "f62f8ade-c1a1-2bda-3187-8235e6287c40"
+                  },
+                  "text": {
+                    "id": "8f39dcd4-7e8b-1d70-dc49-daa3d3e94672"
+                  }
+                },
+                {
+                  "id": "c4c39e25-444c-9fd7-4668-297f0b550f34",
+                  "type": "demo",
+                  "head": {
+                    "id": "bdab2a7b-7c03-b828-1574-0536dcd00ce7"
+                  },
+                  "text": {
+                    "id": "0d046702-d117-88a4-139a-05429250a293"
+                  },
+                  "source": {
+                    "id": "985d72a5-3cbc-3b86-fd8b-16b6f81bb236"
+                  },
+                  "demo": "V6TemplatesComponent1DemoComponent"
+                },
+                {
+                  "id": "c9fe461b-30fd-3568-16a7-98c31a1b9151",
+                  "type": "text",
+                  "head": {
+                    "id": "7456e546-293f-0e6b-725b-97c5c2b292a3"
+                  },
+                  "text": {
+                    "id": "43f68f94-8ca9-8574-a910-30672f57fad5"
+                  }
+                }
+              ],
+              "title": {
+                "id": "043395e2-1af5-6727-6f96-54ae9db69a8c"
+              },
+              "url": "component"
             }
           ],
           "title": {
@@ -11504,7 +11657,7 @@
           },
           "color": "#15c55e",
           "url": "core",
-          "disabled": true
+          "disabled": false
         },
         {
           "id": "4efb0a19-7319-04b8-2a91-fabd3d069e2d",
@@ -22412,7 +22565,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```html\n<h3>\n  {{title}}\n  <img src=\"{{heroImageUrl}}\" style=\"height:30px\">\n</h3>\n```\n"
+              "text": "```html\n{{title}}\n<div>\n  <img src=\"{{imageUrl}}\" style=\"height:150px\">\n</div>\n```\n\n```typescript\nexport class MyComponent {\n  title = 'Angular';\n  imageUrl = 'https://angular.io/assets/images/logos/angular/angular.svg';\n}\n```\n"
             }
           ]
         },
@@ -23023,6 +23176,146 @@
             {
               "lang": "en",
               "text": "*ngComponentOutlet"
+            }
+          ]
+        },
+        {
+          "id": "b95cbf38-a90b-2b01-2fa7-b261616b87b9",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Safe navigation operator .?"
+            }
+          ]
+        },
+        {
+          "id": "2e83f415-115f-e551-8359-b1bc81489d19",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The Angular safe navigation operator (`?.`) is a fluent and convenient way to guard against `null` and `undefined` values in property paths. \n\nHere it is, protecting against a view render failure if the `currentHero` is null:\n\n```html\nThe current hero's name is {{currentHero?.name}}\n```\n\nIt works perfectly with long property paths:\n\n```html\nThe current hero's name is {{currentHero?.info?.name}}\n```\n\nAnd methods:\n\n```html\nThe current hero's name is {{currentHero?.getInfo()?.name}}\n```\n"
+            }
+          ]
+        },
+        {
+          "id": "902063c7-d49b-e290-ca2a-17f0f5210763",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Non-null assertion operator !."
+            }
+          ]
+        },
+        {
+          "id": "91be93a8-3492-45f3-1dec-847a30608f0e",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "As of Typescript 2.0, you can enforce strict null checking with the `--strictNullChecks` flag.\n\nType checker throws an error if it can't determine whether a variable will be `null` or `undefined` at runtime. You may know that can't happen but the type checker doesn't know. You tell the type checker that it can't happen by applying the post-fix non-null assertion operator (`!`).\n\nFor example, after you use `*ngIf` to check that hero is defined, you can assert that hero properties are also defined:\n\n```html\n<div *ngIf=\"hero\">\n  The hero's name is {{hero!.name}}\n</div>\n```\n\nUnlike the [safe navigation operator](../safe-navigation-operator), the non-null assertion operator does not guard against `null` or `undefined`.\n"
+            }
+          ]
+        },
+        {
+          "id": "2ba64b1d-8a0c-ed93-cef3-0b579254b20e",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular — The safe navigation operator ( ?. ) and null property paths"
+            }
+          ]
+        },
+        {
+          "id": "2fa638e6-9a10-ddbb-b2af-ae73e50102e9",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@Directive"
+            }
+          ]
+        },
+        {
+          "id": "1724b470-6c81-f949-58c8-662d100fac38",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You can define your own directives to attach custom behavior to elements in the DOM."
+            }
+          ]
+        },
+        {
+          "id": "8c4ac2e6-d168-6288-d5f4-eb9a53a95c4f",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<button clickAlert>Click me</button>\n```\n\n```typescript\n@Directive({\n  selector: 'button[clickAlert]',\n})\nexport class ClickAlertDirective {\n  @HostListener('click') clickHandler() {\n    alert('Clicked');\n  }\n}\n```\n"
+            }
+          ]
+        },
+        {
+          "id": "417409f4-95d8-3d06-566d-d39c30a19aa2",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "In the following example we create a directive that extends a button to show an alert on click.\n"
+            }
+          ]
+        },
+        {
+          "id": "f88fa1f1-9c1f-1459-e422-2b9839f7fdc0",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "### Selector\n\nThe `selector` property of `@Directive` declaration identifies this directive in a template and triggers instantiation of the directive.\n\nDeclare as one of the following:\n\n- `element-name`: Select by element name.\n- `.class`: Select by class name.\n- `[attribute]`: Select by attribute name.\n- `[attribute=value]`: Select by attribute name and value.\n- `:not(sub_selector)`: Select only if the element does not match the `sub_selector`.\n- `selector1, selector2`: Select if either `selector1` or `selector2` matches.\n\nAngular only allows directives to apply on CSS selectors that do not cross\nelement boundaries."
+            }
+          ]
+        },
+        {
+          "id": "043395e2-1af5-6727-6f96-54ae9db69a8c",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@Component"
+            }
+          ]
+        },
+        {
+          "id": "8f39dcd4-7e8b-1d70-dc49-daa3d3e94672",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You can extend the HTML vocabulary of your templates with components that appear as new elements and attributes.\n\nAngular components are a subset of [directives](../directive), always associated with a template. Unlike other directives, only one component can be instantiated per an element in a template."
+            }
+          ]
+        },
+        {
+          "id": "985d72a5-3cbc-3b86-fd8b-16b6f81bb236",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\nComponent: <my-component></my-component>\n```\n\n```typescript\n@Component({\n  selector: 'my-component',\n  template: `Hello there!`\n})\nexport class MyComponent {\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "43f68f94-8ca9-8574-a910-30672f57fad5",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "### Selector\n\nThe `selector` property of `@Component` declaration identifies this component in a template and triggers instantiation of the component.\n\nDeclare as one of the following:\n\n- `element-name`: Select by element name.\n- `.class`: Select by class name.\n- `[attribute]`: Select by attribute name.\n- `[attribute=value]`: Select by attribute name and value.\n- `:not(sub_selector)`: Select only if the element does not match the `sub_selector`.\n- `selector1, selector2`: Select if either `selector1` or `selector2` matches.\n\nAngular only allows component to apply on CSS selectors that do not cross\nelement boundaries."
             }
           ]
         }
