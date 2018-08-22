@@ -6645,6 +6645,574 @@
           "url": "cli"
         },
         {
+          "id": "9705d447-3d27-8405-f165-c67e410846f6",
+          "menu": {
+            "items": [
+              {
+                "id": "0dcf22f5-7e23-cddf-76ec-8baf43a643c8",
+                "label": {
+                  "id": "f65b484f-8116-cc60-7809-675810e735d4"
+                },
+                "url": "intro"
+              },
+              {
+                "id": "5a6e18d3-92c9-9a6c-6220-a3c70399510b",
+                "label": {
+                  "id": "17e7c0da-4a19-341f-8793-5c6b51f0213f"
+                },
+                "url": "interpolation"
+              },
+              {
+                "id": "8be848f3-2dcf-d521-481a-b9ebf8adc8e4",
+                "label": {
+                  "id": "2e91ee49-9437-1f99-3217-8a99d0b89151"
+                },
+                "sub": {
+                  "items": [
+                    {
+                      "id": "30d8e85b-dffe-3f71-317b-bfce2558c02b",
+                      "label": {
+                        "id": "1656d491-5f46-70ec-1306-a6ebdb331ac1"
+                      },
+                      "url": "safe-navigation-operator"
+                    },
+                    {
+                      "id": "449e5d5a-5e6d-a1c0-4e05-5e726e1e0046",
+                      "label": {
+                        "id": "d5cb3518-166f-a554-b028-3de0497d9e10"
+                      },
+                      "url": "non-null-assertion-operator"
+                    },
+                    {
+                      "id": "aef62bd5-2224-3fe8-ff3a-8c285e044925",
+                      "label": {
+                        "id": "bfcb7fe0-5ac0-0265-989a-c3f5d36f92a0"
+                      },
+                      "url": "pipe"
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "2b2819e2-42fb-1627-7b5f-09471ba2bfda",
+                "label": {
+                  "id": "1191eb1b-e6d2-1af6-3fb0-92967a777c0b"
+                },
+                "url": "directive"
+              },
+              {
+                "id": "fdfe197d-eebc-68a5-ebbc-59abb040c3af",
+                "label": {
+                  "id": "933d29a5-450a-4972-b159-1944e8ef5794"
+                },
+                "url": "component"
+              },
+              {
+                "id": "99042531-4b41-2ca5-7750-e001880c35ee",
+                "label": {
+                  "id": "4b777cc7-fbda-3edc-0b26-cccdb6c894c4"
+                },
+                "sub": {
+                  "items": [
+                    {
+                      "id": "32e77141-e75d-02e0-b04d-e56f8b26de03",
+                      "label": {
+                        "id": "e275fe87-66eb-c7ac-25d9-91bbdea4a22e"
+                      },
+                      "url": "input-binding"
+                    },
+                    {
+                      "id": "7d7b7a86-d014-b99a-decd-1ea1e231b512",
+                      "label": {
+                        "id": "0c28f828-1516-4fb7-52ae-b4d3294974de"
+                      },
+                      "url": "style-binding"
+                    },
+                    {
+                      "id": "95578183-1fa5-1e34-3ad3-3c5265f66469",
+                      "label": {
+                        "id": "c20947e4-2951-e6a4-2096-1c2ddf3a7f2f"
+                      },
+                      "url": "ngstyle-directive"
+                    },
+                    {
+                      "id": "1f8c6cf0-acdb-4c0b-fad9-afce6d58ac73",
+                      "label": {
+                        "id": "5672da11-56ee-dbe3-60ad-0aaa1d3fd7c2"
+                      },
+                      "url": "class-binding"
+                    },
+                    {
+                      "id": "81749af7-796d-4241-b42b-75599e8b9ad2",
+                      "label": {
+                        "id": "00c96471-01fe-cb3e-db95-eaba73caaf78"
+                      },
+                      "url": "attr-binding"
+                    },
+                    {
+                      "id": "19f3a698-6c4e-73c1-c20f-57c4f67c423e",
+                      "label": {
+                        "id": "6b8bf5c4-1d5e-d4d2-a5bc-43e4f538612f"
+                      },
+                      "url": "ngclass-directive"
+                    }
+                  ]
+                },
+                "url": "property-binding"
+              },
+              {
+                "id": "e4da7ee7-18aa-c54f-a249-aa4bbe0a2c8b",
+                "label": {
+                  "id": "66b74b23-1ab0-8ab5-494c-b919fe116425"
+                },
+                "sub": {
+                  "items": [
+                    {
+                      "id": "08c13919-eddc-0e3a-98ee-8778362f6870",
+                      "label": {
+                        "id": "3fed8ff6-1213-10e9-f9f4-eba681831c6b"
+                      },
+                      "url": "output-binding"
+                    },
+                    {
+                      "id": "bfdd1cb8-fa31-09ed-063d-b28988add5f9",
+                      "label": {
+                        "id": "ba6fa335-8cc6-9fb6-34a2-21de0ea38013"
+                      },
+                      "url": "pseudo-events"
+                    },
+                    {
+                      "id": "423ee9ba-3e8e-2f82-fce2-e42f648be383",
+                      "label": {
+                        "id": "82365b3c-732c-fa67-7b2c-ba5d9a34cb28"
+                      },
+                      "url": "touch-events"
+                    }
+                  ]
+                },
+                "url": "event-binding"
+              },
+              {
+                "id": "cfdd34fe-5979-d9f6-7b68-5ce49d18e000",
+                "label": {
+                  "id": "31dffbfa-63c6-8cca-c483-434080340107"
+                },
+                "sub": {
+                  "items": [
+                    {
+                      "id": "ff059e36-699f-a8ee-3749-8519d92cbcab",
+                      "label": {
+                        "id": "bdf50773-0dfa-1055-d83b-dfb2d5741d51"
+                      },
+                      "url": "ngmodel-directive"
+                    }
+                  ]
+                },
+                "url": "two-way-binding"
+              },
+              {
+                "id": "149af258-122a-25b5-e525-c71e28c0b2f4",
+                "label": {
+                  "id": "f06f86a0-a12d-9ca0-4562-73bb6a606e70"
+                },
+                "sub": {
+                  "items": [
+                    {
+                      "id": "8bb3ee24-101b-f63c-6cab-596a666659cf",
+                      "label": {
+                        "id": "a2c352cf-2b4e-96e5-66ae-36b10ece2944"
+                      },
+                      "url": "ngif-directive"
+                    },
+                    {
+                      "id": "d4cb3fb7-ece0-5458-8c35-a484d806385b",
+                      "label": {
+                        "id": "2718df31-8abe-47bb-6780-e1868313ae0d"
+                      },
+                      "url": "ngfor-directive"
+                    },
+                    {
+                      "id": "0760c388-10d2-e3c5-6679-fdfd8f4c0f7a",
+                      "label": {
+                        "id": "94e8ee72-567c-f055-5c5d-5bfe78e5941f"
+                      },
+                      "url": "ngswitch-directive"
+                    },
+                    {
+                      "id": "16174523-8cc1-c3c9-1e1b-1a4246169205",
+                      "label": {
+                        "id": "6d00b499-1002-09f6-444f-1d663e6c0248"
+                      },
+                      "url": "ngtemplateoutlet-directive"
+                    },
+                    {
+                      "id": "6ae56df9-180f-2768-621e-9c9c60971cb3",
+                      "label": {
+                        "id": "2b147798-eca6-1606-7291-0cd49c2ce0b4"
+                      },
+                      "url": "ngcomponentoutlet-directive"
+                    }
+                  ]
+                },
+                "url": "structural-directive"
+              },
+              {
+                "id": "e2bb4164-46e2-b3ba-7b4f-e8feb5f16ef8",
+                "label": {
+                  "id": "382da0ef-f5a4-f543-36df-228aad9128ce"
+                },
+                "url": "ng-template"
+              },
+              {
+                "id": "9c5455e0-4809-af42-e4eb-f1b874c0b036",
+                "label": {
+                  "id": "9eacde19-2e09-ec23-83f9-3fad779cd998"
+                },
+                "url": "ng-container"
+              },
+              {
+                "id": "a14aa155-a74a-c54e-8af5-d1156e8b1515",
+                "label": {
+                  "id": "c7a0182a-2614-35b1-feeb-62c5266c2cc0"
+                },
+                "sub": {
+                  "items": []
+                },
+                "url": "ng-content"
+              },
+              {
+                "id": "b811a104-4212-fd09-4d92-d392ecf19b8b",
+                "label": {
+                  "id": "936ed01f-6b7f-b248-1f99-6518057ef343"
+                },
+                "sub": {
+                  "items": [
+                    {
+                      "id": "0044a154-393d-cca6-f5e4-3c273b577715",
+                      "label": {
+                        "id": "c99df1d2-1859-4eff-ed26-f50731b57cc5"
+                      },
+                      "url": "export-as"
+                    }
+                  ]
+                },
+                "url": "reference"
+              },
+              {
+                "id": "27f56815-6273-cdcf-2970-48459537f45e",
+                "label": {
+                  "id": "dbc2ee0b-6f4b-003e-8aed-5519d2ace7a9"
+                },
+                "sub": {
+                  "items": [
+                    {
+                      "id": "6182051a-7cdb-2980-0f00-515406a9fc5e",
+                      "label": {
+                        "id": "8f2a1e07-1098-928f-2e5c-a9922c6e8f11"
+                      },
+                      "url": "keyvalue-pipe"
+                    },
+                    {
+                      "id": "6f0ab200-7755-55c5-458e-a2394cc08bad",
+                      "label": {
+                        "id": "bea9340e-023d-0516-4ce2-bd4678df94fe"
+                      },
+                      "url": "async-pipe"
+                    },
+                    {
+                      "id": "97d5a192-5e3b-1108-3bbb-36eb183581fe",
+                      "label": {
+                        "id": "55ca9187-5698-7a24-12c9-904ce2f42336"
+                      },
+                      "url": "date-pipe"
+                    },
+                    {
+                      "id": "46397892-a1f9-94cf-8c48-e81b22cd1752",
+                      "label": {
+                        "id": "40a8c52c-d93c-d780-cb09-651df74fc1a3"
+                      },
+                      "url": "lowercase-pipe"
+                    },
+                    {
+                      "id": "fad1daf7-96a0-21a7-d30e-c973bdfbd3a4",
+                      "label": {
+                        "id": "a1797e66-1310-7d3c-6ccc-1bf9931d04d5"
+                      },
+                      "url": "currency-pipe"
+                    },
+                    {
+                      "id": "4f7571a6-e137-9aa3-d8c9-e9eea4572ef2",
+                      "label": {
+                        "id": "c226f095-ccbb-e53e-d9bd-d8da5d2caa9d"
+                      },
+                      "url": "percent-pipe"
+                    }
+                  ]
+                },
+                "url": "pipe"
+              },
+              {
+                "id": "41c74daa-5513-858a-d164-ea9bb9af0902",
+                "label": {
+                  "id": "623b103d-fcf8-43c4-5929-1258d36f43a0"
+                },
+                "url": "animations"
+              },
+              {
+                "id": "991fbf20-fe87-a902-71b8-de43dfc5f2b5",
+                "label": {
+                  "id": "5a8824b6-0907-b87b-3955-a42e3fab2894"
+                },
+                "url": "svg"
+              },
+              {
+                "id": "20635dff-4bad-8aa3-2628-0a4c83849407",
+                "label": {
+                  "id": "5067990c-b9ac-c008-9a27-60b50af72ee1"
+                },
+                "url": "i18n"
+              },
+              {
+                "id": "1ece8261-314e-767a-0a85-4fd43ec909d0",
+                "label": {
+                  "id": "d117f212-b4f8-0a56-0724-4f2e66c3cee5"
+                },
+                "url": "innerhtml-binding"
+              },
+              {
+                "id": "8c5254b3-a4e6-3058-9fd7-80cdb0bb2083",
+                "label": {
+                  "id": "a0a98bbd-0126-c4c7-93dc-7437ed6e2a0c"
+                },
+                "url": "ngnonbindable"
+              },
+              {
+                "id": "4816c151-da33-44fa-7efb-919b115043b8",
+                "label": {
+                  "id": "098874d7-a9df-0bba-3552-d7092f0b860b"
+                },
+                "url": "any-type-cast"
+              }
+            ]
+          },
+          "pages": [
+            {
+              "id": "2d85ddc6-ca29-9c79-7367-f688da4df84b",
+              "entries": [
+                {
+                  "id": "c3413bcc-f5a2-8ec3-cbbc-af86aa408f99",
+                  "type": "text",
+                  "head": {
+                    "id": "84e2c8b3-9a2b-e239-3906-2086c6bf75c8"
+                  },
+                  "text": {
+                    "id": "7a2c5999-070f-13ee-a39d-a73385632546"
+                  }
+                },
+                {
+                  "id": "585e6ca8-a67d-e946-0c07-893109e591d4",
+                  "type": "text",
+                  "head": {
+                    "id": "55e08073-a716-d390-0ef8-a1365e3c3e7f"
+                  },
+                  "text": {
+                    "id": "d1287c56-821e-9d67-dc76-3a85fb4bf073"
+                  }
+                },
+                {
+                  "id": "91db7b6c-a9d4-2a88-3415-307f938be267",
+                  "type": "hint",
+                  "head": {
+                    "id": "d54efdb3-aef5-6378-d96b-20d68208a5df"
+                  },
+                  "text": {
+                    "id": "ba85af3a-206b-d6da-4104-58b8508b807e"
+                  }
+                },
+                {
+                  "id": "0629d5d6-6e68-55ed-4ddd-d19713f1d23d",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "dc7bbe82-764e-ff30-cffb-9f62cd2c81e1"
+                  },
+                  "text": {
+                    "id": "e5a8c7df-9079-e562-2445-42d0cf047d96"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "9a811cda-badd-7d35-4f4e-3c2603438bd3"
+                      },
+                      "url": "https://angular.io/guide/quickstart",
+                      "lang": "en"
+                    }
+                  ]
+                }
+              ],
+              "title": {
+                "id": "78850bb7-1d9c-7da8-c1aa-e6a288a5863d"
+              },
+              "url": "intro"
+            },
+            {
+              "id": "606d308f-47a1-573b-4367-5d5db816dc14",
+              "entries": [
+                {
+                  "id": "de89be41-67dc-851f-d5cd-641a488acacd",
+                  "type": "text",
+                  "head": {
+                    "id": "bae26622-ea15-7dcd-33f8-0c29778813c9"
+                  },
+                  "text": {
+                    "id": "af134a33-0b99-89f8-dff9-1fffbe5b6789"
+                  }
+                },
+                {
+                  "id": "68d20a21-c90f-97e0-94d3-b4dcdae68bef",
+                  "type": "demo",
+                  "head": {
+                    "id": "c21eed3b-1cdd-96c9-e9cb-9d8e4df1b99d"
+                  },
+                  "text": {
+                    "id": "747da891-d159-7f11-926b-0ad9da2d005b"
+                  },
+                  "source": {
+                    "id": "55073f20-3845-8238-4b0e-5cfd98d23761"
+                  },
+                  "demo": "v6-templates-declar-demo"
+                },
+                {
+                  "id": "393bfe1e-89f7-c808-02b5-c1bf777b791a",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "2cdcaa47-e4dc-4cae-9ed6-a51f489b8266"
+                  },
+                  "text": {
+                    "id": "9a385f42-7c9e-9159-f58e-8c6cad8e0147"
+                  },
+                  "description": {
+                    "id": "346f3ffc-0f28-8ac7-21c2-41f3a3cfd46c"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "6d6d0f06-6d96-d37c-7942-0d394864ed9f"
+                      },
+                      "url": "https://angular.io/guide/template-syntax",
+                      "lang": "en"
+                    }
+                  ]
+                },
+                {
+                  "id": "e4f825b0-84d5-6c71-2c5a-7afda03b60a1",
+                  "type": "text",
+                  "head": {
+                    "id": "e1a7e7bd-adbe-f2aa-eef9-afca7060c091"
+                  },
+                  "text": {
+                    "id": "ae43d3d6-370f-a05d-d4bf-e1353efb155f"
+                  }
+                },
+                {
+                  "id": "b141f438-43ac-bf33-2ce6-44f91d819394",
+                  "type": "demo",
+                  "head": {
+                    "id": "965a5039-b986-14da-18bc-d07c3b7e63ac"
+                  },
+                  "text": {
+                    "id": "9ce015f2-1ae2-c43a-2aaf-d8def290843e"
+                  },
+                  "source": {
+                    "id": "068b64e3-ca3b-bb09-ddfb-7ce12c0421ec"
+                  },
+                  "demo": "v6-templates-declar-demo"
+                },
+                {
+                  "id": "35e0a343-d5a9-3523-bc77-2d1dcf41f299",
+                  "type": "text",
+                  "head": {
+                    "id": "b1691c3e-5eaf-106a-f621-cbd2bd990a75"
+                  },
+                  "text": {
+                    "id": "6fd2fa6d-3a72-142e-f994-ae9236564369"
+                  }
+                },
+                {
+                  "id": "5a7aff02-d300-fc81-513c-b130f5ffedda",
+                  "type": "demo",
+                  "head": {
+                    "id": "287980f4-2883-e91c-7f5e-206ef0794ab5"
+                  },
+                  "text": {
+                    "id": "26b52189-ad48-4975-cb04-61ea811a03c5"
+                  },
+                  "source": {
+                    "id": "0d3e154c-322b-7c16-fbab-783aad4781cc"
+                  },
+                  "demo": "v6-templates-declar-demo"
+                },
+                {
+                  "id": "45ae2172-8163-40c6-8168-941177cdf3b2",
+                  "type": "text",
+                  "head": {
+                    "id": "1d007e10-5a34-1f13-fc32-a05c2d384230"
+                  },
+                  "text": {
+                    "id": "9a8dec6c-9769-e494-2296-e6b12b9d560a"
+                  }
+                },
+                {
+                  "id": "a86d657f-26dd-f918-bbc6-82e5d284c29a",
+                  "type": "demo",
+                  "head": {
+                    "id": "cf40624e-e3e0-b118-2bc1-939aed4d373d"
+                  },
+                  "text": {
+                    "id": "b2d8add7-3667-151b-c3fd-cdc634b4718b"
+                  },
+                  "source": {
+                    "id": "c8735d85-b3fc-f765-11fb-c5dbbefac996"
+                  },
+                  "demo": "v6-templates-declar-demo"
+                },
+                {
+                  "id": "33c82ba4-af51-4b4d-e514-98e4c5e21c6f",
+                  "type": "text",
+                  "head": {
+                    "id": "04d75778-ff19-405e-62f3-3dbbc9510aea"
+                  },
+                  "text": {
+                    "id": "768bf903-23b1-5c92-3651-9647e756f8c7"
+                  }
+                }
+              ],
+              "title": {
+                "id": "cb0412e3-6389-6c34-2e02-da0eb1e95ba7"
+              },
+              "url": "interpolation"
+            }
+          ],
+          "title": {
+            "id": "0398874c-342e-31b2-7563-26f3aa855ed4"
+          },
+          "color": "#c9e14f",
+          "url": "templates",
+          "disabled": false
+        },
+        {
+          "id": "cf9867c0-c7ba-5d8b-92db-838948f086f5",
+          "menu": {
+            "items": []
+          },
+          "pages": [],
+          "title": {
+            "id": "e2ac9fe4-ea5d-7739-1599-a609ec64579c"
+          },
+          "color": "green",
+          "url": "styling",
+          "disabled": true
+        },
+        {
           "id": "1d7d1307-5627-adab-6544-bf9836cda217",
           "menu": {
             "items": [
@@ -10934,34 +11502,8 @@
           "title": {
             "id": "52e1788d-e5ee-41f1-572c-1844f21e9bc3"
           },
-          "color": "green",
+          "color": "#15c55e",
           "url": "core",
-          "disabled": true
-        },
-        {
-          "id": "9705d447-3d27-8405-f165-c67e410846f6",
-          "menu": {
-            "items": []
-          },
-          "pages": [],
-          "title": {
-            "id": "0398874c-342e-31b2-7563-26f3aa855ed4"
-          },
-          "color": "#c9e14f",
-          "url": "templates",
-          "disabled": true
-        },
-        {
-          "id": "cf9867c0-c7ba-5d8b-92db-838948f086f5",
-          "menu": {
-            "items": []
-          },
-          "pages": [],
-          "title": {
-            "id": "e2ac9fe4-ea5d-7739-1599-a609ec64579c"
-          },
-          "color": "green",
-          "url": "styling",
           "disabled": true
         },
         {
@@ -21751,6 +22293,736 @@
             {
               "lang": "en",
               "text": "#### Example"
+            }
+          ]
+        },
+        {
+          "id": "78850bb7-1d9c-7da8-c1aa-e6a288a5863d",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Introduction"
+            }
+          ]
+        },
+        {
+          "id": "7a2c5999-070f-13ee-a39d-a73385632546",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular templates reference.\n"
+            }
+          ]
+        },
+        {
+          "id": "d1287c56-821e-9d67-dc76-3a85fb4bf073",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Additional information\n\nExample of hints and tutorials links. You can switch off these panels in the sidebar."
+            }
+          ]
+        },
+        {
+          "id": "ba85af3a-206b-d6da-4104-58b8508b807e",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Hint with additional explanation."
+            }
+          ]
+        },
+        {
+          "id": "9a811cda-badd-7d35-4f4e-3c2603438bd3",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular Quick Start"
+            }
+          ]
+        },
+        {
+          "id": "f65b484f-8116-cc60-7809-675810e735d4",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Introduction"
+            }
+          ]
+        },
+        {
+          "id": "cb0412e3-6389-6c34-2e02-da0eb1e95ba7",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Interpolation"
+            }
+          ]
+        },
+        {
+          "id": "17e7c0da-4a19-341f-8793-5c6b51f0213f",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Interpolation {{...}}"
+            }
+          ]
+        },
+        {
+          "id": "55073f20-3845-8238-4b0e-5cfd98d23761",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nJust a regular <strong>html</strong>!\n```\n"
+            }
+          ]
+        },
+        {
+          "id": "af134a33-0b99-89f8-dff9-1fffbe5b6789",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "HTML is the language of the Angular template. Almost all HTML syntax is valid template syntax."
+            }
+          ]
+        },
+        {
+          "id": "ae43d3d6-370f-a05d-d4bf-e1353efb155f",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You use interpolation to weave calculated strings into the text between HTML element tags and within attribute assignments."
+            }
+          ]
+        },
+        {
+          "id": "068b64e3-ca3b-bb09-ddfb-7ce12c0421ec",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<h3>\n  {{title}}\n  <img src=\"{{heroImageUrl}}\" style=\"height:30px\">\n</h3>\n```\n"
+            }
+          ]
+        },
+        {
+          "id": "6fd2fa6d-3a72-142e-f994-ae9236564369",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "More generally, the text between the braces is a template expression that Angular first evaluates and then converts to a string. "
+            }
+          ]
+        },
+        {
+          "id": "0d3e154c-322b-7c16-fbab-783aad4781cc",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\nThe sum of 1 + 1 is {{1 + 1}}\n```"
+            }
+          ]
+        },
+        {
+          "id": "9a8dec6c-9769-e494-2296-e6b12b9d560a",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The expression can invoke methods of the host component such as `getVal()`, seen here:"
+            }
+          ]
+        },
+        {
+          "id": "c8735d85-b3fc-f765-11fb-c5dbbefac996",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\nThe sum of 1 + 1 is not {{1 + 1 + getVal()}}\n```\n\n```typescript\nexport class MyComponent {\n  getVal() {\n    return 2;\n  }\n}\n```\n"
+            }
+          ]
+        },
+        {
+          "id": "768bf903-23b1-5c92-3651-9647e756f8c7",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You write these template expressions in a language that looks like JavaScript. Many JavaScript expressions are legal template expressions, but not all.\n\nJavaScript expressions that have or promote side effects are prohibited, including:\n\n  * assignments (`=`, `+=`, `-=`, ...)\n  * `new`\n  * chaining expressions with `;` or `,`\n  * increment and decrement operators (`++` and `--`)\n\nOther notable differences from JavaScript syntax include:\n\n  * no support for the bitwise operators `|` and `&`\n  * new template expression operators, such as `|`, `?.` and `!`."
+            }
+          ]
+        },
+        {
+          "id": "6d6d0f06-6d96-d37c-7942-0d394864ed9f",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular Template Syntax"
+            }
+          ]
+        },
+        {
+          "id": "2e91ee49-9437-1f99-3217-8a99d0b89151",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Operators"
+            }
+          ]
+        },
+        {
+          "id": "1656d491-5f46-70ec-1306-a6ebdb331ac1",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Safe navigation ?."
+            }
+          ]
+        },
+        {
+          "id": "d5cb3518-166f-a554-b028-3de0497d9e10",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Non-null assertion !."
+            }
+          ]
+        },
+        {
+          "id": "bfcb7fe0-5ac0-0265-989a-c3f5d36f92a0",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Pipe |"
+            }
+          ]
+        },
+        {
+          "id": "c42f2d43-8c89-7c37-6f3a-1915d4015ea4",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Bindings"
+            }
+          ]
+        },
+        {
+          "id": "683e53b6-092c-fd2e-2c08-724f67eb79d3",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "[property]"
+            }
+          ]
+        },
+        {
+          "id": "9b968f7f-508f-c4ce-c744-50743eb815dd",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "(event)"
+            }
+          ]
+        },
+        {
+          "id": "19799cc9-cabe-b2a8-824f-2b7d5ed0d623",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "[(twoWay)]"
+            }
+          ]
+        },
+        {
+          "id": "4b777cc7-fbda-3edc-0b26-cccdb6c894c4",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Property binding []"
+            }
+          ]
+        },
+        {
+          "id": "b2ff8681-c32f-5429-b118-8a57a8cef7de",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "[property]"
+            }
+          ]
+        },
+        {
+          "id": "0c28f828-1516-4fb7-52ae-b4d3294974de",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "[style.]"
+            }
+          ]
+        },
+        {
+          "id": "5672da11-56ee-dbe3-60ad-0aaa1d3fd7c2",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "[class.]"
+            }
+          ]
+        },
+        {
+          "id": "66b74b23-1ab0-8ab5-494c-b919fe116425",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Event binding ()"
+            }
+          ]
+        },
+        {
+          "id": "b0866b27-aa5c-af2d-12a2-879f7c2e2a28",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "(event)"
+            }
+          ]
+        },
+        {
+          "id": "ba6fa335-8cc6-9fb6-34a2-21de0ea38013",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Pseudo-events"
+            }
+          ]
+        },
+        {
+          "id": "31dffbfa-63c6-8cca-c483-434080340107",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Two-way binding [()]"
+            }
+          ]
+        },
+        {
+          "id": "c20947e4-2951-e6a4-2096-1c2ddf3a7f2f",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "[ngStyle]"
+            }
+          ]
+        },
+        {
+          "id": "6b8bf5c4-1d5e-d4d2-a5bc-43e4f538612f",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "[ngClass]"
+            }
+          ]
+        },
+        {
+          "id": "bdf50773-0dfa-1055-d83b-dfb2d5741d51",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "[(ngModel)]"
+            }
+          ]
+        },
+        {
+          "id": "262261ab-5b63-033e-4673-08bec82964c2",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "[(twoWay)]"
+            }
+          ]
+        },
+        {
+          "id": "f06f86a0-a12d-9ca0-4562-73bb6a606e70",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Structural directive *"
+            }
+          ]
+        },
+        {
+          "id": "4a4ebb6c-0f80-00e0-f9ec-69e84614593e",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "<ng-template>"
+            }
+          ]
+        },
+        {
+          "id": "8b82fefd-3dd3-dbe1-3778-4940f82d2f12",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "<ng-container>"
+            }
+          ]
+        },
+        {
+          "id": "a2c352cf-2b4e-96e5-66ae-36b10ece2944",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "*ngIf"
+            }
+          ]
+        },
+        {
+          "id": "2718df31-8abe-47bb-6780-e1868313ae0d",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "*ngFor"
+            }
+          ]
+        },
+        {
+          "id": "94e8ee72-567c-f055-5c5d-5bfe78e5941f",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "*ngSwitch"
+            }
+          ]
+        },
+        {
+          "id": "c7a0182a-2614-35b1-feeb-62c5266c2cc0",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "<ng-content>"
+            }
+          ]
+        },
+        {
+          "id": "3486db01-e160-7d76-f470-037603bbfc09",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "<ng-content>"
+            }
+          ]
+        },
+        {
+          "id": "dbc2ee0b-6f4b-003e-8aed-5519d2ace7a9",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Pipe |"
+            }
+          ]
+        },
+        {
+          "id": "bea9340e-023d-0516-4ce2-bd4678df94fe",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "async"
+            }
+          ]
+        },
+        {
+          "id": "382da0ef-f5a4-f543-36df-228aad9128ce",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "<ng-template>"
+            }
+          ]
+        },
+        {
+          "id": "9eacde19-2e09-ec23-83f9-3fad779cd998",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "<ng-container>"
+            }
+          ]
+        },
+        {
+          "id": "a0a98bbd-0126-c4c7-93dc-7437ed6e2a0c",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ngNonBindable"
+            }
+          ]
+        },
+        {
+          "id": "623b103d-fcf8-43c4-5929-1258d36f43a0",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Animations @"
+            }
+          ]
+        },
+        {
+          "id": "5a8824b6-0907-b87b-3955-a42e3fab2894",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "<svg:>"
+            }
+          ]
+        },
+        {
+          "id": "5067990c-b9ac-c008-9a27-60b50af72ee1",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "i18n"
+            }
+          ]
+        },
+        {
+          "id": "098874d7-a9df-0bba-3552-d7092f0b860b",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "$any() type cast"
+            }
+          ]
+        },
+        {
+          "id": "55ca9187-5698-7a24-12c9-904ce2f42336",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "date"
+            }
+          ]
+        },
+        {
+          "id": "40a8c52c-d93c-d780-cb09-651df74fc1a3",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "lowerCase"
+            }
+          ]
+        },
+        {
+          "id": "a1797e66-1310-7d3c-6ccc-1bf9931d04d5",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "currency"
+            }
+          ]
+        },
+        {
+          "id": "c226f095-ccbb-e53e-d9bd-d8da5d2caa9d",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "percent"
+            }
+          ]
+        },
+        {
+          "id": "82365b3c-732c-fa67-7b2c-ba5d9a34cb28",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Touch events"
+            }
+          ]
+        },
+        {
+          "id": "936ed01f-6b7f-b248-1f99-6518057ef343",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Reference #"
+            }
+          ]
+        },
+        {
+          "id": "d117f212-b4f8-0a56-0724-4f2e66c3cee5",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "innerHtml"
+            }
+          ]
+        },
+        {
+          "id": "e275fe87-66eb-c7ac-25d9-91bbdea4a22e",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@Input"
+            }
+          ]
+        },
+        {
+          "id": "3fed8ff6-1213-10e9-f9f4-eba681831c6b",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@Output"
+            }
+          ]
+        },
+        {
+          "id": "933d29a5-450a-4972-b159-1944e8ef5794",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@Component"
+            }
+          ]
+        },
+        {
+          "id": "1191eb1b-e6d2-1af6-3fb0-92967a777c0b",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@Directive"
+            }
+          ]
+        },
+        {
+          "id": "00c96471-01fe-cb3e-db95-eaba73caaf78",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "[attr.]"
+            }
+          ]
+        },
+        {
+          "id": "ba12ac86-d6ee-eea1-fb80-ed53b4f96a15",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@HostBinding"
+            }
+          ]
+        },
+        {
+          "id": "bce64ef6-d3a7-fd9d-f036-fd91d4085085",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@HostListener"
+            }
+          ]
+        },
+        {
+          "id": "c99df1d2-1859-4eff-ed26-f50731b57cc5",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "exportAs"
+            }
+          ]
+        },
+        {
+          "id": "8f2a1e07-1098-928f-2e5c-a9922c6e8f11",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "keyvalue"
+            }
+          ]
+        },
+        {
+          "id": "6d00b499-1002-09f6-444f-1d663e6c0248",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "*ngTemplateOutlet"
+            }
+          ]
+        },
+        {
+          "id": "2b147798-eca6-1606-7291-0cd49c2ce0b4",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "*ngComponentOutlet"
             }
           ]
         }
