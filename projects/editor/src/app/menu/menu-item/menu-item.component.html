@@ -65,6 +65,13 @@
                name="asGroup">
       </ui-form-field>
 
+      <ui-form-field label="Separated (visual)">
+        <input [(ngModel)]="item.separatedFromTop"
+               uiCheckbox
+               type="checkbox"
+               name="separatedFromTop">
+      </ui-form-field>
+
       <ui-form-field label="Use Page Entries">
         <input [(ngModel)]="item.usePageEntries"
                uiCheckbox

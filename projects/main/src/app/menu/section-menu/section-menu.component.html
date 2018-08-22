@@ -8,7 +8,8 @@
       class="item"
       [class.-child]="child"
       [class.-active-opt]="subActiveOpt">
-    <li [class.-group]="item.asGroup">
+    <li [class.-group]="item.asGroup"
+        [class.-separated]="item.separatedFromTop">
       <ng-container *ngIf="!item.usePageEntries">
         <a *ngIf="item.url"
            [routerLink]="['.', item.url]"

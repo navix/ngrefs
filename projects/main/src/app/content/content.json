@@ -6691,14 +6691,16 @@
                       "url": "pipe"
                     }
                   ]
-                }
+                },
+                "asGroup": true
               },
               {
                 "id": "2b2819e2-42fb-1627-7b5f-09471ba2bfda",
                 "label": {
                   "id": "1191eb1b-e6d2-1af6-3fb0-92967a777c0b"
                 },
-                "url": "directive"
+                "url": "directive",
+                "separatedFromTop": true
               },
               {
                 "id": "fdfe197d-eebc-68a5-ebbc-59abb040c3af",
@@ -6758,7 +6760,8 @@
                     }
                   ]
                 },
-                "url": "property-binding"
+                "url": "property-binding",
+                "asGroup": true
               },
               {
                 "id": "e4da7ee7-18aa-c54f-a249-aa4bbe0a2c8b",
@@ -6790,7 +6793,8 @@
                     }
                   ]
                 },
-                "url": "event-binding"
+                "url": "event-binding",
+                "asGroup": true
               },
               {
                 "id": "cfdd34fe-5979-d9f6-7b68-5ce49d18e000",
@@ -6808,7 +6812,8 @@
                     }
                   ]
                 },
-                "url": "two-way-binding"
+                "url": "two-way-binding",
+                "asGroup": true
               },
               {
                 "id": "149af258-122a-25b5-e525-c71e28c0b2f4",
@@ -6854,14 +6859,16 @@
                     }
                   ]
                 },
-                "url": "structural-directive"
+                "url": "structural-directive",
+                "asGroup": true
               },
               {
                 "id": "e2bb4164-46e2-b3ba-7b4f-e8feb5f16ef8",
                 "label": {
                   "id": "382da0ef-f5a4-f543-36df-228aad9128ce"
                 },
-                "url": "ng-template"
+                "url": "ng-template",
+                "separatedFromTop": true
               },
               {
                 "id": "9c5455e0-4809-af42-e4eb-f1b874c0b036",
@@ -6896,7 +6903,8 @@
                     }
                   ]
                 },
-                "url": "reference"
+                "url": "reference",
+                "asGroup": true
               },
               {
                 "id": "27f56815-6273-cdcf-2970-48459537f45e",
@@ -6949,14 +6957,16 @@
                     }
                   ]
                 },
-                "url": "pipe"
+                "url": "pipe",
+                "asGroup": true
               },
               {
                 "id": "41c74daa-5513-858a-d164-ea9bb9af0902",
                 "label": {
                   "id": "623b103d-fcf8-43c4-5929-1258d36f43a0"
                 },
-                "url": "animations"
+                "url": "animations",
+                "separatedFromTop": true
               },
               {
                 "id": "991fbf20-fe87-a902-71b8-de43dfc5f2b5",
@@ -7740,7 +7750,7 @@
                   "id": "fc525b83-6c69-1264-d939-24389123c57c"
                 },
                 "url": "ng-zone",
-                "asGroup": true,
+                "asGroup": false,
                 "sub": {
                   "items": [
                     {
@@ -7753,7 +7763,8 @@
                     }
                   ]
                 },
-                "subActiveOpt": true
+                "subActiveOpt": true,
+                "separatedFromTop": true
               },
               {
                 "id": "ace0bfb1-6f47-922f-5f16-6d0312fa3906",

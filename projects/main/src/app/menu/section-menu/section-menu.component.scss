@@ -21,6 +21,11 @@ ul {
         font-weight: 600;
       }
     }
+    &.-separated {
+      margin-top: $grid * 2;
+      padding-top: $grid;
+      border-top: 1px solid #dddddd;
+    }
   }
   a, span {
     border-radius: 3px;
