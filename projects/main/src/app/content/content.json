@@ -6663,38 +6663,6 @@
                 "url": "interpolation"
               },
               {
-                "id": "8be848f3-2dcf-d521-481a-b9ebf8adc8e4",
-                "label": {
-                  "id": "2e91ee49-9437-1f99-3217-8a99d0b89151"
-                },
-                "sub": {
-                  "items": [
-                    {
-                      "id": "30d8e85b-dffe-3f71-317b-bfce2558c02b",
-                      "label": {
-                        "id": "1656d491-5f46-70ec-1306-a6ebdb331ac1"
-                      },
-                      "url": "safe-navigation-operator"
-                    },
-                    {
-                      "id": "449e5d5a-5e6d-a1c0-4e05-5e726e1e0046",
-                      "label": {
-                        "id": "d5cb3518-166f-a554-b028-3de0497d9e10"
-                      },
-                      "url": "non-null-assertion-operator"
-                    },
-                    {
-                      "id": "aef62bd5-2224-3fe8-ff3a-8c285e044925",
-                      "label": {
-                        "id": "bfcb7fe0-5ac0-0265-989a-c3f5d36f92a0"
-                      },
-                      "url": "pipe"
-                    }
-                  ]
-                },
-                "asGroup": true
-              },
-              {
                 "id": "2b2819e2-42fb-1627-7b5f-09471ba2bfda",
                 "label": {
                   "id": "1191eb1b-e6d2-1af6-3fb0-92967a777c0b"
@@ -6724,6 +6692,27 @@
                       "url": "input-binding"
                     },
                     {
+                      "id": "81749af7-796d-4241-b42b-75599e8b9ad2",
+                      "label": {
+                        "id": "00c96471-01fe-cb3e-db95-eaba73caaf78"
+                      },
+                      "url": "attr-binding"
+                    },
+                    {
+                      "id": "1f8c6cf0-acdb-4c0b-fad9-afce6d58ac73",
+                      "label": {
+                        "id": "5672da11-56ee-dbe3-60ad-0aaa1d3fd7c2"
+                      },
+                      "url": "class-binding"
+                    },
+                    {
+                      "id": "19f3a698-6c4e-73c1-c20f-57c4f67c423e",
+                      "label": {
+                        "id": "6b8bf5c4-1d5e-d4d2-a5bc-43e4f538612f"
+                      },
+                      "url": "ngclass-directive"
+                    },
+                    {
                       "id": "7d7b7a86-d014-b99a-decd-1ea1e231b512",
                       "label": {
                         "id": "0c28f828-1516-4fb7-52ae-b4d3294974de"
@@ -6736,27 +6725,6 @@
                         "id": "c20947e4-2951-e6a4-2096-1c2ddf3a7f2f"
                       },
                       "url": "ngstyle-directive"
-                    },
-                    {
-                      "id": "1f8c6cf0-acdb-4c0b-fad9-afce6d58ac73",
-                      "label": {
-                        "id": "5672da11-56ee-dbe3-60ad-0aaa1d3fd7c2"
-                      },
-                      "url": "class-binding"
-                    },
-                    {
-                      "id": "81749af7-796d-4241-b42b-75599e8b9ad2",
-                      "label": {
-                        "id": "00c96471-01fe-cb3e-db95-eaba73caaf78"
-                      },
-                      "url": "attr-binding"
-                    },
-                    {
-                      "id": "19f3a698-6c4e-73c1-c20f-57c4f67c423e",
-                      "label": {
-                        "id": "6b8bf5c4-1d5e-d4d2-a5bc-43e4f538612f"
-                      },
-                      "url": "ngclass-directive"
                     }
                   ]
                 },
@@ -6893,18 +6861,10 @@
                   "id": "936ed01f-6b7f-b248-1f99-6518057ef343"
                 },
                 "sub": {
-                  "items": [
-                    {
-                      "id": "0044a154-393d-cca6-f5e4-3c273b577715",
-                      "label": {
-                        "id": "c99df1d2-1859-4eff-ed26-f50731b57cc5"
-                      },
-                      "url": "export-as"
-                    }
-                  ]
+                  "items": []
                 },
                 "url": "reference",
-                "asGroup": true
+                "asGroup": false
               },
               {
                 "id": "27f56815-6273-cdcf-2970-48459537f45e",
@@ -6961,11 +6921,36 @@
                 "asGroup": true
               },
               {
+                "id": "8be848f3-2dcf-d521-481a-b9ebf8adc8e4",
+                "label": {
+                  "id": "2e91ee49-9437-1f99-3217-8a99d0b89151"
+                },
+                "sub": {
+                  "items": [
+                    {
+                      "id": "30d8e85b-dffe-3f71-317b-bfce2558c02b",
+                      "label": {
+                        "id": "1656d491-5f46-70ec-1306-a6ebdb331ac1"
+                      },
+                      "url": "safe-navigation-operator"
+                    },
+                    {
+                      "id": "449e5d5a-5e6d-a1c0-4e05-5e726e1e0046",
+                      "label": {
+                        "id": "d5cb3518-166f-a554-b028-3de0497d9e10"
+                      },
+                      "url": "non-null-assertion-operator"
+                    }
+                  ]
+                },
+                "asGroup": true
+              },
+              {
                 "id": "41c74daa-5513-858a-d164-ea9bb9af0902",
                 "label": {
                   "id": "623b103d-fcf8-43c4-5929-1258d36f43a0"
                 },
-                "url": "animations",
+                "url": "animation-binding",
                 "separatedFromTop": true
               },
               {
@@ -6973,7 +6958,7 @@
                 "label": {
                   "id": "5a8824b6-0907-b87b-3955-a42e3fab2894"
                 },
-                "url": "svg"
+                "url": "svg-prefix"
               },
               {
                 "id": "20635dff-4bad-8aa3-2628-0a4c83849407",
@@ -7202,63 +7187,6 @@
               "url": "interpolation"
             },
             {
-              "id": "38b2b883-8c43-59d5-be35-0c8febe10672",
-              "entries": [
-                {
-                  "id": "11d30f25-364e-33d3-0831-128a1c401433",
-                  "type": "text",
-                  "head": {
-                    "id": "6b6cbca0-2276-9ffc-d0e8-464dee7d0808"
-                  },
-                  "text": {
-                    "id": "2e83f415-115f-e551-8359-b1bc81489d19"
-                  }
-                },
-                {
-                  "id": "63f61603-1fba-4772-6313-7a132e14532d",
-                  "type": "tutorials",
-                  "head": {
-                    "id": "cfdd7e29-6eab-9464-59ee-65254a9e87e7"
-                  },
-                  "text": {
-                    "id": "f88dc69f-3740-5edf-7f14-92a5ad9ea290"
-                  },
-                  "links": [
-                    {
-                      "label": {
-                        "id": "2ba64b1d-8a0c-ed93-cef3-0b579254b20e"
-                      },
-                      "url": "https://angular.io/guide/template-syntax#the-safe-navigation-operator----and-null-property-paths",
-                      "lang": "en"
-                    }
-                  ]
-                }
-              ],
-              "title": {
-                "id": "b95cbf38-a90b-2b01-2fa7-b261616b87b9"
-              },
-              "url": "safe-navigation-operator"
-            },
-            {
-              "id": "e933e885-ed2e-0c4c-3bf9-b110622035e9",
-              "entries": [
-                {
-                  "id": "dd528cd1-3d8b-0ce5-744c-a802c7072091",
-                  "type": "text",
-                  "head": {
-                    "id": "ca639aef-45e9-db81-dbfc-3485cf342d89"
-                  },
-                  "text": {
-                    "id": "91be93a8-3492-45f3-1dec-847a30608f0e"
-                  }
-                }
-              ],
-              "title": {
-                "id": "902063c7-d49b-e290-ca2a-17f0f5210763"
-              },
-              "url": "non-null-assertion-operator"
-            },
-            {
               "id": "c86cb33a-c11d-6fe4-088e-6e504b905c98",
               "entries": [
                 {
@@ -7353,6 +7281,1485 @@
                 "id": "043395e2-1af5-6727-6f96-54ae9db69a8c"
               },
               "url": "component"
+            },
+            {
+              "id": "8c032fed-d145-7cf0-44e5-8089c247c1bc",
+              "entries": [
+                {
+                  "id": "72637089-0aaf-aec6-ecf8-c8e351a48f11",
+                  "type": "text",
+                  "head": {
+                    "id": "a794d1e8-813d-b8e2-b954-8dae731bb4a2"
+                  },
+                  "text": {
+                    "id": "5d2ab900-66ec-aea0-ca24-4bc97b9c36cd"
+                  }
+                },
+                {
+                  "id": "c328c82d-9b76-256a-93ed-44c907639b03",
+                  "type": "text",
+                  "head": {
+                    "id": "3aacb1b3-5618-9c74-9d71-e55ee04d4f90"
+                  },
+                  "text": {
+                    "id": "cc46bf5f-765d-28aa-3db5-6640a1dca57f"
+                  },
+                  "source": {
+                    "id": "a3d7f207-7f86-47fc-8579-02ce3f7b047e"
+                  }
+                },
+                {
+                  "id": "10eb04a0-8be3-5b04-d95d-1cc869563ac0",
+                  "type": "text",
+                  "head": {
+                    "id": "821ef823-624c-2c5a-38c9-27816173fcc5"
+                  },
+                  "text": {
+                    "id": "409e44ea-c094-9c3e-73ae-2996c9276914"
+                  }
+                },
+                {
+                  "id": "f3ea2aef-f31d-8c2f-d564-c8d73dac81df",
+                  "type": "text",
+                  "head": {
+                    "id": "f0c2c96e-22ae-2b04-c232-1d0207cc041f"
+                  },
+                  "text": {
+                    "id": "255659ba-e18d-cfcf-dce2-05b96f529890"
+                  },
+                  "source": {
+                    "id": "cc8238b7-8eef-9782-a9f8-3139c85a5fe9"
+                  }
+                },
+                {
+                  "id": "c107fa8d-b06b-4f02-13cd-5a010000e862",
+                  "type": "text",
+                  "head": {
+                    "id": "020c506b-b88b-9e0b-3b33-1a6ba241f13e"
+                  },
+                  "text": {
+                    "id": "3c9893cd-5ead-a812-3005-1412d7aa9bd8"
+                  }
+                },
+                {
+                  "id": "0d9edd6c-d024-509a-8560-bdeba6c179c4",
+                  "type": "text",
+                  "head": {
+                    "id": "31a78c6d-646c-861c-0020-8128d3ec639b"
+                  },
+                  "text": {
+                    "id": "fbc8de9b-8927-47d8-1ec5-f32022583e61"
+                  },
+                  "source": {
+                    "id": "86d1f45a-aeb1-6cfc-7764-cf878c26eab1"
+                  }
+                },
+                {
+                  "id": "ce81097f-5ccb-7096-db2e-a41799775714",
+                  "type": "text",
+                  "head": {
+                    "id": "60a7d184-b945-1164-0c36-a9629ad8d0ac"
+                  },
+                  "text": {
+                    "id": "1f9db871-eb78-fa97-63ba-09dcf5b32577"
+                  }
+                },
+                {
+                  "id": "f85562f5-7e0e-568e-026c-943b08c6c032",
+                  "type": "text",
+                  "head": {
+                    "id": "bac87764-c5a8-25b4-b4ef-4dc92d245469"
+                  },
+                  "text": {
+                    "id": "39854e5d-f094-8751-c879-1622cfda3eb3"
+                  },
+                  "source": {
+                    "id": "fc9789d0-3151-63b2-9658-78357fc43c2f"
+                  }
+                }
+              ],
+              "title": {
+                "id": "7b12dc61-341b-b351-ead1-307b71cd1855"
+              },
+              "url": "property-binding"
+            },
+            {
+              "id": "88ffed75-71ab-3093-6594-ff247705cd31",
+              "entries": [
+                {
+                  "id": "ae8e6764-9c4d-18dd-b124-0e628174a9db",
+                  "type": "text",
+                  "head": {
+                    "id": "3abb0d36-e08e-18b6-962d-bce97b5104ad"
+                  },
+                  "text": {
+                    "id": "5839ec6b-80fc-0b49-37d6-ceb21280b6db"
+                  }
+                },
+                {
+                  "id": "dcc61a86-f263-dc2c-93d7-dc7768c92d18",
+                  "type": "text",
+                  "head": {
+                    "id": "15a18692-6905-03b5-78bd-e3d0698dc522"
+                  },
+                  "text": {
+                    "id": "31954bdf-26c9-d79a-1040-70d1c7c72cfd"
+                  }
+                },
+                {
+                  "id": "b97309a2-a4cf-9e27-bd48-446427b9fb2e",
+                  "type": "demo",
+                  "head": {
+                    "id": "397b049c-686d-6fd3-c368-aff74830ccd7"
+                  },
+                  "text": {
+                    "id": "19e03987-47d4-4bad-37dd-01d2ce6cd146"
+                  },
+                  "source": {
+                    "id": "12e27640-fd67-0de4-5cc8-d09d8988975e"
+                  }
+                },
+                {
+                  "id": "33ef9458-7aed-57ca-3212-6692d70f09f8",
+                  "type": "text",
+                  "head": {
+                    "id": "2c783e89-64b7-790a-b4dc-b43fc6cda801"
+                  },
+                  "text": {
+                    "id": "5b978825-5c75-bd8d-ead4-5fe4e56ae048"
+                  }
+                }
+              ],
+              "title": {
+                "id": "b82d513f-137c-4ff6-1465-9a2c2ec6941a"
+              },
+              "url": "input-binding"
+            },
+            {
+              "id": "dbd26e6d-061d-3536-2594-47d081a41cf1",
+              "entries": [
+                {
+                  "id": "cd6d1fc4-afd8-0570-a638-557fb9b04cea",
+                  "type": "text",
+                  "head": {
+                    "id": "c96ce1cf-e850-a265-c15c-70f13490b90b"
+                  },
+                  "text": {
+                    "id": "ebe05ae3-9e68-76a5-bf2b-e85915356c76"
+                  }
+                },
+                {
+                  "id": "10b1338d-972d-b85b-b954-751cb8fbfc29",
+                  "type": "text",
+                  "head": {
+                    "id": "28d3e0bc-5bff-fe9c-7159-cd2163addc6f"
+                  },
+                  "text": {
+                    "id": "d7c3ce79-a0ca-31bd-2a81-0cfe888b2f44"
+                  }
+                }
+              ],
+              "title": {
+                "id": "d6f2dc64-bcca-f4a7-dd57-d0e9908a9496"
+              },
+              "url": "attr-binding"
+            },
+            {
+              "id": "f6e90d6f-844e-95df-9e4c-8946cd25fcb0",
+              "entries": [
+                {
+                  "id": "8b7b13ed-187c-094b-6940-7f719ac8ce48",
+                  "type": "text",
+                  "head": {
+                    "id": "79f68407-469c-b15c-38fe-388bb636414c"
+                  },
+                  "text": {
+                    "id": "709a619a-5581-8f5e-de0c-2ee5b9763038"
+                  }
+                },
+                {
+                  "id": "c9fdd052-74c6-96aa-25af-dc18e922c6cd",
+                  "type": "text",
+                  "head": {
+                    "id": "274367f4-091f-ad40-fb46-1b321ed3527b"
+                  },
+                  "text": {
+                    "id": "fb333398-2d5d-c61f-2f66-8509d42dc8f5"
+                  }
+                },
+                {
+                  "id": "2b37506b-5d11-7f2f-532f-2100f7eee82a",
+                  "type": "demo",
+                  "head": {
+                    "id": "2daebbb6-4875-b31e-489d-89217e263831"
+                  },
+                  "text": {
+                    "id": "151cfc31-5029-ba6f-8afd-e2ed455cf441"
+                  },
+                  "source": {
+                    "id": "1ba3c4a4-7a5b-9487-1360-64c248342359"
+                  }
+                },
+                {
+                  "id": "4e681ae5-5bbd-67d7-9194-4fa78845991b",
+                  "type": "text",
+                  "head": {
+                    "id": "b4ef1479-e3da-7d72-e97b-ea10b1d6890d"
+                  },
+                  "text": {
+                    "id": "db8b65a1-3800-dbcb-c194-0577ca63bef3"
+                  }
+                },
+                {
+                  "id": "65fe73cc-f45d-c00a-9b00-c564876cc5f2",
+                  "type": "demo",
+                  "head": {
+                    "id": "81c1c7a1-6b9e-31c3-da8f-99833150226c"
+                  },
+                  "text": {
+                    "id": "3084e2de-d834-91b4-b34e-9cf6c953edab"
+                  },
+                  "source": {
+                    "id": "7b724c48-e9f7-6589-5d95-f656505d2b7d"
+                  }
+                },
+                {
+                  "id": "cc8a6805-6906-d632-be15-0acdd505c62a",
+                  "type": "text",
+                  "head": {
+                    "id": "4efcdb42-ef12-d0ec-8226-eb4c4c076179"
+                  },
+                  "text": {
+                    "id": "ab1368d4-e46f-25b6-9ae7-5ef2e5af7152"
+                  }
+                }
+              ],
+              "title": {
+                "id": "7beb6114-aacf-7610-73f7-c10cd13ce0d0"
+              },
+              "url": "class-binding"
+            },
+            {
+              "id": "bbf7a902-b4db-e936-2ad1-5fc36a66c99f",
+              "entries": [
+                {
+                  "id": "c5da6b5c-2fd2-2bfe-8ba2-8d79f907fcaa",
+                  "type": "text",
+                  "head": {
+                    "id": "d8daee7f-0535-d01a-a184-cfa6b524280e"
+                  },
+                  "text": {
+                    "id": "9f3c764e-a407-d7a0-e443-b0a207bf6e37"
+                  }
+                },
+                {
+                  "id": "927c9289-ef66-47b7-193d-f863260dc67e",
+                  "type": "demo",
+                  "head": {
+                    "id": "717048f7-4318-bba8-23e8-513c7180d7ab"
+                  },
+                  "text": {
+                    "id": "ab3ad37a-ee1d-d458-8848-5cbc90e12747"
+                  },
+                  "source": {
+                    "id": "d14ac47d-fdd0-d751-f6d4-3b1082e792d1"
+                  }
+                },
+                {
+                  "id": "5ae8d7a5-58dd-d54c-c0c6-954a7b68d047",
+                  "type": "text",
+                  "head": {
+                    "id": "3dbb57db-52b1-5952-8f2e-5e19a2b37840"
+                  },
+                  "text": {
+                    "id": "eb1b1379-266b-2993-c3a0-6e93115fde4b"
+                  }
+                },
+                {
+                  "id": "a02b0b78-75bc-22d3-d446-bad85f97217e",
+                  "type": "demo",
+                  "head": {
+                    "id": "be455e89-6347-25bf-e975-5e45778c8c36"
+                  },
+                  "text": {
+                    "id": "95e6df0f-63dc-0483-9563-7d9e113669e8"
+                  },
+                  "source": {
+                    "id": "9e93027a-f522-b372-abf8-0548a4389f29"
+                  }
+                },
+                {
+                  "id": "f5c91c71-0219-c214-536b-215b199e7355",
+                  "type": "text",
+                  "head": {
+                    "id": "4d2c0c18-ae86-67ab-142a-197e1ecb8ee8"
+                  },
+                  "text": {
+                    "id": "c1acb540-7d7a-437d-c364-973ec908a74a"
+                  }
+                }
+              ],
+              "title": {
+                "id": "8dad7413-92ab-ed46-ca50-b94cf7839729"
+              },
+              "url": "ngclass-directive"
+            },
+            {
+              "id": "2bc85b8e-85b2-77e3-e81c-1af1909627a2",
+              "entries": [
+                {
+                  "id": "6fe27529-8d39-1963-047a-229934cc5a0b",
+                  "type": "text",
+                  "head": {
+                    "id": "b7518753-0d8c-d3be-d87f-4cfb09538da5"
+                  },
+                  "text": {
+                    "id": "3be21b82-c3e0-7b50-5d25-5a03e3e50e0c"
+                  }
+                },
+                {
+                  "id": "9c09bfb7-8758-647d-9fbe-4775885251aa",
+                  "type": "text",
+                  "head": {
+                    "id": "04421998-a956-5330-e5bd-def34508a301"
+                  },
+                  "text": {
+                    "id": "48a44e8c-70e3-2f8d-7d83-094a2ab988f1"
+                  }
+                },
+                {
+                  "id": "d3ffb630-9814-72eb-c058-aab0b705ec5a",
+                  "type": "demo",
+                  "head": {
+                    "id": "a4a1679e-8ef1-baf6-ce3b-a256ac8cd6a5"
+                  },
+                  "text": {
+                    "id": "d6ce0b7f-4fa5-94d6-16ed-c31ad3ffdb08"
+                  },
+                  "source": {
+                    "id": "f46baeaa-7f05-50a3-c1c8-9ae8428f991c"
+                  }
+                },
+                {
+                  "id": "1a3d21bc-c96d-9114-483a-69d07ba6c285",
+                  "type": "text",
+                  "head": {
+                    "id": "7afd0efa-377c-7de3-fb57-f31722c68a0a"
+                  },
+                  "text": {
+                    "id": "6cd390e3-a965-2a1f-88f1-36a17d4d26ec"
+                  }
+                },
+                {
+                  "id": "96c58bc4-079c-d168-31c3-b188cc531d9d",
+                  "type": "demo",
+                  "head": {
+                    "id": "76c66c5b-faed-2393-5892-a2725245b39b"
+                  },
+                  "text": {
+                    "id": "10190edd-4877-fccd-fab5-5bca8e2b73bc"
+                  },
+                  "source": {
+                    "id": "d1ea6647-a897-592d-cfe7-7245fdb4d8c1"
+                  }
+                },
+                {
+                  "id": "a97c5436-2308-b9cc-942e-698bace4d3f1",
+                  "type": "text",
+                  "head": {
+                    "id": "96c2523f-8965-42ce-bbb4-953cb935972e"
+                  },
+                  "text": {
+                    "id": "ffe85ef4-8199-0088-9d3a-7561017dc323"
+                  }
+                }
+              ],
+              "title": {
+                "id": "5b2b1400-838b-da39-fc11-734abb1208bc"
+              },
+              "url": "style-binding"
+            },
+            {
+              "id": "d737c0cd-33aa-b88b-ff66-acae52f35d34",
+              "entries": [
+                {
+                  "id": "e167a2d8-0ea5-e7d5-b650-e18d2a88fa02",
+                  "type": "text",
+                  "head": {
+                    "id": "44e38c12-a976-1251-3176-c8528a01608f"
+                  },
+                  "text": {
+                    "id": "61b81db1-a8dc-9925-1383-9a8e1c8befb9"
+                  }
+                },
+                {
+                  "id": "3292e202-deb8-61d2-2f4a-fa663e693b52",
+                  "type": "demo",
+                  "head": {
+                    "id": "38a9d7dd-cfec-8190-d16a-c5a69bd4ce9b"
+                  },
+                  "text": {
+                    "id": "0bf6d959-2523-3c1a-9976-74055b16838b"
+                  },
+                  "source": {
+                    "id": "c304287d-432d-c636-c689-138f8506a092"
+                  }
+                },
+                {
+                  "id": "5c792d02-7277-5f07-53d0-1b76fc2151ea",
+                  "type": "text",
+                  "head": {
+                    "id": "543bd396-bcaf-807b-c1f1-fd097a1cb3b6"
+                  },
+                  "text": {
+                    "id": "69e066df-14d3-e306-cb2b-b69da4b0b59c"
+                  }
+                }
+              ],
+              "title": {
+                "id": "177eb0ad-9a4e-d0b7-0aea-75022253ac22"
+              },
+              "url": "ngstyle-directive"
+            },
+            {
+              "id": "c4ad497f-9e9a-d20d-9d20-4cc247d0ff90",
+              "entries": [
+                {
+                  "id": "cfebae6d-c2c5-6b8e-112b-e014b5fe6c68",
+                  "type": "text",
+                  "head": {
+                    "id": "d543b902-f7da-afe0-5e16-fba5c3a46237"
+                  },
+                  "text": {
+                    "id": "82ef7a4d-dc46-f408-aa52-2714994d27e9"
+                  }
+                },
+                {
+                  "id": "6172e897-0ece-ef5e-351a-2c28c769fffd",
+                  "type": "text",
+                  "head": {
+                    "id": "8bdf9173-a519-967d-716a-715adb25b575"
+                  },
+                  "text": {
+                    "id": "a4431fab-11a3-af3d-f8eb-943724407a40"
+                  }
+                },
+                {
+                  "id": "ada9b887-70f6-fba3-5698-0c9a8c931169",
+                  "type": "text",
+                  "head": {
+                    "id": "2620d9da-2b8e-5ee1-d42e-98334051bc2a"
+                  },
+                  "text": {
+                    "id": "5079df13-0f0a-8999-edb5-a2f6738411b7"
+                  }
+                },
+                {
+                  "id": "820fafea-82a9-44f5-2ba9-be36c6fa7f37",
+                  "type": "text",
+                  "head": {
+                    "id": "af835e16-f1fb-e2f0-6965-59fa7b9ad0c5"
+                  },
+                  "text": {
+                    "id": "e9f80596-6075-0189-5f9c-bbaa53eb22c9"
+                  }
+                }
+              ],
+              "title": {
+                "id": "a84dff3e-bb2d-31e3-3669-923597fdd2a4"
+              },
+              "url": "event-binding"
+            },
+            {
+              "id": "fe9bc1c6-62bd-3a7f-b09a-f6cdb0ad9abd",
+              "entries": [
+                {
+                  "id": "c7355e36-1b0a-8b36-71e0-56d6b54a3367",
+                  "type": "text",
+                  "head": {
+                    "id": "f46c5aef-99fc-998d-0294-fa10844d1a84"
+                  },
+                  "text": {
+                    "id": "80c382ed-c32d-0d54-295d-870359df6508"
+                  }
+                },
+                {
+                  "id": "3f671af9-b6fe-6968-6644-22a3d52280df",
+                  "type": "text",
+                  "head": {
+                    "id": "bc65418f-1951-1978-6dcc-cd70be2979d6"
+                  },
+                  "text": {
+                    "id": "cd60837e-b704-8547-a53a-e458c9a183ff"
+                  }
+                },
+                {
+                  "id": "235b3527-cc33-9630-8219-b8b1a8ba4138",
+                  "type": "text",
+                  "head": {
+                    "id": "bfea33a8-507d-5130-5352-4c0bcb291027"
+                  },
+                  "text": {
+                    "id": "7c1df8c2-076c-5beb-4c2f-3652d92b02bc"
+                  }
+                }
+              ],
+              "title": {
+                "id": "fdaedb63-40e3-b97b-b766-e17c5b1f0eec"
+              },
+              "url": "output-binding"
+            },
+            {
+              "id": "44f43536-cab7-8f6d-9b6f-407722a19d5f",
+              "entries": [
+                {
+                  "id": "a28d013a-8192-f2b0-672a-44686da91dd9",
+                  "type": "text",
+                  "head": {
+                    "id": "a349a090-3806-64b7-0ff0-e98d7bf4754f"
+                  },
+                  "text": {
+                    "id": "55c09791-a875-8531-a506-2b86741c2f44"
+                  }
+                },
+                {
+                  "id": "1fd97e17-577a-bbd0-4701-1359c611e4b6",
+                  "type": "demo",
+                  "head": {
+                    "id": "b34ed0e5-2622-8f1c-9e0c-8f1ad67f6f3e"
+                  },
+                  "text": {
+                    "id": "0b7e3e45-b328-5ea4-24fe-d9a49d612405"
+                  },
+                  "source": {
+                    "id": "efd5c11d-e312-b806-a5a6-4090018a3970"
+                  }
+                },
+                {
+                  "id": "55ceca5d-961e-f2c5-0b72-c6036c53fcc0",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "d103b621-5580-8e1f-4d31-ecae84d85974"
+                  },
+                  "text": {
+                    "id": "ca554b69-3c4c-d323-0089-678999020556"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "efbe20a4-07dd-600c-3ca1-8daf80d1bb67"
+                      },
+                      "url": "https://medium.com/claritydesignsystem/angular-pseudo-events-d4e7f89247ee",
+                      "lang": "en"
+                    }
+                  ]
+                }
+              ],
+              "title": {
+                "id": "3807c36d-13f0-223e-160e-9fdb949a4019"
+              },
+              "url": "pseudo-events"
+            },
+            {
+              "id": "abe0dcb1-366d-a2f9-7845-0ef7054c6fac",
+              "entries": [
+                {
+                  "id": "07fcaca9-5425-5ec3-32f5-6848b73a303d",
+                  "type": "text",
+                  "head": {
+                    "id": "2e42f60f-3329-f95d-6219-5cd4512675a7"
+                  },
+                  "text": {
+                    "id": "0ae91d96-54e9-883a-0570-fc91e91a0ab3"
+                  }
+                },
+                {
+                  "id": "725278bf-741f-21b8-b3a6-09624f3003a6",
+                  "type": "text",
+                  "head": {
+                    "id": "e99c5e1e-8c53-0d6e-6bbf-43458a452bf3"
+                  },
+                  "text": {
+                    "id": "204ad1f1-19c3-6a17-f94b-0a96d1e7b296"
+                  }
+                },
+                {
+                  "id": "770e2f21-82b2-92f7-9cb0-f0a60e9816d3",
+                  "type": "demo",
+                  "head": {
+                    "id": "d79818be-01d3-ae64-9127-e08b965df19d"
+                  },
+                  "text": {
+                    "id": "0cfcf977-0406-c80d-4b0b-282f873f1cc3"
+                  },
+                  "source": {
+                    "id": "534de4c3-55fb-a373-98c1-cef829f7fdfd"
+                  }
+                }
+              ],
+              "title": {
+                "id": "9fd86b19-2642-bd79-f296-e43bc9a9b85c"
+              },
+              "url": "touch-events"
+            },
+            {
+              "id": "c9cebaac-5148-37a9-0012-3cd4e7a11dc3",
+              "entries": [
+                {
+                  "id": "d3527a28-c94a-5e05-9d10-a07b59006ec7",
+                  "type": "text",
+                  "head": {
+                    "id": "ac0f5cf8-b2b6-24a8-7fc3-2f6669058afb"
+                  },
+                  "text": {
+                    "id": "d07c62e1-c2cd-2558-20e0-3903724afdd4"
+                  }
+                },
+                {
+                  "id": "03ec2dad-ffad-689e-c0dc-dad1965f5c47",
+                  "type": "demo",
+                  "head": {
+                    "id": "5d058764-4349-512c-8a16-834c0ccec317"
+                  },
+                  "text": {
+                    "id": "f8267a6e-60fc-9018-499c-f3bcaab2c12f"
+                  },
+                  "source": {
+                    "id": "22054464-dd2c-2ab0-0fad-4d7080ab0fa6"
+                  }
+                },
+                {
+                  "id": "7aba8671-d32c-5f7f-f724-6051566220e8",
+                  "type": "text",
+                  "head": {
+                    "id": "a5e4bb92-f9c8-de20-d33f-8d2a924cef3e"
+                  },
+                  "text": {
+                    "id": "44574eb9-3379-82ef-9e8a-e3e0781b76bd"
+                  }
+                }
+              ],
+              "title": {
+                "id": "295bf59c-d2c1-02d5-18d4-8707904e29c4"
+              },
+              "url": "two-way-binding"
+            },
+            {
+              "id": "7d763ecd-7d99-f82f-325e-7d9298387817",
+              "entries": [
+                {
+                  "id": "ce389c30-ea80-f8c0-46b6-17853676218a",
+                  "type": "text",
+                  "head": {
+                    "id": "fe8ce92a-6dbe-9ce9-ca2d-14a4a642b900"
+                  },
+                  "text": {
+                    "id": "628b3108-e73a-7248-e0a2-a62549dc9832"
+                  }
+                },
+                {
+                  "id": "42f15ddd-249e-d690-220a-2f5cf2b49fe6",
+                  "type": "demo",
+                  "head": {
+                    "id": "88886ad3-b4cb-d218-4d39-c7533395e1d3"
+                  },
+                  "text": {
+                    "id": "cbbe8108-9273-0607-6009-0cf710cfb4ed"
+                  },
+                  "source": {
+                    "id": "0c28e440-74a7-62cb-1fee-969daebf5411"
+                  }
+                },
+                {
+                  "id": "30583de1-4559-d2df-a0c0-a243b1a7f47d",
+                  "type": "text",
+                  "head": {
+                    "id": "52b26a92-0648-88fd-8f47-19de0cbd2229"
+                  },
+                  "text": {
+                    "id": "df3d1508-43ce-46e0-a6b6-7dd21c3a8331"
+                  }
+                },
+                {
+                  "id": "b28428b2-3717-2080-8efd-77639dc2245c",
+                  "type": "text",
+                  "head": {
+                    "id": "c3b225e4-fa89-c176-2942-46442e630b17"
+                  },
+                  "text": {
+                    "id": "81e12325-8966-54d6-a54e-a18e4c0cd601"
+                  }
+                },
+                {
+                  "id": "a70df14e-6706-d8e0-3826-890cdf6aa987",
+                  "type": "demo",
+                  "head": {
+                    "id": "797a30b9-b69e-6eb2-675f-d00950fad790"
+                  },
+                  "text": {
+                    "id": "a838b9d3-493e-dc18-576b-ca5462a90539"
+                  },
+                  "source": {
+                    "id": "4b04f753-b63b-aa80-aa23-f836357d785d"
+                  }
+                }
+              ],
+              "title": {
+                "id": "5a1bb30b-051e-2ec5-f050-f9c681dd87be"
+              },
+              "url": "ngmodel-directive"
+            },
+            {
+              "id": "7f7601c0-7b1e-edad-fe25-ca6e25dfc4ab",
+              "entries": [
+                {
+                  "id": "50ef109c-5229-4a15-c906-1258ef62c8e1",
+                  "type": "text",
+                  "head": {
+                    "id": "e9e34547-7439-9bb4-1788-122133e8a889"
+                  },
+                  "text": {
+                    "id": "9ff81329-d257-bcb7-9846-d6c555317865"
+                  }
+                },
+                {
+                  "id": "18b89590-27a0-b143-5223-fe18efc61be5",
+                  "type": "text",
+                  "head": {
+                    "id": "d14deb66-49e1-3cbf-4019-5315960ebc9c"
+                  },
+                  "text": {
+                    "id": "617e9694-a69b-c8e7-109c-0d755d01b4b6"
+                  }
+                },
+                {
+                  "id": "666652b0-a342-4bc8-ed32-af1ed660874d",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "16a75d37-06b3-ff0c-4650-5048b0849a03"
+                  },
+                  "text": {
+                    "id": "9f2ac96c-1e4d-fe82-2388-7f06b6a20a20"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "74c9e946-73bf-f440-6bc3-d5fe5085e621"
+                      },
+                      "url": "https://angular.io/guide/structural-directives",
+                      "lang": "en"
+                    }
+                  ]
+                }
+              ],
+              "title": {
+                "id": "df5f8780-f8e3-37e3-9800-be9462983c1f"
+              },
+              "url": "structural-directive"
+            },
+            {
+              "id": "3175bbda-477b-5f6d-1328-1064b3ab5ce7",
+              "entries": [
+                {
+                  "id": "bf80f1fd-cb44-d4a4-cfd2-756eac99d6c9",
+                  "type": "text",
+                  "head": {
+                    "id": "5e773ff8-b762-41ec-e7bc-e6457e740e4a"
+                  },
+                  "text": {
+                    "id": "0efd49ac-95d8-3faa-4a94-55d9c08df20f"
+                  }
+                },
+                {
+                  "id": "f9e2b82d-e78c-b61d-84b6-f1bc3f2d5c45",
+                  "type": "demo",
+                  "head": {
+                    "id": "13e178a6-c716-b481-7124-7f4a151d3999"
+                  },
+                  "text": {
+                    "id": "49e1f381-81c7-5401-e8de-0e9a27ea29f5"
+                  },
+                  "source": {
+                    "id": "66eaf802-b8bd-d098-db0d-05988b4f9282"
+                  }
+                },
+                {
+                  "id": "aae0a71c-2070-ecab-9f7f-efb7af64bbdf",
+                  "type": "text",
+                  "head": {
+                    "id": "52ca55b8-91f1-6486-6230-6281fb4474c1"
+                  },
+                  "text": {
+                    "id": "9684f8f1-e7a0-def3-7605-924db2588f8a"
+                  }
+                },
+                {
+                  "id": "ccda16a8-7105-b4db-5743-77b5f5db78c6",
+                  "type": "text",
+                  "head": {
+                    "id": "d51f7ec4-0e0d-9a32-4d16-3f9fca94bc19"
+                  },
+                  "text": {
+                    "id": "1ed12bca-649c-2984-989b-a2ca649fe7a8"
+                  }
+                }
+              ],
+              "title": {
+                "id": "238d6165-5739-7241-2aba-efa9c7af836a"
+              },
+              "url": "ngif-directive"
+            },
+            {
+              "id": "ec381611-0cb3-214c-d941-f094f3e22d2a",
+              "entries": [
+                {
+                  "id": "81083af0-2660-24d0-b12b-2b540ee75514",
+                  "type": "text",
+                  "head": {
+                    "id": "481895eb-df6d-8095-2c1e-f984bc682c68"
+                  },
+                  "text": {
+                    "id": "4ce1e7db-0353-e3b9-6a60-e5d6ba07d452"
+                  }
+                },
+                {
+                  "id": "dc33c809-f6a6-86fd-be1b-f82db2aca207",
+                  "type": "demo",
+                  "head": {
+                    "id": "071e1609-125c-0163-138c-02c534f6e842"
+                  },
+                  "text": {
+                    "id": "92eef715-5eee-15cd-4bf7-cc46685caebc"
+                  },
+                  "source": {
+                    "id": "b614c972-86ab-cf53-fe73-8db0397339a2"
+                  }
+                },
+                {
+                  "id": "25e36fe9-13bc-7704-7bbb-63d8b3c05a13",
+                  "type": "text",
+                  "head": {
+                    "id": "1a8068c7-fa58-bf56-93d8-70e5c72a0c10"
+                  },
+                  "text": {
+                    "id": "f5451ec1-0467-9bc5-394e-f041d2d9c2b7"
+                  }
+                },
+                {
+                  "id": "f3b80538-2b28-02fa-db7f-1bcbebc7cc56",
+                  "type": "demo",
+                  "head": {
+                    "id": "9c1dc2e5-430a-2e97-e83d-2c9af26f27c1"
+                  },
+                  "text": {
+                    "id": "42b0c95f-1d89-ac33-a192-9cdea4443096"
+                  },
+                  "source": {
+                    "id": "897e5a57-1c14-071f-46fc-27d3a6ad1540"
+                  }
+                },
+                {
+                  "id": "e8ad75a0-91ed-9843-b58f-274425e586e8",
+                  "type": "text",
+                  "head": {
+                    "id": "c6c6fd99-c88c-4c61-e504-c72aa7a903da"
+                  },
+                  "text": {
+                    "id": "e2e19c38-dfc8-d4a6-e2a8-6d81130cad3a"
+                  }
+                },
+                {
+                  "id": "9f90d108-f969-18fe-4553-f132f082d795",
+                  "type": "demo",
+                  "head": {
+                    "id": "eaa56826-e499-393d-75f8-806866121f41"
+                  },
+                  "text": {
+                    "id": "6d295403-c59c-e5a5-eadb-4d78925fc405"
+                  },
+                  "source": {
+                    "id": "910a0a03-9276-3817-d7af-8cfd2e1fb7a7"
+                  }
+                },
+                {
+                  "id": "d5178e2a-bb9d-7999-f276-eb1648ad0434",
+                  "type": "text",
+                  "head": {
+                    "id": "5dfdacfc-782a-46fe-8807-165219ea2c75"
+                  },
+                  "text": {
+                    "id": "4207bbe1-0449-370c-1a94-d1e962db74f2"
+                  }
+                },
+                {
+                  "id": "d7be2194-141d-46cf-dde2-bac289091c3a",
+                  "type": "demo",
+                  "head": {
+                    "id": "35be9679-97c6-a79a-0dbc-ae5883c0abaf"
+                  },
+                  "text": {
+                    "id": "3f1ecdf1-5233-ef0a-4a23-04f75023c60b"
+                  },
+                  "source": {
+                    "id": "90c17a51-f407-c857-dc26-8c1776bca7e7"
+                  }
+                },
+                {
+                  "id": "d3592c45-895c-8c04-a51e-50e13437fad1",
+                  "type": "text",
+                  "head": {
+                    "id": "1a1d1bac-eb9e-e472-37b1-ff46230f0d2f"
+                  },
+                  "text": {
+                    "id": "03b193cb-1c90-a4c8-70bb-04e728cacffc"
+                  }
+                }
+              ],
+              "title": {
+                "id": "078f4dd3-1b1e-1eb8-bbb8-df7628cb58e2"
+              },
+              "url": "ngfor-directive"
+            },
+            {
+              "id": "3b6bc9ec-9fb5-6540-ca85-cedd1e56ad59",
+              "entries": [
+                {
+                  "id": "5403fa00-7041-3224-3d0c-f37d49601d7b",
+                  "type": "text",
+                  "head": {
+                    "id": "e03407da-323a-3eda-ccfa-aa80051e7171"
+                  },
+                  "text": {
+                    "id": "0d0d43b8-01fe-7072-adc5-06585a9499e5"
+                  }
+                },
+                {
+                  "id": "40258f74-1f54-0fb2-ab80-f24f167bc5fb",
+                  "type": "demo",
+                  "head": {
+                    "id": "e97be010-fc66-82f0-584b-75278a5ceabc"
+                  },
+                  "text": {
+                    "id": "fbd3b228-a3d2-5dc7-900e-b219dc1f245b"
+                  },
+                  "source": {
+                    "id": "52582ee4-d2da-c5b2-50f3-ab1bc19f495a"
+                  }
+                },
+                {
+                  "id": "59f67c06-1b52-d0ca-cc8f-28817bc04505",
+                  "type": "text",
+                  "head": {
+                    "id": "ef9a273c-c8a5-4c29-385e-fe285d51bdf3"
+                  },
+                  "text": {
+                    "id": "9a93898c-b1a4-5293-2f31-041f05525d0e"
+                  }
+                }
+              ],
+              "title": {
+                "id": "2f6b0a5e-e1c8-8781-bb6c-b9f551a2d345"
+              },
+              "url": "ngswitch-directive"
+            },
+            {
+              "id": "240a820f-3702-d71e-4bb7-8a935d5899ca",
+              "entries": [
+                {
+                  "id": "1b3b8d0b-0568-bfd9-0c23-454fa9efb802",
+                  "type": "text",
+                  "head": {
+                    "id": "c5f2cb3b-c227-4e47-8c5f-cf2f9e0e59c0"
+                  },
+                  "text": {
+                    "id": "5781e738-0e19-ad9b-4980-32281d9113b8"
+                  }
+                },
+                {
+                  "id": "3f431e5f-cbb7-7abb-1ddf-1eac04f799c4",
+                  "type": "demo",
+                  "head": {
+                    "id": "2a829b4b-3579-60a3-c843-325acc375d94"
+                  },
+                  "text": {
+                    "id": "988934b4-c972-2bbf-1e18-0b2da37e628f"
+                  },
+                  "source": {
+                    "id": "e5a1952b-8449-f77f-6beb-9528ca91b504"
+                  }
+                },
+                {
+                  "id": "efebe3cc-34ad-3b0e-ec95-6e9200c90a3b",
+                  "type": "text",
+                  "head": {
+                    "id": "48dc4b19-3be1-3ad7-e5ea-7240fe2ba10d"
+                  },
+                  "text": {
+                    "id": "4e9f5890-3d50-f170-2b86-7bc4eb277071"
+                  }
+                },
+                {
+                  "id": "00cf1760-8298-8e25-efe9-5e6ce143c189",
+                  "type": "text",
+                  "head": {
+                    "id": "f7072d59-994a-d18a-4b86-90ca4c8e5770"
+                  },
+                  "text": {
+                    "id": "56fc85bf-f2fb-57bf-c37d-9becbe2be7a3"
+                  }
+                }
+              ],
+              "title": {
+                "id": "df09a12a-c060-fbc2-e37a-c61f78c1064d"
+              },
+              "url": "ngtemplateoutlet-directive"
+            },
+            {
+              "id": "fc3a146d-e7e5-cfd3-8348-254ee1b73249",
+              "entries": [
+                {
+                  "id": "5edc85b6-260c-9e74-c461-4a226add6653",
+                  "type": "text",
+                  "head": {
+                    "id": "157e4782-7dd5-f91a-3f4d-9cd0ec7c28c6"
+                  },
+                  "text": {
+                    "id": "825c133b-fdc9-d678-3e07-457669e54579"
+                  }
+                },
+                {
+                  "id": "028090d8-e22f-1c18-a7ce-9420f04ec538",
+                  "type": "demo",
+                  "head": {
+                    "id": "ed0d1734-8b09-43bd-05c0-7963205e1d77"
+                  },
+                  "text": {
+                    "id": "8da352be-8c5b-3f5d-51a0-2cd61cc7d3ae"
+                  },
+                  "source": {
+                    "id": "380ece1d-d7cf-d940-399a-e168a1d2600a"
+                  }
+                },
+                {
+                  "id": "2da8985d-8240-bc18-352a-fed94c0ddf93",
+                  "type": "text",
+                  "head": {
+                    "id": "d6398170-69f9-c68a-9b93-1e96f9ef75ff"
+                  },
+                  "text": {
+                    "id": "737ba2fe-4058-ef5f-29e3-8ab2649ddc13"
+                  }
+                },
+                {
+                  "id": "9d9e713f-63aa-014a-8c1e-4be5dec0d7cf",
+                  "type": "demo",
+                  "head": {
+                    "id": "e0122794-2539-4ce2-ed61-43ef2b470f65"
+                  },
+                  "text": {
+                    "id": "c562731e-173c-45ac-7e38-846d6b8e20e5"
+                  },
+                  "source": {
+                    "id": "cba23086-c021-a92b-1a1c-a9dc98f815d1"
+                  }
+                },
+                {
+                  "id": "470b2712-83b5-1f38-036d-71a1fce40954",
+                  "type": "text",
+                  "head": {
+                    "id": "6ce18581-f69e-d83e-a75f-2c33b5ca230a"
+                  },
+                  "text": {
+                    "id": "981dc8a7-e2ea-7acf-30de-abad963390b1"
+                  }
+                }
+              ],
+              "title": {
+                "id": "85ca6c4f-a5ed-e6b2-b243-cae2111b624e"
+              },
+              "url": "ngcomponentoutlet-directive"
+            },
+            {
+              "id": "649a3050-f2eb-2a87-0222-ce7ca88b4a39",
+              "entries": [
+                {
+                  "id": "362dc4dd-6573-feb5-6b98-9111c8cb8aba",
+                  "type": "text",
+                  "head": {
+                    "id": "c816a965-2162-fd40-793a-1f21e26c2873"
+                  },
+                  "text": {
+                    "id": "056fba43-02b2-b340-b4f9-5cd369a40fe4"
+                  }
+                },
+                {
+                  "id": "318701fd-bf9a-4248-5b13-99862d7e96fe",
+                  "type": "demo",
+                  "head": {
+                    "id": "9534c64b-70ef-83a4-5bc3-21aea4e44d01"
+                  },
+                  "text": {
+                    "id": "af790ed6-41c2-3e39-f2ac-2ef813b134ee"
+                  },
+                  "source": {
+                    "id": "7447687a-9dcf-5d12-3369-921a38a1150e"
+                  }
+                },
+                {
+                  "id": "6a6b05b5-6370-ddda-e006-7134b6fb00d4",
+                  "type": "text",
+                  "head": {
+                    "id": "e32d24da-5d84-7d94-76f9-a486dc733af2"
+                  },
+                  "text": {
+                    "id": "35193d6b-e32c-3ad7-59af-e1bd120f0c21"
+                  }
+                }
+              ],
+              "title": {
+                "id": "7f539e00-4478-505b-83b9-f74cc891072e"
+              },
+              "url": "ng-template"
+            },
+            {
+              "id": "dad50ffc-c7dc-e8a6-ddac-c6faf06881e3",
+              "entries": [
+                {
+                  "id": "d3503990-12fb-5def-fe19-b8fd2769fa75",
+                  "type": "text",
+                  "head": {
+                    "id": "867b5e8f-2eeb-9cc7-92e6-57af31b14879"
+                  },
+                  "text": {
+                    "id": "e5647999-acff-5423-68d1-0625e6c95379"
+                  }
+                },
+                {
+                  "id": "d5241d89-c0c2-4571-092d-58a61c0089b7",
+                  "type": "demo",
+                  "head": {
+                    "id": "1a6e0724-d5cf-022c-08fa-e2b35c23f773"
+                  },
+                  "text": {
+                    "id": "9ef650bc-2949-32c4-468d-792678c5a7c4"
+                  },
+                  "source": {
+                    "id": "d8bd163c-ba8b-e743-d421-608924e2f15e"
+                  }
+                },
+                {
+                  "id": "357a1555-14f6-94ed-de33-c63870462bb2",
+                  "type": "text",
+                  "head": {
+                    "id": "a2b56a02-58d1-c22a-7e86-391528feb594"
+                  },
+                  "text": {
+                    "id": "58c9a526-6f19-cfd0-4cbe-74b4b6fde6ca"
+                  }
+                }
+              ],
+              "title": {
+                "id": "6d500cb7-9c41-daa1-4c6a-8368557245b4"
+              },
+              "url": "ng-container"
+            },
+            {
+              "id": "2142e2e6-e570-7b4d-4989-b3e98ade0730",
+              "entries": [
+                {
+                  "id": "5f5bd1fe-8705-6a0e-7924-b844a888274a",
+                  "type": "text",
+                  "head": {
+                    "id": "835e9f0d-1ccc-3922-acfd-1f84b18fc1d1"
+                  },
+                  "text": {
+                    "id": "41584952-2fc2-33dd-db18-00622fe48607"
+                  }
+                },
+                {
+                  "id": "5c0063ab-2b1d-f4bf-f905-55197dc8b556",
+                  "type": "demo",
+                  "head": {
+                    "id": "569c3385-6edc-325c-f325-7bf569753814"
+                  },
+                  "text": {
+                    "id": "ab37bea1-df72-652b-f6e4-ea4866497aa2"
+                  },
+                  "source": {
+                    "id": "b9b5d9b9-7ee4-91d0-5073-ca8e1fcbb2e4"
+                  }
+                },
+                {
+                  "id": "6e03ffe8-b388-658a-e2e1-fdd72886a697",
+                  "type": "text",
+                  "head": {
+                    "id": "3950927f-b3da-3d8a-cb61-3c3815c547d4"
+                  },
+                  "text": {
+                    "id": "eba4eca5-9201-317f-8db0-ff36cdaec3e3"
+                  }
+                },
+                {
+                  "id": "a4221366-ca11-6f2a-1dc2-6a889d89f05c",
+                  "type": "demo",
+                  "head": {
+                    "id": "50d52b85-a179-66ab-40d6-00193bfec1d0"
+                  },
+                  "text": {
+                    "id": "d130f1df-36ad-1d0d-ac24-a62f1680b4f8"
+                  },
+                  "source": {
+                    "id": "4c51fa7a-6e0a-476a-966c-63c0d20880f5"
+                  }
+                },
+                {
+                  "id": "04421e83-537d-252b-e455-3b5d06f39fdb",
+                  "type": "text",
+                  "head": {
+                    "id": "aff7c661-408b-1ae0-f448-2bd26590eee3"
+                  },
+                  "text": {
+                    "id": "92f6c8db-e960-38a2-5b3c-7d4f997c7b22"
+                  }
+                },
+                {
+                  "id": "710f0c70-19bd-62a9-6dae-8c93c45ce6e7",
+                  "type": "text",
+                  "head": {
+                    "id": "f94c415c-c643-1a35-ab81-bcf14b06fe17"
+                  },
+                  "text": {
+                    "id": "5538c68e-4a0f-95cd-49fd-07a08856ccf9"
+                  }
+                }
+              ],
+              "title": {
+                "id": "a89c6022-0ee7-bf16-24d5-7783893d93ac"
+              },
+              "url": "ng-content"
+            },
+            {
+              "id": "2860a0ea-e940-73db-1f80-56cbe0982414",
+              "entries": [
+                {
+                  "id": "ea96ec05-57ea-59ef-507a-b8e578275ee1",
+                  "type": "text",
+                  "head": {
+                    "id": "dc7d0c82-4a28-edaa-c05d-56ee05fbc64e"
+                  },
+                  "text": {
+                    "id": "151cc047-a5d4-3fc4-4bb6-bed4e2ce51a4"
+                  }
+                },
+                {
+                  "id": "b0ad63d0-e347-7742-d538-ba13d6452e51",
+                  "type": "demo",
+                  "head": {
+                    "id": "5bfa5c6f-952c-adf1-a773-b0042bcfd3d2"
+                  },
+                  "text": {
+                    "id": "b959b9a6-bad1-c435-7367-edd296feb496"
+                  },
+                  "source": {
+                    "id": "520b89dc-23d5-7ccb-cb6b-9899fa759e70"
+                  }
+                },
+                {
+                  "id": "bee64252-a902-4476-ea46-182304cf85a2",
+                  "type": "text",
+                  "head": {
+                    "id": "972d4039-02eb-3145-d7b3-a69fb6fdb74d"
+                  },
+                  "text": {
+                    "id": "d7ae0da3-6805-6d47-b702-8cfc9f8d43d9"
+                  }
+                },
+                {
+                  "id": "f6d5c18a-5e91-4a6d-67d1-4adae4ecf24b",
+                  "type": "text",
+                  "head": {
+                    "id": "bdb96eff-6151-af70-e29d-90dfce04bdb0"
+                  },
+                  "text": {
+                    "id": "e7f3a007-b66f-69c0-32e1-f56a15a179b5"
+                  }
+                },
+                {
+                  "id": "c22611d8-d2ca-3a0b-51ec-4daa95da8cd3",
+                  "type": "text",
+                  "head": {
+                    "id": "fdc9a623-2928-9dc5-102c-d58875d9599f"
+                  },
+                  "text": {
+                    "id": "ffce1e22-1c3a-9f4c-3335-d4eb735cb129"
+                  }
+                }
+              ],
+              "title": {
+                "id": "fda88e05-cb7a-b755-230b-f012af014e16"
+              },
+              "url": "reference"
+            },
+            {
+              "id": "10b3e94d-1395-cadf-8c27-8c0445a7ee30",
+              "entries": [],
+              "title": {
+                "id": "619eebb7-17f1-350a-7f9b-2af81037335a"
+              },
+              "url": "pipe"
+            },
+            {
+              "id": "dec405ef-c681-b0b8-1c12-8f49a96163fd",
+              "entries": [],
+              "title": {
+                "id": "815b1432-fea3-9362-6228-84f3c394c07c"
+              },
+              "url": "keyvalue-pipe"
+            },
+            {
+              "id": "c047db73-514c-a389-a673-43697da418df",
+              "entries": [],
+              "title": {
+                "id": "f8e2ef3a-1df7-9fa3-8582-df1a999895d8"
+              },
+              "url": "async-pipe"
+            },
+            {
+              "id": "40991bb3-d497-82ac-fa84-994b9d641cf3",
+              "entries": [],
+              "title": {
+                "id": "8f1efb81-9f47-7113-2771-327f2d638557"
+              },
+              "url": "date-pipe"
+            },
+            {
+              "id": "cbadb122-f290-da4e-c71c-2cb6f09ad015",
+              "entries": [],
+              "title": {
+                "id": "e9db0509-4ddb-b602-d097-144236d91517"
+              },
+              "url": "lowercase-pipe"
+            },
+            {
+              "id": "ebd7cdc5-4b87-81d3-cd71-6e52ba84ca44",
+              "entries": [],
+              "title": {
+                "id": "88e907a9-ece1-d4a2-dd1c-a47ccb3e2488"
+              },
+              "url": "currency-pipe"
+            },
+            {
+              "id": "faa1feb4-6706-f50c-07c7-84f09fbebbfa",
+              "entries": [],
+              "title": {
+                "id": "d4e80dfa-87db-1979-d3ff-3381b51583b3"
+              },
+              "url": "percent-pipe"
+            },
+            {
+              "id": "38b2b883-8c43-59d5-be35-0c8febe10672",
+              "entries": [
+                {
+                  "id": "11d30f25-364e-33d3-0831-128a1c401433",
+                  "type": "text",
+                  "head": {
+                    "id": "6b6cbca0-2276-9ffc-d0e8-464dee7d0808"
+                  },
+                  "text": {
+                    "id": "2e83f415-115f-e551-8359-b1bc81489d19"
+                  }
+                },
+                {
+                  "id": "63f61603-1fba-4772-6313-7a132e14532d",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "cfdd7e29-6eab-9464-59ee-65254a9e87e7"
+                  },
+                  "text": {
+                    "id": "f88dc69f-3740-5edf-7f14-92a5ad9ea290"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "2ba64b1d-8a0c-ed93-cef3-0b579254b20e"
+                      },
+                      "url": "https://angular.io/guide/template-syntax#the-safe-navigation-operator----and-null-property-paths",
+                      "lang": "en"
+                    }
+                  ]
+                }
+              ],
+              "title": {
+                "id": "b95cbf38-a90b-2b01-2fa7-b261616b87b9"
+              },
+              "url": "safe-navigation-operator"
+            },
+            {
+              "id": "e933e885-ed2e-0c4c-3bf9-b110622035e9",
+              "entries": [
+                {
+                  "id": "dd528cd1-3d8b-0ce5-744c-a802c7072091",
+                  "type": "text",
+                  "head": {
+                    "id": "ca639aef-45e9-db81-dbfc-3485cf342d89"
+                  },
+                  "text": {
+                    "id": "91be93a8-3492-45f3-1dec-847a30608f0e"
+                  }
+                }
+              ],
+              "title": {
+                "id": "902063c7-d49b-e290-ca2a-17f0f5210763"
+              },
+              "url": "non-null-assertion-operator"
+            },
+            {
+              "id": "8ff6b47e-ed09-d58b-30ea-220039c4a3b9",
+              "entries": [],
+              "title": {
+                "id": "93966ff6-c672-4528-f5a1-6b319ac164f0"
+              },
+              "url": "animation-binding"
+            },
+            {
+              "id": "d4605f78-d154-545c-399a-ddba5a692e89",
+              "entries": [],
+              "title": {
+                "id": "af54b0ce-8e7c-6806-f80a-2f5eafabe92f"
+              },
+              "url": "svg-prefix"
+            },
+            {
+              "id": "a01d1fdd-bbcf-9e1d-25ad-32022228ba4f",
+              "entries": [],
+              "title": {
+                "id": "083a9292-79bd-a526-2c55-1ac755d52e3d"
+              },
+              "url": "i18n"
+            },
+            {
+              "id": "fffc39af-ecba-b76a-3e79-7acf51e5ac34",
+              "entries": [],
+              "title": {
+                "id": "41cb0f56-bc8c-cf30-8438-1ab4586118d3"
+              },
+              "url": "innerhtml-binding"
+            },
+            {
+              "id": "777bab38-457d-9543-6bdd-f10ec318691e",
+              "entries": [],
+              "title": {
+                "id": "212d82f9-76f2-5bc7-aa5c-875cc187801a"
+              },
+              "url": "ngnonbindable"
+            },
+            {
+              "id": "2eaac733-9385-ae44-4ea1-62ce4adfb374",
+              "entries": [],
+              "title": {
+                "id": "2756bafb-8eae-e675-f4ab-11bd24a915ba"
+              },
+              "url": "any-type-cast"
             }
           ],
           "title": {
@@ -22976,7 +24383,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Animations @"
+              "text": "Animation @"
             }
           ]
         },
@@ -22986,7 +24393,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "<svg:>"
+              "text": "svg: prefix"
             }
           ]
         },
@@ -23327,6 +24734,1416 @@
             {
               "lang": "en",
               "text": "### Selector\n\nThe `selector` property of `@Component` declaration identifies this component in a template and triggers instantiation of the component.\n\nDeclare as one of the following:\n\n- `element-name`: Select by element name.\n- `.class`: Select by class name.\n- `[attribute]`: Select by attribute name.\n- `[attribute=value]`: Select by attribute name and value.\n- `:not(sub_selector)`: Select only if the element does not match the `sub_selector`.\n- `selector1, selector2`: Select if either `selector1` or `selector2` matches.\n\nAngular only allows component to apply on CSS selectors that do not cross\nelement boundaries."
+            }
+          ]
+        },
+        {
+          "id": "7b12dc61-341b-b351-ead1-307b71cd1855",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Property binding []"
+            }
+          ]
+        },
+        {
+          "id": "5d2ab900-66ec-aea0-ca24-4bc97b9c36cd",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Write a template property binding to set a property of a view element. The binding sets the property to the value of a template expression.\n\nThe most common property binding sets an element property to a component property value:"
+            }
+          ]
+        },
+        {
+          "id": "a3d7f207-7f86-47fc-8579-02ce3f7b047e",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "\n"
+            }
+          ]
+        },
+        {
+          "id": "409e44ea-c094-9c3e-73ae-2996c9276914",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Another is setting a property of a directive:"
+            }
+          ]
+        },
+        {
+          "id": "b7d4aa00-5da2-c2bb-74f1-dd025deae999",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## @Input"
+            }
+          ]
+        },
+        {
+          "id": "3c9893cd-5ead-a812-3005-1412d7aa9bd8",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Or setting the model property of a custom component (a great way for parent and child components to communicate):"
+            }
+          ]
+        },
+        {
+          "id": "b82d513f-137c-4ff6-1465-9a2c2ec6941a",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@Input binding"
+            }
+          ]
+        },
+        {
+          "id": "12e27640-fd67-0de4-5cc8-d09d8988975e",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "##### app.component.html\n\n```html\n<button clickAlert [message]=\"alertMessage\">Click me!</button>\n```\n\n##### app.component.ts\n\n```\nexport class AppComponent {\n  alertMessage = 'Hi, there.';\n}\n```\n\n##### click-alert.directive.ts\n\n```typescript\n@Directive({\n  selector: '[clickAlert]',\n})\nexport class ClickAlertDirective {\n  @Input message: string;\n\n  @HostListener('click') clickHandler() {\n    alert(this.message);\n  }\n}\n```\n"
+            }
+          ]
+        },
+        {
+          "id": "52361eaf-f6fe-ef31-3143-a704cdd9cca3",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "##### app.component.html\n\n```html\n<user-panel [name]=\"userName\"></user-panel>\n```\n\n##### app.component.ts\n\n```\nexport class AppComponent {\n  userName = 'Developer';\n}\n```\n\n##### user-panel.component.ts\n\n```typescript\n@Component({\n  selector: 'user-panel',\n  template: 'Name: {{ name }}',\n})\nexport class UserPanelComponent {\n  @Input() name: string;\n}\n```\n"
+            }
+          ]
+        },
+        {
+          "id": "1f9db871-eb78-fa97-63ba-09dcf5b32577",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Some people prefer the `bind-` prefix alternative, known as the _canonical form_:"
+            }
+          ]
+        },
+        {
+          "id": "cc46bf5f-765d-28aa-3db5-6640a1dca57f",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n<img [src]=\"imageUrl\" style=\"height:150px\">\n```"
+            }
+          ]
+        },
+        {
+          "id": "255659ba-e18d-cfcf-dce2-05b96f529890",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<div [ngClass]=\"classes\">\n  [ngClass] binding to the classes property\n</div>\n```\n"
+            }
+          ]
+        },
+        {
+          "id": "fbc8de9b-8927-47d8-1ec5-f32022583e61",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<user-panel [name]=\"userName\"></user-panel>\n```"
+            }
+          ]
+        },
+        {
+          "id": "39854e5d-f094-8751-c879-1622cfda3eb3",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<user-panel bind-name=\"userName\"></user-panel>\n```"
+            }
+          ]
+        },
+        {
+          "id": "5839ec6b-80fc-0b49-37d6-ceb21280b6db",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "An Input property is a settable property annotated with an `@Input` decorator. Values flow into the property when it is data bound with a property binding."
+            }
+          ]
+        },
+        {
+          "id": "31954bdf-26c9-d79a-1040-70d1c7c72cfd",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "### Directive\n\nSetting a property of a directive (the same machanic for components):"
+            }
+          ]
+        },
+        {
+          "id": "5b978825-5c75-bd8d-ead4-5fe4e56ae048",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Alternatively, you can identify members in the inputs array of the directive metadata:\n\n```typescript\n@Component({\n  inputs: ['test'],\n})\n```\n"
+            }
+          ]
+        },
+        {
+          "id": "5b2b1400-838b-da39-fc11-734abb1208bc",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "[style.] binding"
+            }
+          ]
+        },
+        {
+          "id": "3be21b82-c3e0-7b50-5d25-5a03e3e50e0c",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You can set inline styles with a style binding.\n"
+            }
+          ]
+        },
+        {
+          "id": "48a44e8c-70e3-2f8d-7d83-094a2ab988f1",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Style binding syntax resembles property binding. Instead of an element property between brackets, start with the prefix `style`, followed by a dot (`.`) and the name of a CSS style property: `[style.style-property]`.\n"
+            }
+          ]
+        },
+        {
+          "id": "f46baeaa-7f05-50a3-c1c8-9ae8428f991c",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<button [style.color]=\"isSpecial ? 'red': 'green'\">Red</button>\n<button [style.background-color]=\"canSave ? 'cyan': 'grey'\" >Save</button>\n```\n\n```typescript\nexport class AppComponent {\n  isSpecial = true;\n  canSave = false;\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "6cd390e3-a965-2a1f-88f1-36a17d4d26ec",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Some style binding styles have a unit extension. The following example conditionally sets the font size in “em” and “%” units ."
+            }
+          ]
+        },
+        {
+          "id": "d1ea6647-a897-592d-cfe7-7245fdb4d8c1",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<button [style.font-size.em]=\"isSpecial ? 3 : 1\" >Big</button>\n<button [style.font-size.%]=\"!isSpecial ? 150 : 50\" >Small</button>\n```\n\n```typescript\nexport class AppComponent {\n  isSpecial = true;\n}\n```\n"
+            }
+          ]
+        },
+        {
+          "id": "ffe85ef4-8199-0088-9d3a-7561017dc323",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Note that a style property name can be written in either dash-case, as shown above, or camelCase, such as `fontSize`.\n\nWhile this is a fine way to set a single style, the [NgStyle directive](../ngstyle-directive) is generally preferred when setting several inline styles at the same time."
+            }
+          ]
+        },
+        {
+          "id": "8dad7413-92ab-ed46-ca50-b94cf7839729",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "[ngClass] directive"
+            }
+          ]
+        },
+        {
+          "id": "7beb6114-aacf-7610-73f7-c10cd13ce0d0",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "[class.] binding"
+            }
+          ]
+        },
+        {
+          "id": "d6f2dc64-bcca-f4a7-dd57-d0e9908a9496",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "[attr.] binding"
+            }
+          ]
+        },
+        {
+          "id": "177eb0ad-9a4e-d0b7-0aea-75022253ac22",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "[ngStyle] directive"
+            }
+          ]
+        },
+        {
+          "id": "ebe05ae3-9e68-76a5-bf2b-e85915356c76",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You can set the value of an attribute directly with an attribute binding.\n\nInterpolation and property binding can set only properties, not attributes. You can check out list of registered properties in [the element schema registry](https://github.com/angular/angular/blob/master/packages/compiler/src/schema/dom_element_schema_registry.ts#L78).\n\nYou need attribute bindings to create and bind to custom attributes:"
+            }
+          ]
+        },
+        {
+          "id": "d7c3ce79-a0ca-31bd-2a81-0cfe888b2f44",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<button [attr.aria-label]=\"actionName\">{{actionName}} with Aria</button>\n```"
+            }
+          ]
+        },
+        {
+          "id": "50a3091a-5ebe-2f1d-caca-105a33e188d8",
+          "context": "Entry head",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Schema with registered"
+            }
+          ]
+        },
+        {
+          "id": "709a619a-5581-8f5e-de0c-2ee5b9763038",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You can add and remove CSS class names from an element's `class` attribute with a class binding.\n\nClass binding syntax resembles property binding. Instead of an element property between brackets, start with the prefix `class`, optionally followed by a dot (`.`) and the name of a CSS class: `[class.class-name]`."
+            }
+          ]
+        },
+        {
+          "id": "fb333398-2d5d-c61f-2f66-8509d42dc8f5",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You can replace that with a binding to a string of the desired class names; this is an all-or-nothing, replacement binding:"
+            }
+          ]
+        },
+        {
+          "id": "1ba3c4a4-7a5b-9487-1360-64c248342359",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<!-- reset/override all class names with a binding  -->\n<div class=\"bad curly special\"\n     [class]=\"badCurly\">\n  Bad curly\n</div>\n```"
+            }
+          ]
+        },
+        {
+          "id": "db8b65a1-3800-dbcb-c194-0577ca63bef3",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Finally, you can bind to a specific class name. Angular adds the class when the template expression evaluates to truthy. It removes the class when the expression is falsy."
+            }
+          ]
+        },
+        {
+          "id": "7b724c48-e9f7-6589-5d95-f656505d2b7d",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<!-- toggle the \"special\" class on/off with a property -->\n<div [class.special]=\"isSpecial\">\n  The class binding is special\n</div>\n\n<!-- binding to `class.special` trumps the class attribute -->\n<div class=\"special\"\n     [class.special]=\"!isSpecial\">\n  This one is not so special\n</div>\n```"
+            }
+          ]
+        },
+        {
+          "id": "ab1368d4-e46f-25b6-9ae7-5ef2e5af7152",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "While this is a fine way to toggle a single class name, the [NgClass directive](../ngclass-directive) is usually preferred when managing multiple class names at the same time."
+            }
+          ]
+        },
+        {
+          "id": "9f3c764e-a407-d7a0-e443-b0a207bf6e37",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You typically control how elements appear by adding and removing CSS classes dynamically. You can bind to the `ngClass` to add or remove several classes simultaneously.\n\nTry binding `ngClass` to a `key:value` control object. Each key of the object is a CSS class name; its value is `true` if the class should be added, `false` if it should be removed."
+            }
+          ]
+        },
+        {
+          "id": "eb1b1379-266b-2993-c3a0-6e93115fde4b",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "DEMO WITH STRINGS ARRAY"
+            }
+          ]
+        },
+        {
+          "id": "d14ac47d-fdd0-d751-f6d4-3b1082e792d1",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<div [ngClass]=\"{class1: true, class2: false}\">\n  This div is initially saveable, unchanged, and special\n</div>\n```"
+            }
+          ]
+        },
+        {
+          "id": "c1acb540-7d7a-437d-c364-973ec908a74a",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "DEMO WITH STRING VALUES?\nCHECK OUT THE SOURCES"
+            }
+          ]
+        },
+        {
+          "id": "61b81db1-a8dc-9925-1383-9a8e1c8befb9",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You can set inline styles dynamically, based on the state of the component. With `NgStyle` you can set many inline styles simultaneously.\n\nTry binding `ngStyle` to a key:value control object. Each key of the object is a style name; its value is whatever is appropriate for that style."
+            }
+          ]
+        },
+        {
+          "id": "c304287d-432d-c636-c689-138f8506a092",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<div [ngStyle]=\"{color: 'white', background: 'red'}\">\n  This div is initially italic, normal weight, and extra large (24px).\n</div>\n```"
+            }
+          ]
+        },
+        {
+          "id": "69e066df-14d3-e306-cb2b-b69da4b0b59c",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "CHECK OUT THE SOURCES"
+            }
+          ]
+        },
+        {
+          "id": "9e93027a-f522-b372-abf8-0548a4389f29",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<div [ngClass]=\"['one', 'two']\"></div>\n```"
+            }
+          ]
+        },
+        {
+          "id": "a84dff3e-bb2d-31e3-3669-923597fdd2a4",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Event binding ()"
+            }
+          ]
+        },
+        {
+          "id": "fdaedb63-40e3-b97b-b766-e17c5b1f0eec",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@Output binding"
+            }
+          ]
+        },
+        {
+          "id": "3807c36d-13f0-223e-160e-9fdb949a4019",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Pseudo-events"
+            }
+          ]
+        },
+        {
+          "id": "9fd86b19-2642-bd79-f296-e43bc9a9b85c",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Touch events"
+            }
+          ]
+        },
+        {
+          "id": "295bf59c-d2c1-02d5-18d4-8707904e29c4",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Two-way binding [()]"
+            }
+          ]
+        },
+        {
+          "id": "5a1bb30b-051e-2ec5-f050-f9c681dd87be",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "[(ngModel)] directive"
+            }
+          ]
+        },
+        {
+          "id": "df5f8780-f8e3-37e3-9800-be9462983c1f",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Structural directive *"
+            }
+          ]
+        },
+        {
+          "id": "238d6165-5739-7241-2aba-efa9c7af836a",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "*ngIf directive"
+            }
+          ]
+        },
+        {
+          "id": "078f4dd3-1b1e-1eb8-bbb8-df7628cb58e2",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "*ngFor directive"
+            }
+          ]
+        },
+        {
+          "id": "2f6b0a5e-e1c8-8781-bb6c-b9f551a2d345",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "*ngSwitch directive"
+            }
+          ]
+        },
+        {
+          "id": "df09a12a-c060-fbc2-e37a-c61f78c1064d",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "*ngTemplateOutlet directive"
+            }
+          ]
+        },
+        {
+          "id": "85ca6c4f-a5ed-e6b2-b243-cae2111b624e",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "*ngComponentOutlet directive"
+            }
+          ]
+        },
+        {
+          "id": "7f539e00-4478-505b-83b9-f74cc891072e",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ng-template"
+            }
+          ]
+        },
+        {
+          "id": "6d500cb7-9c41-daa1-4c6a-8368557245b4",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ng-container"
+            }
+          ]
+        },
+        {
+          "id": "a89c6022-0ee7-bf16-24d5-7783893d93ac",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Content projection with ng-content"
+            }
+          ]
+        },
+        {
+          "id": "fda88e05-cb7a-b755-230b-f012af014e16",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Reference #"
+            }
+          ]
+        },
+        {
+          "id": "5dc000ff-6382-be37-b351-9aa846f36609",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "exportAs property"
+            }
+          ]
+        },
+        {
+          "id": "619eebb7-17f1-350a-7f9b-2af81037335a",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Pipe |"
+            }
+          ]
+        },
+        {
+          "id": "815b1432-fea3-9362-6228-84f3c394c07c",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "keyvalue pipe"
+            }
+          ]
+        },
+        {
+          "id": "f8e2ef3a-1df7-9fa3-8582-df1a999895d8",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "async pipe"
+            }
+          ]
+        },
+        {
+          "id": "8f1efb81-9f47-7113-2771-327f2d638557",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "date pipe"
+            }
+          ]
+        },
+        {
+          "id": "e9db0509-4ddb-b602-d097-144236d91517",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "lowerCase pipe"
+            }
+          ]
+        },
+        {
+          "id": "88e907a9-ece1-d4a2-dd1c-a47ccb3e2488",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "currency pipe"
+            }
+          ]
+        },
+        {
+          "id": "d4e80dfa-87db-1979-d3ff-3381b51583b3",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "percent pipe"
+            }
+          ]
+        },
+        {
+          "id": "93966ff6-c672-4528-f5a1-6b319ac164f0",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Animation binding @"
+            }
+          ]
+        },
+        {
+          "id": "af54b0ce-8e7c-6806-f80a-2f5eafabe92f",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "svg: prefix"
+            }
+          ]
+        },
+        {
+          "id": "083a9292-79bd-a526-2c55-1ac755d52e3d",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "i18n"
+            }
+          ]
+        },
+        {
+          "id": "41cb0f56-bc8c-cf30-8438-1ab4586118d3",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "innerHtml"
+            }
+          ]
+        },
+        {
+          "id": "212d82f9-76f2-5bc7-aa5c-875cc187801a",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ngNonBindable"
+            }
+          ]
+        },
+        {
+          "id": "2756bafb-8eae-e675-f4ab-11bd24a915ba",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "$any() type cast"
+            }
+          ]
+        },
+        {
+          "id": "82ef7a4d-dc46-f408-aa52-2714994d27e9",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Event binding syntax consists of a target event name within parentheses on the left of an equal sign, and a quoted template statement on the right. The following event binding listens for the button's click events, calling the component's `onSave()` method whenever a click occurs:\n\n```html\n<button (click)=\"onSave()\">Save</button>\n```"
+            }
+          ]
+        },
+        {
+          "id": "e9f80596-6075-0189-5f9c-bbaa53eb22c9",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Some people prefer the `on-` prefix alternative, known as the canonical form:\n\n```html\n<button on-click=\"onSave()\">On Save</button>\n```"
+            }
+          ]
+        },
+        {
+          "id": "5079df13-0f0a-8999-edb5-a2f6738411b7",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "In an event binding, Angular sets up an event handler for the target event.\n\nWhen the event is raised, the handler executes the template statement. The template statement typically involves a receiver, which performs an action in response to the event, such as storing a value from the HTML control into a model.\n\nThe binding conveys information about the event, including data values, through an event object named `$event`.\n\n```html\n<input [value]=\"currentHero.name\"\n       (input)=\"currentHero.name=$event.target.value\">\n```"
+            }
+          ]
+        },
+        {
+          "id": "80c382ed-c32d-0d54-295d-870359df6508",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "An Output property is an observable property annotated with an `@Output` decorator. The property almost always returns an Angular `EventEmitter`. Values flow out of the component as events bound with an event binding."
+            }
+          ]
+        },
+        {
+          "id": "7c1df8c2-076c-5beb-4c2f-3652d92b02bc",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example\n\n```typescript\n@Output() testEvent = new EventEmitter<any>();\n```\n\nAlternatively, you can identify members in the outputs array of the directive metadata, as in this example:\n\n```typescript\n@Component({\n  outputs: ['testEvent'],\n})\n```"
+            }
+          ]
+        },
+        {
+          "id": "cd60837e-b704-8547-a53a-e458c9a183ff",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "DEMO HERE"
+            }
+          ]
+        },
+        {
+          "id": "a4431fab-11a3-af3d-f8eb-943724407a40",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You can also bind an unlimited number of event handlers on the same event by separating them with a semi-colon:\n\n```html\n<button (click)=\"onSave1(); onSave2(); …\">Save</button>\n```"
+            }
+          ]
+        },
+        {
+          "id": "55c09791-a875-8531-a506-2b86741c2f44",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You can filter keyboard events in a template by [event key](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values).\n\nAngular allows you to directly bind to a specific keystroke or keystroke combination. That means a keyboard event will be only fired on that specific key or key combination instead of on all key events.\n\n"
+            }
+          ]
+        },
+        {
+          "id": "efd5c11d-e312-b806-a5a6-4090018a3970",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<input (keyup.enter)='...responds to enter...' />\n<input (keydown.esc)='...responds to escape...' />\n<input (keyup.shift.f)='...responds to shift+f...' />\n```\n"
+            }
+          ]
+        },
+        {
+          "id": "efbe20a4-07dd-600c-3ca1-8daf80d1bb67",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular Pseudo-Events"
+            }
+          ]
+        },
+        {
+          "id": "0ae91d96-54e9-883a-0570-fc91e91a0ab3",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular supports [Hammer.JS](https://hammerjs.github.io/) gestures. \n\nYou only need to install Hammer.JS:\n\n```\nnpm install hammerjs\n```\n\nAnd then import to `main.ts` file:\n\n```\nimport 'hammerjs';\n```"
+            }
+          ]
+        },
+        {
+          "id": "534de4c3-55fb-a373-98c1-cef829f7fdfd",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "HAMMER HS DEMO"
+            }
+          ]
+        },
+        {
+          "id": "204ad1f1-19c3-6a17-f94b-0a96d1e7b296",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "After that you will be able to bind gesture events:\n\n* `(pan)`\n  - `(panstart)`\n  - `(panmove)`\n  - `(panend)`\n  - `(pancancel)`\n  - `(panleft)`\n  - `(panright)`\n  - `(panup)`\n  - `(pandown)`\n* `(pinch)`\n  * `(pinchstart)`\n  * `(pinchmove)`\n  * `(pinchend)`\n  * `(pinchcancel)`\n  * `(pinchin)`\n  * `(pinchout)`\n* `(press)`\n  * `(pressup)`\n* `(rotate)`\n  * `(rotatestart)`\n  * `(rotatemove)`\n  * `(rotateend)`\n  * `(rotatecancel)`\n* `(swipe)`\n  * `(swipeleft)`\n  * `(swiperight)`\n  * `(swipeup)`\n  * `(swipedown)`\n* `(tap)`"
+            }
+          ]
+        },
+        {
+          "id": "d07c62e1-c2cd-2558-20e0-3903724afdd4",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The `[(x)]` syntax is easy to demonstrate when the element has a settable property called `x` and a corresponding event named `xChange`."
+            }
+          ]
+        },
+        {
+          "id": "22054464-dd2c-2ab0-0fad-4d7080ab0fa6",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```\nimport { Component, EventEmitter, Input, Output } from '@angular/core';\n \n@Component({\n  selector: 'app-sizer',\n  template: `\n  <div>\n    <button (click)=\"dec()\" title=\"smaller\">-</button>\n    <button (click)=\"inc()\" title=\"bigger\">+</button>\n    <label [style.font-size.px]=\"size\">FontSize: {{size}}px</label>\n  </div>`\n})\nexport class SizerComponent {\n  @Input()  size: number | string;\n  @Output() sizeChange = new EventEmitter<number>();\n \n  dec() { this.resize(-1); }\n  inc() { this.resize(+1); }\n \n  resize(delta: number) {\n    this.size = Math.min(40, Math.max(8, +this.size + delta));\n    this.sizeChange.emit(this.size);\n  }\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "44574eb9-3379-82ef-9e8a-e3e0781b76bd",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "It would be convenient to use two-way binding with HTML form elements like `<input>` and `<select>`. However, no native HTML element follows the `x` value and `xChange` event pattern.\n\nFortunately, the Angular [NgModel directive](../ngmodel-directive) is a bridge that enables two-way binding to form elements."
+            }
+          ]
+        },
+        {
+          "id": "628b3108-e73a-7248-e0a2-a62549dc9832",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Two-way data binding with the `NgModel` directive makes easy to display a data property and update that property when the user makes changes."
+            }
+          ]
+        },
+        {
+          "id": "0c28e440-74a7-62cb-1fee-969daebf5411",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```\n<input [(ngModel)]=\"currentHero.name\">\n```\n"
+            }
+          ]
+        },
+        {
+          "id": "df3d1508-43ce-46e0-a6b6-7dd21c3a8331",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Before using the `ngModel` directive in a two-way data binding, you must import the `FormsModule` and add it to the `NgModule` imports list."
+            }
+          ]
+        },
+        {
+          "id": "81e12325-8966-54d6-a54e-a18e4c0cd601",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The `[(ngModel)]` syntax can only set a data-bound property. If you need to do something more or something different, you can write the expanded form.\n\nThe following contrived demo forces the input value to uppercase."
+            }
+          ]
+        },
+        {
+          "id": "4b04f753-b63b-aa80-aa23-f836357d785d",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```\n<input\n  [ngModel]=\"currentHero.name\"\n  (ngModelChange)=\"setUppercaseName($event)\">\n```"
+            }
+          ]
+        },
+        {
+          "id": "9ff81329-d257-bcb7-9846-d6c555317865",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Structural directives are responsible for HTML layout. They shape or reshape the DOM's structure, typically by adding, removing, and manipulating the host elements to which they are attached.\n\nStructural directives are easy to recognize. An asterisk (*) precedes the directive attribute name as in this example.\n\n```html\n<div *ngIf=\"hero\" class=\"name\">{{hero.name}}</div>\n```"
+            }
+          ]
+        },
+        {
+          "id": "617e9694-a69b-c8e7-109c-0d755d01b4b6",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "### The asterisk (*) prefix\n\nSurely you noticed the asterisk (*) prefix to the directive name and wondered why it is necessary and what it does.\n\nHere is `*ngIf` displaying the hero's name if hero exists.\n\n```html\n<div *ngIf=\"hero\" class=\"name\">{{hero.name}}</div>\n```\n\nThe asterisk is \"syntactic sugar\" for something a bit more complicated. Internally, Angular translates the `*ngIf` attribute into a `<ng-template>` element, wrapped around the host element, like this.\n\n```html\n<ng-template [ngIf]=\"hero\">\n  <div class=\"name\">{{hero.name}}</div>\n</ng-template>\n```\n\nHere's a full-featured application of NgFor, written both ways:\n\n```html\n<div *ngFor=\"let hero of heroes; let i=index; let odd=odd; trackBy: trackById\" [class.odd]=\"odd\">\n  ({{i}}) {{hero.name}}\n</div>\n\n<ng-template ngFor let-hero [ngForOf]=\"heroes\" let-i=\"index\" let-odd=\"odd\" [ngForTrackBy]=\"trackById\">\n  <div [class.odd]=\"odd\">({{i}}) {{hero.name}}</div>\n</ng-template>\n```"
+            }
+          ]
+        },
+        {
+          "id": "74c9e946-73bf-f440-6bc3-d5fe5085e621",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular — Structural Directives"
+            }
+          ]
+        },
+        {
+          "id": "0efd49ac-95d8-3faa-4a94-55d9c08df20f",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You can add or remove an element from the DOM by applying an NgIf directive to that element (called the host element). Bind the directive to a condition expression like `isActive` in this demo."
+            }
+          ]
+        },
+        {
+          "id": "66eaf802-b8bd-d098-db0d-05988b4f9282",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<app-hero-detail *ngIf=\"isActive\"></app-hero-detail>\n<app-hero-detail *ngIf=\"!isActive\"></app-hero-detail>\n```"
+            }
+          ]
+        },
+        {
+          "id": "9684f8f1-e7a0-def3-7605-924db2588f8a",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The `ngIf` directive doesn't hide elements with CSS. It adds and removes them physically from the DOM.\n\nWhen the isActive expression returns a truthy value, NgIf adds the HeroDetailComponent to the DOM. When the expression is falsy, NgIf removes the HeroDetailComponent from the DOM, destroying that component and all of its sub-components."
+            }
+          ]
+        },
+        {
+          "id": "1ed12bca-649c-2984-989b-a2ca649fe7a8",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "* ADD ELSE INFO\n* ADD LET INFO\n* CHECK SOURCES"
+            }
+          ]
+        },
+        {
+          "id": "4ce1e7db-0353-e3b9-6a60-e5d6ba07d452",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "NgForOf is a repeater directive — a way to present a list of items. You define a block of HTML that defines how a single item should be displayed. You tell Angular to use that block as a template for rendering each item in the list."
+            }
+          ]
+        },
+        {
+          "id": "b614c972-86ab-cf53-fe73-8db0397339a2",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<div *ngFor=\"let hero of heroes\">{{hero.name}}</div>\n```"
+            }
+          ]
+        },
+        {
+          "id": "f5451ec1-0467-9bc5-394e-f041d2d9c2b7",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You can also apply an `NgForOf` to a component element, as in this demo:"
+            }
+          ]
+        },
+        {
+          "id": "897e5a57-1c14-071f-46fc-27d3a6ad1540",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "<app-hero-detail *ngFor=\"let hero of heroes\" [hero]=\"hero\"></app-hero-detail>\n"
+            }
+          ]
+        },
+        {
+          "id": "e2e19c38-dfc8-d4a6-e2a8-6d81130cad3a",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "### *ngFor with index\n\nThe index property of the `NgForOf` directive context returns the zero-based index of the item in each iteration. You can capture the `index` in a template input variable and use it in the template."
+            }
+          ]
+        },
+        {
+          "id": "910a0a03-9276-3817-d7af-8cfd2e1fb7a7",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<div *ngFor=\"let hero of heroes; let i=index\">{{i + 1}} - {{hero.name}}</div>\n```"
+            }
+          ]
+        },
+        {
+          "id": "4207bbe1-0449-370c-1a94-d1e962db74f2",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "### *ngFor with trackBy\n\nThe `NgForOf` directive may perform poorly, especially with large lists. A small change to one item, an item removed, or an item added can trigger a cascade of DOM manipulations.\n\nAngular can avoid this churn with `trackBy`. Add a method to the component that returns the value `NgForOf` should track."
+            }
+          ]
+        },
+        {
+          "id": "90c17a51-f407-c857-dc26-8c1776bca7e7",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\ntrackByHeroes(index: number, hero: Hero): number { return hero.id; }\n```\n\n```html\n<div *ngFor=\"let hero of heroes; trackBy: trackByHeroes\">\n  ({{hero.id}}) {{hero.name}}\n</div>\n```\n"
+            }
+          ]
+        },
+        {
+          "id": "03b193cb-1c90-a4c8-70bb-04e728cacffc",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "* ADD OTHER PARAMS (AS INDEX)\n* ADD TRACKBY TUTORIAL\n* CHECK SOURCES"
+            }
+          ]
+        },
+        {
+          "id": "0d0d43b8-01fe-7072-adc5-06585a9499e5",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "`NgSwitch` is like the JavaScript `switch` statement. It can display one element from among several possible elements, based on a `switch` condition. Angular puts only the selected element into the DOM.\n\n`NgSwitch` is actually a set of three, cooperating directives: `NgSwitch`, `NgSwitchCase`, and `NgSwitchDefault` as seen in this demo."
+            }
+          ]
+        },
+        {
+          "id": "52582ee4-d2da-c5b2-50f3-ab1bc19f495a",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<div [ngSwitch]=\"currentHero.emotion\">\n  <app-happy-hero    *ngSwitchCase=\"'happy'\"    [hero]=\"currentHero\"></app-happy-hero>\n  <app-sad-hero      *ngSwitchCase=\"'sad'\"      [hero]=\"currentHero\"></app-sad-hero>\n  <app-confused-hero *ngSwitchCase=\"'confused'\" [hero]=\"currentHero\"></app-confused-hero>\n  <app-unknown-hero  *ngSwitchDefault           [hero]=\"currentHero\"></app-unknown-hero>\n</div>\n```"
+            }
+          ]
+        },
+        {
+          "id": "9a93898c-b1a4-5293-2f31-041f05525d0e",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "* ADD PARAMS \n* CHECK SOURCES"
+            }
+          ]
+        },
+        {
+          "id": "5781e738-0e19-ad9b-4980-32281d9113b8",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Inserts an embedded view from a prepared TemplateRef."
+            }
+          ]
+        },
+        {
+          "id": "e5a1952b-8449-f77f-6beb-9528ca91b504",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@Component({\n  selector: 'ng-template-outlet-example',\n  template: `\n    <ng-container *ngTemplateOutlet=\"greet\"></ng-container>\n    <hr>\n    <ng-container *ngTemplateOutlet=\"eng; context: myContext\"></ng-container>\n    <hr>\n    <ng-container *ngTemplateOutlet=\"svk; context: myContext\"></ng-container>\n    <hr>\n    \n    <ng-template #greet><span>Hello</span></ng-template>\n    <ng-template #eng let-name><span>Hello {{name}}!</span></ng-template>\n    <ng-template #svk let-person=\"localSk\"><span>Ahoj {{person}}!</span></ng-template>\n`\n})\nclass NgTemplateOutletExample {\n  myContext = {$implicit: 'World', localSk: 'Svet'};\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "4e9f5890-3d50-f170-2b86-7bc4eb277071",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Using the key `$implicit` in the context object will set its value as default."
+            }
+          ]
+        },
+        {
+          "id": "56fc85bf-f2fb-57bf-c37d-9becbe2be7a3",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "* CHECK SOURCES\n* ADD TUTORIALS"
+            }
+          ]
+        },
+        {
+          "id": "825c133b-fdc9-d678-3e07-457669e54579",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Instantiates a single Component type and inserts its Host View into current View. `NgComponentOutlet` provides a declarative approach for dynamic component creation."
+            }
+          ]
+        },
+        {
+          "id": "380ece1d-d7cf-d940-399a-e168a1d2600a",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@Component({selector: 'hello-world', template: 'Hello World!'})\nclass HelloWorld {\n}\n \n@Component({\n  selector: 'ng-component-outlet-simple-example',\n  template: `<ng-container *ngComponentOutlet=\"HelloWorld\"></ng-container>`\n})\nclass NgTemplateOutletSimpleExample {\n  // This field is necessary to expose HelloWorld to the template.\n  HelloWorld = HelloWorld;\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "737ba2fe-4058-ef5f-29e3-8ab2649ddc13",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You can control the component creation process by using the following optional attributes:\n\n* `ngComponentOutletInjector`: Optional custom Injector that will be used as parent for the Component. Defaults to the injector of the current view container.\n* `ngComponentOutletContent`: Optional list of projectable nodes to insert into the content section of the component, if exists.\n* `ngComponentOutletNgModuleFactory`: Optional module factory to allow dynamically loading other module, then load a component from that module."
+            }
+          ]
+        },
+        {
+          "id": "cba23086-c021-a92b-1a1c-a9dc98f815d1",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@Injectable()\nclass Greeter {\n  suffix = '!';\n}\n \n@Component({\n  selector: 'complete-component',\n  template: `Complete: <ng-content></ng-content> <ng-content></ng-content>{{ greeter.suffix }}`\n})\nclass CompleteComponent {\n  constructor(public greeter: Greeter) {}\n}\n \n@Component({\n  selector: 'ng-component-outlet-complete-example',\n  template: `\n    <ng-container *ngComponentOutlet=\"CompleteComponent; \n                                      injector: myInjector; \n                                      content: myContent\"></ng-container>`\n})\nclass NgTemplateOutletCompleteExample {\n  // This field is necessary to expose CompleteComponent to the template.\n  CompleteComponent = CompleteComponent;\n  myInjector: Injector;\n \n  myContent = [[document.createTextNode('Ahoj')], [document.createTextNode('Svet')]];\n \n  constructor(injector: Injector) {\n    this.myInjector = ReflectiveInjector.resolveAndCreate([Greeter], injector);\n  }\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "981dc8a7-e2ea-7acf-30de-abad963390b1",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "* ADD TUTORIALS"
+            }
+          ]
+        },
+        {
+          "id": "056fba43-02b2-b340-b4f9-5cd369a40fe4",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The `<ng-template>` is an Angular element for rendering HTML. It is never displayed directly. In fact, before rendering the view, Angular replaces the `<ng-template>` and its contents with a comment.\n\nIf there is no structural directive and you merely wrap some elements in a `<ng-template>`, those elements disappear."
+            }
+          ]
+        },
+        {
+          "id": "7447687a-9dcf-5d12-3369-921a38a1150e",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<p>Hip!</p>\n<ng-template>\n  <p>Hip!</p>\n</ng-template>\n<p>Hooray!</p>\n```"
+            }
+          ]
+        },
+        {
+          "id": "35193d6b-e32c-3ad7-59af-e1bd120f0c21",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "* USE NG-TEMPLATE WITH STRUCTURAL DIRECTIVE\n* USE NG-TEMPLATE WITH REFS\n* ADD TUTORIALS"
+            }
+          ]
+        },
+        {
+          "id": "e5647999-acff-5423-68d1-0625e6c95379",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The Angular `<ng-container>` is a grouping element that doesn't interfere with styles or layout because Angular doesn't put it in the DOM."
+            }
+          ]
+        },
+        {
+          "id": "d8bd163c-ba8b-e743-d421-608924e2f15e",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<p>\n  I turned the corner\n  <ng-container *ngIf=\"hero\">\n    and saw {{hero.name}}. I waved\n  </ng-container>\n  and continued on my way.\n</p>\n```"
+            }
+          ]
+        },
+        {
+          "id": "58c9a526-6f19-cfd0-4cbe-74b4b6fde6ca",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "* ADD TUTORIALS"
+            }
+          ]
+        },
+        {
+          "id": "41584952-2fc2-33dd-db18-00622fe48607",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Content projection is a way to import HTML content from outside the component and insert that content into the component's template in a designated spot."
+            }
+          ]
+        },
+        {
+          "id": "5538c68e-4a0f-95cd-49fd-07a08856ccf9",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "* ADD SELECT INFO\n* ADD PROJECTAS INFO & DEMO\n* ADD TUTORIALS"
+            }
+          ]
+        },
+        {
+          "id": "b9b5d9b9-7ee4-91d0-5073-ca8e1fcbb2e4",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "``html\n<app-component>\n  Some content\n</app-component>\n```\n\n```typescript\n@Component({\n  selector: 'app-component',\n  template: 'Projected content: <ng-content></ng-content>',\n  ...\n```"
+            }
+          ]
+        },
+        {
+          "id": "eba4eca5-9201-317f-8db0-ff36cdaec3e3",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "### ng-content with select\n"
+            }
+          ]
+        },
+        {
+          "id": "4c51fa7a-6e0a-476a-966c-63c0d20880f5",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<app-component>\n  <div class=\"primary\">Primary content</div>\n  <div secondary>Secondary content</div>\n  <div>Div content</div>\n  Non selected content.\n</app-component>\n```\n\n```typescript\n@Component({\n  selector: 'app-component',\n  template: `\n    <ng-content></ng-content>\n    Primary content: <ng-content select=\".primary\"></ng-content>\n    Secondary content: <ng-content select=\"[secondary]\"></ng-content>\n    Div content: <ng-content select=\"div\"></ng-content>\n  `,\n  ...\n```"
+            }
+          ]
+        },
+        {
+          "id": "92f6c8db-e960-38a2-5b3c-7d4f997c7b22",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "### ng-content with pojectAs"
+            }
+          ]
+        },
+        {
+          "id": "151cc047-a5d4-3fc4-4bb6-bed4e2ce51a4",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A template reference variable is often a reference to a DOM element within a template. It can also be a reference to an Angular component or directive or a web component.\n\nUse the hash symbol (#) to declare a reference variable. You can refer to a template reference variable anywhere in the template. "
+            }
+          ]
+        },
+        {
+          "id": "520b89dc-23d5-7ccb-cb6b-9899fa759e70",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<input #phone placeholder=\"phone number\">\n\n<!-- lots of other elements -->\n\n<!-- phone refers to the input element; pass its `value` to an event handler -->\n<button (click)=\"callPhone(phone.value)\">Call</button>\n```"
+            }
+          ]
+        },
+        {
+          "id": "d7ae0da3-6805-6d47-b702-8cfc9f8d43d9",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You can use the ref- prefix alternative to #.\n\n```html\n<input ref-fax placeholder=\"fax number\">\n<button (click)=\"callFax(fax.value)\">Fax</button>\n```"
+            }
+          ]
+        },
+        {
+          "id": "e7f3a007-b66f-69c0-32e1-f56a15a179b5",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## exportAs\n\nIn most cases, Angular sets the reference variable's value to the element on which it was declared. But a directive can change that behavior and set the value to something else, such as itself."
+            }
+          ]
+        },
+        {
+          "id": "ffce1e22-1c3a-9f4c-3335-d4eb735cb129",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "* EXPORTAS DEMO\n* TUTORIALS"
             }
           ]
         }
