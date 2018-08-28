@@ -6881,6 +6881,13 @@
                       "url": "keyvalue-pipe"
                     },
                     {
+                      "id": "965165ad-bf70-df3f-e212-3b45142af386",
+                      "label": {
+                        "id": "4919daac-f530-db65-e7a1-defd99ad0e10"
+                      },
+                      "url": "slice-pipe"
+                    },
+                    {
                       "id": "6f0ab200-7755-55c5-458e-a2394cc08bad",
                       "label": {
                         "id": "bea9340e-023d-0516-4ce2-bd4678df94fe"
@@ -6888,18 +6895,32 @@
                       "url": "async-pipe"
                     },
                     {
-                      "id": "97d5a192-5e3b-1108-3bbb-36eb183581fe",
-                      "label": {
-                        "id": "55ca9187-5698-7a24-12c9-904ce2f42336"
-                      },
-                      "url": "date-pipe"
-                    },
-                    {
                       "id": "46397892-a1f9-94cf-8c48-e81b22cd1752",
                       "label": {
                         "id": "40a8c52c-d93c-d780-cb09-651df74fc1a3"
                       },
                       "url": "lowercase-pipe"
+                    },
+                    {
+                      "id": "d7fbbc38-98c9-b90f-9f01-94ccd76f1057",
+                      "label": {
+                        "id": "9df903f9-91a1-c755-4b08-50c03cfaaf33"
+                      },
+                      "url": "uppercase-pipe"
+                    },
+                    {
+                      "id": "9c9fa9e6-67ff-4c28-9e0c-758145d62bbd",
+                      "label": {
+                        "id": "0b4cac0a-2e72-3724-6791-379c3133457d"
+                      },
+                      "url": "titlecase-pipe"
+                    },
+                    {
+                      "id": "97d5a192-5e3b-1108-3bbb-36eb183581fe",
+                      "label": {
+                        "id": "55ca9187-5698-7a24-12c9-904ce2f42336"
+                      },
+                      "url": "date-pipe"
                     },
                     {
                       "id": "fad1daf7-96a0-21a7-d30e-c973bdfbd3a4",
@@ -6914,6 +6935,20 @@
                         "id": "c226f095-ccbb-e53e-d9bd-d8da5d2caa9d"
                       },
                       "url": "percent-pipe"
+                    },
+                    {
+                      "id": "5b8fbcf7-a2d8-a597-cd7f-f7e697dc4968",
+                      "label": {
+                        "id": "6c274a6d-efb4-70c2-40dd-2de0a1f30427"
+                      },
+                      "url": "plural-pipe"
+                    },
+                    {
+                      "id": "ec9d5480-af0e-4734-3d6f-2955c85ff031",
+                      "label": {
+                        "id": "c9e13e85-1ed9-76ba-b960-90480eb3e502"
+                      },
+                      "url": "json-pipe"
                     }
                   ]
                 },
@@ -6959,20 +6994,6 @@
                   "id": "5a8824b6-0907-b87b-3955-a42e3fab2894"
                 },
                 "url": "svg-prefix"
-              },
-              {
-                "id": "20635dff-4bad-8aa3-2628-0a4c83849407",
-                "label": {
-                  "id": "5067990c-b9ac-c008-9a27-60b50af72ee1"
-                },
-                "url": "i18n"
-              },
-              {
-                "id": "1ece8261-314e-767a-0a85-4fd43ec909d0",
-                "label": {
-                  "id": "d117f212-b4f8-0a56-0724-4f2e66c3cee5"
-                },
-                "url": "innerhtml-binding"
               },
               {
                 "id": "8c5254b3-a4e6-3058-9fd7-80cdb0bb2083",
@@ -8602,7 +8623,104 @@
             },
             {
               "id": "10b3e94d-1395-cadf-8c27-8c0445a7ee30",
-              "entries": [],
+              "entries": [
+                {
+                  "id": "878c3b28-7cc1-dcaf-f6ef-69ebb35fcf92",
+                  "type": "text",
+                  "head": {
+                    "id": "cde3858e-d1d9-a595-b782-99f532635edc"
+                  },
+                  "text": {
+                    "id": "b64f0715-527f-38cd-8e4b-e35fe430d88e"
+                  }
+                },
+                {
+                  "id": "a1cc6b2c-d0b7-081e-460b-fa8875b4a80f",
+                  "type": "demo",
+                  "head": {
+                    "id": "7e37d7bd-66fd-5db3-2a34-12faa30eb183"
+                  },
+                  "text": {
+                    "id": "d14d8f2f-e895-7111-6f31-2987df9c1fa2"
+                  },
+                  "source": {
+                    "id": "3f5fc0a8-947a-2422-c92e-dee5144c546e"
+                  }
+                },
+                {
+                  "id": "7429be27-b2f8-9167-8d74-5ab7a365a059",
+                  "type": "text",
+                  "head": {
+                    "id": "18bac65e-765f-0056-005f-45ea62ea0e05"
+                  },
+                  "text": {
+                    "id": "713ef96f-e989-26b9-9c7a-cd799a008901"
+                  }
+                },
+                {
+                  "id": "4f156010-d2a5-b836-239d-a038ea44a142",
+                  "type": "demo",
+                  "head": {
+                    "id": "a58fc6df-8afd-9ae1-210b-719ac043be62"
+                  },
+                  "text": {
+                    "id": "b54d039a-cbca-6cf6-d668-a49301669803"
+                  },
+                  "source": {
+                    "id": "3414a6f4-20dc-1dfc-53b9-15ac26c8a538"
+                  }
+                },
+                {
+                  "id": "efb51028-e59e-bfc2-6ae8-4ebbb375ae83",
+                  "type": "text",
+                  "head": {
+                    "id": "c5ff409a-72d9-c0af-4a55-11f2019ba1a2"
+                  },
+                  "text": {
+                    "id": "cade1dc7-5613-bdef-0af2-24f7534140b7"
+                  }
+                },
+                {
+                  "id": "586157a6-cc30-a4a5-63ec-aabf7cc20be7",
+                  "type": "text",
+                  "head": {
+                    "id": "313532e0-8afe-c11d-72f4-7de72b30ced1"
+                  },
+                  "text": {
+                    "id": "d3b1ff1b-5b6c-8176-a506-df7983756302"
+                  }
+                },
+                {
+                  "id": "3ea9a88c-8520-e17b-5a4e-2bb68a1298c6",
+                  "type": "text",
+                  "head": {
+                    "id": "02e99b45-3b4e-a94c-f414-3322f605b447"
+                  },
+                  "text": {
+                    "id": "215f7809-daec-5ae8-050e-8cf79f4a583d"
+                  }
+                },
+                {
+                  "id": "3c7225db-c596-a240-ae0c-bcdd30c64c3a",
+                  "type": "text",
+                  "head": {
+                    "id": "ccd450c6-b7b3-9e60-09c5-7a74948c0df7"
+                  },
+                  "text": {
+                    "id": "66477101-85d7-0c0e-b418-a16c669f8769"
+                  }
+                },
+                {
+                  "id": "f8bdf907-f77a-465d-2a36-ed2ddb09511f",
+                  "type": "text",
+                  "head": {
+                    "id": "9e13bcd8-9e3f-d178-04b2-ee17bdb33b6b"
+                  },
+                  "text": {
+                    "id": "38ca73d8-a9e1-fc90-7ec3-816fa1004988"
+                  }
+                }
+              ],
               "title": {
                 "id": "619eebb7-17f1-350a-7f9b-2af81037335a"
               },
@@ -8610,39 +8728,517 @@
             },
             {
               "id": "dec405ef-c681-b0b8-1c12-8f49a96163fd",
-              "entries": [],
+              "entries": [
+                {
+                  "id": "9c4075b5-7209-d6a3-e1cd-d8f3e15929d4",
+                  "type": "text",
+                  "head": {
+                    "id": "e71291c8-eeec-436e-8d6e-aa010d363a1c"
+                  },
+                  "text": {
+                    "id": "5606e9d1-8c80-0968-3567-074ff6e29070"
+                  }
+                },
+                {
+                  "id": "599d8896-6f72-bcd1-ade3-4d8b32ca2d0f",
+                  "type": "text",
+                  "head": {
+                    "id": "65db863b-a201-1f47-29d7-d3a1bdac07e6"
+                  },
+                  "text": {
+                    "id": "f5becd07-f8e2-7564-b4e4-5ebcd9b30151"
+                  }
+                },
+                {
+                  "id": "6e50f231-fb9a-76b1-f681-f8f2ad33aed7",
+                  "type": "demo",
+                  "head": {
+                    "id": "98997b04-8eb2-4006-f129-9deb4dcc14ca"
+                  },
+                  "text": {
+                    "id": "295b1088-5e8a-c428-ab00-36ebd4e9743c"
+                  },
+                  "source": {
+                    "id": "d7138bd7-f3f2-e65b-8ccb-1c9cce37b1b0"
+                  }
+                },
+                {
+                  "id": "6e699662-a468-4b94-499c-c908394b5132",
+                  "type": "text",
+                  "head": {
+                    "id": "a322ca60-8513-f7ab-d12f-862bcb7f618b"
+                  },
+                  "text": {
+                    "id": "6b83b4ed-d06b-0dd9-075d-26cb1ff45919"
+                  }
+                }
+              ],
               "title": {
                 "id": "815b1432-fea3-9362-6228-84f3c394c07c"
               },
               "url": "keyvalue-pipe"
             },
             {
+              "id": "ffb49eb4-ffc7-5ef4-12d7-7d37de6869ef",
+              "entries": [
+                {
+                  "id": "4fa2d0a2-6333-3d35-d1dd-db5568ca11c6",
+                  "type": "text",
+                  "head": {
+                    "id": "1ec86fc2-876a-551d-1234-1b4dafb7eca2"
+                  },
+                  "text": {
+                    "id": "14416eea-7f89-310d-84df-84168b1ad0c1"
+                  }
+                },
+                {
+                  "id": "7f22a6f6-2dd1-3072-87e3-825dac1a1de2",
+                  "type": "text",
+                  "head": {
+                    "id": "edeb77f2-b421-f39c-18b6-818c31a6fdef"
+                  },
+                  "text": {
+                    "id": "1c80fdb9-8e3c-1285-113c-f2d717a59936"
+                  }
+                },
+                {
+                  "id": "e7fd6e49-55c6-f063-6a39-8b881b70c774",
+                  "type": "demo",
+                  "head": {
+                    "id": "7f1d2b20-74fd-b3e4-b4a8-479f2ec5239f"
+                  },
+                  "text": {
+                    "id": "7abef3e3-f039-65fb-6459-8d47e66c2062"
+                  },
+                  "source": {
+                    "id": "490484be-1685-962d-7fe7-10fc2e791b08"
+                  }
+                },
+                {
+                  "id": "728e5b38-c4fb-2191-7de5-5da699cbee4b",
+                  "type": "text",
+                  "head": {
+                    "id": "d75ab7d0-92c7-ffad-69d1-b02d7752563c"
+                  },
+                  "text": {
+                    "id": "d5568919-9e48-0ac3-31b3-7b0a577d2db5"
+                  }
+                },
+                {
+                  "id": "085a8aee-26b5-d650-2500-9a74c1e49df2",
+                  "type": "demo",
+                  "head": {
+                    "id": "46edfadf-00b1-d9fd-ad97-8b9a580e190a"
+                  },
+                  "text": {
+                    "id": "3d6f247a-838f-52d7-a0de-528d1ab480e4"
+                  },
+                  "source": {
+                    "id": "ae6a82ef-7e05-2349-d260-be8c6f90e89e"
+                  }
+                }
+              ],
+              "title": {
+                "id": "8e42a920-a2c8-dad3-b7fb-f7a32b44e434"
+              },
+              "url": "slice-pipe"
+            },
+            {
               "id": "c047db73-514c-a389-a673-43697da418df",
-              "entries": [],
+              "entries": [
+                {
+                  "id": "304b6bc8-5d18-3dad-d6da-df61056ebe16",
+                  "type": "text",
+                  "head": {
+                    "id": "4ab1d480-2114-e6fc-abd4-8b4ff098de3e"
+                  },
+                  "text": {
+                    "id": "712e7d23-5337-68bb-dcf7-00f0deffaaf5"
+                  }
+                },
+                {
+                  "id": "1627e149-09d9-c26f-8e79-d2bf2ee146c7",
+                  "type": "demo",
+                  "head": {
+                    "id": "01ddeb7f-682a-3dcc-b09b-420e69732c40"
+                  },
+                  "text": {
+                    "id": "99e0c7b9-f964-d7ea-43a2-b3cd972c375a"
+                  },
+                  "source": {
+                    "id": "7cb6104c-255d-7569-d058-a29289288985"
+                  }
+                },
+                {
+                  "id": "f10eb68e-a6bd-74e5-6b6d-c11e953db9cc",
+                  "type": "text",
+                  "head": {
+                    "id": "fb56d6a6-5bc2-cde1-f57c-7764a0ca8fc2"
+                  },
+                  "text": {
+                    "id": "18afb295-1212-2364-a634-5cd5a708167f"
+                  }
+                }
+              ],
               "title": {
                 "id": "f8e2ef3a-1df7-9fa3-8582-df1a999895d8"
               },
               "url": "async-pipe"
             },
             {
-              "id": "40991bb3-d497-82ac-fa84-994b9d641cf3",
-              "entries": [],
-              "title": {
-                "id": "8f1efb81-9f47-7113-2771-327f2d638557"
-              },
-              "url": "date-pipe"
-            },
-            {
               "id": "cbadb122-f290-da4e-c71c-2cb6f09ad015",
-              "entries": [],
+              "entries": [
+                {
+                  "id": "3ae795ef-5045-dabf-f238-16a27f7173ba",
+                  "type": "text",
+                  "head": {
+                    "id": "e85fb9bc-9299-593a-32af-23223f21a052"
+                  },
+                  "text": {
+                    "id": "84fa6e99-d476-eac8-76a7-afd6546f3c91"
+                  }
+                },
+                {
+                  "id": "3694ddea-3735-badc-f2ac-ec74cbb41e3c",
+                  "type": "demo",
+                  "head": {
+                    "id": "c7c09bfb-d976-9f5c-ac7a-242bdeb37c04"
+                  },
+                  "text": {
+                    "id": "403d80bd-b7ea-731b-8174-56bfbb11ec8b"
+                  },
+                  "source": {
+                    "id": "6d75900a-1833-baa8-ad7b-59b0c7c34f1a"
+                  }
+                }
+              ],
               "title": {
                 "id": "e9db0509-4ddb-b602-d097-144236d91517"
               },
               "url": "lowercase-pipe"
             },
             {
+              "id": "fab45add-6fcd-2e1f-3550-a65400aaae6d",
+              "entries": [
+                {
+                  "id": "4c9819c1-d3fe-6d41-fe3c-9f875020bcac",
+                  "type": "text",
+                  "head": {
+                    "id": "aa3cdb2a-b4fe-4b4e-7316-a2d34c99049b"
+                  },
+                  "text": {
+                    "id": "8a9127eb-dd50-1ed0-f594-3f415f1dfd2d"
+                  }
+                },
+                {
+                  "id": "d0494025-9ac2-12f2-bda7-0cc671fb0f98",
+                  "type": "text",
+                  "head": {
+                    "id": "7ab81e9d-38e1-4d8d-ece0-cf8fde3639f9"
+                  },
+                  "text": {
+                    "id": "e9bb6d7f-1d8a-59e1-03aa-1665a8af5eaa"
+                  }
+                }
+              ],
+              "title": {
+                "id": "9a2dbd01-1f31-2662-9349-f3788cddafae"
+              },
+              "url": "uppercase-pipe"
+            },
+            {
+              "id": "f565837f-d88e-31e5-0445-b28d367911e8",
+              "entries": [
+                {
+                  "id": "b82c8bb8-79ac-31c6-29e6-d494eb23783e",
+                  "type": "text",
+                  "head": {
+                    "id": "7bed5f55-22ec-141a-1b71-42c6729b86b1"
+                  },
+                  "text": {
+                    "id": "6308e004-eaa9-b6e7-eee9-fcf1a30b4328"
+                  }
+                },
+                {
+                  "id": "ced7c298-7711-e36b-594c-005834697ac9",
+                  "type": "demo",
+                  "head": {
+                    "id": "4b3f6660-f7c2-4b5d-24d7-ce5559b6e078"
+                  },
+                  "text": {
+                    "id": "8d4aa1b5-c743-30a5-631d-72756ac7deb0"
+                  },
+                  "source": {
+                    "id": "e78054df-fd81-6402-6464-2c32fae90d1a"
+                  }
+                }
+              ],
+              "title": {
+                "id": "5c8c6108-e6da-55d1-1860-348cf57987f9"
+              },
+              "url": "titlecase-pipe"
+            },
+            {
+              "id": "40991bb3-d497-82ac-fa84-994b9d641cf3",
+              "entries": [
+                {
+                  "id": "99c28866-50e2-5bb6-af9e-a1728401dbe0",
+                  "type": "text",
+                  "head": {
+                    "id": "19b3181a-c1a4-8d95-8428-2bd86f0bf010"
+                  },
+                  "text": {
+                    "id": "4f977eba-8e2d-bb8e-d14b-cccd02eb86c5"
+                  }
+                },
+                {
+                  "id": "188ae9bc-a16a-671d-722a-40168866c78c",
+                  "type": "demo",
+                  "head": {
+                    "id": "4daf53d7-c173-4e7d-5091-3146c4d98391"
+                  },
+                  "text": {
+                    "id": "622ada63-3044-ac0e-1e80-095973c0fa13"
+                  },
+                  "source": {
+                    "id": "c94039d2-db20-f79f-4d33-031261d6ba19"
+                  }
+                },
+                {
+                  "id": "ecf0104c-1433-4041-0d11-7cb6c7cb01aa",
+                  "type": "text",
+                  "head": {
+                    "id": "f92b03e0-47dc-7319-352e-abe692073b6e"
+                  },
+                  "text": {
+                    "id": "e48d7a8e-4e2e-2e62-49ab-ba2d0ae2ee5f"
+                  }
+                },
+                {
+                  "id": "976de5ed-9a26-cd61-76d8-a7a15def595c",
+                  "type": "text",
+                  "head": {
+                    "id": "8217ae1b-9551-dbed-ecbe-bccfca26bd9d"
+                  },
+                  "text": {
+                    "id": "56a3d50d-b668-b923-d494-73af61751742"
+                  }
+                },
+                {
+                  "id": "82391433-d23f-719e-7917-91092a8103f2",
+                  "type": "text",
+                  "head": {
+                    "id": "001b048d-6544-56df-f8b1-2b2af5da3f23"
+                  },
+                  "text": {
+                    "id": "548314a6-9cc8-5e67-f189-388dfe1b7478"
+                  }
+                },
+                {
+                  "id": "722b40bf-896a-528a-d99b-64658668df3a",
+                  "type": "toc",
+                  "head": {
+                    "id": "12821e14-0308-d049-1164-2c9d62ee0e7e"
+                  },
+                  "text": {
+                    "id": "6fa020ad-9b62-f975-e419-4fd511110e44"
+                  }
+                },
+                {
+                  "id": "17db8be0-9934-1b42-24ca-de381d10deab",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "format"
+                  },
+                  "text": {
+                    "id": "253a94a7-c3fe-7f71-20a0-b6e4be4678e0"
+                  },
+                  "description": {
+                    "id": "3c2791a4-79f8-2f60-50f8-a7d8f9adbc5a"
+                  },
+                  "name": "format",
+                  "headId": "format",
+                  "interface": "format: string = 'mediumDate'",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "1a06af52-4d42-62c7-b101-505f018a0785"
+                  }
+                },
+                {
+                  "id": "10a82d8a-badd-fcd4-e1a2-d5cb1854dc4d",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "timezone"
+                  },
+                  "text": {
+                    "id": "c2ef331a-28de-10dc-1c80-ba397c2d6987"
+                  },
+                  "description": {
+                    "id": "b5e0ed63-a6f7-b11c-f8e2-7367bbb7dcd6"
+                  },
+                  "name": "timezone",
+                  "headId": "timezone",
+                  "interface": "timezone?: string"
+                },
+                {
+                  "id": "ea898665-ba0c-8e57-eebe-722d379be03d",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "locale"
+                  },
+                  "text": {
+                    "id": "07c248a5-24ef-616b-1fc0-db1344bed3d9"
+                  },
+                  "description": {
+                    "id": "c68c636f-885d-6050-1b58-e74cd85db8bc"
+                  },
+                  "name": "locale",
+                  "headId": "locale",
+                  "interface": "locale?: string",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "07080dbe-1569-7e13-fe52-b781f7554db7"
+                  }
+                }
+              ],
+              "title": {
+                "id": "8f1efb81-9f47-7113-2771-327f2d638557"
+              },
+              "url": "date-pipe"
+            },
+            {
               "id": "ebd7cdc5-4b87-81d3-cd71-6e52ba84ca44",
-              "entries": [],
+              "entries": [
+                {
+                  "id": "c5312b42-abf1-cc8f-91b3-19c7475bb222",
+                  "type": "text",
+                  "head": {
+                    "id": "74db3e8f-b00f-12cf-6a4f-8aebcf3475e5"
+                  },
+                  "text": {
+                    "id": "b88a626c-1863-43f5-7b4d-851812b33c83"
+                  }
+                },
+                {
+                  "id": "493c9dd8-dccc-f7f0-191e-1d76a5dc0ded",
+                  "type": "demo",
+                  "head": {
+                    "id": "f881d531-eb53-a39b-b162-5bc399e59450"
+                  },
+                  "text": {
+                    "id": "1d39e37e-3596-23a8-29a2-bdb237addfd0"
+                  },
+                  "source": {
+                    "id": "186999d6-383c-27d0-8704-95e6fdcb5a74"
+                  }
+                },
+                {
+                  "id": "bfbbde41-dae9-c512-9c57-05f9458a8a72",
+                  "type": "text",
+                  "head": {
+                    "id": "3484d125-87cd-dfa9-f10e-8f1652e97e91"
+                  },
+                  "text": {
+                    "id": "c480549e-1f69-4d4d-f783-5632f4bdb0c7"
+                  }
+                },
+                {
+                  "id": "2ff01517-b8fb-1d13-18a2-07c42abadf2b",
+                  "type": "text",
+                  "head": {
+                    "id": "635b0565-e820-947e-1c6d-0565ca02d1d8"
+                  },
+                  "text": {
+                    "id": "580cb2d2-e928-f019-8595-fa401bfe14a5"
+                  }
+                },
+                {
+                  "id": "7eec68bc-540d-0b6c-ed9a-f38f3c915c24",
+                  "type": "toc",
+                  "head": {
+                    "id": "4ad4bb7c-3ea9-3580-e12c-f72bb8534e38"
+                  },
+                  "text": {
+                    "id": "fe12d67a-0f70-c573-ec01-34fc43b07dbe"
+                  }
+                },
+                {
+                  "id": "e5f9e1ec-79be-dd6e-691d-35124bef0995",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "currencyCode"
+                  },
+                  "text": {
+                    "id": "55308dd2-4e69-46e5-98eb-d3d848f04a70"
+                  },
+                  "description": {
+                    "id": "e1de100d-6701-ffef-0ce8-f28b0cdcfb1b"
+                  },
+                  "name": "currencyCode",
+                  "headId": "currencyCode",
+                  "interface": "currencyCode?: string"
+                },
+                {
+                  "id": "efe8a6b7-0cd0-5b6e-e412-040128a9ca24",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "display"
+                  },
+                  "text": {
+                    "id": "2cd04203-e574-899f-8d27-5ef4ea8c8084"
+                  },
+                  "description": {
+                    "id": "ebb44fb4-340d-f021-413f-209e08981a36"
+                  },
+                  "interface": "display: 'code'|'symbol'|'symbol-narrow'|string|boolean = 'symbol'",
+                  "name": "display",
+                  "headId": "display",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "dae1d058-fd91-5302-30ea-181e1644bc23"
+                  }
+                },
+                {
+                  "id": "efc8361b-627f-9ce2-7e84-05e620c974b1",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "digitsInfo"
+                  },
+                  "text": {
+                    "id": "a7dd2cc9-8868-fff3-34f4-800c67cba1d8"
+                  },
+                  "description": {
+                    "id": "741c66dc-5e2b-cc14-6d7e-997917c3f89a"
+                  },
+                  "interface": "digitsInfo?: string",
+                  "name": "digitsInfo",
+                  "headId": "digitsInfo",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "070c4806-b5c6-1b23-91b1-4df5521fd5f0"
+                  }
+                },
+                {
+                  "id": "9660c420-816b-40f1-8642-05bb4031e511",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "locale"
+                  },
+                  "text": {
+                    "id": "9546b08b-566b-3d8e-601e-daccb1b528d2"
+                  },
+                  "description": {
+                    "id": "034b4524-8c24-3963-6ed7-e5e6f695089e"
+                  },
+                  "name": "locale",
+                  "headId": "locale",
+                  "interface": "locale?: string",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "f16e9ddd-d194-b687-ed03-6787f2ae9cb6"
+                  }
+                }
+              ],
               "title": {
                 "id": "88e907a9-ece1-d4a2-dd1c-a47ccb3e2488"
               },
@@ -8650,11 +9246,159 @@
             },
             {
               "id": "faa1feb4-6706-f50c-07c7-84f09fbebbfa",
-              "entries": [],
+              "entries": [
+                {
+                  "id": "8bc97377-c211-4022-940f-7bc0db9c4979",
+                  "type": "text",
+                  "head": {
+                    "id": "2b788474-7dbb-d11b-7f56-3fd130280cde"
+                  },
+                  "text": {
+                    "id": "4527cd6f-c49b-8ea6-e2c4-c86fe30a7d3a"
+                  }
+                },
+                {
+                  "id": "c17499db-1331-453a-006e-d87d85f57102",
+                  "type": "demo",
+                  "head": {
+                    "id": "485f9e55-ded0-f931-d7f7-21846471585e"
+                  },
+                  "text": {
+                    "id": "cd152a59-27dd-47f8-49f4-8f40d07ecb11"
+                  },
+                  "source": {
+                    "id": "9c0bd149-2aed-d73e-d17a-2b7a998edac3"
+                  }
+                },
+                {
+                  "id": "5f8a29a7-d78b-50e9-3138-131176b4aeb3",
+                  "type": "text",
+                  "head": {
+                    "id": "32feb2ab-a374-1e1c-f0d5-bec4283630ad"
+                  },
+                  "text": {
+                    "id": "46ebee2a-2439-df10-fd3d-b7794c6e7348"
+                  }
+                },
+                {
+                  "id": "3e7ffdd8-218d-5d1e-120e-d3cc3a2b5740",
+                  "type": "text",
+                  "head": {
+                    "id": "4650ac2e-9abd-eae3-e3bf-62b4979145a7"
+                  },
+                  "text": {
+                    "id": "86bb9065-0cb7-c68b-533a-05958f3204b0"
+                  }
+                },
+                {
+                  "id": "018364cd-bf13-feb7-9ec2-5c9aff2f1914",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "digitsInfo"
+                  },
+                  "text": {
+                    "id": "43949e62-27e5-b5a4-7c7c-ae24d9629eec"
+                  },
+                  "description": {
+                    "id": "ff4e1daa-6656-0639-821b-93c6c665e904"
+                  },
+                  "name": "digitsInfo",
+                  "headId": "digitsInfo",
+                  "interface": "digitsInfo?: string",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "2df6591b-55ce-20d0-9dee-d47724072b31"
+                  }
+                },
+                {
+                  "id": "6e8e4baf-c78e-6372-7985-c75fd139b5f1",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "locale"
+                  },
+                  "text": {
+                    "id": "e23850d3-1835-52c7-17c1-0b2a352c59a8"
+                  },
+                  "description": {
+                    "id": "ad998611-2523-00ee-2cbc-e4aafcb10a5d"
+                  },
+                  "name": "locale",
+                  "headId": "locale",
+                  "interface": "locale?: string",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "54e77662-1808-0018-7775-353c2f7c7f25"
+                  }
+                }
+              ],
               "title": {
                 "id": "d4e80dfa-87db-1979-d3ff-3381b51583b3"
               },
               "url": "percent-pipe"
+            },
+            {
+              "id": "b7165bcf-251f-3435-c1dd-c1666812b26d",
+              "entries": [
+                {
+                  "id": "52c23c9e-ece9-ddba-3139-d99ebfde7f54",
+                  "type": "text",
+                  "head": {
+                    "id": "6db0bef6-290f-5329-7b17-d9e49de1fe08"
+                  },
+                  "text": {
+                    "id": "934537fc-314e-c4d7-9a8a-df562d8027d6"
+                  }
+                },
+                {
+                  "id": "8ef2d41a-bed0-38ac-7a80-8d3b53d4e9e2",
+                  "type": "demo",
+                  "head": {
+                    "id": "1a699c30-916d-3828-89ec-708642e60e1c"
+                  },
+                  "text": {
+                    "id": "3712c10a-05bd-161b-9c2c-ac07825a447f"
+                  },
+                  "source": {
+                    "id": "a6dd1b18-6bc3-302b-833b-6e919973441c"
+                  }
+                }
+              ],
+              "title": {
+                "id": "7498c808-ba71-3eaa-867b-896fa5325060"
+              },
+              "url": "plural-pipe"
+            },
+            {
+              "id": "cb41b558-e878-7876-77ea-8ab2ef27a089",
+              "entries": [
+                {
+                  "id": "7f8e813a-c4d9-70f7-5f88-ac2bbf7b1729",
+                  "type": "text",
+                  "head": {
+                    "id": "03f23bee-2481-45b0-6412-0ca0d75098ba"
+                  },
+                  "text": {
+                    "id": "d51a0e8b-ce11-e1ed-473c-add49cc65ec9"
+                  }
+                },
+                {
+                  "id": "8b6b380a-b93b-7d52-d111-4c2eda1a8294",
+                  "type": "demo",
+                  "head": {
+                    "id": "72c9a19e-7992-32f1-62c0-c6d7c674013c"
+                  },
+                  "text": {
+                    "id": "bf476fcf-4bfd-dff7-8a72-1d6ee8e40b16"
+                  },
+                  "source": {
+                    "id": "a68e119a-08ef-69bd-663a-8f6462e2c88b"
+                  }
+                }
+              ],
+              "title": {
+                "id": "c3c25ce4-3a4b-1e35-5dfd-6956e0414e3c"
+              },
+              "url": "json-pipe"
             },
             {
               "id": "38b2b883-8c43-59d5-be35-0c8febe10672",
@@ -8715,7 +9459,41 @@
             },
             {
               "id": "8ff6b47e-ed09-d58b-30ea-220039c4a3b9",
-              "entries": [],
+              "entries": [
+                {
+                  "id": "f4550b46-a58e-e981-9568-534f6656856c",
+                  "type": "text",
+                  "head": {
+                    "id": "466da49c-c76e-7a1e-3d8d-343be7b1327e"
+                  },
+                  "text": {
+                    "id": "885fc0c3-5c57-1392-e1b3-bc53e9cc6e09"
+                  }
+                },
+                {
+                  "id": "8f7cef40-8add-4fb5-278c-5c2d02b6f7fb",
+                  "type": "demo",
+                  "head": {
+                    "id": "116c2a17-8a35-e44b-506a-245d211e43dc"
+                  },
+                  "text": {
+                    "id": "fec3f890-237f-43c6-e2e3-582c721f696a"
+                  },
+                  "source": {
+                    "id": "e1171b48-6bf6-b046-3b4d-1a037bcbd817"
+                  }
+                },
+                {
+                  "id": "5f2c017e-e9d2-363c-e2fa-0352e07a1aa8",
+                  "type": "text",
+                  "head": {
+                    "id": "e697642b-cee9-bafc-6018-23eb35f076f6"
+                  },
+                  "text": {
+                    "id": "37dea856-f072-be02-66ce-22aef5582d35"
+                  }
+                }
+              ],
               "title": {
                 "id": "93966ff6-c672-4528-f5a1-6b319ac164f0"
               },
@@ -8723,31 +9501,60 @@
             },
             {
               "id": "d4605f78-d154-545c-399a-ddba5a692e89",
-              "entries": [],
+              "entries": [
+                {
+                  "id": "096631a9-1a6f-6810-1e46-09b5747d4cd9",
+                  "type": "text",
+                  "head": {
+                    "id": "27753b43-da1e-0189-ef73-7281ffdba7ad"
+                  },
+                  "text": {
+                    "id": "a1de18ec-d499-9fe9-570f-5d19ac3cf458"
+                  }
+                },
+                {
+                  "id": "e0301c0e-ff4d-8ad3-7aff-eb2ba5e48a1b",
+                  "type": "text",
+                  "head": {
+                    "id": "b0812f5a-1e96-988b-a033-9a6ba9d80971"
+                  },
+                  "text": {
+                    "id": "2e7c440a-00e8-1007-64c6-050eefe9b0d2"
+                  }
+                }
+              ],
               "title": {
                 "id": "af54b0ce-8e7c-6806-f80a-2f5eafabe92f"
               },
               "url": "svg-prefix"
             },
             {
-              "id": "a01d1fdd-bbcf-9e1d-25ad-32022228ba4f",
-              "entries": [],
-              "title": {
-                "id": "083a9292-79bd-a526-2c55-1ac755d52e3d"
-              },
-              "url": "i18n"
-            },
-            {
-              "id": "fffc39af-ecba-b76a-3e79-7acf51e5ac34",
-              "entries": [],
-              "title": {
-                "id": "41cb0f56-bc8c-cf30-8438-1ab4586118d3"
-              },
-              "url": "innerhtml-binding"
-            },
-            {
               "id": "777bab38-457d-9543-6bdd-f10ec318691e",
-              "entries": [],
+              "entries": [
+                {
+                  "id": "82070c87-a398-6f37-b1c3-dd524324eda6",
+                  "type": "text",
+                  "head": {
+                    "id": "700dfd3f-4ef0-2597-4be9-54cccd58fdc1"
+                  },
+                  "text": {
+                    "id": "bb4b70ab-52fc-a483-ec53-c55ef15ffb9a"
+                  }
+                },
+                {
+                  "id": "8e1af19a-1d17-eff3-7834-e3ea6daeb0fb",
+                  "type": "demo",
+                  "head": {
+                    "id": "7ea184f6-7805-b5ad-3080-fa1dcc3ab296"
+                  },
+                  "text": {
+                    "id": "e666dcae-7864-1ae1-1bd2-5448988a12ad"
+                  },
+                  "source": {
+                    "id": "29528143-2c36-3dd2-6beb-1200ce18c59c"
+                  }
+                }
+              ],
               "title": {
                 "id": "212d82f9-76f2-5bc7-aa5c-875cc187801a"
               },
@@ -8755,7 +9562,18 @@
             },
             {
               "id": "2eaac733-9385-ae44-4ea1-62ce4adfb374",
-              "entries": [],
+              "entries": [
+                {
+                  "id": "9dd113ac-2d35-c060-68aa-f1bbb810de62",
+                  "type": "text",
+                  "head": {
+                    "id": "a8ad680b-e967-191b-2cb1-be8682cd4f30"
+                  },
+                  "text": {
+                    "id": "8d97dcef-f9dc-b629-6c8e-28a5ddbd0d15"
+                  }
+                }
+              ],
               "title": {
                 "id": "2756bafb-8eae-e675-f4ab-11bd24a915ba"
               },
@@ -26144,6 +26962,786 @@
             {
               "lang": "en",
               "text": "* EXPORTAS DEMO\n* TUTORIALS"
+            }
+          ]
+        },
+        {
+          "id": "b64f0715-527f-38cd-8e4b-e35fe430d88e",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The result of an expression might require some transformation before you're ready to use it in a binding.\n\nAngular pipes are a good choice for small transformations such as these. Pipes are simple functions that accept an input value and return a transformed value. They're easy to apply within template expressions, using the pipe operator (|):"
+            }
+          ]
+        },
+        {
+          "id": "3f5fc0a8-947a-2422-c92e-dee5144c546e",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```hmtl\n<div>Title through uppercase pipe: {{title | uppercase}}</div>\n```"
+            }
+          ]
+        },
+        {
+          "id": "713ef96f-e989-26b9-9c7a-cd799a008901",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You can chain expressions through multiple pipes:"
+            }
+          ]
+        },
+        {
+          "id": "3414a6f4-20dc-1dfc-53b9-15ac26c8a538",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<div>\n  Title through a pipe chain:\n  {{title | uppercase | lowercase}}\n</div>\n```"
+            }
+          ]
+        },
+        {
+          "id": "cade1dc7-5613-bdef-0af2-24f7534140b7",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "And you can also apply parameters to a pipe:"
+            }
+          ]
+        },
+        {
+          "id": "d3b1ff1b-5b6c-8176-a506-df7983756302",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<div>Birthdate: {{currentHero?.birthdate | date:'longDate'}}</div>\n```"
+            }
+          ]
+        },
+        {
+          "id": "215f7809-daec-5ae8-050e-8cf79f4a583d",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Custom pipe example"
+            }
+          ]
+        },
+        {
+          "id": "38ca73d8-a9e1-fc90-7ec3-816fa1004988",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "* CUSTOM PIPE EXAMPLE\n* TUTORIALS"
+            }
+          ]
+        },
+        {
+          "id": "c9e13e85-1ed9-76ba-b960-90480eb3e502",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "json"
+            }
+          ]
+        },
+        {
+          "id": "c3c25ce4-3a4b-1e35-5dfd-6956e0414e3c",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "json pipe"
+            }
+          ]
+        },
+        {
+          "id": "d51a0e8b-ce11-e1ed-473c-add49cc65ec9",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The json pipe is particularly helpful for debugging bindings:"
+            }
+          ]
+        },
+        {
+          "id": "a68e119a-08ef-69bd-663a-8f6462e2c88b",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<div>{{currentHero | json}}</div>\n```"
+            }
+          ]
+        },
+        {
+          "id": "5606e9d1-8c80-0968-3567-074ff6e29070",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Transforms Object or Map into an array of key value pairs."
+            }
+          ]
+        },
+        {
+          "id": "f5becd07-f8e2-7564-b4e4-5ebcd9b30151",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "This examples show how an Object or a Map and be iterated by ngFor with the use of this keyvalue pipe."
+            }
+          ]
+        },
+        {
+          "id": "d7138bd7-f3f2-e65b-8ccb-1c9cce37b1b0",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n@Component({\n  selector: 'keyvalue-pipe',\n  template: `<span>\n    <p>Object</p>\n    <div *ngFor=\"let item of object | keyvalue\">\n      {{item.key}}:{{item.value}}\n    </div>\n    <p>Map</p>\n    <div *ngFor=\"let item of map | keyvalue\">\n      {{item.key}}:{{item.value}}\n    </div>\n  </span>`\n})\nexport class KeyValuePipeComponent {\n  object: {[key: number]: string} = {2: 'foo', 1: 'bar'};\n  map = new Map([[2, 'foo'], [1, 'bar']]);\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "6b83b4ed-d06b-0dd9-075d-26cb1ff45919",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The output array will be ordered by keys. By default the comparator will be by Unicode point value. You can optionally pass a compareFn if your keys are complex types."
+            }
+          ]
+        },
+        {
+          "id": "712e7d23-5337-68bb-dcf7-00f0deffaaf5",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Unwraps a value from an asynchronous primitive.\n\nThe `async` pipe subscribes to an `Observable` or `Promise` and returns the latest value it has emitted. When a new value is emitted, the `async` pipe marks the component to be checked for changes. When the component gets destroyed, the `async` pipe unsubscribes automatically to avoid potential memory leaks.\n"
+            }
+          ]
+        },
+        {
+          "id": "7cb6104c-255d-7569-d058-a29289288985",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@Component({\n  selector: 'async-observable-pipe',\n  template: '<div><code>observable|async</code>: Time: {{ time | async }}</div>'\n})\nexport class AsyncObservablePipeComponent {\n  time = new Observable<string>((observer: Observer<string>) => {\n    setInterval(() => observer.next(new Date().toString()), 1000);\n  });\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "18afb295-1212-2364-a634-5cd5a708167f",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "* ADD LET INFO\n* ADD TUTORIALS"
+            }
+          ]
+        },
+        {
+          "id": "0b4cac0a-2e72-3724-6791-379c3133457d",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "titleCase"
+            }
+          ]
+        },
+        {
+          "id": "9df903f9-91a1-c755-4b08-50c03cfaaf33",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "upperCase"
+            }
+          ]
+        },
+        {
+          "id": "4919daac-f530-db65-e7a1-defd99ad0e10",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "slice"
+            }
+          ]
+        },
+        {
+          "id": "885fc0c3-5c57-1392-e1b3-bc53e9cc6e09",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You can build a simple animation that transitions an element between two states driven by a model attribute.\n\nAnimations can be defined inside `@Component` metadata.\n\nThen using the `[@triggerName]` syntax, attach the animation that you just defined to one or more elements in the component's template."
+            }
+          ]
+        },
+        {
+          "id": "e1171b48-6bf6-b046-3b4d-1a037bcbd817",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nimport {\n  Component,\n  Input\n} from '@angular/core';\nimport {\n  trigger,\n  state,\n  style,\n  animate,\n  transition\n} from '@angular/animations';\n \nimport { Hero } from './hero.service';\n \n@Component({\n  selector: 'app-hero-list-basic',\n  template: `\n    <ul>\n      <li *ngFor=\"let hero of heroes\"\n          [@heroState]=\"hero.state\"\n          (click)=\"hero.toggleState()\">\n        {{hero.name}}\n      </li>\n    </ul>\n  `,\n  styleUrls: ['./hero-list.component.css'],\n  animations: [\n    trigger('heroState', [\n      state('inactive', style({\n        backgroundColor: '#eee',\n        transform: 'scale(1)'\n      })),\n      state('active',   style({\n        backgroundColor: '#cfd8dc',\n        transform: 'scale(1.1)'\n      })),\n      transition('inactive => active', animate('100ms ease-in')),\n      transition('active => inactive', animate('100ms ease-out'))\n    ])\n  ]\n})\nexport class HeroListBasicComponent {\n   @Input() heroes: Hero[];\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "37dea856-f072-be02-66ce-22aef5582d35",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "* ADD TUTORIALS"
+            }
+          ]
+        },
+        {
+          "id": "a1de18ec-d499-9fe9-570f-5d19ac3cf458",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "An SVG snippet template needs an `svg:` prefix on its root element to disambiguate the SVG element from an HTML component.\n\n```html\n<svg:rect x=\"0\" y=\"0\" width=\"100\" height=\"100\"/>\n```\n\nAn <svg> root element is detected as an SVG element automatically, without the prefix.\n\n```html\n<svg>\n<rect x=\"0\" y=\"0\" width=\"100\" height=\"100\"/>\n</svg>\n```\n"
+            }
+          ]
+        },
+        {
+          "id": "2e7c440a-00e8-1007-64c6-050eefe9b0d2",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "* ADD TUTORIALS"
+            }
+          ]
+        },
+        {
+          "id": "bb4b70ab-52fc-a483-ec53-c55ef15ffb9a",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The `ngNonBindable` tells Angular not to compile or bind the contents of the current DOM element.\n"
+            }
+          ]
+        },
+        {
+          "id": "29528143-2c36-3dd2-6beb-1200ce18c59c",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<div>{{ 1 + 1 }}</div>\n<!-- <div>2</div> -->\n\n<div ngNonBindable>{{ 1 + 1 }}</div>\n<!-- <div>{{ 1 + 1 }}</div> -->\n```"
+            }
+          ]
+        },
+        {
+          "id": "8d97dcef-f9dc-b629-6c8e-28a5ddbd0d15",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Sometimes a binding expression will be reported as a type error and it is not possible or difficult to fully specify the type. To silence the error, you can use the `$any` cast function to cast the expression to the `any` type.\n\n```html\n<!-- Accessing an undeclared member -->\n<div>\n  The hero's marker is {{$any(hero).marker}}\n</div>\n```\n\nThe $any cast function can be used in conjunction with this to allow access to undeclared members of the component.\n\n```html\n<!-- Accessing an undeclared member -->\n<div>\n  Undeclared members is {{$any(this).member}}\n</div>\n```"
+            }
+          ]
+        },
+        {
+          "id": "6c274a6d-efb4-70c2-40dd-2de0a1f30427",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "i18nPlural"
+            }
+          ]
+        },
+        {
+          "id": "66477101-85d7-0c0e-b418-a16c669f8769",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "### Pure pipe"
+            }
+          ]
+        },
+        {
+          "id": "8e42a920-a2c8-dad3-b7fb-f7a32b44e434",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "slice pipe"
+            }
+          ]
+        },
+        {
+          "id": "9a2dbd01-1f31-2662-9349-f3788cddafae",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "upperCase pipe"
+            }
+          ]
+        },
+        {
+          "id": "5c8c6108-e6da-55d1-1860-348cf57987f9",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "titleCase pipe"
+            }
+          ]
+        },
+        {
+          "id": "7498c808-ba71-3eaa-867b-896fa5325060",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "i18nPlural pipe"
+            }
+          ]
+        },
+        {
+          "id": "934537fc-314e-c4d7-9a8a-df562d8027d6",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Maps a value to a string that pluralizes the value according to locale rules.\n"
+            }
+          ]
+        },
+        {
+          "id": "a6dd1b18-6bc3-302b-833b-6e919973441c",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@Component({\n  selector: 'i18n-plural-pipe',\n  template: `<div>{{ messages.length | i18nPlural: messageMapping }}</div>`\n})\nexport class I18nPluralPipeComponent {\n  messages: any[] = ['Message 1'];\n  messageMapping:\n      {[k: string]: string} = {'=0': 'No messages.', '=1': 'One message.', 'other': '# messages.'};\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "14416eea-7f89-310d-84df-84168b1ad0c1",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Creates a new `Array` or `String` containing a subset (slice) of the elements.\n\nAll behavior is based on the expected behavior of the JavaScript API `Array.prototype.slice()` and `String.prototype.slice()`.\n\nWhen operating on an `Array`, the returned `Array` is always a copy even when all the elements are being returned.\n\nWhen operating on a blank value, the pipe returns the blank value.\n"
+            }
+          ]
+        },
+        {
+          "id": "1c80fdb9-8e3c-1285-113c-f2d717a59936",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "### List Demo"
+            }
+          ]
+        },
+        {
+          "id": "490484be-1685-962d-7fe7-10fc2e791b08",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@Component({\n  selector: 'slice-list-pipe',\n  template: `<ul>\n    <li *ngFor=\"let i of collection | slice:1:3\">{{i}}</li>\n  </ul>`\n})\nexport class SlicePipeListComponent {\n  collection: string[] = ['a', 'b', 'c', 'd'];\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "d5568919-9e48-0ac3-31b3-7b0a577d2db5",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "### String Demo"
+            }
+          ]
+        },
+        {
+          "id": "ae6a82ef-7e05-2349-d260-be8c6f90e89e",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@Component({\n  selector: 'slice-string-pipe',\n  template: `<div>\n    <p>{{str}}[0:4]: '{{str | slice:0:4}}' - output is expected to be 'abcd'</p>\n    <p>{{str}}[4:0]: '{{str | slice:4:0}}' - output is expected to be ''</p>\n    <p>{{str}}[-4]: '{{str | slice:-4}}' - output is expected to be 'ghij'</p>\n    <p>{{str}}[-4:-2]: '{{str | slice:-4:-2}}' - output is expected to be 'gh'</p>\n    <p>{{str}}[-100]: '{{str | slice:-100}}' - output is expected to be 'abcdefghij'</p>\n    <p>{{str}}[100]: '{{str | slice:100}}' - output is expected to be ''</p>\n  </div>`\n})\nexport class SlicePipeStringComponent {\n  str: string = 'abcdefghij';\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "84fa6e99-d476-eac8-76a7-afd6546f3c91",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Transforms text to all lower case."
+            }
+          ]
+        },
+        {
+          "id": "6d75900a-1833-baa8-ad7b-59b0c7c34f1a",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@Component({\n  selector: 'lowerupper-pipe',\n  template: `<div>\n    <label>Name: </label><input #name (keyup)=\"change(name.value)\" type=\"text\">\n    <p>In lowercase: <pre>'{{value | lowercase}}'</pre>\n    <p>In uppercase: <pre>'{{value | uppercase}}'</pre>\n  </div>`\n})\nexport class LowerUpperPipeComponent {\n  // TODO(issue/24571): remove '!'.\n  value !: string;\n  change(value: string) { this.value = value; }\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "8a9127eb-dd50-1ed0-f594-3f415f1dfd2d",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Transforms text to all upper case."
+            }
+          ]
+        },
+        {
+          "id": "e9bb6d7f-1d8a-59e1-03aa-1665a8af5eaa",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "* ADD DEMO"
+            }
+          ]
+        },
+        {
+          "id": "6308e004-eaa9-b6e7-eee9-fcf1a30b4328",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Transforms text to title case. Capitalizes the first letter of each word, and transforms the rest of the word to lower case. Words are delimited by any whitespace character, such as a space, tab, or line-feed character."
+            }
+          ]
+        },
+        {
+          "id": "e78054df-fd81-6402-6464-2c32fae90d1a",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@Component({\n  selector: 'titlecase-pipe',\n  template: `<div>\n    <p>{{'some string' | titlecase}}</p> <!-- output is expected to be \"Some String\" --> \n    <p>{{'tHIs is mIXeD CaSe' | titlecase}}</p> <!-- output is expected to be \"This Is Mixed Case\" --> \n    <p>{{'it\\\\'s non-trivial question' | titlecase}}</p> <!-- output is expected to be \"It's Non-trivial Question\" --> \n    <p>{{'one,two,three' | titlecase}}</p> <!-- output is expected to be \"One,two,three\" -->\n    <p>{{'true|false' | titlecase}}</p> <!-- output is expected to be \"True|false\" -->\n    <p>{{'foo-vs-bar' | titlecase}}</p> <!-- output is expected to be \"Foo-vs-bar\" -->\n  </div>`\n})\nexport class TitleCasePipeComponent {\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "4f977eba-8e2d-bb8e-d14b-cccd02eb86c5",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Formats a date value according to locale rules.\n"
+            }
+          ]
+        },
+        {
+          "id": "c94039d2-db20-f79f-4d33-031261d6ba19",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@Component({\n selector: 'date-pipe',\n template: `<div>\n   <p>Today is {{today | date}}</p>\n   <p>Or if you prefer, {{today | date:'fullDate'}}</p>\n   <p>The time is {{today | date:'h:mm a z'}}</p>\n </div>`\n})\n// Get the current date and time as a date-time value.\nexport class DatePipeComponent {\n  today: number = Date.now();\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "e48d7a8e-4e2e-2e62-49ab-ba2d0ae2ee5f",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Only the `en-US` locale data comes with Angular. To localize dates in another language, you must import the corresponding locale data.\n"
+            }
+          ]
+        },
+        {
+          "id": "56a3d50d-b668-b923-d494-73af61751742",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Parameters"
+            }
+          ]
+        },
+        {
+          "id": "548314a6-9cc8-5e67-f189-388dfe1b7478",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```\n{{ value_expression | date [ : format [ : timezone [ : locale ] ] ] }}\n```"
+            }
+          ]
+        },
+        {
+          "id": "3c2791a4-79f8-2f60-50f8-a7d8f9adbc5a",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The date/time components to include, using predefined options or a custom format string.\n"
+            }
+          ]
+        },
+        {
+          "id": "b5e0ed63-a6f7-b11c-f8e2-7367bbb7dcd6",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A timezone offset (such as '+0430'), or a standard UTC/GMT or continental US timezone abbreviation. Default is the local system timezone of the end-user's machine.\n"
+            }
+          ]
+        },
+        {
+          "id": "c68c636f-885d-6050-1b58-e74cd85db8bc",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A locale code for the locale format rules to use. "
+            }
+          ]
+        },
+        {
+          "id": "1a06af52-4d42-62c7-b101-505f018a0785",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Pre-defined format options\n\nExamples are given in `en-US` locale.\n\n* `short`: equivalent to 'M/d/yy, h:mm a' (6/15/15, 9:03 AM).\n* `medium`: equivalent to 'MMM d, y, h:mm:ss a' (Jun 15, 2015, 9:03:01 AM).\n* `long`: equivalent to 'MMMM d, y, h:mm:ss a z' (June 15, 2015 at 9:03:01 AM GMT+1).\n* `full`: equivalent to 'EEEE, MMMM d, y, h:mm:ss a zzzz' (Monday, June 15, 2015 at 9:03:01 AM GMT+01:00).\n* `shortDate`: equivalent to 'M/d/yy' (6/15/15).\n* `mediumDate`: equivalent to 'MMM d, y' (Jun 15, 2015).\n* `longDate`: equivalent to 'MMMM d, y' (June 15, 2015).\n* `fullDate`: equivalent to 'EEEE, MMMM d, y' (Monday, June 15, 2015).\n* `shortTime`: equivalent to 'h:mm a' (9:03 AM).\n* `mediumTime`: equivalent to 'h:mm:ss a' (9:03:01 AM).\n* `longTime`: equivalent to 'h:mm:ss a z' (9:03:01 AM GMT+1).\n* `fullTime`: equivalent to 'h:mm:ss a zzzz' (9:03:01 AM GMT+01:00).\n\n#### Custom format options\n\nYou can construct a format string using symbols to specify the components of a date-time value, as described in the [official documentation](https://angular.io/api/common/DatePipe#custom-format-options)."
+            }
+          ]
+        },
+        {
+          "id": "07080dbe-1569-7e13-fe52-b781f7554db7",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "When not supplied, uses the value of `LOCALE_ID`, which is `en-US` by default. See [Setting your app locale](https://angular.io/guide/i18n#setting-up-the-locale-of-your-app)."
+            }
+          ]
+        },
+        {
+          "id": "b88a626c-1863-43f5-7b4d-851812b33c83",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Transforms a number to a currency string, formatted according to locale rules that determine group sizing and separator, decimal-point character, and other locale-specific configurations."
+            }
+          ]
+        },
+        {
+          "id": "186999d6-383c-27d0-8704-95e6fdcb5a74",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@Component({\n  selector: 'currency-pipe',\n  template: `<div>\n    <!--output '$0.26'-->\n    <p>A: {{a | currency}}</p>\n \n    <!--output 'CA$0.26'-->\n    <p>A: {{a | currency:'CAD'}}</p>\n \n    <!--output 'CAD0.26'-->\n    <p>A: {{a | currency:'CAD':'code'}}</p>\n \n    <!--output 'CA$0,001.35'-->\n    <p>B: {{b | currency:'CAD':'symbol':'4.2-2'}}</p>\n \n    <!--output '$0,001.35'-->\n    <p>B: {{b | currency:'CAD':'symbol-narrow':'4.2-2'}}</p>\n \n    <!--output '0 001,35 CA$'-->\n    <p>B: {{b | currency:'CAD':'symbol':'4.2-2':'fr'}}</p>\n \n    <!--output 'CLP1' because CLP has no cents-->\n    <p>B: {{b | currency:'CLP'}}</p>\n  </div>`\n})\nexport class CurrencyPipeComponent {\n  a: number = 0.259;\n  b: number = 1.3495;\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "c480549e-1f69-4d4d-f783-5632f4bdb0c7",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Parameters\n"
+            }
+          ]
+        },
+        {
+          "id": "580cb2d2-e928-f019-8595-fa401bfe14a5",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```\n{{ value_expression | currency [ : currencyCode [ : display [ : digitsInfo [ : locale ] ] ] ] }}\n```"
+            }
+          ]
+        },
+        {
+          "id": "e1de100d-6701-ffef-0ce8-f28b0cdcfb1b",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code, such as `USD` for the US dollar and `EUR` for the euro.\n"
+            }
+          ]
+        },
+        {
+          "id": "ebb44fb4-340d-f021-413f-209e08981a36",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The format for the currency indicator."
+            }
+          ]
+        },
+        {
+          "id": "dae1d058-fd91-5302-30ea-181e1644bc23",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "One of the following:\n  - `code`: Show the code (such as `USD`).\n  - `symbol`(default): Show the symbol (such as `$`).\n  - `symbol-narrow`: Use the narrow symbol for locales that have two symbols for their currency.\n\nFor example, the Canadian dollar CAD has the symbol `CA$` and the symbol-narrow `$`. If the locale has no narrow symbol, uses the standard symbol for the locale.\n  - String: Use the given string value instead of a code or a symbol.\n  - Boolean (marked deprecated in v5): `true` for symbol and false for `code`."
+            }
+          ]
+        },
+        {
+          "id": "741c66dc-5e2b-cc14-6d7e-997917c3f89a",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Decimal representation options."
+            }
+          ]
+        },
+        {
+          "id": "070c4806-b5c6-1b23-91b1-4df5521fd5f0",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Specified by a string in the following format:\n\n```\n{minIntegerDigits}.{minFractionDigits}-{maxFractionDigits}\n```\n\n- `minIntegerDigits`: The minimum number of integer digits before the decimal point. Default is `1`.\n- `minFractionDigits`: The minimum number of digits after the decimal point. Default is `0`.\n- `maxFractionDigits`: The maximum number of digits after the decimal point. Default is `3`.\n\nIf not provided, the number will be formatted with the proper amount of digits, depending on what the [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) specifies.\n\nFor example, the Canadian dollar has 2 digits, whereas the Chilean peso has none."
+            }
+          ]
+        },
+        {
+          "id": "034b4524-8c24-3963-6ed7-e5e6f695089e",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A locale code for the locale format rules to use."
+            }
+          ]
+        },
+        {
+          "id": "f16e9ddd-d194-b687-ed03-6787f2ae9cb6",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "When not supplied, uses the value of `LOCALE_ID`, which is `en-US` by default. See [Setting your app locale](https://angular.io/guide/i18n#setting-up-the-locale-of-your-app)."
+            }
+          ]
+        },
+        {
+          "id": "4527cd6f-c49b-8ea6-e2c4-c86fe30a7d3a",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Transforms a number to a percentage string, formatted according to locale rules that determine group sizing and separator, decimal-point character, and other locale-specific configurations."
+            }
+          ]
+        },
+        {
+          "id": "9c0bd149-2aed-d73e-d17a-2b7a998edac3",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@Component({\n  selector: 'percent-pipe',\n  template: `<div>\n    <!--output '26%'-->\n    <p>A: {{a | percent}}</p>\n \n    <!--output '0,134.950%'-->\n    <p>B: {{b | percent:'4.3-5'}}</p>\n \n    <!--output '0 134,950 %'-->\n    <p>B: {{b | percent:'4.3-5':'fr'}}</p>\n  </div>`\n})\nexport class PercentPipeComponent {\n  a: number = 0.259;\n  b: number = 1.3495;\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "46ebee2a-2439-df10-fd3d-b7794c6e7348",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Parameters\n"
+            }
+          ]
+        },
+        {
+          "id": "86bb9065-0cb7-c68b-533a-05958f3204b0",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```\n{{ value_expression | percent [ : digitsInfo [ : locale ] ] }}\n```"
+            }
+          ]
+        },
+        {
+          "id": "ff4e1daa-6656-0639-821b-93c6c665e904",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Decimal representation options."
+            }
+          ]
+        },
+        {
+          "id": "2df6591b-55ce-20d0-9dee-d47724072b31",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Specified by a string in the following format:\n\n```\n{minIntegerDigits}.{minFractionDigits}-{maxFractionDigits}\n```\n\n  - `minIntegerDigits`: The minimum number of integer digits before the decimal point. Default is `1`.\n  - `minFractionDigits`: The minimum number of digits after the decimal point. Default is `0`.\n  - `maxFractionDigits`: The maximum number of digits after the decimal point. Default is `3`."
+            }
+          ]
+        },
+        {
+          "id": "ad998611-2523-00ee-2cbc-e4aafcb10a5d",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A locale code for the locale format rules to use."
+            }
+          ]
+        },
+        {
+          "id": "54e77662-1808-0018-7775-353c2f7c7f25",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "When not supplied, uses the value of `LOCALE_ID`, which is `en-US` by default. See [Setting your app locale](https://angular.io/guide/i18n#setting-up-the-locale-of-your-app)."
             }
           ]
         }
