@@ -809,6 +809,16 @@
                   }
                 },
                 {
+                  "id": "76b7fd9b-d008-5050-401c-1eff834467ea",
+                  "type": "toc",
+                  "head": {
+                    "id": "63d48b69-f4ce-68f6-333e-fa9399f07bc7"
+                  },
+                  "text": {
+                    "id": "508b5cab-5eb6-3654-dd9a-74e4b08bd16c"
+                  }
+                },
+                {
                   "id": "98182a06-d523-263d-fd25-24781d893e98",
                   "type": "command-param",
                   "text": {
@@ -1586,6 +1596,16 @@
                   }
                 },
                 {
+                  "id": "f609ec3a-f8fb-3875-54cc-c5a89e405173",
+                  "type": "toc",
+                  "head": {
+                    "id": "2cfe55e9-8165-eb53-ecaf-36ccbdaee0d9"
+                  },
+                  "text": {
+                    "id": "cc9755ca-fa98-eb57-1763-457551b66d22"
+                  }
+                },
+                {
                   "id": "630035a7-9426-c8ff-4a58-04e421e43cef",
                   "type": "command-param",
                   "head": {
@@ -1883,6 +1903,16 @@
                   },
                   "text": {
                     "id": "429025e0-f5a1-470e-6c23-40459d616223"
+                  }
+                },
+                {
+                  "id": "4fda7112-4599-bdb2-915d-f0364132b847",
+                  "type": "toc",
+                  "head": {
+                    "id": "d1163210-b27a-ebcf-db0b-478fad6964bd"
+                  },
+                  "text": {
+                    "id": "249f3b0e-b993-1d53-0ea0-b61956a135ef"
                   }
                 },
                 {
@@ -2791,6 +2821,16 @@
                   }
                 },
                 {
+                  "id": "d763879f-fdf3-cc55-5031-df449111d390",
+                  "type": "toc",
+                  "head": {
+                    "id": "ce9d9354-50e1-c3a8-674a-31f2b77c131c"
+                  },
+                  "text": {
+                    "id": "c7a942c7-30c3-e1d4-9dd8-0387ac53107d"
+                  }
+                },
+                {
                   "id": "f9009c9d-98e6-e5f1-9615-2fdc56c25c6b",
                   "type": "command-param",
                   "head": {
@@ -3223,13 +3263,13 @@
               "id": "1427e274-b46c-55a7-ba43-6094f217b076",
               "entries": [
                 {
-                  "id": "843de2f2-ef73-1096-05be-4ef5d7a94f66",
+                  "id": "f3bd9436-cc11-65d3-636c-17f98bafb24a",
                   "type": "text",
                   "head": {
-                    "id": "b42d979d-5d63-9452-e53c-55210cd23b17"
+                    "id": "11e06db6-f723-81dc-7066-a8f5a93b3270"
                   },
                   "text": {
-                    "id": "7256f346-b829-a735-9d63-415223fff65c"
+                    "id": "b02f9a72-e572-eb2f-9eb6-160d38c05c95"
                   }
                 },
                 {
@@ -3257,6 +3297,26 @@
                       "lang": "en"
                     }
                   ]
+                },
+                {
+                  "id": "843de2f2-ef73-1096-05be-4ef5d7a94f66",
+                  "type": "text",
+                  "head": {
+                    "id": "b42d979d-5d63-9452-e53c-55210cd23b17"
+                  },
+                  "text": {
+                    "id": "7256f346-b829-a735-9d63-415223fff65c"
+                  }
+                },
+                {
+                  "id": "19ac5e9d-76ca-2693-b644-457a2b4c23dd",
+                  "type": "toc",
+                  "head": {
+                    "id": "3ebdd0bd-d07a-37b8-e3e4-9f1494eaad7e"
+                  },
+                  "text": {
+                    "id": "a5f8c6a7-80c2-df53-c848-638cd834e1e4"
+                  }
                 },
                 {
                   "id": "7e05f660-d17d-e09a-17f6-a2bc9330111b",
@@ -3386,6 +3446,16 @@
                   },
                   "text": {
                     "id": "147066c0-5dbd-e75b-0242-c82fb30d2ab3"
+                  }
+                },
+                {
+                  "id": "6063bd20-2de5-ddc8-d315-c89df63d88c9",
+                  "type": "toc",
+                  "head": {
+                    "id": "5a11a95e-3b4b-f4ef-b379-d6146b7b229f"
+                  },
+                  "text": {
+                    "id": "d357d228-dc5e-2ed9-d2bc-e0ebb02fdd56"
                   }
                 },
                 {
@@ -3728,6 +3798,16 @@
                   }
                 },
                 {
+                  "id": "cbdb801b-1139-2d3f-befc-1cf864e3ae2d",
+                  "type": "toc",
+                  "head": {
+                    "id": "aa5a8f51-3f52-ea4d-0232-58403b1ac376"
+                  },
+                  "text": {
+                    "id": "9104c7b0-96f2-8de8-86bb-769be386baef"
+                  }
+                },
+                {
                   "id": "12c6a2d0-ed8c-1a39-395c-322bf6e34d8b",
                   "type": "command-param",
                   "head": {
@@ -3907,6 +3987,16 @@
                   },
                   "text": {
                     "id": "f99f1a57-af8c-722f-d48b-0147d5ef88b8"
+                  }
+                },
+                {
+                  "id": "909ac39a-2933-9c98-2348-cb17189bfb90",
+                  "type": "toc",
+                  "head": {
+                    "id": "69027206-f4d6-0f05-c51a-97aa235de488"
+                  },
+                  "text": {
+                    "id": "cdf2a471-c507-d672-0d23-6bcdc17260fd"
                   }
                 },
                 {
@@ -4369,6 +4459,16 @@
                   }
                 },
                 {
+                  "id": "7aee9282-f693-584e-370b-5ba914e89e0b",
+                  "type": "toc",
+                  "head": {
+                    "id": "30c9fceb-5946-3412-3c94-fb57784d4443"
+                  },
+                  "text": {
+                    "id": "8585ad4e-967c-79cf-8b4f-5b675dd69642"
+                  }
+                },
+                {
                   "id": "57791ee8-5532-f9dd-99e4-de6e6b65571d",
                   "type": "command-param",
                   "head": {
@@ -4598,6 +4698,16 @@
                   }
                 },
                 {
+                  "id": "7ee8a559-d6db-f15c-42cd-b1bc57404fed",
+                  "type": "toc",
+                  "head": {
+                    "id": "824de986-5468-d1da-9770-cf8e7ee99466"
+                  },
+                  "text": {
+                    "id": "04842b0b-f628-e641-8e77-7f64b6059cc4"
+                  }
+                },
+                {
                   "id": "982a6e6c-82a2-0fdb-dd58-b20cbc2c648d",
                   "type": "command-param",
                   "head": {
@@ -4811,6 +4921,16 @@
                   },
                   "text": {
                     "id": "9aa456ef-6c3a-9d47-741c-c5abac37a52f"
+                  }
+                },
+                {
+                  "id": "5c495cc5-01f1-71b0-d074-ebeb75acdf08",
+                  "type": "toc",
+                  "head": {
+                    "id": "65549d06-22c8-f832-145c-f370ac070137"
+                  },
+                  "text": {
+                    "id": "269f27e0-0e9e-ac7b-7b17-d636a8272f61"
                   }
                 },
                 {
@@ -5113,6 +5233,16 @@
                   }
                 },
                 {
+                  "id": "2603d9c5-f448-c5d4-8803-d938ab642d67",
+                  "type": "toc",
+                  "head": {
+                    "id": "11352489-7a8f-1811-1841-807c2bed5c0f"
+                  },
+                  "text": {
+                    "id": "fa819915-5e24-dc37-94d2-6f45acb446fd"
+                  }
+                },
+                {
                   "id": "cc648df9-913d-e1ba-9589-d5301ed3364d",
                   "type": "command-param",
                   "head": {
@@ -5189,6 +5319,16 @@
                   },
                   "text": {
                     "id": "d2a8996c-a9c5-3fd9-d622-53b693fa72c2"
+                  }
+                },
+                {
+                  "id": "0f1791e6-14c6-4606-1268-140f8fbf32b2",
+                  "type": "toc",
+                  "head": {
+                    "id": "73e018d9-c4c0-3c43-0ad1-c2191c5b3859"
+                  },
+                  "text": {
+                    "id": "ee2bd738-32ef-0532-0fdb-6ddfd3cfb1e2"
                   }
                 },
                 {
@@ -5481,6 +5621,16 @@
                   }
                 },
                 {
+                  "id": "d15c41df-524b-7b07-4e74-50a8aa658bec",
+                  "type": "toc",
+                  "head": {
+                    "id": "cd0a12ec-1881-1861-06d1-bf9c105a08b4"
+                  },
+                  "text": {
+                    "id": "447efef9-9192-cdf1-3861-65adfe58c278"
+                  }
+                },
+                {
                   "id": "b567328b-2155-998a-b2df-35265087e4b0",
                   "type": "command-param",
                   "head": {
@@ -5672,6 +5822,16 @@
                   }
                 },
                 {
+                  "id": "d395ea6b-944f-d58a-1d13-165c58c09dce",
+                  "type": "toc",
+                  "head": {
+                    "id": "ba1b61a6-45e1-f21b-f536-f4f8659e943b"
+                  },
+                  "text": {
+                    "id": "d72b8e4c-cc6e-b75e-cd63-d31affb6a373"
+                  }
+                },
+                {
                   "id": "3ce0ed46-02f2-e8ba-43d0-dfbdb09a2236",
                   "type": "command-param",
                   "head": {
@@ -5742,6 +5902,16 @@
                   },
                   "text": {
                     "id": "4d7be281-b96b-923d-9ee5-3346f85285bc"
+                  }
+                },
+                {
+                  "id": "88326206-03a6-79f9-47d0-9847f1463b9c",
+                  "type": "toc",
+                  "head": {
+                    "id": "b7244d55-de07-07e4-cad0-8daa2cd3a952"
+                  },
+                  "text": {
+                    "id": "ed2fe366-6972-c605-c7a9-cdfa17228336"
                   }
                 },
                 {
@@ -5848,6 +6018,16 @@
                   },
                   "text": {
                     "id": "b9990cfc-ce9b-301b-7db9-8643601528de"
+                  }
+                },
+                {
+                  "id": "49970d26-cba5-0c7f-56fa-66dcda0e42d9",
+                  "type": "toc",
+                  "head": {
+                    "id": "19e54327-5b05-ce1b-42d4-e0e63058561e"
+                  },
+                  "text": {
+                    "id": "15ff7cdd-48e2-7be8-b5a7-53249c907a59"
                   }
                 },
                 {
@@ -5958,6 +6138,16 @@
                   }
                 },
                 {
+                  "id": "0424a765-2ce9-570e-ecfd-6744fb01e419",
+                  "type": "toc",
+                  "head": {
+                    "id": "6c56e6d0-87b4-c88f-b7f1-1049e6696c1c"
+                  },
+                  "text": {
+                    "id": "bcb12524-975d-eedc-a8b1-516264d1f739"
+                  }
+                },
+                {
                   "id": "b3bb7eda-7ea6-1e59-d582-46523cf274fb",
                   "type": "command-param",
                   "head": {
@@ -6063,6 +6253,16 @@
                   },
                   "text": {
                     "id": "fb04f9a5-cc73-2b09-54a9-414ec198f0db"
+                  }
+                },
+                {
+                  "id": "7664df4a-11b5-2a52-43d6-2180deed6f4a",
+                  "type": "toc",
+                  "head": {
+                    "id": "e27e2022-56cf-b86a-7544-2d70ed3c83ce"
+                  },
+                  "text": {
+                    "id": "a9620b95-fa34-ca2c-d04d-2f46433db8a1"
                   }
                 },
                 {
@@ -6206,6 +6406,16 @@
                   },
                   "text": {
                     "id": "1a6ec3b7-2a6b-8df7-0601-0055700ffae0"
+                  }
+                },
+                {
+                  "id": "4c18249f-d07f-3917-bd70-55f2c2205b5a",
+                  "type": "toc",
+                  "head": {
+                    "id": "743b5b56-960d-54c1-87f5-f390f6c128fe"
+                  },
+                  "text": {
+                    "id": "290ba2f3-8135-e58e-09e6-ba9563482990"
                   }
                 },
                 {
@@ -6367,6 +6577,16 @@
                   }
                 },
                 {
+                  "id": "0626e710-622a-9ef5-dfdb-e826740158d0",
+                  "type": "toc",
+                  "head": {
+                    "id": "ca7bd908-f0a5-6fce-a0df-57386adeb4ae"
+                  },
+                  "text": {
+                    "id": "cc9a92fb-6120-2107-e074-b5e899f0591c"
+                  }
+                },
+                {
                   "id": "9f463ea3-8ce8-a690-53a2-bd31a272db94",
                   "type": "command-param",
                   "head": {
@@ -6470,6 +6690,16 @@
                   },
                   "text": {
                     "id": "d88c7b05-32c3-bab1-3ae8-21a8d129bd0f"
+                  }
+                },
+                {
+                  "id": "64f84fdd-c28a-7603-7b1e-f9a48b91a1ee",
+                  "type": "toc",
+                  "head": {
+                    "id": "2026da9c-b15b-0c83-6d34-b5c08053d56e"
+                  },
+                  "text": {
+                    "id": "6a69e364-47ff-814e-1cb3-d25ff4aa6b9e"
                   }
                 },
                 {
@@ -9650,7 +9880,7 @@
           },
           "color": "#c9e14f",
           "url": "templates",
-          "disabled": false
+          "disabled": true
         },
         {
           "id": "cf9867c0-c7ba-5d8b-92db-838948f086f5",
@@ -13958,7 +14188,7 @@
           },
           "color": "#15c55e",
           "url": "core",
-          "disabled": false
+          "disabled": true
         },
         {
           "id": "4efb0a19-7319-04b8-2a91-fabd3d069e2d",
@@ -16290,11 +16520,11 @@
           "locales": [
             {
               "lang": "en",
-              "text": "ID: `@angular-devkit/build-angular:extract-i18n`\n\n## Options"
+              "text": "## Options"
             },
             {
               "lang": "ru",
-              "text": "ID: `@angular-devkit/build-angular:extract-i18n`\n\nБилдер для извлечения фраз для перевода.\n\n## Параметры"
+              "text": "## Параметры"
             }
           ]
         },
@@ -27867,6 +28097,20 @@
             {
               "lang": "en",
               "text": "View generated stats:\n* `npm install -g webpack-bundle-analyzer`\n* `webpack-bundle-analyzer dist/stats.json`"
+            }
+          ]
+        },
+        {
+          "id": "b02f9a72-e572-eb2f-9eb6-160d38c05c95",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ID: `@angular-devkit/build-angular:extract-i18n`"
+            },
+            {
+              "lang": "ru",
+              "text": "ID: `@angular-devkit/build-angular:extract-i18n`\n\nБилдер для извлечения фраз для перевода."
             }
           ]
         }
