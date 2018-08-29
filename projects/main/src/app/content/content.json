@@ -6812,6 +6812,13 @@
                       "url": "ngswitch-directive"
                     },
                     {
+                      "id": "67cc3ae3-c741-4fc2-c901-9c3415776c26",
+                      "label": {
+                        "id": "6e74a12b-a9e5-abbd-5d9d-2fce2afc7171"
+                      },
+                      "url": "ngplural-directive"
+                    },
+                    {
                       "id": "16174523-8cc1-c3c9-1e1b-1a4246169205",
                       "label": {
                         "id": "6d00b499-1002-09f6-444f-1d663e6c0248"
@@ -7438,7 +7445,8 @@
                   },
                   "source": {
                     "id": "12e27640-fd67-0de4-5cc8-d09d8988975e"
-                  }
+                  },
+                  "demo": "V6TemplatesInputComponent"
                 },
                 {
                   "id": "33ef9458-7aed-57ca-3212-6692d70f09f8",
@@ -7519,7 +7527,8 @@
                   },
                   "source": {
                     "id": "1ba3c4a4-7a5b-9487-1360-64c248342359"
-                  }
+                  },
+                  "demo": "V6TemplatesClass1DemoComponent"
                 },
                 {
                   "id": "4e681ae5-5bbd-67d7-9194-4fa78845991b",
@@ -7542,7 +7551,8 @@
                   },
                   "source": {
                     "id": "7b724c48-e9f7-6589-5d95-f656505d2b7d"
-                  }
+                  },
+                  "demo": "V6TemplatesClass2DemoComponent"
                 },
                 {
                   "id": "cc8a6805-6906-d632-be15-0acdd505c62a",
@@ -7574,6 +7584,16 @@
                   }
                 },
                 {
+                  "id": "bd33fa88-273e-cdb8-5229-e1417d990bbe",
+                  "type": "text",
+                  "head": {
+                    "id": "19f85f95-c15b-5279-c16a-7476a739522b"
+                  },
+                  "text": {
+                    "id": "85ec8785-f2a6-481d-e612-9ea5fb5cc5cd"
+                  }
+                },
+                {
                   "id": "927c9289-ef66-47b7-193d-f863260dc67e",
                   "type": "demo",
                   "head": {
@@ -7584,7 +7604,8 @@
                   },
                   "source": {
                     "id": "d14ac47d-fdd0-d751-f6d4-3b1082e792d1"
-                  }
+                  },
+                  "demo": "V6TemplatesNgclass1DemoComponent"
                 },
                 {
                   "id": "5ae8d7a5-58dd-d54c-c0c6-954a7b68d047",
@@ -7607,7 +7628,8 @@
                   },
                   "source": {
                     "id": "9e93027a-f522-b372-abf8-0548a4389f29"
-                  }
+                  },
+                  "demo": "V6TemplatesNgclass2DemoComponent"
                 },
                 {
                   "id": "f5c91c71-0219-c214-536b-215b199e7355",
@@ -7618,6 +7640,20 @@
                   "text": {
                     "id": "c1acb540-7d7a-437d-c364-973ec908a74a"
                   }
+                },
+                {
+                  "id": "1d7326e5-b193-b212-8405-cfd2eeb65e21",
+                  "type": "demo",
+                  "head": {
+                    "id": "a68fbe1b-82a5-1ed6-75ab-77cd5c7ee5cf"
+                  },
+                  "text": {
+                    "id": "bfcefa68-e289-97bf-0932-ce6ae3bed7d6"
+                  },
+                  "source": {
+                    "id": "671642e4-3b66-26e1-0240-c54022973bb5"
+                  },
+                  "demo": "V6TemplatesNgclass3DemoComponent"
                 }
               ],
               "title": {
@@ -7659,7 +7695,8 @@
                   },
                   "source": {
                     "id": "f46baeaa-7f05-50a3-c1c8-9ae8428f991c"
-                  }
+                  },
+                  "demo": "V6TemplateStyle1DemoComponent"
                 },
                 {
                   "id": "1a3d21bc-c96d-9114-483a-69d07ba6c285",
@@ -7682,7 +7719,8 @@
                   },
                   "source": {
                     "id": "d1ea6647-a897-592d-cfe7-7245fdb4d8c1"
-                  }
+                  },
+                  "demo": "V6TemplateStyle2DemoComponent"
                 },
                 {
                   "id": "a97c5436-2308-b9cc-942e-698bace4d3f1",
@@ -7724,17 +7762,8 @@
                   },
                   "source": {
                     "id": "c304287d-432d-c636-c689-138f8506a092"
-                  }
-                },
-                {
-                  "id": "5c792d02-7277-5f07-53d0-1b76fc2151ea",
-                  "type": "text",
-                  "head": {
-                    "id": "543bd396-bcaf-807b-c1f1-fd097a1cb3b6"
                   },
-                  "text": {
-                    "id": "69e066df-14d3-e306-cb2b-b69da4b0b59c"
-                  }
+                  "demo": "V6TemplatesNgstyleDemoComponent"
                 }
               ],
               "title": {
@@ -7806,13 +7835,17 @@
                 },
                 {
                   "id": "3f671af9-b6fe-6968-6644-22a3d52280df",
-                  "type": "text",
+                  "type": "demo",
                   "head": {
                     "id": "bc65418f-1951-1978-6dcc-cd70be2979d6"
                   },
                   "text": {
                     "id": "cd60837e-b704-8547-a53a-e458c9a183ff"
-                  }
+                  },
+                  "source": {
+                    "id": "24ca24a4-d906-f911-5e58-c96afe0a3c79"
+                  },
+                  "demo": "V6TemplatesOutputDemoComponent"
                 },
                 {
                   "id": "235b3527-cc33-9630-8219-b8b1a8ba4138",
@@ -7854,7 +7887,8 @@
                   },
                   "source": {
                     "id": "efd5c11d-e312-b806-a5a6-4090018a3970"
-                  }
+                  },
+                  "demo": "V6TemplatesPseudoEventsDemoComponent"
                 },
                 {
                   "id": "55ceca5d-961e-f2c5-0b72-c6036c53fcc0",
@@ -7895,16 +7929,6 @@
                   }
                 },
                 {
-                  "id": "725278bf-741f-21b8-b3a6-09624f3003a6",
-                  "type": "text",
-                  "head": {
-                    "id": "e99c5e1e-8c53-0d6e-6bbf-43458a452bf3"
-                  },
-                  "text": {
-                    "id": "204ad1f1-19c3-6a17-f94b-0a96d1e7b296"
-                  }
-                },
-                {
                   "id": "770e2f21-82b2-92f7-9cb0-f0a60e9816d3",
                   "type": "demo",
                   "head": {
@@ -7915,7 +7939,27 @@
                   },
                   "source": {
                     "id": "534de4c3-55fb-a373-98c1-cef829f7fdfd"
-                  }
+                  },
+                  "demo": "V6TemplatesTouchEventsDemoComponent"
+                },
+                {
+                  "id": "64de618c-c707-b205-e741-2941af2696cb",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "ad7ec550-451b-7735-169a-a02256319a24"
+                  },
+                  "text": {
+                    "id": "10ddc185-3566-813f-12cc-fd6736dbbc7c"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "9ad65e7c-b058-0623-db62-69cfb2c6266a"
+                      },
+                      "url": "https://blog.angularindepth.com/gestures-in-an-angular-application-dde71804c0d0",
+                      "lang": "en"
+                    }
+                  ]
                 }
               ],
               "title": {
@@ -7947,7 +7991,8 @@
                   },
                   "source": {
                     "id": "22054464-dd2c-2ab0-0fad-4d7080ab0fa6"
-                  }
+                  },
+                  "demo": "V6TemplatesTwoWayDemoComponent"
                 },
                 {
                   "id": "7aba8671-d32c-5f7f-f724-6051566220e8",
@@ -7989,7 +8034,8 @@
                   },
                   "source": {
                     "id": "0c28e440-74a7-62cb-1fee-969daebf5411"
-                  }
+                  },
+                  "demo": "V6TemplatesNgmodel1DemoComponent"
                 },
                 {
                   "id": "30583de1-4559-d2df-a0c0-a243b1a7f47d",
@@ -8022,7 +8068,8 @@
                   },
                   "source": {
                     "id": "4b04f753-b63b-aa80-aa23-f836357d785d"
-                  }
+                  },
+                  "demo": "V6TemplatesNgmodel2DemoComponent"
                 }
               ],
               "title": {
@@ -8282,6 +8329,14 @@
                 "id": "2f6b0a5e-e1c8-8781-bb6c-b9f551a2d345"
               },
               "url": "ngswitch-directive"
+            },
+            {
+              "id": "be545b36-dcdc-2122-cb68-2cb76226b35e",
+              "entries": [],
+              "title": {
+                "id": "dd2174b9-9aca-f20c-6a93-d1ba94f93a69"
+              },
+              "url": "ngplural-directive"
             },
             {
               "id": "240a820f-3702-d71e-4bb7-8a935d5899ca",
@@ -14060,7 +14115,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "The Angular CLI is a tool to initialize, develop, scaffold and maintain Angular applications\n\nHere you can find list of Angular CLI commands and features.\n\n\n## Additional information\n\nExample of hints and tutorials links. You can switch off these panels in the sidebar."
+              "text": "This easy Angular CLI reference for developers describes commands, features and Schematics.\n\n\n## Additional information\n\nExample of hints and tutorials links. You can switch off these panels in the sidebar."
             },
             {
               "lang": "ru",
@@ -24701,7 +24756,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Angular templates reference.\n"
+              "text": "This easy Angular reference for developers describes templates syntax and built-in directives and pipes.\n"
             }
           ]
         },
@@ -25701,7 +25756,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "An Input property is a settable property annotated with an `@Input` decorator. Values flow into the property when it is data bound with a property binding."
+              "text": "An Input property is a settable property annotated with an `@Input` decorator. Values flow into the property when it is data bound with a property binding.\n\n```typescript\n@Input() testInput: string;\n```"
             }
           ]
         },
@@ -25711,7 +25766,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "### Directive\n\nSetting a property of a directive (the same machanic for components):"
+              "text": "Setting a property of a directive (the same mechanic for components):"
             }
           ]
         },
@@ -25721,7 +25776,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Alternatively, you can identify members in the inputs array of the directive metadata:\n\n```typescript\n@Component({\n  inputs: ['test'],\n})\n```\n"
+              "text": "Alternatively, you can identify members in the inputs array of the directive metadata:\n\n```typescript\n@Directive({\n  ...\n  inputs: ['message'],\n})\nexport class ClickAlertDirective {\n  message: string;\n}\n```\n"
             }
           ]
         },
@@ -25891,7 +25946,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```html\n<!-- reset/override all class names with a binding  -->\n<div class=\"bad curly special\"\n     [class]=\"badCurly\">\n  Bad curly\n</div>\n```"
+              "text": "```html\n<div class=\"bold italic red\"\n     [class]=\"textClass\">\n  Demo text\n</div>\n```\n\n```typescript\nexport class AppComponent {\n  textClass = 'bold italic';\n}\n```"
             }
           ]
         },
@@ -25911,7 +25966,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```html\n<!-- toggle the \"special\" class on/off with a property -->\n<div [class.special]=\"isSpecial\">\n  The class binding is special\n</div>\n\n<!-- binding to `class.special` trumps the class attribute -->\n<div class=\"special\"\n     [class.special]=\"!isSpecial\">\n  This one is not so special\n</div>\n```"
+              "text": "```html\n<div [class.special]=\"isSpecial\">\n  The class binding is special\n</div>\n\n<div class=\"special\"\n     [class.special]=\"!isSpecial\">\n  This one is not so special\n</div>\n```\n\n```typescript\nexport class AppComponent {\n  isSpecial = true;\n}\n```"
             }
           ]
         },
@@ -25931,7 +25986,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "You typically control how elements appear by adding and removing CSS classes dynamically. You can bind to the `ngClass` to add or remove several classes simultaneously.\n\nTry binding `ngClass` to a `key:value` control object. Each key of the object is a CSS class name; its value is `true` if the class should be added, `false` if it should be removed."
+              "text": "Adds and removes CSS classes on an HTML element.\n\nThe CSS classes are updated depending on the type of the expression evaluation."
             }
           ]
         },
@@ -25941,7 +25996,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "DEMO WITH STRINGS ARRAY"
+              "text": "### Array\n\nThe CSS classes declared as Array elements are added."
             }
           ]
         },
@@ -25951,7 +26006,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```html\n<div [ngClass]=\"{class1: true, class2: false}\">\n  This div is initially saveable, unchanged, and special\n</div>\n```"
+              "text": "```html\n<div [ngClass]=\"'bold italic'\">\n  Text in this div is bold and italic.\n</div>\n```\n"
             }
           ]
         },
@@ -25961,7 +26016,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "DEMO WITH STRING VALUES?\nCHECK OUT THE SOURCES"
+              "text": "### Object\n\nKeys are CSS classes that get added when the expression given in the value evaluates to a truthy value, otherwise they are removed."
             }
           ]
         },
@@ -25971,7 +26026,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "You can set inline styles dynamically, based on the state of the component. With `NgStyle` you can set many inline styles simultaneously.\n\nTry binding `ngStyle` to a key:value control object. Each key of the object is a style name; its value is whatever is appropriate for that style."
+              "text": "Update an HTML element styles.\n\nThe styles are updated according to the value of the expression evaluation:\n  - keys are style names with an optional `.<unit>` suffix (ie 'top.px', 'font-style.em'),\n  - values are the values assigned to those properties (expressed in the given unit)."
             }
           ]
         },
@@ -25981,7 +26036,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```html\n<div [ngStyle]=\"{color: 'white', background: 'red'}\">\n  This div is initially italic, normal weight, and extra large (24px).\n</div>\n```"
+              "text": "```html\n<div [ngStyle]=\"{'font-size.px': 20, color: 'white', background: 'red'}\">\n  Text in this div is 20px size, white color on red background.\n</div>\n```"
             }
           ]
         },
@@ -26001,7 +26056,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```html\n<div [ngClass]=\"['one', 'two']\"></div>\n```"
+              "text": "```html\n<div [ngClass]=\"['bold', 'italic']\">\n  Text in this div is bold and italic.\n</div>\n```"
             }
           ]
         },
@@ -26341,7 +26396,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "An Output property is an observable property annotated with an `@Output` decorator. The property almost always returns an Angular `EventEmitter`. Values flow out of the component as events bound with an event binding."
+              "text": "An Output property is an observable property annotated with an `@Output` decorator. The property almost always returns an Angular `EventEmitter`. Values flow out of the component as events bound with an event binding.\n\n```typescript\n@Output() testEvent = new EventEmitter<any>();\n```"
             }
           ]
         },
@@ -26351,17 +26406,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "#### Example\n\n```typescript\n@Output() testEvent = new EventEmitter<any>();\n```\n\nAlternatively, you can identify members in the outputs array of the directive metadata, as in this example:\n\n```typescript\n@Component({\n  outputs: ['testEvent'],\n})\n```"
-            }
-          ]
-        },
-        {
-          "id": "cd60837e-b704-8547-a53a-e458c9a183ff",
-          "context": "Entry text",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "DEMO HERE"
+              "text": "Alternatively, you can identify members in the outputs array of the directive metadata, as in this example:\n\n```typescript\n@Component({\n  ...\n  outputs: ['test'],\n})\nexport class TestOutputComponent {\n  test = new EventEmitter();\n}\n```"
             }
           ]
         },
@@ -26391,7 +26436,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```html\n<input (keyup.enter)='...responds to enter...' />\n<input (keydown.esc)='...responds to escape...' />\n<input (keyup.shift.f)='...responds to shift+f...' />\n```\n"
+              "text": "```html\n<input (keyup.enter)=\"enterHandler()\">\n<input (keydown.esc)=\"escHandler()\">\n<input (keyup.shift.f)=\"shiftFHandler()\">\n```\n\n```typescript\nexport class AppComponent {\n  enterHandler() {\n    alert('Enter pressed!');\n  }\n\n  escHandler() {\n    alert('ESC pressed!');\n  }\n\n  shiftFHandler() {\n    alert('Shift+F pressed!');\n  }\n}\n```\n"
             }
           ]
         },
@@ -26411,7 +26456,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Angular supports [Hammer.JS](https://hammerjs.github.io/) gestures. \n\nYou only need to install Hammer.JS:\n\n```\nnpm install hammerjs\n```\n\nAnd then import to `main.ts` file:\n\n```\nimport 'hammerjs';\n```"
+              "text": "Angular supports [Hammer.JS](https://hammerjs.github.io/) gestures. \n\nYou only need to install Hammer.JS:\n\n```\nnpm install hammerjs\n```\n\nAnd then import to `main.ts` file:\n\n```\nimport 'hammerjs';\n```\n\nAfter that you will be able to bind gesture events."
             }
           ]
         },
@@ -26421,7 +26466,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "HAMMER HS DEMO"
+              "text": "```html\n<div (swipe)=\"swipeHandler()\">\n  Swipe me!\n</div>\n```\n\n```typescript\nexport class AppComponent {\n  swipeHandler() {\n    alert('Swipe handled!');\n  }\n}\n```"
             }
           ]
         },
@@ -26431,7 +26476,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "After that you will be able to bind gesture events:\n\n* `(pan)`\n  - `(panstart)`\n  - `(panmove)`\n  - `(panend)`\n  - `(pancancel)`\n  - `(panleft)`\n  - `(panright)`\n  - `(panup)`\n  - `(pandown)`\n* `(pinch)`\n  * `(pinchstart)`\n  * `(pinchmove)`\n  * `(pinchend)`\n  * `(pinchcancel)`\n  * `(pinchin)`\n  * `(pinchout)`\n* `(press)`\n  * `(pressup)`\n* `(rotate)`\n  * `(rotatestart)`\n  * `(rotatemove)`\n  * `(rotateend)`\n  * `(rotatecancel)`\n* `(swipe)`\n  * `(swipeleft)`\n  * `(swiperight)`\n  * `(swipeup)`\n  * `(swipedown)`\n* `(tap)`"
+              "text": "\n\n* `(pan)`\n  - `(panstart)`\n  - `(panmove)`\n  - `(panend)`\n  - `(pancancel)`\n  - `(panleft)`\n  - `(panright)`\n  - `(panup)`\n  - `(pandown)`\n* `(pinch)`\n  * `(pinchstart)`\n  * `(pinchmove)`\n  * `(pinchend)`\n  * `(pinchcancel)`\n  * `(pinchin)`\n  * `(pinchout)`\n* `(press)`\n  * `(pressup)`\n* `(rotate)`\n  * `(rotatestart)`\n  * `(rotatemove)`\n  * `(rotateend)`\n  * `(rotatecancel)`\n* `(swipe)`\n  * `(swipeleft)`\n  * `(swiperight)`\n  * `(swipeup)`\n  * `(swipedown)`\n* `(tap)`"
             }
           ]
         },
@@ -26451,7 +26496,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```\nimport { Component, EventEmitter, Input, Output } from '@angular/core';\n \n@Component({\n  selector: 'app-sizer',\n  template: `\n  <div>\n    <button (click)=\"dec()\" title=\"smaller\">-</button>\n    <button (click)=\"inc()\" title=\"bigger\">+</button>\n    <label [style.font-size.px]=\"size\">FontSize: {{size}}px</label>\n  </div>`\n})\nexport class SizerComponent {\n  @Input()  size: number | string;\n  @Output() sizeChange = new EventEmitter<number>();\n \n  dec() { this.resize(-1); }\n  inc() { this.resize(+1); }\n \n  resize(delta: number) {\n    this.size = Math.min(40, Math.max(8, +this.size + delta));\n    this.sizeChange.emit(this.size);\n  }\n}\n```"
+              "text": "##### sizer.component.html\n\n```html\n<button (click)=\"dec()\" title=\"smaller\">-</button>\n<button (click)=\"inc()\" title=\"bigger\">+</button>\n```\n\n##### sizer.component.ts\n\n```\nexport class SizerComponent {\n  @Input() size: number;\n\n  @Output() sizeChange = new EventEmitter<number>();\n \n  dec() { \n    this.resize(-1); \n  }\n\n  inc() { \n    this.resize(+1); \n  }\n \n  resize(delta: number) {\n    this.size = this.size + delta;\n    this.sizeChange.emit(this.size);\n  }\n}\n```\n\n##### app.component.html\n\n```html\n<sizer [(size)]=\"size\"></sizer>\n<label [style.font-size.px]=\"size\">FontSize: {{size}}px</label>\n```\n\n##### app.component.ts\n\n```typescript\nexport class AppComponent {\n  size = 13;\n}\n```"
             }
           ]
         },
@@ -26481,7 +26526,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```\n<input [(ngModel)]=\"currentHero.name\">\n```\n"
+              "text": "```html\n<input [(ngModel)]=\"name\">\n{{ name }}\n```\n"
             }
           ]
         },
@@ -26511,7 +26556,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```\n<input\n  [ngModel]=\"currentHero.name\"\n  (ngModelChange)=\"setUppercaseName($event)\">\n```"
+              "text": "```html\n<input [ngModel]=\"name\"\n       (ngModelChange)=\"setUppercaseName($event)\">\n{{ name }}\n```\n\n```typescript\nexport class AppComponent {\n  name: string;\n\n  setUppercaseName(name: string) {\n    this.name = name.toUpperCase();\n  }\n}\n```"
             }
           ]
         },
@@ -27742,6 +27787,66 @@
             {
               "lang": "en",
               "text": "When not supplied, uses the value of `LOCALE_ID`, which is `en-US` by default. See [Setting your app locale](https://angular.io/guide/i18n#setting-up-the-locale-of-your-app)."
+            }
+          ]
+        },
+        {
+          "id": "85ec8785-f2a6-481d-e612-9ea5fb5cc5cd",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "### String\n\nThe CSS classes listed in the string (space delimited) are added."
+            }
+          ]
+        },
+        {
+          "id": "671642e4-3b66-26e1-0240-c54022973bb5",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<div [ngClass]=\"{bold: true, italic: false}\">\n  Text in this div is bold and not italic.\n</div>\n```"
+            }
+          ]
+        },
+        {
+          "id": "6e74a12b-a9e5-abbd-5d9d-2fce2afc7171",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "*ngPlural"
+            }
+          ]
+        },
+        {
+          "id": "dd2174b9-9aca-f20c-6a93-d1ba94f93a69",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "*ngPlural directive"
+            }
+          ]
+        },
+        {
+          "id": "24ca24a4-d906-f911-5e58-c96afe0a3c79",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "##### test-output.component.html\n\n```html\n<button (click)=\"emitTest()\">Click me!</button>\n```\n\n##### test-output.component.ts\n\n```typescript\n@Component({\n  selector: 'test-output',\n  ...\n})\nexport component TestOutputComponent {\n  @Output() test = new EventEmitter();\n\n  emitTest() {\n    this.test.emit('test');\n  }\n}\n```\n\n##### app.component.html\n\n```html\n<test-output (test)=\"handleTest($event)\"></test-output>\n```\n\n##### app.component.ts\n\n```typescript\nexport class AppComponent {\n  handleTest(value) {\n    alert(`Test event handled with value: ${value}`);\n  }\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "9ad65e7c-b058-0623-db62-69cfb2c6266a",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Gestures in an Angular Application"
             }
           ]
         }
