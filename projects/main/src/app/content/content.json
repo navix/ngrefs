@@ -2687,6 +2687,16 @@
                   "paramType": "boolean"
                 },
                 {
+                  "id": "7f08e3a5-ee7e-7574-d309-c65e46a07f68",
+                  "type": "hint",
+                  "head": {
+                    "id": "e509d77d-4635-6e54-4adc-77d24cacc8cd"
+                  },
+                  "text": {
+                    "id": "096ad8b5-141c-46f5-4971-5fd0757b730e"
+                  }
+                },
+                {
                   "id": "0919b234-61e0-d3d1-2a61-e349ccf49ad8",
                   "type": "tutorials",
                   "head": {
@@ -27847,6 +27857,16 @@
             {
               "lang": "en",
               "text": "Gestures in an Angular Application"
+            }
+          ]
+        },
+        {
+          "id": "096ad8b5-141c-46f5-4971-5fd0757b730e",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "View generated stats:\n* `npm install -g webpack-bundle-analyzer`\n* `webpack-bundle-analyzer dist/stats.json`"
             }
           ]
         }

@@ -26,7 +26,8 @@
             "assets": [
               "projects/main/src/favicon.ico",
               "projects/main/src/assets",
-              "projects/main/src/robots.txt"
+              "projects/main/src/robots.txt",
+              "projects/main/src/sitemap.xml"
             ],
             "styles": [
               "projects/main/src/styles/main.scss",
