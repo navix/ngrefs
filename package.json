@@ -12,7 +12,7 @@
     "main:server:serve": "node ./dist/server",
     "main:docker:build": "docker build -t dhub.nvx.me:443/ngrefs-main .",
     "main:docker:push": "docker push dhub.nvx.me:443/ngrefs-main",
-    "main:deploy": "npm run clean && main:sitemap && npm run main:build && npm run main:server:build && npm run main:server:bundle && npm run main:docker:build && npm run main:docker:push",
+    "main:deploy": "npm run clean && npm run main:sitemap && npm run main:build && npm run main:server:build && npm run main:server:bundle && npm run main:docker:build && npm run main:docker:push",
     "editor:serve": "ng run editor:serve"
   },
   "private": true,

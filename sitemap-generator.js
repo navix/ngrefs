@@ -6,7 +6,11 @@ const content = require('./projects/main/src/app/content/content');
 
 const root = 'https://ngrefs.com';
 const sitemap = {
-  urlset: [
+  _name: 'urlset',
+  _attrs: {
+    'xmlns': 'http://www.sitemaps.org/schemas/sitemap/0.9',
+  },
+  _content: [
     {
       url: {
         loc: root,
@@ -19,7 +23,7 @@ const sitemap = {
 
 content.versions.forEach(version => {
   version.langs.forEach(lang => {
-    sitemap.urlset.push({
+    sitemap._content.push({
       url: {
         loc: `${root}/${lang}/${version.url}`,
         priority: 0.9,
@@ -32,7 +36,7 @@ content.versions.forEach(version => {
     .forEach(section => {
       section.pages.forEach(page => {
         version.langs.forEach(lang => {
-          sitemap.urlset.push({
+          sitemap._content.push({
             url: {
               loc: `${root}/${lang}/${version.url}/${section.url}/${page.url}`,
               priority: 0.8,
@@ -44,6 +48,11 @@ content.versions.forEach(version => {
     });
 });
 
-fs.outputFileSync(path.resolve('./projects/main/src/sitemap.xml'), toXML(sitemap));
+fs.outputFileSync(
+  path.resolve('./projects/main/src/sitemap.xml'),
+  toXML(sitemap, {
+    header: '<?xml version="1.0" encoding="UTF-8"?>',
+  })
+);
 
 console.log('Sitemap generated!');
