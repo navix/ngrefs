@@ -1,0 +1,8 @@
+<div *ngIf="isActive">
+  This text is displayed when active.
+</div>
+<div *ngIf="!isActive">
+  This text is displayed when not active.
+</div>
+
+<label><input type="checkbox" [(ngModel)]="isActive">Is active</label>

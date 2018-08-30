@@ -8389,7 +8389,8 @@
                   },
                   "source": {
                     "id": "66eaf802-b8bd-d098-db0d-05988b4f9282"
-                  }
+                  },
+                  "demo": "V6TemplatesNgif1DemoComponent"
                 },
                 {
                   "id": "aae0a71c-2070-ecab-9f7f-efb7af64bbdf",
@@ -8402,14 +8403,76 @@
                   }
                 },
                 {
-                  "id": "ccda16a8-7105-b4db-5743-77b5f5db78c6",
+                  "id": "1f41247b-5d42-b0ab-6ec3-e38a40e1e3d1",
                   "type": "text",
                   "head": {
-                    "id": "d51f7ec4-0e0d-9a32-4d16-3f9fca94bc19"
+                    "id": "9f69ed99-5592-9013-ba37-ac1eca5f3670"
                   },
                   "text": {
-                    "id": "1ed12bca-649c-2984-989b-a2ca649fe7a8"
+                    "id": "34d8cb2e-95f4-bb15-d9a4-412e68099c90"
                   }
+                },
+                {
+                  "id": "de91a481-4a04-c0f7-025b-58ea34369d34",
+                  "type": "demo",
+                  "head": {
+                    "id": "0defc058-63fc-c7e2-9e70-f0d5c9692d57"
+                  },
+                  "text": {
+                    "id": "69951b4b-6d2c-ae69-caf7-6abcd69b3446"
+                  },
+                  "source": {
+                    "id": "0b868734-5654-bd49-bada-72560f9ed6b2"
+                  },
+                  "demo": "V6TemplatesNgif2DemoComponent"
+                },
+                {
+                  "id": "c480b6cd-5419-194d-b513-9f9368ed49bf",
+                  "type": "text",
+                  "head": {
+                    "id": "37eb8aef-e327-c25b-cf89-2ea1d10c7ee4"
+                  },
+                  "text": {
+                    "id": "f7bd65c2-889d-aaaa-f920-622de20a402f"
+                  }
+                },
+                {
+                  "id": "d546eb01-1ab6-3172-861e-a1a7e22f0633",
+                  "type": "demo",
+                  "head": {
+                    "id": "15b34c9a-1e1b-2305-2631-4a39eb97e5fb"
+                  },
+                  "text": {
+                    "id": "5f4a1170-d640-ad1c-9219-aae2266854ab"
+                  },
+                  "source": {
+                    "id": "cd9e2bd2-bb5a-eaaa-eab7-a1ddf598c9e3"
+                  },
+                  "demo": "V6TemplatesNgif3DemoComponent"
+                },
+                {
+                  "id": "cc4c7bba-b66b-a550-8af1-7609f771e6d8",
+                  "type": "text",
+                  "head": {
+                    "id": "731e1055-7aee-564d-84c5-3d5efe313601"
+                  },
+                  "text": {
+                    "id": "70dbf275-0eae-5e08-3698-f6d89f672a84"
+                  }
+                },
+                {
+                  "id": "93b0eb08-c42c-6d20-9990-3905269fb799",
+                  "type": "demo",
+                  "head": {
+                    "id": "924a4c4d-122a-9ded-8b3c-4a4f2c894474"
+                  },
+                  "text": {
+                    "id": "7a014242-4071-5ed8-9abe-e3c9cbac0f0c"
+                  },
+                  "source": {
+                    "id": "a717d537-71ff-f523-29e3-07e708a163a9"
+                  },
+                  "demo": "V6TemplatesNgif4DemoComponent"
                 }
               ],
               "title": {
@@ -8513,14 +8576,23 @@
                   }
                 },
                 {
-                  "id": "d3592c45-895c-8c04-a51e-50e13437fad1",
-                  "type": "text",
+                  "id": "93f91bda-8b3d-bb48-8444-9e3b095e699a",
+                  "type": "tutorials",
                   "head": {
-                    "id": "1a1d1bac-eb9e-e472-37b1-ff46230f0d2f"
+                    "id": "7e3235a1-a455-6b43-d955-07dd79cfaa45"
                   },
                   "text": {
-                    "id": "03b193cb-1c90-a4c8-70bb-04e728cacffc"
-                  }
+                    "id": "8d0f37ef-7102-e11d-4aea-f4112e82662c"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "438e0a6f-1957-7a43-53a6-d98eceaba293"
+                      },
+                      "url": "https://netbasal.com/angular-2-improve-performance-with-trackby-cc147b5104e5",
+                      "lang": "en"
+                    }
+                  ]
                 }
               ],
               "title": {
@@ -8553,16 +8625,6 @@
                   "source": {
                     "id": "52582ee4-d2da-c5b2-50f3-ab1bc19f495a"
                   }
-                },
-                {
-                  "id": "59f67c06-1b52-d0ca-cc8f-28817bc04505",
-                  "type": "text",
-                  "head": {
-                    "id": "ef9a273c-c8a5-4c29-385e-fe285d51bdf3"
-                  },
-                  "text": {
-                    "id": "9a93898c-b1a4-5293-2f31-041f05525d0e"
-                  }
                 }
               ],
               "title": {
@@ -8572,7 +8634,28 @@
             },
             {
               "id": "be545b36-dcdc-2122-cb68-2cb76226b35e",
-              "entries": [],
+              "entries": [
+                {
+                  "id": "32a040a5-5318-c3b9-27b6-4cf1d6cda243",
+                  "type": "text",
+                  "head": {
+                    "id": "504e503b-470a-292a-444c-fe24075f3ab1"
+                  },
+                  "text": {
+                    "id": "ac4d5e99-879d-7f52-efc2-5e6274e6bc75"
+                  }
+                },
+                {
+                  "id": "8445b3a6-75f5-85f9-9b26-319848f26b62",
+                  "type": "text",
+                  "head": {
+                    "id": "d251e334-03a3-3cda-77df-2ef698e59173"
+                  },
+                  "text": {
+                    "id": "4309f922-092a-7f87-c2a0-edb081c98c1b"
+                  }
+                }
+              ],
               "title": {
                 "id": "dd2174b9-9aca-f20c-6a93-d1ba94f93a69"
               },
@@ -8612,16 +8695,6 @@
                   },
                   "text": {
                     "id": "4e9f5890-3d50-f170-2b86-7bc4eb277071"
-                  }
-                },
-                {
-                  "id": "00cf1760-8298-8e25-efe9-5e6ce143c189",
-                  "type": "text",
-                  "head": {
-                    "id": "f7072d59-994a-d18a-4b86-90ca4c8e5770"
-                  },
-                  "text": {
-                    "id": "56fc85bf-f2fb-57bf-c37d-9becbe2be7a3"
                   }
                 }
               ],
@@ -8678,16 +8751,6 @@
                   "source": {
                     "id": "cba23086-c021-a92b-1a1c-a9dc98f815d1"
                   }
-                },
-                {
-                  "id": "470b2712-83b5-1f38-036d-71a1fce40954",
-                  "type": "text",
-                  "head": {
-                    "id": "6ce18581-f69e-d83e-a75f-2c33b5ca230a"
-                  },
-                  "text": {
-                    "id": "981dc8a7-e2ea-7acf-30de-abad963390b1"
-                  }
                 }
               ],
               "title": {
@@ -8722,14 +8785,53 @@
                   }
                 },
                 {
-                  "id": "6a6b05b5-6370-ddda-e006-7134b6fb00d4",
+                  "id": "1096b87e-330f-bd74-d714-099d8748ce90",
                   "type": "text",
                   "head": {
-                    "id": "e32d24da-5d84-7d94-76f9-a486dc733af2"
+                    "id": "6106f4f8-a331-76dd-bba8-59972631fb1b"
                   },
                   "text": {
-                    "id": "35193d6b-e32c-3ad7-59af-e1bd120f0c21"
+                    "id": "74e4e1c1-efee-b443-7268-13ee7732966e"
                   }
+                },
+                {
+                  "id": "7aa5d552-bf2c-cef8-66da-9079be676fad",
+                  "type": "demo",
+                  "head": {
+                    "id": "9086c441-bf1a-978c-558e-8f4685ef20b4"
+                  },
+                  "text": {
+                    "id": "98e1ac2f-63b9-ff90-ad76-edffeea533c2"
+                  },
+                  "source": {
+                    "id": "638edab6-82a7-94dc-1a8c-204d2bc960d1"
+                  }
+                },
+                {
+                  "id": "fa90df9f-997e-0b3e-3e73-982aa43483e8",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "d8b583d3-11a5-22d4-4287-942d574ad460"
+                  },
+                  "text": {
+                    "id": "adc8c3b2-5fa0-fd79-14ce-b6cfa8c174f4"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "4aae37c8-7d1a-a878-ee27-c354bd261e75"
+                      },
+                      "lang": "en",
+                      "url": "https://blog.angular-university.io/angular-ng-template-ng-container-ngtemplateoutlet/"
+                    },
+                    {
+                      "label": {
+                        "id": "2d5aa8aa-74a6-dea4-fdca-2606e75dea9b"
+                      },
+                      "url": "https://blog.angularindepth.com/use-ng-template-c72852c37fba",
+                      "lang": "en"
+                    }
+                  ]
                 }
               ],
               "title": {
@@ -8761,16 +8863,6 @@
                   },
                   "source": {
                     "id": "d8bd163c-ba8b-e743-d421-608924e2f15e"
-                  }
-                },
-                {
-                  "id": "357a1555-14f6-94ed-de33-c63870462bb2",
-                  "type": "text",
-                  "head": {
-                    "id": "a2b56a02-58d1-c22a-7e86-391528feb594"
-                  },
-                  "text": {
-                    "id": "58c9a526-6f19-cfd0-4cbe-74b4b6fde6ca"
                   }
                 }
               ],
@@ -8839,14 +8931,46 @@
                   }
                 },
                 {
-                  "id": "710f0c70-19bd-62a9-6dae-8c93c45ce6e7",
+                  "id": "b1444004-b72b-9d0d-2897-eb8208e86e3e",
                   "type": "text",
                   "head": {
-                    "id": "f94c415c-c643-1a35-ab81-bcf14b06fe17"
+                    "id": "224a6757-b20b-33fe-4114-ce01a0f61fa2"
                   },
                   "text": {
-                    "id": "5538c68e-4a0f-95cd-49fd-07a08856ccf9"
+                    "id": "723c253e-a15e-473b-08e6-cf46e235cdde"
                   }
+                },
+                {
+                  "id": "0f5c671b-a3ac-b4dd-be46-c253b1542407",
+                  "type": "demo",
+                  "head": {
+                    "id": "df9a2027-5f3d-2519-768f-873c0d2606c3"
+                  },
+                  "text": {
+                    "id": "094551bd-c9ac-6398-cf9a-7adeb010e637"
+                  },
+                  "source": {
+                    "id": "d1b85ff0-be5b-5eb1-f931-964f2448e94d"
+                  }
+                },
+                {
+                  "id": "2a879fde-f6f3-098e-1966-d1b08f8590bb",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "63d46a4a-b24b-48c9-0300-e00e498f50b4"
+                  },
+                  "text": {
+                    "id": "cafede84-59ee-db80-e6fd-ece11e4ef0f3"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "9081a34a-7f60-6595-cd29-68aa3227ea70"
+                      },
+                      "lang": "en",
+                      "url": "https://medium.com/claritydesignsystem/ng-content-the-hidden-docs-96a29d70d11b"
+                    }
+                  ]
                 }
               ],
               "title": {
@@ -8901,14 +9025,36 @@
                   }
                 },
                 {
-                  "id": "c22611d8-d2ca-3a0b-51ec-4daa95da8cd3",
-                  "type": "text",
+                  "id": "f9bd167b-2682-96bc-2e73-c61eb30b1b11",
+                  "type": "demo",
                   "head": {
-                    "id": "fdc9a623-2928-9dc5-102c-d58875d9599f"
+                    "id": "6560d3f8-d5db-f40e-96c4-bacb10f7c638"
                   },
                   "text": {
-                    "id": "ffce1e22-1c3a-9f4c-3335-d4eb735cb129"
+                    "id": "47642074-7abb-d3af-373c-f77f3c82c8ea"
+                  },
+                  "source": {
+                    "id": "3ddf182c-ac35-20c9-f1c8-a9df7e64e2cf"
                   }
+                },
+                {
+                  "id": "355d987b-6bc0-5774-5b06-87409d04e56f",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "5593887a-c83c-a68f-e0ab-6a9f07ce9c81"
+                  },
+                  "text": {
+                    "id": "e810ef8f-78a4-f668-cd94-51771c72c59f"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "8da00292-c964-e837-b657-cceac3450d99"
+                      },
+                      "lang": "en",
+                      "url": "https://netbasal.com/angular-2-take-advantage-of-the-exportas-property-81374ce24d26"
+                    }
+                  ]
                 }
               ],
               "title": {
@@ -9779,14 +9925,37 @@
                   }
                 },
                 {
-                  "id": "5f2c017e-e9d2-363c-e2fa-0352e07a1aa8",
-                  "type": "text",
+                  "id": "f9b41f2f-3223-4baa-1d45-5a5568998742",
+                  "type": "tutorials",
                   "head": {
-                    "id": "e697642b-cee9-bafc-6018-23eb35f076f6"
+                    "id": "94552577-3750-c809-95de-3ee178ebab3b"
                   },
                   "text": {
-                    "id": "37dea856-f072-be02-66ce-22aef5582d35"
-                  }
+                    "id": "87e15ea7-3afe-7c33-ba2b-61a8e66a470e"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "3c50ed15-0e6f-689b-472a-deb8f2f81cb0"
+                      },
+                      "url": "https://angular.io/guide/animations",
+                      "lang": "en"
+                    },
+                    {
+                      "label": {
+                        "id": "97bca401-dc1f-39cb-ea75-ba619498891a"
+                      },
+                      "lang": "en",
+                      "url": "https://alligator.io/angular/animation-angular/"
+                    },
+                    {
+                      "label": {
+                        "id": "d41877c4-57d4-d65f-0656-41fd53442469"
+                      },
+                      "url": "https://www.yearofmoo.com/2017/06/new-wave-of-animation-features.html",
+                      "lang": "en"
+                    }
+                  ]
                 }
               ],
               "title": {
@@ -9808,14 +9977,23 @@
                   }
                 },
                 {
-                  "id": "e0301c0e-ff4d-8ad3-7aff-eb2ba5e48a1b",
-                  "type": "text",
+                  "id": "7b9621a7-b645-f4bc-2c02-fb19db7b2f9e",
+                  "type": "tutorials",
                   "head": {
-                    "id": "b0812f5a-1e96-988b-a033-9a6ba9d80971"
+                    "id": "f47487dd-0d73-ce4f-9eb7-f37053396d07"
                   },
                   "text": {
-                    "id": "2e7c440a-00e8-1007-64c6-050eefe9b0d2"
-                  }
+                    "id": "6037b9c1-e8bb-aae3-a94c-5168b448aba6"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "b46a915e-047c-fdd7-d4e0-372893e4e9e2"
+                      },
+                      "url": "https://teropa.info/blog/2016/12/12/graphics-in-angular-2.html",
+                      "lang": "en"
+                    }
+                  ]
                 }
               ],
               "title": {
@@ -26846,7 +27024,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```html\n<app-hero-detail *ngIf=\"isActive\"></app-hero-detail>\n<app-hero-detail *ngIf=\"!isActive\"></app-hero-detail>\n```"
+              "text": "```html\n<div *ngIf=\"isActive\">\n  This text is displayed when active.\n</div>\n<div *ngIf=\"!isActive\">\n  This text is displayed when not active.\n</div>\n\n<label>\n  <input type=\"checkbox\" [(ngModel)]=\"isActive\">\n  Is active\n</label>\n```\n\n```typescript\nexport class AppComponent {\n  isActive = true;\n}\n```"
             }
           ]
         },
@@ -26856,7 +27034,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "The `ngIf` directive doesn't hide elements with CSS. It adds and removes them physically from the DOM.\n\nWhen the isActive expression returns a truthy value, NgIf adds the HeroDetailComponent to the DOM. When the expression is falsy, NgIf removes the HeroDetailComponent from the DOM, destroying that component and all of its sub-components."
+              "text": "The `ngIf` directive doesn't hide elements with CSS. It adds and removes them physically from the DOM.\n\nWhen the `isActive` expression returns a truthy value, `NgIf` adds the `div` to the DOM. When the expression is falsy, `NgIf` removes the `div` from the DOM, destroying that element."
             }
           ]
         },
@@ -26916,7 +27094,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "### *ngFor with index\n\nThe index property of the `NgForOf` directive context returns the zero-based index of the item in each iteration. You can capture the `index` in a template input variable and use it in the template."
+              "text": "### Local Variables\n\n`NgForOf` provides several exported values that can be aliased to local variables:\n\n- `$implicit: T`: The value of the individual items in the iterable (`ngForOf`).\n- `ngForOf: NgIterable<T>`: The value of the iterable expression. Useful when the expression is more complex then a property access, for example when using the async pipe (`userStreams | async`).\n- `index: number`: The index of the current item in the iterable.\n- `first: boolean`: True when the item is the first item in the iterable.\n- `last: boolean`: True when the item is the last item in the iterable.\n- `even: boolean`: True when the item has an even index in the iterable.\n- `odd: boolean`: True when the item has an odd index in the iterable."
             }
           ]
         },
@@ -26926,7 +27104,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```html\n<div *ngFor=\"let hero of heroes; let i=index\">{{i + 1}} - {{hero.name}}</div>\n```"
+              "text": "```html\n<li *ngFor=\"let user of userObservable | async as users; index as i; first as isFirst\">\n  {{i}}/{{users.length}}. {{user}} <span *ngIf=\"isFirst\">default</span>\n</li>\n```"
             }
           ]
         },
@@ -28111,6 +28289,226 @@
             {
               "lang": "ru",
               "text": "ID: `@angular-devkit/build-angular:extract-i18n`\n\nБилдер для извлечения фраз для перевода."
+            }
+          ]
+        },
+        {
+          "id": "34d8cb2e-95f4-bb15-d9a4-412e68099c90",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "### *ngIf with else\n"
+            }
+          ]
+        },
+        {
+          "id": "0b868734-5654-bd49-bada-72560f9ed6b2",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<div *ngIf=\"isActive; else elseBlock\">\n  This text is displayed when active.\n</div>\n<ng-template #elseBlock>\n  This text is displayed when not active.\n</ng-template>\n\n<label>\n  <input type=\"checkbox\" [(ngModel)]=\"isActive\">\n  Is active\n</label>\n```\n\n```typescript\nexport class AppComponent {\n  isActive = true;\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "f7bd65c2-889d-aaaa-f920-622de20a402f",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "### *ngIf with then/else\n"
+            }
+          ]
+        },
+        {
+          "id": "cd9e2bd2-bb5a-eaaa-eab7-a1ddf598c9e3",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<div *ngIf=\"isActive; then thenBlock else elseBlock\"></div>\n<ng-template #thenBlock>\n  This text is displayed when active.\n</ng-template>\n<ng-template #elseBlock>\n  This text is displayed when not active.\n</ng-template>\n\n<label>\n  <input type=\"checkbox\" [(ngModel)]=\"isActive\">\n  Is active\n</label>\n```\n\n```typescript\nexport class AppComponent {\n  isActive = true;\n}\n```\n"
+            }
+          ]
+        },
+        {
+          "id": "70dbf275-0eae-5e08-3698-f6d89f672a84",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "### *ngIf with as\n\nStore the value locally. Handy when you check value or get it from `async` pipe."
+            }
+          ]
+        },
+        {
+          "id": "a717d537-71ff-f523-29e3-07e708a163a9",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<div *ngIf=\"data?.user as user\">\n  User name: {{ user.name }}\n</div>\n```\n\n```typescript\nexport class AppComponent {\n  data = {\n    user: {\n      name: 'Superman',\n    },\n  };\n}\n```\n"
+            }
+          ]
+        },
+        {
+          "id": "438e0a6f-1957-7a43-53a6-d98eceaba293",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular 2 — Improve performance with trackBy"
+            }
+          ]
+        },
+        {
+          "id": "ac4d5e99-879d-7f52-efc2-5e6274e6bc75",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Adds / removes DOM sub-trees based on a numeric value. Tailored for pluralization.\n\nTo use this directive you must provide a container element that sets the `[ngPlural]` attribute to a switch expression. Inner elements with a `[ngPluralCase]` will display based on their expression:\n- if `[ngPluralCase]` is set to a value starting with `=`, it will only display if the value matches the switch expression exactly,\n- otherwise, the view will be treated as a \"category match\", and will only display if exact value matches aren't found and the value maps to its category for the defined locale."
+            }
+          ]
+        },
+        {
+          "id": "4309f922-092a-7f87-c2a0-edb081c98c1b",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<some-element [ngPlural]=\"value\">\n  <ng-template ngPluralCase=\"=0\">there is nothing</ng-template>\n  <ng-template ngPluralCase=\"=1\">there is one</ng-template>\n  <ng-template ngPluralCase=\"few\">there are a few</ng-template>\n</some-element>\n```"
+            }
+          ]
+        },
+        {
+          "id": "4aae37c8-7d1a-a878-ee27-c354bd261e75",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular ng-template, ng-container and ngTemplateOutlet - The Complete Guide To Angular Templates"
+            }
+          ]
+        },
+        {
+          "id": "2d5aa8aa-74a6-dea4-fdca-2606e75dea9b",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Use <ng-template>"
+            }
+          ]
+        },
+        {
+          "id": "74e4e1c1-efee-b443-7268-13ee7732966e",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "### <ng-template> with *ngTemplateOutlet\n\nSave template to ref and then output with *ngTemplateOutlet directive."
+            }
+          ]
+        },
+        {
+          "id": "638edab6-82a7-94dc-1a8c-204d2bc960d1",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<ng-template #templateRef>Piu</ng-template>\n<div *ngTemplateOutlet=\"templateRef\"></div>\n```"
+            }
+          ]
+        },
+        {
+          "id": "9081a34a-7f60-6595-cd29-68aa3227ea70",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ng-content: The hidden docs"
+            }
+          ]
+        },
+        {
+          "id": "d1b85ff0-be5b-5eb1-f931-964f2448e94d",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<wrapper>\n  <ng-container ngProjectAs=\"counter\">\n    <counter></counter>\n  </ng-container>\n</wrapper>\n```\n\n```html\n<div class=\"box red\">\n      <ng-content></ng-content>\n    </div>\n    <div class=\"box\">\n      <ng-content select=\"counter\"></ng-content>\n    </div>\n```"
+            }
+          ]
+        },
+        {
+          "id": "723c253e-a15e-473b-08e6-cf46e235cdde",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You can define which selector will be used with `<ng-content>`."
+            }
+          ]
+        },
+        {
+          "id": "8da00292-c964-e837-b657-cceac3450d99",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular 2 — Take Advantage Of The exportAs Property"
+            }
+          ]
+        },
+        {
+          "id": "3ddf182c-ac35-20c9-f1c8-a9df7e64e2cf",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@Directive({\n selector: '[tooltip]',\n exportAs: 'tooltip'\n})\n```\n\n```html\n<a tooltip=\"I'm a tooltip!!\" #tooltip=\"tooltip\">I'm a link</a>\n<button (click)=\"tooltip.toggleTooltip()\">Toggle tooltip</button>\n```"
+            }
+          ]
+        },
+        {
+          "id": "3c50ed15-0e6f-689b-472a-deb8f2f81cb0",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular — Animations"
+            }
+          ]
+        },
+        {
+          "id": "97bca401-dc1f-39cb-ea75-ba619498891a",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Introduction to Animations in Angular"
+            }
+          ]
+        },
+        {
+          "id": "d41877c4-57d4-d65f-0656-41fd53442469",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A New Wave of Animation Features in Angular"
+            }
+          ]
+        },
+        {
+          "id": "b46a915e-047c-fdd7-d4e0-372893e4e9e2",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "SVG and Canvas Graphics in Angular 2"
             }
           ]
         }

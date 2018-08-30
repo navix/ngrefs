@@ -13,6 +13,10 @@ import { V6TemplatesInterpolation4DemoComponent } from './v6/v6-templates-interp
 import { V6TemplatesNgclass1DemoComponent } from './v6/v6-templates-ngclass1-demo/v6-templates-ngclass1-demo.component';
 import { V6TemplatesNgclass2DemoComponent } from './v6/v6-templates-ngclass2-demo/v6-templates-ngclass2-demo.component';
 import { V6TemplatesNgclass3DemoComponent } from './v6/v6-templates-ngclass3-demo/v6-templates-ngclass3-demo.component';
+import { V6TemplatesNgif1DemoComponent } from './v6/v6-templates-ngif1-demo/v6-templates-ngif1-demo.component';
+import { V6TemplatesNgif2DemoComponent } from './v6/v6-templates-ngif2-demo/v6-templates-ngif2-demo.component';
+import { V6TemplatesNgif3DemoComponent } from './v6/v6-templates-ngif3-demo/v6-templates-ngif3-demo.component';
+import { V6TemplatesNgif4DemoComponent } from './v6/v6-templates-ngif4-demo/v6-templates-ngif4-demo.component';
 import { V6TemplatesNgmodel1DemoComponent } from './v6/v6-templates-ngmodel1-demo/v6-templates-ngmodel1-demo.component';
 import { V6TemplatesNgmodel2DemoComponent } from './v6/v6-templates-ngmodel2-demo/v6-templates-ngmodel2-demo.component';
 import { V6TemplatesNgstyleDemoComponent } from './v6/v6-templates-ngstyle-demo/v6-templates-ngstyle-demo.component';
@@ -44,4 +48,8 @@ export const demos = {
   'V6TemplatesTwoWayDemoComponent': V6TemplatesTwoWayDemoComponent,
   'V6TemplatesNgmodel1DemoComponent': V6TemplatesNgmodel1DemoComponent,
   'V6TemplatesNgmodel2DemoComponent': V6TemplatesNgmodel2DemoComponent,
+  'V6TemplatesNgif1DemoComponent': V6TemplatesNgif1DemoComponent,
+  'V6TemplatesNgif2DemoComponent': V6TemplatesNgif2DemoComponent,
+  'V6TemplatesNgif3DemoComponent': V6TemplatesNgif3DemoComponent,
+  'V6TemplatesNgif4DemoComponent': V6TemplatesNgif4DemoComponent,
 };

@@ -24,6 +24,10 @@ import { V6TemplatesTouchEventsDemoComponent } from './v6/v6-templates-touch-eve
 import { V6TemplatesTwoWayDemoComponent } from './v6/v6-templates-two-way-demo/v6-templates-two-way-demo.component';
 import { V6TemplatesNgmodel1DemoComponent } from './v6/v6-templates-ngmodel1-demo/v6-templates-ngmodel1-demo.component';
 import { V6TemplatesNgmodel2DemoComponent } from './v6/v6-templates-ngmodel2-demo/v6-templates-ngmodel2-demo.component';
+import { V6TemplatesNgif1DemoComponent } from './v6/v6-templates-ngif1-demo/v6-templates-ngif1-demo.component';
+import { V6TemplatesNgif2DemoComponent } from './v6/v6-templates-ngif2-demo/v6-templates-ngif2-demo.component';
+import { V6TemplatesNgif3DemoComponent } from './v6/v6-templates-ngif3-demo/v6-templates-ngif3-demo.component';
+import { V6TemplatesNgif4DemoComponent } from './v6/v6-templates-ngif4-demo/v6-templates-ngif4-demo.component';
 
 @NgModule({
   imports: [
@@ -54,6 +58,10 @@ import { V6TemplatesNgmodel2DemoComponent } from './v6/v6-templates-ngmodel2-dem
     V6TemplatesTwoWayDemoComponent,
     V6TemplatesNgmodel1DemoComponent,
     V6TemplatesNgmodel2DemoComponent,
+    V6TemplatesNgif1DemoComponent,
+    V6TemplatesNgif2DemoComponent,
+    V6TemplatesNgif3DemoComponent,
+    V6TemplatesNgif4DemoComponent,
   ],
   entryComponents: [
     V6TemplatesDeclarDemoComponent,
@@ -78,6 +86,10 @@ import { V6TemplatesNgmodel2DemoComponent } from './v6/v6-templates-ngmodel2-dem
     V6TemplatesTwoWayDemoComponent,
     V6TemplatesNgmodel1DemoComponent,
     V6TemplatesNgmodel2DemoComponent,
+    V6TemplatesNgif1DemoComponent,
+    V6TemplatesNgif2DemoComponent,
+    V6TemplatesNgif3DemoComponent,
+    V6TemplatesNgif4DemoComponent,
   ],
 })
 export class DemosModule {

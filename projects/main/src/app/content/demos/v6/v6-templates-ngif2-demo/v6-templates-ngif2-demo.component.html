@@ -1,0 +1,8 @@
+<div *ngIf="isActive; else elseBlock">
+  This text is displayed when active.
+</div>
+<ng-template #elseBlock>
+  This text is displayed when not active.
+</ng-template>
+
+<label><input type="checkbox" [(ngModel)]="isActive">Is active</label>
