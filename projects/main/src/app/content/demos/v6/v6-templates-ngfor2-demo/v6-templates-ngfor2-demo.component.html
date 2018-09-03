@@ -1,0 +1,3 @@
+<li *ngFor="let item of itemsObservable | async as items; index as i; first as isFirst">
+  {{i}}/{{items.length}}. {{ item }} <span *ngIf="isFirst">default</span>
+</li>

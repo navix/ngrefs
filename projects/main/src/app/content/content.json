@@ -8504,7 +8504,8 @@
                   },
                   "source": {
                     "id": "b614c972-86ab-cf53-fe73-8db0397339a2"
-                  }
+                  },
+                  "demo": "V6TemplatesNgfor1DemoComponent"
                 },
                 {
                   "id": "25e36fe9-13bc-7704-7bbb-63d8b3c05a13",
@@ -8527,7 +8528,8 @@
                   },
                   "source": {
                     "id": "897e5a57-1c14-071f-46fc-27d3a6ad1540"
-                  }
+                  },
+                  "demo": "V6TemplatesNgfor1DemoComponent"
                 },
                 {
                   "id": "e8ad75a0-91ed-9843-b58f-274425e586e8",
@@ -8550,7 +8552,8 @@
                   },
                   "source": {
                     "id": "910a0a03-9276-3817-d7af-8cfd2e1fb7a7"
-                  }
+                  },
+                  "demo": "V6TemplatesNgfor2DemoComponent"
                 },
                 {
                   "id": "d5178e2a-bb9d-7999-f276-eb1648ad0434",
@@ -8573,7 +8576,8 @@
                   },
                   "source": {
                     "id": "90c17a51-f407-c857-dc26-8c1776bca7e7"
-                  }
+                  },
+                  "demo": "V6TemplatesNgfor3DemoComponent"
                 },
                 {
                   "id": "93f91bda-8b3d-bb48-8444-9e3b095e699a",
@@ -8624,7 +8628,8 @@
                   },
                   "source": {
                     "id": "52582ee4-d2da-c5b2-50f3-ab1bc19f495a"
-                  }
+                  },
+                  "demo": "V6TemplatesSwitchDemoComponent"
                 }
               ],
               "title": {
@@ -8647,13 +8652,17 @@
                 },
                 {
                   "id": "8445b3a6-75f5-85f9-9b26-319848f26b62",
-                  "type": "text",
+                  "type": "demo",
                   "head": {
                     "id": "d251e334-03a3-3cda-77df-2ef698e59173"
                   },
                   "text": {
                     "id": "4309f922-092a-7f87-c2a0-edb081c98c1b"
-                  }
+                  },
+                  "source": {
+                    "id": "477a73c9-f63d-4c00-6f39-6b6c65845508"
+                  },
+                  "demo": "V6TemplatesNgpluralDemoComponent"
                 }
               ],
               "title": {
@@ -8685,7 +8694,8 @@
                   },
                   "source": {
                     "id": "e5a1952b-8449-f77f-6beb-9528ca91b504"
-                  }
+                  },
+                  "demo": "V6TemplatesNgtemplateoutletDemoComponent"
                 },
                 {
                   "id": "efebe3cc-34ad-3b0e-ec95-6e9200c90a3b",
@@ -8718,7 +8728,7 @@
                 },
                 {
                   "id": "028090d8-e22f-1c18-a7ce-9420f04ec538",
-                  "type": "demo",
+                  "type": "text",
                   "head": {
                     "id": "ed0d1734-8b09-43bd-05c0-7963205e1d77"
                   },
@@ -8741,7 +8751,7 @@
                 },
                 {
                   "id": "9d9e713f-63aa-014a-8c1e-4be5dec0d7cf",
-                  "type": "demo",
+                  "type": "text",
                   "head": {
                     "id": "e0122794-2539-4ce2-ed61-43ef2b470f65"
                   },
@@ -8751,6 +8761,32 @@
                   "source": {
                     "id": "cba23086-c021-a92b-1a1c-a9dc98f815d1"
                   }
+                },
+                {
+                  "id": "72f59091-bcda-2b8d-7ccb-0bc4dca0981f",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "d102ed1d-a522-6e82-f2e0-da6615520766"
+                  },
+                  "text": {
+                    "id": "f45709f7-1ea4-ea86-fcb1-a48710789491"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "c3c76c01-4090-5a4c-8f2b-751da25ef47c"
+                      },
+                      "url": "https://medium.com/@symposia/dynamic-component-rendering-in-angular-5-with-ngcomponentoutlet-410bec3ece75",
+                      "lang": "en"
+                    },
+                    {
+                      "label": {
+                        "id": "bb040b0b-742f-e4f5-deb6-000b355e81b5"
+                      },
+                      "url": "https://blog.angularindepth.com/here-is-what-you-need-to-know-about-dynamic-components-in-angular-ac1e96167f9e",
+                      "lang": "en"
+                    }
+                  ]
                 }
               ],
               "title": {
@@ -8782,7 +8818,8 @@
                   },
                   "source": {
                     "id": "7447687a-9dcf-5d12-3369-921a38a1150e"
-                  }
+                  },
+                  "demo": "V6TemplatesNgtemplate1DemoComponent"
                 },
                 {
                   "id": "1096b87e-330f-bd74-d714-099d8748ce90",
@@ -8805,7 +8842,8 @@
                   },
                   "source": {
                     "id": "638edab6-82a7-94dc-1a8c-204d2bc960d1"
-                  }
+                  },
+                  "demo": "V6TemplatesNgtemplate2DemoComponent"
                 },
                 {
                   "id": "fa90df9f-997e-0b3e-3e73-982aa43483e8",
@@ -8854,7 +8892,7 @@
                 },
                 {
                   "id": "d5241d89-c0c2-4571-092d-58a61c0089b7",
-                  "type": "demo",
+                  "type": "text",
                   "head": {
                     "id": "1a6e0724-d5cf-022c-08fa-e2b35c23f773"
                   },
@@ -8895,7 +8933,8 @@
                   },
                   "source": {
                     "id": "b9b5d9b9-7ee4-91d0-5073-ca8e1fcbb2e4"
-                  }
+                  },
+                  "demo": "V6TemplatesNgcontent1DemoComponent"
                 },
                 {
                   "id": "6e03ffe8-b388-658a-e2e1-fdd72886a697",
@@ -8918,7 +8957,8 @@
                   },
                   "source": {
                     "id": "4c51fa7a-6e0a-476a-966c-63c0d20880f5"
-                  }
+                  },
+                  "demo": "V6TemplatesNgcontent2DemoComponent"
                 },
                 {
                   "id": "04421e83-537d-252b-e455-3b5d06f39fdb",
@@ -8951,7 +8991,8 @@
                   },
                   "source": {
                     "id": "d1b85ff0-be5b-5eb1-f931-964f2448e94d"
-                  }
+                  },
+                  "demo": "V6TemplatesNgcontent3DemoComponent"
                 },
                 {
                   "id": "2a879fde-f6f3-098e-1966-d1b08f8590bb",
@@ -9002,7 +9043,8 @@
                   },
                   "source": {
                     "id": "520b89dc-23d5-7ccb-cb6b-9899fa759e70"
-                  }
+                  },
+                  "demo": "V6TemplatesReferenceDemoComponent"
                 },
                 {
                   "id": "bee64252-a902-4476-ea46-182304cf85a2",
@@ -9026,7 +9068,7 @@
                 },
                 {
                   "id": "f9bd167b-2682-96bc-2e73-c61eb30b1b11",
-                  "type": "demo",
+                  "type": "text",
                   "head": {
                     "id": "6560d3f8-d5db-f40e-96c4-bacb10f7c638"
                   },
@@ -9076,16 +9118,13 @@
                   }
                 },
                 {
-                  "id": "a1cc6b2c-d0b7-081e-460b-fa8875b4a80f",
-                  "type": "demo",
+                  "id": "b9903498-9c8d-81e4-3524-d3d34999edd2",
+                  "type": "text",
                   "head": {
-                    "id": "7e37d7bd-66fd-5db3-2a34-12faa30eb183"
+                    "id": "d9e2b435-1f46-9804-8f26-928fb43be438"
                   },
                   "text": {
-                    "id": "d14d8f2f-e895-7111-6f31-2987df9c1fa2"
-                  },
-                  "source": {
-                    "id": "3f5fc0a8-947a-2422-c92e-dee5144c546e"
+                    "id": "2643dab6-951c-a7e7-d7b5-c9100c55034e"
                   }
                 },
                 {
@@ -9099,16 +9138,13 @@
                   }
                 },
                 {
-                  "id": "4f156010-d2a5-b836-239d-a038ea44a142",
-                  "type": "demo",
+                  "id": "ac9a57c6-cbf5-7b23-b6f7-012c9c6153c9",
+                  "type": "text",
                   "head": {
-                    "id": "a58fc6df-8afd-9ae1-210b-719ac043be62"
+                    "id": "4e21dad9-a9a9-99cf-19a9-ff7053df1176"
                   },
                   "text": {
-                    "id": "b54d039a-cbca-6cf6-d668-a49301669803"
-                  },
-                  "source": {
-                    "id": "3414a6f4-20dc-1dfc-53b9-15ac26c8a538"
+                    "id": "f8e60440-c16a-3a68-f0eb-e835ffbcc76a"
                   }
                 },
                 {
@@ -9201,7 +9237,8 @@
                   },
                   "source": {
                     "id": "d7138bd7-f3f2-e65b-8ccb-1c9cce37b1b0"
-                  }
+                  },
+                  "demo": "V6TemplatesKeyvaluepipeDemoComponent"
                 },
                 {
                   "id": "6e699662-a468-4b94-499c-c908394b5132",
@@ -9253,7 +9290,8 @@
                   },
                   "source": {
                     "id": "490484be-1685-962d-7fe7-10fc2e791b08"
-                  }
+                  },
+                  "demo": "V6TemplatesSlicepipe1DemoComponent"
                 },
                 {
                   "id": "728e5b38-c4fb-2191-7de5-5da699cbee4b",
@@ -9276,7 +9314,8 @@
                   },
                   "source": {
                     "id": "ae6a82ef-7e05-2349-d260-be8c6f90e89e"
-                  }
+                  },
+                  "demo": "V6TemplatesSlicepipe2DemoComponent"
                 }
               ],
               "title": {
@@ -9308,17 +9347,34 @@
                   },
                   "source": {
                     "id": "7cb6104c-255d-7569-d058-a29289288985"
-                  }
+                  },
+                  "demo": "V6TemplatesAsyncpipeDemoComponent"
                 },
                 {
-                  "id": "f10eb68e-a6bd-74e5-6b6d-c11e953db9cc",
-                  "type": "text",
+                  "id": "59465130-fe3a-a332-63b7-776fa083ba1b",
+                  "type": "tutorials",
                   "head": {
-                    "id": "fb56d6a6-5bc2-cde1-f57c-7764a0ca8fc2"
+                    "id": "fd893b42-a609-602c-a732-cfd74ef64e5b"
                   },
                   "text": {
-                    "id": "18afb295-1212-2364-a634-5cd5a708167f"
-                  }
+                    "id": "19aa1faa-42e7-f0f3-e511-8ffefb954fd9"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "af2c4777-a5e8-920f-9b9f-4aa151cbeaf5"
+                      },
+                      "url": "https://toddmotto.com/angular-ngif-async-pipe",
+                      "lang": "en"
+                    },
+                    {
+                      "label": {
+                        "id": "6a28dd61-7f3b-acaf-c484-e7935bf55802"
+                      },
+                      "url": "https://blog.thoughtram.io/angular/2017/02/27/three-things-you-didnt-know-about-the-async-pipe.html",
+                      "lang": "en"
+                    }
+                  ]
                 }
               ],
               "title": {
@@ -9350,7 +9406,8 @@
                   },
                   "source": {
                     "id": "6d75900a-1833-baa8-ad7b-59b0c7c34f1a"
-                  }
+                  },
+                  "demo": "V6TemplatesLowercasepipeDemoComponent"
                 }
               ],
               "title": {
@@ -9372,14 +9429,18 @@
                   }
                 },
                 {
-                  "id": "d0494025-9ac2-12f2-bda7-0cc671fb0f98",
-                  "type": "text",
+                  "id": "004c4d34-a51d-af84-1caf-6c0ef8749c1a",
+                  "type": "demo",
                   "head": {
-                    "id": "7ab81e9d-38e1-4d8d-ece0-cf8fde3639f9"
+                    "id": "af481581-691a-1d86-030a-22f4cc5e91b4"
                   },
                   "text": {
-                    "id": "e9bb6d7f-1d8a-59e1-03aa-1665a8af5eaa"
-                  }
+                    "id": "d8cad835-f0cd-b68d-a2f7-573bd8347f6a"
+                  },
+                  "source": {
+                    "id": "0603adda-8c95-994c-da45-8cfec75387fb"
+                  },
+                  "demo": "V6TemplatesUppercasepipeDemoComponent"
                 }
               ],
               "title": {
@@ -9411,7 +9472,8 @@
                   },
                   "source": {
                     "id": "e78054df-fd81-6402-6464-2c32fae90d1a"
-                  }
+                  },
+                  "demo": "V6TemplatesTitlecasepipeDemoComponent"
                 }
               ],
               "title": {
@@ -9443,7 +9505,8 @@
                   },
                   "source": {
                     "id": "c94039d2-db20-f79f-4d33-031261d6ba19"
-                  }
+                  },
+                  "demo": "V6TemplatesDatepipeDemoComponent"
                 },
                 {
                   "id": "ecf0104c-1433-4041-0d11-7cb6c7cb01aa",
@@ -9571,7 +9634,8 @@
                   },
                   "source": {
                     "id": "186999d6-383c-27d0-8704-95e6fdcb5a74"
-                  }
+                  },
+                  "demo": "V6TemplatesCurrencypipeDemoComponent"
                 },
                 {
                   "id": "bfbbde41-dae9-c512-9c57-05f9458a8a72",
@@ -9709,7 +9773,8 @@
                   },
                   "source": {
                     "id": "9c0bd149-2aed-d73e-d17a-2b7a998edac3"
-                  }
+                  },
+                  "demo": "V6TemplatesPercentpipeDemoComponent"
                 },
                 {
                   "id": "5f8a29a7-d78b-50e9-3138-131176b4aeb3",
@@ -9801,7 +9866,8 @@
                   },
                   "source": {
                     "id": "a6dd1b18-6bc3-302b-833b-6e919973441c"
-                  }
+                  },
+                  "demo": "V6TemplatesPluralpipeDemoComponent"
                 }
               ],
               "title": {
@@ -9833,7 +9899,8 @@
                   },
                   "source": {
                     "id": "a68e119a-08ef-69bd-663a-8f6462e2c88b"
-                  }
+                  },
+                  "demo": "V6TemplatesJsonpipeDemoComponent"
                 }
               ],
               "title": {
@@ -9922,7 +9989,8 @@
                   },
                   "source": {
                     "id": "e1171b48-6bf6-b046-3b4d-1a037bcbd817"
-                  }
+                  },
+                  "demo": "V6TemplatesAnimationDemoComponent"
                 },
                 {
                   "id": "f9b41f2f-3223-4baa-1d45-5a5568998742",
@@ -10025,7 +10093,8 @@
                   },
                   "source": {
                     "id": "29528143-2c36-3dd2-6beb-1200ce18c59c"
-                  }
+                  },
+                  "demo": "V6TemplatesNgnonbindableDemoComponent"
                 }
               ],
               "title": {
@@ -25574,7 +25643,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "*ngIf"
+              "text": "ngIf"
             }
           ]
         },
@@ -25584,7 +25653,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "*ngFor"
+              "text": "ngFor"
             }
           ]
         },
@@ -25594,7 +25663,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "*ngSwitch"
+              "text": "ngSwitch"
             }
           ]
         },
@@ -25874,7 +25943,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "*ngTemplateOutlet"
+              "text": "ngTemplateOutlet"
             }
           ]
         },
@@ -25884,7 +25953,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "*ngComponentOutlet"
+              "text": "ngComponentOutlet"
             }
           ]
         },
@@ -26554,7 +26623,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "*ngIf directive"
+              "text": "ngIf directive"
             }
           ]
         },
@@ -26564,7 +26633,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "*ngFor directive"
+              "text": "ngFor directive"
             }
           ]
         },
@@ -26574,7 +26643,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "*ngSwitch directive"
+              "text": "ngSwitch directive"
             }
           ]
         },
@@ -26584,7 +26653,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "*ngTemplateOutlet directive"
+              "text": "ngTemplateOutlet directive"
             }
           ]
         },
@@ -26594,7 +26663,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "*ngComponentOutlet directive"
+              "text": "ngComponentOutlet directive"
             }
           ]
         },
@@ -27064,7 +27133,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```html\n<div *ngFor=\"let hero of heroes\">{{hero.name}}</div>\n```"
+              "text": "```html\n<div *ngFor=\"let item of items\">\n  {{ item }}\n</div>\n```\n\n```typescript\nexport class AppComponent {\n  items = ['One', 'Two', 'Three'];\n}\n```\n"
             }
           ]
         },
@@ -27084,7 +27153,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "<app-hero-detail *ngFor=\"let hero of heroes\" [hero]=\"hero\"></app-hero-detail>\n"
+              "text": "##### app.component.ts\n\n```html\n<my-component *ngFor=\"let item of items\" \n              [item]=\"item\">\n</my-component>\n```\n\n##### app.component.ts\n\n```typescript\nexport class AppComponent {\n  items = ['One', 'Two', 'Three'];\n}\n```\n\n##### my.component.html\n\n```html\n<div>{{ item }}</div> \n```\n\n##### my.component.ts\n\n```typescript\nexport class MyComponent {\n  @Input() item: string;\n}\n```\n\n"
             }
           ]
         },
@@ -27104,7 +27173,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```html\n<li *ngFor=\"let user of userObservable | async as users; index as i; first as isFirst\">\n  {{i}}/{{users.length}}. {{user}} <span *ngIf=\"isFirst\">default</span>\n</li>\n```"
+              "text": "```html\n<li *ngFor=\"let item of itemsObservable | async as items; index as i; first as isFirst\">\n  {{i}}/{{items.length}}. {{ item }} <span *ngIf=\"isFirst\">default</span>\n</li>\n```\n\n```typescript\nexport class AppComponent {\n  itemsObservable = from([['One', 'Two', 'Three']]);\n}\n```\n"
             }
           ]
         },
@@ -27124,7 +27193,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```typescript\ntrackByHeroes(index: number, hero: Hero): number { return hero.id; }\n```\n\n```html\n<div *ngFor=\"let hero of heroes; trackBy: trackByHeroes\">\n  ({{hero.id}}) {{hero.name}}\n</div>\n```\n"
+              "text": "```html\n<div *ngFor=\"let item of items; trackBy: trackById\">\n  ({{item.id}}) {{item.title}}\n</div>\n```\n\n```typescript\nexport class AppComponent {\n  items = [\n    {id: 1, title: 'One'},\n    {id: 2, title: 'Two'},\n    {id: 3, title: 'Three'},\n  ];\n\n  trackById(index: number, item: any): number {\n    return item.id;\n  }\n}\n```\n"
             }
           ]
         },
@@ -27154,7 +27223,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```html\n<div [ngSwitch]=\"currentHero.emotion\">\n  <app-happy-hero    *ngSwitchCase=\"'happy'\"    [hero]=\"currentHero\"></app-happy-hero>\n  <app-sad-hero      *ngSwitchCase=\"'sad'\"      [hero]=\"currentHero\"></app-sad-hero>\n  <app-confused-hero *ngSwitchCase=\"'confused'\" [hero]=\"currentHero\"></app-confused-hero>\n  <app-unknown-hero  *ngSwitchDefault           [hero]=\"currentHero\"></app-unknown-hero>\n</div>\n```"
+              "text": "```html\n<select [(ngModel)]=\"type\">\n  <option [value]=\"1\">First</option>\n  <option [value]=\"2\">Second</option>\n  <option [value]=\"3\">Third</option>\n  <option [value]=\"99\">Other</option>\n</select>\n\n<div [ngSwitch]=\"type\">\n  <div *ngSwitchCase=\"1\">First</div>\n  <div *ngSwitchCase=\"2\">Second</div>\n  <div *ngSwitchCase=\"3\">Third</div>\n  <div *ngSwitchDefault>Default</div>\n</div>\n```"
             }
           ]
         },
@@ -27184,7 +27253,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```typescript\n@Component({\n  selector: 'ng-template-outlet-example',\n  template: `\n    <ng-container *ngTemplateOutlet=\"greet\"></ng-container>\n    <hr>\n    <ng-container *ngTemplateOutlet=\"eng; context: myContext\"></ng-container>\n    <hr>\n    <ng-container *ngTemplateOutlet=\"svk; context: myContext\"></ng-container>\n    <hr>\n    \n    <ng-template #greet><span>Hello</span></ng-template>\n    <ng-template #eng let-name><span>Hello {{name}}!</span></ng-template>\n    <ng-template #svk let-person=\"localSk\"><span>Ahoj {{person}}!</span></ng-template>\n`\n})\nclass NgTemplateOutletExample {\n  myContext = {$implicit: 'World', localSk: 'Svet'};\n}\n```"
+              "text": "```html\n<ng-container *ngTemplateOutlet=\"greet\"></ng-container>\n<hr>\n<ng-container *ngTemplateOutlet=\"eng; context: myContext\"></ng-container>\n<hr>\n<ng-container *ngTemplateOutlet=\"svk; context: myContext\"></ng-container>\n<hr>\n    \n<ng-template #greet>\n  <span>Hello</span>\n</ng-template>\n<ng-template #eng let-name>\n  <span>Hello {{name}}!</span>\n</ng-template>\n<ng-template #svk let-person=\"localSk\">\n  <span>Ahoj {{person}}!</span>\n</ng-template>\n```\n\n```typescript\nexport class AppComponent {\n  myContext = {$implicit: 'World', localSk: 'Svet'};\n}\n```\n"
             }
           ]
         },
@@ -27219,32 +27288,12 @@
           ]
         },
         {
-          "id": "380ece1d-d7cf-d940-399a-e168a1d2600a",
-          "context": "Demo-entry: source",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "```typescript\n@Component({selector: 'hello-world', template: 'Hello World!'})\nclass HelloWorld {\n}\n \n@Component({\n  selector: 'ng-component-outlet-simple-example',\n  template: `<ng-container *ngComponentOutlet=\"HelloWorld\"></ng-container>`\n})\nclass NgTemplateOutletSimpleExample {\n  // This field is necessary to expose HelloWorld to the template.\n  HelloWorld = HelloWorld;\n}\n```"
-            }
-          ]
-        },
-        {
           "id": "737ba2fe-4058-ef5f-29e3-8ab2649ddc13",
           "context": "Entry text",
           "locales": [
             {
               "lang": "en",
               "text": "You can control the component creation process by using the following optional attributes:\n\n* `ngComponentOutletInjector`: Optional custom Injector that will be used as parent for the Component. Defaults to the injector of the current view container.\n* `ngComponentOutletContent`: Optional list of projectable nodes to insert into the content section of the component, if exists.\n* `ngComponentOutletNgModuleFactory`: Optional module factory to allow dynamically loading other module, then load a component from that module."
-            }
-          ]
-        },
-        {
-          "id": "cba23086-c021-a92b-1a1c-a9dc98f815d1",
-          "context": "Demo-entry: source",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "```typescript\n@Injectable()\nclass Greeter {\n  suffix = '!';\n}\n \n@Component({\n  selector: 'complete-component',\n  template: `Complete: <ng-content></ng-content> <ng-content></ng-content>{{ greeter.suffix }}`\n})\nclass CompleteComponent {\n  constructor(public greeter: Greeter) {}\n}\n \n@Component({\n  selector: 'ng-component-outlet-complete-example',\n  template: `\n    <ng-container *ngComponentOutlet=\"CompleteComponent; \n                                      injector: myInjector; \n                                      content: myContent\"></ng-container>`\n})\nclass NgTemplateOutletCompleteExample {\n  // This field is necessary to expose CompleteComponent to the template.\n  CompleteComponent = CompleteComponent;\n  myInjector: Injector;\n \n  myContent = [[document.createTextNode('Ahoj')], [document.createTextNode('Svet')]];\n \n  constructor(injector: Injector) {\n    this.myInjector = ReflectiveInjector.resolveAndCreate([Greeter], injector);\n  }\n}\n```"
             }
           ]
         },
@@ -27299,16 +27348,6 @@
           ]
         },
         {
-          "id": "d8bd163c-ba8b-e743-d421-608924e2f15e",
-          "context": "Demo-entry: source",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "```html\n<p>\n  I turned the corner\n  <ng-container *ngIf=\"hero\">\n    and saw {{hero.name}}. I waved\n  </ng-container>\n  and continued on my way.\n</p>\n```"
-            }
-          ]
-        },
-        {
           "id": "58c9a526-6f19-cfd0-4cbe-74b4b6fde6ca",
           "context": "Entry text",
           "locales": [
@@ -27344,7 +27383,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "``html\n<app-component>\n  Some content\n</app-component>\n```\n\n```typescript\n@Component({\n  selector: 'app-component',\n  template: 'Projected content: <ng-content></ng-content>',\n  ...\n```"
+              "text": "##### app.component.ts\n\n```html\n<my-component>\n  Some content\n</my-component>\n```\n\n##### my.component.ts\n\n```html\nProjected content: <ng-content></ng-content>\n```\n"
             }
           ]
         },
@@ -27364,7 +27403,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```html\n<app-component>\n  <div class=\"primary\">Primary content</div>\n  <div secondary>Secondary content</div>\n  <div>Div content</div>\n  Non selected content.\n</app-component>\n```\n\n```typescript\n@Component({\n  selector: 'app-component',\n  template: `\n    <ng-content></ng-content>\n    Primary content: <ng-content select=\".primary\"></ng-content>\n    Secondary content: <ng-content select=\"[secondary]\"></ng-content>\n    Div content: <ng-content select=\"div\"></ng-content>\n  `,\n  ...\n```"
+              "text": "##### app.component.ts\n\n```html\n<my-component>\n  <div class=\"primary\">Primary content</div>\n  <div secondary>Secondary content</div>\n  <div>Div content</div>\n  Non selected content.\n</my-component>\n```\n\n##### my.component.ts\n\n```html\n<div><ng-content></ng-content></div>\n<div>\n  Primary content: \n  <ng-content select=\".primary\"></ng-content>\n</div>\n<div>\n  Secondary content: \n  <ng-content select=\"[secondary]\"></ng-content>\n</div>\n<div>\n  Div content: \n  <ng-content select=\"div\"></ng-content>\n</div>\n```"
             }
           ]
         },
@@ -27394,7 +27433,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```html\n<input #phone placeholder=\"phone number\">\n\n<!-- lots of other elements -->\n\n<!-- phone refers to the input element; pass its `value` to an event handler -->\n<button (click)=\"callPhone(phone.value)\">Call</button>\n```"
+              "text": "```html\n<input #phone placeholder=\"phone number\">\n\n<!-- phone refers to the input element; pass its `value` to an event handler -->\n<button (click)=\"callPhone(phone.value)\">Call</button>\n```\n\n```typescript\nexport class AppComponent {\n  callPhone(phone: string) {\n    alert(phone);\n  }\n}\n```"
             }
           ]
         },
@@ -27404,7 +27443,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "You can use the ref- prefix alternative to #.\n\n```html\n<input ref-fax placeholder=\"fax number\">\n<button (click)=\"callFax(fax.value)\">Fax</button>\n```"
+              "text": "You can use the `ref-` prefix alternative to `#`.\n\n```html\n<input ref-fax placeholder=\"fax number\">\n<button (click)=\"callFax(fax.value)\">Fax</button>\n```"
             }
           ]
         },
@@ -27444,7 +27483,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```hmtl\n<div>Title through uppercase pipe: {{title | uppercase}}</div>\n```"
+              "text": "```hmtl\n<input [(ngModel)]=\"title\">\n\n```"
             }
           ]
         },
@@ -27464,7 +27503,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```html\n<div>\n  Title through a pipe chain:\n  {{title | uppercase | lowercase}}\n</div>\n```"
+              "text": "```html\n<input [(ngModel)]=\"title\">\n<div>\n  Title through a pipe chain:\n  {{title | uppercase | lowercase}}\n</div>\n```\n"
             }
           ]
         },
@@ -27484,7 +27523,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```html\n<div>Birthdate: {{currentHero?.birthdate | date:'longDate'}}</div>\n```"
+              "text": "```html\nBirthdate: \n{{currentHero?.birthdate | date:'longDate'}}\n```"
             }
           ]
         },
@@ -27504,7 +27543,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "* CUSTOM PIPE EXAMPLE\n* TUTORIALS"
+              "text": "* CUSTOM PIPE EXAMPLE (ADD @PIPE PAGE?)\n* TUTORIALS"
             }
           ]
         },
@@ -27544,7 +27583,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```html\n<div>{{currentHero | json}}</div>\n```"
+              "text": "```html\n<div>{{data | json}}</div>\n```\n\n```typescript\nexport class AppComponent {\n  data = {\n    field: 'value',\n    obj: {\n      innerField: '123',\n    },\n  };\n}\n```"
             }
           ]
         },
@@ -27574,7 +27613,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```html\n@Component({\n  selector: 'keyvalue-pipe',\n  template: `<span>\n    <p>Object</p>\n    <div *ngFor=\"let item of object | keyvalue\">\n      {{item.key}}:{{item.value}}\n    </div>\n    <p>Map</p>\n    <div *ngFor=\"let item of map | keyvalue\">\n      {{item.key}}:{{item.value}}\n    </div>\n  </span>`\n})\nexport class KeyValuePipeComponent {\n  object: {[key: number]: string} = {2: 'foo', 1: 'bar'};\n  map = new Map([[2, 'foo'], [1, 'bar']]);\n}\n```"
+              "text": "```html\n<p>Object</p>\n<div *ngFor=\"let item of object | keyvalue\">\n  {{item.key}}:{{item.value}}\n</div>\n<p>Map</p>\n<div *ngFor=\"let item of map | keyvalue\">\n  {{item.key}}:{{item.value}}\n</div>\n```\n\n```typescript\nexport class AppComponent {\n  object: {[key: number]: string} = {2: 'foo', 1: 'bar'};\n  map = new Map([[2, 'foo'], [1, 'bar']]);\n}\n```"
             }
           ]
         },
@@ -27604,7 +27643,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```typescript\n@Component({\n  selector: 'async-observable-pipe',\n  template: '<div><code>observable|async</code>: Time: {{ time | async }}</div>'\n})\nexport class AsyncObservablePipeComponent {\n  time = new Observable<string>((observer: Observer<string>) => {\n    setInterval(() => observer.next(new Date().toString()), 1000);\n  });\n}\n```"
+              "text": "```html\n<code>observable|async</code>\nTime: {{ time | async }}\n```\n\n```typescript\nexport class AppComponent {\n  time = new Observable<string>((observer: Observer<string>) => {\n    setInterval(() => observer.next(new Date().toString()), 1000);\n  });\n}\n```"
             }
           ]
         },
@@ -27664,7 +27703,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```typescript\nimport {\n  Component,\n  Input\n} from '@angular/core';\nimport {\n  trigger,\n  state,\n  style,\n  animate,\n  transition\n} from '@angular/animations';\n \nimport { Hero } from './hero.service';\n \n@Component({\n  selector: 'app-hero-list-basic',\n  template: `\n    <ul>\n      <li *ngFor=\"let hero of heroes\"\n          [@heroState]=\"hero.state\"\n          (click)=\"hero.toggleState()\">\n        {{hero.name}}\n      </li>\n    </ul>\n  `,\n  styleUrls: ['./hero-list.component.css'],\n  animations: [\n    trigger('heroState', [\n      state('inactive', style({\n        backgroundColor: '#eee',\n        transform: 'scale(1)'\n      })),\n      state('active',   style({\n        backgroundColor: '#cfd8dc',\n        transform: 'scale(1.1)'\n      })),\n      transition('inactive => active', animate('100ms ease-in')),\n      transition('active => inactive', animate('100ms ease-out'))\n    ])\n  ]\n})\nexport class HeroListBasicComponent {\n   @Input() heroes: Hero[];\n}\n```"
+              "text": "```html\nClick to change active state:\n<ul>\n  <li *ngFor=\"let hero of heroes\"\n      [@heroState]=\"hero.active ? 'active' : 'inactive'\"\n      (click)=\"hero.active = !hero.active\">\n    {{hero.name}}\n  </li>\n</ul>\n```\n\n```typescript\n@Component({\n  ...\n  animations: [\n    trigger('heroState', [\n      state('inactive', style({\n        backgroundColor: '#eee',\n        transform: 'scale(1)',\n      })),\n      state('active', style({\n        backgroundColor: '#cfd8dc',\n        transform: 'scale(1.1)',\n      })),\n      transition('inactive => active', animate('100ms ease-in')),\n      transition('active => inactive', animate('100ms ease-out')),\n    ]),\n  ],\n})\nexport class AppComponent {\n  heroes = [\n    {\n      name: 'Superman',\n      active: true,\n    },\n    {\n      name: 'Batman',\n      active: true,\n    },\n    {\n      name: 'Aquaman',\n      active: false,\n    },\n  ];\n}\n```"
             }
           ]
         },
@@ -27684,7 +27723,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "An SVG snippet template needs an `svg:` prefix on its root element to disambiguate the SVG element from an HTML component.\n\n```html\n<svg:rect x=\"0\" y=\"0\" width=\"100\" height=\"100\"/>\n```\n\nAn <svg> root element is detected as an SVG element automatically, without the prefix.\n\n```html\n<svg>\n<rect x=\"0\" y=\"0\" width=\"100\" height=\"100\"/>\n</svg>\n```\n"
+              "text": "An SVG snippet template needs an `svg:` prefix on its root element to disambiguate the SVG element from an HTML component.\n\n```html\n<svg:rect x=\"0\" y=\"0\" width=\"100\" height=\"100\"/>\n```\n\nAn `<svg>` root element is detected as an SVG element automatically, without the prefix.\n\n```html\n<svg>\n  <rect x=\"0\" y=\"0\" width=\"100\" height=\"100\"/>\n</svg>\n```\n"
             }
           ]
         },
@@ -27714,7 +27753,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```html\n<div>{{ 1 + 1 }}</div>\n<!-- <div>2</div> -->\n\n<div ngNonBindable>{{ 1 + 1 }}</div>\n<!-- <div>{{ 1 + 1 }}</div> -->\n```"
+              "text": "```html\n<div>{{ 1 + 1 }}</div>\n<div ngNonBindable>{{ 1 + 1 }}</div>\n```"
             }
           ]
         },
@@ -27794,7 +27833,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Maps a value to a string that pluralizes the value according to locale rules.\n"
+              "text": "Maps a value to a string that pluralizes the value according to locale rules.\n\nSee [CLDR — Plural Rules](http://cldr.unicode.org/index/cldr-spec/plural-rules).\n"
             }
           ]
         },
@@ -27804,7 +27843,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```typescript\n@Component({\n  selector: 'i18n-plural-pipe',\n  template: `<div>{{ messages.length | i18nPlural: messageMapping }}</div>`\n})\nexport class I18nPluralPipeComponent {\n  messages: any[] = ['Message 1'];\n  messageMapping:\n      {[k: string]: string} = {'=0': 'No messages.', '=1': 'One message.', 'other': '# messages.'};\n}\n```"
+              "text": "```html\n<input [(ngModel)]=\"value\">\n{{ value | i18nPlural: mapping }}\n```\n\n```typescript\nexport class AppComponent {\n  value = 1;\n\n  mapping: {[k: string]: string} = {\n    '=0': 'No messages.',\n    '=1': 'One message.',\n    'other': '# messages.',\n  };\n}\n```"
             }
           ]
         },
@@ -27834,7 +27873,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```typescript\n@Component({\n  selector: 'slice-list-pipe',\n  template: `<ul>\n    <li *ngFor=\"let i of collection | slice:1:3\">{{i}}</li>\n  </ul>`\n})\nexport class SlicePipeListComponent {\n  collection: string[] = ['a', 'b', 'c', 'd'];\n}\n```"
+              "text": "```html\n<ul>\n  <li *ngFor=\"let i of collection | slice:1:3\">{{i}}</li>\n</ul>\n```\n\n```typescript\nexport class AppComponent {\n  collection: string[] = ['a', 'b', 'c', 'd'];\n}\n```"
             }
           ]
         },
@@ -27854,7 +27893,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```typescript\n@Component({\n  selector: 'slice-string-pipe',\n  template: `<div>\n    <p>{{str}}[0:4]: '{{str | slice:0:4}}' - output is expected to be 'abcd'</p>\n    <p>{{str}}[4:0]: '{{str | slice:4:0}}' - output is expected to be ''</p>\n    <p>{{str}}[-4]: '{{str | slice:-4}}' - output is expected to be 'ghij'</p>\n    <p>{{str}}[-4:-2]: '{{str | slice:-4:-2}}' - output is expected to be 'gh'</p>\n    <p>{{str}}[-100]: '{{str | slice:-100}}' - output is expected to be 'abcdefghij'</p>\n    <p>{{str}}[100]: '{{str | slice:100}}' - output is expected to be ''</p>\n  </div>`\n})\nexport class SlicePipeStringComponent {\n  str: string = 'abcdefghij';\n}\n```"
+              "text": "```html\n<p>'{{str | slice:0:4}}' - output is expected to be 'abcd'</p>\n<p>'{{str | slice:4:0}}' - output is expected to be ''</p>\n<p>'{{str | slice:-4}}' - output is expected to be 'ghij'</p>\n<p>'{{str | slice:-4:-2}}' - output is expected to be 'gh'</p>\n<p>'{{str | slice:-100}}' - output is expected to be 'abcdefghij'</p>\n<p>'{{str | slice:100}}' - output is expected to be ''</p>\n```\n\n```typescript\nexport class AppComponent {\n  str = 'abcdefghij';\n}\n```\n"
             }
           ]
         },
@@ -27874,7 +27913,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```typescript\n@Component({\n  selector: 'lowerupper-pipe',\n  template: `<div>\n    <label>Name: </label><input #name (keyup)=\"change(name.value)\" type=\"text\">\n    <p>In lowercase: <pre>'{{value | lowercase}}'</pre>\n    <p>In uppercase: <pre>'{{value | uppercase}}'</pre>\n  </div>`\n})\nexport class LowerUpperPipeComponent {\n  // TODO(issue/24571): remove '!'.\n  value !: string;\n  change(value: string) { this.value = value; }\n}\n```"
+              "text": "```html\n<input [(ngModel)]=\"value\">\n<p>In lowercase: <pre>{{value | lowercase}}</pre>\n```\n"
             }
           ]
         },
@@ -27914,7 +27953,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```typescript\n@Component({\n  selector: 'titlecase-pipe',\n  template: `<div>\n    <p>{{'some string' | titlecase}}</p> <!-- output is expected to be \"Some String\" --> \n    <p>{{'tHIs is mIXeD CaSe' | titlecase}}</p> <!-- output is expected to be \"This Is Mixed Case\" --> \n    <p>{{'it\\\\'s non-trivial question' | titlecase}}</p> <!-- output is expected to be \"It's Non-trivial Question\" --> \n    <p>{{'one,two,three' | titlecase}}</p> <!-- output is expected to be \"One,two,three\" -->\n    <p>{{'true|false' | titlecase}}</p> <!-- output is expected to be \"True|false\" -->\n    <p>{{'foo-vs-bar' | titlecase}}</p> <!-- output is expected to be \"Foo-vs-bar\" -->\n  </div>`\n})\nexport class TitleCasePipeComponent {\n}\n```"
+              "text": "```html\n<p>{{'some string' | titlecase}}</p>\n<p>{{'tHIs is mIXeD CaSe' | titlecase}}</p>\n<p>{{'it\\'s non-trivial question' | titlecase}}</p>\n<p>{{'one,two,three' | titlecase}}</p>\n<p>{{'true|false' | titlecase}}</p>\n<p>{{'foo-vs-bar' | titlecase}}</p>\n```"
             }
           ]
         },
@@ -27934,7 +27973,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```typescript\n@Component({\n selector: 'date-pipe',\n template: `<div>\n   <p>Today is {{today | date}}</p>\n   <p>Or if you prefer, {{today | date:'fullDate'}}</p>\n   <p>The time is {{today | date:'h:mm a z'}}</p>\n </div>`\n})\n// Get the current date and time as a date-time value.\nexport class DatePipeComponent {\n  today: number = Date.now();\n}\n```"
+              "text": "```html\n<p>Today is {{today | date}}</p>\n<p>Or if you prefer, {{today | date:'fullDate'}}</p>\n<p>The time is {{today | date:'h:mm a z'}}</p>\n```\n\n```typescript\nexport class AppComponent {\n  today = Date.now();\n}\n```\n"
             }
           ]
         },
@@ -28034,7 +28073,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```typescript\n@Component({\n  selector: 'currency-pipe',\n  template: `<div>\n    <!--output '$0.26'-->\n    <p>A: {{a | currency}}</p>\n \n    <!--output 'CA$0.26'-->\n    <p>A: {{a | currency:'CAD'}}</p>\n \n    <!--output 'CAD0.26'-->\n    <p>A: {{a | currency:'CAD':'code'}}</p>\n \n    <!--output 'CA$0,001.35'-->\n    <p>B: {{b | currency:'CAD':'symbol':'4.2-2'}}</p>\n \n    <!--output '$0,001.35'-->\n    <p>B: {{b | currency:'CAD':'symbol-narrow':'4.2-2'}}</p>\n \n    <!--output '0 001,35 CA$'-->\n    <p>B: {{b | currency:'CAD':'symbol':'4.2-2':'fr'}}</p>\n \n    <!--output 'CLP1' because CLP has no cents-->\n    <p>B: {{b | currency:'CLP'}}</p>\n  </div>`\n})\nexport class CurrencyPipeComponent {\n  a: number = 0.259;\n  b: number = 1.3495;\n}\n```"
+              "text": "```html\n<p>A: {{a | currency}}</p>\n<p>A: {{a | currency:'CAD'}}</p>\n<p>A: {{a | currency:'CAD':'code'}}</p>\n<p>B: {{b | currency:'CAD':'symbol':'4.2-2'}}</p>\n<p>B: {{b | currency:'CAD':'symbol-narrow':'4.2-2'}}</p>\n<p>B: {{b | currency:'CLP'}}</p>\n```\n\n```typescript\nexport class AppComponent {\n  a = 0.259;\n  b = 1.3495;\n}\n```"
             }
           ]
         },
@@ -28144,7 +28183,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```typescript\n@Component({\n  selector: 'percent-pipe',\n  template: `<div>\n    <!--output '26%'-->\n    <p>A: {{a | percent}}</p>\n \n    <!--output '0,134.950%'-->\n    <p>B: {{b | percent:'4.3-5'}}</p>\n \n    <!--output '0 134,950 %'-->\n    <p>B: {{b | percent:'4.3-5':'fr'}}</p>\n  </div>`\n})\nexport class PercentPipeComponent {\n  a: number = 0.259;\n  b: number = 1.3495;\n}\n```"
+              "text": "```html\n<p>A: {{a | percent}}</p>\n<p>B: {{b | percent:'4.3-5'}}</p>\n```\n\n```typescript\nexport class AppComponent {\n  a = 0.259;\n  b = 1.3495;\n}\n```"
             }
           ]
         },
@@ -28234,7 +28273,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "*ngPlural"
+              "text": "ngPlural"
             }
           ]
         },
@@ -28244,7 +28283,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "*ngPlural directive"
+              "text": "ngPlural directive"
             }
           ]
         },
@@ -28368,17 +28407,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Adds / removes DOM sub-trees based on a numeric value. Tailored for pluralization.\n\nTo use this directive you must provide a container element that sets the `[ngPlural]` attribute to a switch expression. Inner elements with a `[ngPluralCase]` will display based on their expression:\n- if `[ngPluralCase]` is set to a value starting with `=`, it will only display if the value matches the switch expression exactly,\n- otherwise, the view will be treated as a \"category match\", and will only display if exact value matches aren't found and the value maps to its category for the defined locale."
-            }
-          ]
-        },
-        {
-          "id": "4309f922-092a-7f87-c2a0-edb081c98c1b",
-          "context": "Entry text",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "```html\n<some-element [ngPlural]=\"value\">\n  <ng-template ngPluralCase=\"=0\">there is nothing</ng-template>\n  <ng-template ngPluralCase=\"=1\">there is one</ng-template>\n  <ng-template ngPluralCase=\"few\">there are a few</ng-template>\n</some-element>\n```"
+              "text": "Adds / removes DOM sub-trees based on a numeric value. Tailored for pluralization.\n\nTo use this directive you must provide a container element that sets the `[ngPlural]` attribute to a switch expression. Inner elements with a `[ngPluralCase]` will display based on their expression:\n- if `[ngPluralCase]` is set to a value starting with `=`, it will only display if the value matches the switch expression exactly,\n- otherwise, the view will be treated as a \"category match\", and will only display if exact value matches aren't found and the value maps to its category for the defined locale.\n\nSee [CLDR — Plural Rules](http://cldr.unicode.org/index/cldr-spec/plural-rules)."
             }
           ]
         },
@@ -28408,7 +28437,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "### <ng-template> with *ngTemplateOutlet\n\nSave template to ref and then output with *ngTemplateOutlet directive."
+              "text": "### ng-template with *ngTemplateOutlet\n\nSave template to a `ref` and then output with `*ngTemplateOutlet` directive."
             }
           ]
         },
@@ -28418,7 +28447,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```html\n<ng-template #templateRef>Piu</ng-template>\n<div *ngTemplateOutlet=\"templateRef\"></div>\n```"
+              "text": "```html\n<ng-template #templateRef>Hello!</ng-template>\n<div *ngTemplateOutlet=\"templateRef\"></div>\n```"
             }
           ]
         },
@@ -28438,7 +28467,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```html\n<wrapper>\n  <ng-container ngProjectAs=\"counter\">\n    <counter></counter>\n  </ng-container>\n</wrapper>\n```\n\n```html\n<div class=\"box red\">\n      <ng-content></ng-content>\n    </div>\n    <div class=\"box\">\n      <ng-content select=\"counter\"></ng-content>\n    </div>\n```"
+              "text": "##### app.component.ts\n\n```html\n<my-component>\n  <ng-container ngProjectAs=\"custom\">\n   Projected As.\n  </ng-container>\n  Non selected content.\n</my-component>\n```\n\n##### my.component.ts\n\n```html\n<div><ng-content></ng-content></div>\n<div>\n  <ng-content select=\"custom\"></ng-content>\n</div>\n```"
             }
           ]
         },
@@ -28459,16 +28488,6 @@
             {
               "lang": "en",
               "text": "Angular 2 — Take Advantage Of The exportAs Property"
-            }
-          ]
-        },
-        {
-          "id": "3ddf182c-ac35-20c9-f1c8-a9df7e64e2cf",
-          "context": "Demo-entry: source",
-          "locales": [
-            {
-              "lang": "en",
-              "text": "```typescript\n@Directive({\n selector: '[tooltip]',\n exportAs: 'tooltip'\n})\n```\n\n```html\n<a tooltip=\"I'm a tooltip!!\" #tooltip=\"tooltip\">I'm a link</a>\n<button (click)=\"tooltip.toggleTooltip()\">Toggle tooltip</button>\n```"
             }
           ]
         },
@@ -28509,6 +28528,126 @@
             {
               "lang": "en",
               "text": "SVG and Canvas Graphics in Angular 2"
+            }
+          ]
+        },
+        {
+          "id": "477a73c9-f63d-4c00-6f39-6b6c65845508",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<input [(ngModel)]=\"value\" name=\"value\">\n\n<div [ngPlural]=\"value\">\n  <ng-template ngPluralCase=\"=0\">No messages</ng-template>\n  <ng-template ngPluralCase=\"=1\">One message</ng-template>\n  <ng-template ngPluralCase=\"other\">{{ value }} messages</ng-template>\n</div>\n```\n\n```typescript\nexport class AppComponent {\n  value = 1;\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "8da352be-8c5b-3f5d-51a0-2cd61cc7d3ae",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@Component({selector: 'hello-world', template: 'Hello World!'})\nclass HelloWorld {\n}\n \n@Component({\n  selector: 'ng-component-outlet-simple-example',\n  template: `<ng-container *ngComponentOutlet=\"HelloWorld\"></ng-container>`\n})\nclass NgTemplateOutletSimpleExample {\n  // This field is necessary to expose HelloWorld to the template.\n  HelloWorld = HelloWorld;\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "c562731e-173c-45ac-7e38-846d6b8e20e5",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@Injectable()\nclass Greeter {\n  suffix = '!';\n}\n \n@Component({\n  selector: 'complete-component',\n  template: `Complete: <ng-content></ng-content> <ng-content></ng-content>{{ greeter.suffix }}`\n})\nclass CompleteComponent {\n  constructor(public greeter: Greeter) {}\n}\n \n@Component({\n  selector: 'ng-component-outlet-complete-example',\n  template: `\n    <ng-container *ngComponentOutlet=\"CompleteComponent; \n                                      injector: myInjector; \n                                      content: myContent\"></ng-container>`\n})\nclass NgTemplateOutletCompleteExample {\n  // This field is necessary to expose CompleteComponent to the template.\n  CompleteComponent = CompleteComponent;\n  myInjector: Injector;\n \n  myContent = [[document.createTextNode('Ahoj')], [document.createTextNode('Svet')]];\n \n  constructor(injector: Injector) {\n    this.myInjector = ReflectiveInjector.resolveAndCreate([Greeter], injector);\n  }\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "9ef650bc-2949-32c4-468d-792678c5a7c4",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<p>\n  I turned the corner\n  <ng-container *ngIf=\"hero\">\n    and saw {{hero.name}}. I waved\n  </ng-container>\n  and continued on my way.\n</p>\n```"
+            }
+          ]
+        },
+        {
+          "id": "47642074-7abb-d3af-373c-f77f3c82c8ea",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@Directive({\n selector: '[tooltip]',\n exportAs: 'tooltip'\n})\n```\n\n```html\n<a tooltip=\"I'm a tooltip!!\" #tooltip=\"tooltip\">I'm a link</a>\n<button (click)=\"tooltip.toggleTooltip()\">Toggle tooltip</button>\n```"
+            }
+          ]
+        },
+        {
+          "id": "af2c4777-a5e8-920f-9b9f-4aa151cbeaf5",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Handling Observables with NgIf and the Async Pipe"
+            }
+          ]
+        },
+        {
+          "id": "6a28dd61-7f3b-acaf-c484-e7935bf55802",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Three things you didn't know about the AsyncPipe"
+            }
+          ]
+        },
+        {
+          "id": "0603adda-8c95-994c-da45-8cfec75387fb",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<input [(ngModel)]=\"value\">\n<p>In uppercase: <pre>{{value | uppercase}}</pre>\n```\n"
+            }
+          ]
+        },
+        {
+          "id": "2643dab6-951c-a7e7-d7b5-c9100c55034e",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\nTitle through uppercase pipe: \n{{title | uppercase}}\n```"
+            }
+          ]
+        },
+        {
+          "id": "f8e60440-c16a-3a68-f0eb-e835ffbcc76a",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\nTitle through a pipe chain:\n{{title | uppercase | lowercase}}\n```"
+            }
+          ]
+        },
+        {
+          "id": "c3c76c01-4090-5a4c-8f2b-751da25ef47c",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Dynamic component rendering in Angular 5 with NgComponentOutlet"
+            }
+          ]
+        },
+        {
+          "id": "bb040b0b-742f-e4f5-deb6-000b355e81b5",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Here is what you need to know about dynamic components in Angular"
             }
           ]
         }

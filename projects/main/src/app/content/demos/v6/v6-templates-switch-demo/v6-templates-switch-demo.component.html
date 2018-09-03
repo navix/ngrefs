@@ -1,0 +1,13 @@
+<select [(ngModel)]="type">
+  <option [value]="1">First</option>
+  <option [value]="2">Second</option>
+  <option [value]="3">Third</option>
+  <option [value]="99">Other</option>
+</select>
+
+<div [ngSwitch]="type">
+  <div *ngSwitchCase="1">First</div>
+  <div *ngSwitchCase="2">Second</div>
+  <div *ngSwitchCase="3">Third</div>
+  <div *ngSwitchDefault>Default</div>
+</div>

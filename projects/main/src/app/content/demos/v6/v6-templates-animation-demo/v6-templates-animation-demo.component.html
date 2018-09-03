@@ -1,0 +1,8 @@
+Click to change active state:
+<ul>
+  <li *ngFor="let hero of heroes"
+      [@heroState]="hero.active ? 'active' : 'inactive'"
+      (click)="hero.active = !hero.active">
+    {{hero.name}}
+  </li>
+</ul>

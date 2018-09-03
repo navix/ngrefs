@@ -1,0 +1,6 @@
+<p>'{{str | slice:0:4}}' - output is expected to be 'abcd'</p>
+<p>'{{str | slice:4:0}}' - output is expected to be ''</p>
+<p>'{{str | slice:-4}}' - output is expected to be 'ghij'</p>
+<p>'{{str | slice:-4:-2}}' - output is expected to be 'gh'</p>
+<p>'{{str | slice:-100}}' - output is expected to be 'abcdefghij'</p>
+<p>'{{str | slice:100}}' - output is expected to be ''</p>

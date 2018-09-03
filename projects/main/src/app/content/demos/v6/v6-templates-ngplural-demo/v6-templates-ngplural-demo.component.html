@@ -1,0 +1,7 @@
+<input [(ngModel)]="value" name="value">
+
+<div [ngPlural]="value">
+  <ng-template ngPluralCase="=0">No messages</ng-template>
+  <ng-template ngPluralCase="=1">One message</ng-template>
+  <ng-template ngPluralCase="other">{{ value }} messages</ng-template>
+</div>
