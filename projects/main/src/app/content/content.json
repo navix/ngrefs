@@ -7114,6 +7114,21 @@
                 "asGroup": false
               },
               {
+                "id": "785ddaf2-30e0-94c3-a150-287ab27c0b49",
+                "label": {
+                  "id": "b24f67ef-41fb-d2f4-4cfe-515aae45a98e"
+                },
+                "url": "pipe",
+                "separatedFromTop": true
+              },
+              {
+                "id": "48182894-a972-ab8a-fe60-2e3e2c2dc67c",
+                "label": {
+                  "id": "725ac9ea-872f-3152-7363-f04fa9f1a3b5"
+                },
+                "url": "custom-pipe"
+              },
+              {
                 "id": "27f56815-6273-cdcf-2970-48459537f45e",
                 "label": {
                   "id": "dbc2ee0b-6f4b-003e-8aed-5519d2ace7a9"
@@ -7125,7 +7140,8 @@
                       "label": {
                         "id": "8f2a1e07-1098-928f-2e5c-a9922c6e8f11"
                       },
-                      "url": "keyvalue-pipe"
+                      "url": "keyvalue-pipe",
+                      "separatedFromTop": false
                     },
                     {
                       "id": "965165ad-bf70-df3f-e212-3b45142af386",
@@ -7199,8 +7215,8 @@
                     }
                   ]
                 },
-                "url": "pipe",
-                "asGroup": true
+                "url": "",
+                "asGroup": false
               },
               {
                 "id": "8be848f3-2dcf-d521-481a-b9ebf8adc8e4",
@@ -9166,42 +9182,81 @@
                   "text": {
                     "id": "d3b1ff1b-5b6c-8176-a506-df7983756302"
                   }
-                },
-                {
-                  "id": "3ea9a88c-8520-e17b-5a4e-2bb68a1298c6",
-                  "type": "text",
-                  "head": {
-                    "id": "02e99b45-3b4e-a94c-f414-3322f605b447"
-                  },
-                  "text": {
-                    "id": "215f7809-daec-5ae8-050e-8cf79f4a583d"
-                  }
-                },
-                {
-                  "id": "3c7225db-c596-a240-ae0c-bcdd30c64c3a",
-                  "type": "text",
-                  "head": {
-                    "id": "ccd450c6-b7b3-9e60-09c5-7a74948c0df7"
-                  },
-                  "text": {
-                    "id": "66477101-85d7-0c0e-b418-a16c669f8769"
-                  }
-                },
-                {
-                  "id": "f8bdf907-f77a-465d-2a36-ed2ddb09511f",
-                  "type": "text",
-                  "head": {
-                    "id": "9e13bcd8-9e3f-d178-04b2-ee17bdb33b6b"
-                  },
-                  "text": {
-                    "id": "38ca73d8-a9e1-fc90-7ec3-816fa1004988"
-                  }
                 }
               ],
               "title": {
                 "id": "619eebb7-17f1-350a-7f9b-2af81037335a"
               },
               "url": "pipe"
+            },
+            {
+              "id": "34f9abdb-1b3b-65ea-d33c-01779e618308",
+              "entries": [
+                {
+                  "id": "aca1e3a2-9cd9-84ae-7b1c-16e0b0a5680a",
+                  "type": "text",
+                  "head": {
+                    "id": "f59400ee-e67a-473d-4f87-c1c26f3ecfc7"
+                  },
+                  "text": {
+                    "id": "39f94115-7b22-4b65-3020-ff57a79f26ff"
+                  }
+                },
+                {
+                  "id": "6eb54eff-b667-8860-67d9-2a380caf6909",
+                  "type": "demo",
+                  "head": {
+                    "id": "1aeab29b-fb2a-bfd5-90e1-c2b486f1d2a3"
+                  },
+                  "text": {
+                    "id": "ffa2154e-b327-e3f4-4d5b-06afc0240ce1"
+                  },
+                  "source": {
+                    "id": "dcb68b30-669c-98f9-9f8a-59bbf5860c86"
+                  },
+                  "demo": "V6TemplatesCustompipeDemoComponent"
+                },
+                {
+                  "id": "3f071c80-e67d-d9ba-0227-aa899b54f18f",
+                  "type": "text",
+                  "head": {
+                    "id": "e2abb04d-9536-6d7b-f9fe-eea1bef053d8"
+                  },
+                  "text": {
+                    "id": "d2095eef-71c4-c11a-861c-563d7cc72af0"
+                  }
+                },
+                {
+                  "id": "7df140b8-1a98-06f4-c6ce-c5bb949dd728",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "c078584a-0c45-7c26-1399-e8f66d531367"
+                  },
+                  "text": {
+                    "id": "98b5c405-951a-ad93-f7bf-8b0f4a4dbb30"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "492c344f-fd4b-46bb-089a-97b2f0c2e15f"
+                      },
+                      "url": "https://toddmotto.com/angular-pipes-custom-pipes",
+                      "lang": "en"
+                    },
+                    {
+                      "label": {
+                        "id": "66dcdc39-6eab-19ce-a71d-477c97c2678f"
+                      },
+                      "url": "https://blog.angularindepth.com/the-essential-difference-between-pure-and-impure-pipes-and-why-that-matters-999818aa068",
+                      "lang": "en"
+                    }
+                  ]
+                }
+              ],
+              "title": {
+                "id": "9017593d-ad85-41e3-b828-38e3acaeae5e"
+              },
+              "url": "custom-pipe"
             },
             {
               "id": "dec405ef-c681-b0b8-1c12-8f49a96163fd",
@@ -25693,7 +25748,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Pipe |"
+              "text": "Built-in pipes"
             }
           ]
         },
@@ -26433,7 +26488,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```html\n<div class=\"bold italic red\"\n     [class]=\"textClass\">\n  Demo text\n</div>\n```\n\n```typescript\nexport class AppComponent {\n  textClass = 'bold italic';\n}\n```"
+              "text": "```html\n<div class=\"bold italic red\"\n     [class]=\"textClass\">\n  Demo text\n</div>\n```\n\n```typescript\nexport class AppComponent {\n  textClass = 'bold italic';\n}\n```\n\n```css\n.bold {\n  font-weight: 600;\n}\n\n.italic {\n  font-style: italic;\n}\n```"
             }
           ]
         },
@@ -26453,7 +26508,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```html\n<div [class.special]=\"isSpecial\">\n  The class binding is special\n</div>\n\n<div class=\"special\"\n     [class.special]=\"!isSpecial\">\n  This one is not so special\n</div>\n```\n\n```typescript\nexport class AppComponent {\n  isSpecial = true;\n}\n```"
+              "text": "```html\n<div [class.special]=\"isSpecial\">\n  The class binding is special\n</div>\n\n<div class=\"special\"\n     [class.special]=\"!isSpecial\">\n  This one is not so special\n</div>\n```\n\n```typescript\nexport class AppComponent {\n  isSpecial = true;\n}\n```\n\n```css\n.special {\n  background: #36cadb;\n  color: #ffffff;\n}\n```"
             }
           ]
         },
@@ -26493,7 +26548,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```html\n<div [ngClass]=\"'bold italic'\">\n  Text in this div is bold and italic.\n</div>\n```\n"
+              "text": "```html\n<div [ngClass]=\"'bold italic'\">\n  Text in this div is bold and italic.\n</div>\n```\n\n```css\n.bold {\n  font-weight: 600;\n}\n\n.italic {\n  font-style: italic;\n}\n```"
             }
           ]
         },
@@ -26543,7 +26598,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```html\n<div [ngClass]=\"['bold', 'italic']\">\n  Text in this div is bold and italic.\n</div>\n```"
+              "text": "```html\n<div [ngClass]=\"['bold', 'italic']\">\n  Text in this div is bold and italic.\n</div>\n```\n\n```css\n.bold {\n  font-weight: 600;\n}\n\n.italic {\n  font-style: italic;\n}\n```"
             }
           ]
         },
@@ -28263,7 +28318,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```html\n<div [ngClass]=\"{bold: true, italic: false}\">\n  Text in this div is bold and not italic.\n</div>\n```"
+              "text": "```html\n<div [ngClass]=\"{bold: true, italic: false}\">\n  Text in this div is bold and not italic.\n</div>\n```\n\n```css\n.bold {\n  font-weight: 600;\n}\n\n.italic {\n  font-style: italic;\n}\n```"
             }
           ]
         },
@@ -28648,6 +28703,96 @@
             {
               "lang": "en",
               "text": "Here is what you need to know about dynamic components in Angular"
+            }
+          ]
+        },
+        {
+          "id": "cbccb993-ca83-8c48-3a2a-377f63f707ab",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@Pipe"
+            }
+          ]
+        },
+        {
+          "id": "b24f67ef-41fb-d2f4-4cfe-515aae45a98e",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Pipe |"
+            }
+          ]
+        },
+        {
+          "id": "725ac9ea-872f-3152-7363-f04fa9f1a3b5",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@Pipe"
+            }
+          ]
+        },
+        {
+          "id": "9017593d-ad85-41e3-b828-38e3acaeae5e",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "@Pipe"
+            }
+          ]
+        },
+        {
+          "id": "39f94115-7b22-4b65-3020-ff57a79f26ff",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You can create your own custom pipes.\n\nThe pipe class implements the `PipeTransform` interface's `transform` method that accepts an input value followed by optional parameters and returns the transformed value."
+            }
+          ]
+        },
+        {
+          "id": "dcb68b30-669c-98f9-9f8a-59bbf5860c86",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@Pipe({name: 'multi'})\nexport class MultiPipe implements PipeTransform {\n  transform(value: number, multiplier: number = 2): number {\n    return value * multiplier;\n  }\n}\n```\n\n```html\n<div>{{ 2 | multi }}</div>\n<div>{{ 10 | multi:5 }}</div>\n```"
+            }
+          ]
+        },
+        {
+          "id": "d2095eef-71c4-c11a-861c-563d7cc72af0",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Note the following:\n\n* You use your custom pipe the same way you use built-in pipes.\n* You must include your pipe in the `declarations` array of the `AppModule` or in a module where you need it."
+            }
+          ]
+        },
+        {
+          "id": "492c344f-fd4b-46bb-089a-97b2f0c2e15f",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Step by Step Custom Pipes in Angular"
+            }
+          ]
+        },
+        {
+          "id": "66dcdc39-6eab-19ce-a71d-477c97c2678f",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The essential difference between pure and impure pipes in Angular and why that matters"
             }
           ]
         }

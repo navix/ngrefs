@@ -54,6 +54,8 @@ import { V6TemplatesTitlecasepipeDemoComponent } from './v6/v6-templates-titleca
 import { V6TemplatesTouchEventsDemoComponent } from './v6/v6-templates-touch-events-demo/v6-templates-touch-events-demo.component';
 import { V6TemplatesTwoWayDemoComponent } from './v6/v6-templates-two-way-demo/v6-templates-two-way-demo.component';
 import { V6TemplatesUppercasepipeDemoComponent } from './v6/v6-templates-uppercasepipe-demo/v6-templates-uppercasepipe-demo.component';
+import { V6TemplatesCustompipeDemoComponent } from './v6/v6-templates-custompipe-demo/v6-templates-custompipe-demo.component';
+import { V6CustomPipePipe } from './v6/v6-templates-custompipe-demo/v6-custom-pipe.pipe';
 
 @NgModule({
   imports: [
@@ -114,6 +116,8 @@ import { V6TemplatesUppercasepipeDemoComponent } from './v6/v6-templates-upperca
     V6TemplatesJsonpipeDemoComponent,
     V6TemplatesAnimationDemoComponent,
     V6TemplatesNgnonbindableDemoComponent,
+    V6TemplatesCustompipeDemoComponent,
+    V6CustomPipePipe,
   ],
   entryComponents: [
     V6TemplatesDeclarDemoComponent,
@@ -168,6 +172,7 @@ import { V6TemplatesUppercasepipeDemoComponent } from './v6/v6-templates-upperca
     V6TemplatesJsonpipeDemoComponent,
     V6TemplatesAnimationDemoComponent,
     V6TemplatesNgnonbindableDemoComponent,
+    V6TemplatesCustompipeDemoComponent,
   ],
 })
 export class DemosModule {

@@ -6,6 +6,7 @@ import { V6TemplatesClass1DemoComponent } from './v6/v6-templates-class1-demo/v6
 import { V6TemplatesClass2DemoComponent } from './v6/v6-templates-class2-demo/v6-templates-class2-demo.component';
 import { V6TemplatesComponent1DemoComponent } from './v6/v6-templates-component1-demo/v6-templates-component1-demo.component';
 import { V6TemplatesCurrencypipeDemoComponent } from './v6/v6-templates-currencypipe-demo/v6-templates-currencypipe-demo.component';
+import { V6TemplatesCustompipeDemoComponent } from './v6/v6-templates-custompipe-demo/v6-templates-custompipe-demo.component';
 import { V6TemplatesDatepipeDemoComponent } from './v6/v6-templates-datepipe-demo/v6-templates-datepipe-demo.component';
 import { V6TemplatesDeclarDemoComponent } from './v6/v6-templates-declar-demo/v6-templates-declar-demo.component';
 import { V6TemplatesDirective1DemoComponent } from './v6/v6-templates-directive1-demo/v6-templates-directive1-demo.component';
@@ -20,8 +21,6 @@ import { V6TemplatesLowercasepipeDemoComponent } from './v6/v6-templates-lowerca
 import { V6TemplatesNgclass1DemoComponent } from './v6/v6-templates-ngclass1-demo/v6-templates-ngclass1-demo.component';
 import { V6TemplatesNgclass2DemoComponent } from './v6/v6-templates-ngclass2-demo/v6-templates-ngclass2-demo.component';
 import { V6TemplatesNgclass3DemoComponent } from './v6/v6-templates-ngclass3-demo/v6-templates-ngclass3-demo.component';
-import { V6TemplatesNgcomponentoutlet1DemoComponent } from './v6/v6-templates-ngcomponentoutlet1-demo/v6-templates-ngcomponentoutlet1-demo.component';
-import { V6TemplatesNgcomponentoutlet2DemoComponent } from './v6/v6-templates-ngcomponentoutlet2-demo/v6-templates-ngcomponentoutlet2-demo.component';
 import { V6TemplatesNgcontent1DemoComponent } from './v6/v6-templates-ngcontent1-demo/v6-templates-ngcontent1-demo.component';
 import { V6TemplatesNgcontent2DemoComponent } from './v6/v6-templates-ngcontent2-demo/v6-templates-ngcontent2-demo.component';
 import { V6TemplatesNgcontent3DemoComponent } from './v6/v6-templates-ngcontent3-demo/v6-templates-ngcontent3-demo.component';
@@ -106,4 +105,5 @@ export const demos = {
   'V6TemplatesJsonpipeDemoComponent': V6TemplatesJsonpipeDemoComponent,
   'V6TemplatesAnimationDemoComponent': V6TemplatesAnimationDemoComponent,
   'V6TemplatesNgnonbindableDemoComponent': V6TemplatesNgnonbindableDemoComponent,
+  'V6TemplatesCustompipeDemoComponent': V6TemplatesCustompipeDemoComponent,
 };
