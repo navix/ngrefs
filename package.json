@@ -4,7 +4,7 @@
   "scripts": {
     "clean": "rimraf ./dist",
     "main:serve": "ng run main:serve",
-    "main:build": "ng run main:build",
+    "main:build": "ng run main:build:production",
     "main:sitemap": "node sitemap-generator.js",
     "main:server:build": "ng run main:server",
     "main:server:bundle": "webpack --config ./projects/main/webpack.server.config.js --progress --colors",

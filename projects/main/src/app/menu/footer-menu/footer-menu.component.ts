@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { AdService } from '../../ad.service';
 import { ContentVersion } from '../../content/meta';
 import { SectionComponent } from '../../section/section/section.component';
 
@@ -13,10 +14,9 @@ export class FooterMenuComponent implements OnInit {
 
   year = (new Date()).getFullYear();
 
-  showLink = true;
-
   constructor(
     public sectionComponent: SectionComponent,
+    public ad: AdService,
   ) {
   }
 

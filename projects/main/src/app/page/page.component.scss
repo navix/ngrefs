@@ -16,6 +16,7 @@
 
 .entry {
   grid-column: 3 / 5;
+  max-width: 100%;
   &.-wide {
     grid-column: 2 / 6;
   }

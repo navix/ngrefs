@@ -53,8 +53,10 @@ export class PageComponent implements OnInit {
   private loadPage() {
     if (this.pageUrl) {
       this.page = this.sectionComponent.section.pages.find(p => p.url === this.pageUrl);
-      const title = extractMessage(this.versionComponent.version.messages, this.page.title, this.versionComponent.lang);
-      this.seo.setPage(title);
+      if (this.page) {
+        const title = extractMessage(this.versionComponent.version.messages, this.page.title, this.versionComponent.lang);
+        this.seo.setPage(title);
+      }
     }
   }
 

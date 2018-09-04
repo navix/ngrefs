@@ -26,11 +26,13 @@
 
 .source {
   grid-area: source;
+  overflow: hidden;
   padding: $grid $grid * 2;
 }
 
 .result {
   grid-area: result;
+  overflow: hidden;
   padding: $grid * 2;
 }
 
