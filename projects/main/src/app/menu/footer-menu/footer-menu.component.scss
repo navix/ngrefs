@@ -37,11 +37,12 @@
   position: relative;
   button {
     position: absolute;
-    top: $grid;
-    right: $grid;
+    top: 0;
+    right: 0;
     color: #ffffff;
     background: transparent;
     border: 0;
+    padding: $grid $grid * 2;
   }
   .link {
     border-radius: 4px;
