@@ -35,7 +35,9 @@ content.versions.forEach(version => {
     .filter(section => !section.disabled)
     .forEach(section => {
       section.pages.forEach(page => {
-        version.langs.forEach(lang => {
+        version.langs
+          .filter(lang => section.langs[lang])
+          .forEach(lang => {
           sitemap._content.push({
             url: {
               loc: `${root}/${lang}/${version.url}/${section.url}/${page.url}`,

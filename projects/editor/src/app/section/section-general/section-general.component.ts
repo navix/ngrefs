@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { VersionComponent } from '../../version/version/version.component';
 import { SectionComponent } from '../section/section.component';
 
 @Component({
@@ -11,13 +12,18 @@ export class SectionGeneralComponent implements OnInit {
 
   constructor(
     private sectionComponent: SectionComponent,
+    private versionComponent: VersionComponent,
   ) {
+  }
+
+  ngOnInit() {
   }
 
   get section() {
     return this.sectionComponent.section;
   }
 
-  ngOnInit() {
+  get version() {
+    return this.versionComponent.version;
   }
 }

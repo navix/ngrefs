@@ -27,5 +27,17 @@
              type="checkbox"
              name="disabled">
     </ui-form-field>
+
+    <div>
+      Langs:
+      <ul>
+        <li *ngFor="let lang of version.langs">
+          <input type="checkbox"
+                 [(ngModel)]="section.langs[lang]"
+                 [name]="'lang-' + lang">
+          {{ lang }}
+        </li>
+      </ul>
+    </div>
   </form>
 </div>

@@ -20,13 +20,13 @@
 <ul class="sections">
   <li *ngFor="let section of version.sections">
     <a *ngIf="!section.disabled && section.langs[lang]"
-       [routerLink]="['../', section.url, 'intro']"
+       [routerLink]="['../', section.url]"
        routerLinkActive="-active"
        [style.border-color]="section.color">
       {{ section.title | msg }}
     </a>
     <a *ngIf="!section.disabled && !section.langs[lang]"
-       [routerLink]="['/', 'en', version.url, section.url, 'intro']"
+       [routerLink]="['/', 'en', version.url, section.url]"
        [style.border-color]="section.color">
       {{ section.title | msg }} (en)
     </a>

@@ -2,20 +2,23 @@ import { Injectable } from '@angular/core';
 import { isArray, isObject, uuid } from '@ngx-kit/core';
 import {
   ContentEntry,
+  ContentFile,
   ContentMenuItem,
   ContentPage,
   ContentSection,
   ContentVersion,
 } from '../../../main/src/app/content/meta';
 
+export const contentFileVersion = '2';
+
 @Injectable({
   providedIn: 'root',
 })
 export class DataService {
-  data: {
-    versions: ContentVersion[];
-  } = {
+  data: ContentFile = {
+    __v: contentFileVersion,
     versions: [],
+    uiMessages: [],
   };
 
   readonly sourceLang = 'en';
@@ -40,6 +43,7 @@ export class DataService {
         items: [],
       },
       pages: [],
+      langs: {},
     };
   }
 
@@ -152,6 +156,23 @@ export class DataService {
       return false;
     } else {
       return false;
+    }
+  }
+
+  migrate() {
+    if (this.data.__v !== contentFileVersion) {
+      this.migrateTo2();
+    }
+  }
+
+  private migrateTo2() {
+    if (!this.data.__v) {
+      this.data.versions.forEach(v => {
+        v.sections.forEach(s => {
+          s.langs = {};
+        });
+      });
+      this.data.__v = '2';
     }
   }
 }

@@ -1,12 +1,12 @@
 import { DOCUMENT } from '@angular/common';
-import { Component, Inject, NgZone, OnDestroy, OnInit } from '@angular/core';
+import { Component, Inject, NgZone, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { take } from 'rxjs/operators';
-import { extractMessage } from '../message/extract-message';
 import { ContentPage } from '../content/meta';
+import { extractMessage } from '../message/extract-message';
+import { SectionComponent } from '../section/section/section.component';
 import { SeoService } from '../seo.service';
 import { VersionComponent } from '../version/version.component';
-import { SectionComponent } from '../section/section/section.component';
 
 @Component({
   selector: 'main-page',
@@ -14,6 +14,8 @@ import { SectionComponent } from '../section/section/section.component';
   styleUrls: ['./page.component.scss'],
 })
 export class PageComponent implements OnInit {
+  pageUrl: string;
+
   page?: ContentPage;
 
   constructor(
@@ -28,10 +30,12 @@ export class PageComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.route.parent.params.subscribe(() => {
+      this.loadPage();
+    });
     this.route.params.subscribe(({pageUrl}) => {
-      this.page = this.sectionComponent.section.pages.find(p => p.url === pageUrl);
-      const title = extractMessage(this.versionComponent.version.messages, this.page.title, this.versionComponent.lang);
-      this.seo.setPage(title);
+      this.pageUrl = pageUrl;
+      this.loadPage();
     });
     // Handle anchor scrolling
     this.router.events.subscribe(s => {
@@ -44,6 +48,14 @@ export class PageComponent implements OnInit {
 
   get showHints() {
     return this.sectionComponent.showHints;
+  }
+
+  private loadPage() {
+    if (this.pageUrl) {
+      this.page = this.sectionComponent.section.pages.find(p => p.url === this.pageUrl);
+      const title = extractMessage(this.versionComponent.version.messages, this.page.title, this.versionComponent.lang);
+      this.seo.setPage(title);
+    }
   }
 
   private scrollTo() {

@@ -26,6 +26,7 @@ export class AppComponent {
     this.file = files[0];
     this.router.navigate(['/versions']);
     this.data.data = JSON.parse(this.file.data);
+    this.data.migrate();
     this.uiFile.reset();
   }
 
