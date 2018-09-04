@@ -6881,7 +6881,7 @@
           "title": {
             "id": "3c68e1de-5dda-6e87-d1d3-416431529bff"
           },
-          "color": "#f65a39",
+          "color": "rgb(234, 37, 37)",
           "url": "cli",
           "langs": {
             "en": true,
@@ -10184,7 +10184,7 @@
           "title": {
             "id": "0398874c-342e-31b2-7563-26f3aa855ed4"
           },
-          "color": "#c9e14f",
+          "color": "rgb(255, 154, 3)",
           "url": "templates",
           "disabled": false,
           "langs": {
@@ -10696,25 +10696,6 @@
                 "id": "64c0d685-1832-6045-2968-a74894c654af"
               },
               "url": "intro"
-            },
-            {
-              "id": "7e533646-b1f7-bcf1-6235-faf3da606c3c",
-              "entries": [
-                {
-                  "id": "701775e6-6231-01b2-c92c-4a710947090c",
-                  "type": "text",
-                  "head": {
-                    "id": "dbc9badd-03c0-536e-a044-59698cfaf370"
-                  },
-                  "text": {
-                    "id": "816f7d77-d973-0110-8f57-88d6865b5543"
-                  }
-                }
-              ],
-              "title": {
-                "id": "125d8f76-1353-ec89-aa8a-c014cbc92ae4"
-              },
-              "url": "class-decorators"
             },
             {
               "id": "ccaf5030-c736-5e61-c835-e0f17f0a6dd8",
@@ -14496,10 +14477,12 @@
           "title": {
             "id": "52e1788d-e5ee-41f1-572c-1844f21e9bc3"
           },
-          "color": "#15c55e",
+          "color": "rgb(38, 204, 58)",
           "url": "core",
-          "disabled": true,
-          "langs": {}
+          "disabled": false,
+          "langs": {
+            "en": true
+          }
         },
         {
           "id": "4efb0a19-7319-04b8-2a91-fabd3d069e2d",
@@ -21105,7 +21088,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Angular Core reference.\n\nList of main Angular concepts in a handy list.\n\n\n## Additional information\n\nExample of hints and tutorials links. You can switch off these panels in the sidebar."
+              "text": "This easy Angular CLI reference for developers describes core Angular concepts, decorators and services.\n\n\n## Additional information\n\nExample of hints and tutorials links. You can switch off these panels in the sidebar."
             }
           ]
         },
@@ -21575,7 +21558,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "NgModules configure the injector and the compiler and help organize related things together.\n\n"
+              "text": "`NgModule` configures the injector and the compiler and help organize related things together.\n\n"
             }
           ]
         },
@@ -21615,7 +21598,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Dependencies whose providers are listed here become available for injection\ninto any component, directive, pipe or service that is a child of this injector.\nThe NgModule used for bootstrapping uses the root injector, and can provide dependencies\nto any part of the app.\n\nA lazy-loaded module has its own injector, typically a child of the app root injector.\nLazy-loaded services are scoped to the lazy-loaded module's injector.\nIf a lazy-loaded module also provides the `UserService`, any component created\nwithin that module's context (such as by router navigation) gets the local instance\nof the service, not the instance in the root injector. \nComponents in external modules continue to receive the instance provided by their injectors.\n\n#### Example\n\nThe following example defines a class that is injected in\nthe HelloWorld NgModule:\n\n```typescript\nclass Greeter {\n   greet(name:string) {\n     return 'Hello ' + name + '!';\n   }\n}\n\n@NgModule({\n  providers: [\n    Greeter\n  ]\n})\nclass HelloWorld {\n  greeter:Greeter;\n\n  constructor(greeter:Greeter) {\n    this.greeter = greeter;\n  }\n}\n```"
+              "text": "Dependencies whose providers are listed here become available for injection\ninto any component, directive, pipe or service that is a child of this injector.\nThe `NgModule` used for bootstrapping uses the root injector, and can provide dependencies\nto any part of the app.\n\n#### Example\n\nThe following example defines a class that is injected in\nthe `HelloWorld` `NgModule`:\n\n```typescript\nclass Greeter {\n   greet(name:string) {\n     return 'Hello ' + name + '!';\n   }\n}\n\n@NgModule({\n  providers: [\n    Greeter\n  ]\n})\nclass HelloWorld {\n  greeter:Greeter;\n\n  constructor(greeter:Greeter) {\n    this.greeter = greeter;\n  }\n}\n```"
             }
           ]
         },
@@ -21635,7 +21618,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "The set of selectors that are available to a template include those declared here, and\nthose that are exported from imported NgModules.\n\nDeclarables must belong to exactly one module.\nThe compiler emits an error if you try to declare the same class in more than one module.\nBe careful not to declare a class that is imported from another module.\n\n#### Example\n\nThe following example allows the CommonModule to use the `NgFor`\ndirective.\n\n```typescript\n@NgModule({\n  declarations: [NgFor]\n})\nclass CommonModule {\n}\n```"
+              "text": "The set of selectors that are available to a template include those declared here, and\nthose that are exported from imported NgModules.\n\n#### Example\n\nThe following example allows the CommonModule to use the `NgFor`\ndirective.\n\n```typescript\n@NgModule({\n  declarations: [NgFor]\n})\nclass CommonModule {\n}\n```"
             }
           ]
         },
@@ -21699,7 +21682,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "A declarable belongs to one and only one NgModule.\nA module can list another module among its exports, in which case all of that module's\npublic declaration are exported.\n\nDeclarations are private by default.\nIf this ModuleA does not export UserComponent, then only the components within this\nModuleA can use UserComponent.\n\nModuleA can import ModuleB and also export it, making exports from ModuleB\navailable to an NgModule that imports ModuleA.\n\n#### Example\n\nThe following example exports the `NgFor` directive from CommonModule.\n\n```javascript\n@NgModule({\n  exports: [NgFor]\n})\nclass CommonModule {\n}\n```"
+              "text": "A declarable belongs to one and only one `NgModule`.\nA module can list another module among its exports, in which case all of that module's\npublic declaration are exported.\n\nDeclarations are private by default.\nIf this `ModuleA` does not export `UserComponent`, then only the components within this\n`ModuleA` can use `UserComponent`.\n\n`ModuleA` can import `ModuleB` and also export it, making exports from `ModuleB`\navailable to an `NgModule` that imports `ModuleA`.\n\n#### Example\n\nThe following example exports the `NgFor` directive from `CommonModule`.\n\n```javascript\n@NgModule({\n  exports: [NgFor]\n})\nclass CommonModule {\n}\n```"
             }
           ]
         },
@@ -21709,7 +21692,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "The set of components to compile when this NgModule is defined,\nso that they can be dynamically loaded into the view."
+              "text": "The set of components to compile when this `NgModule` is defined,\nso that they can be dynamically loaded into the view."
             }
           ]
         },
@@ -21719,7 +21702,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "For each component listed here, Angular creates a `ComponentFactory`\nand stores it in the `ComponentFactoryResolver`.\n\nAngular automatically adds components in the module's bootstrap\nand route definitions into the `entryComponents` list. Use this\noption to add components that are bootstrapped\nusing one of the imperative techniques, such as `ViewContainerRef.createComponent()`."
+              "text": "For each component listed here, Angular creates a `ComponentFactory`\nand stores it in the `ComponentFactoryResolver`.\n\nAngular automatically adds components in the module's bootstrap\nand route definitions into the `entryComponents` list. Use this\noption to add components that are bootstrapped\nusing one of the imperative techniques, such as `ViewContainerRef.createComponent()` or with `ngComponentOutlet` directive."
             }
           ]
         },
@@ -21739,7 +21722,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "The set of schemas that declare elements to be allowed in the NgModule.\nElements and properties that are neither Angular components nor directives\nmust be declared in a schema."
+              "text": "The set of schemas that declare elements to be allowed in the `NgModule`.\nElements and properties that are neither Angular components nor directives\nmust be declared in a schema."
             }
           ]
         },
@@ -21759,7 +21742,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "A name or path that uniquely identifies this NgModule in `getModuleFactory`.\nIf left `undefined`, the NgModule is not registered with `getModuleFactory`."
+              "text": "A name or path that uniquely identifies this `NgModule` in `getModuleFactory`.\nIf left `undefined`, the `NgModule` is not registered with `getModuleFactory`."
             }
           ]
         },
@@ -21769,7 +21752,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "If true, this module will be skipped by the AOT compiler and so will always be compiled using JIT."
+              "text": "If `true`, this module will be skipped by the AOT compiler and so will always be compiled using JIT."
             }
           ]
         },
@@ -21969,7 +21952,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "#### Declaring directives\n\nDirectives are declarables. They must be declared by an NgModule in order to be usable in an app.\n\nA directive must belong to exactly one NgModule. Do not re-declare a directive imported from another module. List the directive class in the `declarations` field of an NgModule.\n\n```typescript\ndeclarations: [\n AppComponent,\n MyDirective\n],\n```"
+              "text": "#### Declaring directives\n\nDirectives are declarables. \n\nThey must be declared by an `NgModule` in order to be usable in an app. A directive must belong to exactly one `NgModule`.\n\n```typescript\ndeclarations: [\n AppComponent,\n MyDirective\n],\n```"
             }
           ]
         },
@@ -21989,7 +21972,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Components are the most basic UI building block of an Angular app. An Angular app contains a tree of Angular components.\n\nAngular components are a subset of directives, always associated with a template. Unlike other directives, only one component can be instantiated per an element in a template.\n\nA component must belong to an NgModule in order for it to be available to another component or application. To make it a member of an NgModule, list it in the declarations field of the @NgModule metadata.\n\nNote that, in addition to these options for configuring a directive, you can control a component's runtime behavior by implementing life-cycle hooks. For more information, see the Lifecycle Hooks guide."
+              "text": "Components are the most basic UI building block of an Angular app.\n\nAngular components are a subset of directives, always associated with a template. Unlike other directives, only one component can be instantiated per an element in a template.\n\nA component must belong to an `NgModule` in order for it to be available to another component or application. To make it a member of an `NgModule`, list it in the `declarations` field of the `@NgModule` metadata.\n"
             }
           ]
         },
