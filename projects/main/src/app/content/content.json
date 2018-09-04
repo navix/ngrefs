@@ -6882,7 +6882,11 @@
             "id": "3c68e1de-5dda-6e87-d1d3-416431529bff"
           },
           "color": "#f65a39",
-          "url": "cli"
+          "url": "cli",
+          "langs": {
+            "en": true,
+            "ru": true
+          }
         },
         {
           "id": "9705d447-3d27-8405-f165-c67e410846f6",
@@ -10182,7 +10186,10 @@
           },
           "color": "#c9e14f",
           "url": "templates",
-          "disabled": true
+          "disabled": false,
+          "langs": {
+            "en": true
+          }
         },
         {
           "id": "cf9867c0-c7ba-5d8b-92db-838948f086f5",
@@ -10195,7 +10202,8 @@
           },
           "color": "green",
           "url": "styling",
-          "disabled": true
+          "disabled": true,
+          "langs": {}
         },
         {
           "id": "1d7d1307-5627-adab-6544-bf9836cda217",
@@ -14490,7 +14498,8 @@
           },
           "color": "#15c55e",
           "url": "core",
-          "disabled": true
+          "disabled": true,
+          "langs": {}
         },
         {
           "id": "4efb0a19-7319-04b8-2a91-fabd3d069e2d",
@@ -14503,7 +14512,8 @@
           },
           "color": "green",
           "url": "router",
-          "disabled": true
+          "disabled": true,
+          "langs": {}
         },
         {
           "id": "c3ec4722-f73d-e0d3-6bb6-7e9cbded0c0c",
@@ -14516,7 +14526,8 @@
           },
           "color": "green",
           "url": "forms",
-          "disabled": true
+          "disabled": true,
+          "langs": {}
         }
       ],
       "messages": [
@@ -28880,5 +28891,6 @@
         "ru": "Содержание"
       }
     }
-  ]
+  ],
+  "__v": "2"
 }

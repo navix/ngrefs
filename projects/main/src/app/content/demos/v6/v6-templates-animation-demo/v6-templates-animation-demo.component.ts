@@ -22,10 +22,6 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
   ],
 })
 export class V6TemplatesAnimationDemoComponent implements OnInit {
-  transform(value: number, multiplier: number = 2): string {
-    return value * multiplier;
-  }
-
   heroes = [
     {
       name: 'Superman',

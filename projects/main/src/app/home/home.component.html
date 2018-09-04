@@ -9,10 +9,15 @@
       <ul>
         <li *ngFor="let section of version.sections">
           <h3>
-            <a *ngIf="!section.disabled"
+            <a *ngIf="!section.disabled && section.langs[lang]"
                [routerLink]="['/', lang, version.url, section.url, 'intro']"
                [style.border-color]="section.color">
               {{ extractMessage(version.messages, section.title) }}
+            </a>
+            <a *ngIf="!section.disabled && !section.langs[lang]"
+               [routerLink]="['/', 'en', version.url, section.url, 'intro']"
+               [style.border-color]="section.color">
+              {{ extractMessage(version.messages, section.title) }} (en)
             </a>
             <span *ngIf="section.disabled">
               {{ extractMessage(version.messages, section.title) }} (Soon)

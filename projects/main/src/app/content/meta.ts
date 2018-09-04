@@ -1,3 +1,9 @@
+export interface ContentFile {
+  __v: string;
+  versions: ContentVersion[];
+  uiMessages: ContentUiMessage[];
+}
+
 export interface ContentVersion {
   id: string;
   title?: string;
@@ -15,6 +21,7 @@ export interface ContentSection {
   color?: string;
   title?: ContentMessageRef;
   disabled?: boolean;
+  langs?: {[key: string]: boolean};
   menu: ContentMenu;
   pages: ContentPage[];
 }
