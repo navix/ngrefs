@@ -7190,6 +7190,13 @@
                       "url": "date-pipe"
                     },
                     {
+                      "id": "1b7a998d-ec80-df15-e45a-1978509ae21d",
+                      "label": {
+                        "id": "26ac6c9a-eba9-317f-4e29-46723856fb97"
+                      },
+                      "url": "number-pipe"
+                    },
+                    {
                       "id": "fad1daf7-96a0-21a7-d30e-c973bdfbd3a4",
                       "label": {
                         "id": "a1797e66-1310-7d3c-6ccc-1bf9931d04d5"
@@ -9668,6 +9675,105 @@
                 "id": "8f1efb81-9f47-7113-2771-327f2d638557"
               },
               "url": "date-pipe"
+            },
+            {
+              "id": "bc711eea-b174-20e4-0250-1b412bf98983",
+              "entries": [
+                {
+                  "id": "6f475a0f-1aa7-68d6-735a-e8782f349f9a",
+                  "type": "text",
+                  "head": {
+                    "id": "8498922c-76e2-e21b-6147-e10da4dd31a1"
+                  },
+                  "text": {
+                    "id": "5ae896d8-b8bd-7c00-be3e-219dbda9b8d6"
+                  }
+                },
+                {
+                  "id": "a9f79c01-96c6-de9e-9b6c-27e2e3a7b941",
+                  "type": "demo",
+                  "head": {
+                    "id": "3651958a-2703-1e92-c9d3-96871bb3b077"
+                  },
+                  "text": {
+                    "id": "37302f06-2dbc-89b8-02b6-82195d495b2a"
+                  },
+                  "source": {
+                    "id": "16ef699b-fe7f-f340-1b6d-1e9ebdb4dac5"
+                  },
+                  "demo": "V6TemplatesNumberpipeDemoComponent"
+                },
+                {
+                  "id": "7780965a-d3a1-2003-87ca-28e2bbbc5112",
+                  "type": "text",
+                  "head": {
+                    "id": "82d35a63-05ef-2f3d-1ea2-727c3cf58256"
+                  },
+                  "text": {
+                    "id": "17cd81a9-324c-37ea-3487-d1637a60e91a"
+                  }
+                },
+                {
+                  "id": "c030a517-9bc3-afae-c843-74077470a038",
+                  "type": "text",
+                  "head": {
+                    "id": "19d14aee-304b-d000-16f8-f4c67cb9d6ca"
+                  },
+                  "text": {
+                    "id": "1b453c9f-7e38-6f6d-ba7c-01c0df897b70"
+                  }
+                },
+                {
+                  "id": "b190a315-7756-3c24-73d6-13459ce37bf8",
+                  "type": "toc",
+                  "head": {
+                    "id": "724a0e84-8ee6-567f-2449-3de780d5f860"
+                  },
+                  "text": {
+                    "id": "02c9e2e7-60ed-ff9b-dddc-3748ed9f6e1d"
+                  }
+                },
+                {
+                  "id": "d29e142d-2aa4-9ef2-ace3-7329c2b46e4d",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "digitsInfo"
+                  },
+                  "text": {
+                    "id": "d00ab0d0-090f-3f55-5218-676c08c8cb92"
+                  },
+                  "description": {
+                    "id": "0916cda9-721c-5f3f-0167-1a674176bdb7"
+                  },
+                  "name": "digitsInfo",
+                  "headId": "digitsInfo",
+                  "interface": "digitsInfo?: string",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "b24b67ca-f5d9-43f5-c7a5-ca8db2a3c7c7"
+                  }
+                },
+                {
+                  "id": "87614371-8346-aefd-2c55-bbed3d3832ee",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "locale"
+                  },
+                  "text": {
+                    "id": "a176e7f0-f50e-5f7c-fbd6-d02503ba3c72"
+                  },
+                  "description": {
+                    "id": "ad321c89-de2a-3e83-8335-d65ecca89eaf"
+                  },
+                  "name": "locale",
+                  "headId": "locale",
+                  "interface": "locale?: string"
+                }
+              ],
+              "title": {
+                "id": "7e767b87-3183-e2d0-0a46-3c847e266cc7"
+              },
+              "url": "number-pipe"
             },
             {
               "id": "ebd7cdc5-4b87-81d3-cd71-6e52ba84ca44",
@@ -28787,6 +28893,96 @@
             {
               "lang": "en",
               "text": "The essential difference between pure and impure pipes in Angular and why that matters"
+            }
+          ]
+        },
+        {
+          "id": "26ac6c9a-eba9-317f-4e29-46723856fb97",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "number"
+            }
+          ]
+        },
+        {
+          "id": "7e767b87-3183-e2d0-0a46-3c847e266cc7",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "number (decimal) pipe"
+            }
+          ]
+        },
+        {
+          "id": "5ae896d8-b8bd-7c00-be3e-219dbda9b8d6",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Transforms a number into a string, formatted according to locale rules that determine group sizing and separator, decimal-point character, and other locale-specific configurations."
+            }
+          ]
+        },
+        {
+          "id": "16ef699b-fe7f-f340-1b6d-1e9ebdb4dac5",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<p>e (no formatting): {{e | number}}</p>\n<p>e (3.1-5): {{e | number:'3.1-5'}}</p>\n<p>e (4.5-5): {{e | number:'4.5-5'}}</p>\n<p>pi (no formatting): {{pi | number}}</p>\n<p>pi (3.1-5): {{pi | number:'3.1-5'}}</p>\n<p>pi (3.5-5): {{pi | number:'3.5-5'}}</p>\n<p>-2.5 (1.0-0): {{-2.5 | number:'1.0-0'}}</p>\n```\n\n```typescript\nexport class AppComponent {\n  e = Math.E;\n  pi = Math.PI;\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "17cd81a9-324c-37ea-3487-d1637a60e91a",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Parameters"
+            }
+          ]
+        },
+        {
+          "id": "1b453c9f-7e38-6f6d-ba7c-01c0df897b70",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```\n{{ value_expression | number [ : digitsInfo [ : locale ] ] }}\n```"
+            }
+          ]
+        },
+        {
+          "id": "0916cda9-721c-5f3f-0167-1a674176bdb7",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Decimal representation options."
+            }
+          ]
+        },
+        {
+          "id": "b24b67ca-f5d9-43f5-c7a5-ca8db2a3c7c7",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Specified by a string in the following format:\n\n```\n{minIntegerDigits}.{minFractionDigits}-{maxFractionDigits}\n```\n\n- `minIntegerDigits`: The minimum number of integer digits before the decimal point. Default is `1`.\n- `minFractionDigits`: The minimum number of digits after the decimal point. Default is `0`.\n- `maxFractionDigits`: The maximum number of digits after the decimal point. Default is `3`."
+            }
+          ]
+        },
+        {
+          "id": "ad321c89-de2a-3e83-8335-d65ecca89eaf",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A locale code for the locale format rules to use."
             }
           ]
         }

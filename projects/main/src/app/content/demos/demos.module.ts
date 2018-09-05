@@ -56,6 +56,7 @@ import { V6TemplatesTwoWayDemoComponent } from './v6/v6-templates-two-way-demo/v
 import { V6TemplatesUppercasepipeDemoComponent } from './v6/v6-templates-uppercasepipe-demo/v6-templates-uppercasepipe-demo.component';
 import { V6TemplatesCustompipeDemoComponent } from './v6/v6-templates-custompipe-demo/v6-templates-custompipe-demo.component';
 import { V6CustomPipePipe } from './v6/v6-templates-custompipe-demo/v6-custom-pipe.pipe';
+import { V6TemplatesNumberpipeDemoComponent } from './v6/v6-templates-numberpipe-demo/v6-templates-numberpipe-demo.component';
 
 @NgModule({
   imports: [
@@ -118,6 +119,7 @@ import { V6CustomPipePipe } from './v6/v6-templates-custompipe-demo/v6-custom-pi
     V6TemplatesNgnonbindableDemoComponent,
     V6TemplatesCustompipeDemoComponent,
     V6CustomPipePipe,
+    V6TemplatesNumberpipeDemoComponent,
   ],
   entryComponents: [
     V6TemplatesDeclarDemoComponent,
@@ -173,6 +175,7 @@ import { V6CustomPipePipe } from './v6/v6-templates-custompipe-demo/v6-custom-pi
     V6TemplatesAnimationDemoComponent,
     V6TemplatesNgnonbindableDemoComponent,
     V6TemplatesCustompipeDemoComponent,
+    V6TemplatesNumberpipeDemoComponent,
   ],
 })
 export class DemosModule {

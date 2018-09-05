@@ -39,6 +39,7 @@ import { V6TemplatesNgstyleDemoComponent } from './v6/v6-templates-ngstyle-demo/
 import { V6TemplatesNgtemplate1DemoComponent } from './v6/v6-templates-ngtemplate1-demo/v6-templates-ngtemplate1-demo.component';
 import { V6TemplatesNgtemplate2DemoComponent } from './v6/v6-templates-ngtemplate2-demo/v6-templates-ngtemplate2-demo.component';
 import { V6TemplatesNgtemplateoutletDemoComponent } from './v6/v6-templates-ngtemplateoutlet-demo/v6-templates-ngtemplateoutlet-demo.component';
+import { V6TemplatesNumberpipeDemoComponent } from './v6/v6-templates-numberpipe-demo/v6-templates-numberpipe-demo.component';
 import { V6TemplatesOutputDemoComponent } from './v6/v6-templates-output-demo/v6-templates-output-demo.component';
 import { V6TemplatesPercentpipeDemoComponent } from './v6/v6-templates-percentpipe-demo/v6-templates-percentpipe-demo.component';
 import { V6TemplatesPluralpipeDemoComponent } from './v6/v6-templates-pluralpipe-demo/v6-templates-pluralpipe-demo.component';
@@ -106,4 +107,5 @@ export const demos = {
   'V6TemplatesAnimationDemoComponent': V6TemplatesAnimationDemoComponent,
   'V6TemplatesNgnonbindableDemoComponent': V6TemplatesNgnonbindableDemoComponent,
   'V6TemplatesCustompipeDemoComponent': V6TemplatesCustompipeDemoComponent,
+  'V6TemplatesNumberpipeDemoComponent': V6TemplatesNumberpipeDemoComponent,
 };
