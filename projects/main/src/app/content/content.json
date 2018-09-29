@@ -10300,16 +10300,629 @@
         {
           "id": "cf9867c0-c7ba-5d8b-92db-838948f086f5",
           "menu": {
-            "items": []
+            "items": [
+              {
+                "id": "deb9db16-6c49-edec-34c5-80b198db5e66",
+                "label": {
+                  "id": "77f44375-dccd-7ba5-5fe4-c50dae1ed6ba"
+                },
+                "url": "intro"
+              },
+              {
+                "id": "0fa51f09-ea81-cc6f-4e26-5d300151d616",
+                "label": {
+                  "id": "fad8d322-f684-58d1-ee56-23d0da7fcbd6"
+                },
+                "sub": {
+                  "items": [
+                    {
+                      "id": "3c9e1942-bedc-b816-a524-f4685edb8ad2",
+                      "label": {
+                        "id": "f1fd5a60-7dc4-b4b6-25c7-d6dc8755323f"
+                      },
+                      "sub": {
+                        "items": []
+                      },
+                      "url": "global-styles"
+                    },
+                    {
+                      "id": "3fc8573a-9f30-bd8c-af5f-24d29305f097",
+                      "label": {
+                        "id": "b9922e0c-502c-478d-e88a-6f1ad1faba75"
+                      },
+                      "url": "component-inline-styles"
+                    },
+                    {
+                      "id": "3e74285b-3877-6fd3-4819-4e5c66ba7bf9",
+                      "label": {
+                        "id": "6ec7f6c5-28bc-9c69-aa16-0b00ed01a542"
+                      },
+                      "url": "component-external-styles"
+                    },
+                    {
+                      "id": "0e69d19f-7519-cf91-62f1-59857ded3bef",
+                      "label": {
+                        "id": "b44af2e8-ecf5-d8ba-6a7e-8e110ee0d8f3"
+                      },
+                      "url": "template-inline-styles"
+                    },
+                    {
+                      "id": "788ed60a-31a9-6362-3009-d937b7976e21",
+                      "label": {
+                        "id": "4da29425-c0a9-06ff-c686-ef95451fc191"
+                      },
+                      "url": "encapsulation"
+                    }
+                  ]
+                },
+                "asGroup": true
+              },
+              {
+                "id": "77fb504e-3988-b87d-4c0a-4f406cfeb3c4",
+                "label": {
+                  "id": "5508494d-bc4d-b9aa-cb87-f18eab6eb8ac"
+                },
+                "sub": {
+                  "items": [
+                    {
+                      "id": "c8328c3f-0ea6-d6ee-ccb0-7ce2c2bca5ee",
+                      "label": {
+                        "id": "d607ebb7-20a4-351f-0c6b-191c7fc8943a"
+                      },
+                      "url": "host-selector"
+                    },
+                    {
+                      "id": "69094674-dac0-b395-1b74-b4ac86bd2881",
+                      "label": {
+                        "id": "f7704802-3563-6c49-9643-e9ce81b5d665"
+                      },
+                      "url": "host-context-selector"
+                    },
+                    {
+                      "id": "fe580ab1-5a15-ca95-51e6-66b387377d4d",
+                      "label": {
+                        "id": "f6a24ead-d5cc-d2fc-1e70-fa720d013b09"
+                      },
+                      "url": "ng-deep-selector"
+                    }
+                  ]
+                },
+                "asGroup": true
+              },
+              {
+                "id": "c66380a3-444b-a048-2add-8cbcf9819cd2",
+                "label": {
+                  "id": "7c8fc1cf-d130-d6af-d156-f9096617a64a"
+                },
+                "sub": {
+                  "items": [
+                    {
+                      "id": "e727a9db-4859-82ca-6ddd-e7236d30ae71",
+                      "label": {
+                        "id": "4bcd4136-18b9-41e5-d8ee-8cc6e3700712"
+                      },
+                      "url": "style-and-host-binding"
+                    },
+                    {
+                      "id": "91f81889-2100-6020-8031-ab4970ff6b21",
+                      "label": {
+                        "id": "2ce62212-f117-2e3f-c300-3bf1f77f7862"
+                      },
+                      "url": "ngstyle-directive"
+                    },
+                    {
+                      "id": "c7dd14dd-beec-9e51-7c82-75063787c8e6",
+                      "label": {
+                        "id": "c04e925d-346a-18e0-7984-79dbf4927a4b"
+                      },
+                      "url": "styling-with-elementref-and-renderer2"
+                    },
+                    {
+                      "id": "b781a2b3-125e-1ac6-e8c7-04450390e594",
+                      "label": {
+                        "id": "9b70bd27-f21d-5870-d599-36d1ab53f25a"
+                      },
+                      "url": "sanitizer-for-styling"
+                    }
+                  ]
+                },
+                "asGroup": true
+              }
+            ]
           },
-          "pages": [],
+          "pages": [
+            {
+              "id": "049153f6-a519-14a2-28b5-f03b2dc3fd67",
+              "entries": [
+                {
+                  "id": "7798374e-9faa-85f8-014b-3217764e257e",
+                  "type": "text",
+                  "head": {
+                    "id": "55dc1e91-77e0-bc33-2bc2-3aeabb88a2fa"
+                  },
+                  "text": {
+                    "id": "7b248061-43f4-9006-1909-729e2ff1dba0"
+                  }
+                }
+              ],
+              "title": {
+                "id": "2d15f388-a4fd-4951-42be-b3c1ed4cb2a5"
+              },
+              "url": "intro"
+            },
+            {
+              "id": "61b16a97-b979-97cf-87f1-df30f51f8fec",
+              "entries": [
+                {
+                  "id": "085f0f8d-f952-8f9d-ecad-6f8d346d1bbc",
+                  "type": "text",
+                  "head": {
+                    "id": "72decbde-8e1f-a813-6d62-bb45c32833a6"
+                  },
+                  "text": {
+                    "id": "db0abb2a-0f63-2596-d147-1afbaedfa39d"
+                  }
+                }
+              ],
+              "title": {
+                "id": "1f341986-fe66-2c68-9843-6d1e4afd0f2c"
+              },
+              "url": "global-styles"
+            },
+            {
+              "id": "978a0315-a141-7ba2-e249-150fe4d36b27",
+              "entries": [
+                {
+                  "id": "3fdf6aa0-5f50-f06a-beaf-f9220ce655f1",
+                  "type": "text",
+                  "head": {
+                    "id": "bf91ce5e-8000-0b9f-5725-1b91f67e46dd"
+                  },
+                  "text": {
+                    "id": "334f1ca2-4deb-81b7-f7dd-c47846d0462a"
+                  }
+                }
+              ],
+              "title": {
+                "id": "6e3764cb-d3a8-5ca8-4664-78081507ee2e"
+              },
+              "url": "component-inline-styles"
+            },
+            {
+              "id": "84d3049b-2f62-5f7e-fe11-fec8e4a01d3e",
+              "entries": [
+                {
+                  "id": "d9d22e21-fecd-dafb-4a00-f943d634316c",
+                  "type": "text",
+                  "head": {
+                    "id": "5d67213e-b371-f043-9590-b8afc546cc1d"
+                  },
+                  "text": {
+                    "id": "027fdec5-ae3f-1166-3daa-3da8a84c9cd2"
+                  }
+                }
+              ],
+              "title": {
+                "id": "faffca46-508d-61cc-54c0-ba9b7a5b61a1"
+              },
+              "url": "component-external-styles"
+            },
+            {
+              "id": "7ed145bf-de2c-0b6b-1d6a-de1a206086d1",
+              "entries": [
+                {
+                  "id": "9471681e-7440-56de-8121-d6dedf35cd1c",
+                  "type": "text",
+                  "head": {
+                    "id": "785c46bd-7a7b-dad0-ad85-c034e0858de3"
+                  },
+                  "text": {
+                    "id": "a077eb74-b19a-3d33-6858-28d282db440c"
+                  }
+                }
+              ],
+              "title": {
+                "id": "7c706bad-94c9-79a0-df2f-e0356053f6ef"
+              },
+              "url": "template-inline-styles"
+            },
+            {
+              "id": "939ecdfc-ad5c-37ba-274e-c87c55fa5c12",
+              "entries": [
+                {
+                  "id": "720876f7-d0f9-fb9f-350d-5ca3094f1991",
+                  "type": "text",
+                  "head": {
+                    "id": "41eb95fe-6517-ff97-4494-b946d58e5d2c"
+                  },
+                  "text": {
+                    "id": "e3da811b-26b3-2d77-3097-9b7427b353a8"
+                  }
+                }
+              ],
+              "title": {
+                "id": "b782b9c6-cfd3-2bb4-3f19-b9b2c8b542f8"
+              },
+              "url": "encapsulation"
+            },
+            {
+              "id": "8962cb3f-d65f-8772-c705-173c23b46925",
+              "entries": [
+                {
+                  "id": "3a25f586-cce0-0e53-0026-b5a2b515fd7b",
+                  "type": "text",
+                  "head": {
+                    "id": "90537a4d-75f4-228c-1b71-02fea6881587"
+                  },
+                  "text": {
+                    "id": "e110cdd0-c08a-904d-0513-07d16ef4f3b6"
+                  }
+                },
+                {
+                  "id": "1297ae92-52ac-df3d-bc61-80f12d80228c",
+                  "type": "text",
+                  "head": {
+                    "id": "6dfb113a-0c23-b069-3676-0aff82be4161"
+                  },
+                  "text": {
+                    "id": "cf435ebc-5145-8214-49ea-5dc1bfb1a1e9"
+                  }
+                },
+                {
+                  "id": "f7a7129d-9ce0-d7e6-20ae-00121110c84c",
+                  "type": "demo",
+                  "head": {
+                    "id": "f730474f-8e9c-7663-b06e-ee8e14194847"
+                  },
+                  "text": {
+                    "id": "6d062e21-8568-b1eb-7196-1fc30d6eb970"
+                  },
+                  "source": {
+                    "id": "e9d985e9-e0ae-1a39-85d2-ed073eb15533"
+                  },
+                  "demo": "V6TemplateStyle1DemoComponent"
+                },
+                {
+                  "id": "9ccd5eaa-67f0-31a8-cf32-aad1ee7bd8b2",
+                  "type": "text",
+                  "head": {
+                    "id": "d8660861-d3ed-1e5a-de42-71b46c2cd357"
+                  },
+                  "text": {
+                    "id": "2685f451-2135-8317-b389-98ae27ac0307"
+                  }
+                },
+                {
+                  "id": "f36f8918-db84-8a27-69e2-df9e943ae116",
+                  "type": "demo",
+                  "head": {
+                    "id": "52f56c7d-7c22-8638-5465-29c283e7001d"
+                  },
+                  "text": {
+                    "id": "444ed3e1-a556-a832-c3b8-4a3fb2846e8e"
+                  },
+                  "description": {
+                    "id": "ab23c30d-ea90-abf7-bdc9-cd58f64cc347"
+                  },
+                  "source": {
+                    "id": "ab8c0d40-355f-cd6f-f835-be6161bf591b"
+                  },
+                  "demo": "V6TemplateStyle2DemoComponent"
+                },
+                {
+                  "id": "70f62e91-2498-e071-766b-84f497264e7b",
+                  "type": "text",
+                  "head": {
+                    "id": "0f1047fe-36e2-f1a6-2e65-c942ff3d90dc"
+                  },
+                  "text": {
+                    "id": "4fe18e8e-fab2-ce23-40ea-b7eaa1266ad8"
+                  }
+                },
+                {
+                  "id": "91a32f23-f6db-7a04-bb99-377605ecfdde",
+                  "type": "text",
+                  "head": {
+                    "id": "2ac87877-abbb-6aad-1faa-d6728f5e9330"
+                  },
+                  "text": {
+                    "id": "aa804d6d-3fbb-666e-b68a-de678d4959c9"
+                  }
+                },
+                {
+                  "id": "7871eb3d-73c9-6e00-4d5b-0d8579c7a104",
+                  "type": "text",
+                  "head": {
+                    "id": "91efcfda-412e-906f-f4b4-7cb8fceced84"
+                  },
+                  "text": {
+                    "id": "ca8d21ce-ef21-bd88-7cef-77e01a42f145"
+                  }
+                },
+                {
+                  "id": "f85ec2a9-0a91-e3e5-d3b3-dd2cdaf0939a",
+                  "type": "text",
+                  "head": {
+                    "id": "0aac4e1e-d9ef-8bdd-d329-d3197eeaa6bc"
+                  },
+                  "text": {
+                    "id": "f2258e0b-2c4f-b073-0f12-68033ffa2029"
+                  }
+                }
+              ],
+              "title": {
+                "id": "62314361-aad7-8167-3be5-a362fd5fd898"
+              },
+              "url": "style-and-host-binding"
+            },
+            {
+              "id": "cd8ac50a-3f28-1c77-a50b-6f8f4b307107",
+              "entries": [
+                {
+                  "id": "761d4f0c-c373-7dbe-ca58-217fc4d55a6f",
+                  "type": "text",
+                  "head": {
+                    "id": "74dbd944-68b5-8ead-c073-31ff32029c0f"
+                  },
+                  "text": {
+                    "id": "9230cb89-ea78-8583-70c4-6f251e097489"
+                  }
+                },
+                {
+                  "id": "037dbfd5-205a-282d-395b-42caf18fd676",
+                  "type": "demo",
+                  "head": {
+                    "id": "a835152b-fa62-08d8-08fd-ff2d5d472a67"
+                  },
+                  "text": {
+                    "id": "1d808f17-082c-25fa-c9ce-723f33b2c5a7"
+                  },
+                  "source": {
+                    "id": "a244eb20-75ab-11ed-2fea-b96b322cd24f"
+                  },
+                  "demo": "V6TemplatesNgstyleDemoComponent"
+                }
+              ],
+              "title": {
+                "id": "b8262f80-161e-a3a9-f284-95c10aad73b0"
+              },
+              "url": "ngstyle-directive"
+            },
+            {
+              "id": "5dd1700a-e6ce-e8bd-b838-62b5fedec172",
+              "entries": [
+                {
+                  "id": "1631d471-b052-1781-1cbe-9cb7c4019446",
+                  "type": "text",
+                  "head": {
+                    "id": "2654dfc6-8820-bc16-5b98-be4388cc4c62"
+                  },
+                  "text": {
+                    "id": "b1d82bb0-85cb-b3de-a7b0-0066b908d4e9"
+                  }
+                },
+                {
+                  "id": "ad1464da-2111-50eb-935d-aa15a0845920",
+                  "type": "text",
+                  "head": {
+                    "id": "15b07f79-2a1a-ecdb-29b5-5b8b01272a17"
+                  },
+                  "text": {
+                    "id": "1df87db1-5544-644e-2565-bc8a4f154eee"
+                  }
+                },
+                {
+                  "id": "c094d4dc-8dc4-f3c9-fbcc-b9f106d5e35e",
+                  "type": "text",
+                  "head": {
+                    "id": "b4e439e5-aa47-4e68-32bb-bba4d0573841"
+                  },
+                  "text": {
+                    "id": "0e2d8d52-af42-4f10-bbdf-03e4562b7c21"
+                  }
+                },
+                {
+                  "id": "21772caa-646c-9a0f-dd81-7cddf30f5e2d",
+                  "type": "text",
+                  "head": {
+                    "id": "58b00b57-1277-f51f-fdcb-f16dd1172e20"
+                  },
+                  "text": {
+                    "id": "1d51b342-8df2-01db-9c86-b565dfbde12b"
+                  }
+                },
+                {
+                  "id": "97c83f46-e4a6-f4ea-e37a-201b9f781fc8",
+                  "type": "text",
+                  "head": {
+                    "id": "42399b49-3aa4-8b2c-5b16-513719010ade"
+                  },
+                  "text": {
+                    "id": "b212a79e-8da4-542f-a75b-bfd867fba50c"
+                  }
+                }
+              ],
+              "title": {
+                "id": "7dc9e556-0583-c698-cd6d-f3c45cb30f8d"
+              },
+              "url": "styling-with-elementref-and-renderer2"
+            },
+            {
+              "id": "9ac2892a-8eb7-62ac-fb66-3a4a548aa42b",
+              "entries": [
+                {
+                  "id": "bc57b161-5343-8642-cf5b-949be10fd928",
+                  "type": "text",
+                  "head": {
+                    "id": "942e05ba-ec3d-a18e-2a61-53b0562209df"
+                  },
+                  "text": {
+                    "id": "344c9c2a-f3da-ee07-7c10-cbd3f343f258"
+                  }
+                },
+                {
+                  "id": "f481777a-6d81-b649-5d9f-c62bf7c69a27",
+                  "type": "text",
+                  "head": {
+                    "id": "df7e0c1f-e431-9818-8e6d-72950bd0a71e"
+                  },
+                  "text": {
+                    "id": "ad838a4d-d972-eb0d-d3a9-f45d2a8db5eb"
+                  }
+                }
+              ],
+              "title": {
+                "id": "d1d6b4a0-fe8d-e0ae-d19b-92273ea7e076"
+              },
+              "url": "sanitizer-for-styling"
+            },
+            {
+              "id": "4bdd882a-8502-529f-3d3f-979ec93531f2",
+              "entries": [
+                {
+                  "id": "5e189f56-292a-e6bb-b3ae-67c770ae918e",
+                  "type": "text",
+                  "head": {
+                    "id": "e22311b6-7bb4-4080-9871-ef86de84f1df"
+                  },
+                  "text": {
+                    "id": "b2125dc9-a05a-7287-5ece-77d2810df0de"
+                  }
+                },
+                {
+                  "id": "53e36c62-9de4-a4b9-687c-02b67f2e6108",
+                  "type": "text",
+                  "head": {
+                    "id": "e0c9dc47-d2cc-92fa-1c23-955072c3591d"
+                  },
+                  "text": {
+                    "id": "a63a7314-bea8-936e-15a0-5809eee24b1a"
+                  }
+                },
+                {
+                  "id": "77af9e64-d51a-f5c4-f1e4-fa24f9c51f26",
+                  "type": "text",
+                  "head": {
+                    "id": "1c99a3fa-2cad-3647-1a5f-d2dbcfdc2b26"
+                  },
+                  "text": {
+                    "id": "75fa5fff-c5b5-5cc5-541d-c1fad42b445c"
+                  }
+                },
+                {
+                  "id": "23aae064-2db0-e2e5-a537-59fd26409b5a",
+                  "type": "text",
+                  "head": {
+                    "id": "fb6af29e-7a8c-6390-50e8-18c9c8304fef"
+                  },
+                  "text": {
+                    "id": "bf091943-bb72-679f-76ab-36b0facfcae3"
+                  }
+                }
+              ],
+              "title": {
+                "id": "dc18ab22-072c-d441-dda6-7e4ee1319b3f"
+              },
+              "url": "host-selector"
+            },
+            {
+              "id": "176464de-d77d-6506-2c2d-5ef01cc54dd7",
+              "entries": [
+                {
+                  "id": "1be8e0ee-d3ba-7206-f54d-8cf94fd12b72",
+                  "type": "text",
+                  "head": {
+                    "id": "7393c32d-0c30-f24b-1fda-a33e5d599e8c"
+                  },
+                  "text": {
+                    "id": "81d5ae01-3f9f-1f72-9566-a7cf9eee23d1"
+                  }
+                },
+                {
+                  "id": "9f698864-35f4-0340-9587-c91febdddfb9",
+                  "type": "text",
+                  "head": {
+                    "id": "d3401441-5894-e748-198b-5be4fed163a7"
+                  },
+                  "text": {
+                    "id": "e99a7132-57f6-c2d7-96b9-e0af1e551e78"
+                  }
+                }
+              ],
+              "title": {
+                "id": "e8c9064c-7e2c-5c0b-bb29-9edc919260d4"
+              },
+              "url": "host-context-selector"
+            },
+            {
+              "id": "a3426c82-064c-d1c7-db29-b75d9397feaa",
+              "entries": [
+                {
+                  "id": "466d1adb-0a2b-2439-ba7b-7bbea8c61e39",
+                  "type": "text",
+                  "head": {
+                    "id": "9ea6a801-1c6b-3205-7f50-16886827a0d8"
+                  },
+                  "text": {
+                    "id": "7902c732-cb2b-d8a6-ae3b-3e59bb386be0"
+                  }
+                },
+                {
+                  "id": "e5e4da37-6833-fe7c-3a59-dbec7a97d424",
+                  "type": "text",
+                  "head": {
+                    "id": "4a57374d-f77e-b3c8-bbde-ad41d5b57a47"
+                  },
+                  "text": {
+                    "id": "5fcc51f3-8add-84ed-3f1e-c9d3e245e8da"
+                  }
+                },
+                {
+                  "id": "351b167d-7bd9-093b-fbf0-8658671bb505",
+                  "type": "text",
+                  "head": {
+                    "id": "a29e24ac-92f5-f78c-4934-7f6c8fd69e03"
+                  },
+                  "text": {
+                    "id": "f09057d1-83ce-fc37-1e93-4f4c191224f4"
+                  }
+                },
+                {
+                  "id": "f99f583f-9a13-05fb-36e9-fcf06b853c58",
+                  "type": "text",
+                  "head": {
+                    "id": "5fa4ecbc-2d1e-a4d3-91ab-959ff8b014c5"
+                  },
+                  "text": {
+                    "id": "cee371f7-cc74-6aa3-c2ac-a860bed57d04"
+                  }
+                },
+                {
+                  "id": "6a0da9e3-07d5-9ea6-4811-124ea31f291e",
+                  "type": "text",
+                  "head": {
+                    "id": "67cb26cf-e60b-3a46-a4a4-5369e90ddc57"
+                  },
+                  "text": {
+                    "id": "f58c92cb-4932-c7ed-5354-0e60f7c9efc7"
+                  }
+                }
+              ],
+              "title": {
+                "id": "6e97c932-810b-4c64-5023-afc8aed98814"
+              },
+              "url": "ng-deep-selector"
+            }
+          ],
           "title": {
             "id": "e2ac9fe4-ea5d-7739-1599-a609ec64579c"
           },
-          "color": "green",
+          "color": "#FFDF20",
           "url": "styling",
-          "disabled": true,
-          "langs": {}
+          "disabled": false,
+          "langs": {
+            "en": true
+          }
         },
         {
           "id": "1d7d1307-5627-adab-6544-bf9836cda217",
@@ -14599,24 +15212,48 @@
           "title": {
             "id": "7854bb82-1791-c246-3761-312f63e9ccfb"
           },
-          "color": "green",
+          "color": "#1fd8e4",
           "url": "router",
-          "disabled": true,
-          "langs": {}
+          "disabled": false,
+          "langs": {
+            "en": true
+          }
         },
         {
           "id": "c3ec4722-f73d-e0d3-6bb6-7e9cbded0c0c",
           "menu": {
             "items": []
           },
-          "pages": [],
+          "pages": [
+            {
+              "id": "fe8df1d7-3dfe-42a2-f66c-cc4a6dbfcf99",
+              "entries": [
+                {
+                  "id": "3304f320-fc16-107b-4250-661e8b5308df",
+                  "type": "text",
+                  "head": {
+                    "id": "a1326d1a-a604-f03c-52f6-1304279c96b7"
+                  },
+                  "text": {
+                    "id": "1fbdb5a7-e8da-10b8-764c-ae1cbc114d9e"
+                  }
+                }
+              ],
+              "title": {
+                "id": "e4c0e59d-3fb1-56ca-498c-9d06f7f80443"
+              },
+              "url": "intro"
+            }
+          ],
           "title": {
             "id": "132ef073-ebdf-bf61-af21-5342bb9d347e"
           },
-          "color": "green",
+          "color": "#386ef3",
           "url": "forms",
-          "disabled": true,
-          "langs": {}
+          "disabled": false,
+          "langs": {
+            "en": true
+          }
         }
       ],
       "messages": [
@@ -28983,6 +29620,746 @@
             {
               "lang": "en",
               "text": "A locale code for the locale format rules to use."
+            }
+          ]
+        },
+        {
+          "id": "fad8d322-f684-58d1-ee56-23d0da7fcbd6",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "CSS Declaration"
+            }
+          ]
+        },
+        {
+          "id": "f1fd5a60-7dc4-b4b6-25c7-d6dc8755323f",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Global styles"
+            }
+          ]
+        },
+        {
+          "id": "b9922e0c-502c-478d-e88a-6f1ad1faba75",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Component inline"
+            }
+          ]
+        },
+        {
+          "id": "6ec7f6c5-28bc-9c69-aa16-0b00ed01a542",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Component external"
+            }
+          ]
+        },
+        {
+          "id": "b44af2e8-ecf5-d8ba-6a7e-8e110ee0d8f3",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Template inline"
+            }
+          ]
+        },
+        {
+          "id": "7c8fc1cf-d130-d6af-d156-f9096617a64a",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Binding"
+            }
+          ]
+        },
+        {
+          "id": "4bcd4136-18b9-41e5-d8ee-8cc6e3700712",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "[style.] and @HostBinding"
+            }
+          ]
+        },
+        {
+          "id": "2ce62212-f117-2e3f-c300-3bf1f77f7862",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ngStyle directive"
+            }
+          ]
+        },
+        {
+          "id": "5b60d45f-b54e-c93d-0472-525acd879c93",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ngClass directive"
+            }
+          ]
+        },
+        {
+          "id": "c04e925d-346a-18e0-7984-79dbf4927a4b",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ElementRef & Renderer2"
+            }
+          ]
+        },
+        {
+          "id": "9958dcf5-1b52-6e00-9b3e-fda1b8b967b2",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ElementRef"
+            }
+          ]
+        },
+        {
+          "id": "9b70bd27-f21d-5870-d599-36d1ab53f25a",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Sanitizer"
+            }
+          ]
+        },
+        {
+          "id": "d97cefbe-42a9-fbe4-54fe-2771a853149f",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Encapsulation"
+            }
+          ]
+        },
+        {
+          "id": "747d56f4-ef09-874a-31c8-57f70f1c011a",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "None"
+            }
+          ]
+        },
+        {
+          "id": "d66de63c-15f5-cf1c-8fa1-1f7fb019d543",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Emulation"
+            }
+          ]
+        },
+        {
+          "id": "89ea1079-1235-28f6-0f85-ae096a87e545",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Native"
+            }
+          ]
+        },
+        {
+          "id": "56f069b7-c43c-3144-4e39-fa492be4e0df",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "VDOM v1?"
+            }
+          ]
+        },
+        {
+          "id": "5508494d-bc4d-b9aa-cb87-f18eab6eb8ac",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Special selectors"
+            }
+          ]
+        },
+        {
+          "id": "d607ebb7-20a4-351f-0c6b-191c7fc8943a",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ":host"
+            }
+          ]
+        },
+        {
+          "id": "f7704802-3563-6c49-9643-e9ce81b5d665",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ":host-context"
+            }
+          ]
+        },
+        {
+          "id": "f6a24ead-d5cc-d2fc-1e70-fa720d013b09",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "::ng-deep"
+            }
+          ]
+        },
+        {
+          "id": "e4c0e59d-3fb1-56ca-498c-9d06f7f80443",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Introduction"
+            }
+          ]
+        },
+        {
+          "id": "1fbdb5a7-e8da-10b8-764c-ae1cbc114d9e",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Intro text"
+            }
+          ]
+        },
+        {
+          "id": "2d15f388-a4fd-4951-42be-b3c1ed4cb2a5",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Introduction"
+            }
+          ]
+        },
+        {
+          "id": "7b248061-43f4-9006-1909-729e2ff1dba0",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Intro text"
+            }
+          ]
+        },
+        {
+          "id": "1f341986-fe66-2c68-9843-6d1e4afd0f2c",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Global styles"
+            }
+          ]
+        },
+        {
+          "id": "6e3764cb-d3a8-5ca8-4664-78081507ee2e",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Component inline styles"
+            }
+          ]
+        },
+        {
+          "id": "7c706bad-94c9-79a0-df2f-e0356053f6ef",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Template inline styles"
+            }
+          ]
+        },
+        {
+          "id": "faffca46-508d-61cc-54c0-ba9b7a5b61a1",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Component external styles"
+            }
+          ]
+        },
+        {
+          "id": "77f44375-dccd-7ba5-5fe4-c50dae1ed6ba",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Introduction"
+            }
+          ]
+        },
+        {
+          "id": "db0abb2a-0f63-2596-d147-1afbaedfa39d",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "When building with the CLI, you must configure the `angular.json` to include all external assets, including external style files.\n\nRegister global style files in the `styles` section which, by default, is pre-configured with the global `styles.css` file.\n\nYou can add more global styles via the `styles` option inside your project's build target options in `angular.json`. These will be loaded exactly as if you had added them in a `<link>` tag inside `index.html`.\n\n```\n\"architect\": {\n  \"build\": {\n    \"builder\": \"@angular-devkit/build-angular:browser\",\n    \"options\": {\n      \"styles\": [\n        \"src/styles.css\",\n        \"src/more-styles.css\",\n      ],\n      ...\n```\n\nYou can also rename the output and lazy load it by using the object format:\n\n```\n\"styles\": [\n  \"src/styles.css\",\n  \"src/more-styles.css\",\n  { \"input\": \"src/lazy-style.scss\", \"lazy\": true },\n  { \"input\": \"src/pre-rename-style.scss\", \"bundleName\": \"renamed-style\" },\n],\n```"
+            }
+          ]
+        },
+        {
+          "id": "334f1ca2-4deb-81b7-f7dd-c47846d0462a",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You can add a `styles` array property to the `@Component` decorator.\n\nEach string in the array defines some CSS for this component.\n\n```typescript\n@Component({\n  selector: 'app-root',\n  template: `\n    <h1>Tour of Heroes</h1>\n    <app-hero-main [hero]=\"hero\"></app-hero-main>\n  `,\n  styles: ['h1 { font-weight: normal; }']\n})\nexport class HeroAppComponent {\n/* . . . */\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "027fdec5-ae3f-1166-3daa-3da8a84c9cd2",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You can load styles from external CSS files by adding a `styleUrls` property to a component's `@Component` decorator:\n\n```typescript\n@Component({\n  selector: 'app-root',\n  template: `\n    <h1>Tour of Heroes</h1>\n    <app-hero-main [hero]=\"hero\"></app-hero-main>\n  `,\n  styleUrls: ['./hero-app.component.css']\n})\nexport class HeroAppComponent {\n/* . . . */\n}\n```\n\n```css\nh1 {\n  font-weight: normal;\n}\n```\n\n!! @TODO: Include several files demo"
+            }
+          ]
+        },
+        {
+          "id": "a077eb74-b19a-3d33-6858-28d282db440c",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You can embed CSS styles directly into the HTML template by putting them inside `<style>` tags.\n\n```typescript\n@Component({\n  selector: 'app-hero-controls',\n  template: `\n    <style>\n      button {\n        background-color: white;\n        border: 1px solid #777;\n      }\n    </style>\n    <h3>Controls</h3>\n    <button (click)=\"activate()\">Activate</button>\n  `\n})\n```\n\nYou can also write <link> tags into the component's HTML template.\n\n```typescript\n@Component({\n  selector: 'app-hero-team',\n  template: `\n    <!-- We must use a relative URL so that the AOT compiler can find the stylesheet -->\n    <link rel=\"stylesheet\" href=\"../assets/hero-team.component.css\">\n    <h3>Team</h3>\n    <ul>\n      <li *ngFor=\"let member of hero.team\">\n        {{member}}\n      </li>\n    </ul>`\n})\n```"
+            }
+          ]
+        },
+        {
+          "id": "62314361-aad7-8167-3be5-a362fd5fd898",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "[style.] and @HostBinding"
+            }
+          ]
+        },
+        {
+          "id": "b8262f80-161e-a3a9-f284-95c10aad73b0",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ngStyle directive"
+            }
+          ]
+        },
+        {
+          "id": "7dc9e556-0583-c698-cd6d-f3c45cb30f8d",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Styling with ElementRef and Renderer2"
+            }
+          ]
+        },
+        {
+          "id": "fa1311c9-7161-390b-a591-48f227c1757c",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Styling with ElementRef"
+            }
+          ]
+        },
+        {
+          "id": "d1d6b4a0-fe8d-e0ae-d19b-92273ea7e076",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Sanitizer for styling"
+            }
+          ]
+        },
+        {
+          "id": "e110cdd0-c08a-904d-0513-07d16ef4f3b6",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You can set inline styles with a style binding."
+            }
+          ]
+        },
+        {
+          "id": "cf435ebc-5145-8214-49ea-5dc1bfb1a1e9",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Style binding syntax resembles property binding. Instead of an element property between brackets, start with the prefix `style`, followed by a dot (`.`) and the name of a CSS style property: `[style.style-property]`.\n"
+            }
+          ]
+        },
+        {
+          "id": "e9d985e9-e0ae-1a39-85d2-ed073eb15533",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<button [style.color]=\"isSpecial ? 'red': 'green'\">Red</button>\n<button [style.background-color]=\"canSave ? 'cyan': 'grey'\" >Save</button>\n```\n\n```typescript\nexport class AppComponent {\n  isSpecial = true;\n  canSave = false;\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "2685f451-2135-8317-b389-98ae27ac0307",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Some style binding styles have a unit extension. The following example conditionally sets the font size in “em” and “%” units ."
+            }
+          ]
+        },
+        {
+          "id": "ab8c0d40-355f-cd6f-f835-be6161bf591b",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<button [style.font-size.em]=\"isSpecial ? 3 : 1\" >Big</button>\n<button [style.font-size.%]=\"!isSpecial ? 150 : 50\" >Small</button>\n```\n\n```typescript\nexport class AppComponent {\n  isSpecial = true;\n}\n```\n"
+            }
+          ]
+        },
+        {
+          "id": "4fe18e8e-fab2-ce23-40ea-b7eaa1266ad8",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Note that a style property name can be written in either dash-case, as shown above, or camelCase, such as `fontSize`.\n\nWhile this is a fine way to set a single style, the [NgStyle directive](../ngstyle-directive) is generally preferred when setting several inline styles at the same time."
+            }
+          ]
+        },
+        {
+          "id": "aa804d6d-3fbb-666e-b68a-de678d4959c9",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "### @HostBinding"
+            }
+          ]
+        },
+        {
+          "id": "ca8d21ce-ef21-bd88-7cef-77e01a42f145",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You can use `@HostBinding` decorator to set styles to the host element of a component.\n\n"
+            }
+          ]
+        },
+        {
+          "id": "f2258e0b-2c4f-b073-0f12-68033ffa2029",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nexport class AppComponent {\n  @HostBinding('style.background') backgroundColor = 'black';\n\n  @HostBinding('style.color') get textColor() {\n     return 'white';\n  }\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "9230cb89-ea78-8583-70c4-6f251e097489",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Update an HTML element styles.\n\nThe styles are updated according to the value of the expression evaluation:\n  - keys are style names with an optional `.<unit>` suffix (ie 'top.px', 'font-style.em'),\n  - values are the values assigned to those properties (expressed in the given unit)."
+            }
+          ]
+        },
+        {
+          "id": "a244eb20-75ab-11ed-2fea-b96b322cd24f",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```html\n<div [ngStyle]=\"{'font-size.px': 20, color: 'white', background: 'red'}\">\n  Text in this div is 20px size, white color on red background.\n</div>\n```"
+            }
+          ]
+        },
+        {
+          "id": "1d51b342-8df2-01db-9c86-b565dfbde12b",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The `Renderer` class is a service that provides an abstraction for UI rendering manipulations. Using it is the recommended approach because it then makes it easier to develop apps that can be rendered in different environments."
+            }
+          ]
+        },
+        {
+          "id": "b1d82bb0-85cb-b3de-a7b0-0066b908d4e9",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "**RED** Sometimes we may want to access the underlying DOM element to manipulate its styles. In order to do that we need to inject ElementRef and access to the nativeElement property. This will give us access to the DOM APIs."
+            }
+          ]
+        },
+        {
+          "id": "1df87db1-5544-644e-2565-bc8a4f154eee",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "**RED**\n\n```typescript\nexport class SongTrack {\n  constructor(private element: ElementRef){\n    let elem = this.element.nativeElement;\n    elem.style.color = \"blue\";\n    elem.style.cssText = \"color: blue; ...\"; // multiple styles\n    elem.setAttribute(\"style\", \"color: blue;\"); \n  }\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "0e2d8d52-af42-4f10-bbdf-03e4562b7c21",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "### Renderer2"
+            }
+          ]
+        },
+        {
+          "id": "b212a79e-8da4-542f-a75b-bfd867fba50c",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "**RED**\n\n\n```typescript\nexport class SongTrack {\n  constructor(\n     private element: ElementRef,\n     private renderer: Renderer\n  ){\n    let elem = this.element.nativeElement;\n    renderer.setElementStyle(elem, \"color\", \"blue\");\n    renderer.setElementClass(elem, \"selected\", true);\n  }\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "344c9c2a-f3da-ee07-7c10-cbd3f343f258",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "**RED**\n\nTo avoid abuse some styling expressions might be flagged as unsafe by Angular.\n\nIf you face this particular issue, you can flag the expression as safe by using the `bypassSecurityTrustStyle` API on the `Sanitizer`. This will avoid any abuse or security breaches."
+            }
+          ]
+        },
+        {
+          "id": "ad838a4d-d972-eb0d-d3a9-f45d2a8db5eb",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "**RED**\n\n```typescript\nexport class SongTrack {\n  constructor(private sanitizer: Sanitizer){\n    this._hostStyle = this.sanitizer\n      .bypassSecurityTrustStyle('color: black;');\n  }\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "b782b9c6-cfd3-2bb4-3f19-b9b2c8b542f8",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Styles encapsulation"
+            }
+          ]
+        },
+        {
+          "id": "e3da811b-26b3-2d77-3097-9b7427b353a8",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Component CSS styles are encapsulated into the component's view and don't affect the rest of the application.\n\nTo control how this encapsulation happens on a per component basis, you can set the view encapsulation mode in the component metadata.\n\n```\n@Component({\n  ...\n  encapsulation: ViewEncapsulation.Native\n})\n```\n\n\n### Emulated (default)\n\n`Emulated` view encapsulation (the default) emulates the behavior of shadow DOM by preprocessing (and renaming) the CSS code to effectively scope the CSS to the component's view. For details, see [Appendix 1](https://angular.io/guide/component-styles#inspect-generated-css).\n\n\n### ShadowDom\n\n`ShadowDom` view encapsulation uses the browser's native shadow DOM implementation (see [Shadow DOM](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Shadow_DOM)) to attach a shadow DOM to the component's host element, and then puts the component view inside that shadow DOM. The component's styles are included within the shadow DOM.\n\n\n### Native\n\n`Native` view encapsulation uses a now deprecated version of the browser's native shadow DOM implementation - [learn about the changes](https://hayato.io/2016/shadowdomv1/).\n\n\n### None\n\n`None` means that Angular does no view encapsulation. Angular adds the CSS to the global styles. The scoping rules, isolations, and protections discussed earlier don't apply. This is essentially the same as pasting the component's styles into the HTML."
+            }
+          ]
+        },
+        {
+          "id": "4da29425-c0a9-06ff-c686-ef95451fc191",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Encapsulation"
+            }
+          ]
+        },
+        {
+          "id": "dc18ab22-072c-d441-dda6-7e4ee1319b3f",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ":host selector"
+            }
+          ]
+        },
+        {
+          "id": "e8c9064c-7e2c-5c0b-bb29-9edc919260d4",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": ":host-context selector"
+            }
+          ]
+        },
+        {
+          "id": "6e97c932-810b-4c64-5023-afc8aed98814",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "::ng-deep selector"
+            }
+          ]
+        },
+        {
+          "id": "b2125dc9-a05a-7287-5ece-77d2810df0de",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Use the `:host` pseudo-class selector to target styles in the element that hosts the component (as opposed to targeting elements inside the component's template).\n"
+            }
+          ]
+        },
+        {
+          "id": "a63a7314-bea8-936e-15a0-5809eee24b1a",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```css\n:host {\n  display: block;\n  border: 1px solid black;\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "75fa5fff-c5b5-5cc5-541d-c1fad42b445c",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The `:host` selector is the only way to target the host element. You can't reach the host element from inside the component with other selectors because it's not part of the component's own template. The host element is in a parent component's template.\n\nUse the function form to apply host styles conditionally by including another selector inside parentheses after `:host`.\n\nThe next example targets the host element again, but only when it also has the `active` CSS class."
+            }
+          ]
+        },
+        {
+          "id": "bf091943-bb72-679f-76ab-36b0facfcae3",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```css\n:host(.active) {\n  border-width: 3px;\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "81d5ae01-3f9f-1f72-9566-a7cf9eee23d1",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Sometimes it's useful to apply styles based on some condition outside of a component's view. For example, a CSS theme class could be applied to the document `<body>` element, and you want to change how your component looks based on that.\n\nUse the `:host-context()` pseudo-class selector, which works just like the function form of `:host()`. The `:host-context()` selector looks for a CSS class in any ancestor of the component host element, up to the document root. The `:host-context()` selector is useful when combined with another selector.\n\nThe following example applies a `background-color` style to all `<h2>` elements inside the component, only if some ancestor element has the CSS class `theme-light`."
+            }
+          ]
+        },
+        {
+          "id": "e99a7132-57f6-c2d7-96b9-e0af1e551e78",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```css\n:host-context(.theme-light) h2 {\n  background-color: #eef;\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "7902c732-cb2b-d8a6-ae3b-3e59bb386be0",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Component styles normally apply only to the HTML in the component's own template.\n\nUse the `::ng-deep` shadow-piercing descendant combinator to force a style down through the child component tree into all the child component views. The `::ng-deep` combinator works to any depth of nested components, and it applies to both the view children and content children of the component.\n\nThe following example targets all `<h3>` elements, from the host element down through this component to all of its child elements in the DOM."
+            }
+          ]
+        },
+        {
+          "id": "5fcc51f3-8add-84ed-3f1e-c9d3e245e8da",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```css\n:host ::ng-deep h3 {\n  font-style: italic;\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "f09057d1-83ce-fc37-1e93-4f4c191224f4",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The `::ng-deep` combinator also has the aliases `>>>`, and `/deep/`."
+            }
+          ]
+        },
+        {
+          "id": "cee371f7-cc74-6aa3-c2ac-a860bed57d04",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Use `/deep/`, `>>>` and `::ng-deep` only with `emulated` view encapsulation. Emulated is the default and most commonly used view encapsulation. For more information, see the [view encapsulation section](../encapsulation)."
+            }
+          ]
+        },
+        {
+          "id": "f58c92cb-4932-c7ed-5354-0e60f7c9efc7",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The shadow-piercing descendant combinator is deprecated and support is being removed from major browsers and tools. As such we plan to drop support in Angular (for all 3 of `/deep/`, `>>>` and `::ng-deep`). Until then `::ng-deep` should be preferred for a broader compatibility with the tools."
             }
           ]
         }
