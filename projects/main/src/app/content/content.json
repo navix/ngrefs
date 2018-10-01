@@ -15206,9 +15206,299 @@
         {
           "id": "4efb0a19-7319-04b8-2a91-fabd3d069e2d",
           "menu": {
-            "items": []
+            "items": [
+              {
+                "id": "9bc9180d-93ad-1456-8b92-92284e2035a3",
+                "label": {
+                  "id": "5e048363-321b-4a51-f66a-4f7b7492a437"
+                },
+                "url": "intro"
+              },
+              {
+                "id": "90be72d7-8c0e-8faf-044a-5fe7f45ab1d4",
+                "sub": {
+                  "items": [
+                    {
+                      "id": "ace4c8fe-b815-0ef3-ffb6-206a942d509b",
+                      "label": {
+                        "id": "563dc919-b66e-763e-6d4e-b5421afd70e3"
+                      },
+                      "url": "route-interface"
+                    },
+                    {
+                      "id": "0db3d0d4-9656-0f2a-2952-122d2277e7cf",
+                      "label": {
+                        "id": "8ed37190-a60a-b15e-1075-9bbf942a2a40"
+                      },
+                      "url": "extraoptions-interface"
+                    },
+                    {
+                      "id": "c9330b33-991b-b36c-af42-9f9b30b2ff57",
+                      "label": {
+                        "id": "457804b4-af67-3a5f-10f1-fd8623fdc3e2"
+                      },
+                      "url": "canactivate-interface"
+                    },
+                    {
+                      "id": "c7d2ac63-81b3-c09b-5f4a-b5b1142fa3fb",
+                      "label": {
+                        "id": "e7cff2f6-32a8-0bb7-38d8-929ba8a10ec6"
+                      },
+                      "url": "canactivatechild-interface"
+                    },
+                    {
+                      "id": "09f384d8-b398-72e6-63ba-5d3776c8bbe4",
+                      "label": {
+                        "id": "add65940-8e44-6879-49ae-da0ccf1bd29f"
+                      },
+                      "url": "candeactivate-interface"
+                    },
+                    {
+                      "id": "85e8e424-50f6-aaf0-f986-6a32cca740b4",
+                      "label": {
+                        "id": "d6ffe8af-b40c-690f-28f1-301cf64cdab4"
+                      },
+                      "url": "resolve-interface"
+                    },
+                    {
+                      "id": "2a13a7da-f6b9-5fae-5809-500634c2c911",
+                      "label": {
+                        "id": "f4135607-39d1-5ff0-c223-b13cf663d3a4"
+                      },
+                      "url": "canload-interface"
+                    }
+                  ]
+                },
+                "label": {
+                  "id": "69d84d49-0052-6609-4af7-e07716c82e9e"
+                },
+                "url": "configuration",
+                "asGroup": true
+              },
+              {
+                "id": "3b888b1d-80a8-3e8f-2749-832a076e918b",
+                "label": {
+                  "id": "fc651ee0-9331-0144-7aae-becacf0dc2e4"
+                },
+                "separatedFromTop": true,
+                "url": "router"
+              },
+              {
+                "id": "2b2a46ca-2bc1-0dfb-bebb-372063c6f0e3",
+                "label": {
+                  "id": "b88fafa0-28ec-7f05-4fee-02a1593622b6"
+                },
+                "url": "events"
+              },
+              {
+                "id": "5c2c491e-b981-ebc4-f49a-1ae4b6bed1c4",
+                "label": {
+                  "id": "a3efd2be-59e5-a0fd-572d-865b6fc2e8ed"
+                },
+                "url": "activatedroute"
+              },
+              {
+                "id": "c866a025-6b51-4d63-42bf-4c61bb5e6518",
+                "label": {
+                  "id": "c7f3a99f-fbd6-aa2f-8298-f6f64ec81724"
+                },
+                "url": "activatedroutesnapshot"
+              },
+              {
+                "id": "a3dce050-b780-6739-f6a0-a02a7541fac8",
+                "label": {
+                  "id": "175606fb-22ec-5c55-bc1a-e36c97c57210"
+                },
+                "url": "urltree"
+              },
+              {
+                "id": "83c53884-d62d-acc9-8feb-01433b4e2f9c",
+                "label": {
+                  "id": "410584a8-1e39-9dfd-ed25-1043b65ba98b"
+                },
+                "url": "urlsegment"
+              },
+              {
+                "id": "39e2e4de-417e-8715-c894-b1c965489093",
+                "label": {
+                  "id": "863011d0-452b-d5b4-2e0b-fa4c93b1b0a9"
+                },
+                "sub": {
+                  "items": [
+                    {
+                      "id": "af98488f-14f7-9787-dca8-bb97b192a0b6",
+                      "label": {
+                        "id": "7e8b9bbd-ee8b-6f99-5603-8a9cb9cdb943"
+                      },
+                      "url": "routerlink-directive"
+                    },
+                    {
+                      "id": "e9b59e7b-f2ee-7003-1120-a4ee6540b407",
+                      "label": {
+                        "id": "306aaf22-f329-e256-f188-698dd3e1c6a0"
+                      },
+                      "url": "routerlinkactive-directive"
+                    },
+                    {
+                      "id": "d8828ba5-68e5-c27e-e072-2abc2a6b4a34",
+                      "label": {
+                        "id": "766b9bd7-1eaf-6fac-0c12-7c89d354df7c"
+                      },
+                      "url": "router-outlet-directive"
+                    }
+                  ]
+                },
+                "asGroup": true,
+                "url": ""
+              }
+            ]
           },
-          "pages": [],
+          "pages": [
+            {
+              "id": "ffa4036b-22b4-9f81-2c49-0f8f5d24d75f",
+              "entries": [],
+              "title": {
+                "id": "2b0eb4d8-9ce1-a57d-eff6-f91d05588ed3"
+              },
+              "url": "intro"
+            },
+            {
+              "id": "6a00a5ff-b82a-1c02-37ee-3144cdc6f460",
+              "entries": [],
+              "title": {
+                "id": "3429e2b9-889d-80b3-eccc-1ef1787b1457"
+              },
+              "url": "configuration"
+            },
+            {
+              "id": "259fe330-8bb1-a49f-3473-7b712313c137",
+              "entries": [],
+              "title": {
+                "id": "4a8e70cf-f980-7202-e08d-6312e63de298"
+              },
+              "url": "route-interface"
+            },
+            {
+              "id": "5ea3b8d3-ff29-6ebd-bbbf-f85bd109addc",
+              "entries": [],
+              "title": {
+                "id": "833378d0-bd9e-5801-d4b3-6bcaee008623"
+              },
+              "url": "extraoptions-interface"
+            },
+            {
+              "id": "cf30650f-684c-05bd-5321-203588ad4f4f",
+              "entries": [],
+              "title": {
+                "id": "844aa134-0f7a-5374-5866-1df5d83cbd8f"
+              },
+              "url": "canactivate-interface"
+            },
+            {
+              "id": "3795549b-febd-178f-7359-16015f372135",
+              "entries": [],
+              "title": {
+                "id": "945931df-5404-147b-06b7-5015ab9130dd"
+              },
+              "url": "canactivatechild-interface"
+            },
+            {
+              "id": "ce3e9f85-d837-7c28-3394-93660e171ab2",
+              "entries": [],
+              "title": {
+                "id": "1ed30b65-244d-9fc3-c1e5-e444d356cc07"
+              },
+              "url": "candeactivate-interface"
+            },
+            {
+              "id": "c26dbe4a-381e-e93f-0448-ece85087ff9e",
+              "entries": [],
+              "title": {
+                "id": "d10dafa4-2b71-5663-7790-911fcb6ae68b"
+              },
+              "url": "resolve-interface"
+            },
+            {
+              "id": "34feaca5-5bb3-d1ea-c09b-67eddfe44fd2",
+              "entries": [],
+              "title": {
+                "id": "e93c3c9f-fae0-edfd-b915-922f6bd8cd39"
+              },
+              "url": "canload-interface"
+            },
+            {
+              "id": "12ef177f-35ba-cb7c-b108-787f6daff5d3",
+              "entries": [],
+              "title": {
+                "id": "188db8b0-3142-0b68-0cbf-bb8e4eb7fcb9"
+              },
+              "url": "router"
+            },
+            {
+              "id": "19b8edde-421a-5743-68c8-f1fb4ab8f8db",
+              "entries": [],
+              "title": {
+                "id": "1f17c239-4334-cf74-bdf6-03830f14cebf"
+              },
+              "url": "events"
+            },
+            {
+              "id": "a64c011b-9960-955d-1a88-54c3a2298972",
+              "entries": [],
+              "title": {
+                "id": "b345db05-33a5-f89e-aff9-fba923694303"
+              },
+              "url": "urltree"
+            },
+            {
+              "id": "3551861a-0fcf-dc05-dd75-3ba1afb07174",
+              "entries": [],
+              "title": {
+                "id": "7d01c833-e6ec-fcf1-889f-d8ff1e728e89"
+              },
+              "url": "urlsegment"
+            },
+            {
+              "id": "64a21c90-ee95-6f01-c2d0-5761162357c9",
+              "entries": [],
+              "title": {
+                "id": "54882235-acaa-85f6-12a4-9ffb0f62202e"
+              },
+              "url": "activatedroute"
+            },
+            {
+              "id": "b78c8354-874e-d8f2-4a4a-a03ba0fe4757",
+              "entries": [],
+              "title": {
+                "id": "337aba21-e287-dcc8-458a-faab4331cec6"
+              },
+              "url": "activatedroutesnapshot"
+            },
+            {
+              "id": "554d1879-4294-9fea-d3e7-b3d654c87785",
+              "entries": [],
+              "title": {
+                "id": "755af2fa-9cf2-b7c9-7308-3eba38d0cd82"
+              },
+              "url": "routerlink-directive"
+            },
+            {
+              "id": "ecbfc3ef-3819-5cda-c52f-42445614bb89",
+              "entries": [],
+              "title": {
+                "id": "6341a7f0-d58a-bd23-efe3-1adbd42ede59"
+              },
+              "url": "routerlinkactive-directive"
+            },
+            {
+              "id": "06270d07-ceef-81d2-e1a1-c6ba055d483e",
+              "entries": [],
+              "title": {
+                "id": "49295a60-5b59-fefc-fbf7-1ab6185608f5"
+              },
+              "url": "router-outlet-directive"
+            }
+          ],
           "title": {
             "id": "7854bb82-1791-c246-3761-312f63e9ccfb"
           },
@@ -30360,6 +30650,376 @@
             {
               "lang": "en",
               "text": "The shadow-piercing descendant combinator is deprecated and support is being removed from major browsers and tools. As such we plan to drop support in Angular (for all 3 of `/deep/`, `>>>` and `::ng-deep`). Until then `::ng-deep` should be preferred for a broader compatibility with the tools."
+            }
+          ]
+        },
+        {
+          "id": "2b0eb4d8-9ce1-a57d-eff6-f91d05588ed3",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Introduction"
+            }
+          ]
+        },
+        {
+          "id": "3429e2b9-889d-80b3-eccc-1ef1787b1457",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Configuration"
+            }
+          ]
+        },
+        {
+          "id": "4a8e70cf-f980-7202-e08d-6312e63de298",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Route interface"
+            }
+          ]
+        },
+        {
+          "id": "833378d0-bd9e-5801-d4b3-6bcaee008623",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ExtraOptions interface"
+            }
+          ]
+        },
+        {
+          "id": "844aa134-0f7a-5374-5866-1df5d83cbd8f",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "CanActivate interface"
+            }
+          ]
+        },
+        {
+          "id": "945931df-5404-147b-06b7-5015ab9130dd",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "CanActivateChild interface"
+            }
+          ]
+        },
+        {
+          "id": "1ed30b65-244d-9fc3-c1e5-e444d356cc07",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "CanDeactivate interface"
+            }
+          ]
+        },
+        {
+          "id": "d10dafa4-2b71-5663-7790-911fcb6ae68b",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Resolve interface"
+            }
+          ]
+        },
+        {
+          "id": "e93c3c9f-fae0-edfd-b915-922f6bd8cd39",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "CanLoad interface"
+            }
+          ]
+        },
+        {
+          "id": "188db8b0-3142-0b68-0cbf-bb8e4eb7fcb9",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Router"
+            }
+          ]
+        },
+        {
+          "id": "1f17c239-4334-cf74-bdf6-03830f14cebf",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Events"
+            }
+          ]
+        },
+        {
+          "id": "b345db05-33a5-f89e-aff9-fba923694303",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "UrlTree"
+            }
+          ]
+        },
+        {
+          "id": "7d01c833-e6ec-fcf1-889f-d8ff1e728e89",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "UrlSegment"
+            }
+          ]
+        },
+        {
+          "id": "54882235-acaa-85f6-12a4-9ffb0f62202e",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ActivatedRoute"
+            }
+          ]
+        },
+        {
+          "id": "337aba21-e287-dcc8-458a-faab4331cec6",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ActivatedRouteSnapshot"
+            }
+          ]
+        },
+        {
+          "id": "755af2fa-9cf2-b7c9-7308-3eba38d0cd82",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "routerLink directive"
+            }
+          ]
+        },
+        {
+          "id": "6341a7f0-d58a-bd23-efe3-1adbd42ede59",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "routerLinkActive directive"
+            }
+          ]
+        },
+        {
+          "id": "49295a60-5b59-fefc-fbf7-1ab6185608f5",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "router-outlet directive"
+            }
+          ]
+        },
+        {
+          "id": "5e048363-321b-4a51-f66a-4f7b7492a437",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Introduction"
+            }
+          ]
+        },
+        {
+          "id": "69d84d49-0052-6609-4af7-e07716c82e9e",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Configuration"
+            }
+          ]
+        },
+        {
+          "id": "563dc919-b66e-763e-6d4e-b5421afd70e3",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Route"
+            }
+          ]
+        },
+        {
+          "id": "8ed37190-a60a-b15e-1075-9bbf942a2a40",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ExtraOptions"
+            }
+          ]
+        },
+        {
+          "id": "457804b4-af67-3a5f-10f1-fd8623fdc3e2",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "CanActivate"
+            }
+          ]
+        },
+        {
+          "id": "e7cff2f6-32a8-0bb7-38d8-929ba8a10ec6",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "CanActivateChild"
+            }
+          ]
+        },
+        {
+          "id": "add65940-8e44-6879-49ae-da0ccf1bd29f",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "CanDeactivate"
+            }
+          ]
+        },
+        {
+          "id": "d6ffe8af-b40c-690f-28f1-301cf64cdab4",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Resolve"
+            }
+          ]
+        },
+        {
+          "id": "f4135607-39d1-5ff0-c223-b13cf663d3a4",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "CanLoad"
+            }
+          ]
+        },
+        {
+          "id": "fc651ee0-9331-0144-7aae-becacf0dc2e4",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Router"
+            }
+          ]
+        },
+        {
+          "id": "b88fafa0-28ec-7f05-4fee-02a1593622b6",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Events"
+            }
+          ]
+        },
+        {
+          "id": "175606fb-22ec-5c55-bc1a-e36c97c57210",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "UrlTree"
+            }
+          ]
+        },
+        {
+          "id": "410584a8-1e39-9dfd-ed25-1043b65ba98b",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "UrlSegment"
+            }
+          ]
+        },
+        {
+          "id": "a3efd2be-59e5-a0fd-572d-865b6fc2e8ed",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ActivatedRoute"
+            }
+          ]
+        },
+        {
+          "id": "c7f3a99f-fbd6-aa2f-8298-f6f64ec81724",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "ActivatedRouteSnapshot"
+            }
+          ]
+        },
+        {
+          "id": "863011d0-452b-d5b4-2e0b-fa4c93b1b0a9",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Directives"
+            }
+          ]
+        },
+        {
+          "id": "7e8b9bbd-ee8b-6f99-5603-8a9cb9cdb943",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "routerLink"
+            }
+          ]
+        },
+        {
+          "id": "306aaf22-f329-e256-f188-698dd3e1c6a0",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "routerLinkActive"
+            }
+          ]
+        },
+        {
+          "id": "766b9bd7-1eaf-6fac-0c12-7c89d354df7c",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "router-outlet"
             }
           ]
         }
