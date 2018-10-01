@@ -7,6 +7,7 @@ import { MdRenderModule, MdRenderService } from '@nvxme/ngx-md-render';
 import { UiModule } from 'ui';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CssVarModule } from './common/css-var/css-var.module';
 import { DemosModule } from './content/demos/demos.module';
 import { CommandParamEntryComponent } from './entry/command-param-entry/command-param-entry.component';
 import { HintEntryComponent } from './entry/hint-entry/hint-entry.component';
@@ -65,6 +66,7 @@ import { DemoEntryComponent } from './entry/demo-entry/demo-entry.component';
     KitOverlayModule,
     KitIconsModule,
     DemosModule,
+    CssVarModule,
   ],
   providers: [
     MdRenderService,
