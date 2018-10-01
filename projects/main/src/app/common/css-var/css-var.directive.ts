@@ -1,9 +1,9 @@
-import { Directive, DoCheck, ElementRef, Input, KeyValueDiffer, KeyValueDiffers, OnChanges, Renderer2 } from '@angular/core';
+import { Directive, DoCheck, ElementRef, Input, KeyValueDiffer, KeyValueDiffers, Renderer2 } from '@angular/core';
 
 @Directive({
   selector: '[cssVar]',
 })
-export class CssVarDirective implements OnChanges, DoCheck {
+export class CssVarDirective implements DoCheck {
   private _cssVar: {[key: string]: string};
 
   private differ !: KeyValueDiffer<string, string | number>;

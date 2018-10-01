@@ -37,6 +37,8 @@ ul {
   a {
     color: $linkColorLight;
     transition: background .3s;
+    text-overflow: ellipsis;
+    overflow: hidden;
     &:hover {
       background: #ebebeb;
       color: $linkColor;
