@@ -7337,6 +7337,16 @@
                       "lang": "en"
                     }
                   ]
+                },
+                {
+                  "id": "f754bdb1-f898-4a39-e51f-12e2faf06c8a",
+                  "type": "text",
+                  "head": {
+                    "id": "6c941a2e-0c76-581b-7de2-beaa57bc59ad"
+                  },
+                  "text": {
+                    "id": "249a5cb1-e9a1-396f-838e-66621770e13f"
+                  }
                 }
               ],
               "title": {
@@ -10443,6 +10453,16 @@
                   "text": {
                     "id": "7b248061-43f4-9006-1909-729e2ff1dba0"
                   }
+                },
+                {
+                  "id": "6e655be6-1726-8e15-be8c-e33f457c7ffd",
+                  "type": "text",
+                  "head": {
+                    "id": "42cbbeae-6ada-6945-4b39-e33553381a16"
+                  },
+                  "text": {
+                    "id": "647d100a-58bf-37af-b6f0-a742e5ef2947"
+                  }
                 }
               ],
               "title": {
@@ -10917,7 +10937,7 @@
           "title": {
             "id": "e2ac9fe4-ea5d-7739-1599-a609ec64579c"
           },
-          "color": "rgb(38, 204, 58)",
+          "color": "rgb(255, 154, 3)",
           "url": "styling",
           "disabled": false,
           "langs": {
@@ -11408,6 +11428,16 @@
                   },
                   "text": {
                     "id": "4108611b-0308-3637-eb22-872d7d463f4d"
+                  }
+                },
+                {
+                  "id": "d9ccd7a2-c9a6-6ce0-bcb6-724bffabfefd",
+                  "type": "text",
+                  "head": {
+                    "id": "9d2e9823-8725-ba99-48f9-0c33d19b5010"
+                  },
+                  "text": {
+                    "id": "fd55e62c-105a-0bbf-5d8f-9671a7974007"
                   }
                 }
               ],
@@ -15223,14 +15253,41 @@
                       "label": {
                         "id": "563dc919-b66e-763e-6d4e-b5421afd70e3"
                       },
-                      "url": "route-interface"
+                      "url": "route-interface",
+                      "sub": {
+                        "items": [
+                          {
+                            "id": "9883d604-68de-7607-d076-9860b5b8c8c0",
+                            "label": {
+                              "id": "1718d402-0c71-a1a8-8aad-416d5a1cefe5"
+                            },
+                            "usePageEntries": true,
+                            "usePageUrl": "route-interface"
+                          }
+                        ]
+                      },
+                      "subActiveOpt": true
                     },
                     {
                       "id": "0db3d0d4-9656-0f2a-2952-122d2277e7cf",
                       "label": {
                         "id": "8ed37190-a60a-b15e-1075-9bbf942a2a40"
                       },
-                      "url": "extraoptions-interface"
+                      "url": "extraoptions-interface",
+                      "sub": {
+                        "items": [
+                          {
+                            "id": "52ba06db-7bf0-f576-b9ca-9d7f01bf7ac9",
+                            "label": {
+                              "id": "7be66d34-c918-cd9c-eb21-b9b4dc53eb78"
+                            },
+                            "usePageEntries": true,
+                            "usePageUrl": "extraoptions-interface"
+                          }
+                        ]
+                      },
+                      "usePageEntries": false,
+                      "subActiveOpt": true
                     },
                     {
                       "id": "c9330b33-991b-b36c-af42-9f9b30b2ff57",
@@ -15281,7 +15338,20 @@
                   "id": "fc651ee0-9331-0144-7aae-becacf0dc2e4"
                 },
                 "separatedFromTop": true,
-                "url": "router"
+                "url": "router",
+                "sub": {
+                  "items": [
+                    {
+                      "id": "3b4be9f6-aa3e-c2bc-34ec-163ee731dacf",
+                      "label": {
+                        "id": "c73fd256-3047-b3d1-c293-44cdc7306963"
+                      },
+                      "usePageEntries": true,
+                      "usePageUrl": "router"
+                    }
+                  ]
+                },
+                "subActiveOpt": true
               },
               {
                 "id": "2b2a46ca-2bc1-0dfb-bebb-372063c6f0e3",
@@ -15295,14 +15365,40 @@
                 "label": {
                   "id": "a3efd2be-59e5-a0fd-572d-865b6fc2e8ed"
                 },
-                "url": "activatedroute"
+                "url": "activatedroute",
+                "sub": {
+                  "items": [
+                    {
+                      "id": "66093e45-3b4e-d904-4803-2810edf10d71",
+                      "label": {
+                        "id": "1a2caa5a-ce12-7761-80c2-707accdd93ff"
+                      },
+                      "usePageEntries": true,
+                      "usePageUrl": "activatedroute"
+                    }
+                  ]
+                },
+                "subActiveOpt": true
               },
               {
                 "id": "c866a025-6b51-4d63-42bf-4c61bb5e6518",
                 "label": {
                   "id": "c7f3a99f-fbd6-aa2f-8298-f6f64ec81724"
                 },
-                "url": "activatedroutesnapshot"
+                "url": "activatedroutesnapshot",
+                "sub": {
+                  "items": [
+                    {
+                      "id": "c3dcc19d-dfb1-f99c-bbc3-8bf1156a20ca",
+                      "label": {
+                        "id": "45f5c8ae-9ba5-9156-3061-fa7f07befeae"
+                      },
+                      "usePageEntries": true,
+                      "usePageUrl": "activatedroutesnapshot"
+                    }
+                  ]
+                },
+                "subActiveOpt": true
               },
               {
                 "id": "a3dce050-b780-6739-f6a0-a02a7541fac8",
@@ -15356,7 +15452,28 @@
           "pages": [
             {
               "id": "ffa4036b-22b4-9f81-2c49-0f8f5d24d75f",
-              "entries": [],
+              "entries": [
+                {
+                  "id": "11501091-79c4-174e-d282-e212517205f9",
+                  "type": "text",
+                  "head": {
+                    "id": "9adf6a51-a8c0-6dbf-67a5-fccd71bb5b60"
+                  },
+                  "text": {
+                    "id": "b11c4f11-d530-bee6-04c4-5f55a09a3aae"
+                  }
+                },
+                {
+                  "id": "105f2bd5-b48c-24c1-b765-dbdc0e5e2aa4",
+                  "type": "text",
+                  "head": {
+                    "id": "f01b35a8-0e52-fba8-7919-28a1886e899d"
+                  },
+                  "text": {
+                    "id": "f24e3ffd-1c78-6eb5-a075-9a4cc799a947"
+                  }
+                }
+              ],
               "title": {
                 "id": "2b0eb4d8-9ce1-a57d-eff6-f91d05588ed3"
               },
@@ -15364,7 +15481,58 @@
             },
             {
               "id": "6a00a5ff-b82a-1c02-37ee-3144cdc6f460",
-              "entries": [],
+              "entries": [
+                {
+                  "id": "95b5997d-c887-f011-ad90-4ddb772daaa0",
+                  "type": "text",
+                  "head": {
+                    "id": "0f0b7a3f-aed7-22e2-5e82-245b7f6a91b0"
+                  },
+                  "text": {
+                    "id": "8f5b6d5b-8d70-2fa6-47ae-8f297e693116"
+                  }
+                },
+                {
+                  "id": "f895881c-4fff-2a5d-dd8a-f88e73865cab",
+                  "type": "text",
+                  "head": {
+                    "id": "d14c900b-2435-07a9-3d90-9ab5a484139b"
+                  },
+                  "text": {
+                    "id": "b111bcd7-7e20-f51f-aa0a-d0c82ab2f7a0"
+                  }
+                },
+                {
+                  "id": "422471ad-b14b-a204-7d7a-cd0115d9257d",
+                  "type": "text",
+                  "head": {
+                    "id": "4058e691-54b2-6d20-b758-8f16870dde2d"
+                  },
+                  "text": {
+                    "id": "490330b1-062a-bfe5-a47f-024e5c4846e0"
+                  }
+                },
+                {
+                  "id": "adec0600-cf3a-eb08-241b-d75a97cbb07d",
+                  "type": "text",
+                  "head": {
+                    "id": "63a3ba15-9005-c48c-34d3-b5157eca1eb4"
+                  },
+                  "text": {
+                    "id": "7a46e426-2cbf-e456-5980-c3dc7e1e78b6"
+                  }
+                },
+                {
+                  "id": "a296ebf1-00b2-bc76-0ad2-0c16cf23fdba",
+                  "type": "text",
+                  "head": {
+                    "id": "f30fb4b7-297f-f8f1-c8de-190fcf8007f6"
+                  },
+                  "text": {
+                    "id": "472f2c7d-0314-548d-e36c-faadf0387bdb"
+                  }
+                }
+              ],
               "title": {
                 "id": "3429e2b9-889d-80b3-eccc-1ef1787b1457"
               },
@@ -15372,7 +15540,298 @@
             },
             {
               "id": "259fe330-8bb1-a49f-3473-7b712313c137",
-              "entries": [],
+              "entries": [
+                {
+                  "id": "8e0ca59c-8efd-fe6d-077d-e3fc37758c0a",
+                  "type": "text",
+                  "head": {
+                    "id": "7660d948-8d59-71aa-8e00-6d5729097943"
+                  },
+                  "text": {
+                    "id": "1b40b756-7945-be0a-8b5b-c079284652dd"
+                  }
+                },
+                {
+                  "id": "658005e2-a458-cc3b-4b65-fd35cfc6ecae",
+                  "type": "text",
+                  "head": {
+                    "id": "3820ba5b-0419-4535-50b9-6c1a6f314c27"
+                  },
+                  "text": {
+                    "id": "aabf9fb2-3352-7897-bb77-b518e7a3a540"
+                  }
+                },
+                {
+                  "id": "f658fb10-1684-e338-59ba-5839d459751d",
+                  "type": "text",
+                  "head": {
+                    "id": "948594c1-6428-14cd-6d21-b904a31c475e"
+                  },
+                  "text": {
+                    "id": "78571eca-fb52-725c-0f6b-0f8981488e6b"
+                  }
+                },
+                {
+                  "id": "18b80d31-79fa-d87f-2e16-1fffb6891654",
+                  "type": "text",
+                  "head": {
+                    "id": "1b391d12-7ede-6167-ce14-e0d67847d056"
+                  },
+                  "text": {
+                    "id": "32d073c1-abb0-a06a-9aea-221d466bce8e"
+                  }
+                },
+                {
+                  "id": "9e16b637-e470-1cc1-9d53-c5ad2025e0ab",
+                  "type": "toc",
+                  "head": {
+                    "id": "0d69c5a9-bf7c-2e96-cd01-e74c46ed628a"
+                  },
+                  "text": {
+                    "id": "a8a040c3-36ad-1e9a-1fdc-cd0773adced9"
+                  }
+                },
+                {
+                  "id": "979b7290-2902-e1d9-10c1-c56c5021eb4f",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "path"
+                  },
+                  "text": {
+                    "id": "74eb8afa-b7a1-f69f-0aac-8eb6bb5ae12b"
+                  },
+                  "description": {
+                    "id": "8c459a92-b9fd-3b06-5515-8300ca23a611"
+                  },
+                  "name": "path",
+                  "headId": "path",
+                  "interface": "path?: string"
+                },
+                {
+                  "id": "1411086d-f59a-297e-29db-057d473bac86",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "pathMatch"
+                  },
+                  "text": {
+                    "id": "a3d339f2-bdc7-e29f-2192-71c24fa998ae"
+                  },
+                  "description": {
+                    "id": "1c14e9e2-6d18-d3d0-c4bf-260e277a977f"
+                  },
+                  "name": "pathMatch",
+                  "headId": "pathMatch",
+                  "interface": "pathMatch?: string"
+                },
+                {
+                  "id": "adb0f7ba-b14b-49cf-e60a-0c8be0b39a65",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "matcher"
+                  },
+                  "text": {
+                    "id": "7f30967a-5ec0-1a88-141a-203dd3f0bccd"
+                  },
+                  "description": {
+                    "id": "39026a96-ae96-d192-86d0-d6648b92eed3"
+                  },
+                  "name": "matcher",
+                  "headId": "matcher",
+                  "interface": "matcher?: UrlMatcher"
+                },
+                {
+                  "id": "194041c1-da5b-0589-c240-7d7545f45c5e",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "component"
+                  },
+                  "text": {
+                    "id": "59cb111c-9538-f827-1e00-024771593bff"
+                  },
+                  "description": {
+                    "id": "e2692ab9-6c25-6b31-8ef4-5b581dfe18ac"
+                  },
+                  "name": "component",
+                  "headId": "component",
+                  "interface": "component?: Type<any>"
+                },
+                {
+                  "id": "3e1291b0-f9e0-b961-21ab-7ed01c3a5f22",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "redirectTo"
+                  },
+                  "text": {
+                    "id": "6f9914bd-a933-c91b-876a-b664238246df"
+                  },
+                  "description": {
+                    "id": "08c44c9f-f34e-aea1-5d63-deb94ed62a98"
+                  },
+                  "name": "redirectTo",
+                  "headId": "redirectTo",
+                  "interface": "redirectTo?: string"
+                },
+                {
+                  "id": "23571056-d67c-8c6e-2108-574051ddb3ce",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "outlet"
+                  },
+                  "text": {
+                    "id": "f1026812-2852-3f9c-b151-1044654046bd"
+                  },
+                  "description": {
+                    "id": "82dcc75b-6ca8-b340-22e5-16eb9b8965bf"
+                  },
+                  "name": "outlet",
+                  "headId": "outlet",
+                  "interface": "outlet?: string"
+                },
+                {
+                  "id": "365e27d8-191f-19d8-c87d-e6c174ce92c7",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "canActivate"
+                  },
+                  "text": {
+                    "id": "c429d0bf-06cc-512c-ef08-03ccea88d92d"
+                  },
+                  "description": {
+                    "id": "e766c5db-3002-7676-f330-008f33507f9c"
+                  },
+                  "name": "canActivate",
+                  "headId": "canActivate",
+                  "interface": "canActivate?: any[]"
+                },
+                {
+                  "id": "b19ddbf6-5a94-c23e-a8cf-5f0e8384531c",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "canActivateChild"
+                  },
+                  "text": {
+                    "id": "007234ac-cc3e-bc0a-ee05-8485ba780163"
+                  },
+                  "description": {
+                    "id": "f50f9dcf-081a-b6ea-addb-a840ff039ee6"
+                  },
+                  "name": "canActivateChild",
+                  "headId": "canActivateChild",
+                  "interface": "canActivateChild?: any[]"
+                },
+                {
+                  "id": "7040329b-8282-8c06-b497-e1f9214cfa8f",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "canDeactivate"
+                  },
+                  "text": {
+                    "id": "29e91f38-57f6-b583-9d00-64362fadd74d"
+                  },
+                  "description": {
+                    "id": "ad3e6838-28bf-0c37-36aa-83c9a5e5468f"
+                  },
+                  "name": "canDeactivate",
+                  "headId": "canDeactivate",
+                  "interface": "canDeactivate?: any[]"
+                },
+                {
+                  "id": "21bc6568-104c-ba54-bdbf-816e577871f8",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "canLoad"
+                  },
+                  "text": {
+                    "id": "2ab9b8db-25c5-b580-71e4-b3ac19cadc8f"
+                  },
+                  "description": {
+                    "id": "f958ea8b-8e31-fbe1-dbb1-8abeef0651eb"
+                  },
+                  "name": "canLoad",
+                  "headId": "canLoad",
+                  "interface": "canLoad?: any[]"
+                },
+                {
+                  "id": "f22a7629-96ae-6bb6-d275-f118b1c9cac8",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "data"
+                  },
+                  "text": {
+                    "id": "379ce92c-a8df-3007-d71b-929057ec0ac1"
+                  },
+                  "description": {
+                    "id": "aa1ce0e8-54bc-8645-f58e-32d7d2c535ba"
+                  },
+                  "name": "data",
+                  "headId": "data",
+                  "interface": "data?: Data"
+                },
+                {
+                  "id": "c6daa3ae-3849-5fd3-7e75-6245a04c4308",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "resolve"
+                  },
+                  "text": {
+                    "id": "25eb8aac-7c7c-f108-9724-07e3dc54ec38"
+                  },
+                  "description": {
+                    "id": "f31f0ead-e77f-403d-c411-8d336909752d"
+                  },
+                  "name": "resolve",
+                  "headId": "resolve",
+                  "interface": "resolve?: ResolveData"
+                },
+                {
+                  "id": "72077878-a208-73e4-543a-dece6cdc6170",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "children"
+                  },
+                  "text": {
+                    "id": "7b470b36-925b-4668-fed4-3de0486c76e6"
+                  },
+                  "description": {
+                    "id": "9b4a9b2f-1d1f-9991-bb34-3be660473dc2"
+                  },
+                  "name": "children",
+                  "headId": "children",
+                  "interface": "children?: Routes"
+                },
+                {
+                  "id": "75ecfdc3-e5ad-4345-aaf9-4ea04351bcb0",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "loadChildren"
+                  },
+                  "text": {
+                    "id": "88007fa9-513c-1cfc-e056-a25903ebba4e"
+                  },
+                  "description": {
+                    "id": "0be57d7c-0db5-b2ef-ea85-c34f0223d576"
+                  },
+                  "name": "loadChildren",
+                  "headId": "loadChildren",
+                  "interface": "loadChildren?: LoadChildren"
+                },
+                {
+                  "id": "9ceb66e7-8393-c562-70da-ec15ab2fccf1",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "runGuardsAndResolvers"
+                  },
+                  "text": {
+                    "id": "6c73a509-a769-c264-9769-7d691d7dd56b"
+                  },
+                  "description": {
+                    "id": "d40cbde1-4744-0941-75e3-56922b474876"
+                  },
+                  "name": "runGuardsAndResolvers",
+                  "headId": "runGuardsAndResolvers",
+                  "interface": "runGuardsAndResolvers?: RunGuardsAndResolvers"
+                }
+              ],
               "title": {
                 "id": "4a8e70cf-f980-7202-e08d-6312e63de298"
               },
@@ -15380,7 +15839,298 @@
             },
             {
               "id": "5ea3b8d3-ff29-6ebd-bbbf-f85bd109addc",
-              "entries": [],
+              "entries": [
+                {
+                  "id": "e9a803b0-58f1-b292-b9c9-5d1dbeec4588",
+                  "type": "text",
+                  "head": {
+                    "id": "8ff03025-2833-8b00-0594-87f1e3064cc4"
+                  },
+                  "text": {
+                    "id": "3ccbfe5e-b1c6-c113-504e-74a24768e80d"
+                  }
+                },
+                {
+                  "id": "667f2a6c-f6c6-c394-cecb-9df38adc4f56",
+                  "type": "text",
+                  "head": {
+                    "id": "4fe12334-d8a1-50e0-b05c-ebd200ae4c79"
+                  },
+                  "text": {
+                    "id": "51fe0b94-2b29-07b6-56cd-7ad5498ddc74"
+                  }
+                },
+                {
+                  "id": "99af5d68-938f-ee0d-6094-b6ba96b64d85",
+                  "type": "text",
+                  "head": {
+                    "id": "838b9d68-4366-3eb3-59f8-c02371a21151"
+                  },
+                  "text": {
+                    "id": "6a0d8e2a-ef1a-e8aa-b91b-1fd9dd9990d9"
+                  }
+                },
+                {
+                  "id": "83c4543d-5dc7-b717-c04d-0ab2bc670278",
+                  "type": "text",
+                  "head": {
+                    "id": "5c8c1e56-6505-14e4-985e-2c98d8421d0d"
+                  },
+                  "text": {
+                    "id": "0c19fd1b-e13c-9b1b-6359-b2026463bc6d"
+                  }
+                },
+                {
+                  "id": "8a068255-d7bb-e82f-36c4-9eabe6871364",
+                  "type": "toc",
+                  "head": {
+                    "id": "7c249100-7eed-eb69-e8aa-dcbc9e5dd715"
+                  },
+                  "text": {
+                    "id": "f2be79cf-5d29-6b1d-4673-8b937a0a921d"
+                  }
+                },
+                {
+                  "id": "3e2f0c5d-be9d-d2ef-2888-f0189920df25",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "enableTracing"
+                  },
+                  "text": {
+                    "id": "ff82172b-85ee-ff04-3b2e-3e0abd045f4b"
+                  },
+                  "description": {
+                    "id": "afd6622e-9626-ba02-c353-58122ed77fdd"
+                  },
+                  "interface": "enableTracing?: boolean",
+                  "name": "enableTracing",
+                  "headId": "enableTracing"
+                },
+                {
+                  "id": "be1a8135-7ee9-c9e0-bfb0-f7b1f554dd6c",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "useHash"
+                  },
+                  "text": {
+                    "id": "201408f4-c89f-4da6-4513-a8b52106cddd"
+                  },
+                  "description": {
+                    "id": "a4aace09-1ef9-82b5-3048-7613e44211c0"
+                  },
+                  "name": "useHash",
+                  "headId": "useHash",
+                  "interface": "useHash?: boolean"
+                },
+                {
+                  "id": "7d767260-23ee-7c85-a885-cbabf2ccbea4",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "initialNavigation"
+                  },
+                  "text": {
+                    "id": "91cf5600-913c-1acd-99fc-58c13bedfbab"
+                  },
+                  "description": {
+                    "id": "083dbc61-32ae-870e-58f9-1261aed057a6"
+                  },
+                  "interface": "initialNavigation?: InitialNavigation",
+                  "name": "initialNavigation",
+                  "headId": "initialNavigation"
+                },
+                {
+                  "id": "0b20903e-4aac-c78e-173a-3a743ca8514f",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "errorHandler"
+                  },
+                  "text": {
+                    "id": "cdc218a9-abc0-2b5b-16d4-1785823b6817"
+                  },
+                  "description": {
+                    "id": "243dd22c-47b8-c827-aa2d-5af9006574cc"
+                  },
+                  "interface": "errorHandler?: ErrorHandler",
+                  "name": "errorHandler",
+                  "headId": "errorHandler"
+                },
+                {
+                  "id": "8c63f72e-f94e-5a50-e6bf-860cbd7e4388",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "preloadingStrategy"
+                  },
+                  "text": {
+                    "id": "8b78ac72-0bd5-09ba-6a44-eb354245aae0"
+                  },
+                  "description": {
+                    "id": "d5df11d7-18bb-c2df-9666-afbada52e0ff"
+                  },
+                  "interface": "preloadingStrategy?: any",
+                  "name": "preloadingStrategy",
+                  "headId": "preloadingStrategy"
+                },
+                {
+                  "id": "06fb63ff-6736-2800-0594-e2c0459270d6",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "onSameUrlNavigation"
+                  },
+                  "text": {
+                    "id": "898d1058-d000-aa9b-f9fb-39038e1de025"
+                  },
+                  "description": {
+                    "id": "cef2a595-6e2f-3d78-5676-86104a63e29c"
+                  },
+                  "interface": "onSameUrlNavigation?: 'reload' | 'ignore'",
+                  "name": "onSameUrlNavigation",
+                  "headId": "onSameUrlNavigation",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "2da745f3-de80-7932-18af-eee45d0e4123"
+                  }
+                },
+                {
+                  "id": "354e0243-7177-c6ab-566a-1751208479f5",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "scrollPositionRestoration"
+                  },
+                  "text": {
+                    "id": "1f2ae78d-d55b-cab3-bb2b-9f327d2ffe65"
+                  },
+                  "description": {
+                    "id": "05fc77ce-d3e0-281b-6bd4-0064575723eb"
+                  },
+                  "interface": "scrollPositionRestoration?: 'disabled' | 'enabled' | 'top'",
+                  "name": "scrollPositionRestoration",
+                  "headId": "scrollPositionRestoration",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "04a3d98d-f408-7e9b-fda8-a50f7785ed87"
+                  }
+                },
+                {
+                  "id": "350d0a43-8648-889a-c90b-d39990b9b0a3",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "anchorScrolling"
+                  },
+                  "text": {
+                    "id": "c9ce813a-8aaf-f9a0-4f46-06327c56f2e0"
+                  },
+                  "description": {
+                    "id": "35ae17d5-8041-f1b0-372b-7f7ba45a6e38"
+                  },
+                  "interface": "anchorScrolling?: 'disabled' | 'enabled'",
+                  "name": "anchorScrolling",
+                  "headId": "anchorScrolling",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "9d6ab2e5-f952-10e4-727e-2ff97455d8a9"
+                  }
+                },
+                {
+                  "id": "579a07ad-e31f-a282-3caf-09acf17c17a3",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "scrollOffset"
+                  },
+                  "text": {
+                    "id": "e31fae48-1583-002b-2591-e79ea34be8d8"
+                  },
+                  "description": {
+                    "id": "0678dfff-565d-7f5f-51ad-cceb384c9837"
+                  },
+                  "interface": "scrollOffset?: [number, number] | (() => [number, number])",
+                  "name": "scrollOffset",
+                  "headId": "scrollOffset",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "6916b545-e2d5-634c-2e98-02d943a2160a"
+                  }
+                },
+                {
+                  "id": "489b4d66-10cb-ac34-888d-cabb6a27737c",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "paramsInheritanceStrategy"
+                  },
+                  "text": {
+                    "id": "b5e5b761-df99-7244-5004-e753d0514308"
+                  },
+                  "description": {
+                    "id": "cb268546-7706-22be-e4ad-06d094366420"
+                  },
+                  "interface": "paramsInheritanceStrategy?: 'emptyOnly' | 'always'",
+                  "name": "paramsInheritanceStrategy",
+                  "headId": "paramsInheritanceStrategy",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "8b2477fb-1b9c-9694-ee2f-8d31f994580d"
+                  }
+                },
+                {
+                  "id": "ff958552-2a60-99c5-a2a1-288dbeb31b9f",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "malformedUriErrorHandler"
+                  },
+                  "text": {
+                    "id": "30147652-8fd4-67cf-405f-483f0c61182b"
+                  },
+                  "description": {
+                    "id": "bd20b9ad-2dc0-e2d4-d8ea-34421815b63c"
+                  },
+                  "interface": "malformedUriErrorHandler?: (error: URIError, urlSerializer: UrlSerializer, url: string) => UrlTree",
+                  "name": "malformedUriErrorHandler",
+                  "headId": "malformedUriErrorHandler",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "214aa5d7-60ff-1875-a6c0-10038591c4e9"
+                  }
+                },
+                {
+                  "id": "0df342c9-69f1-76c3-a0c5-a0a14567c97f",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "urlUpdateStrategy"
+                  },
+                  "text": {
+                    "id": "634aa6a0-9358-af4e-4529-64e5e63b4615"
+                  },
+                  "description": {
+                    "id": "fb671d8e-9c5b-38cd-4950-75299c0c8817"
+                  },
+                  "interface": "urlUpdateStrategy?: 'deferred' | 'eager'",
+                  "name": "urlUpdateStrategy",
+                  "headId": "urlUpdateStrategy",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "dfd248b1-1d80-cbb3-4848-fd2fb0a17a23"
+                  }
+                },
+                {
+                  "id": "b3f5e7e1-1997-7b45-d3b5-cc9c31125528",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "relativeLinkResolution"
+                  },
+                  "text": {
+                    "id": "893229bc-7813-0afb-365e-dcc2f787219a"
+                  },
+                  "description": {
+                    "id": "3b9b01e0-875b-38b6-f0f0-b2bed126b56b"
+                  },
+                  "interface": "relativeLinkResolution?: 'legacy' | 'corrected'",
+                  "name": "relativeLinkResolution",
+                  "headId": "relativeLinkResolution",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "0a510d01-8c2b-7827-eabc-8b09767ad7f2"
+                  }
+                }
+              ],
               "title": {
                 "id": "833378d0-bd9e-5801-d4b3-6bcaee008623"
               },
@@ -15388,7 +16138,68 @@
             },
             {
               "id": "cf30650f-684c-05bd-5321-203588ad4f4f",
-              "entries": [],
+              "entries": [
+                {
+                  "id": "bafbace8-5d2b-9697-935c-0df9ad1f1440",
+                  "type": "text",
+                  "head": {
+                    "id": "af2b980c-3316-c103-4963-b5b3360fb87b"
+                  },
+                  "text": {
+                    "id": "1b254148-e462-cf93-0d3e-7b3fb949a4b1"
+                  }
+                },
+                {
+                  "id": "0694ae94-464b-3c8f-65a9-5bbf1ab1a231",
+                  "type": "text",
+                  "head": {
+                    "id": "85e78fc9-e84d-40eb-4435-7d268071ccd2"
+                  },
+                  "text": {
+                    "id": "66e181d6-bbe8-4ee8-045b-51cbbb8c1c46"
+                  }
+                },
+                {
+                  "id": "c9e8fc60-d1e7-02c2-d5a8-924bf9fd4c77",
+                  "type": "text",
+                  "head": {
+                    "id": "46ffa041-f5aa-8513-e55f-fac48941be36"
+                  },
+                  "text": {
+                    "id": "5e0523b4-1d92-6ec8-aded-7426089b93b9"
+                  }
+                },
+                {
+                  "id": "f729a69e-056c-2140-fa34-0ba245dd0cba",
+                  "type": "text",
+                  "head": {
+                    "id": "5b80d153-8e94-9caa-7bce-20c841b861d9"
+                  },
+                  "text": {
+                    "id": "1fc8e799-9f1d-71e5-292b-d162cbfdc3ad"
+                  }
+                },
+                {
+                  "id": "040d6006-59ae-3daf-b570-c50bae2e4045",
+                  "type": "text",
+                  "head": {
+                    "id": "bbe5d153-9b3e-6001-e2ad-26f21e34079f"
+                  },
+                  "text": {
+                    "id": "0680e493-7313-8224-f812-29645e4bc30d"
+                  }
+                },
+                {
+                  "id": "2d6cfe1c-28d1-caa8-95cd-e6902c3fe453",
+                  "type": "text",
+                  "head": {
+                    "id": "33b3ef65-1bd8-cd87-7c7f-2d0b989439fa"
+                  },
+                  "text": {
+                    "id": "105b6fae-5da3-9c66-8fba-fae89793fbbc"
+                  }
+                }
+              ],
               "title": {
                 "id": "844aa134-0f7a-5374-5866-1df5d83cbd8f"
               },
@@ -15396,7 +16207,68 @@
             },
             {
               "id": "3795549b-febd-178f-7359-16015f372135",
-              "entries": [],
+              "entries": [
+                {
+                  "id": "5068bca9-fb4e-49f2-d937-71149850c460",
+                  "type": "text",
+                  "head": {
+                    "id": "3f973e61-1455-c3f7-9805-00df084c3cac"
+                  },
+                  "text": {
+                    "id": "1d42ef13-debf-3cfc-a7b2-01a74dd7eab3"
+                  }
+                },
+                {
+                  "id": "1192c8ea-b02c-43ed-a3f5-469c840d60ae",
+                  "type": "text",
+                  "head": {
+                    "id": "e9c265b4-841e-f463-e5f6-33c6d5a99eba"
+                  },
+                  "text": {
+                    "id": "df68af9c-0819-34cf-54ab-01c4b9b19e0d"
+                  }
+                },
+                {
+                  "id": "030e6bc2-30d4-ac4a-555c-a5e8f09cbd7f",
+                  "type": "text",
+                  "head": {
+                    "id": "fd21a83b-8c0e-41cf-db76-4018db89ba23"
+                  },
+                  "text": {
+                    "id": "7e712818-9738-b378-3c63-92f1e4580d2a"
+                  }
+                },
+                {
+                  "id": "7a24beaf-b221-21dd-7c54-c27e77a7084f",
+                  "type": "text",
+                  "head": {
+                    "id": "b87a57df-a13c-17cc-4a55-9cf66e1c7108"
+                  },
+                  "text": {
+                    "id": "8885fd39-74e8-77ea-fe98-641d7871f726"
+                  }
+                },
+                {
+                  "id": "f0e9ce29-251e-5177-2c0f-ff3a4217925e",
+                  "type": "text",
+                  "head": {
+                    "id": "666b10c3-ae39-c13d-1baa-273bf4ff859d"
+                  },
+                  "text": {
+                    "id": "8fcf8de8-87a7-6230-5e57-a9a3bf4c5d2d"
+                  }
+                },
+                {
+                  "id": "8e5f5541-6bc6-bd73-dc8c-d24a1580aaef",
+                  "type": "text",
+                  "head": {
+                    "id": "e7648faa-d317-99c3-6ae3-4095befd6166"
+                  },
+                  "text": {
+                    "id": "703156ee-239c-62f2-06d5-502de7785be1"
+                  }
+                }
+              ],
               "title": {
                 "id": "945931df-5404-147b-06b7-5015ab9130dd"
               },
@@ -15404,7 +16276,68 @@
             },
             {
               "id": "ce3e9f85-d837-7c28-3394-93660e171ab2",
-              "entries": [],
+              "entries": [
+                {
+                  "id": "94a2b51a-e1af-472c-8a52-c50ca4c3f3cf",
+                  "type": "text",
+                  "head": {
+                    "id": "0486ed35-585c-92d2-1130-5cee05c87b4b"
+                  },
+                  "text": {
+                    "id": "8a66d24a-652f-8a9a-b5cc-55719047cf03"
+                  }
+                },
+                {
+                  "id": "55d3d187-c3fe-1426-1ee3-48d0ab513034",
+                  "type": "text",
+                  "head": {
+                    "id": "2f09cee0-9528-1168-e466-2b7ebce6dcf8"
+                  },
+                  "text": {
+                    "id": "69617265-ee1f-eea9-e3d9-a85964106652"
+                  }
+                },
+                {
+                  "id": "3c0a97b7-c5eb-f3b2-27f4-1aa008e44a88",
+                  "type": "text",
+                  "head": {
+                    "id": "85744ce2-d8b0-e42b-7d5d-c37e929a1d01"
+                  },
+                  "text": {
+                    "id": "7d4b9c09-34fc-63df-66d3-28905ca5dedf"
+                  }
+                },
+                {
+                  "id": "20d1c092-a84c-9dfb-4fdc-f17dd3ae5c0b",
+                  "type": "text",
+                  "head": {
+                    "id": "c85fed5d-9adb-9a3d-9bd9-0b22b9d9f3ce"
+                  },
+                  "text": {
+                    "id": "0cdd3bfd-eddd-7577-b8fa-91146d62052c"
+                  }
+                },
+                {
+                  "id": "1be66991-13b7-2aaf-b9fd-f69223f0f3f6",
+                  "type": "text",
+                  "head": {
+                    "id": "ae54e565-b553-ed2c-215b-73b3f5e0e8b9"
+                  },
+                  "text": {
+                    "id": "b3cccfb1-d20a-b527-9238-b94cd13e5515"
+                  }
+                },
+                {
+                  "id": "86935bbc-7318-8d72-90d6-b0086ee89180",
+                  "type": "text",
+                  "head": {
+                    "id": "0d2776ae-8847-229d-36f3-ee91acf877ce"
+                  },
+                  "text": {
+                    "id": "5d3b15ca-81f1-d604-3d9b-97a3763ae9b1"
+                  }
+                }
+              ],
               "title": {
                 "id": "1ed30b65-244d-9fc3-c1e5-e444d356cc07"
               },
@@ -15412,7 +16345,68 @@
             },
             {
               "id": "c26dbe4a-381e-e93f-0448-ece85087ff9e",
-              "entries": [],
+              "entries": [
+                {
+                  "id": "820b923d-b898-85e2-4157-246dd730e910",
+                  "type": "text",
+                  "head": {
+                    "id": "97d1d65f-a6e3-81d8-1d09-2e8d688f3885"
+                  },
+                  "text": {
+                    "id": "30a43c69-0597-4646-8d76-d7161740c8b1"
+                  }
+                },
+                {
+                  "id": "9fa5c0d3-15c7-8e89-bcec-60f700463e09",
+                  "type": "text",
+                  "head": {
+                    "id": "ae3ac0d5-213f-d266-fcbc-68395b166d5f"
+                  },
+                  "text": {
+                    "id": "a6ab9d63-af42-30be-3176-8701ab80099f"
+                  }
+                },
+                {
+                  "id": "4c073feb-710d-f1f0-a54f-786d6716334b",
+                  "type": "text",
+                  "head": {
+                    "id": "2c347a74-0e4f-063c-fe48-e44dd2a28157"
+                  },
+                  "text": {
+                    "id": "a504276f-5cfd-28c1-403d-6cd59a6a70fc"
+                  }
+                },
+                {
+                  "id": "637e2780-733c-6599-b7bb-05d6f75762b6",
+                  "type": "text",
+                  "head": {
+                    "id": "ee8b7232-ab18-f454-2c65-0482ed8ce51a"
+                  },
+                  "text": {
+                    "id": "4cf4aa52-d2c0-7763-7e87-bf456812ac09"
+                  }
+                },
+                {
+                  "id": "ed4f0703-5122-378f-0518-e5583116a0ae",
+                  "type": "text",
+                  "head": {
+                    "id": "9bc42515-5bd6-4ba4-af8f-a16580cf876a"
+                  },
+                  "text": {
+                    "id": "66feb9fb-730c-347b-6960-5269dd38bec6"
+                  }
+                },
+                {
+                  "id": "09675de3-919a-f000-c6e7-dc0f14984dc0",
+                  "type": "text",
+                  "head": {
+                    "id": "235cf3dc-a3ab-387c-6249-35dd3c5148f0"
+                  },
+                  "text": {
+                    "id": "171727f9-e823-36aa-38bf-b8982392e1c1"
+                  }
+                }
+              ],
               "title": {
                 "id": "d10dafa4-2b71-5663-7790-911fcb6ae68b"
               },
@@ -15420,7 +16414,68 @@
             },
             {
               "id": "34feaca5-5bb3-d1ea-c09b-67eddfe44fd2",
-              "entries": [],
+              "entries": [
+                {
+                  "id": "acba529a-0273-8944-e848-335423c89ebd",
+                  "type": "text",
+                  "head": {
+                    "id": "d712f5ce-e8d1-5d7c-81f7-24f30fbf2463"
+                  },
+                  "text": {
+                    "id": "f11944dc-79ff-5059-7f86-18974d71c6c5"
+                  }
+                },
+                {
+                  "id": "ce6ffa2b-461b-fd3f-1b88-f5e26ecb86fd",
+                  "type": "text",
+                  "head": {
+                    "id": "0d73313d-5c8a-7096-d9da-bd679e6011b1"
+                  },
+                  "text": {
+                    "id": "dc974370-e653-3504-09c3-d8dea54114e8"
+                  }
+                },
+                {
+                  "id": "870d284b-9f3d-b70d-47a7-1cb2ea941fc0",
+                  "type": "text",
+                  "head": {
+                    "id": "1ecf636f-7a4d-b155-84f7-bc4e8392a2b8"
+                  },
+                  "text": {
+                    "id": "3f35fed7-e9d2-1cba-476b-e77c1b7c9c6e"
+                  }
+                },
+                {
+                  "id": "9e655086-5d67-0236-42e9-18ddf82720e1",
+                  "type": "text",
+                  "head": {
+                    "id": "fc4b09bc-36f5-dde4-285c-208417454772"
+                  },
+                  "text": {
+                    "id": "a39d7b14-8edb-905c-9854-1076fa2fe3c8"
+                  }
+                },
+                {
+                  "id": "0dcd781a-ee16-f0d6-9643-b674b93fd3cf",
+                  "type": "text",
+                  "head": {
+                    "id": "ee8c0ecb-e741-b105-5827-3b5c63220432"
+                  },
+                  "text": {
+                    "id": "e6735cae-1e53-54d1-5016-c4f2ef1b697e"
+                  }
+                },
+                {
+                  "id": "6203ae26-3f3e-b100-fcab-a5d68f413a13",
+                  "type": "text",
+                  "head": {
+                    "id": "95bba252-5276-701d-14df-123f47b507c6"
+                  },
+                  "text": {
+                    "id": "8aba00ad-ce74-2891-a592-0a2aae64e095"
+                  }
+                }
+              ],
               "title": {
                 "id": "e93c3c9f-fae0-edfd-b915-922f6bd8cd39"
               },
@@ -15428,7 +16483,448 @@
             },
             {
               "id": "12ef177f-35ba-cb7c-b108-787f6daff5d3",
-              "entries": [],
+              "entries": [
+                {
+                  "id": "bf587ad8-7759-d210-a551-fb49d6378338",
+                  "type": "text",
+                  "head": {
+                    "id": "0c0b39b5-b18c-eed6-fc68-3a68152754db"
+                  },
+                  "text": {
+                    "id": "b4cbfc96-485f-7b48-ba8c-90da264b2602"
+                  }
+                },
+                {
+                  "id": "525e0caa-c83d-7a03-f03a-c3457be83142",
+                  "type": "text",
+                  "head": {
+                    "id": "f0b924ac-b1a7-cfbc-8deb-938d39753472"
+                  },
+                  "text": {
+                    "id": "d157cc4a-6ea0-e61a-f717-a733533e4a91"
+                  }
+                },
+                {
+                  "id": "c25e19ad-446e-38f3-1a92-62e66f52228e",
+                  "type": "text",
+                  "head": {
+                    "id": "146fdf14-3d7d-99de-e0f8-e1a01a6c7504"
+                  },
+                  "text": {
+                    "id": "ff0a5a42-1360-7139-cdba-b0d9c03453c6"
+                  }
+                },
+                {
+                  "id": "9cd5039e-e970-d380-1e1d-f9c718e51c62",
+                  "type": "text",
+                  "head": {
+                    "id": "19876eb0-2215-ba46-1d49-fcf1753f6ab2"
+                  },
+                  "text": {
+                    "id": "fc7cfecc-b5ee-a25f-4bd9-bd9732bb2907"
+                  }
+                },
+                {
+                  "id": "05b413e0-65c9-fa74-5bb2-c0549ee8748c",
+                  "type": "text",
+                  "head": {
+                    "id": "22b38b00-8776-0a42-4189-f9c0fbf17cc0"
+                  },
+                  "text": {
+                    "id": "ca0c56be-76b6-c82f-fd4b-13656a154776"
+                  }
+                },
+                {
+                  "id": "40729049-a8fd-25bb-a906-db2c4c4a6482",
+                  "type": "toc",
+                  "head": {
+                    "id": "b74f4c9d-00d2-92a1-d1da-0f679b3ab0a4"
+                  },
+                  "text": {
+                    "id": "8c70d5fd-ac0e-a4d1-fb6c-c553280e64be"
+                  }
+                },
+                {
+                  "id": "cd7fbde8-d93d-ba32-216c-85b900340818",
+                  "type": "text",
+                  "head": {
+                    "id": "db7dcb93-f121-362c-ae20-96d6b1e5ed08"
+                  },
+                  "text": {
+                    "id": "6d747435-67ae-e939-94ab-044f347e0ba3"
+                  }
+                },
+                {
+                  "id": "fddfed72-c594-33b7-447f-001d7980b31a",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "events"
+                  },
+                  "text": {
+                    "id": "57a85af1-13e9-1bb4-983c-afbd28645631"
+                  },
+                  "description": {
+                    "id": "c40c568e-f59b-5012-11b4-80ef545b04ee"
+                  },
+                  "interface": "events: Observable<Event>",
+                  "name": "events",
+                  "headId": "events"
+                },
+                {
+                  "id": "485c9c80-70bb-528f-0280-d65373b598d3",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "routerState"
+                  },
+                  "text": {
+                    "id": "015cee3b-98c8-6e62-b8e5-e0482fd0e64f"
+                  },
+                  "description": {
+                    "id": "be5706c7-a905-4644-a8ae-2513aeeb59ce"
+                  },
+                  "interface": "routerState: RouterState",
+                  "name": "routerState",
+                  "headId": "routerState"
+                },
+                {
+                  "id": "ba98a086-b473-f09e-b925-6d547dedfb05",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "errorHandler"
+                  },
+                  "text": {
+                    "id": "b40598a8-2abd-e2c4-c918-b51743027368"
+                  },
+                  "description": {
+                    "id": "5a6c7b94-6579-e373-9fca-fe10bdb54937"
+                  },
+                  "interface": "errorHandler: ErrorHandler",
+                  "name": "errorHandler",
+                  "headId": "errorHandler"
+                },
+                {
+                  "id": "68acd81f-0ce4-ffbc-8fc8-1841d7c176c8",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "malformedUriErrorHandler"
+                  },
+                  "text": {
+                    "id": "c1ae2949-666e-80ee-d2aa-3afc3faf0a64"
+                  },
+                  "description": {
+                    "id": "e48ae9e7-4046-e8a4-bad5-ec9914eedaf8"
+                  },
+                  "interface": "malformedUriErrorHandler: (error: URIError, urlSerializer: UrlSerializer, url: string) => UrlTree",
+                  "name": "malformedUriErrorHandler",
+                  "headId": "malformedUriErrorHandler"
+                },
+                {
+                  "id": "49c8536a-c2c6-241e-5722-43f6f1715d58",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "navigated"
+                  },
+                  "text": {
+                    "id": "996919b4-d728-ec3c-da31-6c1248712179"
+                  },
+                  "description": {
+                    "id": "4ab5d610-bdac-ed12-94a6-d00d8a3d786f"
+                  },
+                  "interface": "navigated: boolean",
+                  "name": "navigated",
+                  "headId": "navigated"
+                },
+                {
+                  "id": "8acd6ebf-6acd-b1ce-c605-8cf4bcf7815b",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "urlHandlingStrategy"
+                  },
+                  "text": {
+                    "id": "5ff86439-a340-52d7-1498-e26f111771e6"
+                  },
+                  "description": {
+                    "id": "d81edd63-f481-bc45-f8ee-84f687505c2c"
+                  },
+                  "interface": "urlHandlingStrategy: UrlHandlingStrategy",
+                  "name": "urlHandlingStrategy",
+                  "headId": "urlHandlingStrategy"
+                },
+                {
+                  "id": "d0a726fd-0a9f-bfd5-a144-553332482aeb",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "routeReuseStrategy"
+                  },
+                  "text": {
+                    "id": "18936301-7a56-6793-6648-2c8d8c8cf1ea"
+                  },
+                  "description": {
+                    "id": "e246fb1f-0042-23b4-867a-77f234cd18a9"
+                  },
+                  "interface": "routeReuseStrategy: RouteReuseStrategy",
+                  "name": "routeReuseStrategy",
+                  "headId": "routeReuseStrategy"
+                },
+                {
+                  "id": "866f71bd-ef19-cc94-f8b6-cbc068fcbab8",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "onSameUrlNavigation"
+                  },
+                  "text": {
+                    "id": "a700bede-0931-e495-1aab-aed8bfbb25a2"
+                  },
+                  "description": {
+                    "id": "cffd1e84-e352-53b2-b398-646ee922646a"
+                  },
+                  "interface": "onSameUrlNavigation: 'reload' | 'ignore'",
+                  "name": "onSameUrlNavigation",
+                  "headId": "onSameUrlNavigation"
+                },
+                {
+                  "id": "800c9b75-f740-f834-ccca-0fb37f2ae77b",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "paramsInheritanceStrategy"
+                  },
+                  "text": {
+                    "id": "8e5e6345-9731-601e-76c0-e4a3d23fb634"
+                  },
+                  "description": {
+                    "id": "eda6f214-8f1d-b18f-bd0d-0ce87f1ecaea"
+                  },
+                  "interface": "paramsInheritanceStrategy: 'emptyOnly' | 'always'",
+                  "name": "paramsInheritanceStrategy",
+                  "headId": "paramsInheritanceStrategy"
+                },
+                {
+                  "id": "f3ef8051-855b-9580-226a-cd15fd7ddcef",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "urlUpdateStrategy"
+                  },
+                  "text": {
+                    "id": "43cf7534-94ae-004c-8650-eef4f443f612"
+                  },
+                  "description": {
+                    "id": "a310135d-7967-b76f-2e66-0f9b229444cc"
+                  },
+                  "interface": "urlUpdateStrategy: 'deferred' | 'eager'",
+                  "name": "urlUpdateStrategy",
+                  "headId": "urlUpdateStrategy"
+                },
+                {
+                  "id": "5b0dc9c1-3d7f-88df-f5e3-2aca5951dfdb",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "config"
+                  },
+                  "text": {
+                    "id": "60167a32-df76-f5d6-668e-f9e221ba54ee"
+                  },
+                  "description": {
+                    "id": "df6275e7-8144-efc3-b04f-a2d8840edb2f"
+                  },
+                  "name": "config",
+                  "headId": "config",
+                  "interface": "config: Routes"
+                },
+                {
+                  "id": "68bb5a94-4f3d-d6d6-3242-81269c1b1f04",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "url"
+                  },
+                  "text": {
+                    "id": "26312e32-28a4-5e95-6723-bf6412312bc7"
+                  },
+                  "description": {
+                    "id": "fb861389-e40f-b906-ffdb-8881f77142ea"
+                  },
+                  "interface": "url: string",
+                  "name": "url",
+                  "headId": "url"
+                },
+                {
+                  "id": "7161201a-ff1a-8dde-e62f-2e0716721022",
+                  "type": "text",
+                  "head": {
+                    "id": "0d53b17b-b3c9-7deb-7607-2992f28cc076"
+                  },
+                  "text": {
+                    "id": "ba967fe9-0496-1f4a-1e9e-cfe60d2e3c65"
+                  }
+                },
+                {
+                  "id": "0d46437d-3eef-a01e-6218-bd8087c2561b",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "initialNavigation()"
+                  },
+                  "text": {
+                    "id": "385b1b69-1ff0-7158-5588-4ea849a45845"
+                  },
+                  "description": {
+                    "id": "cc091ab6-e897-6c80-4db6-21d3c74091a0"
+                  },
+                  "interface": "initialNavigation(): void",
+                  "name": "initialNavigation()",
+                  "headId": "initialNavigation()"
+                },
+                {
+                  "id": "23848abe-7e2c-74eb-1897-bd8def3aac35",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "setUpLocationChangeListener()"
+                  },
+                  "text": {
+                    "id": "cc093481-fad8-e6d4-0771-7933fee15d73"
+                  },
+                  "description": {
+                    "id": "e8377807-af91-0794-27e4-c53f54d9eb98"
+                  },
+                  "interface": "setUpLocationChangeListener(): void",
+                  "name": "setUpLocationChangeListener()",
+                  "headId": "setUpLocationChangeListener()"
+                },
+                {
+                  "id": "12d71a6f-f03f-98cb-6865-cb9120b92a3d",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "resetConfig()"
+                  },
+                  "text": {
+                    "id": "e07309ce-9ac3-ece9-85ba-ba1c2386d965"
+                  },
+                  "description": {
+                    "id": "d192dc2e-8dda-c3a0-1905-98395e0f5f55"
+                  },
+                  "interface": "resetConfig(config: Routes): void",
+                  "name": "resetConfig()",
+                  "headId": "resetConfig()"
+                },
+                {
+                  "id": "6d449d67-ab8e-e0a6-b082-2adb7afb87f1",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "dispose()"
+                  },
+                  "text": {
+                    "id": "04b34a47-f59c-1a50-7e03-cb8d4034239d"
+                  },
+                  "description": {
+                    "id": "4e4dcec1-e729-2b84-19b5-7e59c61866c4"
+                  },
+                  "interface": "dispose(): void",
+                  "name": "dispose()",
+                  "headId": "dispose()"
+                },
+                {
+                  "id": "c5eba1ca-2ac8-02df-9f82-6d5d837432d7",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "createUrlTree()"
+                  },
+                  "text": {
+                    "id": "d1ebdb8f-88f0-74b4-001e-c46981cd33b0"
+                  },
+                  "description": {
+                    "id": "b115a6e4-f696-8207-e5a1-e224f57768d1"
+                  },
+                  "interface": "createUrlTree(commands: any[], navigationExtras: NavigationExtras = {}): UrlTree",
+                  "name": "createUrlTree()",
+                  "headId": "createUrlTree()"
+                },
+                {
+                  "id": "6a479b08-707e-18f1-3aed-e085e38e333e",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "navigateByUrl()"
+                  },
+                  "text": {
+                    "id": "787353b2-fbef-13b2-086d-f28b78b905c2"
+                  },
+                  "description": {
+                    "id": "6cd64d50-2950-bb47-546d-a38b47af6c4e"
+                  },
+                  "interface": "navigateByUrl(url: string | UrlTree, extras: NavigationExtras = { skipLocationChange: false }): Promise<boolean>",
+                  "name": "navigateByUrl()",
+                  "headId": "navigateByUrl()",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "d973ffd4-5984-45a0-2299-f8fce11eee50"
+                  }
+                },
+                {
+                  "id": "0407f3c2-b964-522b-d874-6d244da90bf3",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "navigate()"
+                  },
+                  "text": {
+                    "id": "efb96cbb-b250-a188-3a2c-d6f3a8c19b1e"
+                  },
+                  "description": {
+                    "id": "578732a7-99e6-a3f1-4dff-4f4fa7129264"
+                  },
+                  "interface": "navigate(commands: any[], extras: NavigationExtras = { skipLocationChange: false }): Promise<boolean>",
+                  "name": "navigate()",
+                  "headId": "navigate()",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "f3a0bef1-0fbd-c957-391a-9ad66cab9faa"
+                  }
+                },
+                {
+                  "id": "75615030-9689-0e31-3244-68f81f9ee3a1",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "serializeUrl()"
+                  },
+                  "text": {
+                    "id": "28c462ac-6833-6ad2-8274-6c6ffb0c8024"
+                  },
+                  "description": {
+                    "id": "22ab7c02-e540-f786-d042-f99d32afc97b"
+                  },
+                  "interface": "serializeUrl(url: UrlTree): string",
+                  "name": "serializeUrl()",
+                  "headId": "serializeUrl()"
+                },
+                {
+                  "id": "07e647a9-8d40-b75c-bf8d-dede5d26e80b",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "parseUrl()"
+                  },
+                  "text": {
+                    "id": "88cda773-2165-e438-aaff-55cc1fec3d7a"
+                  },
+                  "description": {
+                    "id": "a5b5a598-6b97-8a55-1a60-1ef4a6cc7749"
+                  },
+                  "interface": "parseUrl(url: string): UrlTree",
+                  "name": "parseUrl()",
+                  "headId": "parseUrl()"
+                },
+                {
+                  "id": "01366334-1a14-9b22-3507-9b9efc6bccfb",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "isActive()"
+                  },
+                  "text": {
+                    "id": "3664c0a0-d1c1-beb6-23ee-762938f30a14"
+                  },
+                  "description": {
+                    "id": "4bf89fee-cd78-3e57-1eb8-bb7185e35ee1"
+                  },
+                  "interface": "isActive(url: string | UrlTree, exact: boolean): boolean",
+                  "name": "isActive()",
+                  "headId": "isActive()"
+                }
+              ],
               "title": {
                 "id": "188db8b0-3142-0b68-0cbf-bb8e4eb7fcb9"
               },
@@ -15436,7 +16932,58 @@
             },
             {
               "id": "19b8edde-421a-5743-68c8-f1fb4ab8f8db",
-              "entries": [],
+              "entries": [
+                {
+                  "id": "9eff8c12-9a51-57a5-fa11-443646fa9e0d",
+                  "type": "text",
+                  "head": {
+                    "id": "c57368c0-8b58-69cb-402c-5974beca6132"
+                  },
+                  "text": {
+                    "id": "00ad3330-0f97-cef8-6ad5-5fc05366b04e"
+                  }
+                },
+                {
+                  "id": "bce7dde9-8f89-f9da-4f9a-a6c569bb247d",
+                  "type": "text",
+                  "head": {
+                    "id": "c5c896d5-3d35-25b0-bc13-5f3e53d86dc3"
+                  },
+                  "text": {
+                    "id": "91f478a2-69bc-047b-d1a1-f4b44a55d328"
+                  }
+                },
+                {
+                  "id": "72f5a3ae-1e0f-6fd3-cf38-429ef1058bf7",
+                  "type": "text",
+                  "head": {
+                    "id": "5a3ba962-cdc8-000f-5cfc-86bd3038ca55"
+                  },
+                  "text": {
+                    "id": "8f60a65f-8f24-fbdb-e0dc-2e7ae20cd9a1"
+                  }
+                },
+                {
+                  "id": "cd0f4f0a-d39a-0df6-86d3-a55b2c13aa26",
+                  "type": "text",
+                  "head": {
+                    "id": "a9b4a409-755b-4443-06de-a824d708b3d7"
+                  },
+                  "text": {
+                    "id": "0acbd7dc-a2fa-7f53-0262-8963bbe02c20"
+                  }
+                },
+                {
+                  "id": "e4052397-c26e-20fb-1b63-5a7d5f113570",
+                  "type": "text",
+                  "head": {
+                    "id": "9f93750d-504f-4fea-f095-f3cf0f0fccdc"
+                  },
+                  "text": {
+                    "id": "d64c1b1f-a87f-3ad9-cf85-71466c625be0"
+                  }
+                }
+              ],
               "title": {
                 "id": "1f17c239-4334-cf74-bdf6-03830f14cebf"
               },
@@ -15444,7 +16991,38 @@
             },
             {
               "id": "a64c011b-9960-955d-1a88-54c3a2298972",
-              "entries": [],
+              "entries": [
+                {
+                  "id": "83290014-db38-50b6-0717-b77562a5cf4a",
+                  "type": "text",
+                  "head": {
+                    "id": "acd13f1a-7c48-3f07-a656-8172236adefe"
+                  },
+                  "text": {
+                    "id": "89bb91bb-7fa9-b18a-aaff-6eaf06302cb8"
+                  }
+                },
+                {
+                  "id": "d9abf1a8-68fb-fcb7-b333-aa506d2bdb6c",
+                  "type": "text",
+                  "head": {
+                    "id": "dececdce-d705-cb7d-df45-4b1e9007da63"
+                  },
+                  "text": {
+                    "id": "aaabad7d-b93e-edeb-f40e-175b4c1914fc"
+                  }
+                },
+                {
+                  "id": "9e7d41fd-f812-a345-a00d-4bb5b14aa761",
+                  "type": "text",
+                  "head": {
+                    "id": "ed44255f-c4e6-6da0-b581-61574481d5b6"
+                  },
+                  "text": {
+                    "id": "4a58aee6-a82a-e3a9-9849-3fcea4765820"
+                  }
+                }
+              ],
               "title": {
                 "id": "b345db05-33a5-f89e-aff9-fba923694303"
               },
@@ -15452,7 +17030,38 @@
             },
             {
               "id": "3551861a-0fcf-dc05-dd75-3ba1afb07174",
-              "entries": [],
+              "entries": [
+                {
+                  "id": "a9ca3039-903b-81dd-a4a5-6360f3bc616a",
+                  "type": "text",
+                  "head": {
+                    "id": "1e8d0219-a176-4fb8-7568-94b1f5ed150a"
+                  },
+                  "text": {
+                    "id": "c428b1b2-f173-398a-eccb-01577d1266a5"
+                  }
+                },
+                {
+                  "id": "fdfb6498-94df-8524-20b5-1761514aef29",
+                  "type": "text",
+                  "head": {
+                    "id": "01e123e2-176f-acb6-f650-070cbb924529"
+                  },
+                  "text": {
+                    "id": "265c0ee0-4db2-7764-cf20-22f0eb4698d1"
+                  }
+                },
+                {
+                  "id": "9d817103-ab30-c51e-3160-02073570cca2",
+                  "type": "text",
+                  "head": {
+                    "id": "531887fd-4691-373c-72fb-aabba450f97d"
+                  },
+                  "text": {
+                    "id": "4cb01c52-c1fd-1363-db3a-d49d8c874251"
+                  }
+                }
+              ],
               "title": {
                 "id": "7d01c833-e6ec-fcf1-889f-d8ff1e728e89"
               },
@@ -15460,7 +17069,314 @@
             },
             {
               "id": "64a21c90-ee95-6f01-c2d0-5761162357c9",
-              "entries": [],
+              "entries": [
+                {
+                  "id": "3db82e7e-5aba-b8b7-151f-85cd3de886b8",
+                  "type": "text",
+                  "head": {
+                    "id": "ad882090-6da6-05cb-6ad7-2ae44cf706ec"
+                  },
+                  "text": {
+                    "id": "6f559260-1d75-1e7c-0522-3317da161914"
+                  }
+                },
+                {
+                  "id": "ea77c04d-1a76-756e-fcd4-78adee4f4750",
+                  "type": "text",
+                  "head": {
+                    "id": "22784086-719f-c404-2365-97f331488af9"
+                  },
+                  "text": {
+                    "id": "c441b2d0-5f0a-0396-e327-55d3fefd899d"
+                  }
+                },
+                {
+                  "id": "5d6a452c-fd8a-75a7-3ea1-6c1a99bdda36",
+                  "type": "text",
+                  "head": {
+                    "id": "f1d4a607-d2ff-eac1-1d75-4546e8d05e12"
+                  },
+                  "text": {
+                    "id": "23a311cb-be4e-6c76-ee6c-57e2e78188a3"
+                  }
+                },
+                {
+                  "id": "f10730d0-3352-5712-dcd8-e2c3d1dbe78a",
+                  "type": "text",
+                  "head": {
+                    "id": "c5c1c307-d709-9402-280b-c3bbdc4222c3"
+                  },
+                  "text": {
+                    "id": "84646754-3561-23e1-2013-81e58d09bda8"
+                  }
+                },
+                {
+                  "id": "4ee499be-af40-4791-53a1-ade46e9a7ffd",
+                  "type": "toc",
+                  "head": {
+                    "id": "5484f67a-6f76-6af0-6f2a-737792f25a97"
+                  },
+                  "text": {
+                    "id": "b74f59df-9110-f593-1c37-3108cb9971ad"
+                  }
+                },
+                {
+                  "id": "cf244fd1-3559-a494-0ea8-7a9630f4ecff",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "snapshot"
+                  },
+                  "text": {
+                    "id": "59ec3854-7307-0e2a-c8b3-36f4c2afdd62"
+                  },
+                  "description": {
+                    "id": "24706037-c49e-2bd7-734d-49cfdc185b36"
+                  },
+                  "interface": "snapshot: ActivatedRouteSnapshot",
+                  "name": "snapshot",
+                  "headId": "snapshot"
+                },
+                {
+                  "id": "8170e143-da2b-f06b-61a7-a4a36ff47cab",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "url"
+                  },
+                  "text": {
+                    "id": "3918e287-c32f-1809-4fc8-945c94e33b1f"
+                  },
+                  "description": {
+                    "id": "41d5248c-919e-f9ee-b90a-f582d8505571"
+                  },
+                  "interface": "url: Observable<UrlSegment[]>",
+                  "name": "url",
+                  "headId": "url"
+                },
+                {
+                  "id": "a45a01c4-b593-f921-c1b6-31beb9cb0723",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "params"
+                  },
+                  "text": {
+                    "id": "6588ce1b-ff7d-5aca-c329-c3044f87a2db"
+                  },
+                  "description": {
+                    "id": "2e50039b-cc3d-b8a6-f723-2de218c5e0e8"
+                  },
+                  "interface": "params: Observable<Params>",
+                  "name": "params",
+                  "headId": "params"
+                },
+                {
+                  "id": "b5152a2d-5d84-0e8c-ba5b-8abe2d371197",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "queryParams"
+                  },
+                  "text": {
+                    "id": "572edd27-6056-d60d-5862-84d97423e9a8"
+                  },
+                  "description": {
+                    "id": "f7514789-e478-b0d5-e838-373ff4c6b1b1"
+                  },
+                  "interface": "queryParams: Observable<Params>",
+                  "name": "queryParams",
+                  "headId": "queryParams"
+                },
+                {
+                  "id": "5c4e34c6-4900-f4e3-aa45-cf37d5ede01c",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "fragment"
+                  },
+                  "text": {
+                    "id": "2b04151f-9b6b-7dbc-6a5e-645f6ce35c2c"
+                  },
+                  "description": {
+                    "id": "0ac2dd0f-bb19-4450-4477-7a591f14d314"
+                  },
+                  "interface": "fragment: Observable<string>",
+                  "name": "fragment",
+                  "headId": "fragment"
+                },
+                {
+                  "id": "9b6db128-5eef-641d-8365-8d1572e5ab05",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "data"
+                  },
+                  "text": {
+                    "id": "de4f0590-6423-d059-1e70-127daa8006bb"
+                  },
+                  "description": {
+                    "id": "03dd9591-e7bb-da9c-2096-8620c65a5c1b"
+                  },
+                  "interface": "data: Observable<Data>",
+                  "name": "data",
+                  "headId": "data"
+                },
+                {
+                  "id": "bf4cb71a-c0ca-24fb-3d23-29da3e28fcae",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "outlet"
+                  },
+                  "text": {
+                    "id": "2a9905ee-b2f6-11ba-0fb9-ad4bd83bdb39"
+                  },
+                  "description": {
+                    "id": "9a258bf7-1694-8edd-dcd6-8e9e8463f3f2"
+                  },
+                  "interface": "outlet: string",
+                  "name": "outlet",
+                  "headId": "outlet"
+                },
+                {
+                  "id": "d035c588-3f07-b4d0-8c59-2dcaaa18b665",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "component"
+                  },
+                  "text": {
+                    "id": "9902ede8-6e54-53bd-a5cc-1f971bc97f24"
+                  },
+                  "description": {
+                    "id": "1e5f7689-e0fb-df55-89ec-d4bb01987567"
+                  },
+                  "interface": "component: Type<any> | string | null",
+                  "name": "component",
+                  "headId": "component"
+                },
+                {
+                  "id": "138716a7-9500-11f2-e5a4-ca90a1f10ab0",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "routeConfig"
+                  },
+                  "text": {
+                    "id": "d03ba898-ae9a-13bb-4c4f-4fd71090ec35"
+                  },
+                  "description": {
+                    "id": "17f36459-8727-6413-d574-1163e7537628"
+                  },
+                  "interface": "routeConfig: Route | null",
+                  "name": "routeConfig",
+                  "headId": "routeConfig"
+                },
+                {
+                  "id": "49f43048-0e7e-2569-b548-4fdee42544d3",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "root"
+                  },
+                  "text": {
+                    "id": "6c0aabbe-48d7-eafa-7dff-8e3c33eedcc9"
+                  },
+                  "description": {
+                    "id": "93ddf69a-1b25-f5b2-f800-e4dbbab099a5"
+                  },
+                  "interface": "root: ActivatedRoute",
+                  "name": "root",
+                  "headId": "root"
+                },
+                {
+                  "id": "e5377bce-b4a4-9927-d79c-9c9047e844a3",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "parent"
+                  },
+                  "text": {
+                    "id": "9cf3de65-d397-f63f-96b8-4d1a6ffdaab3"
+                  },
+                  "description": {
+                    "id": "a73e9b42-3d8a-d222-8b25-dda6124d4b65"
+                  },
+                  "interface": "parent: ActivatedRoute | null",
+                  "name": "parent",
+                  "headId": "parent"
+                },
+                {
+                  "id": "aebd0d28-276c-bd1c-7604-b985e64bde33",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "firstChild"
+                  },
+                  "text": {
+                    "id": "a7f6f8b5-69d0-70d9-6803-105f16ede228"
+                  },
+                  "description": {
+                    "id": "388e2ca2-d84e-c969-6711-c0806fb1584f"
+                  },
+                  "interface": "firstChild: ActivatedRoute | null",
+                  "name": "firstChild",
+                  "headId": "firstChild"
+                },
+                {
+                  "id": "c3c9604a-d2f1-29d2-4f1c-6a13c53c3629",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "children"
+                  },
+                  "text": {
+                    "id": "e3ca9b6a-b808-fa47-0ff4-f5772935c973"
+                  },
+                  "description": {
+                    "id": "a4a3dc8a-6dab-37df-e946-e26d2355ffbf"
+                  },
+                  "interface": "children: ActivatedRoute[]",
+                  "name": "children",
+                  "headId": "children"
+                },
+                {
+                  "id": "a6a153b3-1a64-5071-70e6-21f7c6efff75",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "pathFromRoot"
+                  },
+                  "text": {
+                    "id": "d10ac7ea-7cc4-1806-c9a0-af7b7118ee0c"
+                  },
+                  "description": {
+                    "id": "c0a408e2-b572-1ab0-9324-b997984a0b89"
+                  },
+                  "interface": "pathFromRoot: ActivatedRoute[]",
+                  "name": "pathFromRoot",
+                  "headId": "pathFromRoot"
+                },
+                {
+                  "id": "1946000a-2771-3c9f-6048-5c40af22474d",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "paramMap"
+                  },
+                  "text": {
+                    "id": "07328556-8f1f-dcdb-7a60-984cdddefb30"
+                  },
+                  "description": {
+                    "id": "5ce8eef4-f317-7bbe-817e-f450cb3bcc12"
+                  },
+                  "interface": "paramMap: Observable<ParamMap>",
+                  "name": "paramMap",
+                  "headId": "paramMap"
+                },
+                {
+                  "id": "b67ba1a6-ca69-c603-ca1d-12b2634a9fc0",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "queryParamMap"
+                  },
+                  "text": {
+                    "id": "5be91369-1a7b-9cf9-3d61-30f89e822b82"
+                  },
+                  "description": {
+                    "id": "15420e20-6296-687d-0d7a-fe40183bafbf"
+                  },
+                  "interface": "queryParamMap: Observable<ParamMap>",
+                  "name": "queryParamMap",
+                  "headId": "queryParamMap"
+                }
+              ],
               "title": {
                 "id": "54882235-acaa-85f6-12a4-9ffb0f62202e"
               },
@@ -15468,7 +17384,298 @@
             },
             {
               "id": "b78c8354-874e-d8f2-4a4a-a03ba0fe4757",
-              "entries": [],
+              "entries": [
+                {
+                  "id": "f04f8675-cb4e-c650-ff7c-4f7919ea53df",
+                  "type": "text",
+                  "head": {
+                    "id": "dd04d88b-bea6-a10a-42fb-171d26896d62"
+                  },
+                  "text": {
+                    "id": "e7a7c616-0730-dc71-6eb4-487a37223b41"
+                  }
+                },
+                {
+                  "id": "1899baa6-c34b-e37e-7d51-ca72d56e3e74",
+                  "type": "text",
+                  "head": {
+                    "id": "5b66d1b5-1283-1b53-251c-6217d93f4301"
+                  },
+                  "text": {
+                    "id": "389661e1-6bb5-f9af-de4d-47b3776daef4"
+                  }
+                },
+                {
+                  "id": "ad3e6334-ceb2-f56b-92c3-f90773f8197f",
+                  "type": "text",
+                  "head": {
+                    "id": "359ae5d5-bb92-69b1-b693-795009ff329b"
+                  },
+                  "text": {
+                    "id": "98f86669-33fa-a645-8012-2eed7062c842"
+                  }
+                },
+                {
+                  "id": "ead960c0-bbf1-8824-2e8b-0b02fd5b9cb6",
+                  "type": "text",
+                  "head": {
+                    "id": "044b2fd1-c24c-2002-396c-806479112d17"
+                  },
+                  "text": {
+                    "id": "38c2af04-c8f4-308b-2603-dcd15405cd50"
+                  }
+                },
+                {
+                  "id": "2decfb42-bf13-30d3-b719-c88eafd8491b",
+                  "type": "toc",
+                  "head": {
+                    "id": "dcdee85f-fc15-b30c-8df3-c68e702a5298"
+                  },
+                  "text": {
+                    "id": "b9f6d634-6841-a6c5-413b-0bb54a32df6f"
+                  }
+                },
+                {
+                  "id": "83500986-1caf-096e-14ef-8e0c0e384e8a",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "routeConfig"
+                  },
+                  "text": {
+                    "id": "4d1a1d77-a31f-b860-5ae5-b74bf1e6d03d"
+                  },
+                  "description": {
+                    "id": "bf85c3ce-e6e7-d568-1219-712b9a040189"
+                  },
+                  "interface": "routeConfig: Route | null",
+                  "name": "routeConfig",
+                  "headId": "routeConfig"
+                },
+                {
+                  "id": "2011cfcb-3da2-bc2f-d28c-32e746f65a72",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "url"
+                  },
+                  "text": {
+                    "id": "c9d73b2e-0078-c8d8-2078-d3bd65e16858"
+                  },
+                  "description": {
+                    "id": "b017077a-12df-fbbd-0a08-b6ac905a0033"
+                  },
+                  "interface": "url: UrlSegment[]",
+                  "name": "url",
+                  "headId": "url"
+                },
+                {
+                  "id": "c7a135df-3f6e-6d2f-95cb-6ec9623e9463",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "params"
+                  },
+                  "text": {
+                    "id": "5ec7ef02-29d4-9ee2-1108-7e0ce5da27bc"
+                  },
+                  "description": {
+                    "id": "9ac3c968-6dbb-893f-db2b-9007e6bdf42f"
+                  },
+                  "interface": "params: Params",
+                  "name": "params",
+                  "headId": "params"
+                },
+                {
+                  "id": "a4c23384-9f31-de2c-c4d6-453730599160",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "queryParams"
+                  },
+                  "text": {
+                    "id": "5d7ce25a-5dcb-0802-1a22-05d4d26b8c41"
+                  },
+                  "description": {
+                    "id": "23b2ac4d-a3e4-1357-2297-40efe871e7aa"
+                  },
+                  "interface": "queryParams: Params",
+                  "name": "queryParams",
+                  "headId": "queryParams"
+                },
+                {
+                  "id": "0af65b14-eac9-7cd7-1220-cce2f0475557",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "fragment"
+                  },
+                  "text": {
+                    "id": "93ea33ef-6d34-4b59-4147-e1d725942d4e"
+                  },
+                  "description": {
+                    "id": "d143a698-ba23-e145-3547-2754990235f8"
+                  },
+                  "interface": "fragment: string",
+                  "name": "fragment",
+                  "headId": "fragment"
+                },
+                {
+                  "id": "1793a704-66e4-6ebf-5c10-4e1357ad2003",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "data"
+                  },
+                  "text": {
+                    "id": "35299608-d604-716d-119d-f3b5cb2a0f34"
+                  },
+                  "description": {
+                    "id": "2ea1330b-ef32-da6a-da06-afbc0137cbf1"
+                  },
+                  "interface": "data: Data",
+                  "name": "data",
+                  "headId": "data"
+                },
+                {
+                  "id": "90fabf53-a4e1-1fd8-dfc7-730e869f7443",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "outlet"
+                  },
+                  "text": {
+                    "id": "247586a6-9e80-4c74-5760-9cf56043a087"
+                  },
+                  "description": {
+                    "id": "eaa99de8-9538-0181-7943-c24edecafa32"
+                  },
+                  "name": "outlet",
+                  "headId": "outlet",
+                  "interface": "outlet: string"
+                },
+                {
+                  "id": "1be201f9-afe2-3a37-7045-16cdf47b7a4c",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "component"
+                  },
+                  "text": {
+                    "id": "1bd93e1d-2f5f-1408-71fb-24a20c8426bf"
+                  },
+                  "description": {
+                    "id": "c2a3a946-8146-0bae-faf1-d8c180b6e414"
+                  },
+                  "interface": "component: Type<any> | string | null",
+                  "name": "component",
+                  "headId": "component"
+                },
+                {
+                  "id": "03d997d6-330d-dedf-f183-c317670b4d20",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "root"
+                  },
+                  "text": {
+                    "id": "5204f76f-d7f8-d1dc-b158-017d5cb8d86c"
+                  },
+                  "description": {
+                    "id": "d75d963a-a3b9-7fec-ef0f-3beeafbe1c1c"
+                  },
+                  "interface": "root: ActivatedRouteSnapshot",
+                  "name": "root",
+                  "headId": "root"
+                },
+                {
+                  "id": "fe469efa-a7c9-be84-3a76-9080abffaf8b",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "parent"
+                  },
+                  "text": {
+                    "id": "cb5f1765-49aa-3ee5-db34-dae043a52588"
+                  },
+                  "description": {
+                    "id": "c350d58d-073e-35be-b94c-fc0aae0155ae"
+                  },
+                  "interface": "parent: ActivatedRouteSnapshot | null",
+                  "name": "parent",
+                  "headId": "parent"
+                },
+                {
+                  "id": "4024f7b2-3351-3fee-e709-1536775e41ac",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "firstChild"
+                  },
+                  "text": {
+                    "id": "49ed1af4-a723-bccc-5cb6-de8b7f7e6be9"
+                  },
+                  "description": {
+                    "id": "a5fee5d8-a007-668c-67ec-241190d045ce"
+                  },
+                  "interface": "firstChild: ActivatedRouteSnapshot | null",
+                  "name": "firstChild",
+                  "headId": "firstChild"
+                },
+                {
+                  "id": "f6572103-9ff8-6099-11f4-ece3f9b1132a",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "children"
+                  },
+                  "text": {
+                    "id": "ca9cf173-75ea-75a7-e736-55194d0bc350"
+                  },
+                  "description": {
+                    "id": "e4617254-527d-4a87-e49a-a197f6f73697"
+                  },
+                  "interface": "children: ActivatedRouteSnapshot[]",
+                  "name": "children",
+                  "headId": "children"
+                },
+                {
+                  "id": "90fcdac6-f805-1e5e-d293-9e91b42bd98c",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "pathFromRoot"
+                  },
+                  "text": {
+                    "id": "ee61b92c-c210-0762-0b60-26785651482b"
+                  },
+                  "description": {
+                    "id": "567a2e1f-eac5-d946-8fd8-77e7d4b4ea57"
+                  },
+                  "interface": "pathFromRoot: ActivatedRouteSnapshot[]",
+                  "name": "pathFromRoot",
+                  "headId": "pathFromRoot"
+                },
+                {
+                  "id": "e2be7099-1386-eb85-a0bd-e6d7097e2e0b",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "paramMap"
+                  },
+                  "text": {
+                    "id": "d44ca291-59b7-192f-75e6-2feeb19386b9"
+                  },
+                  "description": {
+                    "id": "5f291204-e013-3ba6-71fe-7eff05744ebc"
+                  },
+                  "interface": "paramMap: ParamMap",
+                  "name": "paramMap",
+                  "headId": "paramMap"
+                },
+                {
+                  "id": "f2814943-3310-9ea6-6fd1-ef4f2ab5fe40",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "queryParamMap"
+                  },
+                  "text": {
+                    "id": "d8f35ca7-1795-b7d6-a2f5-5fb55d25c0a3"
+                  },
+                  "description": {
+                    "id": "5f59e1ff-29cb-72e8-b31d-b1e761325a81"
+                  },
+                  "interface": "queryParamMap: ParamMap",
+                  "name": "queryParamMap",
+                  "headId": "queryParamMap"
+                }
+              ],
               "title": {
                 "id": "337aba21-e287-dcc8-458a-faab4331cec6"
               },
@@ -15476,7 +17683,18 @@
             },
             {
               "id": "554d1879-4294-9fea-d3e7-b3d654c87785",
-              "entries": [],
+              "entries": [
+                {
+                  "id": "a3f79338-c74e-9da2-9065-9a5c9ae90f94",
+                  "type": "text",
+                  "head": {
+                    "id": "c625caaf-5854-d935-903e-0ac9172eadbb"
+                  },
+                  "text": {
+                    "id": "4522d1e9-4dd8-8aa0-be5b-f737e052ef6f"
+                  }
+                }
+              ],
               "title": {
                 "id": "755af2fa-9cf2-b7c9-7308-3eba38d0cd82"
               },
@@ -15484,7 +17702,18 @@
             },
             {
               "id": "ecbfc3ef-3819-5cda-c52f-42445614bb89",
-              "entries": [],
+              "entries": [
+                {
+                  "id": "ccb3ef72-9ee4-a699-e99e-4c160dd50faa",
+                  "type": "text",
+                  "head": {
+                    "id": "a4b40aff-56a2-17bf-0a41-55536a80a2c8"
+                  },
+                  "text": {
+                    "id": "0e2ff558-989f-7a7c-6892-91e0a42141dc"
+                  }
+                }
+              ],
               "title": {
                 "id": "6341a7f0-d58a-bd23-efe3-1adbd42ede59"
               },
@@ -15492,7 +17721,18 @@
             },
             {
               "id": "06270d07-ceef-81d2-e1a1-c6ba055d483e",
-              "entries": [],
+              "entries": [
+                {
+                  "id": "4fa057a1-d3d0-2feb-ddda-6bbe268bffa8",
+                  "type": "text",
+                  "head": {
+                    "id": "fdd922a9-5edb-9580-1593-8fd6c5d68aad"
+                  },
+                  "text": {
+                    "id": "d2791b5c-6d53-d476-65be-e0a2fdeefa76"
+                  }
+                }
+              ],
               "title": {
                 "id": "49295a60-5b59-fefc-fbf7-1ab6185608f5"
               },
@@ -15803,6 +18043,16 @@
             {
               "id": "fe8df1d7-3dfe-42a2-f66c-cc4a6dbfcf99",
               "entries": [
+                {
+                  "id": "27bcda32-2ec7-9c3d-99c7-44ec7bd02598",
+                  "type": "text",
+                  "head": {
+                    "id": "5c2936b8-66b8-3c8a-433d-dd78146f9436"
+                  },
+                  "text": {
+                    "id": "542643f0-826a-4c59-96bf-98be2958a759"
+                  }
+                },
                 {
                   "id": "3304f320-fc16-107b-4250-661e8b5308df",
                   "type": "text",
@@ -19462,7 +21712,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "## Early version\n\nCurrently ngrefs.com in active development. Thank you for understanding."
+              "text": "## WIP\n"
             },
             {
               "lang": "ru",
@@ -22638,7 +24888,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "This easy Angular CLI reference for developers describes core Angular concepts, decorators and services.\n\n\n## Additional information\n\nExample of hints and tutorials links. You can switch off these panels in the sidebar."
+              "text": "This easy Angular reference for developers describes core concepts, decorators and services.\n\n\n## Additional information\n\nExample of hints and tutorials links. You can switch off these panels in the sidebar."
             }
           ]
         },
@@ -30656,7 +32906,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Intro text"
+              "text": "## WIP"
             }
           ]
         },
@@ -30676,7 +32926,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Intro text"
+              "text": "This easy Angular reference for developers describes styling and view encapsulation."
             }
           ]
         },
@@ -31346,7 +33596,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "<router-outlet> directive"
+              "text": "router-outlet directive"
             }
           ]
         },
@@ -32197,6 +34447,1696 @@
             {
               "lang": "en",
               "text": "FormBuilder"
+            }
+          ]
+        },
+        {
+          "id": "8f5b6d5b-8d70-2fa6-47ae-8f297e693116",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A routed Angular application has one singleton instance of the `Router` service. When the browser's URL changes, that router looks for a corresponding `Route` from which it can determine the component to display.\n\nPass array of routes to the `RouterModule.forRoot` method in the module imports to configure the router.\n"
+            }
+          ]
+        },
+        {
+          "id": "b111bcd7-7e20-f51f-aa0a-d0c82ab2f7a0",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nconst appRoutes: Routes = [\n  { path: 'home', component: HomeComponent },\n  { path: 'contacts', component: ContactsComponent },\n];\n\n@NgModule({\n  imports: [\n    RouterModule.forRoot(appRoutes)\n  ],\n  ...\n})\nexport class AppModule { }\n```"
+            }
+          ]
+        },
+        {
+          "id": "490330b1-062a-bfe5-a47f-024e5c4846e0",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "### forChild"
+            }
+          ]
+        },
+        {
+          "id": "7a46e426-2cbf-e456-5980-c3dc7e1e78b6",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Only call `RouterModule.forRoot` in the root module. In any other module, you must call the `RouterModule.forChild` method to register additional routes."
+            }
+          ]
+        },
+        {
+          "id": "472f2c7d-0314-548d-e36c-faadf0387bdb",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nconst blogRoutes: Routes = [\n  { path: 'blog',  component: BlogComponent },\n  { path: 'blog/post/:id', component: BlogPostComponent }\n];\n \n@NgModule({\n  imports: [\n    RouterModule.forChild(heroesRoutes)\n  ],\n  exports: [\n    RouterModule,\n  ]\n})\nexport class BlogRoutingModule { }\n```\n"
+            }
+          ]
+        },
+        {
+          "id": "1b40b756-7945-be0a-8b5b-c079284652dd",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "`Routes` is an array of route configurations. Pass it to the `RouterModule.forRoot` or `forChild` method in the module imports to configure the router.\n"
+            }
+          ]
+        },
+        {
+          "id": "78571eca-fb52-725c-0f6b-0f8981488e6b",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n...\nRouterModule.forRoot([\n  {\n    path: 'team/:id',\n    component: Team,\n    children: [{\n      path: 'user/:name',\n      component: User,\n    }],\n  },\n]),\n```"
+            }
+          ]
+        },
+        {
+          "id": "aabf9fb2-3352-7897-bb77-b518e7a3a540",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example"
+            }
+          ]
+        },
+        {
+          "id": "32d073c1-abb0-a06a-9aea-221d466bce8e",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Options"
+            }
+          ]
+        },
+        {
+          "id": "8c459a92-b9fd-3b06-5515-8300ca23a611",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A string that uses the route matcher DSL."
+            }
+          ]
+        },
+        {
+          "id": "1c14e9e2-6d18-d3d0-c4bf-260e277a977f",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A string that specifies the matching strategy."
+            }
+          ]
+        },
+        {
+          "id": "39026a96-ae96-d192-86d0-d6648b92eed3",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Defines a custom strategy for path matching and supersedes `path` and `pathMatch`."
+            }
+          ]
+        },
+        {
+          "id": "e2692ab9-6c25-6b31-8ef4-5b581dfe18ac",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A component type."
+            }
+          ]
+        },
+        {
+          "id": "08c44c9f-f34e-aea1-5d63-deb94ed62a98",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The url fragment which will replace the current matched segment."
+            }
+          ]
+        },
+        {
+          "id": "82dcc75b-6ca8-b340-22e5-16eb9b8965bf",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The name of the outlet the component should be placed into."
+            }
+          ]
+        },
+        {
+          "id": "e766c5db-3002-7676-f330-008f33507f9c",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "An array of DI tokens used to look up `CanActivate` handlers."
+            }
+          ]
+        },
+        {
+          "id": "f50f9dcf-081a-b6ea-addb-a840ff039ee6",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "An array of DI tokens used to look up `CanActivateChild` handlers."
+            }
+          ]
+        },
+        {
+          "id": "ad3e6838-28bf-0c37-36aa-83c9a5e5468f",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "An array of DI tokens used to look up `CanDeactivate` handlers."
+            }
+          ]
+        },
+        {
+          "id": "f958ea8b-8e31-fbe1-dbb1-8abeef0651eb",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "An array of DI tokens used to look up `CanLoad` handlers."
+            }
+          ]
+        },
+        {
+          "id": "aa1ce0e8-54bc-8645-f58e-32d7d2c535ba",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Additional data provided to the component via `ActivatedRoute`."
+            }
+          ]
+        },
+        {
+          "id": "f31f0ead-e77f-403d-c411-8d336909752d",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A map of DI tokens used to look up data resolvers."
+            }
+          ]
+        },
+        {
+          "id": "9b4a9b2f-1d1f-9991-bb34-3be660473dc2",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "An array of child route definitions."
+            }
+          ]
+        },
+        {
+          "id": "0be57d7c-0db5-b2ef-ea85-c34f0223d576",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A reference to lazy loaded child routes."
+            }
+          ]
+        },
+        {
+          "id": "d40cbde1-4744-0941-75e3-56922b474876",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Defines when guards and resolvers will be run. By default they run only when the matrix parameters of the route change. When set to `paramsOrQueryParamsChange` they will also run when query params change. And when set to always, they will run every time."
+            }
+          ]
+        },
+        {
+          "id": "3ccbfe5e-b1c6-c113-504e-74a24768e80d",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Represents options to configure the router."
+            }
+          ]
+        },
+        {
+          "id": "51fe0b94-2b29-07b6-56cd-7ad5498ddc74",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example"
+            }
+          ]
+        },
+        {
+          "id": "6a0d8e2a-ef1a-e8aa-b91b-1fd9dd9990d9",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n...\nRouterModule.forRoot([\n  // Routes definition\n], {\n  enableTracing: true,\n}),\n```\n"
+            }
+          ]
+        },
+        {
+          "id": "0c19fd1b-e13c-9b1b-6359-b2026463bc6d",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Options"
+            }
+          ]
+        },
+        {
+          "id": "afd6622e-9626-ba02-c353-58122ed77fdd",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Makes the router log all its internal events to the console."
+            }
+          ]
+        },
+        {
+          "id": "a4aace09-1ef9-82b5-3048-7613e44211c0",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Enables the location strategy that uses the URL fragment instead of the history API."
+            }
+          ]
+        },
+        {
+          "id": "083dbc61-32ae-870e-58f9-1261aed057a6",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Disables the initial navigation."
+            }
+          ]
+        },
+        {
+          "id": "243dd22c-47b8-c827-aa2d-5af9006574cc",
+          "context": "Command param entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A custom error handler."
+            }
+          ]
+        },
+        {
+          "id": "d5df11d7-18bb-c2df-9666-afbada52e0ff",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Configures a preloading strategy."
+            }
+          ]
+        },
+        {
+          "id": "cef2a595-6e2f-3d78-5676-86104a63e29c",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Define what the router should do if it receives a navigation request to the current URL."
+            }
+          ]
+        },
+        {
+          "id": "05fc77ce-d3e0-281b-6bd4-0064575723eb",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Configures if the scroll position needs to be restored when navigating back."
+            }
+          ]
+        },
+        {
+          "id": "35ae17d5-8041-f1b0-372b-7f7ba45a6e38",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Configures if the router should scroll to the element when the url has a fragment."
+            }
+          ]
+        },
+        {
+          "id": "0678dfff-565d-7f5f-51ad-cceb384c9837",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Configures the scroll offset the router will use when scrolling to an element."
+            }
+          ]
+        },
+        {
+          "id": "cb268546-7706-22be-e4ad-06d094366420",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Defines how the router merges params, data and resolved data from parent to child routes."
+            }
+          ]
+        },
+        {
+          "id": "bd20b9ad-2dc0-e2d4-d8ea-34421815b63c",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A custom malformed uri error handler function. This handler is invoked when encodedURI contains invalid character sequences."
+            }
+          ]
+        },
+        {
+          "id": "fb671d8e-9c5b-38cd-4950-75299c0c8817",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Defines when the router updates the browser URL."
+            }
+          ]
+        },
+        {
+          "id": "3b9b01e0-875b-38b6-f0f0-b2bed126b56b",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Enables a bug fix that corrects relative link resolution in components with empty paths."
+            }
+          ]
+        },
+        {
+          "id": "2da745f3-de80-7932-18af-eee45d0e4123",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "By default, the router will ignore this navigation. However, this prevents features such as a \"refresh\" button. Use this option to configure the behavior when navigating to the current URL. Default is 'ignore'."
+            }
+          ]
+        },
+        {
+          "id": "9d6ab2e5-f952-10e4-727e-2ff97455d8a9",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "* `disabled` — does nothing (default).\n* `enabled` — scrolls to the element. This option will be the default in the future.\n\nAnchor scrolling does not happen on `popstate`. Instead, we restore the position that we stored or scroll to the top."
+            }
+          ]
+        },
+        {
+          "id": "6916b545-e2d5-634c-2e98-02d943a2160a",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "When given a tuple with two numbers, the router will always use the numbers. When given a function, the router will invoke the function every time it restores scroll position."
+            }
+          ]
+        },
+        {
+          "id": "04a3d98d-f408-7e9b-fda8-a50f7785ed87",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "* `disabled` — does nothing (default).\n* `top` — set the scroll position to `0,0`.\n* `enabled` — set the scroll position to the stored position. This option will be the default in the future.\n\nWhen enabled, the router stores and restores scroll positions during navigation. When navigating forward, the scroll position will be set to `[0, 0]`, or to the anchor if one is provided.\n"
+            }
+          ]
+        },
+        {
+          "id": "8b2477fb-1b9c-9694-ee2f-8d31f994580d",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Available options are:\n\n* `emptyOnly` — the default, only inherits parent params for path-less or component-less routes.\n* `always` — enables unconditional inheritance of parent params."
+            }
+          ]
+        },
+        {
+          "id": "214aa5d7-60ff-1875-a6c0-10038591c4e9",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The default implementation is to redirect to the root url dropping any path or param info. This function passes three parameters:\n\n* `URIError` — Error thrown when parsing a bad URL\n* `UrlSerializer` — UrlSerializer that’s configured with the router.\n* `url` — The malformed URL that caused the URIError.\n"
+            }
+          ]
+        },
+        {
+          "id": "dfd248b1-1d80-cbb3-4848-fd2fb0a17a23",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The default behavior is to update after successful navigation. However, some applications may prefer a mode where the URL gets updated at the beginning of navigation. The most common use case would be updating the URL early so if navigation fails, you can show an error message with the URL that failed. Available options are:\n\n* `deferred` — the default, updates the browser URL after navigation has finished.\n* `eager` — updates browser URL at the beginning of navigation."
+            }
+          ]
+        },
+        {
+          "id": "0a510d01-8c2b-7827-eabc-8b09767ad7f2",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The current default in v6 is legacy, and this option will be removed in v7 to default to the corrected behavior."
+            }
+          ]
+        },
+        {
+          "id": "1b254148-e462-cf93-0d3e-7b3fb949a4b1",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Interface that a class can implement to be a guard deciding if a route can be activated."
+            }
+          ]
+        },
+        {
+          "id": "66e181d6-bbe8-4ee8-045b-51cbbb8c1c46",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\ninterface CanActivate {\n  canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "5e0523b4-1d92-6ec8-aded-7426089b93b9",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example\n"
+            }
+          ]
+        },
+        {
+          "id": "1fc8e799-9f1d-71e5-292b-d162cbfdc3ad",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nclass UserToken {}\nclass Permissions {\n  canActivate(user: UserToken, id: string): boolean {\n    return true;\n  }\n}\n \n@Injectable()\nclass CanActivateTeam implements CanActivate {\n  constructor(private permissions: Permissions, private currentUser: UserToken) {}\n \n  canActivate(\n    route: ActivatedRouteSnapshot,\n    state: RouterStateSnapshot\n  ): Observable<boolean>|Promise<boolean>|boolean {\n    return this.permissions.canActivate(this.currentUser, route.params.id);\n  }\n}\n \n@NgModule({\n  imports: [\n    RouterModule.forRoot([\n      {\n        path: 'team/:id',\n        component: TeamCmp,\n        canActivate: [CanActivateTeam]\n      }\n    ])\n  ],\n  providers: [CanActivateTeam, UserToken, Permissions]\n})\nclass AppModule {}\n```"
+            }
+          ]
+        },
+        {
+          "id": "0680e493-7313-8224-f812-29645e4bc30d",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You can alternatively provide a function with the `canActivate` signature:"
+            }
+          ]
+        },
+        {
+          "id": "105b6fae-5da3-9c66-8fba-fae89793fbbc",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@NgModule({\n  imports: [\n    RouterModule.forRoot([\n      {\n        path: 'team/:id',\n        component: TeamCmp,\n        canActivate: ['canActivateTeam']\n      }\n    ])\n  ],\n  providers: [\n    {\n      provide: 'canActivateTeam',\n      useValue: (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => true\n    }\n  ]\n})\nclass AppModule {}\n```"
+            }
+          ]
+        },
+        {
+          "id": "1d42ef13-debf-3cfc-a7b2-01a74dd7eab3",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Interface that a class can implement to be a guard deciding if a child route can be activated."
+            }
+          ]
+        },
+        {
+          "id": "df68af9c-0819-34cf-54ab-01c4b9b19e0d",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\ninterface CanActivateChild {\n  canActivateChild(childRoute: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "7e712818-9738-b378-3c63-92f1e4580d2a",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example"
+            }
+          ]
+        },
+        {
+          "id": "8885fd39-74e8-77ea-fe98-641d7871f726",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nclass UserToken {}\nclass Permissions {\n  canActivate(user: UserToken, id: string): boolean {\n    return true;\n  }\n}\n \n@Injectable()\nclass CanActivateTeam implements CanActivateChild {\n  constructor(private permissions: Permissions, private currentUser: UserToken) {}\n \n  canActivateChild(\n    route: ActivatedRouteSnapshot,\n    state: RouterStateSnapshot\n  ): Observable<boolean>|Promise<boolean>|boolean {\n    return this.permissions.canActivate(this.currentUser, route.params.id);\n  }\n}\n \n@NgModule({\n  imports: [\n    RouterModule.forRoot([\n      {\n        path: 'root',\n        canActivateChild: [CanActivateTeam],\n        children: [\n          {\n             path: 'team/:id',\n             component: Team\n          }\n        ]\n      }\n    ])\n  ],\n  providers: [CanActivateTeam, UserToken, Permissions]\n})\nclass AppModule {}\n```"
+            }
+          ]
+        },
+        {
+          "id": "8fcf8de8-87a7-6230-5e57-a9a3bf4c5d2d",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You can alternatively provide a function with the `canActivateChild` signature:"
+            }
+          ]
+        },
+        {
+          "id": "703156ee-239c-62f2-06d5-502de7785be1",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@NgModule({\n  imports: [\n    RouterModule.forRoot([\n      {\n        path: 'root',\n        canActivateChild: ['canActivateTeam'],\n        children: [\n          {\n            path: 'team/:id',\n            component: Team\n          }\n        ]\n      }\n    ])\n  ],\n  providers: [\n    {\n      provide: 'canActivateTeam',\n      useValue: (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => true\n    }\n  ]\n})\nclass AppModule {}\n```"
+            }
+          ]
+        },
+        {
+          "id": "8a66d24a-652f-8a9a-b5cc-55719047cf03",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Interface that a class can implement to be a guard deciding if a route can be deactivated."
+            }
+          ]
+        },
+        {
+          "id": "69617265-ee1f-eea9-e3d9-a85964106652",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\ninterface CanDeactivate<T> {\n  canDeactivate(component: T, currentRoute: ActivatedRouteSnapshot, currentState: RouterStateSnapshot, nextState?: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "7d4b9c09-34fc-63df-66d3-28905ca5dedf",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example"
+            }
+          ]
+        },
+        {
+          "id": "0cdd3bfd-eddd-7577-b8fa-91146d62052c",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nclass UserToken {}\nclass Permissions {\n  canDeactivate(user: UserToken, id: string): boolean {\n    return true;\n  }\n}\n \n@Injectable()\nclass CanDeactivateTeam implements CanDeactivate<TeamComponent> {\n  constructor(private permissions: Permissions, private currentUser: UserToken) {}\n \n  canDeactivate(\n    component: TeamComponent,\n    currentRoute: ActivatedRouteSnapshot,\n    currentState: RouterStateSnapshot,\n    nextState: RouterStateSnapshot\n  ): Observable<boolean>|Promise<boolean>|boolean {\n    return this.permissions.canDeactivate(this.currentUser, route.params.id);\n  }\n}\n \n@NgModule({\n  imports: [\n    RouterModule.forRoot([\n      {\n        path: 'team/:id',\n        component: TeamCmp,\n        canDeactivate: [CanDeactivateTeam]\n      }\n    ])\n  ],\n  providers: [CanDeactivateTeam, UserToken, Permissions]\n})\nclass AppModule {}\n```"
+            }
+          ]
+        },
+        {
+          "id": "b3cccfb1-d20a-b527-9238-b94cd13e5515",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You can alternatively provide a function with the `canDeactivate` signature:"
+            }
+          ]
+        },
+        {
+          "id": "5d3b15ca-81f1-d604-3d9b-97a3763ae9b1",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@NgModule({\n  imports: [\n    RouterModule.forRoot([\n      {\n        path: 'team/:id',\n        component: TeamCmp,\n        canDeactivate: ['canDeactivateTeam']\n      }\n    ])\n  ],\n  providers: [\n    {\n      provide: 'canDeactivateTeam',\n      useValue: (component: TeamComponent, currentRoute: ActivatedRouteSnapshot, currentState:\nRouterStateSnapshot, nextState: RouterStateSnapshot) => true\n    }\n  ]\n})\nclass AppModule {}\n```"
+            }
+          ]
+        },
+        {
+          "id": "30a43c69-0597-4646-8d76-d7161740c8b1",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Interface that class can implement to be a data provider."
+            }
+          ]
+        },
+        {
+          "id": "a6ab9d63-af42-30be-3176-8701ab80099f",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\ninterface Resolve<T> {\n  resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<T> | Promise<T> | T\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "a504276f-5cfd-28c1-403d-6cd59a6a70fc",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example"
+            }
+          ]
+        },
+        {
+          "id": "4cf4aa52-d2c0-7763-7e87-bf456812ac09",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nclass Backend {\n  fetchTeam(id: string) {\n    return 'someTeam';\n  }\n}\n \n@Injectable()\nclass TeamResolver implements Resolve<Team> {\n  constructor(private backend: Backend) {}\n \n  resolve(\n    route: ActivatedRouteSnapshot,\n    state: RouterStateSnapshot\n  ): Observable<any>|Promise<any>|any {\n    return this.backend.fetchTeam(route.params.id);\n  }\n}\n \n@NgModule({\n  imports: [\n    RouterModule.forRoot([\n      {\n        path: 'team/:id',\n        component: TeamCmp,\n        resolve: {\n          team: TeamResolver\n        }\n      }\n    ])\n  ],\n  providers: [TeamResolver]\n})\nclass AppModule {}\n```"
+            }
+          ]
+        },
+        {
+          "id": "66feb9fb-730c-347b-6960-5269dd38bec6",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You can alternatively provide a function with the `resolve` signature:"
+            }
+          ]
+        },
+        {
+          "id": "171727f9-e823-36aa-38bf-b8982392e1c1",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@NgModule({\n  imports: [\n    RouterModule.forRoot([\n      {\n        path: 'team/:id',\n        component: TeamCmp,\n        resolve: {\n          team: 'teamResolver'\n        }\n      }\n    ])\n  ],\n  providers: [\n    {\n      provide: 'teamResolver',\n      useValue: (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => 'team'\n    }\n  ]\n})\nclass AppModule {}\n```"
+            }
+          ]
+        },
+        {
+          "id": "f11944dc-79ff-5059-7f86-18974d71c6c5",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Interface that a class can implement to be a guard deciding if a children can be loaded."
+            }
+          ]
+        },
+        {
+          "id": "dc974370-e653-3504-09c3-d8dea54114e8",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\ninterface CanLoad {\n  canLoad(route: Route): Observable<boolean> | Promise<boolean> | boolean\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "3f35fed7-e9d2-1cba-476b-e77c1b7c9c6e",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example"
+            }
+          ]
+        },
+        {
+          "id": "a39d7b14-8edb-905c-9854-1076fa2fe3c8",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nclass UserToken {}\nclass Permissions {\n  canLoadChildren(user: UserToken, id: string): boolean {\n    return true;\n  }\n}\n \n@Injectable()\nclass CanLoadTeamSection implements CanLoad {\n  constructor(private permissions: Permissions, private currentUser: UserToken) {}\n \n  canLoad(route: Route): Observable<boolean>|Promise<boolean>|boolean {\n    return this.permissions.canLoadChildren(this.currentUser, route);\n  }\n}\n \n@NgModule({\n  imports: [\n    RouterModule.forRoot([\n      {\n        path: 'team/:id',\n        component: TeamCmp,\n        loadChildren: 'team.js',\n        canLoad: [CanLoadTeamSection]\n      }\n    ])\n  ],\n  providers: [CanLoadTeamSection, UserToken, Permissions]\n})\nclass AppModule {}\n```"
+            }
+          ]
+        },
+        {
+          "id": "e6735cae-1e53-54d1-5016-c4f2ef1b697e",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You can alternatively provide a function with the `canLoad` signature:"
+            }
+          ]
+        },
+        {
+          "id": "8aba00ad-ce74-2891-a592-0a2aae64e095",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@NgModule({\n  imports: [\n    RouterModule.forRoot([\n      {\n        path: 'team/:id',\n        component: TeamCmp,\n        loadChildren: 'team.js',\n        canLoad: ['canLoadTeamSection']\n      }\n    ])\n  ],\n  providers: [\n    {\n      provide: 'canLoadTeamSection',\n      useValue: (route: Route) => true\n    }\n  ]\n})\nclass AppModule {}\n```"
+            }
+          ]
+        },
+        {
+          "id": "b4cbfc96-485f-7b48-ba8c-90da264b2602",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Provides the navigation and url manipulation capabilities."
+            }
+          ]
+        },
+        {
+          "id": "d157cc4a-6ea0-e61a-f717-a733533e4a91",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example"
+            }
+          ]
+        },
+        {
+          "id": "ff0a5a42-1360-7139-cdba-b0d9c03453c6",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Imperative navigation:"
+            }
+          ]
+        },
+        {
+          "id": "fc7cfecc-b5ee-a25f-4bd9-bd9732bb2907",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nexport class AppComponent {\n  constructor(private router: Router) {\n  }\n\n  navigateToHome() {\n    this.router.navigate('/home');\n  }\n}\n```\n"
+            }
+          ]
+        },
+        {
+          "id": "ca0c56be-76b6-c82f-fd4b-13656a154776",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Interface"
+            }
+          ]
+        },
+        {
+          "id": "6d747435-67ae-e939-94ab-044f347e0ba3",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "### Properties"
+            }
+          ]
+        },
+        {
+          "id": "ba967fe9-0496-1f4a-1e9e-cfe60d2e3c65",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "### Methods"
+            }
+          ]
+        },
+        {
+          "id": "c40c568e-f59b-5012-11b4-80ef545b04ee",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "`Observable` that provides all routing events."
+            }
+          ]
+        },
+        {
+          "id": "be5706c7-a905-4644-a8ae-2513aeeb59ce",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Contains current router state."
+            }
+          ]
+        },
+        {
+          "id": "5a6c7b94-6579-e373-9fca-fe10bdb54937",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Error handler that is invoked when a navigation errors."
+            }
+          ]
+        },
+        {
+          "id": "e48ae9e7-4046-e8a4-bad5-ec9914eedaf8",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Malformed uri error handler is invoked when `Router.parseUrl(url)` throws an error due to containing an invalid character. The most common case would be a `%` sign that's not encoded and is not part of a percent encoded sequence."
+            }
+          ]
+        },
+        {
+          "id": "4ab5d610-bdac-ed12-94a6-d00d8a3d786f",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Indicates if at least one navigation happened."
+            }
+          ]
+        },
+        {
+          "id": "d81edd63-f481-bc45-f8ee-84f687505c2c",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Extracts and merges URLs. Used for AngularJS to Angular migrations."
+            }
+          ]
+        },
+        {
+          "id": "e246fb1f-0042-23b4-867a-77f234cd18a9",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "-"
+            }
+          ]
+        },
+        {
+          "id": "cffd1e84-e352-53b2-b398-646ee922646a",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Define what the router should do if it receives a navigation request to the current URL."
+            }
+          ]
+        },
+        {
+          "id": "eda6f214-8f1d-b18f-bd0d-0ce87f1ecaea",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Defines how the router merges params, data and resolved data from parent to child routes. [More info in the configuration section](../extraoptions-interface#paramsInheritanceStrategy)."
+            }
+          ]
+        },
+        {
+          "id": "a310135d-7967-b76f-2e66-0f9b229444cc",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Defines when the router updates the browser URL. [More info in the configuration section](../extraoptions-interface#urlUpdateStrategy)."
+            }
+          ]
+        },
+        {
+          "id": "df6275e7-8144-efc3-b04f-a2d8840edb2f",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "[Routes configuration](../route-interface)."
+            }
+          ]
+        },
+        {
+          "id": "fb861389-e40f-b906-ffdb-8881f77142ea",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The current url."
+            }
+          ]
+        },
+        {
+          "id": "cc091ab6-e897-6c80-4db6-21d3c74091a0",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Sets up the location change listener and performs the initial navigation."
+            }
+          ]
+        },
+        {
+          "id": "e8377807-af91-0794-27e4-c53f54d9eb98",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Sets up the location change listener."
+            }
+          ]
+        },
+        {
+          "id": "d192dc2e-8dda-c3a0-1905-98395e0f5f55",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Resets the configuration used for navigation and generating links."
+            }
+          ]
+        },
+        {
+          "id": "4e4dcec1-e729-2b84-19b5-7e59c61866c4",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Disposes of the router."
+            }
+          ]
+        },
+        {
+          "id": "b115a6e4-f696-8207-e5a1-e224f57768d1",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Applies an array of commands to the current url tree and creates a new url tree."
+            }
+          ]
+        },
+        {
+          "id": "6cd64d50-2950-bb47-546d-a38b47af6c4e",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Navigate based on the provided url. This navigation is always absolute."
+            }
+          ]
+        },
+        {
+          "id": "578732a7-99e6-a3f1-4dff-4f4fa7129264",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Navigate based on the provided array of commands and a starting point. If no starting route is provided, the navigation is absolute."
+            }
+          ]
+        },
+        {
+          "id": "22ab7c02-e540-f786-d042-f99d32afc97b",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Serializes a `UrlTree` into a string."
+            }
+          ]
+        },
+        {
+          "id": "a5b5a598-6b97-8a55-1a60-1ef4a6cc7749",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Parses a string into a `UrlTree`."
+            }
+          ]
+        },
+        {
+          "id": "4bf89fee-cd78-3e57-1eb8-bb7185e35ee1",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Returns whether the url is activated."
+            }
+          ]
+        },
+        {
+          "id": "d973ffd4-5984-45a0-2299-f8fce11eee50",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Returns a `Promise` that:\n\n* resolves to `true` when navigation succeeds,\n* resolves to `false` when navigation fails,\n* is rejected when an error happens.\n\n#### Example\n\n```typescript\nrouter.navigateByUrl(\"/team/33/user/11\");\n\n// Navigate without updating the URL\nrouter.navigateByUrl(\"/team/33/user/11\", { skipLocationChange: true });\n```\n\nSince `navigateByUrl()` takes an absolute URL as the first parameter, it will not apply any delta to the current URL and ignores any properties in the second parameter (the [`NavigationExtras`](../extraoptions-interface) that would change the provided URL."
+            }
+          ]
+        },
+        {
+          "id": "f3a0bef1-0fbd-c957-391a-9ad66cab9faa",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Returns a `Promise` that:\n\n* resolves to `true` when navigation succeeds,\n* resolves to `false` when navigation fails,\n* is rejected when an error happens.\n\n#### Example\n\n```typescript\nrouter.navigate(['team', 33, 'user', 11], {relativeTo: route});\n\n// Navigate without updating the URL\nrouter.navigate(['team', 33, 'user', 11], {relativeTo: route, skipLocationChange: true});\n```\n\nThe first parameter of `navigate()` is a delta to be applied to the current URL or the one provided in the `relativeTo` property of the second parameter (the [NavigationExtras](../extraoptions-interface))."
+            }
+          ]
+        },
+        {
+          "id": "00ad3330-0f97-cef8-6ad5-5fc05366b04e",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "During each navigation, the `Router` emits navigation events through the `Router.events` property. These events range from when the navigation starts and ends to many points in between."
+            }
+          ]
+        },
+        {
+          "id": "91f478a2-69bc-047b-d1a1-f4b44a55d328",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "* `NavigationStart` — An event triggered when navigation starts.\n* `RouteConfigLoadStart` — An event triggered before the Router lazy loads a route configuration.\n* `RouteConfigLoadEnd` — An event triggered after a route has been lazy loaded.\n* `RoutesRecognized` — An event triggered when the Router parses the URL and the routes are recognized.\n* `GuardsCheckStart` — An event triggered when the Router begins the Guards phase of routing.\n* `ChildActivationStart` — An event triggered when the Router begins activating a route's children.\n* `ActivationStart` — An event triggered when the Router begins activating a route.\n* `GuardsCheckEnd` — An event triggered when the Router finishes the Guards phase of routing successfully.\n* `ResolveStart` — An event triggered when the Router begins the Resolve phase of routing.\n* `ResolveEnd` — An event triggered when the Router finishes the Resolve phase of routing successfuly.\n* `ChildActivationEnd` — An event triggered when the Router finishes activating a route's children.\n* `ActivationEnd` — An event triggered when the Router finishes activating a route.\n* `NavigationEnd` — An event triggered when navigation ends successfully.\n* `NavigationCancel` — An event triggered when navigation is canceled. This is due to a Route Guard returning false during navigation.\n* `NavigationError` — An event triggered when navigation fails due to an unexpected error.\n* `Scroll` —  An event that represents a scrolling event."
+            }
+          ]
+        },
+        {
+          "id": "8f60a65f-8f24-fbdb-e0dc-2e7ae20cd9a1",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example\n\n\n"
+            }
+          ]
+        },
+        {
+          "id": "0acbd7dc-a2fa-7f53-0262-8963bbe02c20",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Subscribe on `NavigationEnd` event:"
+            }
+          ]
+        },
+        {
+          "id": "d64c1b1f-a87f-3ad9-cf85-71466c625be0",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nexport class AppComponent {\n  constructor(private router: Router) {\n  }\n\n  ngOnInit() {\n    this.router.events\n      .pipe(filter(event => event instanceof NavigationEnd))\n      .subscribe(() => {\n        ...\n      });\n    }\n  }\n```"
+            }
+          ]
+        },
+        {
+          "id": "6f559260-1d75-1e7c-0522-3317da161914",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Contains the information about a route associated with a component loaded in an outlet. An `ActivatedRoute` can also be used to traverse the router state tree."
+            }
+          ]
+        },
+        {
+          "id": "c441b2d0-5f0a-0396-e327-55d3fefd899d",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example"
+            }
+          ]
+        },
+        {
+          "id": "23a311cb-be4e-6c76-ee6c-57e2e78188a3",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@Component({...})\nclass MyComponent {\n  constructor(route: ActivatedRoute) {\n    const id: Observable<string> = route.params.map(p => p.id);\n    const url: Observable<string> = route.url.map(segments => segments.join(''));\n    // route.data includes both `data` and `resolve`\n    const user = route.data.map(d => d.user);\n  }\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "84646754-3561-23e1-2013-81e58d09bda8",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Properties"
+            }
+          ]
+        },
+        {
+          "id": "24706037-c49e-2bd7-734d-49cfdc185b36",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The current snapshot of this route."
+            }
+          ]
+        },
+        {
+          "id": "41d5248c-919e-f9ee-b90a-f582d8505571",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "An observable of the URL segments matched by this route."
+            }
+          ]
+        },
+        {
+          "id": "2e50039b-cc3d-b8a6-f723-2de218c5e0e8",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "An observable of the matrix parameters scoped to this route."
+            }
+          ]
+        },
+        {
+          "id": "f7514789-e478-b0d5-e838-373ff4c6b1b1",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "An observable of the query parameters shared by all the routes."
+            }
+          ]
+        },
+        {
+          "id": "0ac2dd0f-bb19-4450-4477-7a591f14d314",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "An observable of the URL fragment shared by all the routes."
+            }
+          ]
+        },
+        {
+          "id": "03dd9591-e7bb-da9c-2096-8620c65a5c1b",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "An observable of the static and resolved data of this route."
+            }
+          ]
+        },
+        {
+          "id": "9a258bf7-1694-8edd-dcd6-8e9e8463f3f2",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The outlet name of the route."
+            }
+          ]
+        },
+        {
+          "id": "1e5f7689-e0fb-df55-89ec-d4bb01987567",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The component of the route."
+            }
+          ]
+        },
+        {
+          "id": "17f36459-8727-6413-d574-1163e7537628",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The configuration used to match this route."
+            }
+          ]
+        },
+        {
+          "id": "93ddf69a-1b25-f5b2-f800-e4dbbab099a5",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The root of the router state."
+            }
+          ]
+        },
+        {
+          "id": "a73e9b42-3d8a-d222-8b25-dda6124d4b65",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The parent of this route in the router state tree."
+            }
+          ]
+        },
+        {
+          "id": "388e2ca2-d84e-c969-6711-c0806fb1584f",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The first child of this route in the router state tree."
+            }
+          ]
+        },
+        {
+          "id": "a4a3dc8a-6dab-37df-e946-e26d2355ffbf",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The children of this route in the router state tree."
+            }
+          ]
+        },
+        {
+          "id": "c0a408e2-b572-1ab0-9324-b997984a0b89",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The path from the root of the router state tree to this route."
+            }
+          ]
+        },
+        {
+          "id": "5ce8eef4-f317-7bbe-817e-f450cb3bcc12",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "TODO"
+            }
+          ]
+        },
+        {
+          "id": "15420e20-6296-687d-0d7a-fe40183bafbf",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "TODO"
+            }
+          ]
+        },
+        {
+          "id": "e7a7c616-0730-dc71-6eb4-487a37223b41",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Contains the information about a route associated with a component loaded in an outlet at a particular moment in time. `ActivatedRouteSnapshot` can also be used to traverse the router state tree."
+            }
+          ]
+        },
+        {
+          "id": "389661e1-6bb5-f9af-de4d-47b3776daef4",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example"
+            }
+          ]
+        },
+        {
+          "id": "98f86669-33fa-a645-8012-2eed7062c842",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@Component({templateUrl:'./my-component.html'})\nclass MyComponent {\n  constructor(route: ActivatedRoute) {\n    const id: string = route.snapshot.params.id;\n    const url: string = route.snapshot.url.join('');\n    const user = route.snapshot.data.user;\n  }\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "38c2af04-c8f4-308b-2603-dcd15405cd50",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Properties"
+            }
+          ]
+        },
+        {
+          "id": "bf85c3ce-e6e7-d568-1219-712b9a040189",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The configuration used to match this route."
+            }
+          ]
+        },
+        {
+          "id": "b017077a-12df-fbbd-0a08-b6ac905a0033",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The URL segments matched by this route."
+            }
+          ]
+        },
+        {
+          "id": "9ac3c968-6dbb-893f-db2b-9007e6bdf42f",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The matrix parameters scoped to this route."
+            }
+          ]
+        },
+        {
+          "id": "23b2ac4d-a3e4-1357-2297-40efe871e7aa",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The query parameters shared by all the routes."
+            }
+          ]
+        },
+        {
+          "id": "d143a698-ba23-e145-3547-2754990235f8",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The URL fragment shared by all the routes."
+            }
+          ]
+        },
+        {
+          "id": "2ea1330b-ef32-da6a-da06-afbc0137cbf1",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The static and resolved data of this route."
+            }
+          ]
+        },
+        {
+          "id": "eaa99de8-9538-0181-7943-c24edecafa32",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The outlet name of the route."
+            }
+          ]
+        },
+        {
+          "id": "c2a3a946-8146-0bae-faf1-d8c180b6e414",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The component of the route."
+            }
+          ]
+        },
+        {
+          "id": "d75d963a-a3b9-7fec-ef0f-3beeafbe1c1c",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The root of the router state."
+            }
+          ]
+        },
+        {
+          "id": "c350d58d-073e-35be-b94c-fc0aae0155ae",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The parent of this route in the router state tree."
+            }
+          ]
+        },
+        {
+          "id": "a5fee5d8-a007-668c-67ec-241190d045ce",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The first child of this route in the router state tree."
+            }
+          ]
+        },
+        {
+          "id": "e4617254-527d-4a87-e49a-a197f6f73697",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The children of this route in the router state tree."
+            }
+          ]
+        },
+        {
+          "id": "567a2e1f-eac5-d946-8fd8-77e7d4b4ea57",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The path from the root of the router state tree to this route."
+            }
+          ]
+        },
+        {
+          "id": "5f291204-e013-3ba6-71fe-7eff05744ebc",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "TODO"
+            }
+          ]
+        },
+        {
+          "id": "5f59e1ff-29cb-72e8-b31d-b1e761325a81",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "TODO"
+            }
+          ]
+        },
+        {
+          "id": "4522d1e9-4dd8-8aa0-be5b-f737e052ef6f",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "RED\n\n\nLets you link to specific routes in your app.\n\nConsider the following route configuration:\n`[{ path: 'user/:name', component: UserCmp }]`.\nWhen linking to this `user/:name` route, you use the `RouterLink` directive.\n\nIf the link is static, you can use the directive as follows:\n`<a routerLink=\"/user/bob\">link to user component</a>`\n\nIf you use dynamic values to generate the link, you can pass an array of path\nsegments, followed by the params for each segment.\n\nFor instance `['/team', teamId, 'user', userName, {details: true}]`\nmeans that we want to generate a link to `/team/11/user/bob;details=true`.\n\nMultiple static segments can be merged into one\n(e.g., `['/team/11/user', userName, {details: true}]`).\n\nThe first segment name can be prepended with `/`, `./`, or `../`:\n* If the first segment begins with `/`, the router will look up the route from the root of the\n  app.\n* If the first segment begins with `./`, or doesn't begin with a slash, the router will\n  instead look in the children of the current activated route.\n* And if the first segment begins with `../`, the router will go up one level.\n\nYou can set query params and fragment as follows:\n\n```\n<a [routerLink]=\"['/user/bob']\" [queryParams]=\"{debug: true}\" fragment=\"education\">\n  link to user component\n</a>\n```\nRouterLink will use these to generate this link: `/user/bob#education?debug=true`.\n\n(Deprecated in v4.0.0 use `queryParamsHandling` instead) You can also tell the\ndirective to preserve the current query params and fragment:\n\n```\n<a [routerLink]=\"['/user/bob']\" preserveQueryParams preserveFragment>\n  link to user component\n</a>\n```\n\nYou can tell the directive to how to handle queryParams, available options are:\n - `'merge'`: merge the queryParams into the current queryParams\n - `'preserve'`: preserve the current queryParams\n - default/`''`: use the queryParams only\n\nSame options for {@link NavigationExtras#queryParamsHandling\nNavigationExtras#queryParamsHandling}.\n\n```\n<a [routerLink]=\"['/user/bob']\" [queryParams]=\"{debug: true}\" queryParamsHandling=\"merge\">\n  link to user component\n</a>\n```\n\nThe router link directive always treats the provided input as a delta to the current url.\n\nFor instance, if the current url is `/user/(box//aux:team)`.\n\nThen the following link `<a [routerLink]=\"['/user/jim']\">Jim</a>` will generate the link\n`/user/(jim//aux:team)`.\n\nSee {@link Router#createUrlTree createUrlTree} for more information."
+            }
+          ]
+        },
+        {
+          "id": "0e2ff558-989f-7a7c-6892-91e0a42141dc",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "RED\n\nLets you add a CSS class to an element when the link's route becomes active.\n\nThis directive lets you add a CSS class to an element when the link's route\nbecomes active.\n\nConsider the following example:\n\n```\n<a routerLink=\"/user/bob\" routerLinkActive=\"active-link\">Bob</a>\n```\n\nWhen the url is either '/user' or '/user/bob', the active-link class will\nbe added to the `a` tag. If the url changes, the class will be removed.\n\nYou can set more than one class, as follows:\n\n```\n<a routerLink=\"/user/bob\" routerLinkActive=\"class1 class2\">Bob</a>\n<a routerLink=\"/user/bob\" [routerLinkActive]=\"['class1', 'class2']\">Bob</a>\n```\n\nYou can configure RouterLinkActive by passing `exact: true`. This will add the classes\nonly when the url matches the link exactly.\n\n```\n<a routerLink=\"/user/bob\" routerLinkActive=\"active-link\" [routerLinkActiveOptions]=\"{exact:\ntrue}\">Bob</a>\n```\n\nYou can assign the RouterLinkActive instance to a template variable and directly check\nthe `isActive` status.\n```\n<a routerLink=\"/user/bob\" routerLinkActive #rla=\"routerLinkActive\">\n  Bob {{ rla.isActive ? '(already open)' : ''}}\n</a>\n```\n\nFinally, you can apply the RouterLinkActive directive to an ancestor of a RouterLink.\n\n```\n<div routerLinkActive=\"active-link\" [routerLinkActiveOptions]=\"{exact: true}\">\n  <a routerLink=\"/user/jim\">Jim</a>\n  <a routerLink=\"/user/bob\">Bob</a>\n</div>\n```\n\nThis will set the active-link class on the div tag if the url is either '/user/jim' or\n'/user/bob'."
+            }
+          ]
+        },
+        {
+          "id": "d2791b5c-6d53-d476-65be-e0a2fdeefa76",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "RED\n\nActs as a placeholder that Angular dynamically fills based on the current router state.\n\n```\n<router-outlet></router-outlet>\n<router-outlet name='left'></router-outlet>\n<router-outlet name='right'></router-outlet>\n```\n\nA router outlet will emit an activate event any time a new component is being instantiated,\nand a deactivate event when it is being destroyed.\n\n```\n<router-outlet\n  (activate)='onActivate($event)'\n  (deactivate)='onDeactivate($event)'></router-outlet>\n```"
+            }
+          ]
+        },
+        {
+          "id": "89bb91bb-7fa9-b18a-aaff-6eaf06302cb8",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Represents the parsed URL.\n\nSince a router state is a tree, and the URL is nothing but a serialized state, the URL is a\nserialized tree.\n\n`UrlTree` is a data structure that provides a lot of affordances in dealing with URLs."
+            }
+          ]
+        },
+        {
+          "id": "aaabad7d-b93e-edeb-f40e-175b4c1914fc",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example"
+            }
+          ]
+        },
+        {
+          "id": "4a58aee6-a82a-e3a9-9849-3fcea4765820",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@Component({templateUrl:'template.html'})\nclass MyComponent {\n  constructor(router: Router) {\n    const tree: UrlTree =\n      router.parseUrl('/team/33/(user/victor//support:help)?debug=true#fragment');\n    const f = tree.fragment; // return 'fragment'\n    const q = tree.queryParams; // returns {debug: 'true'}\n    const g: UrlSegmentGroup = tree.root.children[PRIMARY_OUTLET];\n    const s: UrlSegment[] = g.segments; // returns 2 segments 'team' and '33'\n    g.children[PRIMARY_OUTLET].segments; // returns 2 segments 'user' and 'victor'\n    g.children['support'].segments; // return 1 segment 'help'\n  }\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "c428b1b2-f173-398a-eccb-01577d1266a5",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Represents a single URL segment.\n\nA `UrlSegment` is a part of a URL between the two slashes. It contains a path and the matrix\nparameters associated with the segment."
+            }
+          ]
+        },
+        {
+          "id": "265c0ee0-4db2-7764-cf20-22f0eb4698d1",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "#### Example"
+            }
+          ]
+        },
+        {
+          "id": "4cb01c52-c1fd-1363-db3a-d49d8c874251",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@Component({templateUrl:'template.html'})\nclass MyComponent {\n  constructor(router: Router) {\n    const tree: UrlTree = router.parseUrl('/team;id=33');\n    const g: UrlSegmentGroup = tree.root.children[PRIMARY_OUTLET];\n    const s: UrlSegment[] = g.segments;\n    s[0].path; // returns 'team'\n    s[0].parameters; // returns {id: 33}\n  }\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "249a5cb1-e9a1-396f-838e-66621770e13f",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## WIP"
+            }
+          ]
+        },
+        {
+          "id": "647d100a-58bf-37af-b6f0-a742e5ef2947",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## WIP"
+            }
+          ]
+        },
+        {
+          "id": "fd55e62c-105a-0bbf-5d8f-9671a7974007",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## WIP"
+            }
+          ]
+        },
+        {
+          "id": "f24e3ffd-1c78-6eb5-a075-9a4cc799a947",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## WIP"
+            }
+          ]
+        },
+        {
+          "id": "542643f0-826a-4c59-96bf-98be2958a759",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "This easy Angular reference for developers describes forms, controls and models."
+            }
+          ]
+        },
+        {
+          "id": "b11c4f11-d530-bee6-04c4-5f55a09a3aae",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "This easy Angular reference for developers describes routing and navigation."
             }
           ]
         }
