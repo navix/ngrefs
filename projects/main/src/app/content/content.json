@@ -15383,7 +15383,8 @@
                       "label": {
                         "id": "457804b4-af67-3a5f-10f1-fd8623fdc3e2"
                       },
-                      "url": "canactivate-interface"
+                      "url": "canactivate-interface",
+                      "separatedFromTop": true
                     },
                     {
                       "id": "c7d2ac63-81b3-c09b-5f4a-b5b1142fa3fb",
@@ -15494,7 +15495,8 @@
                 "label": {
                   "id": "175606fb-22ec-5c55-bc1a-e36c97c57210"
                 },
-                "url": "urltree"
+                "url": "urltree",
+                "separatedFromTop": true
               },
               {
                 "id": "83c53884-d62d-acc9-8feb-01433b4e2f9c",
@@ -15502,6 +15504,13 @@
                   "id": "410584a8-1e39-9dfd-ed25-1043b65ba98b"
                 },
                 "url": "urlsegment"
+              },
+              {
+                "id": "5ab95516-9375-7c3a-413a-82717a56bc78",
+                "label": {
+                  "id": "8f914988-15e3-fc7b-806e-534ced13f81c"
+                },
+                "url": "urlmatcher"
               },
               {
                 "id": "39e2e4de-417e-8715-c894-b1c965489093",
@@ -15561,6 +15570,45 @@
                   "text": {
                     "id": "f24e3ffd-1c78-6eb5-a075-9a4cc799a947"
                   }
+                },
+                {
+                  "id": "5f4eb566-432d-2f42-35a4-a4a12c23e2d6",
+                  "type": "text",
+                  "head": {
+                    "id": "26ee74a0-69b1-f0f1-3cd3-1d75498e6a86"
+                  },
+                  "text": {
+                    "id": "d8b2aae3-5de5-7f98-7c66-9a86cc6acef6"
+                  }
+                },
+                {
+                  "id": "88dfed7f-4c72-e83b-add9-6a02cb291873",
+                  "type": "hint",
+                  "head": {
+                    "id": "db83be86-0a95-45a4-c606-335379490034"
+                  },
+                  "text": {
+                    "id": "76cb379d-7388-3d55-226e-3b2e024b9597"
+                  }
+                },
+                {
+                  "id": "84d23d78-b7c5-1926-123b-290c3912325e",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "fd99edbf-7c57-aeca-165b-9860f7fa527c"
+                  },
+                  "text": {
+                    "id": "567e0cbe-fe2b-be75-711e-c52364696dc3"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "8bf03601-e461-4fc0-7004-ed66e4f1147b"
+                      },
+                      "url": "https://angular.io/guide/router",
+                      "lang": "en"
+                    }
+                  ]
                 }
               ],
               "title": {
@@ -17157,6 +17205,75 @@
               "url": "urlsegment"
             },
             {
+              "id": "04bd79cb-1299-ec9d-2e02-1913eae7eb3a",
+              "entries": [
+                {
+                  "id": "41a4ae8f-8910-8e04-f7ae-1f6fad8ab9d1",
+                  "type": "text",
+                  "head": {
+                    "id": "972acc99-5e87-df63-4218-969e9ed9a45d"
+                  },
+                  "text": {
+                    "id": "11920f75-f6e5-8f94-7b7e-2592132c285d"
+                  }
+                },
+                {
+                  "id": "6bc14f5e-a6a9-0941-559a-9500b0175f92",
+                  "type": "text",
+                  "head": {
+                    "id": "3816541d-8634-0ceb-acfc-d35925e39b2f"
+                  },
+                  "text": {
+                    "id": "6b980f2d-f01f-74b0-6cd2-0ab243b2c855"
+                  }
+                },
+                {
+                  "id": "4f6d9cf5-67ed-49c3-b6a9-c1f2cb0a1986",
+                  "type": "text",
+                  "head": {
+                    "id": "9f4207f0-15c1-e24c-fa2d-d3fd6c068293"
+                  },
+                  "text": {
+                    "id": "ce5e04b4-0228-b285-b5a1-7750f8178b3e"
+                  }
+                },
+                {
+                  "id": "1b3c1c0c-0bc4-33fa-9cba-5d874d62db63",
+                  "type": "text",
+                  "head": {
+                    "id": "59ed9345-1f66-fb6d-7e08-bf39618b9617"
+                  },
+                  "text": {
+                    "id": "ae908a57-4922-f33b-1948-add20cebd837"
+                  }
+                },
+                {
+                  "id": "e7dde42a-7d13-8165-8653-2ec444b817c9",
+                  "type": "text",
+                  "head": {
+                    "id": "ae2ad43f-b265-b4d2-e76f-1a5c807a661c"
+                  },
+                  "text": {
+                    "id": "5c76ff1a-8755-a15e-437a-0d0478c32df4"
+                  }
+                },
+                {
+                  "id": "f798aae3-8ab4-637b-1657-1571d499656c",
+                  "type": "text",
+                  "head": {
+                    "id": "10180d3b-7e58-15d4-e65b-7b4380d5dd75"
+                  },
+                  "text": {
+                    "id": "96bd3c98-e2ba-c832-cdb0-4959728af886"
+                  }
+                }
+              ],
+              "title": {
+                "id": "06550345-2252-cbab-d769-5572d213cc34"
+              },
+              "url": "urlmatcher"
+            },
+            {
               "id": "64a21c90-ee95-6f01-c2d0-5761162357c9",
               "entries": [
                 {
@@ -17781,6 +17898,36 @@
                   },
                   "text": {
                     "id": "4522d1e9-4dd8-8aa0-be5b-f737e052ef6f"
+                  }
+                },
+                {
+                  "id": "7bb8a0e6-cd39-8525-c093-e6b5602b9b14",
+                  "type": "text",
+                  "head": {
+                    "id": "654cdb9f-41e2-58af-59a4-3d48ac116154"
+                  },
+                  "text": {
+                    "id": "9d10eb53-c879-0e13-737c-82ae0422f2b3"
+                  }
+                },
+                {
+                  "id": "90b5b39e-5cb1-18d0-5dd1-4c6a37177e12",
+                  "type": "text",
+                  "head": {
+                    "id": "fc7a8a00-ae08-6202-0f89-a4494847b2ab"
+                  },
+                  "text": {
+                    "id": "f485c6fc-ecda-2833-7975-d274034d6445"
+                  }
+                },
+                {
+                  "id": "0e66e75b-2939-c3a7-d08b-b8219a420f93",
+                  "type": "text",
+                  "head": {
+                    "id": "8861c8b4-8c27-145d-a267-391adaf013a9"
+                  },
+                  "text": {
+                    "id": "c1efc731-c7fe-c602-5e98-f2f834c190ff"
                   }
                 }
               ],
@@ -36003,7 +36150,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "A string that uses the route matcher DSL."
+              "text": "A string that uses the [route matcher DSL](../urlmatcher)."
             }
           ]
         },
@@ -36023,7 +36170,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Defines a custom strategy for path matching and supersedes `path` and `pathMatch`."
+              "text": "Defines a [custom strategy for path matching](../urlmatcher) and supersedes `path` and `pathMatch`."
             }
           ]
         },
@@ -36063,7 +36210,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "An array of DI tokens used to look up `CanActivate` handlers."
+              "text": "An array of DI tokens used to look up [`CanActivate`](../canactivate-interface) handlers."
             }
           ]
         },
@@ -36073,7 +36220,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "An array of DI tokens used to look up `CanActivateChild` handlers."
+              "text": "An array of DI tokens used to look up [`CanActivateChild`](../canactivatechild-interface) handlers."
             }
           ]
         },
@@ -36083,7 +36230,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "An array of DI tokens used to look up `CanDeactivate` handlers."
+              "text": "An array of DI tokens used to look up [`CanDeactivate`](../candeactivate-interface) handlers."
             }
           ]
         },
@@ -36093,7 +36240,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "An array of DI tokens used to look up `CanLoad` handlers."
+              "text": "An array of DI tokens used to look up [`CanLoad`](../canload-interface) handlers."
             }
           ]
         },
@@ -36103,7 +36250,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Additional data provided to the component via `ActivatedRoute`."
+              "text": "Additional data provided to the component via [`ActivatedRoute`](../activatedroute)."
             }
           ]
         },
@@ -36113,7 +36260,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "A map of DI tokens used to look up data resolvers."
+              "text": "A map of DI tokens used to look up [data resolvers](../resolve-interface)."
             }
           ]
         },
@@ -37453,7 +37600,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "RED\n\n\nLets you link to specific routes in your app.\n\nConsider the following route configuration:\n`[{ path: 'user/:name', component: UserCmp }]`.\nWhen linking to this `user/:name` route, you use the `RouterLink` directive.\n\nIf the link is static, you can use the directive as follows:\n`<a routerLink=\"/user/bob\">link to user component</a>`\n\nIf you use dynamic values to generate the link, you can pass an array of path\nsegments, followed by the params for each segment.\n\nFor instance `['/team', teamId, 'user', userName, {details: true}]`\nmeans that we want to generate a link to `/team/11/user/bob;details=true`.\n\nMultiple static segments can be merged into one\n(e.g., `['/team/11/user', userName, {details: true}]`).\n\nThe first segment name can be prepended with `/`, `./`, or `../`:\n* If the first segment begins with `/`, the router will look up the route from the root of the\n  app.\n* If the first segment begins with `./`, or doesn't begin with a slash, the router will\n  instead look in the children of the current activated route.\n* And if the first segment begins with `../`, the router will go up one level.\n\nYou can set query params and fragment as follows:\n\n```\n<a [routerLink]=\"['/user/bob']\" [queryParams]=\"{debug: true}\" fragment=\"education\">\n  link to user component\n</a>\n```\nRouterLink will use these to generate this link: `/user/bob#education?debug=true`.\n\n(Deprecated in v4.0.0 use `queryParamsHandling` instead) You can also tell the\ndirective to preserve the current query params and fragment:\n\n```\n<a [routerLink]=\"['/user/bob']\" preserveQueryParams preserveFragment>\n  link to user component\n</a>\n```\n\nYou can tell the directive to how to handle queryParams, available options are:\n - `'merge'`: merge the queryParams into the current queryParams\n - `'preserve'`: preserve the current queryParams\n - default/`''`: use the queryParams only\n\nSame options for {@link NavigationExtras#queryParamsHandling\nNavigationExtras#queryParamsHandling}.\n\n```\n<a [routerLink]=\"['/user/bob']\" [queryParams]=\"{debug: true}\" queryParamsHandling=\"merge\">\n  link to user component\n</a>\n```\n\nThe router link directive always treats the provided input as a delta to the current url.\n\nFor instance, if the current url is `/user/(box//aux:team)`.\n\nThen the following link `<a [routerLink]=\"['/user/jim']\">Jim</a>` will generate the link\n`/user/(jim//aux:team)`.\n\nSee {@link Router#createUrlTree createUrlTree} for more information."
+              "text": "Lets you link to specific routes in your app.\n\nConsider the following route configuration:\n\n`[{ path: 'user/:name', component: UserCmp }]`.\n\nWhen linking to this `user/:name` route, you use the `RouterLink` directive.\n\nIf the link is **static**, you can use the directive as follows:\n\n`<a routerLink=\"/user/bob\">link to user component</a>`\n\n\nIf you use **dynamic** values to generate the link, you can pass an array of path segments, followed by the params for each segment.\n\nFor instance `['/team', teamId, 'user', userName, {details: true}]` means that we want to generate a link to `/team/11/user/bob;details=true`.\n"
             }
           ]
         },
@@ -37463,7 +37610,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "RED\n\nLets you add a CSS class to an element when the link's route becomes active.\n\nThis directive lets you add a CSS class to an element when the link's route\nbecomes active.\n\nConsider the following example:\n\n```\n<a routerLink=\"/user/bob\" routerLinkActive=\"active-link\">Bob</a>\n```\n\nWhen the url is either '/user' or '/user/bob', the active-link class will\nbe added to the `a` tag. If the url changes, the class will be removed.\n\nYou can set more than one class, as follows:\n\n```\n<a routerLink=\"/user/bob\" routerLinkActive=\"class1 class2\">Bob</a>\n<a routerLink=\"/user/bob\" [routerLinkActive]=\"['class1', 'class2']\">Bob</a>\n```\n\nYou can configure RouterLinkActive by passing `exact: true`. This will add the classes\nonly when the url matches the link exactly.\n\n```\n<a routerLink=\"/user/bob\" routerLinkActive=\"active-link\" [routerLinkActiveOptions]=\"{exact:\ntrue}\">Bob</a>\n```\n\nYou can assign the RouterLinkActive instance to a template variable and directly check\nthe `isActive` status.\n```\n<a routerLink=\"/user/bob\" routerLinkActive #rla=\"routerLinkActive\">\n  Bob {{ rla.isActive ? '(already open)' : ''}}\n</a>\n```\n\nFinally, you can apply the RouterLinkActive directive to an ancestor of a RouterLink.\n\n```\n<div routerLinkActive=\"active-link\" [routerLinkActiveOptions]=\"{exact: true}\">\n  <a routerLink=\"/user/jim\">Jim</a>\n  <a routerLink=\"/user/bob\">Bob</a>\n</div>\n```\n\nThis will set the active-link class on the div tag if the url is either '/user/jim' or\n'/user/bob'."
+              "text": "Lets you add a CSS class to an element when the link's route becomes active.\n\nThis directive lets you add a CSS class to an element when the link's route\nbecomes active.\n\nConsider the following example:\n\n```\n<a routerLink=\"/user/bob\" routerLinkActive=\"active-link\">Bob</a>\n```\n\nWhen the url is either '/user' or '/user/bob', the active-link class will\nbe added to the `a` tag. If the url changes, the class will be removed.\n\nYou can set more than one class, as follows:\n\n```\n<a routerLink=\"/user/bob\" routerLinkActive=\"class1 class2\">Bob</a>\n<a routerLink=\"/user/bob\" [routerLinkActive]=\"['class1', 'class2']\">Bob</a>\n```\n\nYou can configure RouterLinkActive by passing `exact: true`. This will add the classes\nonly when the url matches the link exactly.\n\n```\n<a routerLink=\"/user/bob\" routerLinkActive=\"active-link\" [routerLinkActiveOptions]=\"{exact:\ntrue}\">Bob</a>\n```\n\nYou can assign the RouterLinkActive instance to a template variable and directly check\nthe `isActive` status.\n```\n<a routerLink=\"/user/bob\" routerLinkActive #rla=\"routerLinkActive\">\n  Bob {{ rla.isActive ? '(already open)' : ''}}\n</a>\n```\n\nFinally, you can apply the RouterLinkActive directive to an ancestor of a RouterLink.\n\n```\n<div routerLinkActive=\"active-link\" [routerLinkActiveOptions]=\"{exact: true}\">\n  <a routerLink=\"/user/jim\">Jim</a>\n  <a routerLink=\"/user/bob\">Bob</a>\n</div>\n```\n\nThis will set the active-link class on the div tag if the url is either '/user/jim' or\n'/user/bob'."
             }
           ]
         },
@@ -37473,7 +37620,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "RED\n\nActs as a placeholder that Angular dynamically fills based on the current router state.\n\n```\n<router-outlet></router-outlet>\n<router-outlet name='left'></router-outlet>\n<router-outlet name='right'></router-outlet>\n```\n\nA router outlet will emit an activate event any time a new component is being instantiated,\nand a deactivate event when it is being destroyed.\n\n```\n<router-outlet\n  (activate)='onActivate($event)'\n  (deactivate)='onDeactivate($event)'></router-outlet>\n```"
+              "text": "Acts as a placeholder that Angular dynamically fills based on the current router state.\n\n```\n<router-outlet></router-outlet>\n<router-outlet name='left'></router-outlet>\n<router-outlet name='right'></router-outlet>\n```\n\nA router outlet will emit an activate event any time a new component is being instantiated,\nand a deactivate event when it is being destroyed.\n\n```\n<router-outlet\n  (activate)='onActivate($event)'\n  (deactivate)='onDeactivate($event)'></router-outlet>\n```"
             }
           ]
         },
@@ -37573,7 +37720,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "## WIP"
+              "text": "## *WIP"
             }
           ]
         },
@@ -38744,6 +38891,156 @@
             {
               "lang": "en",
               "text": "Angular — Component Styles"
+            }
+          ]
+        },
+        {
+          "id": "d8b2aae3-5de5-7f98-7c66-9a86cc6acef6",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Additional information\n\nExample of hints and tutorials links. You can switch off these panels in the sidebar."
+            }
+          ]
+        },
+        {
+          "id": "76cb379d-7388-3d55-226e-3b2e024b9597",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Hint with additional explanation. "
+            }
+          ]
+        },
+        {
+          "id": "8bf03601-e461-4fc0-7004-ed66e4f1147b",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular — Routing & Navigation"
+            }
+          ]
+        },
+        {
+          "id": "06550345-2252-cbab-d769-5572d213cc34",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "UrlMatcher"
+            }
+          ]
+        },
+        {
+          "id": "11920f75-f6e5-8f94-7b7e-2592132c285d",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Router uses `UrlMatcher` to decide that `Route.path` from configuration is fit to a current navigation URL. Router splits `url` to [segments](../urlsegment) and calls `UrlMatcher` function.\n\n\n\n\n"
+            }
+          ]
+        },
+        {
+          "id": "c892711f-f12d-3086-5a3e-0946039b1fd8",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "UrlMatcher"
+            }
+          ]
+        },
+        {
+          "id": "96bd3c98-e2ba-c832-cdb0-4959728af886",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "| Path | URL |\n|---|---|\n| `blog` | /blog |\n| `blog/post` | /blog/post |\n| `blog/post/:id` | /blog/post/123 |\n"
+            }
+          ]
+        },
+        {
+          "id": "5c76ff1a-8755-a15e-437a-0d0478c32df4",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## defaultUrlMatcher\n\nIf `Route.urlMatcher` is not defined, will be used `defaultUrlMatcher`. \n\n`defaultUrlMatcher` splits `path` to segments usign delimeter `/`. If segment starts from `:` it marks as parameter with the same name (except `:` at beginning)."
+            }
+          ]
+        },
+        {
+          "id": "ce5e04b4-0228-b285-b5a1-7750f8178b3e",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "A custom URL matcher can be provided when a combination of `path` and `pathMatch` isn't expressive enough.\n\nFor instance, the following matcher matches html files."
+            }
+          ]
+        },
+        {
+          "id": "ae908a57-4922-f33b-1948-add20cebd837",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nexport function htmlFiles(url: UrlSegment[]) {\n  return url.length === 1 && url[0].path.endsWith('.html') ? ({consumed: url}) : null;\n}\n\nexport const routes = [{ matcher: htmlFiles, component: AnyComponent }];\n```"
+            }
+          ]
+        },
+        {
+          "id": "6b980f2d-f01f-74b0-6cd2-0ab243b2c855",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\ntype UrlMatcher = (segments: UrlSegment[], group: UrlSegmentGroup, route: Route) => UrlMatchResult;\n```"
+            }
+          ]
+        },
+        {
+          "id": "8f914988-15e3-fc7b-806e-534ced13f81c",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "UrlMatcher"
+            }
+          ]
+        },
+        {
+          "id": "f485c6fc-ecda-2833-7975-d274034d6445",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "You can set query params and fragment as follows:\n\n```\n<a [routerLink]=\"['/user/bob']\" [queryParams]=\"{debug: true}\" fragment=\"education\">\n  link to user component\n</a>\n```\n\nRouterLink will use these to generate this link: `/user/bob#education?debug=true`.\n\nYou can also tell the directive to preserve the current query params and fragment:\n\n```\n<a [routerLink]=\"['/user/bob']\" [queryParams]=\"{debug: true}\" queryParamsHandling=\"merge\">\n  link to user component\n</a>\n```\n\nYou can tell the directive to how to handle queryParams, available options are:\n - `'merge'`: merge the queryParams into the current queryParams\n - `'preserve'`: preserve the current queryParams\n - default/`''`: use the queryParams only\n"
+            }
+          ]
+        },
+        {
+          "id": "c1efc731-c7fe-c602-5e98-f2f834c190ff",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The router link directive always treats the provided input as a delta to the current url.\n\nFor instance, if the current url is `/user/(box//aux:team)`.\n\nThen the following link `<a [routerLink]=\"['/user/jim']\">Jim</a>` will generate the link\n`/user/(jim//aux:team)`.\n"
+            }
+          ]
+        },
+        {
+          "id": "9d10eb53-c879-0e13-737c-82ae0422f2b3",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Multiple static segments can be merged into one (e.g., `['/team/11/user', userName, {details: true}]`).\n\nThe first segment name can be prepended with `/`, `./`, or `../`:\n* If the first segment begins with `/`, the router will look up the route from the root of the app.\n* If the first segment begins with `./`, or doesn't begin with a slash, the router will instead look in the children of the current activated route.\n* And if the first segment begins with `../`, the router will go up one level."
             }
           ]
         }
