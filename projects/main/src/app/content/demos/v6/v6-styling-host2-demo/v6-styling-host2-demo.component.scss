@@ -1,0 +1,7 @@
+.demo {
+  display: block;
+  border: 1px solid black;
+  &.-active {
+    border-width: 3px;
+  }
+}

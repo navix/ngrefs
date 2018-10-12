@@ -1,3 +1,8 @@
+import { V6StylingHost1DemoComponent } from './v6/v6-styling-host1-demo/v6-styling-host1-demo.component';
+import { V6StylingHost2DemoComponent } from './v6/v6-styling-host2-demo/v6-styling-host2-demo.component';
+import { V6StylingHostbindingDemoComponent } from './v6/v6-styling-hostbinding-demo/v6-styling-hostbinding-demo.component';
+import { V6StylingHostcontextDemoComponent } from './v6/v6-styling-hostcontext-demo/v6-styling-hostcontext-demo.component';
+import { V6StylingNgdeepDemoComponent } from './v6/v6-styling-ngdeep-demo/v6-styling-ngdeep-demo.component';
 import { V6TemplateStyle1DemoComponent } from './v6/v6-template-style1-demo/v6-template-style1-demo.component';
 import { V6TemplateStyle2DemoComponent } from './v6/v6-template-style2-demo/v6-template-style2-demo.component';
 import { V6TemplatesAnimationDemoComponent } from './v6/v6-templates-animation-demo/v6-templates-animation-demo.component';
@@ -108,4 +113,9 @@ export const demos = {
   'V6TemplatesNgnonbindableDemoComponent': V6TemplatesNgnonbindableDemoComponent,
   'V6TemplatesCustompipeDemoComponent': V6TemplatesCustompipeDemoComponent,
   'V6TemplatesNumberpipeDemoComponent': V6TemplatesNumberpipeDemoComponent,
+  'V6StylingHost1DemoComponent': V6StylingHost1DemoComponent,
+  'V6StylingHost2DemoComponent': V6StylingHost2DemoComponent,
+  'V6StylingHostcontextDemoComponent': V6StylingHostcontextDemoComponent,
+  'V6StylingNgdeepDemoComponent': V6StylingNgdeepDemoComponent,
+  'V6StylingHostbindingDemoComponent': V6StylingHostbindingDemoComponent,
 };

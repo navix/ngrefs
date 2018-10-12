@@ -10432,7 +10432,7 @@
                       "label": {
                         "id": "9b70bd27-f21d-5870-d599-36d1ab53f25a"
                       },
-                      "url": "sanitizer-for-styling"
+                      "url": "domsanitizer-for-styling"
                     }
                   ]
                 },
@@ -10463,6 +10463,45 @@
                   "text": {
                     "id": "647d100a-58bf-37af-b6f0-a742e5ef2947"
                   }
+                },
+                {
+                  "id": "0ae8f8a0-0a9b-a600-e9f9-c81873387f9c",
+                  "type": "text",
+                  "head": {
+                    "id": "99e18c68-03c6-4d70-553a-70030adc2355"
+                  },
+                  "text": {
+                    "id": "95a0e156-189a-3ed7-3461-7a20f38c8eae"
+                  }
+                },
+                {
+                  "id": "0af67b6d-2a1c-e627-65d1-d3d2cc57b288",
+                  "type": "hint",
+                  "head": {
+                    "id": "37bd7324-681b-01d0-6a93-c8715d51b026"
+                  },
+                  "text": {
+                    "id": "813c481e-7629-e6b4-7138-9dac331fc2f5"
+                  }
+                },
+                {
+                  "id": "261ab65e-be68-3eb1-19dc-e9916a535b02",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "bff64d88-3cc6-44fe-75d4-3f3b28d51c30"
+                  },
+                  "text": {
+                    "id": "30dc26d9-efe5-5adf-5e2e-b206808cdd01"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "a5c555f7-0307-ce45-51d0-0712cdb30528"
+                      },
+                      "url": "https://angular.io/guide/component-styles",
+                      "lang": "en"
+                    }
+                  ]
                 }
               ],
               "title": {
@@ -10520,6 +10559,36 @@
                   "text": {
                     "id": "027fdec5-ae3f-1166-3daa-3da8a84c9cd2"
                   }
+                },
+                {
+                  "id": "bc70f075-985a-12e5-3cfe-c52268abe7df",
+                  "type": "text",
+                  "head": {
+                    "id": "c990fb04-90b8-74c1-1e83-1ea0c41c7d0d"
+                  },
+                  "text": {
+                    "id": "0d7ed887-4595-d4c6-0716-bdaed153afa3"
+                  }
+                },
+                {
+                  "id": "e6e31d88-173b-395e-a217-55e4b8a80f4d",
+                  "type": "text",
+                  "head": {
+                    "id": "275f9180-640b-6a87-a639-b2c7d8c1a47c"
+                  },
+                  "text": {
+                    "id": "01f5e176-0c35-3574-9d93-78f428af864e"
+                  }
+                },
+                {
+                  "id": "1dc6e066-0beb-7168-3790-0d913c9849f0",
+                  "type": "text",
+                  "head": {
+                    "id": "649105d4-0f7e-fc8e-9eb9-7bf0c41fa980"
+                  },
+                  "text": {
+                    "id": "0a844e1a-d5e4-501c-b914-b81ab0dbc30e"
+                  }
                 }
               ],
               "title": {
@@ -10564,6 +10633,159 @@
                 "id": "b782b9c6-cfd3-2bb4-3f19-b9b2c8b542f8"
               },
               "url": "encapsulation"
+            },
+            {
+              "id": "4bdd882a-8502-529f-3d3f-979ec93531f2",
+              "entries": [
+                {
+                  "id": "5e189f56-292a-e6bb-b3ae-67c770ae918e",
+                  "type": "text",
+                  "head": {
+                    "id": "e22311b6-7bb4-4080-9871-ef86de84f1df"
+                  },
+                  "text": {
+                    "id": "b2125dc9-a05a-7287-5ece-77d2810df0de"
+                  }
+                },
+                {
+                  "id": "6f7c1056-a990-851d-cf2c-0c754d80327d",
+                  "type": "demo",
+                  "head": {
+                    "id": "ce5e0616-a511-fcea-e386-42e58d6a9a60"
+                  },
+                  "text": {
+                    "id": "8cec3782-e9a2-4f1d-a928-3a461bc93fb4"
+                  },
+                  "source": {
+                    "id": "f074d266-916c-d376-6c80-c6b045b8d388"
+                  },
+                  "demo": "V6StylingHost1DemoComponent"
+                },
+                {
+                  "id": "77af9e64-d51a-f5c4-f1e4-fa24f9c51f26",
+                  "type": "text",
+                  "head": {
+                    "id": "1c99a3fa-2cad-3647-1a5f-d2dbcfdc2b26"
+                  },
+                  "text": {
+                    "id": "75fa5fff-c5b5-5cc5-541d-c1fad42b445c"
+                  }
+                },
+                {
+                  "id": "b55ca845-91ae-29cf-a691-9ff9c7e6099a",
+                  "type": "demo",
+                  "head": {
+                    "id": "701a746f-f735-0fb0-b3ab-c95266718541"
+                  },
+                  "text": {
+                    "id": "8dc6a85e-5aed-567b-b806-83abfd0c1e39"
+                  },
+                  "source": {
+                    "id": "56b32b0c-c774-93f5-42bb-39c913279cfa"
+                  },
+                  "demo": "V6StylingHost2DemoComponent"
+                }
+              ],
+              "title": {
+                "id": "dc18ab22-072c-d441-dda6-7e4ee1319b3f"
+              },
+              "url": "host-selector"
+            },
+            {
+              "id": "176464de-d77d-6506-2c2d-5ef01cc54dd7",
+              "entries": [
+                {
+                  "id": "1be8e0ee-d3ba-7206-f54d-8cf94fd12b72",
+                  "type": "text",
+                  "head": {
+                    "id": "7393c32d-0c30-f24b-1fda-a33e5d599e8c"
+                  },
+                  "text": {
+                    "id": "81d5ae01-3f9f-1f72-9566-a7cf9eee23d1"
+                  }
+                },
+                {
+                  "id": "7b5bceee-9100-67d6-c0a6-ec124040531f",
+                  "type": "demo",
+                  "head": {
+                    "id": "325dfb16-4a0f-7c44-9b81-b03a3eb9de39"
+                  },
+                  "text": {
+                    "id": "228e9061-d6bd-c83c-8a2d-7264a3e5995a"
+                  },
+                  "source": {
+                    "id": "83e295e8-9579-413f-96ac-e1dd7be7be5f"
+                  },
+                  "demo": "V6StylingHostcontextDemoComponent"
+                }
+              ],
+              "title": {
+                "id": "e8c9064c-7e2c-5c0b-bb29-9edc919260d4"
+              },
+              "url": "host-context-selector"
+            },
+            {
+              "id": "a3426c82-064c-d1c7-db29-b75d9397feaa",
+              "entries": [
+                {
+                  "id": "466d1adb-0a2b-2439-ba7b-7bbea8c61e39",
+                  "type": "text",
+                  "head": {
+                    "id": "9ea6a801-1c6b-3205-7f50-16886827a0d8"
+                  },
+                  "text": {
+                    "id": "7902c732-cb2b-d8a6-ae3b-3e59bb386be0"
+                  }
+                },
+                {
+                  "id": "3f06cc8d-a496-0626-feed-0ffaa2a22f5f",
+                  "type": "demo",
+                  "head": {
+                    "id": "475c4c7b-3b07-6dac-97f0-469e9e847e41"
+                  },
+                  "text": {
+                    "id": "b78a6560-72ad-b1c8-83c8-a6daea9afee8"
+                  },
+                  "source": {
+                    "id": "3e72713f-3e25-2fe3-0989-fcfc9ccb85de"
+                  },
+                  "demo": "V6StylingNgdeepDemoComponent"
+                },
+                {
+                  "id": "351b167d-7bd9-093b-fbf0-8658671bb505",
+                  "type": "text",
+                  "head": {
+                    "id": "a29e24ac-92f5-f78c-4934-7f6c8fd69e03"
+                  },
+                  "text": {
+                    "id": "f09057d1-83ce-fc37-1e93-4f4c191224f4"
+                  }
+                },
+                {
+                  "id": "f99f583f-9a13-05fb-36e9-fcf06b853c58",
+                  "type": "text",
+                  "head": {
+                    "id": "5fa4ecbc-2d1e-a4d3-91ab-959ff8b014c5"
+                  },
+                  "text": {
+                    "id": "cee371f7-cc74-6aa3-c2ac-a860bed57d04"
+                  }
+                },
+                {
+                  "id": "6a0da9e3-07d5-9ea6-4811-124ea31f291e",
+                  "type": "text",
+                  "head": {
+                    "id": "67cb26cf-e60b-3a46-a4a4-5369e90ddc57"
+                  },
+                  "text": {
+                    "id": "f58c92cb-4932-c7ed-5354-0e60f7c9efc7"
+                  }
+                }
+              ],
+              "title": {
+                "id": "6e97c932-810b-4c64-5023-afc8aed98814"
+              },
+              "url": "ng-deep-selector"
             },
             {
               "id": "8962cb3f-d65f-8772-c705-173c23b46925",
@@ -10660,14 +10882,18 @@
                   }
                 },
                 {
-                  "id": "f85ec2a9-0a91-e3e5-d3b3-dd2cdaf0939a",
-                  "type": "text",
+                  "id": "0bc7c043-0382-207d-4326-0e0e32ed425e",
+                  "type": "demo",
                   "head": {
-                    "id": "0aac4e1e-d9ef-8bdd-d329-d3197eeaa6bc"
+                    "id": "3fab767f-81fc-01eb-0db0-a27c2ed2b948"
                   },
                   "text": {
-                    "id": "f2258e0b-2c4f-b073-0f12-68033ffa2029"
-                  }
+                    "id": "12116bb7-e595-63be-758a-461ea2042fe5"
+                  },
+                  "source": {
+                    "id": "86b53573-e457-eb36-cbb6-e6eeaa35da2c"
+                  },
+                  "demo": "V6StylingHostbindingDemoComponent"
                 }
               ],
               "title": {
@@ -10794,144 +11020,7 @@
               "title": {
                 "id": "d1d6b4a0-fe8d-e0ae-d19b-92273ea7e076"
               },
-              "url": "sanitizer-for-styling"
-            },
-            {
-              "id": "4bdd882a-8502-529f-3d3f-979ec93531f2",
-              "entries": [
-                {
-                  "id": "5e189f56-292a-e6bb-b3ae-67c770ae918e",
-                  "type": "text",
-                  "head": {
-                    "id": "e22311b6-7bb4-4080-9871-ef86de84f1df"
-                  },
-                  "text": {
-                    "id": "b2125dc9-a05a-7287-5ece-77d2810df0de"
-                  }
-                },
-                {
-                  "id": "53e36c62-9de4-a4b9-687c-02b67f2e6108",
-                  "type": "text",
-                  "head": {
-                    "id": "e0c9dc47-d2cc-92fa-1c23-955072c3591d"
-                  },
-                  "text": {
-                    "id": "a63a7314-bea8-936e-15a0-5809eee24b1a"
-                  }
-                },
-                {
-                  "id": "77af9e64-d51a-f5c4-f1e4-fa24f9c51f26",
-                  "type": "text",
-                  "head": {
-                    "id": "1c99a3fa-2cad-3647-1a5f-d2dbcfdc2b26"
-                  },
-                  "text": {
-                    "id": "75fa5fff-c5b5-5cc5-541d-c1fad42b445c"
-                  }
-                },
-                {
-                  "id": "23aae064-2db0-e2e5-a537-59fd26409b5a",
-                  "type": "text",
-                  "head": {
-                    "id": "fb6af29e-7a8c-6390-50e8-18c9c8304fef"
-                  },
-                  "text": {
-                    "id": "bf091943-bb72-679f-76ab-36b0facfcae3"
-                  }
-                }
-              ],
-              "title": {
-                "id": "dc18ab22-072c-d441-dda6-7e4ee1319b3f"
-              },
-              "url": "host-selector"
-            },
-            {
-              "id": "176464de-d77d-6506-2c2d-5ef01cc54dd7",
-              "entries": [
-                {
-                  "id": "1be8e0ee-d3ba-7206-f54d-8cf94fd12b72",
-                  "type": "text",
-                  "head": {
-                    "id": "7393c32d-0c30-f24b-1fda-a33e5d599e8c"
-                  },
-                  "text": {
-                    "id": "81d5ae01-3f9f-1f72-9566-a7cf9eee23d1"
-                  }
-                },
-                {
-                  "id": "9f698864-35f4-0340-9587-c91febdddfb9",
-                  "type": "text",
-                  "head": {
-                    "id": "d3401441-5894-e748-198b-5be4fed163a7"
-                  },
-                  "text": {
-                    "id": "e99a7132-57f6-c2d7-96b9-e0af1e551e78"
-                  }
-                }
-              ],
-              "title": {
-                "id": "e8c9064c-7e2c-5c0b-bb29-9edc919260d4"
-              },
-              "url": "host-context-selector"
-            },
-            {
-              "id": "a3426c82-064c-d1c7-db29-b75d9397feaa",
-              "entries": [
-                {
-                  "id": "466d1adb-0a2b-2439-ba7b-7bbea8c61e39",
-                  "type": "text",
-                  "head": {
-                    "id": "9ea6a801-1c6b-3205-7f50-16886827a0d8"
-                  },
-                  "text": {
-                    "id": "7902c732-cb2b-d8a6-ae3b-3e59bb386be0"
-                  }
-                },
-                {
-                  "id": "e5e4da37-6833-fe7c-3a59-dbec7a97d424",
-                  "type": "text",
-                  "head": {
-                    "id": "4a57374d-f77e-b3c8-bbde-ad41d5b57a47"
-                  },
-                  "text": {
-                    "id": "5fcc51f3-8add-84ed-3f1e-c9d3e245e8da"
-                  }
-                },
-                {
-                  "id": "351b167d-7bd9-093b-fbf0-8658671bb505",
-                  "type": "text",
-                  "head": {
-                    "id": "a29e24ac-92f5-f78c-4934-7f6c8fd69e03"
-                  },
-                  "text": {
-                    "id": "f09057d1-83ce-fc37-1e93-4f4c191224f4"
-                  }
-                },
-                {
-                  "id": "f99f583f-9a13-05fb-36e9-fcf06b853c58",
-                  "type": "text",
-                  "head": {
-                    "id": "5fa4ecbc-2d1e-a4d3-91ab-959ff8b014c5"
-                  },
-                  "text": {
-                    "id": "cee371f7-cc74-6aa3-c2ac-a860bed57d04"
-                  }
-                },
-                {
-                  "id": "6a0da9e3-07d5-9ea6-4811-124ea31f291e",
-                  "type": "text",
-                  "head": {
-                    "id": "67cb26cf-e60b-3a46-a4a4-5369e90ddc57"
-                  },
-                  "text": {
-                    "id": "f58c92cb-4932-c7ed-5354-0e60f7c9efc7"
-                  }
-                }
-              ],
-              "title": {
-                "id": "6e97c932-810b-4c64-5023-afc8aed98814"
-              },
-              "url": "ng-deep-selector"
+              "url": "domsanitizer-for-styling"
             }
           ],
           "title": {
@@ -34164,7 +34253,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Sanitizer"
+              "text": "DomSanitizer"
             }
           ]
         },
@@ -34364,7 +34453,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "You can add a `styles` array property to the `@Component` decorator.\n\nEach string in the array defines some CSS for this component.\n\n```typescript\n@Component({\n  selector: 'app-root',\n  template: `\n    <h1>Tour of Heroes</h1>\n    <app-hero-main [hero]=\"hero\"></app-hero-main>\n  `,\n  styles: ['h1 { font-weight: normal; }']\n})\nexport class HeroAppComponent {\n/* . . . */\n}\n```"
+              "text": "You can add a `styles` array property to the `@Component` decorator.\n\nEach string in the array defines some CSS for this component.\n\n```typescript\n@Component({\n  selector: 'app-demo',\n  template: `\n    <p>Demo component</p>\n  `,\n  styles: ['p { font-weight: bold; }']\n})\nexport class DemoComponent {\n/* . . . */\n}\n```"
             }
           ]
         },
@@ -34374,7 +34463,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "You can load styles from external CSS files by adding a `styleUrls` property to a component's `@Component` decorator:\n\n```typescript\n@Component({\n  selector: 'app-root',\n  template: `\n    <h1>Tour of Heroes</h1>\n    <app-hero-main [hero]=\"hero\"></app-hero-main>\n  `,\n  styleUrls: ['./hero-app.component.css']\n})\nexport class HeroAppComponent {\n/* . . . */\n}\n```\n\n```css\nh1 {\n  font-weight: normal;\n}\n```\n\n!! @TODO: Include several files demo"
+              "text": "You can load styles from external CSS files by adding a `styleUrls` property to a component's `@Component` decorator:\n"
             }
           ]
         },
@@ -34434,7 +34523,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Sanitizer for styling"
+              "text": "DomSanitizer for styling"
             }
           ]
         },
@@ -34554,7 +34643,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "The `Renderer` class is a service that provides an abstraction for UI rendering manipulations. Using it is the recommended approach because it then makes it easier to develop apps that can be rendered in different environments."
+              "text": "The [`Renderer2`](../../core/renderer2) class is a service that provides an abstraction for UI rendering manipulations. Using it is the recommended approach because it then makes it easier to develop apps that can be rendered in different environments."
             }
           ]
         },
@@ -34564,7 +34653,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "**RED** Sometimes we may want to access the underlying DOM element to manipulate its styles. In order to do that we need to inject ElementRef and access to the nativeElement property. This will give us access to the DOM APIs."
+              "text": "If we want to access the DOM element directly to manipulate its styles. In order to do that we need to inject `ElementRef` and access to the `nativeElement` property. This will give us access to the DOM APIs."
             }
           ]
         },
@@ -34574,7 +34663,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "**RED**\n\n```typescript\nexport class SongTrack {\n  constructor(private element: ElementRef){\n    let elem = this.element.nativeElement;\n    elem.style.color = \"blue\";\n    elem.style.cssText = \"color: blue; ...\"; // multiple styles\n    elem.setAttribute(\"style\", \"color: blue;\"); \n  }\n}\n```"
+              "text": "```typescript\nexport class DemoComponent {\n  constructor(private element: ElementRef){\n    let el = this.element.nativeElement;\n    // Option 1\n    el.style.color = 'white';\n    el.style.background = 'red';\n    // Option 2\n    el.style.cssText = 'color: white; background: red;\";\n    // Option 3\n    el.setAttribute('style', 'color: white; background: red');\n  }\n}\n```"
             }
           ]
         },
@@ -34594,7 +34683,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "**RED**\n\n\n```typescript\nexport class SongTrack {\n  constructor(\n     private element: ElementRef,\n     private renderer: Renderer\n  ){\n    let elem = this.element.nativeElement;\n    renderer.setElementStyle(elem, \"color\", \"blue\");\n    renderer.setElementClass(elem, \"selected\", true);\n  }\n}\n```"
+              "text": "```typescript\nexport class DemoComponent {\n  constructor(\n    private element: ElementRef,\n    private renderer: Renderer2,\n  ){\n    let el = this.element.nativeElement;\n    renderer.setElementStyle(el, 'color', 'white');\n    renderer.setElementStyle(el, 'background', 'red');\n  }\n}\n```\n"
             }
           ]
         },
@@ -34604,7 +34693,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "**RED**\n\nTo avoid abuse some styling expressions might be flagged as unsafe by Angular.\n\nIf you face this particular issue, you can flag the expression as safe by using the `bypassSecurityTrustStyle` API on the `Sanitizer`. This will avoid any abuse or security breaches."
+              "text": "To avoid cross-site scripting or XSS some styling expressions might be flagged as unsafe by Angular.\n\n```\nunsafe value used in a resource URL context.\n```\n\nIf you face this particular issue, you can flag the expression as safe by using the `bypassSecurityTrustStyle` API on the [`DomSanitizer`](../../core/dom-sanitizer)."
             }
           ]
         },
@@ -34614,7 +34703,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "**RED**\n\n```typescript\nexport class SongTrack {\n  constructor(private sanitizer: Sanitizer){\n    this._hostStyle = this.sanitizer\n      .bypassSecurityTrustStyle('color: black;');\n  }\n}\n```"
+              "text": "##### demo.component.html\n\n```html\n<div *ngIf=\"image\" [style.background-image]=\"image\"></div>\n```\n\n##### demo.component.ts\n\n```typescript\nexport class DemoComponent {\n  constructor(private sanitizer: DomSanitizer){\n    this.image = this.sanitizer.bypassSecurityTrustStyle(`url(${someImgUrl})`);\n  }\n}\n```"
             }
           ]
         },
@@ -34724,7 +34813,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Sometimes it's useful to apply styles based on some condition outside of a component's view. For example, a CSS theme class could be applied to the document `<body>` element, and you want to change how your component looks based on that.\n\nUse the `:host-context()` pseudo-class selector, which works just like the function form of `:host()`. The `:host-context()` selector looks for a CSS class in any ancestor of the component host element, up to the document root. The `:host-context()` selector is useful when combined with another selector.\n\nThe following example applies a `background-color` style to all `<h2>` elements inside the component, only if some ancestor element has the CSS class `theme-light`."
+              "text": "Sometimes it's useful to apply styles based on some condition outside of a component's view. For example, a CSS theme class could be applied to the document `<body>` element, and you want to change how your component looks based on that.\n\nUse the `:host-context()` pseudo-class selector, which works just like the function form of `:host()`. The `:host-context()` selector looks for a CSS class in any ancestor of the component host element, up to the document root. The `:host-context()` selector is useful when combined with another selector.\n\nThe following example applies a `background-color` style to all `.demo` elements inside the component, only if some ancestor element has the CSS class `theme-light`."
             }
           ]
         },
@@ -37464,7 +37553,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "## WIP"
+              "text": "## *WIP"
             }
           ]
         },
@@ -38545,6 +38634,116 @@
             {
               "lang": "en",
               "text": "This method performs strict checks, and throws an error if you try to set the value of a control that doesn't exist or if you exclude the value of a control.\n\nConfigure options that determine how the control propagates changes and emits events after the value changes \n\n* `onlySelf`: When true, each change only affects this control, and not its parent. Default is false. \n* `emitEvent`: When true or not supplied (the default), both the `statusChanges` and `valueChanges` observables emit events with the latest status and value when the control value is updated. When false, no events are emitted. The configuration options are passed to the `AbstractControl.updateValueAndValidity()` method."
+            }
+          ]
+        },
+        {
+          "id": "f074d266-916c-d376-6c80-c6b045b8d388",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "##### demo.component.html\n\n```html\nDemo component!\n```\n\n##### demo.component.css\n\n```css\n:host {\n  display: block;\n  border: 1px solid black;\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "56b32b0c-c774-93f5-42bb-39c913279cfa",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "##### app.component.html\n\n```html\n<app-demo></app-demo>\n<app-demo class=\"active\"></app-demo>\n```\n\n##### demo.component.html\n\n```html\nDemo component!\n```\n\n##### demo.component.css\n\n```css\n:host {\n  display: block;\n  border: 1px solid black;\n}\n\n:host(.active) {\n  border-width: 3px;\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "83e295e8-9579-413f-96ac-e1dd7be7be5f",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "##### demo.component.css\n\n```css\n.demo {\n  border: 1px solid #666;\n}\n\n:host-context(.theme-light) .demo {\n  background-color: #eef;\n}\n```\n\n##### demo.component.html\n\n```html\n<div class=\"demo\">Demo block</demo>\n```\n\n##### index.html\n\n```html\n<!doctype html>\n...\n<body class=\"theme-light\">\n  <app-root></app-root>\n</body>\n</html>\n```"
+            }
+          ]
+        },
+        {
+          "id": "3e72713f-3e25-2fe3-0989-fcfc9ccb85de",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "##### parent.component.html\n\n```html\nParent content.\n\n<app-child></app-child>\n```\n\n##### parent.component.css\n\n```css\n::ng-deep h3 {\n  font-style: italic;\n}\n```\n\n##### child.component.html\n\n```html\n<h3>Child title</h3>\nChild content.\n```\n"
+            }
+          ]
+        },
+        {
+          "id": "86b53573-e457-eb36-cbb6-e6eeaa35da2c",
+          "context": "Demo-entry: source",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\nexport class DemoComponent {\n  @HostBinding('style.background') backgroundColor = 'black';\n\n  @HostBinding('style.color') get textColor() {\n     return 'white';\n  }\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "01f5e176-0c35-3574-9d93-78f428af864e",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Also you can include several style files:"
+            }
+          ]
+        },
+        {
+          "id": "0a844e1a-d5e4-501c-b914-b81ab0dbc30e",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@Component({\n  selector: 'app-demo',\n  template: `\n    Demo component.\n  `,\n  styleUrls: [\n    '../styles/layout.css',\n    './demo.component.css',\n  ],\n})\nexport class DemoComponent {\n  ...\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "0d7ed887-4595-d4c6-0716-bdaed153afa3",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```typescript\n@Component({\n  selector: 'app-demo',\n  template: `\n    Demo component.\n  `,\n  styleUrls: ['./demo.component.css'],\n})\nexport class DemoComponent {\n  ...\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "95a0e156-189a-3ed7-3461-7a20f38c8eae",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Additional information\n\nExample of hints and tutorials links. You can switch off these panels in the sidebar."
+            }
+          ]
+        },
+        {
+          "id": "813c481e-7629-e6b4-7138-9dac331fc2f5",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Hint with additional explanation. "
+            }
+          ]
+        },
+        {
+          "id": "a5c555f7-0307-ce45-51d0-0712cdb30528",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular — Component Styles"
             }
           ]
         }

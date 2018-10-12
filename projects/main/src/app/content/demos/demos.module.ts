@@ -57,6 +57,11 @@ import { V6TemplatesUppercasepipeDemoComponent } from './v6/v6-templates-upperca
 import { V6TemplatesCustompipeDemoComponent } from './v6/v6-templates-custompipe-demo/v6-templates-custompipe-demo.component';
 import { V6CustomPipePipe } from './v6/v6-templates-custompipe-demo/v6-custom-pipe.pipe';
 import { V6TemplatesNumberpipeDemoComponent } from './v6/v6-templates-numberpipe-demo/v6-templates-numberpipe-demo.component';
+import { V6StylingHost1DemoComponent } from './v6/v6-styling-host1-demo/v6-styling-host1-demo.component';
+import { V6StylingHost2DemoComponent } from './v6/v6-styling-host2-demo/v6-styling-host2-demo.component';
+import { V6StylingHostcontextDemoComponent } from './v6/v6-styling-hostcontext-demo/v6-styling-hostcontext-demo.component';
+import { V6StylingNgdeepDemoComponent } from './v6/v6-styling-ngdeep-demo/v6-styling-ngdeep-demo.component';
+import { V6StylingHostbindingDemoComponent } from './v6/v6-styling-hostbinding-demo/v6-styling-hostbinding-demo.component';
 
 @NgModule({
   imports: [
@@ -120,6 +125,11 @@ import { V6TemplatesNumberpipeDemoComponent } from './v6/v6-templates-numberpipe
     V6TemplatesCustompipeDemoComponent,
     V6CustomPipePipe,
     V6TemplatesNumberpipeDemoComponent,
+    V6StylingHost1DemoComponent,
+    V6StylingHost2DemoComponent,
+    V6StylingHostcontextDemoComponent,
+    V6StylingNgdeepDemoComponent,
+    V6StylingHostbindingDemoComponent,
   ],
   entryComponents: [
     V6TemplatesDeclarDemoComponent,
@@ -176,6 +186,11 @@ import { V6TemplatesNumberpipeDemoComponent } from './v6/v6-templates-numberpipe
     V6TemplatesNgnonbindableDemoComponent,
     V6TemplatesCustompipeDemoComponent,
     V6TemplatesNumberpipeDemoComponent,
+    V6StylingHost1DemoComponent,
+    V6StylingHost2DemoComponent,
+    V6StylingHostcontextDemoComponent,
+    V6StylingNgdeepDemoComponent,
+    V6StylingHostbindingDemoComponent,
   ],
 })
 export class DemosModule {
