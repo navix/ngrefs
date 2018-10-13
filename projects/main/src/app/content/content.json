@@ -663,16 +663,6 @@
                       "lang": "en"
                     }
                   ]
-                },
-                {
-                  "id": "9a79b23b-a221-9efb-6e1a-aa71120045fa",
-                  "type": "text",
-                  "head": {
-                    "id": "2e0df2e5-2fe0-5077-52ad-5b9f2e68960e"
-                  },
-                  "text": {
-                    "id": "cf177173-ca43-d40d-8413-759adf429985"
-                  }
                 }
               ],
               "title": {
@@ -7337,16 +7327,6 @@
                       "lang": "en"
                     }
                   ]
-                },
-                {
-                  "id": "f754bdb1-f898-4a39-e51f-12e2faf06c8a",
-                  "type": "text",
-                  "head": {
-                    "id": "6c941a2e-0c76-581b-7de2-beaa57bc59ad"
-                  },
-                  "text": {
-                    "id": "249a5cb1-e9a1-396f-838e-66621770e13f"
-                  }
                 }
               ],
               "title": {
@@ -10455,16 +10435,6 @@
                   }
                 },
                 {
-                  "id": "6e655be6-1726-8e15-be8c-e33f457c7ffd",
-                  "type": "text",
-                  "head": {
-                    "id": "42cbbeae-6ada-6945-4b39-e33553381a16"
-                  },
-                  "text": {
-                    "id": "647d100a-58bf-37af-b6f0-a742e5ef2947"
-                  }
-                },
-                {
                   "id": "0ae8f8a0-0a9b-a600-e9f9-c81873387f9c",
                   "type": "text",
                   "head": {
@@ -11598,16 +11568,6 @@
                   },
                   "text": {
                     "id": "4108611b-0308-3637-eb22-872d7d463f4d"
-                  }
-                },
-                {
-                  "id": "d9ccd7a2-c9a6-6ce0-bcb6-724bffabfefd",
-                  "type": "text",
-                  "head": {
-                    "id": "9d2e9823-8725-ba99-48f9-0c33d19b5010"
-                  },
-                  "text": {
-                    "id": "fd55e62c-105a-0bbf-5d8f-9671a7974007"
                   }
                 }
               ],
@@ -15640,16 +15600,6 @@
                   },
                   "text": {
                     "id": "b11c4f11-d530-bee6-04c4-5f55a09a3aae"
-                  }
-                },
-                {
-                  "id": "105f2bd5-b48c-24c1-b765-dbdc0e5e2aa4",
-                  "type": "text",
-                  "head": {
-                    "id": "f01b35a8-0e52-fba8-7919-28a1886e899d"
-                  },
-                  "text": {
-                    "id": "f24e3ffd-1c78-6eb5-a075-9a4cc799a947"
                   }
                 },
                 {

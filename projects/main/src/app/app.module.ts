@@ -19,6 +19,7 @@ import { FragmentPipe } from './fragment/fragment.pipe';
 import { HomeComponent } from './home/home.component';
 import { FooterMenuComponent } from './menu/footer-menu/footer-menu.component';
 import { HeadMenuComponent } from './menu/head-menu/head-menu.component';
+import { SectionIntroMenuComponent } from './menu/section-intro-menu/section-intro-menu.component';
 import { SectionMenuComponent } from './menu/section-menu/section-menu.component';
 import { MessageComponent } from './message/message/message.component';
 import { MsgPipe } from './message/msg.pipe';
@@ -53,6 +54,7 @@ import { DemoEntryComponent } from './entry/demo-entry/demo-entry.component';
     TocEntryComponent,
     FragmentPipe,
     DemoEntryComponent,
+    SectionIntroMenuComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'serverApp'}),

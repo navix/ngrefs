@@ -1,0 +1,38 @@
+<ng-container *ngTemplateOutlet="itemsTemplate; context: {$implicit: items}"></ng-container>
+
+<ng-template #itemsTemplate
+             let-templateItems
+             let-child="child"
+             let-subActiveOpt="subActiveOpt">
+  <ul *ngFor="let item of templateItems"
+      class="item"
+      [class.-child]="child"
+      [class.-active-opt]="subActiveOpt">
+    <li [class.-group]="item.asGroup"
+        [class.-separated]="item.separatedFromTop">
+      <ng-container *ngIf="!item.usePageEntries">
+        <a *ngIf="item.url"
+           [routerLink]="['../', item.url]"
+           [fragment]="item.urlFragment">
+          {{ item.label | msg }}
+        </a>
+        <span *ngIf="!item.url">
+          {{ item.label | msg }}
+        </span>
+      </ng-container>
+      <ng-container *ngIf="item.usePageEntries">
+        <ng-container *ngFor="let entryItem of getPageEntries(item.usePageUrl)">
+          <a *ngIf="entryItem.head && entryItem.headId"
+             [routerLink]="['../', item.usePageUrl]"
+             [fragment]="entryItem.headId | fragment">
+            {{ entryItem.head | msg }}
+          </a>
+        </ng-container>
+      </ng-container>
+      <ng-container *ngIf="item.sub && (!item.subActiveOpt || item.url && isLinkActive(['.', item.url]))">
+        <ng-container *ngTemplateOutlet="itemsTemplate; context: {$implicit: item.sub.items, child: true, subActiveOpt: item.subActiveOpt}">
+        </ng-container>
+      </ng-container>
+    </li>
+  </ul>
+</ng-template>

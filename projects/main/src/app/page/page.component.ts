@@ -46,6 +46,10 @@ export class PageComponent implements OnInit {
     this.scrollTo();
   }
 
+  get section() {
+    return this.sectionComponent.section;
+  }
+
   get showHints() {
     return this.sectionComponent.showHints;
   }

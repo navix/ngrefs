@@ -37,4 +37,12 @@
       </div>
     </ng-container>
   </ng-container>
+
+  <div class="entry">
+    <h2>Table of contents</h2>
+    <main-section-intro-menu *ngIf="pageUrl === 'intro'"
+                             [items]="section.menu.items"
+                             class="entry">
+    </main-section-intro-menu>
+  </div>
 </div>
