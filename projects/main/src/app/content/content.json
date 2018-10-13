@@ -10627,6 +10627,25 @@
                   "text": {
                     "id": "e3da811b-26b3-2d77-3097-9b7427b353a8"
                   }
+                },
+                {
+                  "id": "51762e40-820f-f9bb-dbc4-90aad17fce8b",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "79407794-f0c2-e52a-0145-85e8dc34d825"
+                  },
+                  "text": {
+                    "id": "b78b0d09-318d-8cbb-01ca-3e1dd5de59c8"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "3ecb2110-8e6a-996f-8f8e-666f4cf48eb7"
+                      },
+                      "url": "https://blog.thoughtram.io/angular/2015/06/29/shadow-dom-strategies-in-angular2.html",
+                      "lang": "en"
+                    }
+                  ]
                 }
               ],
               "title": {
@@ -10780,6 +10799,25 @@
                   "text": {
                     "id": "f58c92cb-4932-c7ed-5354-0e60f7c9efc7"
                   }
+                },
+                {
+                  "id": "79490e9f-3976-87e1-b9d6-7b78547eb4f4",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "b2b171ed-928b-e873-deec-30315382bc0b"
+                  },
+                  "text": {
+                    "id": "a7ebb7d4-4abf-035f-3b85-fd780d228a56"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "3a863082-dcc7-1e09-b2b8-e4dcb8a67ad7"
+                      },
+                      "url": "https://hackernoon.com/the-new-angular-ng-deep-and-the-shadow-piercing-combinators-deep-and-drop-4b088dbe459",
+                      "lang": "en"
+                    }
+                  ]
                 }
               ],
               "title": {
@@ -10986,6 +11024,30 @@
                   "text": {
                     "id": "b212a79e-8da4-542f-a75b-bfd867fba50c"
                   }
+                },
+                {
+                  "id": "880773f7-0205-4c8c-0497-d8354d36383e",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "885fd792-4dec-d4b6-5af4-d793345be288"
+                  },
+                  "text": {
+                    "id": "ca84c073-6ec8-bab1-a0d4-f5da5d849616"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "5f906cdf-3c76-0532-c769-61318dfc916c"
+                      }
+                    },
+                    {
+                      "label": {
+                        "id": "8232b1cc-c9f5-2ecd-b56a-d87a7539b46f"
+                      },
+                      "url": "https://medium.com/@kmathy/angular-manipulate-properly-the-dom-with-renderer-16a756508cba",
+                      "lang": "en"
+                    }
+                  ]
                 }
               ],
               "title": {
@@ -11015,6 +11077,25 @@
                   "text": {
                     "id": "ad838a4d-d972-eb0d-d3a9-f45d2a8db5eb"
                   }
+                },
+                {
+                  "id": "740e6158-5c1c-1202-c577-164a2a672aa5",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "8574ff0c-9cdc-b8ed-237c-f13a34ae96e8"
+                  },
+                  "text": {
+                    "id": "7dd1b71a-4b7d-1dd7-7e49-d45a720a56b5"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "dcca4276-5af1-c204-8f61-e018ac67f5cb"
+                      },
+                      "url": "https://netbasal.com/angular-2-security-the-domsanitizer-service-2202c83bd90",
+                      "lang": "en"
+                    }
+                  ]
                 }
               ],
               "title": {
@@ -39041,6 +39122,46 @@
             {
               "lang": "en",
               "text": "Multiple static segments can be merged into one (e.g., `['/team/11/user', userName, {details: true}]`).\n\nThe first segment name can be prepended with `/`, `./`, or `../`:\n* If the first segment begins with `/`, the router will look up the route from the root of the app.\n* If the first segment begins with `./`, or doesn't begin with a slash, the router will instead look in the children of the current activated route.\n* And if the first segment begins with `../`, the router will go up one level."
+            }
+          ]
+        },
+        {
+          "id": "3ecb2110-8e6a-996f-8f8e-666f4cf48eb7",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "View Encapsulation in Angular by thoughtram"
+            }
+          ]
+        },
+        {
+          "id": "dcca4276-5af1-c204-8f61-e018ac67f5cb",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular 2 Security — The DomSanitizer Service"
+            }
+          ]
+        },
+        {
+          "id": "8232b1cc-c9f5-2ecd-b56a-d87a7539b46f",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular: Stop manipulating DOM with ElementRef!"
+            }
+          ]
+        },
+        {
+          "id": "3a863082-dcc7-1e09-b2b8-e4dcb8a67ad7",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The New Angular ::ng-deep and the Shadow-Piercing Combinators Drop"
             }
           ]
         }
