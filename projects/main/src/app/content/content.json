@@ -15749,6 +15749,39 @@
                   "text": {
                     "id": "472f2c7d-0314-548d-e36c-faadf0387bdb"
                   }
+                },
+                {
+                  "id": "c771eabb-c19b-33a4-4d7a-6fa83799b47c",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "e6d8726c-2b0b-2f9d-7ede-1865349be7a2"
+                  },
+                  "text": {
+                    "id": "649818fb-5011-cc31-6a43-05b374cbd7a3"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "a3b4eba3-1638-d2da-80dc-c060c9c85682"
+                      },
+                      "url": "https://angular.io/guide/router",
+                      "lang": "en"
+                    },
+                    {
+                      "label": {
+                        "id": "5a407718-fd6f-d836-bce9-227b3389ba6b"
+                      },
+                      "url": "https://www.sitepoint.com/component-routing-angular-router/",
+                      "lang": "en"
+                    },
+                    {
+                      "label": {
+                        "id": "4f54f43b-0c0b-882e-97b3-7e941ea462c1"
+                      },
+                      "url": "https://vsavkin.com/the-powerful-url-matching-engine-of-angular-router-775dad593b03",
+                      "lang": "en"
+                    }
+                  ]
                 }
               ],
               "title": {
@@ -15890,6 +15923,25 @@
                   "interface": "redirectTo?: string"
                 },
                 {
+                  "id": "6245dc2c-89d1-7b3d-3609-4a7ed15068ef",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "79fcfeb9-3ddf-1941-3fbc-5351c0bf6a90"
+                  },
+                  "text": {
+                    "id": "e76af860-6469-e361-fe3d-8d0d64e918c7"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "11b4cfae-10df-04a6-82ef-9f06f3ce76ff"
+                      },
+                      "url": "https://vsavkin.com/angular-router-understanding-redirects-2826177761fc",
+                      "lang": "en"
+                    }
+                  ]
+                },
+                {
                   "id": "23571056-d67c-8c6e-2108-574051ddb3ce",
                   "type": "interface-option",
                   "head": {
@@ -15904,6 +15956,25 @@
                   "name": "outlet",
                   "headId": "outlet",
                   "interface": "outlet?: string"
+                },
+                {
+                  "id": "95f4d632-32ca-ad59-1c9e-1907fbc15c22",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "c7939832-d531-a774-7035-afbf824d96e3"
+                  },
+                  "text": {
+                    "id": "fd263aa5-ebac-ab10-5c3d-a88507477a54"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "9790c04f-89c3-5e81-c59e-d4003a8dead5"
+                      },
+                      "url": "https://angular-2-training-book.rangle.io/handout/routing/aux-routes.html",
+                      "lang": "en"
+                    }
+                  ]
                 },
                 {
                   "id": "365e27d8-191f-19d8-c87d-e6c174ce92c7",
@@ -16002,6 +16073,32 @@
                   "interface": "resolve?: ResolveData"
                 },
                 {
+                  "id": "752722f2-8f3d-8a57-7857-d7a82a153d17",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "d3be740b-d85f-baad-ddab-87758511262a"
+                  },
+                  "text": {
+                    "id": "821b1f77-4522-2314-c268-88d8c2fdd973"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "8c150d35-ccbf-f8a8-8204-16eb1fe4ba4c"
+                      },
+                      "url": "https://blog.thoughtram.io/angular/2016/10/10/resolving-route-data-in-angular-2.html",
+                      "lang": "en"
+                    },
+                    {
+                      "label": {
+                        "id": "dc162330-ee3c-a155-1b22-e0b8b7a3d52b"
+                      },
+                      "url": "https://alligator.io/angular/route-resolvers/",
+                      "lang": "en"
+                    }
+                  ]
+                },
+                {
                   "id": "72077878-a208-73e4-543a-dece6cdc6170",
                   "type": "interface-option",
                   "head": {
@@ -16032,6 +16129,25 @@
                   "name": "loadChildren",
                   "headId": "loadChildren",
                   "interface": "loadChildren?: LoadChildren"
+                },
+                {
+                  "id": "116c81c6-089b-7be2-f354-be8769ea842b",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "20dc7e8f-37b6-2ccf-9743-a2824597b772"
+                  },
+                  "text": {
+                    "id": "356a0d16-c88b-6be8-3799-deca38146241"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "cf462671-ecb7-3eca-650b-5ce6fc33e637"
+                      },
+                      "url": "https://angular.io/guide/lazy-loading-ngmodules",
+                      "lang": "en"
+                    }
+                  ]
                 },
                 {
                   "id": "9ceb66e7-8393-c562-70da-ec15ab2fccf1",
@@ -16583,6 +16699,32 @@
                   "text": {
                     "id": "a6ab9d63-af42-30be-3176-8701ab80099f"
                   }
+                },
+                {
+                  "id": "32892269-2f46-80bc-1a4d-6a17ced2d1ef",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "76ed5c6e-e84e-065b-2f25-51f0200b3533"
+                  },
+                  "text": {
+                    "id": "c1e32b2f-16ac-571b-9d05-8bb77bcc68c1"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "89e52788-a88f-23e2-cae6-beb957e80e49"
+                      },
+                      "url": "https://blog.thoughtram.io/angular/2016/10/10/resolving-route-data-in-angular-2.html",
+                      "lang": "en"
+                    },
+                    {
+                      "label": {
+                        "id": "9d02f0d3-ed28-ab7b-218c-6fce8c5538a8"
+                      },
+                      "url": "https://alligator.io/angular/route-resolvers/",
+                      "lang": "en"
+                    }
+                  ]
                 },
                 {
                   "id": "4c073feb-710d-f1f0-a54f-786d6716334b",
@@ -17347,6 +17489,25 @@
                   "text": {
                     "id": "96bd3c98-e2ba-c832-cdb0-4959728af886"
                   }
+                },
+                {
+                  "id": "1b9d13ed-e174-a87c-49fb-d2ef661c5a5a",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "9989cf7f-a057-e338-6ec8-5ddaf3e1679a"
+                  },
+                  "text": {
+                    "id": "35114f72-ad90-c71f-5cb7-d0e94f397093"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "06883e6e-166a-de78-f0b0-87b12b18d5a0"
+                      },
+                      "url": "https://vsavkin.com/the-powerful-url-matching-engine-of-angular-router-775dad593b03",
+                      "lang": "en"
+                    }
+                  ]
                 }
               ],
               "title": {
@@ -17386,6 +17547,25 @@
                   "text": {
                     "id": "23a311cb-be4e-6c76-ee6c-57e2e78188a3"
                   }
+                },
+                {
+                  "id": "bafe78a0-de43-45d8-b8ce-3557bc32fb05",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "477e8a27-5afc-f29d-1e3e-7a9cb8afd888"
+                  },
+                  "text": {
+                    "id": "ad15e099-9bd5-7c27-8a86-9176768f88b1"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "6700ab31-64ff-6960-b2c2-9085dcff7402"
+                      },
+                      "url": "https://vsavkin.com/angular-router-understanding-router-state-7b5b95a12eab",
+                      "lang": "en"
+                    }
+                  ]
                 },
                 {
                   "id": "f10730d0-3352-5712-dcd8-e2c3d1dbe78a",
@@ -17701,6 +17881,25 @@
                   "text": {
                     "id": "98f86669-33fa-a645-8012-2eed7062c842"
                   }
+                },
+                {
+                  "id": "04c2c36b-b83f-03d5-bf28-7b2f4ec5d8cd",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "e695dc16-4f35-93f6-f36d-a0532fc0cb3a"
+                  },
+                  "text": {
+                    "id": "b2391c7e-665d-dd46-54f6-0022f998d4ef"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "17cb4c35-ce40-669a-d1b9-302041ef8a54"
+                      },
+                      "url": "https://vsavkin.com/angular-router-understanding-router-state-7b5b95a12eab",
+                      "lang": "en"
+                    }
+                  ]
                 },
                 {
                   "id": "ead960c0-bbf1-8824-2e8b-0b02fd5b9cb6",
@@ -18048,6 +18247,32 @@
                   "text": {
                     "id": "d2791b5c-6d53-d476-65be-e0a2fdeefa76"
                   }
+                },
+                {
+                  "id": "bce80294-9f0f-7329-6abe-693f41cba1a7",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "d2b5c919-ec05-204f-6359-765f43ee64b8"
+                  },
+                  "text": {
+                    "id": "a5a9890c-e23b-e03d-afe9-15f162e168f8"
+                  },
+                  "links": [
+                    {
+                      "label": {
+                        "id": "d5db7113-1d15-8694-ca89-8363a471d0c6"
+                      },
+                      "url": "https://angular-2-training-book.rangle.io/handout/routing/aux-routes.html",
+                      "lang": "en"
+                    },
+                    {
+                      "label": {
+                        "id": "4b55dc3c-2501-4c85-4df3-2a23ce9cc5a1"
+                      },
+                      "url": "https://medium.com/google-developer-experts/angular-supercharge-your-router-transitions-using-new-animation-features-v4-3-3eb341ede6c8",
+                      "lang": "en"
+                    }
+                  ]
                 }
               ],
               "title": {
@@ -39162,6 +39387,156 @@
             {
               "lang": "en",
               "text": "The New Angular ::ng-deep and the Shadow-Piercing Combinators Drop"
+            }
+          ]
+        },
+        {
+          "id": "a3b4eba3-1638-d2da-80dc-c060c9c85682",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular — Routing & Navigation"
+            }
+          ]
+        },
+        {
+          "id": "5a407718-fd6f-d836-bce9-227b3389ba6b",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "An Introduction to Component Routing with Angular Router"
+            }
+          ]
+        },
+        {
+          "id": "9790c04f-89c3-5e81-c59e-d4003a8dead5",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Using Auxiliary Routes"
+            }
+          ]
+        },
+        {
+          "id": "d5db7113-1d15-8694-ca89-8363a471d0c6",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Using Auxiliary Routes"
+            }
+          ]
+        },
+        {
+          "id": "6700ab31-64ff-6960-b2c2-9085dcff7402",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular Router: Understanding Router State"
+            }
+          ]
+        },
+        {
+          "id": "17cb4c35-ce40-669a-d1b9-302041ef8a54",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular Router: Understanding Router State"
+            }
+          ]
+        },
+        {
+          "id": "4f54f43b-0c0b-882e-97b3-7e941ea462c1",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The Powerful URL Matching Engine of Angular Router"
+            }
+          ]
+        },
+        {
+          "id": "06883e6e-166a-de78-f0b0-87b12b18d5a0",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The Powerful URL Matching Engine of Angular Router"
+            }
+          ]
+        },
+        {
+          "id": "11b4cfae-10df-04a6-82ef-9f06f3ce76ff",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular Router: Understanding Redirects"
+            }
+          ]
+        },
+        {
+          "id": "8c150d35-ccbf-f8a8-8204-16eb1fe4ba4c",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Resolving route data in Angular by thoughtram"
+            }
+          ]
+        },
+        {
+          "id": "dc162330-ee3c-a155-1b22-e0b8b7a3d52b",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular Router: Route Resolvers"
+            }
+          ]
+        },
+        {
+          "id": "cf462671-ecb7-3eca-650b-5ce6fc33e637",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular — Lazy Loading Feature Modules"
+            }
+          ]
+        },
+        {
+          "id": "89e52788-a88f-23e2-cae6-beb957e80e49",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Resolving route data in Angular by thoughtram"
+            }
+          ]
+        },
+        {
+          "id": "9d02f0d3-ed28-ab7b-218c-6fce8c5538a8",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular Router: Route Resolvers"
+            }
+          ]
+        },
+        {
+          "id": "4b55dc3c-2501-4c85-4df3-2a23ce9cc5a1",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular — Supercharge your Router transitions using animations"
             }
           ]
         }
