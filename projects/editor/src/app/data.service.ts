@@ -36,6 +36,12 @@ export class DataService {
     };
   }
 
+  cloneVersion(version: ContentVersion): ContentVersion {
+    const cloned: ContentVersion = JSON.parse(JSON.stringify(version));
+    cloned.id = uuid();
+    return cloned;
+  }
+
   createSection(): ContentSection {
     return {
       id: uuid(),

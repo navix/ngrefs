@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ContentVersion } from '../../../../../main/src/app/content/meta';
 import { DataService } from '../../data.service';
 
@@ -13,14 +13,26 @@ export class VersionsListComponent implements OnInit {
   ) {
   }
 
+  ngOnInit() {
+  }
+
   get versions(): ContentVersion[] {
     return this.data.data.versions;
   }
 
-  ngOnInit() {
-  }
-
   createVersion() {
     this.data.data.versions.push(this.data.createVersion());
+  }
+
+  moveUp(index: number) {
+    this.data.move(this.data.data.versions, index, index - 1);
+  }
+
+  moveDown(index: number) {
+    this.data.move(this.data.data.versions, index, index + 1);
+  }
+
+  clone(version: ContentVersion) {
+    this.data.data.versions.push(this.data.cloneVersion(version));
   }
 }
