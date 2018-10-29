@@ -1,8 +1,8 @@
 <div class="langs">
   {{ 'Lang' | ui }}:
   <a *ngFor="let versionLang of version.langs"
-     [routerLink]="['/', versionLang, version.url]"
-     routerLinkActive="-active">{{ versionLang }}</a>
+     [class.-active]="lang === versionLang"
+     [routerLink]="genLangLink(versionLang)">{{ versionLang }}</a>
 </div>
 
 <div class="copy">

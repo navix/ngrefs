@@ -3,6 +3,13 @@
     <main-message [ref]="page.title"></main-message>
   </h1>
 
+  <div *ngIf="!isForDefaultVersion"
+       class="entry -non-default">
+    This is the documentation for {{ version.title }}.<br>
+    You can switch to the
+    <strong><a [routerLink]="defaultVersionLink">latest version {{ defaultVersion.title }}</a></strong>.
+  </div>
+
   <ng-container *ngFor="let entry of page.entries">
     <ng-container [ngSwitch]="entry.type">
       <ng-container *ngSwitchCase="'text'">

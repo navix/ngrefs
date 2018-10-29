@@ -1,7 +1,7 @@
 import { DOCUMENT } from '@angular/common';
 import { ChangeDetectorRef, Component, Inject, NgZone, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { AppComponent } from '../app.component';
 import { ContentMenu, ContentVersion } from '../content/meta';
 import { versions } from '../content/versions';
@@ -19,6 +19,10 @@ export class VersionComponent implements OnInit {
 
   showHints = true;
 
+  currentSectionUrl?: string;
+
+  currentPageUrl?: string;
+
   private _menu: ContentMenu;
 
   constructor(
@@ -31,6 +35,11 @@ export class VersionComponent implements OnInit {
     private cdr: ChangeDetectorRef,
     private seo: SeoService,
   ) {
+    this.router.events.subscribe(e => {
+      if (e instanceof NavigationEnd) {
+        console.log('NAV END EV', e);
+      }
+    });
   }
 
   ngOnInit() {

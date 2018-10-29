@@ -17,8 +17,17 @@
 .entry {
   grid-column: 3 / 5;
   max-width: 100%;
+
   &.-wide {
     grid-column: 2 / 6;
+  }
+
+  &.-non-default {
+    padding: $grid * 3;
+    background: #ffdede;
+    border: 1px solid #ff9799;
+    border-radius: 3px;
+    margin: $grid * 2 0;
   }
 }
 

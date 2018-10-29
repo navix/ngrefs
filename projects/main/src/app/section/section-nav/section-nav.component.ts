@@ -17,5 +17,4 @@ export class SectionNavComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

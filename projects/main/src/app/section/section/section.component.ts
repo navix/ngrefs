@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { KitPlatformService } from '@ngx-kit/core';
-import { extractMessage } from '../../message/extract-message';
 import { ContentSection } from '../../content/meta';
+import { extractMessage } from '../../message/extract-message';
 import { SeoService } from '../../seo.service';
 import { VersionComponent } from '../../version/version.component';
 
@@ -11,7 +11,7 @@ import { VersionComponent } from '../../version/version.component';
   templateUrl: './section.component.html',
   styleUrls: ['./section.component.scss'],
 })
-export class SectionComponent implements OnInit {
+export class SectionComponent implements OnInit, OnDestroy {
   section: ContentSection;
 
   showHints = true;
@@ -25,6 +25,10 @@ export class SectionComponent implements OnInit {
     private seo: SeoService,
     private platform: KitPlatformService,
   ) {
+    // Should be handle in the constructor for proper initial rendering
+    this.route.params.subscribe(({sectionUrl}) => {
+      this.versionComponent.currentSectionUrl = sectionUrl;
+    });
   }
 
   ngOnInit() {
@@ -39,6 +43,10 @@ export class SectionComponent implements OnInit {
         this.displayNav = false;
       }
     });
+  }
+
+  ngOnDestroy() {
+    this.versionComponent.currentSectionUrl = undefined;
   }
 
   get version() {

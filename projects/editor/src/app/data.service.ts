@@ -11,6 +11,9 @@ import {
 
 export const contentFileVersion = '2';
 
+/**
+ * Editor ONLY service.
+ */
 @Injectable({
   providedIn: 'root',
 })

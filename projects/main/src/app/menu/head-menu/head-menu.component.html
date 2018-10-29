@@ -13,7 +13,7 @@
   <a *ngFor="let v of versions"
      uiDropdownItem
      [active]="v.id === version.id"
-     [routerLink]="['/', lang, v.url]">
+     [routerLink]="genCrossLink(v)">
     {{ v.title }}
   </a>
 </ui-dropdown>

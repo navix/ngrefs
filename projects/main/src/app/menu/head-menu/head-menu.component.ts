@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 import { ContentVersion } from '../../content/meta';
 import { versions } from '../../content/versions';
+import { CrossLinkingService } from '../../cross-linking.service';
 import { SectionComponent } from '../../section/section/section.component';
 import { VersionComponent } from '../../version/version.component';
 
@@ -20,6 +21,7 @@ export class HeadMenuComponent implements OnInit {
   constructor(
     public sectionComponent: SectionComponent,
     public versionComponent: VersionComponent,
+    private cls: CrossLinkingService,
   ) {
   }
 
@@ -28,5 +30,13 @@ export class HeadMenuComponent implements OnInit {
 
   get lang() {
     return this.versionComponent.lang;
+  }
+
+  genCrossLink(toVersion: ContentVersion) {
+    return this.cls.genCrossVersionsLink(toVersion, {
+      lang: this.lang,
+      sectionUrl: this.versionComponent.currentSectionUrl,
+      pageUrl: this.versionComponent.currentPageUrl,
+    });
   }
 }
