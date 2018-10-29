@@ -1,7 +1,22 @@
 <div class="brand">
-  <button class="selector">{{ version.title }}</button>
+  <button #toggle="toggle"
+          class="selector"
+          kitOverlayToggle>
+    {{ version.title }}
+  </button>
   <span>References</span>
 </div>
+
+<ui-dropdown *kitOverlay="toggle.state"
+             [toggle]="toggle"
+             position="bottom-left">
+  <a *ngFor="let v of versions"
+     uiDropdownItem
+     [active]="v.id === version.id"
+     [routerLink]="['/', lang, v.url]">
+    {{ v.title }}
+  </a>
+</ui-dropdown>
 
 <div class="controls">
   <button (click)="showSearch = true">

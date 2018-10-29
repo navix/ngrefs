@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Nl2brPipe } from './nl2br/nl2br.pipe';
 import { UiButtonModule } from './ui-button/ui-button.module';
 import { UiCheckboxModule } from './ui-checkbox/ui-checkbox.module';
+import { UiDropdownModule } from './ui-dropdown/ui-dropdown.module';
 import { UiFileModule } from './ui-file/ui-file.module';
 import { UiFormModule } from './ui-form/ui-form.module';
 import { UiModalModule } from './ui-modal/ui-modal.module';
@@ -15,6 +16,7 @@ import { UiTextModule } from './ui-text/ui-text.module';
   exports: [
     UiButtonModule,
     UiCheckboxModule,
+    UiDropdownModule,
     UiFileModule,
     UiFormModule,
     UiModalModule,

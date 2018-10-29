@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 import { ContentVersion } from '../../content/meta';
+import { versions } from '../../content/versions';
 import { SectionComponent } from '../../section/section/section.component';
 import { VersionComponent } from '../../version/version.component';
 
@@ -11,6 +12,8 @@ import { VersionComponent } from '../../version/version.component';
 })
 export class HeadMenuComponent implements OnInit {
   @Input() version: ContentVersion;
+
+  versions = versions;
 
   showSearch = false;
 
