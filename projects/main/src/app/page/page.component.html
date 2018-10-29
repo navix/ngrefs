@@ -38,10 +38,10 @@
     </ng-container>
   </ng-container>
 
-  <div class="entry">
+  <div *ngIf="pageUrl === 'intro'"
+       class="entry">
     <h2>Table of contents</h2>
-    <main-section-intro-menu *ngIf="pageUrl === 'intro'"
-                             [items]="section.menu.items"
+    <main-section-intro-menu [items]="section.menu.items"
                              class="entry">
     </main-section-intro-menu>
   </div>
