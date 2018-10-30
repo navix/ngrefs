@@ -12,6 +12,8 @@ import { VersionComponent } from '../../version/version.component';
   styleUrls: ['./section.component.scss'],
 })
 export class SectionComponent implements OnInit, OnDestroy {
+  sectionUrl: string;
+
   section: ContentSection;
 
   showHints = true;
@@ -33,14 +35,13 @@ export class SectionComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.route.params.subscribe(({sectionUrl}) => {
-      this.section = Object.values(this.version.sections)
-        .find(s => s.url === sectionUrl);
-      const title = extractMessage(this.version.messages, this.section.title, this.versionComponent.lang);
-      this.seo.setPrefix(title);
+      this.sectionUrl = sectionUrl;
+      this.loadSection();
     });
     this.router.events.subscribe(e => {
       if (e instanceof NavigationEnd) {
         this.displayNav = false;
+        this.loadSection();
       }
     });
   }
@@ -55,5 +56,12 @@ export class SectionComponent implements OnInit, OnDestroy {
 
   get isServer() {
     return this.platform.isServer();
+  }
+
+  private loadSection() {
+    this.section = Object.values(this.version.sections)
+      .find(s => s.url === this.sectionUrl);
+    const title = extractMessage(this.version.messages, this.section.title, this.versionComponent.lang);
+    this.seo.setPrefix(title);
   }
 }

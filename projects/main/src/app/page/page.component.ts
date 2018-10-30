@@ -1,5 +1,5 @@
 import { DOCUMENT } from '@angular/common';
-import { Component, Inject, NgZone, OnDestroy, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, Inject, NgZone, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { take } from 'rxjs/operators';
 import { ContentPage, ContentVersion } from '../content/meta';
@@ -29,6 +29,7 @@ export class PageComponent implements OnInit, OnDestroy {
     private versionComponent: VersionComponent,
     private seo: SeoService,
     private cls: CrossLinkingService,
+    private cdr: ChangeDetectorRef,
   ) {
     // Should be handle in the constructor for proper initial rendering
     this.route.params.subscribe(({pageUrl}) => {
@@ -37,9 +38,6 @@ export class PageComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    this.route.parent.params.subscribe(() => {
-      this.loadPage();
-    });
     this.route.params.subscribe(({pageUrl}) => {
       this.pageUrl = pageUrl;
       this.loadPage();
@@ -47,6 +45,7 @@ export class PageComponent implements OnInit, OnDestroy {
     // Handle anchor scrolling
     this.router.events.subscribe(s => {
       if (s instanceof NavigationEnd) {
+        this.loadPage();
         this.scrollTo();
       }
     });
@@ -86,12 +85,14 @@ export class PageComponent implements OnInit, OnDestroy {
   }
 
   private loadPage() {
+    console.log('LOAD PAGE');
     if (this.pageUrl) {
       this.page = this.sectionComponent.section.pages.find(p => p.url === this.pageUrl);
       if (this.page) {
         const title = extractMessage(this.versionComponent.version.messages, this.page.title, this.versionComponent.lang);
         this.seo.setPage(title);
       }
+      this.cdr.detectChanges();
     }
   }
 
