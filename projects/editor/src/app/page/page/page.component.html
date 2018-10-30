@@ -1,34 +1,42 @@
 <div class="content-wrapper">
   <h1>Page</h1>
 
-  <form uiForm
-        #ngForm="ngForm"
-        class="layout-aligned">
+  <div class="actions">
+    <button (click)="sortCommands()"
+            size="sm"
+            uiButton>
+      Sort commands A->Z
+    </button>
+  </div>
+
+  <form #ngForm="ngForm"
+        class="layout-aligned"
+        uiForm>
     <ui-form-field label="Title">
       <app-message [(ngModel)]="page.title"
-                   name="title"
-                   context="Page title">
+                   context="Page title"
+                   name="title">
       </app-message>
     </ui-form-field>
 
     <ui-form-field label="Url">
       <input [(ngModel)]="page.url"
-             uiText
              name="url"
-             required>
+             required
+             uiText>
       <span *kitFormError="'required'">Field is required</span>
     </ui-form-field>
   </form>
 
   <div>
     <div *ngFor="let entry of page.entries; let index = index">
-      <app-entry [entry]="entry"
+      <app-entry (create)="createEntry(index)"
                  (delete)="deleteEntry(index)"
-                 (moveUp)="moveUpEntry(index)"
                  (moveDown)="moveDownEntry(index)"
-                 (create)="createEntry(index)">
+                 (moveUp)="moveUpEntry(index)"
+                 [entry]="entry">
       </app-entry>
     </div>
-    <button uiButton (click)="createEntry()">Create entry</button>
+    <button (click)="createEntry()" uiButton>Create entry</button>
   </div>
 </div>

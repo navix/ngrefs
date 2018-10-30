@@ -8,6 +8,12 @@ import { ContentEntry } from '../../../../main/src/app/content/meta';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class EntryComponent implements OnInit {
+  @Input() entry: ContentEntry;
+
+  @Input() showTypeSelector = true;
+
+  @Input() showControls = true;
+
   @Output() delete = new EventEmitter();
 
   @Output() moveUp = new EventEmitter();
@@ -23,17 +29,15 @@ export class EntryComponent implements OnInit {
     tutorials: 'green',
   };
 
-  @Input() entry: ContentEntry;
-
   constructor() {
+  }
+
+  ngOnInit() {
   }
 
   get color() {
     if (this.entry) {
       return this.colors[this.entry.type];
     }
-  }
-
-  ngOnInit() {
   }
 }

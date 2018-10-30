@@ -31,7 +31,9 @@ export class TutorialsEntryComponent implements OnInit, OnChanges {
   }
 
   create() {
-    this.entry.links.push({});
+    this.entry.links.push({
+      lang: 'en',
+    });
   }
 
   delete(index: number) {

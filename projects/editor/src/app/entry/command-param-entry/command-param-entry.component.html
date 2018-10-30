@@ -1,44 +1,70 @@
-<form uiForm
-      #ngForm="ngForm"
-      class="layout-aligned">
+<form #ngForm="ngForm"
+      class="layout-aligned"
+      uiForm>
   <ui-form-field label="Name">
-    <input [(ngModel)]="entry.name"
-           (ngModelChange)="entry.head = {text: $event}"
+    <input (ngModelChange)="entry.head = {text: $event}"
            (ngModelChange)="entry.headId = $event"
-           uiText
+           [(ngModel)]="entry.name"
            name="name"
-           required>
+           required
+           uiText>
     <span *kitFormError="'required'">Field is required</span>
   </ui-form-field>
 
   <ui-form-field label="Param type">
     <input [(ngModel)]="entry.paramType"
-           uiText
-           name="paramType">
+           name="paramType"
+           uiText>
   </ui-form-field>
 
   <ui-form-field label="Values">
     <input [(ngModel)]="entry.values"
-           uiText
-           name="values">
+           name="values"
+           uiText>
   </ui-form-field>
 
   <ui-form-field label="Default">
     <input [(ngModel)]="entry.default"
-           uiText
-           name="default">
+           name="default"
+           uiText>
   </ui-form-field>
 
   <ui-form-field label="Aliases">
     <input [(ngModel)]="entry.aliases"
-           uiText
-           name="aliases">
+           name="aliases"
+           uiText>
   </ui-form-field>
 
   <ui-form-field label="Description">
     <app-message [(ngModel)]="entry.description"
-                 name="description"
-                 context="Command param entry description">
+                 context="Command param entry description"
+                 name="description">
     </app-message>
   </ui-form-field>
 </form>
+
+<div>
+  <button *ngIf="!entry.hintEntry" uiButton
+          size="sm"
+          (click)="initHint()">
+    Init hint
+  </button>
+  <button *ngIf="!entry.tutorialsEntry"
+          uiButton
+          size="sm"
+          (click)="initTutorials()">
+    Init tutorials
+  </button>
+</div>
+
+<app-entry *ngIf="entry.hintEntry"
+           [entry]="entry.hintEntry"
+           [showTypeSelector]="false"
+           [showControls]="false">
+</app-entry>
+
+<app-entry *ngIf="entry.tutorialsEntry"
+           [entry]="entry.tutorialsEntry"
+           [showTypeSelector]="false"
+           [showControls]="false">
+</app-entry>

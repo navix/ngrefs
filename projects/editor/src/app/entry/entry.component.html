@@ -1,12 +1,13 @@
-<div class="entry" [style.borderColor]="color">
-  <form uiForm
-        #ngForm="ngForm"
-        class="layout-aligned">
-    <ui-form-field label="Type">
+<div [style.borderColor]="color" class="entry">
+  <form #ngForm="ngForm"
+        class="layout-aligned"
+        uiForm>
+    <ui-form-field *ngIf="showTypeSelector"
+                   label="Type">
       <select [(ngModel)]="entry.type"
-              uiSelect
               name="type"
-              required>
+              required
+              uiSelect>
         <option value="text">Text</option>
         <option value="toc">Table of content</option>
         <option value="hint">Hint</option>
@@ -43,21 +44,22 @@
                      [entry]="entry">
   </editor-demo-entry>
 
-  <div class="actions">
-    <button uiButton
-            (click)="create.emit()">
+  <div *ngIf="showControls"
+       class="actions">
+    <button (click)="create.emit()"
+            uiButton>
       Insert new entry
     </button>
-    <button uiButton
-            (click)="delete.emit()">
+    <button (click)="delete.emit()"
+            uiButton>
       Delete
     </button>
-    <button uiButton
-            (click)="moveUp.emit()">
+    <button (click)="moveUp.emit()"
+            uiButton>
       Move up
     </button>
-    <button uiButton
-            (click)="moveDown.emit()">
+    <button (click)="moveDown.emit()"
+            uiButton>
       Move down
     </button>
   </div>

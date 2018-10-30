@@ -76,6 +76,8 @@ export interface ContentCommandParamEntry extends ContentEntry {
   default?: string;
   aliases?: string;
   description?: ContentMessageRef;
+  hintEntry?: ContentHintEntry;
+  tutorialsEntry?: ContentTutorialsEntry;
 }
 
 export interface ContentHintEntry extends ContentEntry {

@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
-import { ContentCommandParamEntry } from '../../../../../main/src/app/content/meta';
+import { ContentCommandParamEntry, ContentHintEntry, ContentTutorialsEntry } from '../../../../../main/src/app/content/meta';
+import { DataService } from '../../data.service';
 
 @Component({
   selector: 'app-command-param-entry',
@@ -10,9 +11,21 @@ import { ContentCommandParamEntry } from '../../../../../main/src/app/content/me
 export class CommandParamEntryComponent implements OnInit {
   @Input() entry: ContentCommandParamEntry;
 
-  constructor() {
+  constructor(
+    private data: DataService,
+  ) {
   }
 
   ngOnInit() {
+  }
+
+  initHint() {
+    this.entry.hintEntry = this.data.createEntry() as ContentHintEntry;
+    this.entry.hintEntry.type = 'hint';
+  }
+
+  initTutorials() {
+    this.entry.tutorialsEntry = this.data.createEntry() as ContentTutorialsEntry;
+    this.entry.tutorialsEntry.type = 'tutorials';
   }
 }
