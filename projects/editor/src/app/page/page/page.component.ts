@@ -49,11 +49,12 @@ export class PageComponent implements OnInit {
   }
 
   sortCommands() {
-    if (confirm('Entries between command-params (tutorials for example) could loose their correct position! Are you sure?')) {
-      const firstIndex = this.page.entries.findIndex(e => e.type === 'command-param');
+    if (confirm('Entries between commands/options (tutorials for example) could loose their correct position! Are you sure?')) {
+      const firstIndex = this.page.entries.findIndex(e => e.type === 'command-param' || e.type === 'interface-option');
       if (firstIndex) {
         this.page.entries.sort((x, y) => {
-          if (x.type === 'command-param' && y.type === 'command-param') {
+          if ((x.type === 'command-param' && y.type === 'command-param')
+            || (x.type === 'interface-option' && y.type === 'interface-option')) {
             return (x as ContentCommandParamEntry).name > (y as ContentCommandParamEntry).name ? 1 : -1;
           } else {
             return 0;
