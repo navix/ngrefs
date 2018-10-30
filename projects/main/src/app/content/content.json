@@ -12076,24 +12076,24 @@
                   }
                 },
                 {
-                  "id": "b20a92e0-39d4-1f12-a3fb-79abf3146da1",
+                  "id": "c7f2f310-b21d-7921-c19f-44ee29171237",
                   "type": "interface-option",
                   "head": {
-                    "text": "providers"
+                    "text": "bootstrap"
                   },
                   "text": {
-                    "id": "447a0485-18b8-761d-e5f0-12601f95a263"
+                    "id": "bab31d10-67cd-0f44-2880-973400dc4fd8"
                   },
                   "description": {
-                    "id": "a11a7215-0ba8-085d-65d7-c0f2776ec86a"
+                    "id": "4eb65905-6fd8-c4b7-bc8f-8ea3b367e9e4"
                   },
                   "additional": {
-                    "id": "96c592fa-cf25-8894-844b-d5fbc3db6d72"
+                    "id": "9cb4631c-531b-91f6-67c7-51e417aa5ac6"
                   },
-                  "name": "providers",
-                  "headId": "providers",
-                  "interface": "providers: Provider[]",
-                  "showAdditional": true
+                  "name": "bootstrap",
+                  "headId": "bootstrap",
+                  "interface": "bootstrap: Array<Type<any> | any[]>",
+                  "showAdditional": false
                 },
                 {
                   "id": "edeeb718-336e-7723-c2bd-d54e00df6945",
@@ -12113,46 +12113,6 @@
                   "name": "declarations",
                   "headId": "declarations",
                   "interface": "declarations: Array<Type<any> | any[]>",
-                  "showAdditional": true
-                },
-                {
-                  "id": "9976b0cc-11cb-40eb-774d-4c3510563ab1",
-                  "type": "interface-option",
-                  "head": {
-                    "text": "imports"
-                  },
-                  "text": {
-                    "id": "7229df83-17b2-0987-2762-8230373abb9d"
-                  },
-                  "description": {
-                    "id": "a1c5acfd-6e26-b16f-4ad3-8cb21b4a38bc"
-                  },
-                  "additional": {
-                    "id": "f34eb99d-6b34-5b8a-d300-720bb4fdbaf5"
-                  },
-                  "name": "imports",
-                  "headId": "imports",
-                  "interface": "imports: Array<Type<any> | ModuleWithProviders | any[]>",
-                  "showAdditional": true
-                },
-                {
-                  "id": "471fcd87-133b-198f-4d55-44b08a098054",
-                  "type": "interface-option",
-                  "head": {
-                    "text": "exports"
-                  },
-                  "text": {
-                    "id": "ebcb665b-7821-d00c-0f77-95f4146f36b7"
-                  },
-                  "description": {
-                    "id": "797fd167-0fba-5684-9d42-cf3e56bc232a"
-                  },
-                  "additional": {
-                    "id": "fe270dd1-7c31-632a-57f0-8398dfe6f349"
-                  },
-                  "name": "exports",
-                  "headId": "exports",
-                  "interface": "exports: Array<Type<any> | any[]>",
                   "showAdditional": true
                 },
                 {
@@ -12176,43 +12136,23 @@
                   "showAdditional": true
                 },
                 {
-                  "id": "c7f2f310-b21d-7921-c19f-44ee29171237",
+                  "id": "471fcd87-133b-198f-4d55-44b08a098054",
                   "type": "interface-option",
                   "head": {
-                    "text": "bootstrap"
+                    "text": "exports"
                   },
                   "text": {
-                    "id": "bab31d10-67cd-0f44-2880-973400dc4fd8"
+                    "id": "ebcb665b-7821-d00c-0f77-95f4146f36b7"
                   },
                   "description": {
-                    "id": "4eb65905-6fd8-c4b7-bc8f-8ea3b367e9e4"
+                    "id": "797fd167-0fba-5684-9d42-cf3e56bc232a"
                   },
                   "additional": {
-                    "id": "9cb4631c-531b-91f6-67c7-51e417aa5ac6"
+                    "id": "fe270dd1-7c31-632a-57f0-8398dfe6f349"
                   },
-                  "name": "bootstrap",
-                  "headId": "bootstrap",
-                  "interface": "bootstrap: Array<Type<any> | any[]>",
-                  "showAdditional": false
-                },
-                {
-                  "id": "5bc1b768-90bb-de1d-4854-60971a205e83",
-                  "type": "interface-option",
-                  "head": {
-                    "text": "schemas"
-                  },
-                  "text": {
-                    "id": "1abb2ee4-1d98-78fc-35b0-6fcbbe2d61da"
-                  },
-                  "description": {
-                    "id": "4a578ad2-7dfd-1b33-fa7a-b8634e737430"
-                  },
-                  "additional": {
-                    "id": "6ef54222-fcba-402f-efac-d97cd7414a6e"
-                  },
-                  "name": "schemas",
-                  "headId": "schemas",
-                  "interface": "schemas: Array<SchemaMetadata | any[]>",
+                  "name": "exports",
+                  "headId": "exports",
+                  "interface": "exports: Array<Type<any> | any[]>",
                   "showAdditional": true
                 },
                 {
@@ -12236,6 +12176,26 @@
                   "showAdditional": false
                 },
                 {
+                  "id": "9976b0cc-11cb-40eb-774d-4c3510563ab1",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "imports"
+                  },
+                  "text": {
+                    "id": "7229df83-17b2-0987-2762-8230373abb9d"
+                  },
+                  "description": {
+                    "id": "a1c5acfd-6e26-b16f-4ad3-8cb21b4a38bc"
+                  },
+                  "additional": {
+                    "id": "f34eb99d-6b34-5b8a-d300-720bb4fdbaf5"
+                  },
+                  "name": "imports",
+                  "headId": "imports",
+                  "interface": "imports: Array<Type<any> | ModuleWithProviders | any[]>",
+                  "showAdditional": true
+                },
+                {
                   "id": "3c14087c-f5eb-ad69-235f-29afd47f28e9",
                   "type": "interface-option",
                   "head": {
@@ -12253,6 +12213,46 @@
                   "name": "jit",
                   "headId": "jit",
                   "interface": "jit: boolean",
+                  "showAdditional": true
+                },
+                {
+                  "id": "b20a92e0-39d4-1f12-a3fb-79abf3146da1",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "providers"
+                  },
+                  "text": {
+                    "id": "447a0485-18b8-761d-e5f0-12601f95a263"
+                  },
+                  "description": {
+                    "id": "a11a7215-0ba8-085d-65d7-c0f2776ec86a"
+                  },
+                  "additional": {
+                    "id": "96c592fa-cf25-8894-844b-d5fbc3db6d72"
+                  },
+                  "name": "providers",
+                  "headId": "providers",
+                  "interface": "providers: Provider[]",
+                  "showAdditional": true
+                },
+                {
+                  "id": "5bc1b768-90bb-de1d-4854-60971a205e83",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "schemas"
+                  },
+                  "text": {
+                    "id": "1abb2ee4-1d98-78fc-35b0-6fcbbe2d61da"
+                  },
+                  "description": {
+                    "id": "4a578ad2-7dfd-1b33-fa7a-b8634e737430"
+                  },
+                  "additional": {
+                    "id": "6ef54222-fcba-402f-efac-d97cd7414a6e"
+                  },
+                  "name": "schemas",
+                  "headId": "schemas",
+                  "interface": "schemas: Array<SchemaMetadata | any[]>",
                   "showAdditional": true
                 }
               ],
@@ -12315,23 +12315,39 @@
                   }
                 },
                 {
-                  "id": "dae4e9cb-d1c6-4953-013b-71b35c1d5e53",
+                  "id": "080aa22d-0d63-9b90-39bb-d64fac505229",
                   "type": "interface-option",
                   "head": {
-                    "text": "selector"
+                    "text": "exportAs"
                   },
                   "text": {
-                    "id": "19513215-6033-6f05-2704-101a9deb1db9"
+                    "id": "82cf5c1c-3d88-6776-d1f5-7bb39e2572f4"
                   },
                   "description": {
-                    "id": "bd0e8362-787e-3f2a-02e6-71e482622081"
+                    "id": "75974e0c-7b59-373d-1579-3b3fc0708201"
                   },
-                  "name": "selector",
-                  "headId": "selector",
-                  "interface": "selector: string",
+                  "name": "exportAs",
+                  "headId": "exportAs",
+                  "interface": "exportAs: string"
+                },
+                {
+                  "id": "115b9a2c-37c0-9ab8-1dc8-f9812d5e5b70",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "host"
+                  },
+                  "text": {
+                    "id": "80ad3933-3661-7670-fb08-1546306a0150"
+                  },
+                  "description": {
+                    "id": "ff3089df-d42e-ed87-41c4-a8d5462d0d26"
+                  },
+                  "name": "host",
+                  "headId": "host",
+                  "interface": "host: {     [key: string]: string; }",
                   "showAdditional": true,
                   "additional": {
-                    "id": "708cfdaf-8614-6fbf-b921-c49dab73b9cb"
+                    "id": "1ffc5f97-8395-9812-350b-29da6c8ce348"
                   }
                 },
                 {
@@ -12352,6 +12368,26 @@
                   "showAdditional": true,
                   "additional": {
                     "id": "cf7e1c4f-3d0c-2c91-bda6-a305d451fec8"
+                  }
+                },
+                {
+                  "id": "6def4d1f-da76-21bf-fc2f-ce9b1382e34c",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "jit"
+                  },
+                  "text": {
+                    "id": "e8f659f9-ea81-a584-88a8-07b6995d29ba"
+                  },
+                  "description": {
+                    "id": "ae325d1a-256a-beb1-4946-e0c3f8125c26"
+                  },
+                  "name": "jit",
+                  "headId": "jit",
+                  "interface": "jit: boolean",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "cefded23-dddd-8a3b-03ef-784a9ab98485"
                   }
                 },
                 {
@@ -12391,22 +12427,6 @@
                   "interface": "providers: Provider[]"
                 },
                 {
-                  "id": "080aa22d-0d63-9b90-39bb-d64fac505229",
-                  "type": "interface-option",
-                  "head": {
-                    "text": "exportAs"
-                  },
-                  "text": {
-                    "id": "82cf5c1c-3d88-6776-d1f5-7bb39e2572f4"
-                  },
-                  "description": {
-                    "id": "75974e0c-7b59-373d-1579-3b3fc0708201"
-                  },
-                  "name": "exportAs",
-                  "headId": "exportAs",
-                  "interface": "exportAs: string"
-                },
-                {
                   "id": "16e75109-a5aa-e27b-b108-0852ba75211a",
                   "type": "interface-option",
                   "head": {
@@ -12427,43 +12447,23 @@
                   }
                 },
                 {
-                  "id": "6def4d1f-da76-21bf-fc2f-ce9b1382e34c",
+                  "id": "dae4e9cb-d1c6-4953-013b-71b35c1d5e53",
                   "type": "interface-option",
                   "head": {
-                    "text": "jit"
+                    "text": "selector"
                   },
                   "text": {
-                    "id": "e8f659f9-ea81-a584-88a8-07b6995d29ba"
+                    "id": "19513215-6033-6f05-2704-101a9deb1db9"
                   },
                   "description": {
-                    "id": "ae325d1a-256a-beb1-4946-e0c3f8125c26"
+                    "id": "bd0e8362-787e-3f2a-02e6-71e482622081"
                   },
-                  "name": "jit",
-                  "headId": "jit",
-                  "interface": "jit: boolean",
+                  "name": "selector",
+                  "headId": "selector",
+                  "interface": "selector: string",
                   "showAdditional": true,
                   "additional": {
-                    "id": "cefded23-dddd-8a3b-03ef-784a9ab98485"
-                  }
-                },
-                {
-                  "id": "115b9a2c-37c0-9ab8-1dc8-f9812d5e5b70",
-                  "type": "interface-option",
-                  "head": {
-                    "text": "host"
-                  },
-                  "text": {
-                    "id": "80ad3933-3661-7670-fb08-1546306a0150"
-                  },
-                  "description": {
-                    "id": "ff3089df-d42e-ed87-41c4-a8d5462d0d26"
-                  },
-                  "name": "host",
-                  "headId": "host",
-                  "interface": "host: {     [key: string]: string; }",
-                  "showAdditional": true,
-                  "additional": {
-                    "id": "1ffc5f97-8395-9812-350b-29da6c8ce348"
+                    "id": "708cfdaf-8614-6fbf-b921-c49dab73b9cb"
                   }
                 }
               ],
@@ -12526,6 +12526,22 @@
                   }
                 },
                 {
+                  "id": "8f484994-a9b8-d657-3991-48e96145c4fb",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "animations"
+                  },
+                  "text": {
+                    "id": "60f828b1-c91f-26fa-bf2c-3092ca65ea9b"
+                  },
+                  "description": {
+                    "id": "fbbd09f2-398b-ec58-5793-77d1ab0602e7"
+                  },
+                  "name": "animations",
+                  "headId": "animations",
+                  "interface": "animations: any[]"
+                },
+                {
                   "id": "5a2e2f62-10f7-a115-bea3-f2909ef38100",
                   "type": "interface-option",
                   "head": {
@@ -12546,20 +12562,56 @@
                   }
                 },
                 {
-                  "id": "4d988fea-6907-47e9-a636-b9f080b770fc",
+                  "id": "0461ddba-ec08-2c79-236d-12bf76ef4c55",
                   "type": "interface-option",
                   "head": {
-                    "text": "viewProviders"
+                    "text": "encapsulation"
                   },
                   "text": {
-                    "id": "fdd4ac28-7902-d1dd-9ad5-c5e58cd10588"
+                    "id": "42be845b-03f0-f299-bcda-5af57b70cbd8"
                   },
                   "description": {
-                    "id": "fa9d7e1e-b7a6-a20b-de75-95dcc03dd5af"
+                    "id": "29b29b4a-0132-e44a-d3e1-43d40bb82f75"
                   },
-                  "name": "viewProviders",
-                  "headId": "viewProviders",
-                  "interface": "viewProviders: Provider[]"
+                  "name": "encapsulation",
+                  "headId": "encapsulation",
+                  "interface": "encapsulation: ViewEncapsulation",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "a29ba29b-16c3-bff1-b0d1-583bf35243a8"
+                  }
+                },
+                {
+                  "id": "6e7020e1-df9e-e900-8e83-fd2b1804c864",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "entryComponents"
+                  },
+                  "text": {
+                    "id": "41e6ecc0-9e45-4138-82e5-6d5c2768eeb0"
+                  },
+                  "description": {
+                    "id": "3d466343-8b0a-71ee-64ac-8c75e4d33aa8"
+                  },
+                  "name": "entryComponents",
+                  "headId": "entryComponents",
+                  "interface": "entryComponents: Array<Type<any> | any[]>"
+                },
+                {
+                  "id": "dcfb685a-88d5-be19-9be2-193d8b4df2d2",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "interpolation"
+                  },
+                  "text": {
+                    "id": "7849118b-e86e-7541-6e57-5b427578e853"
+                  },
+                  "description": {
+                    "id": "520dfe93-cf57-954c-fc88-f67e94b468fa"
+                  },
+                  "name": "interpolation",
+                  "headId": "interpolation",
+                  "interface": "interpolation: [string, string]"
                 },
                 {
                   "id": "cf187f7c-0925-1e5f-080d-efd340af590b",
@@ -12578,36 +12630,20 @@
                   "interface": "moduleId: string"
                 },
                 {
-                  "id": "017e3c7c-8bd3-b8c0-7516-a04251ba773e",
+                  "id": "bbb4e7e7-2a41-d75d-c0f7-b2d948645c42",
                   "type": "interface-option",
                   "head": {
-                    "text": "templateUrl"
+                    "text": "preserveWhitespaces"
                   },
                   "text": {
-                    "id": "33f560cc-5ad6-c116-5cf3-807585236377"
+                    "id": "e43ec95b-26aa-9c57-b689-c718abdaf530"
                   },
                   "description": {
-                    "id": "e5749172-48eb-6094-5696-814ccf5d0727"
+                    "id": "2732ae69-3b2b-9451-a365-d6207bca78e6"
                   },
-                  "name": "templateUrl",
-                  "headId": "templateUrl",
-                  "interface": "templateUrl: string"
-                },
-                {
-                  "id": "3f3a16ab-2b6d-7a1d-d887-0632d01c09ca",
-                  "type": "interface-option",
-                  "head": {
-                    "text": "template"
-                  },
-                  "text": {
-                    "id": "b5af1f35-c33b-347f-4ba5-fdfe2d83206e"
-                  },
-                  "description": {
-                    "id": "b97fa212-dca6-2460-b245-817c1713650d"
-                  },
-                  "name": "template",
-                  "headId": "template",
-                  "interface": "template: string"
+                  "name": "preserveWhitespaces",
+                  "headId": "preserveWhitespaces",
+                  "interface": "preserveWhitespaces: boolean"
                 },
                 {
                   "id": "68383538-a266-499e-f57d-70dd8c77df11",
@@ -12642,88 +12678,52 @@
                   "interface": "styles: string[]"
                 },
                 {
-                  "id": "8f484994-a9b8-d657-3991-48e96145c4fb",
+                  "id": "3f3a16ab-2b6d-7a1d-d887-0632d01c09ca",
                   "type": "interface-option",
                   "head": {
-                    "text": "animations"
+                    "text": "template"
                   },
                   "text": {
-                    "id": "60f828b1-c91f-26fa-bf2c-3092ca65ea9b"
+                    "id": "b5af1f35-c33b-347f-4ba5-fdfe2d83206e"
                   },
                   "description": {
-                    "id": "fbbd09f2-398b-ec58-5793-77d1ab0602e7"
+                    "id": "b97fa212-dca6-2460-b245-817c1713650d"
                   },
-                  "name": "animations",
-                  "headId": "animations",
-                  "interface": "animations: any[]"
+                  "name": "template",
+                  "headId": "template",
+                  "interface": "template: string"
                 },
                 {
-                  "id": "0461ddba-ec08-2c79-236d-12bf76ef4c55",
+                  "id": "017e3c7c-8bd3-b8c0-7516-a04251ba773e",
                   "type": "interface-option",
                   "head": {
-                    "text": "encapsulation"
+                    "text": "templateUrl"
                   },
                   "text": {
-                    "id": "42be845b-03f0-f299-bcda-5af57b70cbd8"
+                    "id": "33f560cc-5ad6-c116-5cf3-807585236377"
                   },
                   "description": {
-                    "id": "29b29b4a-0132-e44a-d3e1-43d40bb82f75"
+                    "id": "e5749172-48eb-6094-5696-814ccf5d0727"
                   },
-                  "name": "encapsulation",
-                  "headId": "encapsulation",
-                  "interface": "encapsulation: ViewEncapsulation",
-                  "showAdditional": true,
-                  "additional": {
-                    "id": "a29ba29b-16c3-bff1-b0d1-583bf35243a8"
-                  }
+                  "name": "templateUrl",
+                  "headId": "templateUrl",
+                  "interface": "templateUrl: string"
                 },
                 {
-                  "id": "dcfb685a-88d5-be19-9be2-193d8b4df2d2",
+                  "id": "4d988fea-6907-47e9-a636-b9f080b770fc",
                   "type": "interface-option",
                   "head": {
-                    "text": "interpolation"
+                    "text": "viewProviders"
                   },
                   "text": {
-                    "id": "7849118b-e86e-7541-6e57-5b427578e853"
+                    "id": "fdd4ac28-7902-d1dd-9ad5-c5e58cd10588"
                   },
                   "description": {
-                    "id": "520dfe93-cf57-954c-fc88-f67e94b468fa"
+                    "id": "fa9d7e1e-b7a6-a20b-de75-95dcc03dd5af"
                   },
-                  "name": "interpolation",
-                  "headId": "interpolation",
-                  "interface": "interpolation: [string, string]"
-                },
-                {
-                  "id": "6e7020e1-df9e-e900-8e83-fd2b1804c864",
-                  "type": "interface-option",
-                  "head": {
-                    "text": "entryComponents"
-                  },
-                  "text": {
-                    "id": "41e6ecc0-9e45-4138-82e5-6d5c2768eeb0"
-                  },
-                  "description": {
-                    "id": "3d466343-8b0a-71ee-64ac-8c75e4d33aa8"
-                  },
-                  "name": "entryComponents",
-                  "headId": "entryComponents",
-                  "interface": "entryComponents: Array<Type<any> | any[]>"
-                },
-                {
-                  "id": "bbb4e7e7-2a41-d75d-c0f7-b2d948645c42",
-                  "type": "interface-option",
-                  "head": {
-                    "text": "preserveWhitespaces"
-                  },
-                  "text": {
-                    "id": "e43ec95b-26aa-9c57-b689-c718abdaf530"
-                  },
-                  "description": {
-                    "id": "2732ae69-3b2b-9451-a365-d6207bca78e6"
-                  },
-                  "name": "preserveWhitespaces",
-                  "headId": "preserveWhitespaces",
-                  "interface": "preserveWhitespaces: boolean"
+                  "name": "viewProviders",
+                  "headId": "viewProviders",
+                  "interface": "viewProviders: Provider[]"
                 }
               ],
               "title": {
@@ -13822,23 +13822,23 @@
                   }
                 },
                 {
-                  "id": "b3179f90-7912-d6cb-cf8e-6045680aefa2",
+                  "id": "694262ee-b1b7-8f67-97d4-5b315c10e5e0",
                   "type": "interface-option",
                   "head": {
-                    "text": "markForCheck()"
+                    "text": "checkNoChanges()"
                   },
                   "text": {
-                    "id": "368afe1b-2cee-852c-e4a2-836906eae2fe"
+                    "id": "809f3928-4ad7-3082-97f7-fe20ad74c64a"
                   },
                   "description": {
-                    "id": "858f37b6-3cbc-64cf-592d-bbeb9265dfa4"
+                    "id": "fa22cd26-5cbf-f3e2-7a66-fc1dd938a838"
                   },
-                  "name": "markForCheck()",
-                  "headId": "markForCheck()",
-                  "interface": "markForCheck(): void",
+                  "name": "checkNoChanges()",
+                  "headId": "checkNoChanges()",
+                  "interface": "checkNoChanges(): void",
                   "showAdditional": true,
                   "additional": {
-                    "id": "1f0e4c40-0a6b-746e-3891-ff31a57844ec"
+                    "id": "7fca4032-630a-111e-3d8c-eac905ed3dc0"
                   }
                 },
                 {
@@ -13878,23 +13878,23 @@
                   "interface": "detectChanges(): void"
                 },
                 {
-                  "id": "694262ee-b1b7-8f67-97d4-5b315c10e5e0",
+                  "id": "b3179f90-7912-d6cb-cf8e-6045680aefa2",
                   "type": "interface-option",
                   "head": {
-                    "text": "checkNoChanges()"
+                    "text": "markForCheck()"
                   },
                   "text": {
-                    "id": "809f3928-4ad7-3082-97f7-fe20ad74c64a"
+                    "id": "368afe1b-2cee-852c-e4a2-836906eae2fe"
                   },
                   "description": {
-                    "id": "fa22cd26-5cbf-f3e2-7a66-fc1dd938a838"
+                    "id": "858f37b6-3cbc-64cf-592d-bbeb9265dfa4"
                   },
-                  "name": "checkNoChanges()",
-                  "headId": "checkNoChanges()",
-                  "interface": "checkNoChanges(): void",
+                  "name": "markForCheck()",
+                  "headId": "markForCheck()",
+                  "interface": "markForCheck(): void",
                   "showAdditional": true,
                   "additional": {
-                    "id": "7fca4032-630a-111e-3d8c-eac905ed3dc0"
+                    "id": "1f0e4c40-0a6b-746e-3891-ff31a57844ec"
                   }
                 },
                 {
@@ -14997,6 +14997,118 @@
                   }
                 },
                 {
+                  "id": "4a62224b-9c9c-39e4-c18e-665d90a16a4f",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "hasPendingMacrotasks"
+                  },
+                  "text": {
+                    "id": "32426304-4c3a-1d31-e25b-388526feff2a"
+                  },
+                  "description": {
+                    "id": "f530d999-95b2-dc2c-86bf-c3af92bba078"
+                  },
+                  "name": "hasPendingMacrotasks",
+                  "headId": "hasPendingMacrotasks",
+                  "interface": "hasPendingMacrotasks: boolean"
+                },
+                {
+                  "id": "97dae8e0-3b4b-6a89-446e-075551407081",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "hasPendingMicrotasks"
+                  },
+                  "text": {
+                    "id": "606d7cac-327c-ac11-82c3-19242aa8e691"
+                  },
+                  "description": {
+                    "id": "a4c921fa-099c-f3ce-a6a2-16f35058d604"
+                  },
+                  "name": "hasPendingMicrotasks",
+                  "headId": "hasPendingMicrotasks",
+                  "interface": "hasPendingMicrotasks: boolean"
+                },
+                {
+                  "id": "e7db88d5-4e23-0ed0-4a08-38b0081c6abc",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "isStable"
+                  },
+                  "text": {
+                    "id": "f445a1a0-b752-d300-0264-91593d3ecb2a"
+                  },
+                  "description": {
+                    "id": "ddc7c9f3-8585-99fd-622e-416fb2019790"
+                  },
+                  "name": "isStable",
+                  "headId": "isStable",
+                  "interface": "isStable: boolean"
+                },
+                {
+                  "id": "ceb18f97-6aa2-8a40-7c3b-5487825741a6",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "onError"
+                  },
+                  "text": {
+                    "id": "a9e48286-8cf6-5ba7-e401-6f078c6f3d26"
+                  },
+                  "description": {
+                    "id": "0291a31f-2eeb-2291-a8fb-194989bda62a"
+                  },
+                  "name": "onError",
+                  "headId": "onError",
+                  "interface": "onError: EventEmitter<any>"
+                },
+                {
+                  "id": "844473d3-dcea-1076-a188-4cbf716f1b95",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "onMicrotaskEmpty"
+                  },
+                  "text": {
+                    "id": "cfbec589-8821-4703-29cf-d3a24232db3a"
+                  },
+                  "description": {
+                    "id": "756de4b5-7d41-5223-681c-24fdf50d4358"
+                  },
+                  "name": "onMicrotaskEmpty",
+                  "headId": "onMicrotaskEmpty",
+                  "interface": "onMicrotaskEmpty: EventEmitter<any>"
+                },
+                {
+                  "id": "2401e93d-7c2a-0e19-2a08-1f3fe4d52a75",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "onStable"
+                  },
+                  "text": {
+                    "id": "95ef1904-5f3a-c4e8-5aa0-92abfb1d7a91"
+                  },
+                  "description": {
+                    "id": "73f26904-2ec5-cf7b-fe79-f251c9f438c8"
+                  },
+                  "name": "onStable",
+                  "headId": "onStable",
+                  "interface": "onStable: EventEmitter<any>"
+                },
+                {
+                  "id": "83805282-7878-b0e6-ab31-4caa51e9b956",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "onUnstable"
+                  },
+                  "text": {
+                    "id": "ca41655d-4416-3eac-696e-0a100895456a"
+                  },
+                  "description": {
+                    "id": "5d1b050a-49b1-39da-3dec-c5e1d1d97321"
+                  },
+                  "name": "onUnstable",
+                  "headId": "onUnstable",
+                  "interface": "onUnstable: EventEmitter<any>"
+                },
+                {
                   "id": "7d654bd0-be36-8db5-33dd-5a5fba6527e6",
                   "type": "interface-option",
                   "head": {
@@ -15014,26 +15126,6 @@
                   "showAdditional": true,
                   "additional": {
                     "id": "4f99a00d-579a-1dc4-b58f-b1cbb24a23ad"
-                  }
-                },
-                {
-                  "id": "fb9e519d-b81a-b575-0cab-6d3316826985",
-                  "type": "interface-option",
-                  "head": {
-                    "text": "runTask()"
-                  },
-                  "text": {
-                    "id": "5dc7854e-2ddb-2b44-7e92-fea2178cb19c"
-                  },
-                  "description": {
-                    "id": "763e8649-b99a-3526-9c14-f11b74b86d49"
-                  },
-                  "name": "runTask()",
-                  "headId": "runTask()",
-                  "interface": "runTask<T>(fn: (...args: any[]) => T, applyThis?: any, applyArgs?: any[], name?: string): T",
-                  "showAdditional": true,
-                  "additional": {
-                    "id": "cc88c04a-d8a4-6edb-ed69-d9bc7faedca1"
                   }
                 },
                 {
@@ -15073,6 +15165,26 @@
                   }
                 },
                 {
+                  "id": "fb9e519d-b81a-b575-0cab-6d3316826985",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "runTask()"
+                  },
+                  "text": {
+                    "id": "5dc7854e-2ddb-2b44-7e92-fea2178cb19c"
+                  },
+                  "description": {
+                    "id": "763e8649-b99a-3526-9c14-f11b74b86d49"
+                  },
+                  "name": "runTask()",
+                  "headId": "runTask()",
+                  "interface": "runTask<T>(fn: (...args: any[]) => T, applyThis?: any, applyArgs?: any[], name?: string): T",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "cc88c04a-d8a4-6edb-ed69-d9bc7faedca1"
+                  }
+                },
+                {
                   "id": "083e50bd-269f-d953-d7cf-eaa70d526477",
                   "type": "text",
                   "head": {
@@ -15081,118 +15193,6 @@
                   "text": {
                     "id": "1f015c9f-3b09-ecb6-2f3b-f7a0c881af9a"
                   }
-                },
-                {
-                  "id": "97dae8e0-3b4b-6a89-446e-075551407081",
-                  "type": "interface-option",
-                  "head": {
-                    "text": "hasPendingMicrotasks"
-                  },
-                  "text": {
-                    "id": "606d7cac-327c-ac11-82c3-19242aa8e691"
-                  },
-                  "description": {
-                    "id": "a4c921fa-099c-f3ce-a6a2-16f35058d604"
-                  },
-                  "name": "hasPendingMicrotasks",
-                  "headId": "hasPendingMicrotasks",
-                  "interface": "hasPendingMicrotasks: boolean"
-                },
-                {
-                  "id": "4a62224b-9c9c-39e4-c18e-665d90a16a4f",
-                  "type": "interface-option",
-                  "head": {
-                    "text": "hasPendingMacrotasks"
-                  },
-                  "text": {
-                    "id": "32426304-4c3a-1d31-e25b-388526feff2a"
-                  },
-                  "description": {
-                    "id": "f530d999-95b2-dc2c-86bf-c3af92bba078"
-                  },
-                  "name": "hasPendingMacrotasks",
-                  "headId": "hasPendingMacrotasks",
-                  "interface": "hasPendingMacrotasks: boolean"
-                },
-                {
-                  "id": "e7db88d5-4e23-0ed0-4a08-38b0081c6abc",
-                  "type": "interface-option",
-                  "head": {
-                    "text": "isStable"
-                  },
-                  "text": {
-                    "id": "f445a1a0-b752-d300-0264-91593d3ecb2a"
-                  },
-                  "description": {
-                    "id": "ddc7c9f3-8585-99fd-622e-416fb2019790"
-                  },
-                  "name": "isStable",
-                  "headId": "isStable",
-                  "interface": "isStable: boolean"
-                },
-                {
-                  "id": "83805282-7878-b0e6-ab31-4caa51e9b956",
-                  "type": "interface-option",
-                  "head": {
-                    "text": "onUnstable"
-                  },
-                  "text": {
-                    "id": "ca41655d-4416-3eac-696e-0a100895456a"
-                  },
-                  "description": {
-                    "id": "5d1b050a-49b1-39da-3dec-c5e1d1d97321"
-                  },
-                  "name": "onUnstable",
-                  "headId": "onUnstable",
-                  "interface": "onUnstable: EventEmitter<any>"
-                },
-                {
-                  "id": "844473d3-dcea-1076-a188-4cbf716f1b95",
-                  "type": "interface-option",
-                  "head": {
-                    "text": "onMicrotaskEmpty"
-                  },
-                  "text": {
-                    "id": "cfbec589-8821-4703-29cf-d3a24232db3a"
-                  },
-                  "description": {
-                    "id": "756de4b5-7d41-5223-681c-24fdf50d4358"
-                  },
-                  "name": "onMicrotaskEmpty",
-                  "headId": "onMicrotaskEmpty",
-                  "interface": "onMicrotaskEmpty: EventEmitter<any>"
-                },
-                {
-                  "id": "2401e93d-7c2a-0e19-2a08-1f3fe4d52a75",
-                  "type": "interface-option",
-                  "head": {
-                    "text": "onStable"
-                  },
-                  "text": {
-                    "id": "95ef1904-5f3a-c4e8-5aa0-92abfb1d7a91"
-                  },
-                  "description": {
-                    "id": "73f26904-2ec5-cf7b-fe79-f251c9f438c8"
-                  },
-                  "name": "onStable",
-                  "headId": "onStable",
-                  "interface": "onStable: EventEmitter<any>"
-                },
-                {
-                  "id": "ceb18f97-6aa2-8a40-7c3b-5487825741a6",
-                  "type": "interface-option",
-                  "head": {
-                    "text": "onError"
-                  },
-                  "text": {
-                    "id": "a9e48286-8cf6-5ba7-e401-6f078c6f3d26"
-                  },
-                  "description": {
-                    "id": "0291a31f-2eeb-2291-a8fb-194989bda62a"
-                  },
-                  "name": "onError",
-                  "headId": "onError",
-                  "interface": "onError: EventEmitter<any>"
                 }
               ],
               "title": {
@@ -15260,20 +15260,52 @@
                   }
                 },
                 {
-                  "id": "b8bba8c5-0f1a-64f5-d9ab-d930276d7d65",
+                  "id": "cca30cb8-b640-8aa1-bad0-004ae3dc845f",
                   "type": "interface-option",
                   "head": {
-                    "text": "destroy()"
+                    "text": "addClass()"
                   },
                   "text": {
-                    "id": "3cbed0e8-ee8f-49e2-1745-520d320d662c"
+                    "id": "a89f47cb-20f6-1fc0-2aea-312b7e759af5"
                   },
                   "description": {
-                    "id": "8cd08e8d-e40d-667a-4b1c-2c323d1100fe"
+                    "id": "bc325166-727f-a71b-6cbe-65c8c0be21df"
                   },
-                  "name": "destroy()",
-                  "headId": "destroy()",
-                  "interface": "destroy(): void"
+                  "name": "addClass()",
+                  "headId": "addClass()",
+                  "interface": "addClass(el: any, name: string): void"
+                },
+                {
+                  "id": "035e3089-b9f4-ecdd-c16d-63424128eb58",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "appendChild()"
+                  },
+                  "text": {
+                    "id": "e73c63ae-e9a9-46b9-1f91-ba86b3711ca2"
+                  },
+                  "description": {
+                    "id": "2458aaf8-d37c-31cb-1c77-5a1aac751306"
+                  },
+                  "name": "appendChild()",
+                  "headId": "appendChild()",
+                  "interface": "appendChild(parent: any, newChild: any): void"
+                },
+                {
+                  "id": "8cef4e23-7982-7bfb-6071-9705124ad239",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "createComment()"
+                  },
+                  "text": {
+                    "id": "b4b9b88e-9e97-d05b-d54a-5e96ef7bc4f6"
+                  },
+                  "description": {
+                    "id": "2b5ad7f8-21dd-b55b-f03a-39245babe4e3"
+                  },
+                  "name": "createComment()",
+                  "headId": "createComment()",
+                  "interface": "createComment(value: string): any"
                 },
                 {
                   "id": "9de51ae2-7648-5c56-d37b-04019f2499ab",
@@ -15296,22 +15328,6 @@
                   }
                 },
                 {
-                  "id": "8cef4e23-7982-7bfb-6071-9705124ad239",
-                  "type": "interface-option",
-                  "head": {
-                    "text": "createComment()"
-                  },
-                  "text": {
-                    "id": "b4b9b88e-9e97-d05b-d54a-5e96ef7bc4f6"
-                  },
-                  "description": {
-                    "id": "2b5ad7f8-21dd-b55b-f03a-39245babe4e3"
-                  },
-                  "name": "createComment()",
-                  "headId": "createComment()",
-                  "interface": "createComment(value: string): any"
-                },
-                {
                   "id": "aac5f9bf-77e8-9cb8-4ce2-ef90ef29ee12",
                   "type": "interface-option",
                   "head": {
@@ -15328,20 +15344,20 @@
                   "interface": "createText(value: string): any"
                 },
                 {
-                  "id": "035e3089-b9f4-ecdd-c16d-63424128eb58",
+                  "id": "b8bba8c5-0f1a-64f5-d9ab-d930276d7d65",
                   "type": "interface-option",
                   "head": {
-                    "text": "appendChild()"
+                    "text": "destroy()"
                   },
                   "text": {
-                    "id": "e73c63ae-e9a9-46b9-1f91-ba86b3711ca2"
+                    "id": "3cbed0e8-ee8f-49e2-1745-520d320d662c"
                   },
                   "description": {
-                    "id": "2458aaf8-d37c-31cb-1c77-5a1aac751306"
+                    "id": "8cd08e8d-e40d-667a-4b1c-2c323d1100fe"
                   },
-                  "name": "appendChild()",
-                  "headId": "appendChild()",
-                  "interface": "appendChild(parent: any, newChild: any): void"
+                  "name": "destroy()",
+                  "headId": "destroy()",
+                  "interface": "destroy(): void"
                 },
                 {
                   "id": "6bc1d546-5031-6ae8-eb86-588782b256d9",
@@ -15364,55 +15380,23 @@
                   }
                 },
                 {
-                  "id": "a68c7097-a7c1-84cf-a446-fa5b2dcaddaf",
+                  "id": "fddbe8c8-dde4-46c3-7062-b7b839ad2e1f",
                   "type": "interface-option",
                   "head": {
-                    "text": "removeChild()"
+                    "text": "listen()"
                   },
                   "text": {
-                    "id": "244d59f6-89be-7351-a246-c9af70324dd7"
+                    "id": "70ea5c4b-23ed-bd36-a2fa-7b3d1961dd5f"
                   },
                   "description": {
-                    "id": "702a8ab3-1b11-acfa-140d-c19b392a53ae"
+                    "id": "72e09b27-7860-5bb5-c3a8-5972e06dc02f"
                   },
-                  "name": "removeChild()",
-                  "headId": "removeChild()",
-                  "interface": "removeChild(parent: any, oldChild: any): void"
-                },
-                {
-                  "id": "86c107ff-4b92-8245-8f71-9845962063e9",
-                  "type": "interface-option",
-                  "head": {
-                    "text": "selectRootElement()"
-                  },
-                  "text": {
-                    "id": "230faa21-294f-15b6-5b5e-e3e5184bc07f"
-                  },
-                  "description": {
-                    "id": "596c32a4-182d-d68d-f6b6-8b574d747601"
-                  },
-                  "name": "selectRootElement()",
-                  "headId": "selectRootElement()",
-                  "interface": "selectRootElement(selectorOrNode: string | any): any"
-                },
-                {
-                  "id": "63ffd18c-b4a4-d8a7-6a28-76652918a796",
-                  "type": "interface-option",
-                  "head": {
-                    "text": "parentNode()"
-                  },
-                  "text": {
-                    "id": "1dbf72b0-8d44-8952-2664-e77f0d1dfff5"
-                  },
-                  "description": {
-                    "id": "e01aa7f6-3629-4852-5b50-80e15d213e6a"
-                  },
-                  "name": "parentNode()",
-                  "headId": "parentNode()",
-                  "interface": "parentNode(node: any): any",
+                  "name": "listen()",
+                  "headId": "listen()",
+                  "interface": "listen(target: 'window' | 'document' | 'body' | any, eventName: string, callback: (event: any) => boolean | void): () => void",
                   "showAdditional": true,
                   "additional": {
-                    "id": "9ee6a2dc-b886-99b9-61f1-7b859013f0fa"
+                    "id": "42a15d21-97bf-4efe-a172-ae8318e86924"
                   }
                 },
                 {
@@ -15436,6 +15420,106 @@
                   }
                 },
                 {
+                  "id": "63ffd18c-b4a4-d8a7-6a28-76652918a796",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "parentNode()"
+                  },
+                  "text": {
+                    "id": "1dbf72b0-8d44-8952-2664-e77f0d1dfff5"
+                  },
+                  "description": {
+                    "id": "e01aa7f6-3629-4852-5b50-80e15d213e6a"
+                  },
+                  "name": "parentNode()",
+                  "headId": "parentNode()",
+                  "interface": "parentNode(node: any): any",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "9ee6a2dc-b886-99b9-61f1-7b859013f0fa"
+                  }
+                },
+                {
+                  "id": "2397b1a0-f171-cdc2-1c2a-d3cfe49d2fc7",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "removeAttribute()"
+                  },
+                  "text": {
+                    "id": "e19dd62e-e999-0b17-5786-d2ebabfaa600"
+                  },
+                  "description": {
+                    "id": "5640a475-e647-1086-8f80-a96ecefe8124"
+                  },
+                  "name": "removeAttribute()",
+                  "headId": "removeAttribute()",
+                  "interface": "removeAttribute(el: any, name: string, namespace?: string | null): void"
+                },
+                {
+                  "id": "a68c7097-a7c1-84cf-a446-fa5b2dcaddaf",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "removeChild()"
+                  },
+                  "text": {
+                    "id": "244d59f6-89be-7351-a246-c9af70324dd7"
+                  },
+                  "description": {
+                    "id": "702a8ab3-1b11-acfa-140d-c19b392a53ae"
+                  },
+                  "name": "removeChild()",
+                  "headId": "removeChild()",
+                  "interface": "removeChild(parent: any, oldChild: any): void"
+                },
+                {
+                  "id": "39043a48-0d2a-b1cc-6411-68651930335a",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "removeClass()"
+                  },
+                  "text": {
+                    "id": "7655c807-ec4c-4e3f-b0f3-f5e90f01e41c"
+                  },
+                  "description": {
+                    "id": "4d4d823f-7460-eaf6-4b1f-4639e59ee31a"
+                  },
+                  "name": "removeClass()",
+                  "headId": "removeClass()",
+                  "interface": "removeClass(el: any, name: string): void"
+                },
+                {
+                  "id": "c4375191-8f2c-3eee-6df6-abe386c13861",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "removeStyle()"
+                  },
+                  "text": {
+                    "id": "8568f5de-3f02-597a-5caa-d5958f123ca5"
+                  },
+                  "description": {
+                    "id": "a6e8c022-642d-c1b0-ea8f-9aadabd40806"
+                  },
+                  "name": "removeStyle()",
+                  "headId": "removeStyle()",
+                  "interface": "removeStyle(el: any, style: string, flags?: RendererStyleFlags2): void"
+                },
+                {
+                  "id": "86c107ff-4b92-8245-8f71-9845962063e9",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "selectRootElement()"
+                  },
+                  "text": {
+                    "id": "230faa21-294f-15b6-5b5e-e3e5184bc07f"
+                  },
+                  "description": {
+                    "id": "596c32a4-182d-d68d-f6b6-8b574d747601"
+                  },
+                  "name": "selectRootElement()",
+                  "headId": "selectRootElement()",
+                  "interface": "selectRootElement(selectorOrNode: string | any): any"
+                },
+                {
                   "id": "dae98f4e-b601-9d5e-8d53-2491396b5d96",
                   "type": "interface-option",
                   "head": {
@@ -15456,52 +15540,20 @@
                   }
                 },
                 {
-                  "id": "2397b1a0-f171-cdc2-1c2a-d3cfe49d2fc7",
+                  "id": "3a361f29-c96a-23cc-6e13-c98951a3d602",
                   "type": "interface-option",
                   "head": {
-                    "text": "removeAttribute()"
+                    "text": "setProperty()"
                   },
                   "text": {
-                    "id": "e19dd62e-e999-0b17-5786-d2ebabfaa600"
+                    "id": "86c4be97-7464-275e-5c02-b3735209e259"
                   },
                   "description": {
-                    "id": "5640a475-e647-1086-8f80-a96ecefe8124"
+                    "id": "dd7216d0-3b58-e16f-b7d2-871b44a8068c"
                   },
-                  "name": "removeAttribute()",
-                  "headId": "removeAttribute()",
-                  "interface": "removeAttribute(el: any, name: string, namespace?: string | null): void"
-                },
-                {
-                  "id": "cca30cb8-b640-8aa1-bad0-004ae3dc845f",
-                  "type": "interface-option",
-                  "head": {
-                    "text": "addClass()"
-                  },
-                  "text": {
-                    "id": "a89f47cb-20f6-1fc0-2aea-312b7e759af5"
-                  },
-                  "description": {
-                    "id": "bc325166-727f-a71b-6cbe-65c8c0be21df"
-                  },
-                  "name": "addClass()",
-                  "headId": "addClass()",
-                  "interface": "addClass(el: any, name: string): void"
-                },
-                {
-                  "id": "39043a48-0d2a-b1cc-6411-68651930335a",
-                  "type": "interface-option",
-                  "head": {
-                    "text": "removeClass()"
-                  },
-                  "text": {
-                    "id": "7655c807-ec4c-4e3f-b0f3-f5e90f01e41c"
-                  },
-                  "description": {
-                    "id": "4d4d823f-7460-eaf6-4b1f-4639e59ee31a"
-                  },
-                  "name": "removeClass()",
-                  "headId": "removeClass()",
-                  "interface": "removeClass(el: any, name: string): void"
+                  "name": "setProperty()",
+                  "headId": "setProperty()",
+                  "interface": "setProperty(el: any, name: string, value: any): void"
                 },
                 {
                   "id": "ae3d1d76-dcf0-d8f6-7082-a54fc5cb1c31",
@@ -15520,38 +15572,6 @@
                   "interface": "setStyle(el: any, style: string, value: any, flags?: RendererStyleFlags2): void"
                 },
                 {
-                  "id": "c4375191-8f2c-3eee-6df6-abe386c13861",
-                  "type": "interface-option",
-                  "head": {
-                    "text": "removeStyle()"
-                  },
-                  "text": {
-                    "id": "8568f5de-3f02-597a-5caa-d5958f123ca5"
-                  },
-                  "description": {
-                    "id": "a6e8c022-642d-c1b0-ea8f-9aadabd40806"
-                  },
-                  "name": "removeStyle()",
-                  "headId": "removeStyle()",
-                  "interface": "removeStyle(el: any, style: string, flags?: RendererStyleFlags2): void"
-                },
-                {
-                  "id": "3a361f29-c96a-23cc-6e13-c98951a3d602",
-                  "type": "interface-option",
-                  "head": {
-                    "text": "setProperty()"
-                  },
-                  "text": {
-                    "id": "86c4be97-7464-275e-5c02-b3735209e259"
-                  },
-                  "description": {
-                    "id": "dd7216d0-3b58-e16f-b7d2-871b44a8068c"
-                  },
-                  "name": "setProperty()",
-                  "headId": "setProperty()",
-                  "interface": "setProperty(el: any, name: string, value: any): void"
-                },
-                {
                   "id": "e9f83c7c-a16f-9213-fbde-8d500495adae",
                   "type": "interface-option",
                   "head": {
@@ -15566,26 +15586,6 @@
                   "name": "setValue()",
                   "headId": "setValue()",
                   "interface": "setValue(node: any, value: string): void"
-                },
-                {
-                  "id": "fddbe8c8-dde4-46c3-7062-b7b839ad2e1f",
-                  "type": "interface-option",
-                  "head": {
-                    "text": "listen()"
-                  },
-                  "text": {
-                    "id": "70ea5c4b-23ed-bd36-a2fa-7b3d1961dd5f"
-                  },
-                  "description": {
-                    "id": "72e09b27-7860-5bb5-c3a8-5972e06dc02f"
-                  },
-                  "name": "listen()",
-                  "headId": "listen()",
-                  "interface": "listen(target: 'window' | 'document' | 'body' | any, eventName: string, callback: (event: any) => boolean | void): () => void",
-                  "showAdditional": true,
-                  "additional": {
-                    "id": "42a15d21-97bf-4efe-a172-ae8318e86924"
-                  }
                 }
               ],
               "title": {
@@ -15683,26 +15683,6 @@
                   }
                 },
                 {
-                  "id": "2a199363-c582-5f9d-22f6-0e5281175144",
-                  "type": "interface-option",
-                  "head": {
-                    "text": "sanitize()"
-                  },
-                  "text": {
-                    "id": "747ffc09-8082-71ff-5cea-b7e01af5518e"
-                  },
-                  "description": {
-                    "id": "e5fe9446-77e8-a84d-9802-7a8b5bbea8e8"
-                  },
-                  "name": "sanitize()",
-                  "headId": "sanitize()",
-                  "interface": "sanitize(context: SecurityContext, value: SafeValue | string | null): string | null",
-                  "showAdditional": true,
-                  "additional": {
-                    "id": "1c6d9a56-7a4c-d0ad-20c2-544446cdeaf6"
-                  }
-                },
-                {
                   "id": "94ebbb7b-0259-953a-b77c-6439f4885f92",
                   "type": "interface-option",
                   "head": {
@@ -15723,23 +15703,23 @@
                   }
                 },
                 {
-                  "id": "9604799c-7ab4-4ede-0b74-11e1d4ab39d4",
+                  "id": "fb1f7d9b-144d-d94b-9b41-0281fe7878b8",
                   "type": "interface-option",
                   "head": {
-                    "text": "bypassSecurityTrustStyle()"
+                    "text": "bypassSecurityTrustResourceUrl()"
                   },
                   "text": {
-                    "id": "ff535153-c420-4c37-315f-5018b415814e"
+                    "id": "ca43cbe1-f522-8782-24fe-9d0f78d5dd11"
                   },
                   "description": {
-                    "id": "d594c0c7-afcb-41ae-7841-5cd388dde5d4"
+                    "id": "03d9f637-f736-dbec-4137-8d3671fb404a"
                   },
-                  "name": "bypassSecurityTrustStyle()",
-                  "headId": "bypassSecurityTrustStyle()",
-                  "interface": "bypassSecurityTrustStyle(value: string): SafeStyle",
+                  "name": "bypassSecurityTrustResourceUrl()",
+                  "headId": "bypassSecurityTrustResourceUrl()",
+                  "interface": "bypassSecurityTrustResourceUrl(value: string): SafeResourceUrl",
                   "showAdditional": true,
                   "additional": {
-                    "id": "f0d653c3-1ce4-5e03-c8f9-0fd142be11f0"
+                    "id": "8e630932-d55c-93c4-45d2-afbf63f0745f"
                   }
                 },
                 {
@@ -15763,6 +15743,26 @@
                   }
                 },
                 {
+                  "id": "9604799c-7ab4-4ede-0b74-11e1d4ab39d4",
+                  "type": "interface-option",
+                  "head": {
+                    "text": "bypassSecurityTrustStyle()"
+                  },
+                  "text": {
+                    "id": "ff535153-c420-4c37-315f-5018b415814e"
+                  },
+                  "description": {
+                    "id": "d594c0c7-afcb-41ae-7841-5cd388dde5d4"
+                  },
+                  "name": "bypassSecurityTrustStyle()",
+                  "headId": "bypassSecurityTrustStyle()",
+                  "interface": "bypassSecurityTrustStyle(value: string): SafeStyle",
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "f0d653c3-1ce4-5e03-c8f9-0fd142be11f0"
+                  }
+                },
+                {
                   "id": "cfe2f823-2b2b-95a7-8d85-2b75b3696bbd",
                   "type": "interface-option",
                   "head": {
@@ -15783,23 +15783,23 @@
                   }
                 },
                 {
-                  "id": "fb1f7d9b-144d-d94b-9b41-0281fe7878b8",
+                  "id": "2a199363-c582-5f9d-22f6-0e5281175144",
                   "type": "interface-option",
                   "head": {
-                    "text": "bypassSecurityTrustResourceUrl()"
+                    "text": "sanitize()"
                   },
                   "text": {
-                    "id": "ca43cbe1-f522-8782-24fe-9d0f78d5dd11"
+                    "id": "747ffc09-8082-71ff-5cea-b7e01af5518e"
                   },
                   "description": {
-                    "id": "03d9f637-f736-dbec-4137-8d3671fb404a"
+                    "id": "e5fe9446-77e8-a84d-9802-7a8b5bbea8e8"
                   },
-                  "name": "bypassSecurityTrustResourceUrl()",
-                  "headId": "bypassSecurityTrustResourceUrl()",
-                  "interface": "bypassSecurityTrustResourceUrl(value: string): SafeResourceUrl",
+                  "name": "sanitize()",
+                  "headId": "sanitize()",
+                  "interface": "sanitize(context: SecurityContext, value: SafeValue | string | null): string | null",
                   "showAdditional": true,
                   "additional": {
-                    "id": "8e630932-d55c-93c4-45d2-afbf63f0745f"
+                    "id": "1c6d9a56-7a4c-d0ad-20c2-544446cdeaf6"
                   }
                 }
               ],
