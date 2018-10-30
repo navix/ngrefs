@@ -39,3 +39,29 @@
     </app-message>
   </ui-form-field>
 </form>
+
+<div>
+  <button *ngIf="!entry.hintEntry" uiButton
+          size="sm"
+          (click)="initHint()">
+    Init hint
+  </button>&nbsp;
+  <button *ngIf="!entry.tutorialsEntry"
+          uiButton
+          size="sm"
+          (click)="initTutorials()">
+    Init tutorials
+  </button>
+</div>
+
+<app-entry *ngIf="entry.hintEntry"
+           [entry]="entry.hintEntry"
+           [showTypeSelector]="false"
+           [showControls]="false">
+</app-entry>
+
+<app-entry *ngIf="entry.tutorialsEntry"
+           [entry]="entry.tutorialsEntry"
+           [showTypeSelector]="false"
+           [showControls]="false">
+</app-entry>

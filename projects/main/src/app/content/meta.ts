@@ -101,6 +101,8 @@ export interface ContentInterfaceOptionEntry extends ContentEntry {
   description?: string;
   showAdditional?: boolean;
   additional?: string;
+  hintEntry?: ContentHintEntry;
+  tutorialsEntry?: ContentTutorialsEntry;
 }
 
 export interface ContentTocEntry extends ContentEntry {

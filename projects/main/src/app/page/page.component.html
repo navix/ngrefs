@@ -41,6 +41,14 @@
       </ng-container>
       <ng-container *ngSwitchCase="'interface-option'">
         <main-interface-option-entry [entry]="entry" class="entry"></main-interface-option-entry>
+        <main-hint-entry *ngIf="showHints && entry.hintEntry"
+                         [entry]="entry.hintEntry"
+                         class="entry">
+        </main-hint-entry>
+        <main-tutorials-entry *ngIf="showHints && entry.tutorialsEntry"
+                              [entry]="entry.tutorialsEntry"
+                              class="entry">
+        </main-tutorials-entry>
       </ng-container>
       <ng-container *ngSwitchCase="'demo'">
         <main-demo-entry [entry]="entry" class="entry -wide"></main-demo-entry>
