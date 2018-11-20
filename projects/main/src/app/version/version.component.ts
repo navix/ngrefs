@@ -35,11 +35,6 @@ export class VersionComponent implements OnInit {
     private cdr: ChangeDetectorRef,
     private seo: SeoService,
   ) {
-    this.router.events.subscribe(e => {
-      if (e instanceof NavigationEnd) {
-        console.log('NAV END EV', e);
-      }
-    });
   }
 
   ngOnInit() {

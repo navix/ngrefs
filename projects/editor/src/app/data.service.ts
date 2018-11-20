@@ -77,7 +77,7 @@ export class DataService {
   }
 
   logData() {
-    console.log('DATA', this.data);
+//    console.log('DATA', this.data);
   }
 
   delete(array: any, index: number) {

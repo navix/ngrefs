@@ -50,13 +50,11 @@ export class MessageTranslationComponent implements OnInit, OnChanges {
     const sourceLocale = this.pickLocale(this.message, this.source);
     if (sourceLocale) {
       const search = sourceLocale.text.trim();
-      console.log('SRCH', search);
       for (const message of this.messages) {
         if (message.id !== this.message.id) {
           const mSourceLocale = this.pickLocale(message, this.source);
           if (mSourceLocale) {
             if (search === mSourceLocale.text.trim()) {
-              console.log('SEARCH OK!!', search, mSourceLocale.text.trim());
               const toLocale = this.pickLocale(message, this.toLang);
               if (toLocale && toLocale.text) {
                 return toLocale.text;

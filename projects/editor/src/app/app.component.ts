@@ -32,7 +32,6 @@ export class AppComponent {
 
   save() {
     this.data.cleanUpMessages();
-    console.log('Data to save', this.data.data);
     const blob = new Blob(
       [JSON.stringify(this.data.data, null, 2)],
       {type: 'text/plain;charset=utf-8'},

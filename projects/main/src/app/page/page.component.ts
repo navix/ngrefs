@@ -85,7 +85,6 @@ export class PageComponent implements OnInit, OnDestroy {
   }
 
   private loadPage() {
-    console.log('LOAD PAGE');
     if (this.pageUrl) {
       this.page = this.sectionComponent.section.pages.find(p => p.url === this.pageUrl);
       if (this.page) {
