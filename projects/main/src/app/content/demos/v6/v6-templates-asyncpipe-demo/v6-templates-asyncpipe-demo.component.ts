@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { Observable, Observer } from 'rxjs';
+import { KitPlatformService } from '@ngx-kit/core';
+import { from, Observable, Observer } from 'rxjs';
 
 @Component({
   selector: 'main-v6-templates-asyncpipe-demo',
@@ -9,14 +10,18 @@ import { Observable, Observer } from 'rxjs';
 })
 export class V6TemplatesAsyncpipeDemoComponent implements OnInit {
 
-  time = new Observable<string>((observer: Observer<string>) => {
-    setInterval(() => observer.next(new Date().toString()), 1000);
-  });
+  time?: Observable<string>;
 
-  constructor() {
+  constructor(
+    private platform: KitPlatformService,
+  ) {
   }
 
   ngOnInit() {
+    this.time = this.platform.isBrowser()
+      ? new Observable<string>((observer: Observer<string>) => {
+        setInterval(() => observer.next(new Date().toString()), 1000);
+      })
+      : from([new Date().toString()]);
   }
-
 }
