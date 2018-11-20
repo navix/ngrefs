@@ -1,6 +1,7 @@
 import { enableProdMode, ValueProvider } from '@angular/core';
 import { renderModuleFactory } from '@angular/platform-server';
 import { REQUEST, RESPONSE } from '@nguniversal/express-engine/tokens';
+import { MonitClient } from '@nvxme/monit-client';
 
 import * as express from 'express';
 import { readFileSync } from 'fs';
@@ -13,6 +14,12 @@ import 'zone.js/dist/zone-node';
 const domino = require('domino');
 Object.assign(global, domino.impl);
 (global as any)['KeyboardEvent'] = domino.impl.Event;
+
+const monit = new MonitClient({
+  host: 'ws://monit.novyk.org/ws/client',
+  id: 'ngrefs-main',
+  token: 'a',
+});
 
 // Faster server renders w/ Prod mode (dev mode never needed)
 enableProdMode();
@@ -50,13 +57,13 @@ app.engine('html', (_, options, callback) => {
       // make req and response accessible when angular app runs on server
       <ValueProvider>{
         provide: REQUEST,
-        useValue: options.req
+        useValue: options.req,
       },
       <ValueProvider>{
         provide: RESPONSE,
         useValue: options.req.res,
       },
-    ]
+    ],
   }).then(html => {
     callback(null, html);
   });
