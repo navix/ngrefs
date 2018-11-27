@@ -1,32 +1,34 @@
-<main-section-nav *kitMq="{from: 'tablet', server: true}"
-                  [version]="version"
-                  [section]="section"
-                  class="static">
-</main-section-nav>
+<ng-container *ngIf="section">
+  <main-section-nav *kitMq="{from: 'tablet', server: true}"
+                    [version]="version"
+                    [section]="section"
+                    class="static">
+  </main-section-nav>
 
-<ng-container *kitMq="{until: 'tablet'}">
-  <button *ngIf="!displayNav"
-          class="menu-toggle"
-          title="Show menu"
-          (click)="displayNav = true">
-    <kit-icon name="menu" size="32px"></kit-icon>
-  </button>
-  <div class="mobile-header">
-    <span>{{ version.title }} References</span>
-    <span>/</span>
-    {{ section.title | msg }}
+  <ng-container *kitMq="{until: 'tablet'}">
+    <button *ngIf="!displayNav"
+            class="menu-toggle"
+            title="Show menu"
+            (click)="displayNav = true">
+      <kit-icon name="menu" size="32px"></kit-icon>
+    </button>
+    <div class="mobile-header">
+      <span>{{ version.title }} References</span>
+      <span>/</span>
+      {{ section.title | msg }}
+    </div>
+    <kit-modal (close)="displayNav = false">
+      <main-section-nav *kitOverlay="displayNav"
+                        class="side"
+                        [version]="version"
+                        [section]="section">
+      </main-section-nav>
+    </kit-modal>
+  </ng-container>
+
+  <div class="content">
+    <div class="content-wrapper">
+      <router-outlet></router-outlet>
+    </div>
   </div>
-  <kit-modal (close)="displayNav = false">
-    <main-section-nav *kitOverlay="displayNav"
-                      class="side"
-                      [version]="version"
-                      [section]="section">
-    </main-section-nav>
-  </kit-modal>
 </ng-container>
-
-<div class="content">
-  <div class="content-wrapper">
-    <router-outlet></router-outlet>
-  </div>
-</div>

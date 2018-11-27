@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { Error404Component } from './error404/error404.component';
 import { HomeComponent } from './home/home.component';
 import { PageComponent } from './page/page.component';
 import { SectionComponent } from './section/section/section.component';
@@ -9,6 +10,10 @@ const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
+  },
+  {
+    path: 'e404',
+    component: Error404Component,
   },
   {
     path: ':lang',
@@ -43,6 +48,10 @@ const routes: Routes = [
         ],
       },
     ],
+  },
+  {
+    path: '**',
+    redirectTo: '/e404',
   },
 ];
 

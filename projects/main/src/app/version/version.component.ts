@@ -1,7 +1,7 @@
 import { DOCUMENT } from '@angular/common';
 import { ChangeDetectorRef, Component, Inject, NgZone, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
-import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { AppComponent } from '../app.component';
 import { ContentMenu, ContentVersion } from '../content/meta';
 import { versions } from '../content/versions';
@@ -43,7 +43,11 @@ export class VersionComponent implements OnInit {
         this.lang = lang;
         this.seo.setLang(this.lang);
         this.version = versions.find(v => v.url === versionUrl);
-        this.seo.setAffix(`${this.version.title} References`);
+        if (this.version) {
+          this.seo.setAffix(`${this.version.title} References`);
+        } else {
+          this.router.navigate(['/e404']);
+        }
       });
   }
 

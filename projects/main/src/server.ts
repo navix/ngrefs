@@ -1,7 +1,8 @@
 import { enableProdMode, ValueProvider } from '@angular/core';
 import { renderModuleFactory } from '@angular/platform-server';
 import { REQUEST, RESPONSE } from '@nguniversal/express-engine/tokens';
-import { MonitClient } from '@nvxme/monit-client';
+import { extractExpressRequestData, MonitClient } from '@nvxme/monit-client';
+import { MonitRequest } from '@nvxme/monit-ng-client';
 
 import * as express from 'express';
 import { readFileSync } from 'fs';
@@ -18,7 +19,7 @@ Object.assign(global, domino.impl);
 const monit = new MonitClient({
   host: 'ws://monit.novyk.org/ws/client',
   id: 'ngrefs-main',
-  token: 'a',
+  token: process.env.MONIT_TOKEN || 'test',
 });
 
 // Faster server renders w/ Prod mode (dev mode never needed)
@@ -63,6 +64,10 @@ app.engine('html', (_, options, callback) => {
         provide: RESPONSE,
         useValue: options.req.res,
       },
+      <ValueProvider>{
+        provide: MonitRequest,
+        useValue: extractExpressRequestData(options.req),
+      }
     ],
   }).then(html => {
     callback(null, html);

@@ -59,9 +59,17 @@ export class SectionComponent implements OnInit, OnDestroy {
   }
 
   private loadSection() {
-    this.section = Object.values(this.version.sections)
-      .find(s => s.url === this.sectionUrl);
-    const title = extractMessage(this.version.messages, this.section.title, this.versionComponent.lang);
-    this.seo.setPrefix(title);
+    if (this.version) {
+      this.section = Object.values(this.version.sections)
+        .find(s => s.url === this.sectionUrl);
+      if (this.section) {
+        const title = extractMessage(this.version.messages, this.section.title, this.versionComponent.lang);
+        this.seo.setPrefix(title);
+      } else {
+        this.router.navigate(['/e404']);
+      }
+    } else {
+      this.router.navigate(['/e404']);
+    }
   }
 }
