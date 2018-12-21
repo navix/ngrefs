@@ -28,7 +28,7 @@
     "@angular/platform-server": "^7.0.1",
     "@angular/router": "^7.0.1",
     "@ngx-kit/core": "^7.1.2",
-    "@nvxme/monit-client": "^1.0.14",
+    "@nvxme/monit-client": "^2.0.1",
     "@nvxme/monit-ng-client": "^1.0.1",
     "@nvxme/ngx-md-render": "^1.0.0-alpha.5",
     "core-js": "^2.5.7",

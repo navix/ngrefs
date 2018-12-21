@@ -17,9 +17,11 @@ Object.assign(global, domino.impl);
 (global as any)['KeyboardEvent'] = domino.impl.Event;
 
 const monit = new MonitClient({
-  host: 'ws://monit.novyk.org/ws/client',
-  id: 'ngrefs-main',
-  token: process.env.MONIT_TOKEN || 'test',
+  project: 'Ngrefs',
+  from: 'Ngrefs Monit <monit@ngrefs.com>',
+  to: 'inavix@gmail.com',
+  mailgunDomain: process.env.MAILGUN_DOMAIN || '',
+  mailgunApiKey: process.env.MAILGUN_API_KEY || '',
 });
 
 // Faster server renders w/ Prod mode (dev mode never needed)
@@ -40,14 +42,6 @@ const {AppServerModuleNgFactory, LAZY_MODULE_MAP} = require('../../../dist/main-
 // Express Engine
 const {ngExpressEngine} = require('@nguniversal/express-engine');
 const {provideModuleMap} = require('@nguniversal/module-map-ngfactory-loader');
-
-// Our Universal express-engine (found @ https://github.com/angular/universal/tree/master/modules/express-engine)
-//app.engine('html', ngExpressEngine({
-//  bootstrap: AppServerModuleNgFactory,
-//  providers: [
-//    provideModuleMap(LAZY_MODULE_MAP),
-//  ],
-//}));
 
 app.engine('html', (_, options, callback) => {
   renderModuleFactory(AppServerModuleNgFactory, {
