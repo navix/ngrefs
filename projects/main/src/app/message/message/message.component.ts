@@ -1,8 +1,10 @@
-import { Component, HostBinding, Input, isDevMode, OnChanges, OnInit } from '@angular/core';
+import { Component, HostBinding, Input, isDevMode, OnChanges, OnDestroy, OnInit } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { uuid } from '@ngx-kit/core';
 import { MdRenderService } from '@nvxme/ngx-md-render';
+import { Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 import { ContentMessageRef } from '../../content/meta';
 import { VersionComponent } from '../../version/version.component';
 
@@ -11,7 +13,7 @@ import { VersionComponent } from '../../version/version.component';
   templateUrl: './message.component.html',
   styleUrls: ['./message.component.scss'],
 })
-export class MessageComponent implements OnInit, OnChanges {
+export class MessageComponent implements OnInit, OnChanges, OnDestroy {
   @Input() ref: ContentMessageRef;
 
   text: string;
@@ -23,6 +25,41 @@ export class MessageComponent implements OnInit, OnChanges {
   links = new Map<string, string>();
 
   lang: string;
+
+  private destroy = new Subject<void>();
+
+  constructor(
+    private md: MdRenderService,
+    private versionPage: VersionComponent,
+    private router: Router,
+    private route: ActivatedRoute,
+    private sanitizer: DomSanitizer,
+  ) {
+  }
+
+  ngOnInit() {
+    this.router.events
+      .pipe(takeUntil(this.destroy))
+      .subscribe((event) => {
+        if (event instanceof NavigationEnd) {
+          if (this.lang !== this.versionPage.lang) {
+            this.update();
+          }
+        }
+      });
+  }
+
+  ngOnChanges() {
+    this.update();
+  }
+
+  ngOnDestroy(): void {
+    this.destroy.next();
+  }
+
+  @HostBinding('class.-highlight') get highlightClass() {
+    return this.highlight;
+  }
 
   hrefReplacer = (str: any, href: any, offset: any, s: any): string => {
     if (href[0] === '.' || href[0] === '#') {
@@ -38,34 +75,7 @@ export class MessageComponent implements OnInit, OnChanges {
     } else {
       return `${str} target="_blank"`;
     }
-  }
-
-  constructor(
-    private md: MdRenderService,
-    private versionPage: VersionComponent,
-    private router: Router,
-    private route: ActivatedRoute,
-    private sanitizer: DomSanitizer,
-  ) {
-  }
-
-  ngOnInit() {
-    this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) {
-        if (this.lang !== this.versionPage.lang) {
-          this.update();
-        }
-      }
-    });
-  }
-
-  ngOnChanges() {
-    this.update();
-  }
-
-  @HostBinding('class.-highlight') get highlightClass() {
-    return this.highlight;
-  }
+  };
 
   clickHandler(event: any) {
     const path = event.path || (event.composedPath && event.composedPath());

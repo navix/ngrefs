@@ -1,7 +1,8 @@
 import { DOCUMENT } from '@angular/common';
 import { ChangeDetectorRef, Component, Inject, NgZone, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
-import { take } from 'rxjs/operators';
+import { Subject } from 'rxjs';
+import { take, takeUntil } from 'rxjs/operators';
 import { ContentPage, ContentVersion } from '../content/meta';
 import { versions } from '../content/versions';
 import { CrossLinkingService } from '../cross-linking.service';
@@ -19,6 +20,8 @@ export class PageComponent implements OnInit, OnDestroy {
   pageUrl: string;
 
   page?: ContentPage;
+
+  private destroy = new Subject<void>();
 
   constructor(
     private route: ActivatedRoute,
@@ -43,17 +46,20 @@ export class PageComponent implements OnInit, OnDestroy {
       this.loadPage();
     });
     // Handle anchor scrolling
-    this.router.events.subscribe(s => {
-      if (s instanceof NavigationEnd) {
-        this.loadPage();
-        this.scrollTo();
-      }
-    });
+    this.router.events
+      .pipe(takeUntil(this.destroy))
+      .subscribe(s => {
+        if (s instanceof NavigationEnd) {
+          this.loadPage();
+          this.scrollTo();
+        }
+      });
     this.scrollTo();
   }
 
   ngOnDestroy() {
     this.versionComponent.currentPageUrl = undefined;
+    this.destroy.next();
   }
 
   get section() {
@@ -90,8 +96,12 @@ export class PageComponent implements OnInit, OnDestroy {
       if (this.page) {
         const title = extractMessage(this.versionComponent.version.messages, this.page.title, this.versionComponent.lang);
         this.seo.setPage(title);
+        this.cdr.detectChanges();
+      } else {
+        this.router.navigate(['/e404']);
       }
-      this.cdr.detectChanges();
+    } else {
+      this.router.navigate(['/e404']);
     }
   }
 

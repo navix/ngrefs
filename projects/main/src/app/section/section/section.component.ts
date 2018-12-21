@@ -1,6 +1,8 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { KitPlatformService } from '@ngx-kit/core';
+import { Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 import { ContentSection } from '../../content/meta';
 import { extractMessage } from '../../message/extract-message';
 import { SeoService } from '../../seo.service';
@@ -20,6 +22,8 @@ export class SectionComponent implements OnInit, OnDestroy {
 
   displayNav = false;
 
+  private destroy = new Subject<void>();
+
   constructor(
     private route: ActivatedRoute,
     private router: Router,
@@ -38,7 +42,9 @@ export class SectionComponent implements OnInit, OnDestroy {
       this.sectionUrl = sectionUrl;
       this.loadSection();
     });
-    this.router.events.subscribe(e => {
+    this.router.events
+      .pipe(takeUntil(this.destroy))
+      .subscribe(e => {
       if (e instanceof NavigationEnd) {
         this.displayNav = false;
         this.loadSection();
@@ -48,6 +54,7 @@ export class SectionComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this.versionComponent.currentSectionUrl = undefined;
+    this.destroy.next();
   }
 
   get version() {
