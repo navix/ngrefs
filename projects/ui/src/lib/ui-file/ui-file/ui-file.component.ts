@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, ElementRef, EventEmitter, HostListener, Output } from '@angular/core';
 import { forkJoin, Observable } from 'rxjs';
 import { UiFileSelect } from '../meta';
+import { UiFileHolderDirective } from '../ui-file-holder/ui-file-holder.directive';
 
 @Component({
   // tslint:disable-next-line
@@ -16,8 +17,10 @@ export class UiFileComponent {
   @Output() error = new EventEmitter<string>();
 
   constructor(
+    private holder: UiFileHolderDirective,
     private elementRef: ElementRef,
   ) {
+    this.holder.file = this;
   }
 
   @HostListener('change', ['$event']) changeHandler(event: any) {
@@ -33,6 +36,10 @@ export class UiFileComponent {
 
   reset() {
     this.elementRef.nativeElement.value = '';
+  }
+
+  emitClick() {
+    this.elementRef.nativeElement.click();
   }
 
   private loadFile(file: File): Observable<UiFileSelect> {
