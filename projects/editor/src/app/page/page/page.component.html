@@ -1,14 +1,6 @@
 <div class="content-wrapper">
   <h1>Page</h1>
 
-  <div class="actions">
-    <button (click)="sortCommands()"
-            size="sm"
-            uiButton>
-      Sort commands/options A->Z
-    </button>
-  </div>
-
   <form #ngForm="ngForm"
         class="layout-aligned"
         uiForm>
@@ -26,7 +18,53 @@
              uiText>
       <span *kitFormError="'required'">Field is required</span>
     </ui-form-field>
+
+    <div class="autogen">
+      <h4>Generation</h4>
+      <ui-form-field label="Generation type">
+        <select [(ngModel)]="page.generationType"
+                name="generationType"
+                uiSelect>
+          <option value="none">None</option>
+          <option value="interface-options">Interface options</option>
+        </select>
+      </ui-form-field>
+      <div *ngIf="page.generationType === 'interface-options'">
+        <ui-form-field label="Generation file">
+          <input [(ngModel)]="page.generationFile"
+                 name="generationFile"
+                 uiText>
+        </ui-form-field>
+        <ui-form-field label="Generation entity name">
+          <input [(ngModel)]="page.generationName"
+                 name="generationName"
+                 uiText>
+        </ui-form-field>
+        <button uiButton size="sm" (click)="prepareGeneration()">Prepare generation</button>
+        <div *ngIf="generationLog.length > 0">
+          <h5>Changes</h5>
+          <div *ngFor="let log of generationLog"
+               class="generation-log">
+            <strong>[{{ log.action }}]: {{ log.name }}</strong><br>
+            <i *ngIf="log.action === 'remove'">Removing is always manual.<br></i>
+            <span *ngIf="log.interface?.old">{{ log.interface?.old }}<br></span>
+            <span *ngIf="log.interface?.new">{{ log.interface?.new }}<br></span>
+            <span *ngIf="log.description">{{ log.description }}<br></span>
+          </div>
+          <button uiButton size="sm" (click)="applyGeneration()">Apply</button>
+        </div>
+      </div>
+    </div>
   </form>
+
+  <div class="actions">
+    <h4>Actions</h4>
+    <button (click)="sortCommands()"
+            size="sm"
+            uiButton>
+      Sort commands/options A->Z
+    </button>
+  </div>
 
   <div>
     <div *ngFor="let entry of page.entries; let index = index">

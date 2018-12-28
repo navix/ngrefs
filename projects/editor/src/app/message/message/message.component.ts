@@ -3,6 +3,7 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { uuid } from '@ngx-kit/core';
 import { Subject } from 'rxjs';
 import { ContentMessage, ContentMessageRef } from '../../../../../main/src/app/content/meta';
+import { DataService } from '../../data.service';
 import { VersionComponent } from '../../version/version/version.component';
 
 @Component({
@@ -39,6 +40,7 @@ export class MessageComponent implements OnInit, ControlValueAccessor {
   constructor(
     private versionComponent: VersionComponent,
     private cdr: ChangeDetectorRef,
+    private data: DataService,
   ) {
   }
 
@@ -70,7 +72,6 @@ export class MessageComponent implements OnInit, ControlValueAccessor {
   writeValue(rawValue: any): void {
     this.state = rawValue;
     if (!this.state || !this.state.id) {
-      this.generateId();
       this.createMessage();
       this.stateChanges.next(this.state);
     }
@@ -94,20 +95,11 @@ export class MessageComponent implements OnInit, ControlValueAccessor {
     }
   }
 
-  private generateId() {
-    this.state = {id: uuid()};
-  }
-
   private createMessage() {
-    const message: ContentMessage = {
-      id: this.state.id,
-      context: this.context,
-      locales: [{
-        lang: 'en',
-        text: '',
-      }],
-    };
+    const message: ContentMessage = this.data.createMessage(this.context);
     this.versionComponent.version.messages.push(message);
+    this.state = {id: message.id};
+    this.stateChanges.next(this.state);
     return message;
   }
 }

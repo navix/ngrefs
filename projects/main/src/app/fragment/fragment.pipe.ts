@@ -7,6 +7,6 @@ import { sanitizeFragment } from './sinitize-fragment';
 })
 export class FragmentPipe implements PipeTransform {
   transform(value: string): string {
-    return sanitizeFragment(value);
+    return value ? sanitizeFragment(value) : '';
   }
 }

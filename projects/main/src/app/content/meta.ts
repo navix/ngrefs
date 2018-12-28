@@ -50,9 +50,14 @@ export interface ContentPage {
   id: string;
   url?: string;
   title?: ContentMessageRef;
+  generationType?: ContentGenerationType;
+  generationFile?: string;
+  generationName?: string;
   menuItems?: ContentMenuItem[];
   entries: (ContentEntry | ContentTextEntry | ContentCommandParamEntry | ContentHintEntry | ContentTutorialsEntry)[];
 }
+
+export type ContentGenerationType = 'none' | 'interface-options';
 
 export type ContentEntryType = 'text' | 'command-param' | 'hint' | 'tutorials' | 'interface-option' | 'toc' | 'demo';
 
@@ -98,9 +103,9 @@ export interface ContentInterfaceOptionEntry extends ContentEntry {
   type: 'interface-option';
   name: string;
   interface?: string;
-  description?: string;
+  description?: ContentMessageRef;
   showAdditional?: boolean;
-  additional?: string;
+  additional?: ContentMessageRef;
   hintEntry?: ContentHintEntry;
   tutorialsEntry?: ContentTutorialsEntry;
 }

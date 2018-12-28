@@ -13,7 +13,8 @@
     "main:docker:build": "docker build -t registry.gitlab.com/navix/dhub/ngrefs/main .",
     "main:docker:push": "docker push registry.gitlab.com/navix/dhub/ngrefs/main",
     "main:deploy": "npm run clean && npm run main:sitemap && npm run main:build && npm run main:server:build && npm run main:server:bundle && npm run main:docker:build && npm run main:docker:push",
-    "editor:serve": "ng run editor:serve"
+    "editor:serve": "ng run editor:serve",
+    "editor:docgen:angular": "docgen -p ./sources/angular/packages/ -o ./projects/editor/src/app/apis/angular.json -c ./docgen.json"
   },
   "private": true,
   "dependencies": {
@@ -47,6 +48,7 @@
     "@nguniversal/express-engine": "^7.0.2",
     "@nguniversal/module-map-ngfactory-loader": "^7.0.2",
     "@ngx-kit/collection": "^7.1.2",
+    "@ngx-kit/docgen": "github:ngx-kit/docgen-builds#test+7080e623",
     "@types/file-saver": "^1.3.1",
     "@types/jasmine": "^2.8.9",
     "@types/jasminewd2": "~2.0.5",

@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { isArray, isObject, uuid } from '@ngx-kit/core';
 import {
-  ContentEntry,
+  ContentEntry, ContentEntryType,
   ContentFile,
-  ContentMenuItem,
+  ContentMenuItem, ContentMessage,
   ContentPage,
   ContentSection,
   ContentVersion,
@@ -63,11 +63,11 @@ export class DataService {
     };
   }
 
-  createEntry(): ContentEntry {
+  createEntry<T extends ContentEntry>(type: ContentEntryType = 'text'): T {
     return {
       id: uuid(),
-      type: 'text',
-    };
+      type,
+    } as any;
   }
 
   createMenuItem(): ContentMenuItem {
@@ -88,6 +88,17 @@ export class DataService {
     if (to >= 0 && to < array.length) {
       array.splice(to, 0, array.splice(from, 1)[0]);
     }
+  }
+
+  createMessage(context: string, enText = ''): ContentMessage {
+    return {
+      id: uuid(),
+      context,
+      locales: [{
+        lang: 'en',
+        text: enText,
+      }],
+    };
   }
 
   cleanUpMessages() {
