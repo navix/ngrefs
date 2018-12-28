@@ -12092,7 +12092,7 @@
                   },
                   "name": "bootstrap",
                   "headId": "bootstrap",
-                  "interface": "bootstrap: Array<Type<any> | any[]>",
+                  "interface": "bootstrap?: Array<Type<any>|any[]>",
                   "showAdditional": false
                 },
                 {
@@ -12112,7 +12112,7 @@
                   },
                   "name": "declarations",
                   "headId": "declarations",
-                  "interface": "declarations: Array<Type<any> | any[]>",
+                  "interface": "declarations?: Array<Type<any>|any[]>",
                   "showAdditional": true
                 },
                 {
@@ -12132,7 +12132,7 @@
                   },
                   "name": "entryComponents",
                   "headId": "entryComponents",
-                  "interface": "entryComponents: Array<Type<any> | any[]>",
+                  "interface": "entryComponents?: Array<Type<any>|any[]>",
                   "showAdditional": true
                 },
                 {
@@ -12152,7 +12152,7 @@
                   },
                   "name": "exports",
                   "headId": "exports",
-                  "interface": "exports: Array<Type<any> | any[]>",
+                  "interface": "exports?: Array<Type<any>|any[]>",
                   "showAdditional": true
                 },
                 {
@@ -12172,7 +12172,7 @@
                   },
                   "name": "id",
                   "headId": "id",
-                  "interface": "id: string",
+                  "interface": "id?: string",
                   "showAdditional": false
                 },
                 {
@@ -12192,7 +12192,7 @@
                   },
                   "name": "imports",
                   "headId": "imports",
-                  "interface": "imports: Array<Type<any> | ModuleWithProviders | any[]>",
+                  "interface": "imports?: Array<Type<any>|ModuleWithProviders<{}>|any[]>",
                   "showAdditional": true
                 },
                 {
@@ -12212,7 +12212,7 @@
                   },
                   "name": "jit",
                   "headId": "jit",
-                  "interface": "jit: boolean",
+                  "interface": "jit?: true",
                   "showAdditional": true
                 },
                 {
@@ -12232,7 +12232,7 @@
                   },
                   "name": "providers",
                   "headId": "providers",
-                  "interface": "providers: Provider[]",
+                  "interface": "providers?: Provider[]",
                   "showAdditional": true
                 },
                 {
@@ -12252,14 +12252,17 @@
                   },
                   "name": "schemas",
                   "headId": "schemas",
-                  "interface": "schemas: Array<SchemaMetadata | any[]>",
+                  "interface": "schemas?: Array<SchemaMetadata|any[]>",
                   "showAdditional": true
                 }
               ],
               "title": {
                 "id": "7ccfe702-74d7-ba14-02f0-9e44205fb102"
               },
-              "url": "ng-module"
+              "url": "ng-module",
+              "generationType": "interface-options",
+              "generationFile": "core/src/metadata/ng_module.ts",
+              "generationName": "NgModule"
             },
             {
               "id": "d4f9ba36-36cf-8a0f-4682-5e852b1883e9",
@@ -12328,7 +12331,7 @@
                   },
                   "name": "exportAs",
                   "headId": "exportAs",
-                  "interface": "exportAs: string"
+                  "interface": "exportAs?: string"
                 },
                 {
                   "id": "115b9a2c-37c0-9ab8-1dc8-f9812d5e5b70",
@@ -12344,7 +12347,7 @@
                   },
                   "name": "host",
                   "headId": "host",
-                  "interface": "host: {     [key: string]: string; }",
+                  "interface": "host?: {[key: string]: string}",
                   "showAdditional": true,
                   "additional": {
                     "id": "1ffc5f97-8395-9812-350b-29da6c8ce348"
@@ -12364,7 +12367,7 @@
                   },
                   "name": "inputs",
                   "headId": "inputs",
-                  "interface": "inputs: string[]",
+                  "interface": "inputs?: string[]",
                   "showAdditional": true,
                   "additional": {
                     "id": "cf7e1c4f-3d0c-2c91-bda6-a305d451fec8"
@@ -12384,7 +12387,7 @@
                   },
                   "name": "jit",
                   "headId": "jit",
-                  "interface": "jit: boolean",
+                  "interface": "jit?: true",
                   "showAdditional": true,
                   "additional": {
                     "id": "cefded23-dddd-8a3b-03ef-784a9ab98485"
@@ -12404,7 +12407,7 @@
                   },
                   "name": "outputs",
                   "headId": "outputs",
-                  "interface": "outputs: string[]",
+                  "interface": "outputs?: string[]",
                   "showAdditional": true,
                   "additional": {
                     "id": "83d47472-adb6-b5e6-339e-d5bf580cd649"
@@ -12424,7 +12427,7 @@
                   },
                   "name": "providers",
                   "headId": "providers",
-                  "interface": "providers: Provider[]"
+                  "interface": "providers?: Provider[]"
                 },
                 {
                   "id": "16e75109-a5aa-e27b-b108-0852ba75211a",
@@ -12440,7 +12443,7 @@
                   },
                   "name": "queries",
                   "headId": "queries",
-                  "interface": "queries: {     [key: string]: any; }",
+                  "interface": "queries?: {[key: string]: any}",
                   "showAdditional": true,
                   "additional": {
                     "id": "ecff0bb4-4069-8c7e-cf3d-79586a20beaf"
@@ -12460,7 +12463,7 @@
                   },
                   "name": "selector",
                   "headId": "selector",
-                  "interface": "selector: string",
+                  "interface": "selector?: string",
                   "showAdditional": true,
                   "additional": {
                     "id": "708cfdaf-8614-6fbf-b921-c49dab73b9cb"
@@ -12470,7 +12473,10 @@
               "title": {
                 "id": "c82c5098-7542-0595-c8ab-e3053e9ee01e"
               },
-              "url": "directive"
+              "url": "directive",
+              "generationType": "interface-options",
+              "generationFile": "core/src/metadata/directives.ts",
+              "generationName": "Directive"
             },
             {
               "id": "f5bc0217-5164-3c62-bd92-96eb37e54095",
@@ -12539,7 +12545,7 @@
                   },
                   "name": "animations",
                   "headId": "animations",
-                  "interface": "animations: any[]"
+                  "interface": "animations?: any[]"
                 },
                 {
                   "id": "5a2e2f62-10f7-a115-bea3-f2909ef38100",
@@ -12555,7 +12561,7 @@
                   },
                   "name": "changeDetection",
                   "headId": "changeDetection",
-                  "interface": "changeDetection: ChangeDetectionStrategy",
+                  "interface": "changeDetection?: ChangeDetectionStrategy",
                   "showAdditional": true,
                   "additional": {
                     "id": "beb9cf88-f9b2-e603-7f8c-f610a1f2d6cc"
@@ -12575,7 +12581,7 @@
                   },
                   "name": "encapsulation",
                   "headId": "encapsulation",
-                  "interface": "encapsulation: ViewEncapsulation",
+                  "interface": "encapsulation?: ViewEncapsulation",
                   "showAdditional": true,
                   "additional": {
                     "id": "a29ba29b-16c3-bff1-b0d1-583bf35243a8"
@@ -12595,7 +12601,7 @@
                   },
                   "name": "entryComponents",
                   "headId": "entryComponents",
-                  "interface": "entryComponents: Array<Type<any> | any[]>"
+                  "interface": "entryComponents?: Array<Type<any>|any[]>"
                 },
                 {
                   "id": "dcfb685a-88d5-be19-9be2-193d8b4df2d2",
@@ -12611,7 +12617,7 @@
                   },
                   "name": "interpolation",
                   "headId": "interpolation",
-                  "interface": "interpolation: [string, string]"
+                  "interface": "interpolation?: [string, string]"
                 },
                 {
                   "id": "cf187f7c-0925-1e5f-080d-efd340af590b",
@@ -12627,7 +12633,7 @@
                   },
                   "name": "moduleId",
                   "headId": "moduleId",
-                  "interface": "moduleId: string"
+                  "interface": "moduleId?: string"
                 },
                 {
                   "id": "bbb4e7e7-2a41-d75d-c0f7-b2d948645c42",
@@ -12643,7 +12649,7 @@
                   },
                   "name": "preserveWhitespaces",
                   "headId": "preserveWhitespaces",
-                  "interface": "preserveWhitespaces: boolean"
+                  "interface": "preserveWhitespaces?: boolean"
                 },
                 {
                   "id": "68383538-a266-499e-f57d-70dd8c77df11",
@@ -12659,7 +12665,7 @@
                   },
                   "name": "styleUrls",
                   "headId": "styleUrls",
-                  "interface": "styleUrls: string[]"
+                  "interface": "styleUrls?: string[]"
                 },
                 {
                   "id": "37c84ce9-1f41-1302-86a6-4d95508f1d14",
@@ -12675,7 +12681,7 @@
                   },
                   "name": "styles",
                   "headId": "styles",
-                  "interface": "styles: string[]"
+                  "interface": "styles?: string[]"
                 },
                 {
                   "id": "3f3a16ab-2b6d-7a1d-d887-0632d01c09ca",
@@ -12691,7 +12697,7 @@
                   },
                   "name": "template",
                   "headId": "template",
-                  "interface": "template: string"
+                  "interface": "template?: string"
                 },
                 {
                   "id": "017e3c7c-8bd3-b8c0-7516-a04251ba773e",
@@ -12707,7 +12713,7 @@
                   },
                   "name": "templateUrl",
                   "headId": "templateUrl",
-                  "interface": "templateUrl: string"
+                  "interface": "templateUrl?: string"
                 },
                 {
                   "id": "4d988fea-6907-47e9-a636-b9f080b770fc",
@@ -12723,13 +12729,16 @@
                   },
                   "name": "viewProviders",
                   "headId": "viewProviders",
-                  "interface": "viewProviders: Provider[]"
+                  "interface": "viewProviders?: Provider[]"
                 }
               ],
               "title": {
                 "id": "2d79e10c-9535-4006-ee38-2b2ad447c8c1"
               },
-              "url": "component"
+              "url": "component",
+              "generationType": "interface-options",
+              "generationFile": "core/src/metadata/directives.ts",
+              "generationName": "Component"
             },
             {
               "id": "f626ff88-c7f9-2188-e343-0a177fa34f4e",
@@ -12794,7 +12803,7 @@
                   },
                   "name": "pure",
                   "headId": "pure",
-                  "interface": "pure: boolean",
+                  "interface": "pure?: boolean",
                   "showAdditional": true,
                   "additional": {
                     "id": "75b9e759-1323-1262-6c6f-fbf51f865e97"
@@ -12804,7 +12813,10 @@
               "title": {
                 "id": "c316c659-b5f8-8c3d-d281-554464bcf009"
               },
-              "url": "pipe"
+              "url": "pipe",
+              "generationType": "interface-options",
+              "generationFile": "core/src/metadata/directives.ts",
+              "generationName": "Pipe"
             },
             {
               "id": "0f7b7b16-a596-37ab-2c4e-aea6a01c4b45",
@@ -12863,7 +12875,10 @@
               "title": {
                 "id": "3973b593-270d-e358-aaa1-c9156703c557"
               },
-              "url": "injectable"
+              "url": "injectable",
+              "generationType": "interface-options",
+              "generationFile": "core/src/di/injectable.ts",
+              "generationName": "Injectable"
             },
             {
               "id": "84169e02-37a1-9bd6-5960-a1303455d23a",
@@ -12922,7 +12937,7 @@
                   },
                   "name": "bindingPropertyName",
                   "headId": "bindingPropertyName",
-                  "interface": "bindingPropertyName: string",
+                  "interface": "bindingPropertyName?: string",
                   "showAdditional": true,
                   "additional": {
                     "id": "5dc112d5-62fa-547d-28b2-8b7adb8a3092"
@@ -12932,7 +12947,10 @@
               "title": {
                 "id": "68727825-b753-76d9-9bb7-6149147257f0"
               },
-              "url": "input"
+              "url": "input",
+              "generationType": "interface-options",
+              "generationFile": "core/src/metadata/directives.ts",
+              "generationName": "Input"
             },
             {
               "id": "88bd94fe-05cc-f21d-2b49-9019162907ce",
@@ -12991,7 +13009,7 @@
                   },
                   "name": "bindingPropertyName",
                   "headId": "bindingPropertyName",
-                  "interface": "bindingPropertyName: string",
+                  "interface": "bindingPropertyName?: string",
                   "showAdditional": true,
                   "additional": {
                     "id": "3ccd7fe0-6541-a34c-ea66-88182da5e88b"
@@ -13001,7 +13019,10 @@
               "title": {
                 "id": "52be0e55-8a08-e768-12dc-41b99c46a877"
               },
-              "url": "output"
+              "url": "output",
+              "generationType": "interface-options",
+              "generationFile": "core/src/metadata/directives.ts",
+              "generationName": "Output"
             },
             {
               "id": "5a891eec-d6ae-8611-539d-ff0bf398a30d",
@@ -13054,12 +13075,38 @@
                       "lang": "en"
                     }
                   ]
+                },
+                {
+                  "id": "35abe6f6-19c1-0686-fe11-d37b443745e5",
+                  "type": "text",
+                  "head": {
+                    "id": "5ba8927b-00c5-4e20-1b11-114c984fd2c2"
+                  },
+                  "text": {
+                    "id": "967095fa-5326-4dfc-442f-cd1614fa9ef4"
+                  }
+                },
+                {
+                  "id": "b45f6d63-f03b-6d5a-8cb2-d7ff75b8b150",
+                  "type": "interface-option",
+                  "name": "hostPropertyName",
+                  "head": {
+                    "text": "hostPropertyName"
+                  },
+                  "headId": "hostPropertyName",
+                  "interface": "hostPropertyName?: string",
+                  "description": {
+                    "id": "791836da-cc8f-a3f5-49b8-d563d0bea0ec"
+                  }
                 }
               ],
               "title": {
                 "id": "b5f7f217-b733-0cfc-3eec-ea3c0461b871"
               },
-              "url": "host-binding"
+              "url": "host-binding",
+              "generationType": "interface-options",
+              "generationFile": "core/src/metadata/directives.ts",
+              "generationName": "HostBinding"
             },
             {
               "id": "1f55b67c-8bec-f0d9-f22a-438bc1618746",
@@ -13160,7 +13207,7 @@
                   },
                   "name": "eventName",
                   "headId": "eventName",
-                  "interface": "eventName: string"
+                  "interface": "eventName?: string"
                 },
                 {
                   "id": "33be5cb4-eb17-25be-52ea-c4ba33edb10d",
@@ -13176,13 +13223,16 @@
                   },
                   "name": "args",
                   "headId": "args",
-                  "interface": "args: string[]"
+                  "interface": "args?: string[]"
                 }
               ],
               "title": {
                 "id": "0efc485b-cfeb-63d5-2d41-0b169168571e"
               },
-              "url": "host-listener"
+              "url": "host-listener",
+              "generationType": "interface-options",
+              "generationFile": "core/src/metadata/directives.ts",
+              "generationName": "HostListener"
             },
             {
               "id": "1328b290-53ab-ef6a-73cc-d9b0a511e1e4",
@@ -13225,12 +13275,28 @@
                       "lang": "en"
                     }
                   ]
+                },
+                {
+                  "id": "819cf67f-f79f-f530-6e63-f9b5651abe7e",
+                  "type": "interface-option",
+                  "name": "attributeName",
+                  "head": {
+                    "text": "attributeName"
+                  },
+                  "headId": "attributeName",
+                  "interface": "attributeName?: string",
+                  "description": {
+                    "id": "a5bffba0-4bd4-3763-d94a-1fbc0756e7c9"
+                  }
                 }
               ],
               "title": {
                 "id": "7d021957-e4f7-5186-2325-560939bd6e98"
               },
-              "url": "attribute"
+              "url": "attribute",
+              "generationType": "interface-options",
+              "generationFile": "core/src/metadata/di.ts",
+              "generationName": "Attribute"
             },
             {
               "id": "04e30588-8dab-9d60-6615-8095ba5aa8eb",
@@ -13358,7 +13424,10 @@
               "title": {
                 "id": "49a157cf-b6f4-8c41-9eb6-38cf4db6ce47"
               },
-              "url": "content-children"
+              "url": "content-children",
+              "generationType": "none",
+              "generationFile": "",
+              "generationName": ""
             },
             {
               "id": "1a217c09-06eb-3b2b-a429-aed5cf1c9978",
@@ -13825,7 +13894,7 @@
                   "id": "694262ee-b1b7-8f67-97d4-5b315c10e5e0",
                   "type": "interface-option",
                   "head": {
-                    "text": "checkNoChanges()"
+                    "text": "checkNoChanges"
                   },
                   "text": {
                     "id": "809f3928-4ad7-3082-97f7-fe20ad74c64a"
@@ -13833,8 +13902,8 @@
                   "description": {
                     "id": "fa22cd26-5cbf-f3e2-7a66-fc1dd938a838"
                   },
-                  "name": "checkNoChanges()",
-                  "headId": "checkNoChanges()",
+                  "name": "checkNoChanges",
+                  "headId": "checkNoChanges",
                   "interface": "checkNoChanges(): void",
                   "showAdditional": true,
                   "additional": {
@@ -13845,7 +13914,7 @@
                   "id": "37e0784f-34b6-d87d-8532-d526cb27829d",
                   "type": "interface-option",
                   "head": {
-                    "text": "detach()"
+                    "text": "detach"
                   },
                   "text": {
                     "id": "3c1cd356-9134-7a44-076d-c19588bc11da"
@@ -13853,8 +13922,8 @@
                   "description": {
                     "id": "f3522249-2675-21ec-237f-49083f4547bf"
                   },
-                  "name": "detach()",
-                  "headId": "detach()",
+                  "name": "detach",
+                  "headId": "detach",
                   "interface": "detach(): void",
                   "showAdditional": true,
                   "additional": {
@@ -13865,7 +13934,7 @@
                   "id": "772b4197-9cb9-66d5-d7c6-4768af372b1f",
                   "type": "interface-option",
                   "head": {
-                    "text": "detectChanges()"
+                    "text": "detectChanges"
                   },
                   "text": {
                     "id": "d1596867-3ac8-0043-8908-77caef049d7d"
@@ -13873,15 +13942,15 @@
                   "description": {
                     "id": "ea19a062-20c6-e9ca-51ff-e520dbe94869"
                   },
-                  "name": "detectChanges()",
-                  "headId": "detectChanges()",
+                  "name": "detectChanges",
+                  "headId": "detectChanges",
                   "interface": "detectChanges(): void"
                 },
                 {
                   "id": "b3179f90-7912-d6cb-cf8e-6045680aefa2",
                   "type": "interface-option",
                   "head": {
-                    "text": "markForCheck()"
+                    "text": "markForCheck"
                   },
                   "text": {
                     "id": "368afe1b-2cee-852c-e4a2-836906eae2fe"
@@ -13889,8 +13958,8 @@
                   "description": {
                     "id": "858f37b6-3cbc-64cf-592d-bbeb9265dfa4"
                   },
-                  "name": "markForCheck()",
-                  "headId": "markForCheck()",
+                  "name": "markForCheck",
+                  "headId": "markForCheck",
                   "interface": "markForCheck(): void",
                   "showAdditional": true,
                   "additional": {
@@ -13901,7 +13970,7 @@
                   "id": "15342f05-ffd6-71c2-fd53-00e40cbe55a6",
                   "type": "interface-option",
                   "head": {
-                    "text": "reattach()"
+                    "text": "reattach"
                   },
                   "text": {
                     "id": "82061661-708d-41ff-ebe8-d61fec57042d"
@@ -13909,15 +13978,18 @@
                   "description": {
                     "id": "6b94dcd3-d933-d9ea-c788-317b803cd749"
                   },
-                  "name": "reattach()",
-                  "headId": "reattach()",
+                  "name": "reattach",
+                  "headId": "reattach",
                   "interface": "reattach(): void"
                 }
               ],
               "title": {
                 "id": "d83341b5-20c4-2fce-75a0-286b6650f530"
               },
-              "url": "change-detector-ref"
+              "url": "change-detector-ref",
+              "generationType": "interface-options",
+              "generationFile": "core/src/change_detection/change_detector_ref.ts",
+              "generationName": "ChangeDetectorRef"
             },
             {
               "id": "294a9573-a0da-0e1f-e877-e417539ecdfa",
@@ -14022,7 +14094,10 @@
               "title": {
                 "id": "fdabe440-b102-62fb-a2fc-cba66bacc665"
               },
-              "url": "injection-token"
+              "url": "injection-token",
+              "generationType": "none",
+              "generationFile": "",
+              "generationName": ""
             },
             {
               "id": "56bb53be-d88a-fed8-67fc-56520800641e",
@@ -14927,7 +15002,7 @@
                   "id": "8e891ae7-d259-ee55-feb9-234848a0ef3e",
                   "type": "text",
                   "head": {
-                    "id": "79ee8cdb-d5c9-9abe-8a62-1b65f55e07b8"
+                    "id": "adb30ecf-a786-8deb-34bc-59a7024f116f"
                   },
                   "text": {
                     "id": "cabf3840-d9fb-e390-162f-4d51e3d32b3e"
@@ -14970,7 +15045,7 @@
                   "id": "d0cfa05d-2d97-a89f-b0f0-38725cb92937",
                   "type": "text",
                   "head": {
-                    "id": "8ebf4199-2f45-1ee3-033b-b59568198b63"
+                    "id": "eb5c9632-d641-c020-342a-4c29e17f54e9"
                   },
                   "text": {
                     "id": "59ff650b-c2bf-9260-d09d-dbfe65b70bbf"
@@ -14984,16 +15059,6 @@
                   },
                   "text": {
                     "id": "f27e5b70-0ab7-a76a-c273-451383b0883d"
-                  }
-                },
-                {
-                  "id": "e0e17db8-adb0-9a22-de92-1b8a6ba49016",
-                  "type": "text",
-                  "head": {
-                    "id": "ee16d066-672d-e768-c594-ee303e50f70b"
-                  },
-                  "text": {
-                    "id": "57749c6c-5747-7b53-33f1-e6ef91e5fc77"
                   }
                 },
                 {
@@ -15112,7 +15177,7 @@
                   "id": "7d654bd0-be36-8db5-33dd-5a5fba6527e6",
                   "type": "interface-option",
                   "head": {
-                    "text": "run()"
+                    "text": "run"
                   },
                   "text": {
                     "id": "08a4b1d8-d82f-d003-0466-2126155af8d6"
@@ -15120,9 +15185,9 @@
                   "description": {
                     "id": "6ef18bba-10a1-ab24-2277-74be46bf4b0b"
                   },
-                  "name": "run()",
-                  "headId": "run()",
-                  "interface": "run<T>(fn: (...args: any[]) => T, applyThis?: any, applyArgs?: any[]): T",
+                  "name": "run",
+                  "headId": "run",
+                  "interface": "run(fn: (...args: any[]) => T, applyThis?: any, applyArgs?: any[]): T",
                   "showAdditional": true,
                   "additional": {
                     "id": "4f99a00d-579a-1dc4-b58f-b1cbb24a23ad"
@@ -15132,7 +15197,7 @@
                   "id": "df540991-1ac3-2a08-4c5b-38b6bb3d8f53",
                   "type": "interface-option",
                   "head": {
-                    "text": "runGuarded()"
+                    "text": "runGuarded"
                   },
                   "text": {
                     "id": "ee58eb4e-7f79-80da-69c6-d29649326f50"
@@ -15140,15 +15205,15 @@
                   "description": {
                     "id": "e8b9d8e2-d153-7856-f624-750960f7b4de"
                   },
-                  "name": "runGuarded()",
-                  "headId": "runGuarded()",
-                  "interface": "runGuarded()"
+                  "name": "runGuarded",
+                  "headId": "runGuarded",
+                  "interface": "runGuarded(fn: (...args: any[]) => T, applyThis?: any, applyArgs?: any[]): T"
                 },
                 {
                   "id": "84858152-da55-2d74-bad3-aaf04b0ed460",
                   "type": "interface-option",
                   "head": {
-                    "text": "runOutsideAngular()"
+                    "text": "runOutsideAngular"
                   },
                   "text": {
                     "id": "0660f795-1445-40d8-9dce-01a52f854c16"
@@ -15156,9 +15221,9 @@
                   "description": {
                     "id": "0225f2ca-509a-eaed-3d1d-57a4ce707549"
                   },
-                  "name": "runOutsideAngular()",
-                  "headId": "runOutsideAngular()",
-                  "interface": "runOutsideAngular<T>(fn: (...args: any[]) => T): T",
+                  "name": "runOutsideAngular",
+                  "headId": "runOutsideAngular",
+                  "interface": "runOutsideAngular(fn: (...args: any[]) => T): T",
                   "showAdditional": true,
                   "additional": {
                     "id": "9f82520b-6011-6512-3b4e-e15c6b0a7a01"
@@ -15168,7 +15233,7 @@
                   "id": "fb9e519d-b81a-b575-0cab-6d3316826985",
                   "type": "interface-option",
                   "head": {
-                    "text": "runTask()"
+                    "text": "runTask"
                   },
                   "text": {
                     "id": "5dc7854e-2ddb-2b44-7e92-fea2178cb19c"
@@ -15176,29 +15241,61 @@
                   "description": {
                     "id": "763e8649-b99a-3526-9c14-f11b74b86d49"
                   },
-                  "name": "runTask()",
-                  "headId": "runTask()",
-                  "interface": "runTask<T>(fn: (...args: any[]) => T, applyThis?: any, applyArgs?: any[], name?: string): T",
+                  "name": "runTask",
+                  "headId": "runTask",
+                  "interface": "runTask(fn: (...args: any[]) => T, applyThis?: any, applyArgs?: any[], name?: string): T",
                   "showAdditional": true,
                   "additional": {
                     "id": "cc88c04a-d8a4-6edb-ed69-d9bc7faedca1"
                   }
                 },
                 {
-                  "id": "083e50bd-269f-d953-d7cf-eaa70d526477",
-                  "type": "text",
+                  "id": "1bd561a1-ecda-329a-6ab8-4891ddac06d3",
+                  "type": "interface-option",
+                  "name": "isInAngularZone",
                   "head": {
-                    "id": "128761c8-5620-b346-02fc-6fb05b2e57d1"
+                    "text": "isInAngularZone"
                   },
-                  "text": {
-                    "id": "1f015c9f-3b09-ecb6-2f3b-f7a0c881af9a"
+                  "headId": "isInAngularZone",
+                  "interface": "static isInAngularZone(): boolean",
+                  "description": {
+                    "id": "5e15bd86-7cbf-c09b-4f70-181c70521a68"
+                  }
+                },
+                {
+                  "id": "317e4e88-a2df-2b76-71f3-98d2fe43e439",
+                  "type": "interface-option",
+                  "name": "assertInAngularZone",
+                  "head": {
+                    "text": "assertInAngularZone"
+                  },
+                  "headId": "assertInAngularZone",
+                  "interface": "static assertInAngularZone(): void",
+                  "description": {
+                    "id": "a6aa4173-5e18-8efd-d1a9-d82bfc0b5108"
+                  }
+                },
+                {
+                  "id": "4807d5dc-f721-2630-8f3e-789996e4fdcf",
+                  "type": "interface-option",
+                  "name": "assertNotInAngularZone",
+                  "head": {
+                    "text": "assertNotInAngularZone"
+                  },
+                  "headId": "assertNotInAngularZone",
+                  "interface": "static assertNotInAngularZone(): void",
+                  "description": {
+                    "id": "6c127047-c796-a0c5-6f3b-b0225fd2e5d4"
                   }
                 }
               ],
               "title": {
                 "id": "59cb52a3-8c3a-8249-b4f2-76441363ad70"
               },
-              "url": "ng-zone"
+              "url": "ng-zone",
+              "generationType": "interface-options",
+              "generationFile": "core/src/zone/ng_zone.ts",
+              "generationName": "NgZone"
             },
             {
               "id": "11baf519-b274-048a-6bb6-95d589329a12",
@@ -15207,7 +15304,7 @@
                   "id": "40e481f0-7c35-8d5f-13ee-36c3c084e393",
                   "type": "text",
                   "head": {
-                    "id": "70571069-0994-374b-8367-e232a52a6b42"
+                    "id": "2f0ec070-3722-6c52-7706-f53ba6877a97"
                   },
                   "text": {
                     "id": "8e834b8d-9c5d-eed9-fe54-3a58d2c1a231"
@@ -15240,16 +15337,6 @@
                   ]
                 },
                 {
-                  "id": "5f00e8f2-5916-e1fd-5670-cb1b6ea5e5e1",
-                  "type": "text",
-                  "head": {
-                    "id": "0373955f-177b-de88-665c-de0d7e455f8f"
-                  },
-                  "text": {
-                    "id": "7c1e2bbd-d804-cf7b-1e9f-c20e5ccd99be"
-                  }
-                },
-                {
                   "id": "9eeb3ca6-5af4-bdd9-9e35-148a335fa66e",
                   "type": "toc",
                   "head": {
@@ -15263,7 +15350,7 @@
                   "id": "cca30cb8-b640-8aa1-bad0-004ae3dc845f",
                   "type": "interface-option",
                   "head": {
-                    "text": "addClass()"
+                    "text": "addClass"
                   },
                   "text": {
                     "id": "a89f47cb-20f6-1fc0-2aea-312b7e759af5"
@@ -15271,15 +15358,15 @@
                   "description": {
                     "id": "bc325166-727f-a71b-6cbe-65c8c0be21df"
                   },
-                  "name": "addClass()",
-                  "headId": "addClass()",
+                  "name": "addClass",
+                  "headId": "addClass",
                   "interface": "addClass(el: any, name: string): void"
                 },
                 {
                   "id": "035e3089-b9f4-ecdd-c16d-63424128eb58",
                   "type": "interface-option",
                   "head": {
-                    "text": "appendChild()"
+                    "text": "appendChild"
                   },
                   "text": {
                     "id": "e73c63ae-e9a9-46b9-1f91-ba86b3711ca2"
@@ -15287,15 +15374,15 @@
                   "description": {
                     "id": "2458aaf8-d37c-31cb-1c77-5a1aac751306"
                   },
-                  "name": "appendChild()",
-                  "headId": "appendChild()",
+                  "name": "appendChild",
+                  "headId": "appendChild",
                   "interface": "appendChild(parent: any, newChild: any): void"
                 },
                 {
                   "id": "8cef4e23-7982-7bfb-6071-9705124ad239",
                   "type": "interface-option",
                   "head": {
-                    "text": "createComment()"
+                    "text": "createComment"
                   },
                   "text": {
                     "id": "b4b9b88e-9e97-d05b-d54a-5e96ef7bc4f6"
@@ -15303,15 +15390,15 @@
                   "description": {
                     "id": "2b5ad7f8-21dd-b55b-f03a-39245babe4e3"
                   },
-                  "name": "createComment()",
-                  "headId": "createComment()",
+                  "name": "createComment",
+                  "headId": "createComment",
                   "interface": "createComment(value: string): any"
                 },
                 {
                   "id": "9de51ae2-7648-5c56-d37b-04019f2499ab",
                   "type": "interface-option",
                   "head": {
-                    "text": "createElement()"
+                    "text": "createElement"
                   },
                   "text": {
                     "id": "2c3aa6b4-666b-12df-4ca9-a249c27165a3"
@@ -15319,9 +15406,9 @@
                   "description": {
                     "id": "6c400c41-1dde-b521-68d9-dbefbfeeef07"
                   },
-                  "name": "createElement()",
-                  "headId": "createElement()",
-                  "interface": "createElement(name: string, namespace?: string | null): any",
+                  "name": "createElement",
+                  "headId": "createElement",
+                  "interface": "createElement(name: string, namespace?: string|null): any",
                   "showAdditional": true,
                   "additional": {
                     "id": "9c04ec49-e2c0-37a0-8c54-3deafcbf4db8"
@@ -15331,7 +15418,7 @@
                   "id": "aac5f9bf-77e8-9cb8-4ce2-ef90ef29ee12",
                   "type": "interface-option",
                   "head": {
-                    "text": "createText()"
+                    "text": "createText"
                   },
                   "text": {
                     "id": "48397463-fdd7-00d5-6977-f8ac6a0b8c62"
@@ -15339,15 +15426,28 @@
                   "description": {
                     "id": "82960b3a-7479-159a-88bf-4c2573268691"
                   },
-                  "name": "createText()",
-                  "headId": "createText()",
+                  "name": "createText",
+                  "headId": "createText",
                   "interface": "createText(value: string): any"
+                },
+                {
+                  "id": "90a6c77c-bf72-c3e3-f73e-c29d4e5a0a74",
+                  "type": "interface-option",
+                  "name": "data",
+                  "head": {
+                    "text": "data"
+                  },
+                  "headId": "data",
+                  "interface": "get data(): {[key: string]: any}",
+                  "description": {
+                    "id": "e96bfc2a-dda1-10a4-05d3-63a6e0f01fc9"
+                  }
                 },
                 {
                   "id": "b8bba8c5-0f1a-64f5-d9ab-d930276d7d65",
                   "type": "interface-option",
                   "head": {
-                    "text": "destroy()"
+                    "text": "destroy"
                   },
                   "text": {
                     "id": "3cbed0e8-ee8f-49e2-1745-520d320d662c"
@@ -15355,15 +15455,28 @@
                   "description": {
                     "id": "8cd08e8d-e40d-667a-4b1c-2c323d1100fe"
                   },
-                  "name": "destroy()",
-                  "headId": "destroy()",
+                  "name": "destroy",
+                  "headId": "destroy",
                   "interface": "destroy(): void"
+                },
+                {
+                  "id": "453232d3-c8a1-d761-b5cf-3c2014941721",
+                  "type": "interface-option",
+                  "name": "destroyNode",
+                  "head": {
+                    "text": "destroyNode"
+                  },
+                  "headId": "destroyNode",
+                  "interface": "destroyNode: ((node: any) => void) | null",
+                  "description": {
+                    "id": "a748f033-15b8-40d4-5de6-be53e65740cb"
+                  }
                 },
                 {
                   "id": "6bc1d546-5031-6ae8-eb86-588782b256d9",
                   "type": "interface-option",
                   "head": {
-                    "text": "insertBefore()"
+                    "text": "insertBefore"
                   },
                   "text": {
                     "id": "0efe1688-a85b-7553-c131-95687545cb71"
@@ -15371,8 +15484,8 @@
                   "description": {
                     "id": "ca4885d5-52de-38c0-024a-0a29e017c2dd"
                   },
-                  "name": "insertBefore()",
-                  "headId": "insertBefore()",
+                  "name": "insertBefore",
+                  "headId": "insertBefore",
                   "interface": "insertBefore(parent: any, newChild: any, refChild: any): void",
                   "showAdditional": true,
                   "additional": {
@@ -15383,7 +15496,7 @@
                   "id": "fddbe8c8-dde4-46c3-7062-b7b839ad2e1f",
                   "type": "interface-option",
                   "head": {
-                    "text": "listen()"
+                    "text": "listen"
                   },
                   "text": {
                     "id": "70ea5c4b-23ed-bd36-a2fa-7b3d1961dd5f"
@@ -15391,9 +15504,9 @@
                   "description": {
                     "id": "72e09b27-7860-5bb5-c3a8-5972e06dc02f"
                   },
-                  "name": "listen()",
-                  "headId": "listen()",
-                  "interface": "listen(target: 'window' | 'document' | 'body' | any, eventName: string, callback: (event: any) => boolean | void): () => void",
+                  "name": "listen",
+                  "headId": "listen",
+                  "interface": "listen(target: 'window'|'document'|'body'|any, eventName: string, callback: (event: any) => boolean | void): () => void",
                   "showAdditional": true,
                   "additional": {
                     "id": "42a15d21-97bf-4efe-a172-ae8318e86924"
@@ -15403,7 +15516,7 @@
                   "id": "90f06618-1885-b3f4-69db-cfb98a05fbe8",
                   "type": "interface-option",
                   "head": {
-                    "text": "nextSibling()"
+                    "text": "nextSibling"
                   },
                   "text": {
                     "id": "c1083414-6540-4e67-2f06-33548b16da3a"
@@ -15411,8 +15524,8 @@
                   "description": {
                     "id": "31073aea-6260-36b5-b5fb-02a0017b0ef1"
                   },
-                  "name": "nextSibling()",
-                  "headId": "nextSibling()",
+                  "name": "nextSibling",
+                  "headId": "nextSibling",
                   "interface": "nextSibling(node: any): any",
                   "showAdditional": true,
                   "additional": {
@@ -15423,7 +15536,7 @@
                   "id": "63ffd18c-b4a4-d8a7-6a28-76652918a796",
                   "type": "interface-option",
                   "head": {
-                    "text": "parentNode()"
+                    "text": "parentNode"
                   },
                   "text": {
                     "id": "1dbf72b0-8d44-8952-2664-e77f0d1dfff5"
@@ -15431,8 +15544,8 @@
                   "description": {
                     "id": "e01aa7f6-3629-4852-5b50-80e15d213e6a"
                   },
-                  "name": "parentNode()",
-                  "headId": "parentNode()",
+                  "name": "parentNode",
+                  "headId": "parentNode",
                   "interface": "parentNode(node: any): any",
                   "showAdditional": true,
                   "additional": {
@@ -15443,7 +15556,7 @@
                   "id": "2397b1a0-f171-cdc2-1c2a-d3cfe49d2fc7",
                   "type": "interface-option",
                   "head": {
-                    "text": "removeAttribute()"
+                    "text": "removeAttribute"
                   },
                   "text": {
                     "id": "e19dd62e-e999-0b17-5786-d2ebabfaa600"
@@ -15451,15 +15564,15 @@
                   "description": {
                     "id": "5640a475-e647-1086-8f80-a96ecefe8124"
                   },
-                  "name": "removeAttribute()",
-                  "headId": "removeAttribute()",
-                  "interface": "removeAttribute(el: any, name: string, namespace?: string | null): void"
+                  "name": "removeAttribute",
+                  "headId": "removeAttribute",
+                  "interface": "removeAttribute(el: any, name: string, namespace?: string|null): void"
                 },
                 {
                   "id": "a68c7097-a7c1-84cf-a446-fa5b2dcaddaf",
                   "type": "interface-option",
                   "head": {
-                    "text": "removeChild()"
+                    "text": "removeChild"
                   },
                   "text": {
                     "id": "244d59f6-89be-7351-a246-c9af70324dd7"
@@ -15467,15 +15580,15 @@
                   "description": {
                     "id": "702a8ab3-1b11-acfa-140d-c19b392a53ae"
                   },
-                  "name": "removeChild()",
-                  "headId": "removeChild()",
+                  "name": "removeChild",
+                  "headId": "removeChild",
                   "interface": "removeChild(parent: any, oldChild: any): void"
                 },
                 {
                   "id": "39043a48-0d2a-b1cc-6411-68651930335a",
                   "type": "interface-option",
                   "head": {
-                    "text": "removeClass()"
+                    "text": "removeClass"
                   },
                   "text": {
                     "id": "7655c807-ec4c-4e3f-b0f3-f5e90f01e41c"
@@ -15483,15 +15596,15 @@
                   "description": {
                     "id": "4d4d823f-7460-eaf6-4b1f-4639e59ee31a"
                   },
-                  "name": "removeClass()",
-                  "headId": "removeClass()",
+                  "name": "removeClass",
+                  "headId": "removeClass",
                   "interface": "removeClass(el: any, name: string): void"
                 },
                 {
                   "id": "c4375191-8f2c-3eee-6df6-abe386c13861",
                   "type": "interface-option",
                   "head": {
-                    "text": "removeStyle()"
+                    "text": "removeStyle"
                   },
                   "text": {
                     "id": "8568f5de-3f02-597a-5caa-d5958f123ca5"
@@ -15499,15 +15612,15 @@
                   "description": {
                     "id": "a6e8c022-642d-c1b0-ea8f-9aadabd40806"
                   },
-                  "name": "removeStyle()",
-                  "headId": "removeStyle()",
+                  "name": "removeStyle",
+                  "headId": "removeStyle",
                   "interface": "removeStyle(el: any, style: string, flags?: RendererStyleFlags2): void"
                 },
                 {
                   "id": "86c107ff-4b92-8245-8f71-9845962063e9",
                   "type": "interface-option",
                   "head": {
-                    "text": "selectRootElement()"
+                    "text": "selectRootElement"
                   },
                   "text": {
                     "id": "230faa21-294f-15b6-5b5e-e3e5184bc07f"
@@ -15515,15 +15628,15 @@
                   "description": {
                     "id": "596c32a4-182d-d68d-f6b6-8b574d747601"
                   },
-                  "name": "selectRootElement()",
-                  "headId": "selectRootElement()",
-                  "interface": "selectRootElement(selectorOrNode: string | any): any"
+                  "name": "selectRootElement",
+                  "headId": "selectRootElement",
+                  "interface": "selectRootElement(selectorOrNode: string|any, preserveContent?: boolean): any"
                 },
                 {
                   "id": "dae98f4e-b601-9d5e-8d53-2491396b5d96",
                   "type": "interface-option",
                   "head": {
-                    "text": "setAttribute()"
+                    "text": "setAttribute"
                   },
                   "text": {
                     "id": "5f844aa7-665f-7083-b18f-d71679cbe0d5"
@@ -15531,9 +15644,9 @@
                   "description": {
                     "id": "cef8e5e3-a57d-52e4-eb72-f77a161fc310"
                   },
-                  "name": "setAttribute()",
-                  "headId": "setAttribute()",
-                  "interface": "setAttribute(el: any, name: string, value: string, namespace?: string | null): void",
+                  "name": "setAttribute",
+                  "headId": "setAttribute",
+                  "interface": "setAttribute(el: any, name: string, value: string, namespace?: string|null): void",
                   "showAdditional": false,
                   "additional": {
                     "id": "2d84e265-4852-bc38-2010-04c3aa438796"
@@ -15543,7 +15656,7 @@
                   "id": "3a361f29-c96a-23cc-6e13-c98951a3d602",
                   "type": "interface-option",
                   "head": {
-                    "text": "setProperty()"
+                    "text": "setProperty"
                   },
                   "text": {
                     "id": "86c4be97-7464-275e-5c02-b3735209e259"
@@ -15551,15 +15664,15 @@
                   "description": {
                     "id": "dd7216d0-3b58-e16f-b7d2-871b44a8068c"
                   },
-                  "name": "setProperty()",
-                  "headId": "setProperty()",
+                  "name": "setProperty",
+                  "headId": "setProperty",
                   "interface": "setProperty(el: any, name: string, value: any): void"
                 },
                 {
                   "id": "ae3d1d76-dcf0-d8f6-7082-a54fc5cb1c31",
                   "type": "interface-option",
                   "head": {
-                    "text": "setStyle()"
+                    "text": "setStyle"
                   },
                   "text": {
                     "id": "6e8765e2-2116-32cc-5fb9-423ebff8a631"
@@ -15567,15 +15680,15 @@
                   "description": {
                     "id": "b53e26a8-1e4b-28a5-c54d-0f698334e736"
                   },
-                  "name": "setStyle()",
-                  "headId": "setStyle()",
+                  "name": "setStyle",
+                  "headId": "setStyle",
                   "interface": "setStyle(el: any, style: string, value: any, flags?: RendererStyleFlags2): void"
                 },
                 {
                   "id": "e9f83c7c-a16f-9213-fbde-8d500495adae",
                   "type": "interface-option",
                   "head": {
-                    "text": "setValue()"
+                    "text": "setValue"
                   },
                   "text": {
                     "id": "18015c45-a306-9bc5-816d-34b61247c900"
@@ -15583,15 +15696,18 @@
                   "description": {
                     "id": "7cb70658-acb3-5a40-e161-94857fa893ff"
                   },
-                  "name": "setValue()",
-                  "headId": "setValue()",
+                  "name": "setValue",
+                  "headId": "setValue",
                   "interface": "setValue(node: any, value: string): void"
                 }
               ],
               "title": {
                 "id": "5d62f22e-584d-697e-c626-e33fc7f4168a"
               },
-              "url": "renderer2"
+              "url": "renderer2",
+              "generationType": "interface-options",
+              "generationFile": "core/src/render/api.ts",
+              "generationName": "Renderer2"
             },
             {
               "id": "8631a258-f7e2-0ea9-1a37-0a749733a6e9",
@@ -15600,7 +15716,7 @@
                   "id": "1c535630-47af-2c6c-a4b1-66018a3c4ccd",
                   "type": "text",
                   "head": {
-                    "id": "db45403a-3796-de68-41ab-0e341e622d5c"
+                    "id": "31b11a6e-a99a-7c66-d2c6-859d034521c0"
                   },
                   "text": {
                     "id": "5b88380b-5b9a-70d8-daf2-9533393f4dc9"
@@ -15610,7 +15726,7 @@
                   "id": "866af4fd-2fbb-dc43-fab3-265da7539390",
                   "type": "text",
                   "head": {
-                    "id": "6f229755-94a6-51e3-65d5-067d14a70c46"
+                    "id": "24500a64-cd40-558d-d931-9ce4204f1e15"
                   },
                   "text": {
                     "id": "0d224132-441e-860c-dd34-f510e62d4012"
@@ -15620,7 +15736,7 @@
                   "id": "1120f309-baab-c411-2f77-b5821ffcb0c8",
                   "type": "text",
                   "head": {
-                    "id": "7acf7a89-9b56-5383-a35d-07263eaf96a0"
+                    "id": "6536f609-484d-6831-1d9d-8dd00c79e67e"
                   },
                   "text": {
                     "id": "2c278a15-4e2f-2285-420a-91e9b1aab910"
@@ -15630,7 +15746,7 @@
                   "id": "b5d7721d-65eb-9c6b-0c73-c2ea1d819eb2",
                   "type": "text",
                   "head": {
-                    "id": "cb4c4563-720b-bea4-ea5e-a7600c9d6f6d"
+                    "id": "651b5f02-e643-229e-2d42-e6f28272c68c"
                   },
                   "text": {
                     "id": "ba20c757-bcd7-8579-2e7d-611ae39134dc"
@@ -15663,16 +15779,6 @@
                   ]
                 },
                 {
-                  "id": "300f4e5a-03a6-72c1-1e15-5f36e0ad9854",
-                  "type": "text",
-                  "head": {
-                    "id": "8a891f66-d09a-5bb5-b35e-3771c45e11df"
-                  },
-                  "text": {
-                    "id": "35e399f0-95ad-6557-2c00-ee6d0ac3069e"
-                  }
-                },
-                {
                   "id": "2a208307-aaa8-4e9c-66ee-5ca3e940664a",
                   "type": "toc",
                   "head": {
@@ -15686,7 +15792,7 @@
                   "id": "94ebbb7b-0259-953a-b77c-6439f4885f92",
                   "type": "interface-option",
                   "head": {
-                    "text": "bypassSecurityTrustHtml()"
+                    "text": "bypassSecurityTrustHtml"
                   },
                   "text": {
                     "id": "7c488d06-a864-4285-6b8b-cef938047751"
@@ -15694,8 +15800,8 @@
                   "description": {
                     "id": "d720d15d-bf8a-7e78-79b2-fa020e7e4ce4"
                   },
-                  "name": "bypassSecurityTrustHtml()",
-                  "headId": "bypassSecurityTrustHtml()",
+                  "name": "bypassSecurityTrustHtml",
+                  "headId": "bypassSecurityTrustHtml",
                   "interface": "bypassSecurityTrustHtml(value: string): SafeHtml",
                   "showAdditional": true,
                   "additional": {
@@ -15706,7 +15812,7 @@
                   "id": "fb1f7d9b-144d-d94b-9b41-0281fe7878b8",
                   "type": "interface-option",
                   "head": {
-                    "text": "bypassSecurityTrustResourceUrl()"
+                    "text": "bypassSecurityTrustResourceUrl"
                   },
                   "text": {
                     "id": "ca43cbe1-f522-8782-24fe-9d0f78d5dd11"
@@ -15714,8 +15820,8 @@
                   "description": {
                     "id": "03d9f637-f736-dbec-4137-8d3671fb404a"
                   },
-                  "name": "bypassSecurityTrustResourceUrl()",
-                  "headId": "bypassSecurityTrustResourceUrl()",
+                  "name": "bypassSecurityTrustResourceUrl",
+                  "headId": "bypassSecurityTrustResourceUrl",
                   "interface": "bypassSecurityTrustResourceUrl(value: string): SafeResourceUrl",
                   "showAdditional": true,
                   "additional": {
@@ -15726,7 +15832,7 @@
                   "id": "451948b4-d300-7eb4-6874-89399289189b",
                   "type": "interface-option",
                   "head": {
-                    "text": "bypassSecurityTrustScript()"
+                    "text": "bypassSecurityTrustScript"
                   },
                   "text": {
                     "id": "8b1c84bb-3708-0481-351e-1053d5c1300a"
@@ -15734,8 +15840,8 @@
                   "description": {
                     "id": "f7962743-4951-05f3-5c7f-f14c46e5dfbd"
                   },
-                  "name": "bypassSecurityTrustScript()",
-                  "headId": "bypassSecurityTrustScript()",
+                  "name": "bypassSecurityTrustScript",
+                  "headId": "bypassSecurityTrustScript",
                   "interface": "bypassSecurityTrustScript(value: string): SafeScript",
                   "showAdditional": true,
                   "additional": {
@@ -15746,7 +15852,7 @@
                   "id": "9604799c-7ab4-4ede-0b74-11e1d4ab39d4",
                   "type": "interface-option",
                   "head": {
-                    "text": "bypassSecurityTrustStyle()"
+                    "text": "bypassSecurityTrustStyle"
                   },
                   "text": {
                     "id": "ff535153-c420-4c37-315f-5018b415814e"
@@ -15754,8 +15860,8 @@
                   "description": {
                     "id": "d594c0c7-afcb-41ae-7841-5cd388dde5d4"
                   },
-                  "name": "bypassSecurityTrustStyle()",
-                  "headId": "bypassSecurityTrustStyle()",
+                  "name": "bypassSecurityTrustStyle",
+                  "headId": "bypassSecurityTrustStyle",
                   "interface": "bypassSecurityTrustStyle(value: string): SafeStyle",
                   "showAdditional": true,
                   "additional": {
@@ -15766,7 +15872,7 @@
                   "id": "cfe2f823-2b2b-95a7-8d85-2b75b3696bbd",
                   "type": "interface-option",
                   "head": {
-                    "text": "bypassSecurityTrustUrl()"
+                    "text": "bypassSecurityTrustUrl"
                   },
                   "text": {
                     "id": "4820a2da-0f6f-7b27-8c68-bd6a47b901fb"
@@ -15774,8 +15880,8 @@
                   "description": {
                     "id": "76b3a981-2da2-58ef-7494-f9c05d29e1ed"
                   },
-                  "name": "bypassSecurityTrustUrl()",
-                  "headId": "bypassSecurityTrustUrl()",
+                  "name": "bypassSecurityTrustUrl",
+                  "headId": "bypassSecurityTrustUrl",
                   "interface": "bypassSecurityTrustUrl(value: string): SafeUrl",
                   "showAdditional": true,
                   "additional": {
@@ -15786,7 +15892,7 @@
                   "id": "2a199363-c582-5f9d-22f6-0e5281175144",
                   "type": "interface-option",
                   "head": {
-                    "text": "sanitize()"
+                    "text": "sanitize"
                   },
                   "text": {
                     "id": "747ffc09-8082-71ff-5cea-b7e01af5518e"
@@ -15794,9 +15900,9 @@
                   "description": {
                     "id": "e5fe9446-77e8-a84d-9802-7a8b5bbea8e8"
                   },
-                  "name": "sanitize()",
-                  "headId": "sanitize()",
-                  "interface": "sanitize(context: SecurityContext, value: SafeValue | string | null): string | null",
+                  "name": "sanitize",
+                  "headId": "sanitize",
+                  "interface": "sanitize(context: SecurityContext, value: SafeValue|string|null): string|null",
                   "showAdditional": true,
                   "additional": {
                     "id": "1c6d9a56-7a4c-d0ad-20c2-544446cdeaf6"
@@ -15806,7 +15912,10 @@
               "title": {
                 "id": "29e66a63-4dd5-b4d2-5bcb-aa53fa98de33"
               },
-              "url": "dom-sanitizer"
+              "url": "dom-sanitizer",
+              "generationType": "interface-options",
+              "generationFile": "platform-browser/src/security/dom_sanitization_service.ts",
+              "generationName": "DomSanitizer"
             }
           ],
           "title": {
@@ -16110,7 +16219,7 @@
                   "id": "95b5997d-c887-f011-ad90-4ddb772daaa0",
                   "type": "text",
                   "head": {
-                    "id": "0f0b7a3f-aed7-22e2-5e82-245b7f6a91b0"
+                    "id": "a830bf16-0f0d-7f4f-6a2c-8cee12df135a"
                   },
                   "text": {
                     "id": "8f5b6d5b-8d70-2fa6-47ae-8f297e693116"
@@ -16120,7 +16229,7 @@
                   "id": "f895881c-4fff-2a5d-dd8a-f88e73865cab",
                   "type": "text",
                   "head": {
-                    "id": "d14c900b-2435-07a9-3d90-9ab5a484139b"
+                    "id": "47c56b87-2711-2a71-3a5e-dcbd92942ef5"
                   },
                   "text": {
                     "id": "b111bcd7-7e20-f51f-aa0a-d0c82ab2f7a0"
@@ -16130,7 +16239,7 @@
                   "id": "422471ad-b14b-a204-7d7a-cd0115d9257d",
                   "type": "text",
                   "head": {
-                    "id": "4058e691-54b2-6d20-b758-8f16870dde2d"
+                    "id": "787b65e3-fff0-d7c4-c85b-09c92e6fc217"
                   },
                   "text": {
                     "id": "490330b1-062a-bfe5-a47f-024e5c4846e0"
@@ -16140,7 +16249,7 @@
                   "id": "adec0600-cf3a-eb08-241b-d75a97cbb07d",
                   "type": "text",
                   "head": {
-                    "id": "63a3ba15-9005-c48c-34d3-b5157eca1eb4"
+                    "id": "c5da502b-2ee8-8353-c58f-667cb6ca58ad"
                   },
                   "text": {
                     "id": "7a46e426-2cbf-e456-5980-c3dc7e1e78b6"
@@ -16150,7 +16259,7 @@
                   "id": "a296ebf1-00b2-bc76-0ad2-0c16cf23fdba",
                   "type": "text",
                   "head": {
-                    "id": "f30fb4b7-297f-f8f1-c8de-190fcf8007f6"
+                    "id": "3003bcc3-1913-0ef3-4daf-e904db131019"
                   },
                   "text": {
                     "id": "472f2c7d-0314-548d-e36c-faadf0387bdb"
@@ -16560,7 +16669,7 @@
                   "id": "e9a803b0-58f1-b292-b9c9-5d1dbeec4588",
                   "type": "text",
                   "head": {
-                    "id": "8ff03025-2833-8b00-0594-87f1e3064cc4"
+                    "id": "7fc3f34b-7b98-1dee-5d5c-0cf4c5a38625"
                   },
                   "text": {
                     "id": "3ccbfe5e-b1c6-c113-504e-74a24768e80d"
@@ -16570,7 +16679,7 @@
                   "id": "667f2a6c-f6c6-c394-cecb-9df38adc4f56",
                   "type": "text",
                   "head": {
-                    "id": "4fe12334-d8a1-50e0-b05c-ebd200ae4c79"
+                    "id": "c20f33c8-b63d-1058-8ca5-d43c8bd5c395"
                   },
                   "text": {
                     "id": "51fe0b94-2b29-07b6-56cd-7ad5498ddc74"
@@ -16580,7 +16689,7 @@
                   "id": "99af5d68-938f-ee0d-6094-b6ba96b64d85",
                   "type": "text",
                   "head": {
-                    "id": "838b9d68-4366-3eb3-59f8-c02371a21151"
+                    "id": "da3f85cc-8848-b9ec-9964-14982e547a9a"
                   },
                   "text": {
                     "id": "6a0d8e2a-ef1a-e8aa-b91b-1fd9dd9990d9"
@@ -16590,7 +16699,7 @@
                   "id": "83c4543d-5dc7-b717-c04d-0ab2bc670278",
                   "type": "text",
                   "head": {
-                    "id": "5c8c1e56-6505-14e4-985e-2c98d8421d0d"
+                    "id": "1d3a7e51-1525-5d39-ab6b-f27f8abc459f"
                   },
                   "text": {
                     "id": "0c19fd1b-e13c-9b1b-6359-b2026463bc6d"
@@ -16698,7 +16807,7 @@
                   "description": {
                     "id": "cef2a595-6e2f-3d78-5676-86104a63e29c"
                   },
-                  "interface": "onSameUrlNavigation?: 'reload' | 'ignore'",
+                  "interface": "onSameUrlNavigation?: 'reload'|'ignore'",
                   "name": "onSameUrlNavigation",
                   "headId": "onSameUrlNavigation",
                   "showAdditional": true,
@@ -16718,7 +16827,7 @@
                   "description": {
                     "id": "05fc77ce-d3e0-281b-6bd4-0064575723eb"
                   },
-                  "interface": "scrollPositionRestoration?: 'disabled' | 'enabled' | 'top'",
+                  "interface": "scrollPositionRestoration?: 'disabled'|'enabled'|'top'",
                   "name": "scrollPositionRestoration",
                   "headId": "scrollPositionRestoration",
                   "showAdditional": true,
@@ -16738,7 +16847,7 @@
                   "description": {
                     "id": "35ae17d5-8041-f1b0-372b-7f7ba45a6e38"
                   },
-                  "interface": "anchorScrolling?: 'disabled' | 'enabled'",
+                  "interface": "anchorScrolling?: 'disabled'|'enabled'",
                   "name": "anchorScrolling",
                   "headId": "anchorScrolling",
                   "showAdditional": true,
@@ -16758,7 +16867,7 @@
                   "description": {
                     "id": "0678dfff-565d-7f5f-51ad-cceb384c9837"
                   },
-                  "interface": "scrollOffset?: [number, number] | (() => [number, number])",
+                  "interface": "scrollOffset?: [number, number]|(() => [number, number])",
                   "name": "scrollOffset",
                   "headId": "scrollOffset",
                   "showAdditional": true,
@@ -16778,7 +16887,7 @@
                   "description": {
                     "id": "cb268546-7706-22be-e4ad-06d094366420"
                   },
-                  "interface": "paramsInheritanceStrategy?: 'emptyOnly' | 'always'",
+                  "interface": "paramsInheritanceStrategy?: 'emptyOnly'|'always'",
                   "name": "paramsInheritanceStrategy",
                   "headId": "paramsInheritanceStrategy",
                   "showAdditional": true,
@@ -16818,7 +16927,7 @@
                   "description": {
                     "id": "fb671d8e-9c5b-38cd-4950-75299c0c8817"
                   },
-                  "interface": "urlUpdateStrategy?: 'deferred' | 'eager'",
+                  "interface": "urlUpdateStrategy?: 'deferred'|'eager'",
                   "name": "urlUpdateStrategy",
                   "headId": "urlUpdateStrategy",
                   "showAdditional": true,
@@ -16838,7 +16947,7 @@
                   "description": {
                     "id": "3b9b01e0-875b-38b6-f0f0-b2bed126b56b"
                   },
-                  "interface": "relativeLinkResolution?: 'legacy' | 'corrected'",
+                  "interface": "relativeLinkResolution?: 'legacy'|'corrected'",
                   "name": "relativeLinkResolution",
                   "headId": "relativeLinkResolution",
                   "showAdditional": true,
@@ -16850,7 +16959,10 @@
               "title": {
                 "id": "833378d0-bd9e-5801-d4b3-6bcaee008623"
               },
-              "url": "extraoptions-interface"
+              "url": "extraoptions-interface",
+              "generationType": "interface-options",
+              "generationFile": "router/src/router_module.ts",
+              "generationName": "ExtraOptions"
             },
             {
               "id": "cf30650f-684c-05bd-5321-203588ad4f4f",
@@ -16859,7 +16971,7 @@
                   "id": "bafbace8-5d2b-9697-935c-0df9ad1f1440",
                   "type": "text",
                   "head": {
-                    "id": "af2b980c-3316-c103-4963-b5b3360fb87b"
+                    "id": "37d3a9bd-eed5-124b-342b-5e17ad164178"
                   },
                   "text": {
                     "id": "1b254148-e462-cf93-0d3e-7b3fb949a4b1"
@@ -16869,7 +16981,7 @@
                   "id": "0694ae94-464b-3c8f-65a9-5bbf1ab1a231",
                   "type": "text",
                   "head": {
-                    "id": "85e78fc9-e84d-40eb-4435-7d268071ccd2"
+                    "id": "0086803c-432a-afe7-7630-f7f8aa201dc1"
                   },
                   "text": {
                     "id": "66e181d6-bbe8-4ee8-045b-51cbbb8c1c46"
@@ -16879,7 +16991,7 @@
                   "id": "c9e8fc60-d1e7-02c2-d5a8-924bf9fd4c77",
                   "type": "text",
                   "head": {
-                    "id": "46ffa041-f5aa-8513-e55f-fac48941be36"
+                    "id": "45e96c69-e0e4-fc2f-2c9f-4afc5c32e052"
                   },
                   "text": {
                     "id": "5e0523b4-1d92-6ec8-aded-7426089b93b9"
@@ -16889,7 +17001,7 @@
                   "id": "f729a69e-056c-2140-fa34-0ba245dd0cba",
                   "type": "text",
                   "head": {
-                    "id": "5b80d153-8e94-9caa-7bce-20c841b861d9"
+                    "id": "038428d9-0ff0-0af3-f94e-bf7fc5191cea"
                   },
                   "text": {
                     "id": "1fc8e799-9f1d-71e5-292b-d162cbfdc3ad"
@@ -16899,7 +17011,7 @@
                   "id": "040d6006-59ae-3daf-b570-c50bae2e4045",
                   "type": "text",
                   "head": {
-                    "id": "bbe5d153-9b3e-6001-e2ad-26f21e34079f"
+                    "id": "36c6b625-327a-4806-33f8-d03507093288"
                   },
                   "text": {
                     "id": "0680e493-7313-8224-f812-29645e4bc30d"
@@ -16909,7 +17021,7 @@
                   "id": "2d6cfe1c-28d1-caa8-95cd-e6902c3fe453",
                   "type": "text",
                   "head": {
-                    "id": "33b3ef65-1bd8-cd87-7c7f-2d0b989439fa"
+                    "id": "4ca47f6d-1a63-433f-4e25-32288bf83ca7"
                   },
                   "text": {
                     "id": "105b6fae-5da3-9c66-8fba-fae89793fbbc"
@@ -17230,7 +17342,7 @@
                   "id": "bf587ad8-7759-d210-a551-fb49d6378338",
                   "type": "text",
                   "head": {
-                    "id": "0c0b39b5-b18c-eed6-fc68-3a68152754db"
+                    "id": "a3afaa9f-ec37-e126-97af-e48ae8ce7dd2"
                   },
                   "text": {
                     "id": "b4cbfc96-485f-7b48-ba8c-90da264b2602"
@@ -17240,7 +17352,7 @@
                   "id": "525e0caa-c83d-7a03-f03a-c3457be83142",
                   "type": "text",
                   "head": {
-                    "id": "f0b924ac-b1a7-cfbc-8deb-938d39753472"
+                    "id": "f0987ae9-2fc0-f1a3-63cb-c1ef65e07088"
                   },
                   "text": {
                     "id": "d157cc4a-6ea0-e61a-f717-a733533e4a91"
@@ -17250,7 +17362,7 @@
                   "id": "c25e19ad-446e-38f3-1a92-62e66f52228e",
                   "type": "text",
                   "head": {
-                    "id": "146fdf14-3d7d-99de-e0f8-e1a01a6c7504"
+                    "id": "9057c70a-f579-0b25-6401-3734d864df5b"
                   },
                   "text": {
                     "id": "ff0a5a42-1360-7139-cdba-b0d9c03453c6"
@@ -17260,7 +17372,7 @@
                   "id": "9cd5039e-e970-d380-1e1d-f9c718e51c62",
                   "type": "text",
                   "head": {
-                    "id": "19876eb0-2215-ba46-1d49-fcf1753f6ab2"
+                    "id": "087ed30a-b0e9-aecc-0d6c-7808769c26d9"
                   },
                   "text": {
                     "id": "fc7cfecc-b5ee-a25f-4bd9-bd9732bb2907"
@@ -17270,7 +17382,7 @@
                   "id": "05b413e0-65c9-fa74-5bb2-c0549ee8748c",
                   "type": "text",
                   "head": {
-                    "id": "22b38b00-8776-0a42-4189-f9c0fbf17cc0"
+                    "id": "5a80014b-e266-71d7-b923-c1bf73b2d33f"
                   },
                   "text": {
                     "id": "ca0c56be-76b6-c82f-fd4b-13656a154776"
@@ -17284,16 +17396,6 @@
                   },
                   "text": {
                     "id": "8c70d5fd-ac0e-a4d1-fb6c-c553280e64be"
-                  }
-                },
-                {
-                  "id": "cd7fbde8-d93d-ba32-216c-85b900340818",
-                  "type": "text",
-                  "head": {
-                    "id": "db7dcb93-f121-362c-ae20-96d6b1e5ed08"
-                  },
-                  "text": {
-                    "id": "6d747435-67ae-e939-94ab-044f347e0ba3"
                   }
                 },
                 {
@@ -17316,7 +17418,7 @@
                   "id": "c5eba1ca-2ac8-02df-9f82-6d5d837432d7",
                   "type": "interface-option",
                   "head": {
-                    "text": "createUrlTree()"
+                    "text": "createUrlTree"
                   },
                   "text": {
                     "id": "d1ebdb8f-88f0-74b4-001e-c46981cd33b0"
@@ -17325,14 +17427,14 @@
                     "id": "b115a6e4-f696-8207-e5a1-e224f57768d1"
                   },
                   "interface": "createUrlTree(commands: any[], navigationExtras: NavigationExtras = {}): UrlTree",
-                  "name": "createUrlTree()",
-                  "headId": "createUrlTree()"
+                  "name": "createUrlTree",
+                  "headId": "createUrlTree"
                 },
                 {
                   "id": "6d449d67-ab8e-e0a6-b082-2adb7afb87f1",
                   "type": "interface-option",
                   "head": {
-                    "text": "dispose()"
+                    "text": "dispose"
                   },
                   "text": {
                     "id": "04b34a47-f59c-1a50-7e03-cb8d4034239d"
@@ -17341,8 +17443,8 @@
                     "id": "4e4dcec1-e729-2b84-19b5-7e59c61866c4"
                   },
                   "interface": "dispose(): void",
-                  "name": "dispose()",
-                  "headId": "dispose()"
+                  "name": "dispose",
+                  "headId": "dispose"
                 },
                 {
                   "id": "ba98a086-b473-f09e-b925-6d547dedfb05",
@@ -17377,10 +17479,23 @@
                   "headId": "events"
                 },
                 {
+                  "id": "6947af46-13c1-e143-3d32-e29fba72a200",
+                  "type": "interface-option",
+                  "name": "getCurrentNavigation",
+                  "head": {
+                    "text": "getCurrentNavigation"
+                  },
+                  "headId": "getCurrentNavigation",
+                  "interface": "getCurrentNavigation(): Navigation|null",
+                  "description": {
+                    "id": "1136e15e-f54b-b31e-2e45-d4198da24886"
+                  }
+                },
+                {
                   "id": "0d46437d-3eef-a01e-6218-bd8087c2561b",
                   "type": "interface-option",
                   "head": {
-                    "text": "initialNavigation()"
+                    "text": "initialNavigation"
                   },
                   "text": {
                     "id": "385b1b69-1ff0-7158-5588-4ea849a45845"
@@ -17389,14 +17504,14 @@
                     "id": "cc091ab6-e897-6c80-4db6-21d3c74091a0"
                   },
                   "interface": "initialNavigation(): void",
-                  "name": "initialNavigation()",
-                  "headId": "initialNavigation()"
+                  "name": "initialNavigation",
+                  "headId": "initialNavigation"
                 },
                 {
                   "id": "01366334-1a14-9b22-3507-9b9efc6bccfb",
                   "type": "interface-option",
                   "head": {
-                    "text": "isActive()"
+                    "text": "isActive"
                   },
                   "text": {
                     "id": "3664c0a0-d1c1-beb6-23ee-762938f30a14"
@@ -17404,9 +17519,9 @@
                   "description": {
                     "id": "4bf89fee-cd78-3e57-1eb8-bb7185e35ee1"
                   },
-                  "interface": "isActive(url: string | UrlTree, exact: boolean): boolean",
-                  "name": "isActive()",
-                  "headId": "isActive()"
+                  "interface": "isActive(url: string|UrlTree, exact: boolean): boolean",
+                  "name": "isActive",
+                  "headId": "isActive"
                 },
                 {
                   "id": "68acd81f-0ce4-ffbc-8fc8-1841d7c176c8",
@@ -17420,7 +17535,7 @@
                   "description": {
                     "id": "e48ae9e7-4046-e8a4-bad5-ec9914eedaf8"
                   },
-                  "interface": "malformedUriErrorHandler: (error: URIError, urlSerializer: UrlSerializer, url: string) => UrlTree",
+                  "interface": "malformedUriErrorHandler: (error: URIError, urlSerializer: UrlSerializer,\n       url: string) => UrlTree",
                   "name": "malformedUriErrorHandler",
                   "headId": "malformedUriErrorHandler"
                 },
@@ -17428,7 +17543,7 @@
                   "id": "0407f3c2-b964-522b-d874-6d244da90bf3",
                   "type": "interface-option",
                   "head": {
-                    "text": "navigate()"
+                    "text": "navigate"
                   },
                   "text": {
                     "id": "efb96cbb-b250-a188-3a2c-d6f3a8c19b1e"
@@ -17436,9 +17551,9 @@
                   "description": {
                     "id": "578732a7-99e6-a3f1-4dff-4f4fa7129264"
                   },
-                  "interface": "navigate(commands: any[], extras: NavigationExtras = { skipLocationChange: false }): Promise<boolean>",
-                  "name": "navigate()",
-                  "headId": "navigate()",
+                  "interface": "navigate(commands: any[], extras: NavigationExtras = {skipLocationChange: false}): Promise<boolean>",
+                  "name": "navigate",
+                  "headId": "navigate",
                   "showAdditional": true,
                   "additional": {
                     "id": "f3a0bef1-0fbd-c957-391a-9ad66cab9faa"
@@ -17448,7 +17563,7 @@
                   "id": "6a479b08-707e-18f1-3aed-e085e38e333e",
                   "type": "interface-option",
                   "head": {
-                    "text": "navigateByUrl()"
+                    "text": "navigateByUrl"
                   },
                   "text": {
                     "id": "787353b2-fbef-13b2-086d-f28b78b905c2"
@@ -17456,9 +17571,9 @@
                   "description": {
                     "id": "6cd64d50-2950-bb47-546d-a38b47af6c4e"
                   },
-                  "interface": "navigateByUrl(url: string | UrlTree, extras: NavigationExtras = { skipLocationChange: false }): Promise<boolean>",
-                  "name": "navigateByUrl()",
-                  "headId": "navigateByUrl()",
+                  "interface": "navigateByUrl(url: string|UrlTree, extras: NavigationExtras = {skipLocationChange: false}): Promise<boolean>",
+                  "name": "navigateByUrl",
+                  "headId": "navigateByUrl",
                   "showAdditional": true,
                   "additional": {
                     "id": "d973ffd4-5984-45a0-2299-f8fce11eee50"
@@ -17492,7 +17607,7 @@
                   "description": {
                     "id": "cffd1e84-e352-53b2-b398-646ee922646a"
                   },
-                  "interface": "onSameUrlNavigation: 'reload' | 'ignore'",
+                  "interface": "onSameUrlNavigation: 'reload'|'ignore'",
                   "name": "onSameUrlNavigation",
                   "headId": "onSameUrlNavigation"
                 },
@@ -17508,7 +17623,7 @@
                   "description": {
                     "id": "eda6f214-8f1d-b18f-bd0d-0ce87f1ecaea"
                   },
-                  "interface": "paramsInheritanceStrategy: 'emptyOnly' | 'always'",
+                  "interface": "paramsInheritanceStrategy: 'emptyOnly'|'always'",
                   "name": "paramsInheritanceStrategy",
                   "headId": "paramsInheritanceStrategy"
                 },
@@ -17516,7 +17631,7 @@
                   "id": "07e647a9-8d40-b75c-bf8d-dede5d26e80b",
                   "type": "interface-option",
                   "head": {
-                    "text": "parseUrl()"
+                    "text": "parseUrl"
                   },
                   "text": {
                     "id": "88cda773-2165-e438-aaff-55cc1fec3d7a"
@@ -17525,14 +17640,27 @@
                     "id": "a5b5a598-6b97-8a55-1a60-1ef4a6cc7749"
                   },
                   "interface": "parseUrl(url: string): UrlTree",
-                  "name": "parseUrl()",
-                  "headId": "parseUrl()"
+                  "name": "parseUrl",
+                  "headId": "parseUrl"
+                },
+                {
+                  "id": "d4c992f3-0186-022f-00b1-0a64d0314b1f",
+                  "type": "interface-option",
+                  "name": "relativeLinkResolution",
+                  "head": {
+                    "text": "relativeLinkResolution"
+                  },
+                  "headId": "relativeLinkResolution",
+                  "interface": "relativeLinkResolution: 'legacy'|'corrected'",
+                  "description": {
+                    "id": "05799e75-24c1-3622-6bd7-c43231ea4d09"
+                  }
                 },
                 {
                   "id": "12d71a6f-f03f-98cb-6865-cb9120b92a3d",
                   "type": "interface-option",
                   "head": {
-                    "text": "resetConfig()"
+                    "text": "resetConfig"
                   },
                   "text": {
                     "id": "e07309ce-9ac3-ece9-85ba-ba1c2386d965"
@@ -17541,8 +17669,8 @@
                     "id": "d192dc2e-8dda-c3a0-1905-98395e0f5f55"
                   },
                   "interface": "resetConfig(config: Routes): void",
-                  "name": "resetConfig()",
-                  "headId": "resetConfig()"
+                  "name": "resetConfig",
+                  "headId": "resetConfig"
                 },
                 {
                   "id": "d0a726fd-0a9f-bfd5-a144-553332482aeb",
@@ -17580,7 +17708,7 @@
                   "id": "75615030-9689-0e31-3244-68f81f9ee3a1",
                   "type": "interface-option",
                   "head": {
-                    "text": "serializeUrl()"
+                    "text": "serializeUrl"
                   },
                   "text": {
                     "id": "28c462ac-6833-6ad2-8274-6c6ffb0c8024"
@@ -17589,14 +17717,14 @@
                     "id": "22ab7c02-e540-f786-d042-f99d32afc97b"
                   },
                   "interface": "serializeUrl(url: UrlTree): string",
-                  "name": "serializeUrl()",
-                  "headId": "serializeUrl()"
+                  "name": "serializeUrl",
+                  "headId": "serializeUrl"
                 },
                 {
                   "id": "23848abe-7e2c-74eb-1897-bd8def3aac35",
                   "type": "interface-option",
                   "head": {
-                    "text": "setUpLocationChangeListener()"
+                    "text": "setUpLocationChangeListener"
                   },
                   "text": {
                     "id": "cc093481-fad8-e6d4-0771-7933fee15d73"
@@ -17605,8 +17733,8 @@
                     "id": "e8377807-af91-0794-27e4-c53f54d9eb98"
                   },
                   "interface": "setUpLocationChangeListener(): void",
-                  "name": "setUpLocationChangeListener()",
-                  "headId": "setUpLocationChangeListener()"
+                  "name": "setUpLocationChangeListener",
+                  "headId": "setUpLocationChangeListener"
                 },
                 {
                   "id": "68bb5a94-4f3d-d6d6-3242-81269c1b1f04",
@@ -17620,7 +17748,7 @@
                   "description": {
                     "id": "fb861389-e40f-b906-ffdb-8881f77142ea"
                   },
-                  "interface": "url: string",
+                  "interface": "get url(): string",
                   "name": "url",
                   "headId": "url"
                 },
@@ -17652,25 +17780,18 @@
                   "description": {
                     "id": "a310135d-7967-b76f-2e66-0f9b229444cc"
                   },
-                  "interface": "urlUpdateStrategy: 'deferred' | 'eager'",
+                  "interface": "urlUpdateStrategy: 'deferred'|'eager'",
                   "name": "urlUpdateStrategy",
                   "headId": "urlUpdateStrategy"
-                },
-                {
-                  "id": "7161201a-ff1a-8dde-e62f-2e0716721022",
-                  "type": "text",
-                  "head": {
-                    "id": "0d53b17b-b3c9-7deb-7607-2992f28cc076"
-                  },
-                  "text": {
-                    "id": "ba967fe9-0496-1f4a-1e9e-cfe60d2e3c65"
-                  }
                 }
               ],
               "title": {
                 "id": "188db8b0-3142-0b68-0cbf-bb8e4eb7fcb9"
               },
-              "url": "router"
+              "url": "router",
+              "generationType": "interface-options",
+              "generationFile": "router/src/router.ts",
+              "generationName": "Router"
             },
             {
               "id": "19b8edde-421a-5743-68c8-f1fb4ab8f8db",
@@ -17904,7 +18025,7 @@
                   "id": "3db82e7e-5aba-b8b7-151f-85cd3de886b8",
                   "type": "text",
                   "head": {
-                    "id": "ad882090-6da6-05cb-6ad7-2ae44cf706ec"
+                    "id": "e5ca23b6-8fb0-bd3f-6c03-1b5aca9c5817"
                   },
                   "text": {
                     "id": "6f559260-1d75-1e7c-0522-3317da161914"
@@ -17914,7 +18035,7 @@
                   "id": "ea77c04d-1a76-756e-fcd4-78adee4f4750",
                   "type": "text",
                   "head": {
-                    "id": "22784086-719f-c404-2365-97f331488af9"
+                    "id": "43143977-84b5-89b9-53ec-4935188595ac"
                   },
                   "text": {
                     "id": "c441b2d0-5f0a-0396-e327-55d3fefd899d"
@@ -17924,7 +18045,7 @@
                   "id": "5d6a452c-fd8a-75a7-3ea1-6c1a99bdda36",
                   "type": "text",
                   "head": {
-                    "id": "f1d4a607-d2ff-eac1-1d75-4546e8d05e12"
+                    "id": "4eb0acba-5cb3-10b6-62b2-6e3e080533dc"
                   },
                   "text": {
                     "id": "23a311cb-be4e-6c76-ee6c-57e2e78188a3"
@@ -17953,7 +18074,7 @@
                   "id": "f10730d0-3352-5712-dcd8-e2c3d1dbe78a",
                   "type": "text",
                   "head": {
-                    "id": "c5c1c307-d709-9402-280b-c3bbdc4222c3"
+                    "id": "8ce0a55f-b8b1-37b8-b5c1-825a9de28cda"
                   },
                   "text": {
                     "id": "84646754-3561-23e1-2013-81e58d09bda8"
@@ -17981,7 +18102,7 @@
                   "description": {
                     "id": "a4a3dc8a-6dab-37df-e946-e26d2355ffbf"
                   },
-                  "interface": "children: ActivatedRoute[]",
+                  "interface": "get children(): ActivatedRoute[]",
                   "name": "children",
                   "headId": "children"
                 },
@@ -18029,7 +18150,7 @@
                   "description": {
                     "id": "388e2ca2-d84e-c969-6711-c0806fb1584f"
                   },
-                  "interface": "firstChild: ActivatedRoute | null",
+                  "interface": "get firstChild(): ActivatedRoute|null",
                   "name": "firstChild",
                   "headId": "firstChild"
                 },
@@ -18077,7 +18198,7 @@
                   "description": {
                     "id": "5ce8eef4-f317-7bbe-817e-f450cb3bcc12"
                   },
-                  "interface": "paramMap: Observable<ParamMap>",
+                  "interface": "get paramMap(): Observable<ParamMap>",
                   "name": "paramMap",
                   "headId": "paramMap"
                 },
@@ -18109,7 +18230,7 @@
                   "description": {
                     "id": "a73e9b42-3d8a-d222-8b25-dda6124d4b65"
                   },
-                  "interface": "parent: ActivatedRoute | null",
+                  "interface": "get parent(): ActivatedRoute|null",
                   "name": "parent",
                   "headId": "parent"
                 },
@@ -18125,7 +18246,7 @@
                   "description": {
                     "id": "c0a408e2-b572-1ab0-9324-b997984a0b89"
                   },
-                  "interface": "pathFromRoot: ActivatedRoute[]",
+                  "interface": "get pathFromRoot(): ActivatedRoute[]",
                   "name": "pathFromRoot",
                   "headId": "pathFromRoot"
                 },
@@ -18141,7 +18262,7 @@
                   "description": {
                     "id": "15420e20-6296-687d-0d7a-fe40183bafbf"
                   },
-                  "interface": "queryParamMap: Observable<ParamMap>",
+                  "interface": "get queryParamMap(): Observable<ParamMap>",
                   "name": "queryParamMap",
                   "headId": "queryParamMap"
                 },
@@ -18173,7 +18294,7 @@
                   "description": {
                     "id": "93ddf69a-1b25-f5b2-f800-e4dbbab099a5"
                   },
-                  "interface": "root: ActivatedRoute",
+                  "interface": "get root(): ActivatedRoute",
                   "name": "root",
                   "headId": "root"
                 },
@@ -18189,7 +18310,7 @@
                   "description": {
                     "id": "17f36459-8727-6413-d574-1163e7537628"
                   },
-                  "interface": "routeConfig: Route | null",
+                  "interface": "get routeConfig(): Route|null",
                   "name": "routeConfig",
                   "headId": "routeConfig"
                 },
@@ -18208,6 +18329,19 @@
                   "interface": "snapshot: ActivatedRouteSnapshot",
                   "name": "snapshot",
                   "headId": "snapshot"
+                },
+                {
+                  "id": "24c28586-67dc-49d6-d09a-aba653232819",
+                  "type": "interface-option",
+                  "name": "toString",
+                  "head": {
+                    "text": "toString"
+                  },
+                  "headId": "toString",
+                  "interface": "toString(): string",
+                  "description": {
+                    "id": "60a4959d-e08d-7431-19bd-ef9b500c63cd"
+                  }
                 },
                 {
                   "id": "8170e143-da2b-f06b-61a7-a4a36ff47cab",
@@ -18229,7 +18363,10 @@
               "title": {
                 "id": "54882235-acaa-85f6-12a4-9ffb0f62202e"
               },
-              "url": "activatedroute"
+              "url": "activatedroute",
+              "generationType": "interface-options",
+              "generationFile": "router/src/router_state.ts",
+              "generationName": "ActivatedRoute"
             },
             {
               "id": "b78c8354-874e-d8f2-4a4a-a03ba0fe4757",
@@ -18238,7 +18375,7 @@
                   "id": "f04f8675-cb4e-c650-ff7c-4f7919ea53df",
                   "type": "text",
                   "head": {
-                    "id": "dd04d88b-bea6-a10a-42fb-171d26896d62"
+                    "id": "9d6af423-19c1-93cf-6439-9756e3dfe838"
                   },
                   "text": {
                     "id": "e7a7c616-0730-dc71-6eb4-487a37223b41"
@@ -18248,7 +18385,7 @@
                   "id": "1899baa6-c34b-e37e-7d51-ca72d56e3e74",
                   "type": "text",
                   "head": {
-                    "id": "5b66d1b5-1283-1b53-251c-6217d93f4301"
+                    "id": "74acbca8-aa90-12c7-1b0f-ab32dcbb105c"
                   },
                   "text": {
                     "id": "389661e1-6bb5-f9af-de4d-47b3776daef4"
@@ -18258,7 +18395,7 @@
                   "id": "ad3e6334-ceb2-f56b-92c3-f90773f8197f",
                   "type": "text",
                   "head": {
-                    "id": "359ae5d5-bb92-69b1-b693-795009ff329b"
+                    "id": "a66d4a42-b5fa-a2c7-b928-b5beb079435b"
                   },
                   "text": {
                     "id": "98f86669-33fa-a645-8012-2eed7062c842"
@@ -18287,7 +18424,7 @@
                   "id": "ead960c0-bbf1-8824-2e8b-0b02fd5b9cb6",
                   "type": "text",
                   "head": {
-                    "id": "044b2fd1-c24c-2002-396c-806479112d17"
+                    "id": "611a6afd-99e0-e0d5-3cdb-71b0fcd24441"
                   },
                   "text": {
                     "id": "38c2af04-c8f4-308b-2603-dcd15405cd50"
@@ -18315,7 +18452,7 @@
                   "description": {
                     "id": "e4617254-527d-4a87-e49a-a197f6f73697"
                   },
-                  "interface": "children: ActivatedRouteSnapshot[]",
+                  "interface": "get children(): ActivatedRouteSnapshot[]",
                   "name": "children",
                   "headId": "children"
                 },
@@ -18363,7 +18500,7 @@
                   "description": {
                     "id": "a5fee5d8-a007-668c-67ec-241190d045ce"
                   },
-                  "interface": "firstChild: ActivatedRouteSnapshot | null",
+                  "interface": "get firstChild(): ActivatedRouteSnapshot|null",
                   "name": "firstChild",
                   "headId": "firstChild"
                 },
@@ -18411,7 +18548,7 @@
                   "description": {
                     "id": "5f291204-e013-3ba6-71fe-7eff05744ebc"
                   },
-                  "interface": "paramMap: ParamMap",
+                  "interface": "get paramMap(): ParamMap",
                   "name": "paramMap",
                   "headId": "paramMap"
                 },
@@ -18443,7 +18580,7 @@
                   "description": {
                     "id": "c350d58d-073e-35be-b94c-fc0aae0155ae"
                   },
-                  "interface": "parent: ActivatedRouteSnapshot | null",
+                  "interface": "get parent(): ActivatedRouteSnapshot|null",
                   "name": "parent",
                   "headId": "parent"
                 },
@@ -18459,7 +18596,7 @@
                   "description": {
                     "id": "567a2e1f-eac5-d946-8fd8-77e7d4b4ea57"
                   },
-                  "interface": "pathFromRoot: ActivatedRouteSnapshot[]",
+                  "interface": "get pathFromRoot(): ActivatedRouteSnapshot[]",
                   "name": "pathFromRoot",
                   "headId": "pathFromRoot"
                 },
@@ -18475,7 +18612,7 @@
                   "description": {
                     "id": "5f59e1ff-29cb-72e8-b31d-b1e761325a81"
                   },
-                  "interface": "queryParamMap: ParamMap",
+                  "interface": "get queryParamMap(): ParamMap",
                   "name": "queryParamMap",
                   "headId": "queryParamMap"
                 },
@@ -18507,7 +18644,7 @@
                   "description": {
                     "id": "d75d963a-a3b9-7fec-ef0f-3beeafbe1c1c"
                   },
-                  "interface": "root: ActivatedRouteSnapshot",
+                  "interface": "get root(): ActivatedRouteSnapshot",
                   "name": "root",
                   "headId": "root"
                 },
@@ -18523,9 +18660,22 @@
                   "description": {
                     "id": "bf85c3ce-e6e7-d568-1219-712b9a040189"
                   },
-                  "interface": "routeConfig: Route | null",
+                  "interface": "routeConfig: Route|null",
                   "name": "routeConfig",
                   "headId": "routeConfig"
+                },
+                {
+                  "id": "acbd85f7-26e3-2c9b-b9b5-a2613abcb5e4",
+                  "type": "interface-option",
+                  "name": "toString",
+                  "head": {
+                    "text": "toString"
+                  },
+                  "headId": "toString",
+                  "interface": "toString(): string",
+                  "description": {
+                    "id": "d11aff62-bf31-2070-bd0a-93bd95af2446"
+                  }
                 },
                 {
                   "id": "2011cfcb-3da2-bc2f-d28c-32e746f65a72",
@@ -18547,7 +18697,10 @@
               "title": {
                 "id": "337aba21-e287-dcc8-458a-faab4331cec6"
               },
-              "url": "activatedroutesnapshot"
+              "url": "activatedroutesnapshot",
+              "generationType": "interface-options",
+              "generationFile": "router/src/router_state.ts",
+              "generationName": "ActivatedRouteSnapshot"
             },
             {
               "id": "554d1879-4294-9fea-d3e7-b3d654c87785",
@@ -18556,7 +18709,7 @@
                   "id": "a3f79338-c74e-9da2-9065-9a5c9ae90f94",
                   "type": "text",
                   "head": {
-                    "id": "c625caaf-5854-d935-903e-0ac9172eadbb"
+                    "id": "5f5ef02d-0ed2-5fd3-c4f3-2e8941aab541"
                   },
                   "text": {
                     "id": "4522d1e9-4dd8-8aa0-be5b-f737e052ef6f"
@@ -18566,7 +18719,7 @@
                   "id": "7bb8a0e6-cd39-8525-c093-e6b5602b9b14",
                   "type": "text",
                   "head": {
-                    "id": "654cdb9f-41e2-58af-59a4-3d48ac116154"
+                    "id": "7da3585f-433c-3585-f8f2-b3fd83a6c7c0"
                   },
                   "text": {
                     "id": "9d10eb53-c879-0e13-737c-82ae0422f2b3"
@@ -18576,7 +18729,7 @@
                   "id": "90b5b39e-5cb1-18d0-5dd1-4c6a37177e12",
                   "type": "text",
                   "head": {
-                    "id": "fc7a8a00-ae08-6202-0f89-a4494847b2ab"
+                    "id": "50dabb61-148f-894f-2af2-964b93dcdc9b"
                   },
                   "text": {
                     "id": "f485c6fc-ecda-2833-7975-d274034d6445"
@@ -18586,7 +18739,7 @@
                   "id": "0e66e75b-2939-c3a7-d08b-b8219a420f93",
                   "type": "text",
                   "head": {
-                    "id": "8861c8b4-8c27-145d-a267-391adaf013a9"
+                    "id": "e3721892-6646-6ce4-5d98-f38181908df1"
                   },
                   "text": {
                     "id": "c1efc731-c7fe-c602-5e98-f2f834c190ff"
@@ -18605,7 +18758,7 @@
                   "id": "ccb3ef72-9ee4-a699-e99e-4c160dd50faa",
                   "type": "text",
                   "head": {
-                    "id": "a4b40aff-56a2-17bf-0a41-55536a80a2c8"
+                    "id": "5e11c04c-1300-07ef-ef65-15991ddaa224"
                   },
                   "text": {
                     "id": "0e2ff558-989f-7a7c-6892-91e0a42141dc"
@@ -18624,7 +18777,7 @@
                   "id": "4fa057a1-d3d0-2feb-ddda-6bbe268bffa8",
                   "type": "text",
                   "head": {
-                    "id": "fdd922a9-5edb-9580-1593-8fd6c5d68aad"
+                    "id": "2a74583a-2ef5-cb03-5d83-b3547894a890"
                   },
                   "text": {
                     "id": "d2791b5c-6d53-d476-65be-e0a2fdeefa76"
@@ -40309,6 +40462,156 @@
             {
               "lang": "en",
               "text": "Angular — Lazy Loading Feature Modules"
+            }
+          ]
+        },
+        {
+          "id": "80e22494-bcae-7cc0-9adb-9de56258c252",
+          "context": "Interface option description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "See {@link RouterModule} for more information."
+            }
+          ]
+        },
+        {
+          "id": "dae37938-e0ce-1c1a-6fdd-8992ff820c2b",
+          "context": "Interface option description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The current Navigation object if one exists "
+            }
+          ]
+        },
+        {
+          "id": "05799e75-24c1-3622-6bd7-c43231ea4d09",
+          "context": "Interface option description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "See {@link RouterModule} for more information."
+            }
+          ]
+        },
+        {
+          "id": "1136e15e-f54b-b31e-2e45-d4198da24886",
+          "context": "Interface option description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The current Navigation object if one exists "
+            }
+          ]
+        },
+        {
+          "id": "967095fa-5326-4dfc-442f-cd1614fa9ef4",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Options"
+            }
+          ]
+        },
+        {
+          "id": "791836da-cc8f-a3f5-49b8-d563d0bea0ec",
+          "context": "Interface option description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Property name."
+            }
+          ]
+        },
+        {
+          "id": "e957c0f4-5f89-8964-053a-f64ac5d4f742",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "-454545"
+            }
+          ]
+        },
+        {
+          "id": "c5fe6d38-34c8-1737-7212-cdd7afddb4f2",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "-"
+            }
+          ]
+        },
+        {
+          "id": "634ad6b6-5de6-987f-324e-d5e319738288",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "-"
+            }
+          ]
+        },
+        {
+          "id": "3d35a7c3-11e1-70ad-30d0-62b8a16adcd0",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "---"
+            }
+          ]
+        },
+        {
+          "id": "5e15bd86-7cbf-c09b-4f70-181c70521a68",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "-"
+            }
+          ]
+        },
+        {
+          "id": "a6aa4173-5e18-8efd-d1a9-d82bfc0b5108",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "-"
+            }
+          ]
+        },
+        {
+          "id": "6c127047-c796-a0c5-6f3b-b0225fd2e5d4",
+          "context": "Interface option entry description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "-"
+            }
+          ]
+        },
+        {
+          "id": "e96bfc2a-dda1-10a4-05d3-63a6e0f01fc9",
+          "context": "Interface option description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Use to store arbitrary developer-defined data on a renderer instance,\nas an object containing key-value pairs.\nThis is useful for renderers that delegate to other renderers."
+            }
+          ]
+        },
+        {
+          "id": "a748f033-15b8-40d4-5de6-be53e65740cb",
+          "context": "Interface option description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "If null or undefined, the view engine won't call it.\nThis is used as a performance optimization for production mode."
             }
           ]
         }
