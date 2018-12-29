@@ -8,6 +8,7 @@ export interface ContentVersion {
   id: string;
   title?: string;
   url?: string;
+  githubUrl?: string;
   disabled?: boolean;
   default?: boolean;
   langs: string[];
@@ -53,6 +54,8 @@ export interface ContentPage {
   generationType?: ContentGenerationType;
   generationFile?: string;
   generationName?: string;
+  generationStartLine?: number;
+  generationEndLine?: number;
   menuItems?: ContentMenuItem[];
   entries: (ContentEntry | ContentTextEntry | ContentCommandParamEntry | ContentHintEntry | ContentTutorialsEntry)[];
 }

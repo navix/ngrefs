@@ -11,7 +11,13 @@
 }
 
 .title {
+  align-items: center;
   grid-column: 3 / 5;
+  display: flex;
+  flex-direction: row;
+  main-message {
+    flex-grow: 1;
+  }
 }
 
 .entry {

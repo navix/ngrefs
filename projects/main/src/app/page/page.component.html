@@ -2,6 +2,12 @@
      class="page-content">
   <h1 class="title">
     <main-message [ref]="page.title"></main-message>
+    <a *ngIf="version.githubUrl && page.generationFile"
+       uiButton
+       [href]="sourceUrl"
+       target="_blank">
+      <kit-icon name="code"></kit-icon>
+    </a>
   </h1>
 
   <div *ngIf="!isForDefaultVersion"

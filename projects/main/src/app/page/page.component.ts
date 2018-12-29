@@ -90,6 +90,12 @@ export class PageComponent implements OnInit, OnDestroy {
     });
   }
 
+  get sourceUrl() {
+    const start = this.page.generationStartLine ? `#L${this.page.generationStartLine}` : '';
+    const end = this.page.generationEndLine ? `-L${this.page.generationEndLine}` : '';
+    return `${this.version.githubUrl}/${this.page.generationFile}${start}${end}`;
+  }
+
   private loadPage() {
     if (this.pageUrl) {
       this.page = this.sectionComponent.section.pages.find(p => p.url === this.pageUrl);
