@@ -40,6 +40,16 @@
                  name="generationName"
                  uiText>
         </ui-form-field>
+        <ui-form-field label="Generation entity start line (extracted during generation)">
+          <input [(ngModel)]="page.generationStartLine"
+                 name="generationStartLine"
+                 uiText>
+        </ui-form-field>
+        <ui-form-field label="Generation entity end line (extracted during generation)">
+          <input [(ngModel)]="page.generationEndLine"
+                 name="generationEndLine"
+                 uiText>
+        </ui-form-field>
         <button uiButton size="sm" (click)="prepareGeneration()">Prepare generation</button>
         <div *ngIf="generationLog.length > 0">
           <h5>Changes</h5>

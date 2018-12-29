@@ -17,6 +17,11 @@
       <span *kitFormError="'required'">Field is required</span>
     </ui-form-field>
 
+    <ui-form-field label="Github Url">
+      <input [(ngModel)]="version.githubUrl"
+             name="githubUrl">
+    </ui-form-field>
+
     <ui-form-field label="Default">
       <input [(ngModel)]="version.default"
              type="checkbox"
@@ -32,5 +37,9 @@
 
   <div>
     Langs: {{ version.langs | json }}
+  </div>
+
+  <div class="actions">
+    <button uiButton size="sm" (click)="updateGenerations()">Update github rev and pages start/end lines</button>
   </div>
 </div>

@@ -84,6 +84,10 @@ export class PageComponent implements OnInit {
     this.generationLog = [];
     const declar = this.angularApiGen.getDeclar(this.page.generationFile, this.page.generationName);
     if (declar) {
+      if (declar.pos) {
+        this.page.generationStartLine = declar.pos.start.line;
+        this.page.generationEndLine = declar.pos.end.line;
+      }
       const members = declar.members
         .filter(m => !m.isInternal)
         .filter(m => !m.modifiers || m.modifiers.indexOf('private') === -1)

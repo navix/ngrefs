@@ -10,3 +10,4 @@ Live: https://ngrefs.com
 
 * `git clone https://github.com/angular/angular.git ./sources/angular`
 * `npm run editor:docgen:angular` to generate Angular API json.
+* Update version rev in the editor (version -> general tab -> "Update github rev and pages start/end lines").
