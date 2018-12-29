@@ -13325,7 +13325,7 @@
                   "id": "7f8dda4f-17f5-c28b-78bf-f977511185b4",
                   "type": "text",
                   "head": {
-                    "id": "0d13dc09-d207-c83b-6834-aafb548ada7a"
+                    "id": "33435e2e-fc99-3960-a7fd-3a23ff3fd1ef"
                   },
                   "text": {
                     "id": "d40b0976-0aae-67ff-30d9-4bda398237e3"
@@ -13335,7 +13335,7 @@
                   "id": "1dbff7ef-42c4-003c-09df-28ea91421618",
                   "type": "text",
                   "head": {
-                    "id": "86c1beef-ef8f-31c1-05e0-f6b61f8013c9"
+                    "id": "6d789264-32ce-b18b-1aca-b606b885c2e2"
                   },
                   "text": {
                     "id": "c3376eef-fd02-ff0e-14a0-37f8d4b1948e"
@@ -13345,7 +13345,7 @@
                   "id": "4a3af8ba-2a25-2bc6-e905-6f13b2ce84bb",
                   "type": "text",
                   "head": {
-                    "id": "d9f5a6dc-7210-a5ca-8c89-be1379c5d6e5"
+                    "id": "bb4ad361-fff4-e195-b73d-b8c0a4c36d09"
                   },
                   "text": {
                     "id": "67f70ef7-dd47-47ac-3bd4-689ab6a19286"
@@ -13355,7 +13355,7 @@
                   "id": "686ecbd4-7e3d-a13d-a2d9-ea3b62a5d2da",
                   "type": "text",
                   "head": {
-                    "id": "55261213-a613-ea68-01ce-bef4d231a599"
+                    "id": "31b5f345-a638-6236-e94d-6010f5737b65"
                   },
                   "text": {
                     "id": "64929deb-43d0-646b-e384-10e616ee069c"
@@ -13384,7 +13384,7 @@
                   "id": "6150e0b5-53d9-cfae-0729-12d3b2e32637",
                   "type": "text",
                   "head": {
-                    "id": "a9d823ac-a699-a79a-f6e3-79da875bcaf6"
+                    "id": "c14109f4-5fba-6ea8-a358-3276061c3f54"
                   },
                   "text": {
                     "id": "c22b0ea9-5c1f-c3c4-5eb7-4376eda2d202"
@@ -13394,7 +13394,7 @@
                   "id": "a158bbcb-ed4c-89c8-ee90-c23fa36520d8",
                   "type": "text",
                   "head": {
-                    "id": "c90968bf-69f5-cc1c-57c7-c0d332545033"
+                    "id": "dea1e2d3-5941-7062-bb76-536f7b7394a7"
                   },
                   "text": {
                     "id": "d7d06e86-e152-9473-b63d-ac9e01432441"
@@ -13555,7 +13555,7 @@
                   "id": "a0c607c7-9461-18d8-7eba-4d588f49e3cb",
                   "type": "text",
                   "head": {
-                    "id": "c7dd1525-7028-f708-87d7-cfa6fd995ac8"
+                    "id": "ec380980-e537-bf06-d736-76cda88a1f4d"
                   },
                   "text": {
                     "id": "0cde8a47-6b52-cc5d-3445-3b9a4f2522f5"
@@ -13565,7 +13565,7 @@
                   "id": "5bdb7f85-8674-58f3-c364-39d9e178ad43",
                   "type": "text",
                   "head": {
-                    "id": "279baae1-6be9-8ebb-4736-9c641065eecd"
+                    "id": "e0616d8d-8d73-2232-7227-91816035c341"
                   },
                   "text": {
                     "id": "d5d9a441-38e7-4b0d-8896-ed802ffb9506"
@@ -13575,7 +13575,7 @@
                   "id": "55b15e57-5ec4-aac2-ddea-a3ac0c081099",
                   "type": "text",
                   "head": {
-                    "id": "369fe643-fc80-8c45-da78-eab0ae6e7d9f"
+                    "id": "ee5fc4cb-de97-9503-9b0f-f9c469b351e2"
                   },
                   "text": {
                     "id": "22f77c33-adfc-fbfa-ebf1-984eb7b3a378"
@@ -13597,6 +13597,13 @@
                       },
                       "url": "https://netbasal.com/understanding-viewchildren-contentchildren-and-querylist-in-angular-896b0c689f6e",
                       "lang": "en"
+                    },
+                    {
+                      "lang": "en",
+                      "label": {
+                        "id": "f32ab9fc-dada-7cc7-4bb0-84bca6fa1bec"
+                      },
+                      "url": "https://stackoverflow.com/a/49167289/2500707"
                     }
                   ]
                 },
@@ -13604,7 +13611,7 @@
                   "id": "d33c6b8d-b3fd-720c-5a8b-dd1bcc6fd505",
                   "type": "text",
                   "head": {
-                    "id": "b407b5fa-782d-15ff-99b5-c3e33c298b99"
+                    "id": "a0529bc8-599b-123d-8288-b5dee15381a6"
                   },
                   "text": {
                     "id": "6189e9c7-6e9c-9dbc-cb35-06ec8fe4500c"
@@ -13614,7 +13621,7 @@
                   "id": "156042b0-cfb0-403c-7009-175e9f188f25",
                   "type": "text",
                   "head": {
-                    "id": "276eaa12-305e-a818-aa00-e410fe38bfb0"
+                    "id": "825e9198-05ba-8b64-5ef5-8c014613eb1e"
                   },
                   "text": {
                     "id": "faf837d7-bdb3-f803-8b0b-901f2b754a1d"
@@ -13673,7 +13680,7 @@
                   "id": "a5debb98-d267-b1f3-df4f-7a6c830f2324",
                   "type": "text",
                   "head": {
-                    "id": "9d6e08f3-fed0-f84a-67c7-70a18f53549b"
+                    "id": "2e624825-da45-aff9-d4cf-28ab9fd18aef"
                   },
                   "text": {
                     "id": "21ea7298-eeb3-f2e5-1a6b-46a628752867"
@@ -13683,7 +13690,7 @@
                   "id": "eca4723b-689d-9d88-b760-42cc05ef8b1a",
                   "type": "text",
                   "head": {
-                    "id": "05998c83-a0c8-0e5c-ed3e-325991593c87"
+                    "id": "79f61fdd-37ea-05c5-fcab-66aac509da81"
                   },
                   "text": {
                     "id": "f5109c86-df26-584f-1b71-e48738abd46a"
@@ -13693,17 +13700,43 @@
                   "id": "41a7b2e2-b3f4-6af7-f98f-740bbc5fb90e",
                   "type": "text",
                   "head": {
-                    "id": "5d2f159c-8a3d-be97-0257-1c98a8d1b1a8"
+                    "id": "4c981b8f-4a31-5c53-cbd3-c9b5ea7ee248"
                   },
                   "text": {
                     "id": "08669460-4201-5e12-7db1-254295c16aa3"
                   }
                 },
                 {
+                  "id": "0a22c14d-00f4-fedf-45e9-dc8b048f328a",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "6a1c99d7-06d6-41f1-9d20-2be36c099bf7"
+                  },
+                  "text": {
+                    "id": "d416efca-0f2d-1bd6-5d87-ca6dc7c6bec1"
+                  },
+                  "links": [
+                    {
+                      "lang": "en",
+                      "label": {
+                        "id": "5958eeba-3d2d-b9ab-9932-45612b094632"
+                      },
+                      "url": "https://blog.angular-university.io/angular-viewchild/"
+                    },
+                    {
+                      "lang": "en",
+                      "label": {
+                        "id": "dc67ee9d-7454-1268-92f6-ecd695dc0db8"
+                      },
+                      "url": "https://stackoverflow.com/a/49167289/2500707"
+                    }
+                  ]
+                },
+                {
                   "id": "94a00c91-8493-ded9-c38f-b9a3336a36c3",
                   "type": "text",
                   "head": {
-                    "id": "01e96223-a76b-5d99-ea5a-8a185bdbb2a8"
+                    "id": "2dfd6288-3411-c077-91d4-47533a314ec5"
                   },
                   "text": {
                     "id": "756882ca-11d2-bf80-9e2f-1b12dfb771e6"
@@ -13713,7 +13746,7 @@
                   "id": "7269fda0-18e2-01b8-51a7-477a5e322f53",
                   "type": "text",
                   "head": {
-                    "id": "169f1fa3-cff7-cd50-e4f0-376690dc9419"
+                    "id": "f88f2c73-91c7-7007-9be9-3194774a26aa"
                   },
                   "text": {
                     "id": "cfdc4d66-e28b-019a-1716-8b4a933fca9f"
@@ -17021,7 +17054,7 @@
                   "id": "bafbace8-5d2b-9697-935c-0df9ad1f1440",
                   "type": "text",
                   "head": {
-                    "id": "37d3a9bd-eed5-124b-342b-5e17ad164178"
+                    "id": "babff0dc-898f-b7a6-e054-a47eb890ee3c"
                   },
                   "text": {
                     "id": "1b254148-e462-cf93-0d3e-7b3fb949a4b1"
@@ -17031,17 +17064,36 @@
                   "id": "0694ae94-464b-3c8f-65a9-5bbf1ab1a231",
                   "type": "text",
                   "head": {
-                    "id": "0086803c-432a-afe7-7630-f7f8aa201dc1"
+                    "id": "e189c2a6-51ce-08ea-2931-e91c751ef0c8"
                   },
                   "text": {
                     "id": "66e181d6-bbe8-4ee8-045b-51cbbb8c1c46"
                   }
                 },
                 {
+                  "id": "278f8132-31ea-edad-c69d-8b83bc5801c9",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "1acc7dce-6cd7-1748-4460-5387d836cd29"
+                  },
+                  "text": {
+                    "id": "2648f04c-86ac-7c8d-01fd-aceb1f9be88f"
+                  },
+                  "links": [
+                    {
+                      "lang": "en",
+                      "label": {
+                        "id": "25f4f5be-ccc7-8156-6ed0-d3e4cfdcdaff"
+                      },
+                      "url": "https://blog.angularindepth.com/new-in-angular-v7-1-updates-to-the-router-fd67d526ad05"
+                    }
+                  ]
+                },
+                {
                   "id": "c9e8fc60-d1e7-02c2-d5a8-924bf9fd4c77",
                   "type": "text",
                   "head": {
-                    "id": "45e96c69-e0e4-fc2f-2c9f-4afc5c32e052"
+                    "id": "14539142-54d9-5630-e7d0-70d5fa03ab07"
                   },
                   "text": {
                     "id": "5e0523b4-1d92-6ec8-aded-7426089b93b9"
@@ -17051,7 +17103,7 @@
                   "id": "f729a69e-056c-2140-fa34-0ba245dd0cba",
                   "type": "text",
                   "head": {
-                    "id": "038428d9-0ff0-0af3-f94e-bf7fc5191cea"
+                    "id": "530d4f14-6b7f-5e19-a676-331861b297a9"
                   },
                   "text": {
                     "id": "1fc8e799-9f1d-71e5-292b-d162cbfdc3ad"
@@ -17061,7 +17113,7 @@
                   "id": "040d6006-59ae-3daf-b570-c50bae2e4045",
                   "type": "text",
                   "head": {
-                    "id": "36c6b625-327a-4806-33f8-d03507093288"
+                    "id": "5f036770-b29c-0602-6014-c85f8aecfd27"
                   },
                   "text": {
                     "id": "0680e493-7313-8224-f812-29645e4bc30d"
@@ -17071,7 +17123,7 @@
                   "id": "2d6cfe1c-28d1-caa8-95cd-e6902c3fe453",
                   "type": "text",
                   "head": {
-                    "id": "4ca47f6d-1a63-433f-4e25-32288bf83ca7"
+                    "id": "20a9390a-af3e-42a2-4a6a-f9dd671e81cf"
                   },
                   "text": {
                     "id": "105b6fae-5da3-9c66-8fba-fae89793fbbc"
@@ -17323,7 +17375,7 @@
                   "id": "acba529a-0273-8944-e848-335423c89ebd",
                   "type": "text",
                   "head": {
-                    "id": "d712f5ce-e8d1-5d7c-81f7-24f30fbf2463"
+                    "id": "90226d14-b271-78ab-b1a1-6eb06a7c6659"
                   },
                   "text": {
                     "id": "f11944dc-79ff-5059-7f86-18974d71c6c5"
@@ -17333,7 +17385,7 @@
                   "id": "ce6ffa2b-461b-fd3f-1b88-f5e26ecb86fd",
                   "type": "text",
                   "head": {
-                    "id": "0d73313d-5c8a-7096-d9da-bd679e6011b1"
+                    "id": "9649b6ac-e0e6-4db1-da9f-ff0db0f7e5d2"
                   },
                   "text": {
                     "id": "dc974370-e653-3504-09c3-d8dea54114e8"
@@ -17343,7 +17395,7 @@
                   "id": "870d284b-9f3d-b70d-47a7-1cb2ea941fc0",
                   "type": "text",
                   "head": {
-                    "id": "1ecf636f-7a4d-b155-84f7-bc4e8392a2b8"
+                    "id": "c4b7495a-e755-7f4f-003a-4e36e66ccdfe"
                   },
                   "text": {
                     "id": "3f35fed7-e9d2-1cba-476b-e77c1b7c9c6e"
@@ -17353,7 +17405,7 @@
                   "id": "9e655086-5d67-0236-42e9-18ddf82720e1",
                   "type": "text",
                   "head": {
-                    "id": "fc4b09bc-36f5-dde4-285c-208417454772"
+                    "id": "05a9f906-92d5-f90d-feea-6af25a4064a3"
                   },
                   "text": {
                     "id": "a39d7b14-8edb-905c-9854-1076fa2fe3c8"
@@ -17363,7 +17415,7 @@
                   "id": "0dcd781a-ee16-f0d6-9643-b674b93fd3cf",
                   "type": "text",
                   "head": {
-                    "id": "ee8c0ecb-e741-b105-5827-3b5c63220432"
+                    "id": "e24b1ab4-cbed-84e0-7f58-e4a0078715a2"
                   },
                   "text": {
                     "id": "e6735cae-1e53-54d1-5016-c4f2ef1b697e"
@@ -17373,7 +17425,7 @@
                   "id": "6203ae26-3f3e-b100-fcab-a5d68f413a13",
                   "type": "text",
                   "head": {
-                    "id": "95bba252-5276-701d-14df-123f47b507c6"
+                    "id": "19834362-5df5-151d-2da8-464c176e92dc"
                   },
                   "text": {
                     "id": "8aba00ad-ce74-2891-a592-0a2aae64e095"
@@ -37650,7 +37702,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```typescript\ninterface CanActivate {\n  canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean\n}\n```"
+              "text": "```typescript\ninterface CanActivate {\n  canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot):\n    Observable<boolean|UrlTree>|Promise<boolean|UrlTree>|boolean|UrlTree;\n}\n```"
             }
           ]
         },
@@ -37890,7 +37942,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```typescript\ninterface CanLoad {\n  canLoad(route: Route): Observable<boolean> | Promise<boolean> | boolean\n}\n```"
+              "text": "```typescript\ninterface CanLoad {\n  canLoad(route: Route, segments: UrlSegment[]): \n    Observable<boolean>|Promise<boolean>|boolean;\n}\n```"
             }
           ]
         },
@@ -37910,7 +37962,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```typescript\nclass UserToken {}\nclass Permissions {\n  canLoadChildren(user: UserToken, id: string): boolean {\n    return true;\n  }\n}\n \n@Injectable()\nclass CanLoadTeamSection implements CanLoad {\n  constructor(private permissions: Permissions, private currentUser: UserToken) {}\n \n  canLoad(route: Route): Observable<boolean>|Promise<boolean>|boolean {\n    return this.permissions.canLoadChildren(this.currentUser, route);\n  }\n}\n \n@NgModule({\n  imports: [\n    RouterModule.forRoot([\n      {\n        path: 'team/:id',\n        component: TeamCmp,\n        loadChildren: 'team.js',\n        canLoad: [CanLoadTeamSection]\n      }\n    ])\n  ],\n  providers: [CanLoadTeamSection, UserToken, Permissions]\n})\nclass AppModule {}\n```"
+              "text": "```typescript\nclass UserToken {}\nclass Permissions {\n  canLoadChildren(user: UserToken, id: string, segments: UrlSegment[]): boolean {\n    return true;\n  }\n}\n\n@Injectable()\nclass CanLoadTeamSection implements CanLoad {\n  constructor(private permissions: Permissions, private currentUser: UserToken) {}\n\n  canLoad(route: Route, segments: UrlSegment[]): Observable<boolean>|Promise<boolean>|boolean {\n    return this.permissions.canLoadChildren(this.currentUser, route, segments);\n  }\n}\n\n@NgModule({\n  imports: [\n    RouterModule.forRoot([\n      {\n        path: 'team/:id',\n        component: TeamCmp,\n        loadChildren: 'team.js',\n        canLoad: [CanLoadTeamSection]\n      }\n    ])\n  ],\n  providers: [CanLoadTeamSection, UserToken, Permissions]\n})\nclass AppModule {}\n```"
             }
           ]
         },
@@ -37930,7 +37982,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "```typescript\n@NgModule({\n  imports: [\n    RouterModule.forRoot([\n      {\n        path: 'team/:id',\n        component: TeamCmp,\n        loadChildren: 'team.js',\n        canLoad: ['canLoadTeamSection']\n      }\n    ])\n  ],\n  providers: [\n    {\n      provide: 'canLoadTeamSection',\n      useValue: (route: Route) => true\n    }\n  ]\n})\nclass AppModule {}\n```"
+              "text": "```typescript\n@NgModule({\n  imports: [\n    RouterModule.forRoot([\n      {\n        path: 'team/:id',\n        component: TeamCmp,\n        loadChildren: 'team.js',\n        canLoad: ['canLoadTeamSection']\n      }\n    ])\n  ],\n  providers: [\n    {\n      provide: 'canLoadTeamSection',\n      useValue: (route: Route, segments: UrlSegment[]) => true,\n    }\n  ]\n})\nclass AppModule {}\n```"
             }
           ]
         },
@@ -41071,6 +41123,66 @@
             {
               "lang": "en",
               "text": "NavigationExtras"
+            }
+          ]
+        },
+        {
+          "id": "25f4f5be-ccc7-8156-6ed0-d3e4cfdcdaff",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "New in Angular 7.1: Router Updates — Perform Navigation/Redirects from Guards by returning a UrlTree"
+            }
+          ]
+        },
+        {
+          "id": "5958eeba-3d2d-b9ab-9932-45612b094632",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular @ViewChild: In-Depth Explanation (All Features Covered)"
+            }
+          ]
+        },
+        {
+          "id": "696b8a9f-abbb-07ed-474e-2038ab05be2f",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Hidden behavior of @ViewChidlren"
+            }
+          ]
+        },
+        {
+          "id": "dc67ee9d-7454-1268-92f6-ecd695dc0db8",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Hidden behavior of @ViewChidlren"
+            }
+          ]
+        },
+        {
+          "id": "0e0e72ee-2979-0e68-6268-82e815d0a541",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Hidden behavior of @ViewChidlren"
+            }
+          ]
+        },
+        {
+          "id": "f32ab9fc-dada-7cc7-4bb0-84bca6fa1bec",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Hidden behavior of @ViewChidlren"
             }
           ]
         }
