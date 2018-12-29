@@ -1,11 +1,13 @@
+@import "theme-main";
+@import "theme-night";
 @import "params";
 @import "mq";
 
 html {
-  background: #ffffff;
-  color: $textColor;
-  font-family: $sansSerif;
-  font-size: 18px;
+  background: var(--bodyBg);
+  color: var(--textColor);
+  font-family: var(--sansSerif);
+  font-size: 16px;
   line-height: 1.5;
   margin: 0;
   padding: 0;
@@ -17,22 +19,22 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #314766;
-  font-family: $sansSerif;
+  color: var(--textColor);
+  font-family: var(--sansSerif);
   overflow-wrap: break-word;
 }
 
 a {
-  color: $linkColor;
+  color: var(--linkColor);
 }
 
 button, input, textarea, select {
-  font-family: $sansSerif;
+  font-family: var(--sansSerif);
 }
 
 code, pre {
   border-radius: 3px;
-  font-family: $monospace;
+  font-family: var(--monospace);
   font-size: 0.85em;
 }
 
@@ -41,7 +43,7 @@ pre {
 }
 
 code {
-  background-color: $codeColor;
+  background-color: var(--codeColor);
   margin: 0;
   padding: 0.2em 0.4em;
 }
@@ -55,6 +57,10 @@ pre code {
 pre {
   padding: 16px;
   overflow: auto;
+}
+
+p {
+  margin: 1em 0;
 }
 
 ul {

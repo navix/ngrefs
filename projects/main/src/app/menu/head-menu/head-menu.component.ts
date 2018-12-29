@@ -3,6 +3,7 @@ import { ContentVersion } from '../../content/meta';
 import { versions } from '../../content/versions';
 import { CrossLinkingService } from '../../cross-linking.service';
 import { SectionComponent } from '../../section/section/section.component';
+import { ThemeService } from '../../theme.service';
 import { VersionComponent } from '../../version/version.component';
 
 @Component({
@@ -21,6 +22,7 @@ export class HeadMenuComponent implements OnInit {
   constructor(
     public sectionComponent: SectionComponent,
     public versionComponent: VersionComponent,
+    public theme: ThemeService,
     private cls: CrossLinkingService,
   ) {
   }

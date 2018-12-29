@@ -8,9 +8,11 @@
                 [ref]="entry.description">
   </main-message>
 
-  <code>
-    {{ entry.interface }}
-  </code>
+  <div>
+    <code>
+      {{ entry.interface }}
+    </code>
+  </div>
 
   <main-message *ngIf="entry.showAdditional"
                 class="additional"
