@@ -12262,7 +12262,9 @@
               "url": "ng-module",
               "generationType": "interface-options",
               "generationFile": "core/src/metadata/ng_module.ts",
-              "generationName": "NgModule"
+              "generationName": "NgModule",
+              "generationStartLine": 134,
+              "generationEndLine": 322
             },
             {
               "id": "d4f9ba36-36cf-8a0f-4682-5e852b1883e9",
@@ -12476,7 +12478,9 @@
               "url": "directive",
               "generationType": "interface-options",
               "generationFile": "core/src/metadata/directives.ts",
-              "generationName": "Directive"
+              "generationName": "Directive",
+              "generationStartLine": 86,
+              "generationEndLine": 290
             },
             {
               "id": "f5bc0217-5164-3c62-bd92-96eb37e54095",
@@ -12738,7 +12742,9 @@
               "url": "component",
               "generationType": "interface-options",
               "generationFile": "core/src/metadata/directives.ts",
-              "generationName": "Component"
+              "generationName": "Component",
+              "generationStartLine": 456,
+              "generationEndLine": 555
             },
             {
               "id": "f626ff88-c7f9-2188-e343-0a177fa34f4e",
@@ -12816,7 +12822,9 @@
               "url": "pipe",
               "generationType": "interface-options",
               "generationFile": "core/src/metadata/directives.ts",
-              "generationName": "Pipe"
+              "generationName": "Pipe",
+              "generationStartLine": 591,
+              "generationEndLine": 609
             },
             {
               "id": "0f7b7b16-a596-37ab-2c4e-aea6a01c4b45",
@@ -12878,7 +12886,9 @@
               "url": "injectable",
               "generationType": "interface-options",
               "generationFile": "core/src/di/injectable.ts",
-              "generationName": "Injectable"
+              "generationName": "Injectable",
+              "generationStartLine": 59,
+              "generationEndLine": 59
             },
             {
               "id": "84169e02-37a1-9bd6-5960-a1303455d23a",
@@ -12950,7 +12960,9 @@
               "url": "input",
               "generationType": "interface-options",
               "generationFile": "core/src/metadata/directives.ts",
-              "generationName": "Input"
+              "generationName": "Input",
+              "generationStartLine": 651,
+              "generationEndLine": 698
             },
             {
               "id": "88bd94fe-05cc-f21d-2b49-9019162907ce",
@@ -13022,7 +13034,9 @@
               "url": "output",
               "generationType": "interface-options",
               "generationFile": "core/src/metadata/directives.ts",
-              "generationName": "Output"
+              "generationName": "Output",
+              "generationStartLine": 772,
+              "generationEndLine": 772
             },
             {
               "id": "5a891eec-d6ae-8611-539d-ff0bf398a30d",
@@ -13106,7 +13120,9 @@
               "url": "host-binding",
               "generationType": "interface-options",
               "generationFile": "core/src/metadata/directives.ts",
-              "generationName": "HostBinding"
+              "generationName": "HostBinding",
+              "generationStartLine": 828,
+              "generationEndLine": 828
             },
             {
               "id": "1f55b67c-8bec-f0d9-f22a-438bc1618746",
@@ -13232,7 +13248,9 @@
               "url": "host-listener",
               "generationType": "interface-options",
               "generationFile": "core/src/metadata/directives.ts",
-              "generationName": "HostListener"
+              "generationName": "HostListener",
+              "generationStartLine": 853,
+              "generationEndLine": 862
             },
             {
               "id": "1328b290-53ab-ef6a-73cc-d9b0a511e1e4",
@@ -13296,7 +13314,9 @@
               "url": "attribute",
               "generationType": "interface-options",
               "generationFile": "core/src/metadata/di.ts",
-              "generationName": "Attribute"
+              "generationName": "Attribute",
+              "generationStartLine": 105,
+              "generationEndLine": 105
             },
             {
               "id": "04e30588-8dab-9d60-6615-8095ba5aa8eb",
@@ -13989,7 +14009,9 @@
               "url": "change-detector-ref",
               "generationType": "interface-options",
               "generationFile": "core/src/change_detection/change_detector_ref.ts",
-              "generationName": "ChangeDetectorRef"
+              "generationName": "ChangeDetectorRef",
+              "generationStartLine": 53,
+              "generationEndLine": 112
             },
             {
               "id": "294a9573-a0da-0e1f-e877-e417539ecdfa",
@@ -15295,7 +15317,9 @@
               "url": "ng-zone",
               "generationType": "interface-options",
               "generationFile": "core/src/zone/ng_zone.ts",
-              "generationName": "NgZone"
+              "generationName": "NgZone",
+              "generationStartLine": 85,
+              "generationEndLine": 220
             },
             {
               "id": "11baf519-b274-048a-6bb6-95d589329a12",
@@ -15707,7 +15731,9 @@
               "url": "renderer2",
               "generationType": "interface-options",
               "generationFile": "core/src/render/api.ts",
-              "generationName": "Renderer2"
+              "generationName": "Renderer2",
+              "generationStartLine": 213,
+              "generationEndLine": 378
             },
             {
               "id": "8631a258-f7e2-0ea9-1a37-0a749733a6e9",
@@ -15915,7 +15941,9 @@
               "url": "dom-sanitizer",
               "generationType": "interface-options",
               "generationFile": "platform-browser/src/security/dom_sanitization_service.ts",
-              "generationName": "DomSanitizer"
+              "generationName": "DomSanitizer",
+              "generationStartLine": 90,
+              "generationEndLine": 144
             }
           ],
           "title": {
@@ -16048,6 +16076,26 @@
                   ]
                 },
                 "subActiveOpt": true
+              },
+              {
+                "id": "38011a84-4c3f-5b7e-2965-e949cf66d13b",
+                "label": {
+                  "id": "e22d2672-8a18-72e0-2629-cc187fc16644"
+                },
+                "url": "navigationextras",
+                "subActiveOpt": true,
+                "sub": {
+                  "items": [
+                    {
+                      "id": "ead6c189-afe2-046c-e421-79f49ba13d88",
+                      "label": {
+                        "id": "0847a853-cb3d-81de-5e2a-15e4ff0a18ce"
+                      },
+                      "usePageEntries": true,
+                      "usePageUrl": "navigationextras"
+                    }
+                  ]
+                }
               },
               {
                 "id": "2b2a46ca-2bc1-0dfb-bebb-372063c6f0e3",
@@ -16962,7 +17010,9 @@
               "url": "extraoptions-interface",
               "generationType": "interface-options",
               "generationFile": "router/src/router_module.ts",
-              "generationName": "ExtraOptions"
+              "generationName": "ExtraOptions",
+              "generationStartLine": 283,
+              "generationEndLine": 451
             },
             {
               "id": "cf30650f-684c-05bd-5321-203588ad4f4f",
@@ -17342,7 +17392,7 @@
                   "id": "bf587ad8-7759-d210-a551-fb49d6378338",
                   "type": "text",
                   "head": {
-                    "id": "a3afaa9f-ec37-e126-97af-e48ae8ce7dd2"
+                    "id": "8029d43e-135b-69bf-f238-6ebf48284991"
                   },
                   "text": {
                     "id": "b4cbfc96-485f-7b48-ba8c-90da264b2602"
@@ -17352,7 +17402,7 @@
                   "id": "525e0caa-c83d-7a03-f03a-c3457be83142",
                   "type": "text",
                   "head": {
-                    "id": "f0987ae9-2fc0-f1a3-63cb-c1ef65e07088"
+                    "id": "d3b275ce-ff0d-3eb7-d576-c40a0960377e"
                   },
                   "text": {
                     "id": "d157cc4a-6ea0-e61a-f717-a733533e4a91"
@@ -17362,7 +17412,7 @@
                   "id": "c25e19ad-446e-38f3-1a92-62e66f52228e",
                   "type": "text",
                   "head": {
-                    "id": "9057c70a-f579-0b25-6401-3734d864df5b"
+                    "id": "2bdd8cff-336f-9a12-c609-467198cec219"
                   },
                   "text": {
                     "id": "ff0a5a42-1360-7139-cdba-b0d9c03453c6"
@@ -17372,7 +17422,7 @@
                   "id": "9cd5039e-e970-d380-1e1d-f9c718e51c62",
                   "type": "text",
                   "head": {
-                    "id": "087ed30a-b0e9-aecc-0d6c-7808769c26d9"
+                    "id": "1bcddd88-ea51-a05a-2f63-d9b3e21f687e"
                   },
                   "text": {
                     "id": "fc7cfecc-b5ee-a25f-4bd9-bd9732bb2907"
@@ -17382,7 +17432,7 @@
                   "id": "05b413e0-65c9-fa74-5bb2-c0549ee8748c",
                   "type": "text",
                   "head": {
-                    "id": "5a80014b-e266-71d7-b923-c1bf73b2d33f"
+                    "id": "7d2bd300-9d2c-f413-b152-1011a1d32cfd"
                   },
                   "text": {
                     "id": "ca0c56be-76b6-c82f-fd4b-13656a154776"
@@ -17791,7 +17841,202 @@
               "url": "router",
               "generationType": "interface-options",
               "generationFile": "router/src/router.ts",
-              "generationName": "Router"
+              "generationName": "Router",
+              "generationStartLine": 291,
+              "generationEndLine": 1095
+            },
+            {
+              "id": "c9e70793-1acd-f124-03c1-150f8f918b4d",
+              "entries": [
+                {
+                  "id": "0849746f-4c1d-3d96-236b-e100a488e844",
+                  "type": "text",
+                  "head": {
+                    "id": "a338203e-fb8a-9bc5-b42f-651159e19ec6"
+                  },
+                  "text": {
+                    "id": "d0212461-4d53-4131-bce2-95eaf3dd6f85"
+                  }
+                },
+                {
+                  "id": "cbacaccd-bed7-62ae-a797-e26efb189f8d",
+                  "type": "text",
+                  "head": {
+                    "id": "049ce45c-f693-5bbe-6c32-b8671c829f22"
+                  },
+                  "text": {
+                    "id": "289fd34e-44bf-43a1-1681-5d7cb83c2bc7"
+                  }
+                },
+                {
+                  "id": "c25b2068-5d33-7212-0281-1e0ec07c9896",
+                  "type": "toc",
+                  "head": {
+                    "id": "1e760a59-fcb0-8165-13a6-7db4ff195302"
+                  },
+                  "text": {
+                    "id": "10452da8-d7f7-9d93-782a-06f965bd6f07"
+                  }
+                },
+                {
+                  "id": "6dd2334a-bb11-a6c4-1f68-c3add397c3d9",
+                  "type": "interface-option",
+                  "name": "fragment",
+                  "head": {
+                    "text": "fragment"
+                  },
+                  "headId": "fragment",
+                  "interface": "fragment?: string",
+                  "description": {
+                    "id": "d15aaeea-bdd3-74fa-ebf5-c529b5c48b60"
+                  },
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "7e1aa7ab-dfa3-0d81-f59d-06117b677ed4"
+                  }
+                },
+                {
+                  "id": "19a3244c-c442-753d-6dc2-c86b3627cfcc",
+                  "type": "interface-option",
+                  "name": "preserveFragment",
+                  "head": {
+                    "text": "preserveFragment"
+                  },
+                  "headId": "preserveFragment",
+                  "interface": "preserveFragment?: boolean",
+                  "description": {
+                    "id": "c8dfb066-8a64-04bd-c6ae-3a9c4ca7e5ae"
+                  },
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "f3e3a0d2-d2d8-9143-1715-e5c53b2e41ab"
+                  }
+                },
+                {
+                  "id": "97b0929c-87d4-c511-0783-a1399da68e2d",
+                  "type": "interface-option",
+                  "name": "preserveQueryParams",
+                  "head": {
+                    "text": "preserveQueryParams"
+                  },
+                  "headId": "preserveQueryParams",
+                  "interface": "preserveQueryParams?: boolean",
+                  "description": {
+                    "id": "00fd0122-1f00-0402-a941-b66858375293"
+                  }
+                },
+                {
+                  "id": "9e7a7be6-3246-5535-e7c6-df2df8fa58ae",
+                  "type": "interface-option",
+                  "name": "queryParams",
+                  "head": {
+                    "text": "queryParams"
+                  },
+                  "headId": "queryParams",
+                  "interface": "queryParams?: Params|null",
+                  "description": {
+                    "id": "dbe0ad4e-826b-665a-7cad-92291382aab1"
+                  },
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "3cc39635-20de-1fc7-3f53-fee6a774b6d2"
+                  }
+                },
+                {
+                  "id": "7f2be572-5398-80b0-8573-757a98fc86aa",
+                  "type": "interface-option",
+                  "name": "queryParamsHandling",
+                  "head": {
+                    "text": "queryParamsHandling"
+                  },
+                  "headId": "queryParamsHandling",
+                  "interface": "queryParamsHandling?: QueryParamsHandling|null",
+                  "description": {
+                    "id": "dbfdf7dc-997f-9ece-d871-b79072fbc5bb"
+                  },
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "c93d67ea-4bb3-5efb-4b71-dff3ec8c098c"
+                  }
+                },
+                {
+                  "id": "3873a85a-d10b-2065-6b39-31c676a87036",
+                  "type": "interface-option",
+                  "name": "relativeTo",
+                  "head": {
+                    "text": "relativeTo"
+                  },
+                  "headId": "relativeTo",
+                  "interface": "relativeTo?: ActivatedRoute|null",
+                  "description": {
+                    "id": "a31bd48b-b251-554f-ee42-36071c78158f"
+                  },
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "215aa584-c010-e177-864b-f98ab9241ff7"
+                  }
+                },
+                {
+                  "id": "f37cb5dc-eefc-f550-3415-04f70b56922d",
+                  "type": "interface-option",
+                  "name": "replaceUrl",
+                  "head": {
+                    "text": "replaceUrl"
+                  },
+                  "headId": "replaceUrl",
+                  "interface": "replaceUrl?: boolean",
+                  "description": {
+                    "id": "d1db19f0-ed76-97e6-f7d1-a429fb2d7c33"
+                  },
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "d3968d70-8a6a-1146-5e59-ea90397771ab"
+                  }
+                },
+                {
+                  "id": "9c2685b6-1fe0-99f7-b3e2-6384a944aacc",
+                  "type": "interface-option",
+                  "name": "skipLocationChange",
+                  "head": {
+                    "text": "skipLocationChange"
+                  },
+                  "headId": "skipLocationChange",
+                  "interface": "skipLocationChange?: boolean",
+                  "description": {
+                    "id": "6ce48852-21b2-2ebb-fd22-2ed70e587346"
+                  },
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "c0bc3de0-efdf-d0c0-74df-4d39f82cecd3"
+                  }
+                },
+                {
+                  "id": "addb46cb-6278-d343-5415-dba96df00f40",
+                  "type": "interface-option",
+                  "name": "state",
+                  "head": {
+                    "text": "state"
+                  },
+                  "headId": "state",
+                  "interface": "state?: {[k: string]: any}",
+                  "description": {
+                    "id": "c68015d3-0769-4b7b-6fc1-da114ecf3a3c"
+                  },
+                  "showAdditional": true,
+                  "additional": {
+                    "id": "540a3514-b3ce-56d2-6e7a-eb05e9b9ac90"
+                  }
+                }
+              ],
+              "title": {
+                "id": "bcc41642-5ddd-ca28-e301-9fa01c82cb5c"
+              },
+              "url": "navigationextras",
+              "generationType": "interface-options",
+              "generationFile": "router/src/router.ts",
+              "generationName": "NavigationExtras",
+              "generationStartLine": 43,
+              "generationEndLine": 160
             },
             {
               "id": "19b8edde-421a-5743-68c8-f1fb4ab8f8db",
@@ -18025,7 +18270,7 @@
                   "id": "3db82e7e-5aba-b8b7-151f-85cd3de886b8",
                   "type": "text",
                   "head": {
-                    "id": "e5ca23b6-8fb0-bd3f-6c03-1b5aca9c5817"
+                    "id": "982a54f3-6486-01a1-9173-72206831706e"
                   },
                   "text": {
                     "id": "6f559260-1d75-1e7c-0522-3317da161914"
@@ -18035,7 +18280,7 @@
                   "id": "ea77c04d-1a76-756e-fcd4-78adee4f4750",
                   "type": "text",
                   "head": {
-                    "id": "43143977-84b5-89b9-53ec-4935188595ac"
+                    "id": "83af63fc-ebfb-3388-9c88-0b334421967b"
                   },
                   "text": {
                     "id": "c441b2d0-5f0a-0396-e327-55d3fefd899d"
@@ -18045,7 +18290,7 @@
                   "id": "5d6a452c-fd8a-75a7-3ea1-6c1a99bdda36",
                   "type": "text",
                   "head": {
-                    "id": "4eb0acba-5cb3-10b6-62b2-6e3e080533dc"
+                    "id": "64307afe-5c61-a2af-d226-393343d5b396"
                   },
                   "text": {
                     "id": "23a311cb-be4e-6c76-ee6c-57e2e78188a3"
@@ -18074,7 +18319,7 @@
                   "id": "f10730d0-3352-5712-dcd8-e2c3d1dbe78a",
                   "type": "text",
                   "head": {
-                    "id": "8ce0a55f-b8b1-37b8-b5c1-825a9de28cda"
+                    "id": "4f9e7432-6d36-1a23-7827-b52445b9def7"
                   },
                   "text": {
                     "id": "84646754-3561-23e1-2013-81e58d09bda8"
@@ -18340,7 +18585,7 @@
                   "headId": "toString",
                   "interface": "toString(): string",
                   "description": {
-                    "id": "60a4959d-e08d-7431-19bd-ef9b500c63cd"
+                    "id": "7273b292-82f4-6e04-5cc6-6f81f40336b6"
                   }
                 },
                 {
@@ -18366,7 +18611,9 @@
               "url": "activatedroute",
               "generationType": "interface-options",
               "generationFile": "router/src/router_state.ts",
-              "generationName": "ActivatedRoute"
+              "generationName": "ActivatedRoute",
+              "generationStartLine": 108,
+              "generationEndLine": 180
             },
             {
               "id": "b78c8354-874e-d8f2-4a4a-a03ba0fe4757",
@@ -18700,7 +18947,9 @@
               "url": "activatedroutesnapshot",
               "generationType": "interface-options",
               "generationFile": "router/src/router_state.ts",
-              "generationName": "ActivatedRouteSnapshot"
+              "generationName": "ActivatedRouteSnapshot",
+              "generationStartLine": 255,
+              "generationEndLine": 334
             },
             {
               "id": "554d1879-4294-9fea-d3e7-b3d654c87785",
@@ -37991,7 +38240,7 @@
           "locales": [
             {
               "lang": "en",
-              "text": "Returns a `Promise` that:\n\n* resolves to `true` when navigation succeeds,\n* resolves to `false` when navigation fails,\n* is rejected when an error happens.\n\n#### Example\n\n```typescript\nrouter.navigate(['team', 33, 'user', 11], {relativeTo: route});\n\n// Navigate without updating the URL\nrouter.navigate(['team', 33, 'user', 11], {relativeTo: route, skipLocationChange: true});\n```\n\nThe first parameter of `navigate()` is a delta to be applied to the current URL or the one provided in the `relativeTo` property of the second parameter (the [NavigationExtras](../extraoptions-interface))."
+              "text": "Returns a `Promise` that:\n\n* resolves to `true` when navigation succeeds,\n* resolves to `false` when navigation fails,\n* is rejected when an error happens.\n\n#### Example\n\n```typescript\nrouter.navigate(['team', 33, 'user', 11], {relativeTo: route});\n\n// Navigate without updating the URL\nrouter.navigate(['team', 33, 'user', 11], {relativeTo: route, skipLocationChange: true});\n```\n\nThe first parameter of `navigate()` is a delta to be applied to the current URL or the one provided in the `relativeTo` property of the second parameter (the [NavigationExtras](../navigationextras))."
             }
           ]
         },
@@ -40614,11 +40863,222 @@
               "text": "If null or undefined, the view engine won't call it.\nThis is used as a performance optimization for production mode."
             }
           ]
+        },
+        {
+          "id": "bcc41642-5ddd-ca28-e301-9fa01c82cb5c",
+          "context": "Page title",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "NavigationExtras\n"
+            }
+          ]
+        },
+        {
+          "id": "d0212461-4d53-4131-bce2-95eaf3dd6f85",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Represents the extra options used during navigation.\n"
+            }
+          ]
+        },
+        {
+          "id": "289fd34e-44bf-43a1-1681-5d7cb83c2bc7",
+          "context": "Entry text",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "## Properties"
+            }
+          ]
+        },
+        {
+          "id": "a31bd48b-b251-554f-ee42-36071c78158f",
+          "context": "Interface option description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Enables relative navigation from the current ActivatedRoute.\n"
+            }
+          ]
+        },
+        {
+          "id": "dbe0ad4e-826b-665a-7cad-92291382aab1",
+          "context": "Interface option description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Sets query parameters to the URL.\n"
+            }
+          ]
+        },
+        {
+          "id": "d15aaeea-bdd3-74fa-ebf5-c529b5c48b60",
+          "context": "Interface option description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Sets the hash fragment for the URL."
+            }
+          ]
+        },
+        {
+          "id": "00fd0122-1f00-0402-a941-b66858375293",
+          "context": "Interface option description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Preserves the query parameters for the next navigation.\n\nDeprecated, use `queryParamsHandling` instead."
+            }
+          ]
+        },
+        {
+          "id": "dbfdf7dc-997f-9ece-d871-b79072fbc5bb",
+          "context": "Interface option description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Config strategy to handle the query parameters for the next navigation.\n"
+            }
+          ]
+        },
+        {
+          "id": "c8dfb066-8a64-04bd-c6ae-3a9c4ca7e5ae",
+          "context": "Interface option description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Preserves the fragment for the next navigation."
+            }
+          ]
+        },
+        {
+          "id": "6ce48852-21b2-2ebb-fd22-2ed70e587346",
+          "context": "Interface option description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Navigates without pushing a new state into history.\n"
+            }
+          ]
+        },
+        {
+          "id": "d1db19f0-ed76-97e6-f7d1-a429fb2d7c33",
+          "context": "Interface option description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Navigates while replacing the current state in history.\n"
+            }
+          ]
+        },
+        {
+          "id": "c68015d3-0769-4b7b-6fc1-da114ecf3a3c",
+          "context": "Interface option description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "State passed to any navigation."
+            }
+          ]
+        },
+        {
+          "id": "215aa584-c010-e177-864b-f98ab9241ff7",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "\nConfiguration:\n\n```\n[{\n  path: 'parent',\n  component: ParentComponent,\n  children: [{\n    path: 'list',\n    component: ListComponent\n  },{\n    path: 'child',\n    component: ChildComponent\n  }]\n}]\n```\n\nNavigate to list route from child route:\n\n```\n @Component({...})\n class ChildComponent {\n  constructor(private router: Router, private route: ActivatedRoute) {}\n\n  go() {\n    this.router.navigate(['../list'], { relativeTo: this.route });\n  }\n}\n```"
+            }
+          ]
+        },
+        {
+          "id": "d3968d70-8a6a-1146-5e59-ea90397771ab",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```\n// Navigate to /view\nthis.router.navigate(['/view'], { replaceUrl: true });\n```"
+            }
+          ]
+        },
+        {
+          "id": "540a3514-b3ce-56d2-6e7a-eb05e9b9ac90",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "This value will be accessible through the `extras` object\nreturned from `router.getCurrentNavigation()` while a navigation is executing. Once a\nnavigation completes, this value will be written to `history.state` when the `location.go`\nor `location.replaceState` method is called before activating of this route. Note that\n`history.state` will not pass an object equality test because the `navigationId` will be\nadded to the state before being written.\n\nWhile `history.state` can accept any type of value, because the router adds the `navigationId`\non each navigation, the `state` must always be an object."
+            }
+          ]
+        },
+        {
+          "id": "c0bc3de0-efdf-d0c0-74df-4d39f82cecd3",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```\n// Navigate silently to /view\nthis.router.navigate(['/view'], { skipLocationChange: true });\n```"
+            }
+          ]
+        },
+        {
+          "id": "c93d67ea-4bb3-5efb-4b71-dff3ec8c098c",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```\n// from /results?page=1 to /view?page=1&page=2\nthis.router.navigate(['/view'], { queryParams: { page: 2 },  queryParamsHandling: \"merge\" });\n```"
+            }
+          ]
+        },
+        {
+          "id": "3cc39635-20de-1fc7-3f53-fee6a774b6d2",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```\n// Navigate to /results?page=1\nthis.router.navigate(['/results'], { queryParams: { page: 1 } });\n```"
+            }
+          ]
+        },
+        {
+          "id": "f3e3a0d2-d2d8-9143-1715-e5c53b2e41ab",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```\n// Preserve fragment from /results#top to /view#top\nthis.router.navigate(['/view'], { preserveFragment: true });\n```"
+            }
+          ]
+        },
+        {
+          "id": "7e1aa7ab-dfa3-0d81-f59d-06117b677ed4",
+          "context": "Interface option entry additional info",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "```\n// Navigate to /results#top\nthis.router.navigate(['/results'], { fragment: 'top' });\n```"
+            }
+          ]
+        },
+        {
+          "id": "e22d2672-8a18-72e0-2629-cc187fc16644",
+          "context": "Menu item",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "NavigationExtras"
+            }
+          ]
         }
       ],
       "title": "Angular 7",
       "url": "latest",
-      "default": true
+      "default": true,
+      "githubUrl": "https://github.com/angular/angular/blob/9b91beed6/packages"
     },
     {
       "id": "2399d139-e7df-518f-b31f-e3d38dc20f11",
