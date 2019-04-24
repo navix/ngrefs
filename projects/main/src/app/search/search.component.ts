@@ -6,7 +6,6 @@ import { ContentEntry, ContentPage, ContentSection, ContentVersion } from '../co
 import { extractMessage } from '../message/extract-message';
 import { VersionComponent } from '../version/version.component';
 
-
 @Component({
   selector: 'main-search',
   templateUrl: './search.component.html',
@@ -90,17 +89,17 @@ export class SearchComponent implements OnInit {
               case 'command-param':
                 entryTitle = entry.name;
                 fields = [
-                  entry.name ? entry.name.toLowerCase() : undefined,
-                  entry.values ? entry.values.toLowerCase() : undefined,
-                  entry.default ? entry.default.toLowerCase() : undefined,
-                  entry.aliases ? entry.aliases.toLowerCase() : undefined,
+                  this.lc(entry.name),
+                  this.lc(entry.values),
+                  this.lc(entry.default),
+                  this.lc(entry.aliases),
                   entry.description ? extractMessage(this.version.messages, entry.description, this.lang).toLowerCase() : undefined,
                 ];
                 break;
               case 'interface-option':
                 entryTitle = entry.name;
                 fields = [
-                  entry.name ? entry.name.toLowerCase() : undefined,
+                  this.lc(entry.name),
                   entry.description ? extractMessage(this.version.messages, entry.description, this.lang).toLowerCase() : undefined,
                   entry.additional ? extractMessage(this.version.messages, entry.additional, this.lang).toLowerCase() : undefined,
                 ];
@@ -135,6 +134,14 @@ export class SearchComponent implements OnInit {
 
   close() {
     this.modalRef.close();
+  }
+
+  lc(value) {
+    if (value) {
+      return (value + '').toLowerCase();
+    } else {
+      return undefined;
+    }
   }
 
   private search() {
