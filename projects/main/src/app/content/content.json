@@ -2185,7 +2185,7 @@
                   "id": "e2d26c0a-ce34-3d09-1a6b-a6b761415e90",
                   "type": "text",
                   "head": {
-                    "id": "2a77915e-b08b-724c-0f68-c09e8dc2ee13"
+                    "id": "c81d94a9-cf19-1d1a-ae7b-77e4148e4ee2"
                   },
                   "text": {
                     "id": "b413a7de-e4a2-01d4-3004-15fce73a1ac1"
@@ -2224,7 +2224,7 @@
                   "id": "2a6f4b52-eca4-01cf-03af-1b4c3d1e5b48",
                   "type": "text",
                   "head": {
-                    "id": "42a96de5-28ce-0e49-f988-fbe8ee200b73"
+                    "id": "dcced84e-f1cf-6375-dbb5-8a5f7edd52d9"
                   },
                   "text": {
                     "id": "429025e0-f5a1-470e-6c23-40459d616223"
@@ -2341,7 +2341,9 @@
               "title": {
                 "id": "f5df4d17-ef7a-2641-0470-0e1edd941184"
               },
-              "url": "builder-app-shell"
+              "url": "builder-app-shell",
+              "generationType": "cli-builder",
+              "generationCliBuilderName": "appShell"
             },
             {
               "id": "34df1bf8-ad15-4dfa-839d-3448a8f20c45",
@@ -2350,7 +2352,7 @@
                   "id": "756a37bd-55b3-30ea-ed3d-7dec9f0d4a31",
                   "type": "text",
                   "head": {
-                    "id": "20a90af1-0d8e-6090-3a1c-9db36b5c7e52"
+                    "id": "176cceb4-8609-ff11-42da-cafcfe6ca548"
                   },
                   "text": {
                     "id": "b106b61c-3fa3-1426-9c76-f369360c88ca"
@@ -2360,7 +2362,7 @@
                   "id": "6dda87e1-a0a3-59f6-de42-e3e5431d97d0",
                   "type": "text",
                   "head": {
-                    "id": "feddf296-39ba-2318-5314-36de01381c9d"
+                    "id": "4de95fc9-cee6-7566-01f2-006b98e72d8e"
                   },
                   "text": {
                     "id": "558a0430-8b9e-9963-eadd-cb204b1d9c25"
@@ -2391,23 +2393,6 @@
                   "name": "aot",
                   "headId": "aot",
                   "paramType": "boolean"
-                },
-                {
-                  "id": "3ffe15ef-b53a-44a4-dd75-8e8882a9585e",
-                  "type": "command-param",
-                  "head": {
-                    "text": "es5BrowserSupport"
-                  },
-                  "text": {
-                    "id": "11547657-6aaa-e7b5-6a68-347691a62b11"
-                  },
-                  "description": {
-                    "id": "243ebb40-67cc-e2cf-fdea-a7006a76d940"
-                  },
-                  "headId": "es5BrowserSupport",
-                  "name": "es5BrowserSupport",
-                  "paramType": "boolean",
-                  "default": "false"
                 },
                 {
                   "id": "dd54763d-8cf6-3752-e918-f94475f03103",
@@ -2538,6 +2523,23 @@
                   "name": "deployUrl",
                   "headId": "deployUrl",
                   "paramType": "string"
+                },
+                {
+                  "id": "3ffe15ef-b53a-44a4-dd75-8e8882a9585e",
+                  "type": "command-param",
+                  "head": {
+                    "text": "es5BrowserSupport"
+                  },
+                  "text": {
+                    "id": "11547657-6aaa-e7b5-6a68-347691a62b11"
+                  },
+                  "description": {
+                    "id": "243ebb40-67cc-e2cf-fdea-a7006a76d940"
+                  },
+                  "headId": "es5BrowserSupport",
+                  "name": "es5BrowserSupport",
+                  "paramType": "boolean",
+                  "default": "false"
                 },
                 {
                   "id": "7b9eda73-7c84-d05e-87ee-6164aa5e112f",
@@ -2897,6 +2899,20 @@
                   "default": "true"
                 },
                 {
+                  "id": "34a61d40-79a0-17ac-203e-9b734c37261a",
+                  "type": "command-param",
+                  "name": "rebaseRootRelativeCssUrls",
+                  "head": {
+                    "text": "rebaseRootRelativeCssUrls"
+                  },
+                  "headId": "rebaseRootRelativeCssUrls",
+                  "paramType": "boolean",
+                  "default": "",
+                  "description": {
+                    "id": "cc8efebb-9761-cadf-8667-788f00887c80"
+                  }
+                },
+                {
                   "id": "ec0979a8-b096-70a5-5758-bee8c75d5504",
                   "type": "command-param",
                   "head": {
@@ -3179,12 +3195,28 @@
                   "name": "watch",
                   "headId": "watch",
                   "paramType": "boolean"
+                },
+                {
+                  "id": "635eda24-d19a-e0eb-ca28-c7ef164f68ea",
+                  "type": "command-param",
+                  "name": "webWorkerTsConfig",
+                  "head": {
+                    "text": "webWorkerTsConfig"
+                  },
+                  "headId": "webWorkerTsConfig",
+                  "paramType": "string",
+                  "default": "",
+                  "description": {
+                    "id": "0fa82a25-3238-0545-6874-cf8898b13db5"
+                  }
                 }
               ],
               "title": {
                 "id": "4cc27f91-55eb-e416-7bd3-5136c439e2b5"
               },
-              "url": "builder-browser"
+              "url": "builder-browser",
+              "generationType": "cli-builder",
+              "generationCliBuilderName": "browser"
             },
             {
               "id": "2b0488ef-2a78-9ddd-adb7-af42dc877e53",
@@ -3193,7 +3225,7 @@
                   "id": "3927c5c0-d935-42cd-33ee-3003c8b31a18",
                   "type": "text",
                   "head": {
-                    "id": "4659147c-1503-1ab4-01c7-1fb190ed29a2"
+                    "id": "7376822f-89d2-b8ae-58ff-edf300fae4ed"
                   },
                   "text": {
                     "id": "8ad9643d-8b2d-486f-fdc0-a18d49068647"
@@ -3670,7 +3702,9 @@
               "title": {
                 "id": "1b2439f2-095b-7333-0ede-0df7a59d9a8b"
               },
-              "url": "builder-dev-server"
+              "url": "builder-dev-server",
+              "generationType": "cli-builder",
+              "generationCliBuilderName": "devServer"
             },
             {
               "id": "1427e274-b46c-55a7-ba43-6094f217b076",
@@ -3679,7 +3713,7 @@
                   "id": "f3bd9436-cc11-65d3-636c-17f98bafb24a",
                   "type": "text",
                   "head": {
-                    "id": "11e06db6-f723-81dc-7066-a8f5a93b3270"
+                    "id": "a256abf9-b3f5-2fc9-a270-0f3dc03eab6b"
                   },
                   "text": {
                     "id": "b02f9a72-e572-eb2f-9eb6-160d38c05c95"
@@ -3715,7 +3749,7 @@
                   "id": "843de2f2-ef73-1096-05be-4ef5d7a94f66",
                   "type": "text",
                   "head": {
-                    "id": "b42d979d-5d63-9452-e53c-55210cd23b17"
+                    "id": "d30a9816-a5e8-70dd-3638-38c993bd2ba5"
                   },
                   "text": {
                     "id": "7256f346-b829-a735-9d63-415223fff65c"
@@ -3782,6 +3816,22 @@
                   "paramType": "string"
                 },
                 {
+                  "id": "8ae8ab9c-ea53-b9ea-1bdb-5f96abfb936b",
+                  "type": "command-param",
+                  "head": {
+                    "text": "outFile"
+                  },
+                  "text": {
+                    "id": "b79ba3d9-40a3-1025-6628-de2af6637860"
+                  },
+                  "description": {
+                    "id": "ee701989-b69c-0f99-ca23-25b25d3efd77"
+                  },
+                  "name": "outFile",
+                  "headId": "outFile",
+                  "paramType": "string"
+                },
+                {
                   "id": "2313b9ee-6d38-59a3-5029-8d0261a25e56",
                   "type": "command-param",
                   "head": {
@@ -3798,26 +3848,26 @@
                   "paramType": "string"
                 },
                 {
-                  "id": "8ae8ab9c-ea53-b9ea-1bdb-5f96abfb936b",
+                  "id": "8e39088b-5ac6-2b3c-23fc-32cb4cfe848d",
                   "type": "command-param",
+                  "name": "progress",
                   "head": {
-                    "text": "outFile"
+                    "text": "progress"
                   },
-                  "text": {
-                    "id": "b79ba3d9-40a3-1025-6628-de2af6637860"
-                  },
+                  "headId": "progress",
+                  "paramType": "boolean",
+                  "default": true,
                   "description": {
-                    "id": "ee701989-b69c-0f99-ca23-25b25d3efd77"
-                  },
-                  "name": "outFile",
-                  "headId": "outFile",
-                  "paramType": "string"
+                    "id": "528aed89-4da0-37d0-bdbd-dbd34974e46c"
+                  }
                 }
               ],
               "title": {
                 "id": "a876e5e3-b31c-a185-f08b-9ff3b006f315"
               },
-              "url": "builder-extract-i18n"
+              "url": "builder-extract-i18n",
+              "generationType": "cli-builder",
+              "generationCliBuilderName": "extracti18n"
             },
             {
               "id": "3b309737-d7bd-6d74-6cd8-1f7bdde2738d",
@@ -3826,7 +3876,7 @@
                   "id": "58d1bb71-7b9e-458e-12f4-552af8e77d87",
                   "type": "text",
                   "head": {
-                    "id": "a4f61196-cfae-7781-266d-801d4efcf8ff"
+                    "id": "b4a91882-f512-a6a8-bd9a-a7d8bfe49549"
                   },
                   "text": {
                     "id": "e8384fe4-9ca8-8494-8267-93368d9df52e"
@@ -3855,7 +3905,7 @@
                   "id": "10261daf-6f29-62bd-d9b6-57aa8f55e377",
                   "type": "text",
                   "head": {
-                    "id": "b6339e30-3d0d-9733-6603-cfc946756571"
+                    "id": "dce090ac-f3de-fcdf-e4e1-bf5bd3e85970"
                   },
                   "text": {
                     "id": "147066c0-5dbd-e75b-0242-c82fb30d2ab3"
@@ -4066,6 +4116,20 @@
                   "default": "true"
                 },
                 {
+                  "id": "e4148bad-8339-a512-5831-15a1be12e16c",
+                  "type": "command-param",
+                  "name": "reporters",
+                  "head": {
+                    "text": "reporters"
+                  },
+                  "headId": "reporters",
+                  "paramType": "array",
+                  "default": "",
+                  "description": {
+                    "id": "a8680365-05ad-af15-fe51-0ab136fd75d8"
+                  }
+                },
+                {
                   "id": "594cb820-f571-bf6c-f075-9623aaa0f24e",
                   "type": "command-param",
                   "head": {
@@ -4178,12 +4242,28 @@
                   "name": "watch",
                   "headId": "watch",
                   "paramType": "boolean"
+                },
+                {
+                  "id": "2a143293-7787-a0d3-a3d0-1a910a5a6fd8",
+                  "type": "command-param",
+                  "name": "webWorkerTsConfig",
+                  "head": {
+                    "text": "webWorkerTsConfig"
+                  },
+                  "headId": "webWorkerTsConfig",
+                  "paramType": "string",
+                  "default": "",
+                  "description": {
+                    "id": "759ff468-99a5-dc0c-799c-329c90e06979"
+                  }
                 }
               ],
               "title": {
                 "id": "73841b09-4db3-531f-478f-6ffdf4f924d3"
               },
-              "url": "builder-karma"
+              "url": "builder-karma",
+              "generationType": "cli-builder",
+              "generationCliBuilderName": "karma"
             },
             {
               "id": "0b1a5672-69f1-6943-f959-f8d628914598",
@@ -4192,7 +4272,7 @@
                   "id": "64f7c168-c1a6-541c-5216-e457107c80dd",
                   "type": "text",
                   "head": {
-                    "id": "fc0163a4-894d-11b5-b66d-f4d83318a264"
+                    "id": "d6c2bd8a-5a44-ce0a-ca77-f291ac6ab695"
                   },
                   "text": {
                     "id": "0feffac9-aa0d-5502-f033-f56cf70af3a4"
@@ -4221,7 +4301,7 @@
                   "id": "034f98cb-1d0c-913d-a6ed-ebe2660dab5b",
                   "type": "text",
                   "head": {
-                    "id": "9604647a-fa94-81fc-0704-d8686ad57384"
+                    "id": "297d284a-49b7-f7c9-edef-9fa2c8ad5941"
                   },
                   "text": {
                     "id": "1ce4c7fe-f0a1-00dd-f5f9-9b2e00df735f"
@@ -4382,12 +4462,28 @@
                   "headId": "webdriverUpdate",
                   "paramType": "boolean",
                   "default": "true"
+                },
+                {
+                  "id": "45009a62-70f0-1fc3-623d-80ca326c0b66",
+                  "type": "command-param",
+                  "name": "serve",
+                  "head": {
+                    "text": "serve"
+                  },
+                  "headId": "serve",
+                  "paramType": "boolean",
+                  "default": true,
+                  "description": {
+                    "id": "20c27e8a-cabc-e595-340f-2e35eced6af0"
+                  }
                 }
               ],
               "title": {
                 "id": "b53e7ad9-8b8e-de0c-e4d8-c5a3f6edc18c"
               },
-              "url": "builder-protractor"
+              "url": "builder-protractor",
+              "generationType": "cli-builder",
+              "generationCliBuilderName": "protractor"
             },
             {
               "id": "6b511d08-e7a8-521e-9c19-56dd0f8e8707",
@@ -4396,7 +4492,7 @@
                   "id": "13e87757-ed5b-e793-8988-95b322b65ab7",
                   "type": "text",
                   "head": {
-                    "id": "d50b7423-4571-d894-33fe-c994a6b98fe1"
+                    "id": "d66f60f9-831b-ef0f-d4f4-11f00468158c"
                   },
                   "text": {
                     "id": "f99f1a57-af8c-722f-d48b-0147d5ef88b8"
@@ -4743,6 +4839,20 @@
                   "default": "true"
                 },
                 {
+                  "id": "8db35a4d-060d-45ca-84fe-e0923f621da0",
+                  "type": "command-param",
+                  "name": "resourcesOutputPath",
+                  "head": {
+                    "text": "resourcesOutputPath"
+                  },
+                  "headId": "resourcesOutputPath",
+                  "paramType": "string",
+                  "default": "",
+                  "description": {
+                    "id": "bf29170e-8d75-ac17-b3c4-f957c72864ab"
+                  }
+                },
+                {
                   "id": "fdb9f4b3-b044-f835-1087-bf0ec30a9bfc",
                   "type": "command-param",
                   "head": {
@@ -4897,7 +5007,9 @@
               "title": {
                 "id": "c254b069-e10b-92e8-ac31-9346d586f932"
               },
-              "url": "builder-server"
+              "url": "builder-server",
+              "generationType": "cli-builder",
+              "generationCliBuilderName": "server"
             },
             {
               "id": "80797727-af42-d79c-ced4-eac987947c61",
@@ -4906,7 +5018,7 @@
                   "id": "8af9a0f4-e4fc-d374-b4a3-3df3cf0b97b2",
                   "type": "text",
                   "head": {
-                    "id": "4feb92c4-d139-82c4-723a-ec6ef7603a44"
+                    "id": "8581cc01-8100-a770-ed20-ca590bd4a831"
                   },
                   "text": {
                     "id": "a8a4a9c6-8073-58fa-6811-6708020d5903"
@@ -4916,7 +5028,7 @@
                   "id": "6c307f0f-7d90-208c-eeb7-08869677c15e",
                   "type": "text",
                   "head": {
-                    "id": "91c87de3-a29f-fae0-dd4f-68426edb1055"
+                    "id": "59d83a10-57f5-615a-a5f4-c4028d924b29"
                   },
                   "text": {
                     "id": "ae1eb473-3dcf-6a2b-3d9e-a38ca2adaa96"
@@ -5081,7 +5193,9 @@
               "title": {
                 "id": "3f0f952b-dbc6-3fa3-c462-8d06ef2a23f9"
               },
-              "url": "builder-tslint"
+              "url": "builder-tslint",
+              "generationType": "cli-builder",
+              "generationCliBuilderName": "tslint"
             },
             {
               "id": "b49f6452-c870-4114-a76c-0f5ea1462c45",
@@ -41302,6 +41416,76 @@
             {
               "lang": "en",
               "text": "Enables conditionally loaded ES2015 polyfills."
+            }
+          ]
+        },
+        {
+          "id": "528aed89-4da0-37d0-bdbd-dbd34974e46c",
+          "context": "Interface option description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Log progress to the console."
+            }
+          ]
+        },
+        {
+          "id": "cc8efebb-9761-cadf-8667-788f00887c80",
+          "context": "Interface option description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Change root relative URLs in stylesheets to include base HREF and deploy URL. Use only for compatibility and transition. The behavior of this option is non-standard and will be removed in the next major release."
+            }
+          ]
+        },
+        {
+          "id": "0fa82a25-3238-0545-6874-cf8898b13db5",
+          "context": "Interface option description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "TypeScript configuration for Web Worker modules."
+            }
+          ]
+        },
+        {
+          "id": "a8680365-05ad-af15-fe51-0ab136fd75d8",
+          "context": "Interface option description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Karma reporters to use. Directly passed to the karma runner."
+            }
+          ]
+        },
+        {
+          "id": "759ff468-99a5-dc0c-799c-329c90e06979",
+          "context": "Interface option description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "TypeScript configuration for Web Worker modules."
+            }
+          ]
+        },
+        {
+          "id": "20c27e8a-cabc-e595-340f-2e35eced6af0",
+          "context": "Interface option description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Compile and Serve the app."
+            }
+          ]
+        },
+        {
+          "id": "bf29170e-8d75-ac17-b3c4-f957c72864ab",
+          "context": "Interface option description",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "The path where style resources will be placed, relative to outputPath."
             }
           ]
         }
