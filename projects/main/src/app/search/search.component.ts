@@ -6,6 +6,7 @@ import { ContentEntry, ContentPage, ContentSection, ContentVersion } from '../co
 import { extractMessage } from '../message/extract-message';
 import { VersionComponent } from '../version/version.component';
 
+
 @Component({
   selector: 'main-search',
   templateUrl: './search.component.html',

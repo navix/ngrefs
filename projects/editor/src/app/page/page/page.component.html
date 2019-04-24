@@ -27,6 +27,7 @@
                 uiSelect>
           <option value="none">None</option>
           <option value="interface-options">Interface options</option>
+          <option value="cli-builder">CLI builder</option>
         </select>
       </ui-form-field>
       <div *ngIf="page.generationType === 'interface-options'">
@@ -62,6 +63,27 @@
             <span *ngIf="log.description">{{ log.description }}<br></span>
           </div>
           <button uiButton size="sm" (click)="applyGeneration()">Apply</button>
+        </div>
+      </div>
+      <div *ngIf="page.generationType === 'cli-builder'">
+        <ui-form-field label="Builder Name">
+          <input [(ngModel)]="page.generationCliBuilderName"
+                 name="generationCliBuilderName"
+                 uiText>
+        </ui-form-field>
+        <button uiButton size="sm" (click)="prepareCliGeneration()">Prepare CLI generation</button>
+        <div *ngIf="cliGenerationLog.length > 0">
+          <h5>Changes</h5>
+          <div *ngFor="let log of cliGenerationLog"
+               class="generation-log">
+            <strong>[{{ log.action }}]: {{ log.name }}</strong><br>
+            <i *ngIf="log.action === 'remove'">Removing is always manual.<br></i>
+            <span>Type: {{ log.current?.type }} &rarr; {{ log.new?.type }}<br></span>
+            <span>Def: {{ log.current?.default }} &rarr; {{ log.new?.default }}<br></span>
+            <span>Desc: {{ log.description }}<br></span>
+            <button uiButton size="sm" (click)="applyCliLog(log)">Apply this one</button>
+          </div>
+          <button uiButton size="sm" (click)="applyCliGeneration()">Apply</button>
         </div>
       </div>
     </div>

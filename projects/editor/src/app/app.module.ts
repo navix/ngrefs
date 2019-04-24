@@ -67,7 +67,6 @@ import { DemoEntryComponent } from './entry/demo-entry/demo-entry.component';
     UiModule,
     DemosModule,
   ],
-  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {

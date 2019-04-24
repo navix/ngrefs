@@ -15,6 +15,7 @@
     "main:deploy": "npm run clean && npm run main:sitemap && npm run main:build && npm run main:server:build && npm run main:server:bundle && npm run main:docker:build && npm run main:docker:push",
     "editor:serve": "ng run editor:serve",
     "editor:docgen:angular": "docgen -p ./sources/angular/packages/ -o ./projects/editor/src/app/apis/angular.json -c ./docgen.json",
+    "editor:docgen:angular-cli": "cpx \"./sources/angular-cli/packages/angular/cli/lib/config/schema.json\" \"./projects/editor/src/app/apis\"",
     "posteditor:docgen:angular": "node ./projects/editor/angular-api-post-gen.js"
   },
   "private": true,
@@ -57,6 +58,7 @@
     "angular-cli-builders": "^2.1.2",
     "awesome-typescript-loader": "^5.2.1",
     "codelyzer": "^4.5.0",
+    "cpx": "^1.5.0",
     "directory-tree": "^2.1.0",
     "front-matter": "^3.0.0",
     "fs-extra": "^7.0.0",

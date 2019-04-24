@@ -2,9 +2,13 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { isDefined } from '@ngx-kit/core';
 import { angularLifehooks } from '@ngx-kit/docgen/meta';
-import { ContentCommandParamEntry, ContentInterfaceOptionEntry, ContentPage } from '../../../../../main/src/app/content/meta';
+import {
+  ContentCommandParamEntry,
+  ContentInterfaceOptionEntry,
+  ContentPage,
+} from '../../../../../main/src/app/content/meta';
 import { AngularApiService } from '../../apis/angular-api.service';
-import { angularApi } from '../../apis/apis';
+import { angularCliSchema } from '../../apis/apis';
 import { DataService } from '../../data.service';
 import { SectionComponent } from '../../section/section/section.component';
 import { VersionComponent } from '../../version/version/version.component';
@@ -24,6 +28,20 @@ export class PageComponent implements OnInit {
     interface?: {
       old?: string;
       new?: string;
+    };
+    description?: string;
+  }[] = [];
+
+  cliGenerationLog: {
+    action: 'add' | 'update' | 'remove';
+    name: string;
+    current?: {
+      type: string;
+      default: string;
+    };
+    new?: {
+      type: string;
+      default: string;
     };
     description?: string;
   }[] = [];
@@ -168,5 +186,118 @@ export class PageComponent implements OnInit {
     });
     alert(`${counter} logs have been applied!`);
     this.prepareGeneration();
+  }
+
+  prepareCliGeneration() {
+    this.cliGenerationLog = [];
+    const def: {
+      properties: {
+        [i: string]: {
+          type: string;
+          description: string;
+          default: any;
+        };
+      };
+    } = angularCliSchema.definitions.targetOptions.definitions[this.page.generationCliBuilderName];
+    if (!def) {
+      alert(`Cli builder with name "${this.page.generationCliBuilderName} not found in CLI schema"`);
+      return;
+    }
+    const entries = this.page.entries
+      .filter((e): e is ContentCommandParamEntry => e.type === 'command-param');
+    for (const paramName in def.properties) {
+      const param = def.properties[paramName];
+      const entry = entries.find(e => e.name === paramName);
+      const paramType = param.type || '';
+      const paramDefault = param.default || '';
+      // to update
+      if (entry) {
+        const entryType = entry.paramType || '';
+        const entryDefault = entry.default || '';
+        const entryDescription = this.versionComponent.messageByRef(entry.description);
+        if ((entryType != paramType || entryDefault != paramDefault)) {
+          this.cliGenerationLog.push({
+            action: 'update',
+            name: paramName,
+            current: {
+              type: entryType,
+              default: entryDefault,
+            },
+            new: {
+              type: paramType,
+              default: paramDefault,
+            },
+            description: entryDescription || param.description,
+          });
+        }
+      }
+      // to add
+      if (!entry) {
+        this.cliGenerationLog.push({
+          action: 'add',
+          name: paramName,
+          new: {
+            type: paramType,
+            default: paramDefault,
+          },
+          description: param.description,
+        });
+      }
+    }
+    // to remove
+    entries.forEach(e => {
+      const param = def.properties[e.name];
+      if (!param) {
+        this.cliGenerationLog.push({
+          action: 'remove',
+          name: e.name,
+        });
+      }
+    });
+    if (this.cliGenerationLog.length === 0) {
+      alert('All entries are up to date.');
+    }
+  }
+
+  applyCliGeneration() {
+    alert('It is a bad idea in the current condition of SCHEMA description');
+    return;
+    if (!confirm('Are you sure?')) {
+      return;
+    }
+    let counter = 0;
+    this.cliGenerationLog.forEach(log => {
+      if (this.applyCliLog(log)) {
+        counter++;
+      }
+    });
+    alert(`${counter} logs have been applied!`);
+    this.prepareGeneration();
+  }
+
+  applyCliLog(log: any) {
+    switch (log.action) {
+      case 'add': {
+        const message = this.data.createMessage('Interface option description', log.description);
+        this.versionComponent.version.messages.push(message);
+        const entry: ContentCommandParamEntry = this.data.createEntry<ContentCommandParamEntry>('command-param');
+        entry.name = log.name;
+        entry.head = {text: log.name};
+        entry.headId = log.name;
+        entry.paramType = log.new.type;
+        entry.default = log.new.default;
+        entry.description = {id: message.id};
+        this.page.entries.push(entry);
+        return true;
+      }
+      case 'update': {
+        const entry = this.page.entries
+          .filter((e): e is ContentCommandParamEntry => e.type === 'command-param')
+          .find(e => e.name === log.name);
+        entry.paramType = log.new.type;
+        entry.default = log.new.default;
+        return true;
+      }
+    }
   }
 }

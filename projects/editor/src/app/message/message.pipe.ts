@@ -12,12 +12,6 @@ export class MessagePipe implements PipeTransform {
   }
 
   transform(ref: ContentMessageRef, args?: any): any {
-    if (ref && ref.id) {
-      const message = this.versionComponent.version.messages
-        .find(m => m.id === ref.id);
-      if (message && message.locales[0]) {
-        return message.locales[0].text;
-      }
-    }
+    return this.versionComponent.messageByRef(ref);
   }
 }

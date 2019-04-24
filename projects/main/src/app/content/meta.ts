@@ -56,6 +56,7 @@ export interface ContentPage {
   generationName?: string;
   generationStartLine?: number;
   generationEndLine?: number;
+  generationCliBuilderName?: string;
   menuItems?: ContentMenuItem[];
   entries: (ContentEntry | ContentTextEntry | ContentCommandParamEntry | ContentHintEntry | ContentTutorialsEntry)[];
 }
