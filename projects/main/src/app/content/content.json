@@ -715,7 +715,7 @@
                   "id": "5d78e256-738a-c25e-6b62-637c8cf7066f",
                   "type": "text",
                   "head": {
-                    "id": "fbbfaf2a-fee7-58fa-ca8c-cbbbdb71629b"
+                    "id": "19298272-a741-fb85-20f6-07725eb5f469"
                   },
                   "text": {
                     "id": "25698557-beef-da6c-7feb-211be044c78f"
@@ -737,6 +737,13 @@
                       },
                       "url": "https://nitayneeman.com/posts/understanding-the-angular-cli-workspace-file/",
                       "lang": "en"
+                    },
+                    {
+                      "lang": "en",
+                      "label": {
+                        "id": "060e18ce-396f-fe57-52a9-bec81437d79e"
+                      },
+                      "url": "https://blog.nrwl.io/angular-cli-demystifying-the-workspace-7f59ffaab4cb"
                     }
                   ]
                 },
@@ -744,7 +751,7 @@
                   "id": "35503297-e158-2769-3c75-132225ed84eb",
                   "type": "text",
                   "head": {
-                    "id": "fce2ff4d-0d00-7dd2-56a6-0303287efdcf"
+                    "id": "72609dbc-c58e-dc2a-888b-fd023604f585"
                   },
                   "text": {
                     "id": "dca2c6bf-0c48-ad6e-da78-a2eb08c062a9"
@@ -2147,7 +2154,7 @@
                   "id": "bee6446c-52fb-6ebd-ff99-8e503b07a85f",
                   "type": "text",
                   "head": {
-                    "id": "5c38e2f7-cab9-5a80-7afc-43006bb24cf8"
+                    "id": "475765ef-3445-57b2-b216-39f3162f8a5e"
                   },
                   "text": {
                     "id": "635f8756-e1f7-28b0-681b-90637f42260a"
@@ -2169,6 +2176,13 @@
                       },
                       "url": "https://nitayneeman.com/posts/understanding-the-angular-cli-workspace-file/",
                       "lang": "en"
+                    },
+                    {
+                      "lang": "en",
+                      "label": {
+                        "id": "93e16637-4289-fa59-05ce-7a7c0a447a86"
+                      },
+                      "url": "https://blog.nrwl.io/angular-cli-demystifying-the-workspace-7f59ffaab4cb"
                     }
                   ]
                 }
@@ -2352,7 +2366,7 @@
                   "id": "756a37bd-55b3-30ea-ed3d-7dec9f0d4a31",
                   "type": "text",
                   "head": {
-                    "id": "176cceb4-8609-ff11-42da-cafcfe6ca548"
+                    "id": "eeaafd70-5391-9950-2c17-fe296475aa52"
                   },
                   "text": {
                     "id": "b106b61c-3fa3-1426-9c76-f369360c88ca"
@@ -2362,7 +2376,7 @@
                   "id": "6dda87e1-a0a3-59f6-de42-e3e5431d97d0",
                   "type": "text",
                   "head": {
-                    "id": "4de95fc9-cee6-7566-01f2-006b98e72d8e"
+                    "id": "8d2918ce-216d-3429-fb99-57dc342c3523"
                   },
                   "text": {
                     "id": "558a0430-8b9e-9963-eadd-cb204b1d9c25"
@@ -2539,7 +2553,20 @@
                   "headId": "es5BrowserSupport",
                   "name": "es5BrowserSupport",
                   "paramType": "boolean",
-                  "default": "false"
+                  "default": "false",
+                  "tutorialsEntry": {
+                    "id": "16222192-4f32-bb6d-12fa-ebbb8d9c0c5e",
+                    "type": "tutorials",
+                    "links": [
+                      {
+                        "lang": "en",
+                        "label": {
+                          "id": "b50d36d1-0a81-2f34-4be9-976b2bf52054"
+                        },
+                        "url": "https://netbasal.com/prevent-loading-redundant-es2015-browser-polyfills-thanks-to-angular-cli-177494c5244d"
+                      }
+                    ]
+                  }
                 },
                 {
                   "id": "7b9eda73-7c84-d05e-87ee-6164aa5e112f",
@@ -15181,7 +15208,7 @@
                   "id": "0b3ddb01-d3b6-eacf-d51f-b15439bc75e5",
                   "type": "text",
                   "head": {
-                    "id": "ad6dc028-f79a-7292-8f57-fd4e5d95539f"
+                    "id": "f02d95af-c40a-321e-3a95-b73fb88db77c"
                   },
                   "text": {
                     "id": "fabff49e-640e-56ca-2ee0-9c520151b2c3"
@@ -15191,17 +15218,36 @@
                   "id": "f75fc11c-761e-b06e-1be9-bec4fa860801",
                   "type": "text",
                   "head": {
-                    "id": "17b68132-a4fa-f419-5d0a-60f3aebadd84"
+                    "id": "efa14091-df2a-134a-a71a-7aeb08ae08c1"
                   },
                   "text": {
                     "id": "f126e079-9267-14fb-f107-d68e37c4f2ac"
                   }
                 },
                 {
+                  "id": "dd838ba1-d467-d60e-fdb3-304e881aedc0",
+                  "type": "tutorials",
+                  "head": {
+                    "id": "e634e72b-7f81-f2af-8046-5c59dcd967c9"
+                  },
+                  "text": {
+                    "id": "9e60bfd6-6064-8ccb-d17d-614816479d53"
+                  },
+                  "links": [
+                    {
+                      "lang": "en",
+                      "label": {
+                        "id": "81827121-1aa8-4a18-6aaf-2e4fe7a3b67e"
+                      },
+                      "url": "https://ultimatecourses.com/blog/exploring-angular-lifecycle-hooks-ondestroy"
+                    }
+                  ]
+                },
+                {
                   "id": "3b928e1f-27b0-fcf6-f02e-21fc1e172387",
                   "type": "text",
                   "head": {
-                    "id": "6c85e713-d593-a4af-eb5c-ce46d5ddd5ee"
+                    "id": "8a4c3e6e-ea1b-fed0-1533-81a4934ff74c"
                   },
                   "text": {
                     "id": "7c63bd14-9fec-c90d-2e25-9b494726af5e"
@@ -15211,7 +15257,7 @@
                   "id": "a225f1f6-ab45-e30b-c826-4e03e725f289",
                   "type": "text",
                   "head": {
-                    "id": "8bc52720-ba71-58cc-b2d4-d5109fdc6b83"
+                    "id": "58097df6-d947-6ec6-d000-a60e54968338"
                   },
                   "text": {
                     "id": "b501a6cc-8fa8-1e93-306d-e7a1a9316abd"
@@ -15221,7 +15267,7 @@
                   "id": "ec49dbc5-f4b1-8770-556a-29d273101910",
                   "type": "text",
                   "head": {
-                    "id": "4066dc4a-5b50-1b1f-6498-70abc5132abf"
+                    "id": "d6b97b86-7162-881f-38e2-b364ac13af93"
                   },
                   "text": {
                     "id": "e8d04219-e961-101d-44af-e56368bda26d"
@@ -17237,7 +17283,7 @@
                   "id": "bafbace8-5d2b-9697-935c-0df9ad1f1440",
                   "type": "text",
                   "head": {
-                    "id": "502999ac-e2b9-0c5f-caeb-76ec13d34477"
+                    "id": "c768897d-2dd5-633d-0a35-e844515c14df"
                   },
                   "text": {
                     "id": "1b254148-e462-cf93-0d3e-7b3fb949a4b1"
@@ -17247,7 +17293,7 @@
                   "id": "0694ae94-464b-3c8f-65a9-5bbf1ab1a231",
                   "type": "text",
                   "head": {
-                    "id": "c7b4afa3-4fd1-5130-8577-7f8c47e4f522"
+                    "id": "ce464a12-8d32-1e3e-4b66-e2caec220bd9"
                   },
                   "text": {
                     "id": "66e181d6-bbe8-4ee8-045b-51cbbb8c1c46"
@@ -17269,6 +17315,13 @@
                         "id": "25f4f5be-ccc7-8156-6ed0-d3e4cfdcdaff"
                       },
                       "url": "https://blog.angularindepth.com/new-in-angular-v7-1-updates-to-the-router-fd67d526ad05"
+                    },
+                    {
+                      "lang": "en",
+                      "label": {
+                        "id": "7f6593d0-17f2-f070-39cd-95083728fa18"
+                      },
+                      "url": "https://juristr.com/blog/2018/11/better-route-guard-redirects/"
                     }
                   ]
                 },
@@ -17276,7 +17329,7 @@
                   "id": "c9e8fc60-d1e7-02c2-d5a8-924bf9fd4c77",
                   "type": "text",
                   "head": {
-                    "id": "57fa5825-c7cd-fe32-249a-5a32f200b766"
+                    "id": "01c3c32b-148a-69b0-26b2-cb041ef4d87f"
                   },
                   "text": {
                     "id": "5e0523b4-1d92-6ec8-aded-7426089b93b9"
@@ -17286,7 +17339,7 @@
                   "id": "f729a69e-056c-2140-fa34-0ba245dd0cba",
                   "type": "text",
                   "head": {
-                    "id": "367dd87a-9584-a2b9-436c-dae590a26339"
+                    "id": "128900d2-e585-14bf-533b-aca9868e5993"
                   },
                   "text": {
                     "id": "1fc8e799-9f1d-71e5-292b-d162cbfdc3ad"
@@ -17296,7 +17349,7 @@
                   "id": "040d6006-59ae-3daf-b570-c50bae2e4045",
                   "type": "text",
                   "head": {
-                    "id": "84d33366-3b81-0ffa-1ee0-a73512bf9c38"
+                    "id": "38282f50-f0a6-1b27-b453-dfbef9630473"
                   },
                   "text": {
                     "id": "0680e493-7313-8224-f812-29645e4bc30d"
@@ -17306,7 +17359,7 @@
                   "id": "2d6cfe1c-28d1-caa8-95cd-e6902c3fe453",
                   "type": "text",
                   "head": {
-                    "id": "192f0583-1720-bc69-ea2c-dfaf99658c5f"
+                    "id": "ddf47dbd-1b7b-c776-7ed8-67896e198656"
                   },
                   "text": {
                     "id": "105b6fae-5da3-9c66-8fba-fae89793fbbc"
@@ -41486,6 +41539,56 @@
             {
               "lang": "en",
               "text": "The path where style resources will be placed, relative to outputPath."
+            }
+          ]
+        },
+        {
+          "id": "7f6593d0-17f2-f070-39cd-95083728fa18",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Better Redirects in Angular Route Guards"
+            }
+          ]
+        },
+        {
+          "id": "b50d36d1-0a81-2f34-4be9-976b2bf52054",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "https://netbasal.com/prevent-loading-redundant-es2015-browser-polyfills-thanks-to-angular-cli-177494c5244d"
+            }
+          ]
+        },
+        {
+          "id": "060e18ce-396f-fe57-52a9-bec81437d79e",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular CLI — Demystifying the workspace"
+            }
+          ]
+        },
+        {
+          "id": "93e16637-4289-fa59-05ce-7a7c0a447a86",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Angular CLI — Demystifying the workspace"
+            }
+          ]
+        },
+        {
+          "id": "81827121-1aa8-4a18-6aaf-2e4fe7a3b67e",
+          "context": "Link label",
+          "locales": [
+            {
+              "lang": "en",
+              "text": "Exploring Angular Lifecycle Hooks – OnDestroy"
             }
           ]
         }
