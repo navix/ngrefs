@@ -15,8 +15,6 @@ import { SeoService } from '../seo.service';
 export class VersionComponent implements OnInit {
   version: ContentVersion;
 
-  lang: string;
-
   showHints = true;
 
   currentSectionUrl?: string;
@@ -39,9 +37,8 @@ export class VersionComponent implements OnInit {
 
   ngOnInit() {
     this.route.params
-      .subscribe(({lang, versionUrl}) => {
-        this.lang = lang;
-        this.seo.setLang(this.lang);
+      .subscribe(({versionUrl}) => {
+        this.seo.setLang('en');
         this.version = versions.find(v => v.url === versionUrl);
         if (this.version) {
           this.seo.setAffix(`${this.version.title} References`);

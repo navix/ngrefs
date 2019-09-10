@@ -6,7 +6,6 @@ import { take, takeUntil } from 'rxjs/operators';
 import { ContentPage, ContentVersion } from '../content/meta';
 import { versions } from '../content/versions';
 import { CrossLinkingService } from '../cross-linking.service';
-import { extractMessage } from '../message/extract-message';
 import { SectionComponent } from '../section/section/section.component';
 import { SeoService } from '../seo.service';
 import { VersionComponent } from '../version/version.component';
@@ -84,7 +83,6 @@ export class PageComponent implements OnInit, OnDestroy {
 
   get defaultVersionLink() {
     return this.cls.genCrossVersionsLink(this.defaultVersion, {
-      lang: this.versionComponent.lang,
       sectionUrl: this.section.url,
       pageUrl: this.page.url,
     });
@@ -100,8 +98,7 @@ export class PageComponent implements OnInit, OnDestroy {
     if (this.pageUrl) {
       this.page = this.sectionComponent.section.pages.find(p => p.url === this.pageUrl);
       if (this.page) {
-        const title = extractMessage(this.versionComponent.version.messages, this.page.title, this.versionComponent.lang);
-        this.seo.setPage(title);
+        this.seo.setPage(this.page.title);
         this.cdr.detectChanges();
       } else {
         this.router.navigate(['/e404']);

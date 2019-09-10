@@ -1,6 +1,5 @@
-import { ChangeDetectionStrategy, Component, Input, OnChanges, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit } from '@angular/core';
 import { ContentTutorialsEntry } from '../../content/meta';
-import { VersionComponent } from '../../version/version.component';
 
 @Component({
   selector: 'main-tutorials-entry',
@@ -12,21 +11,13 @@ export class TutorialsEntryComponent implements OnInit, OnChanges {
 
   display: boolean;
 
-  constructor(
-    private versionComponent: VersionComponent,
-  ) {
-  }
-
-  get lang() {
-    return this.versionComponent.lang;
+  constructor() {
   }
 
   ngOnInit() {
   }
 
   ngOnChanges() {
-    const hasEn = this.entry.links.find(l => l.lang === 'en');
-    const hasCurrent = this.entry.links.find(l => l.lang === this.lang);
-    this.display = !!hasEn || !!hasCurrent;
+    this.display = this.entry.links && this.entry.links.length > 0;
   }
 }

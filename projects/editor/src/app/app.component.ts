@@ -13,7 +13,7 @@ import { DataService } from './data.service';
 export class AppComponent {
   file: UiFileSelect;
 
-  @ViewChild('uiFile') uiFile: UiFileComponent;
+  @ViewChild('uiFile', {static: false}) uiFile: UiFileComponent;
 
   constructor(
     private data: DataService,
@@ -32,6 +32,7 @@ export class AppComponent {
 
   save() {
     this.data.cleanUpMessages();
+    this.data.langMigrate()
     const blob = new Blob(
       [JSON.stringify(this.data.data, null, 2)],
       {type: 'text/plain;charset=utf-8'},

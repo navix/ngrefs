@@ -4,7 +4,6 @@ import { KitPlatformService } from '@ngx-kit/core';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { ContentSection } from '../../content/meta';
-import { extractMessage } from '../../message/extract-message';
 import { SeoService } from '../../seo.service';
 import { VersionComponent } from '../../version/version.component';
 
@@ -45,11 +44,11 @@ export class SectionComponent implements OnInit, OnDestroy {
     this.router.events
       .pipe(takeUntil(this.destroy))
       .subscribe(e => {
-      if (e instanceof NavigationEnd) {
-        this.displayNav = false;
-        this.loadSection();
-      }
-    });
+        if (e instanceof NavigationEnd) {
+          this.displayNav = false;
+          this.loadSection();
+        }
+      });
   }
 
   ngOnDestroy() {
@@ -70,8 +69,7 @@ export class SectionComponent implements OnInit, OnDestroy {
       this.section = Object.values(this.version.sections)
         .find(s => s.url === this.sectionUrl);
       if (this.section) {
-        const title = extractMessage(this.version.messages, this.section.title, this.versionComponent.lang);
-        this.seo.setPrefix(title);
+        this.seo.setPrefix(this.section.title);
       } else {
         this.router.navigate(['/e404']);
       }

@@ -1,11 +1,11 @@
 <div *ngIf="display"
      class="entry">
   <div class="title">
-    {{ 'Tutorials' | ui }}
+    Tutorials
   </div>
   <ul class="content">
     <ng-container *ngFor="let link of entry.links">
-      <li *ngIf="link.lang === 'en' || link.lang === lang">
+      <li>
         <a [href]="link.url"
            target="_blank">
           {{ link.label | msg }}

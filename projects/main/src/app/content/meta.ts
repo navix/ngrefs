@@ -1,7 +1,6 @@
 export interface ContentFile {
   __v: string;
   versions: ContentVersion[];
-  uiMessages: ContentUiMessage[];
 }
 
 export interface ContentVersion {
@@ -11,9 +10,7 @@ export interface ContentVersion {
   githubUrl?: string;
   disabled?: boolean;
   default?: boolean;
-  langs: string[];
   sections: ContentSection[];
-  messages: ContentMessage[];
 }
 
 export interface ContentSection {
@@ -22,7 +19,6 @@ export interface ContentSection {
   color?: string;
   title?: ContentMessageRef;
   disabled?: boolean;
-  langs?: {[key: string]: boolean};
   menu: ContentMenu;
   pages: ContentPage[];
 }
@@ -99,7 +95,6 @@ export interface ContentTutorialsEntry extends ContentEntry {
   links: {
     url?: string;
     label?: ContentMessageRef;
-    lang?: string;
   }[];
 }
 
@@ -124,24 +119,4 @@ export interface ContentDemoEntry extends ContentEntry {
   demo: string;
 }
 
-export interface ContentMessage {
-  id: string;
-  context: string;
-  locales: {
-    lang: string;
-    text: string;
-    useSource?: boolean;
-  }[];
-}
-
-export interface ContentMessageRef {
-  id?: string;
-  text?: string;
-}
-
-export interface ContentUiMessage {
-  id: string;
-  locales: {
-    [key: string]: string;
-  };
-}
+export type ContentMessageRef = string;

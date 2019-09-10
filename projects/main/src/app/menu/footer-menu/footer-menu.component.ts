@@ -23,15 +23,4 @@ export class FooterMenuComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  get lang() {
-    return this.versionComponent.lang;
-  }
-
-  genLangLink(lang: string) {
-    return this.cls.genCrossLangLink(this.versionComponent.version, lang, {
-      sectionUrl: this.versionComponent.currentSectionUrl,
-      pageUrl: this.versionComponent.currentPageUrl,
-    });
-  }
 }

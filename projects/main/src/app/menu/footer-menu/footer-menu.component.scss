@@ -15,17 +15,6 @@
 .show-hints {
 }
 
-.langs {
-  a {
-    margin: 0 $grid / 2;
-    color: $linkColorLight;
-    &.-active {
-      font-weight: 600;
-      color: $linkColor;
-    }
-  }
-}
-
 .copy {
   border-top: 1px solid #aaaaaa;
   font-size: 0.65rem;

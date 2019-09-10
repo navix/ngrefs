@@ -1,9 +1,12 @@
 import { Injectable } from '@angular/core';
 import { isArray, isObject, uuid } from '@ngx-kit/core';
 import {
-  ContentEntry, ContentEntryType,
+  ContentEntry,
+  ContentEntryType,
   ContentFile,
-  ContentMenuItem, ContentMessage,
+  ContentMenuItem,
+  ContentMessage,
+  ContentMessageRef,
   ContentPage,
   ContentSection,
   ContentVersion,
@@ -182,6 +185,57 @@ export class DataService {
   migrate() {
     if (this.data.__v !== contentFileVersion) {
       this.migrateTo2();
+    }
+  }
+
+  langMigrate() {
+    this.data.versions = this.data.versions.map(v => ({
+      ...v,
+      sections: this.findAndReplace(v.sections, v.messages),
+      messages: [],
+    }));
+  }
+
+  findAndReplace(data: any, messages: ContentMessage[]) {
+    if (isArray(data)) {
+      for (const item of data) {
+        this.findAndReplace(item, messages);
+      }
+    }
+    if (isObject(data)) {
+      for (const dataKey in data) {
+        if (data[dataKey]) {
+          const msg = this.isMessageRef(data[dataKey], messages);
+          if (msg !== false) {
+            data[dataKey] = msg;
+          } else {
+            this.findAndReplace(data[dataKey], messages);
+          }
+        }
+      }
+    }
+    return data;
+  }
+
+  isMessageRef(data: any, messages: ContentMessage[]) {
+    if (isObject(data) && data.id) {
+      const message = this.messageByRef(messages, data);
+      if (message !== undefined) {
+        return message.locales[0] ? message.locales[0].text : '';
+      } else {
+        if (Object.keys(data).length === 1) {
+          return undefined;
+        }
+        return false;
+      }
+    }
+    return false;
+  }
+
+  messageByRef(messages: ContentMessage[], ref?: ContentMessageRef) {
+    if (ref && ref.id) {
+      return messages
+        .find(m => m.id === ref.id);
     }
   }
 

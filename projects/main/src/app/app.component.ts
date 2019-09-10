@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { KitIconsRegistryService } from '@ngx-kit/core';
+import { ContentVersion } from './content/meta';
 import { versions } from './content/versions';
 import { icons } from './icons';
 import { SeoService } from './seo.service';
@@ -17,5 +18,7 @@ export class AppComponent {
     private seo: SeoService, // Inject to force title rendering
   ) {
     this.iconsRegistry.add(icons);
+
+
   }
 }

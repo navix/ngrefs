@@ -1,6 +1,6 @@
 <h1><a [routerLink]="'/'">Angular References</a></h1>
 
-<p>{{ 'Intro' | ui }}</p>
+<p>References for Web developers describe tools and concepts of Angular framework.</p>
 
 <ul>
   <ng-container *ngFor="let version of versions">
@@ -9,18 +9,13 @@
       <ul>
         <li *ngFor="let section of version.sections">
           <h3>
-            <a *ngIf="!section.disabled && section.langs[lang]"
-               [routerLink]="['/', lang, version.url, section.url, 'intro']"
+            <a *ngIf="!section.disabled"
+               [routerLink]="['/', version.url, section.url, 'intro']"
                [style.border-color]="section.color">
-              {{ extractMessage(version.messages, section.title) }}
-            </a>
-            <a *ngIf="!section.disabled && !section.langs[lang]"
-               [routerLink]="['/', 'en', version.url, section.url, 'intro']"
-               [style.border-color]="section.color">
-              {{ extractMessage(version.messages, section.title) }} (en)
+              {{ section.title }}
             </a>
             <span *ngIf="section.disabled">
-              {{ extractMessage(version.messages, section.title) }} (Soon)
+              {{ section.title }} (Soon)
             </span>
           </h3>
         </li>

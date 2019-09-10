@@ -1,8 +1,6 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ContentMessage, ContentMessageRef } from '../content/meta';
 import { versions } from '../content/versions';
-import { extractMessage } from '../message/extract-message';
 
 @Component({
   selector: 'main-home',
@@ -12,8 +10,6 @@ import { extractMessage } from '../message/extract-message';
 })
 export class HomeComponent implements OnInit {
   versions = versions;
-
-  lang: string;
 
   versionUrl?: string;
 
@@ -26,13 +22,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.route.params
-      .subscribe(({lang, versionUrl}) => {
-        this.lang = lang || 'en';
+      .subscribe(({versionUrl}) => {
         this.versionUrl = versionUrl;
       });
-  }
-
-  extractMessage(messages: ContentMessage[], ref: ContentMessageRef) {
-    return extractMessage(messages, ref, 'en');
   }
 }

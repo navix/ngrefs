@@ -3,7 +3,6 @@ import { KitFocusManagerService, KitModalRef } from '@ngx-kit/core';
 import { BehaviorSubject } from 'rxjs';
 import { debounceTime, filter } from 'rxjs/operators';
 import { ContentEntry, ContentPage, ContentSection, ContentVersion } from '../content/meta';
-import { extractMessage } from '../message/extract-message';
 import { VersionComponent } from '../version/version.component';
 
 @Component({
@@ -19,8 +18,6 @@ export class SearchComponent implements OnInit {
   queryChanges = new BehaviorSubject<string>('');
 
   version: ContentVersion;
-
-  lang: string;
 
   query: string;
 
@@ -66,12 +63,11 @@ export class SearchComponent implements OnInit {
     this.focusManager.init();
     // Prepare index
     this.version = this.versionComponent.version;
-    this.lang = this.versionComponent.lang;
     this.versionComponent.version.sections
       .forEach(section => {
-        const sectionTitle = extractMessage(this.version.messages, section.title, this.lang);
+        const sectionTitle = section.title;
         section.pages.forEach(page => {
-          const pageTitle = extractMessage(this.version.messages, page.title, this.lang);
+          const pageTitle = page.title;
           this.pagesIndex.push({
             section,
             sectionTitle,
@@ -84,7 +80,7 @@ export class SearchComponent implements OnInit {
             let fields = [];
             switch (entry.type) {
               case 'text':
-                fields = [extractMessage(this.version.messages, entry.text, this.lang).toLowerCase()];
+                fields = [entry.text.toLowerCase()];
                 break;
               case 'command-param':
                 entryTitle = entry.name;
@@ -93,15 +89,15 @@ export class SearchComponent implements OnInit {
                   this.lc(entry.values),
                   this.lc(entry.default),
                   this.lc(entry.aliases),
-                  entry.description ? extractMessage(this.version.messages, entry.description, this.lang).toLowerCase() : undefined,
+                  entry.description ? entry.description.toLowerCase() : undefined,
                 ];
                 break;
               case 'interface-option':
                 entryTitle = entry.name;
                 fields = [
                   this.lc(entry.name),
-                  entry.description ? extractMessage(this.version.messages, entry.description, this.lang).toLowerCase() : undefined,
-                  entry.additional ? extractMessage(this.version.messages, entry.additional, this.lang).toLowerCase() : undefined,
+                  entry.description ? entry.description.toLowerCase() : undefined,
+                  entry.additional ? entry.additional.toLowerCase() : undefined,
                 ];
                 break;
             }

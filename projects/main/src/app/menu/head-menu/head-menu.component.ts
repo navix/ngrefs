@@ -30,13 +30,8 @@ export class HeadMenuComponent implements OnInit {
   ngOnInit() {
   }
 
-  get lang() {
-    return this.versionComponent.lang;
-  }
-
   genCrossLink(toVersion: ContentVersion) {
     return this.cls.genCrossVersionsLink(toVersion, {
-      lang: this.lang,
       sectionUrl: this.versionComponent.currentSectionUrl,
       pageUrl: this.versionComponent.currentPageUrl,
     });
