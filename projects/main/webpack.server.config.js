@@ -1,6 +1,5 @@
 const path = require('path');
 const webpack = require('webpack');
-const uglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   entry: {server: './projects/main/src/server.ts'},
@@ -17,22 +16,11 @@ module.exports = {
     rules: [
       {
         test: /\.ts$/,
-        loader: 'awesome-typescript-loader',
-        options: {
-          configFileName: './projects/main/tsconfig.server-bundle.json'
-        }
+        loader: 'ts-loader',
       }
     ]
   },
   plugins: [
-    new uglifyJsPlugin({
-      uglifyOptions: {
-        ecma: 6,
-        compress: false,
-        mangle: false,
-        comments: false
-      }
-    }),
     // Temporary Fix for issue: https://github.com/angular/angular/issues/11580
     // for "WARNING Critical dependency: the request of a dependency is an expression"
     new webpack.ContextReplacementPlugin(

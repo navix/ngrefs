@@ -22,29 +22,23 @@ const sitemap = {
 };
 
 content.versions.forEach(version => {
-  version.langs.forEach(lang => {
-    sitemap._content.push({
-      url: {
-        loc: `${root}/${lang}/${version.url}`,
-        priority: 0.9,
-        changefreq: 'daily',
-      },
-    });
+  sitemap._content.push({
+    url: {
+      loc: `${root}/${version.url}`,
+      priority: 0.9,
+      changefreq: 'daily',
+    },
   });
   version.sections
     .filter(section => !section.disabled)
     .forEach(section => {
       section.pages.forEach(page => {
-        version.langs
-          .filter(lang => section.langs[lang])
-          .forEach(lang => {
-          sitemap._content.push({
-            url: {
-              loc: `${root}/${lang}/${version.url}/${section.url}/${page.url}`,
-              priority: 0.8,
-              changefreq: 'daily',
-            },
-          });
+        sitemap._content.push({
+          url: {
+            loc: `${root}/${version.url}/${section.url}/${page.url}`,
+            priority: 0.8,
+            changefreq: 'daily',
+          },
         });
       });
     });

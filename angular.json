@@ -122,6 +122,16 @@
                 "projects/ui/src/styles"
               ]
             }
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/main/src/environments/environment.ts",
+                  "with": "projects/main/src/environments/environment.prod.ts"
+                }
+              ]
+            }
           }
         }
       }

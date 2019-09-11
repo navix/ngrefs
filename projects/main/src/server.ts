@@ -1,9 +1,4 @@
-import { enableProdMode, ValueProvider } from '@angular/core';
-import { renderModuleFactory } from '@angular/platform-server';
-import { REQUEST, RESPONSE } from '@nguniversal/express-engine/tokens';
-import { extractExpressRequestData, MonitClient } from '@nvxme/monit-client';
-import { MonitRequest } from '@nvxme/monit-ng-client';
-
+import { enableProdMode } from '@angular/core';
 import * as express from 'express';
 import { readFileSync } from 'fs';
 import { join } from 'path';
@@ -16,14 +11,6 @@ const domino = require('domino');
 Object.assign(global, domino.impl);
 (global as any)['KeyboardEvent'] = domino.impl.Event;
 
-const monit = new MonitClient({
-  project: 'Ngrefs',
-  from: 'Ngrefs Monit <monit@ngrefs.com>',
-  to: 'inavix@gmail.com',
-  mailgunDomain: process.env.MAILGUN_DOMAIN || '',
-  mailgunApiKey: process.env.MAILGUN_API_KEY || '',
-});
-
 // Faster server renders w/ Prod mode (dev mode never needed)
 enableProdMode();
 
@@ -33,9 +20,6 @@ const app = express();
 const PORT = process.env.PORT || 8000;
 const DIST_FOLDER = join(process.cwd(), 'dist/main');
 
-// Our index.html we'll use as our template
-const template = readFileSync(join(DIST_FOLDER, 'index.html')).toString();
-
 // * NOTE :: leave this as require() since this file is built Dynamically from webpack
 const {AppServerModuleNgFactory, LAZY_MODULE_MAP} = require('../../../dist/main-server/main');
 
@@ -43,30 +27,13 @@ const {AppServerModuleNgFactory, LAZY_MODULE_MAP} = require('../../../dist/main-
 const {ngExpressEngine} = require('@nguniversal/express-engine');
 const {provideModuleMap} = require('@nguniversal/module-map-ngfactory-loader');
 
-app.engine('html', (_, options, callback) => {
-  renderModuleFactory(AppServerModuleNgFactory, {
-    // Our index.html
-    document: template,
-    url: options.req.url,
-    extraProviders: [
-      // make req and response accessible when angular app runs on server
-      <ValueProvider>{
-        provide: REQUEST,
-        useValue: options.req,
-      },
-      <ValueProvider>{
-        provide: RESPONSE,
-        useValue: options.req.res,
-      },
-      <ValueProvider>{
-        provide: MonitRequest,
-        useValue: extractExpressRequestData(options.req),
-      }
-    ],
-  }).then(html => {
-    callback(null, html);
-  });
-});
+// Our Universal express-engine (found @ https://github.com/angular/universal/tree/master/modules/express-engine)
+app.engine('html', ngExpressEngine({
+  bootstrap: AppServerModuleNgFactory,
+  providers: [
+    provideModuleMap(LAZY_MODULE_MAP),
+  ],
+}));
 
 app.set('view engine', 'html');
 app.set('views', join(DIST_FOLDER));
@@ -82,5 +49,6 @@ app.get('*', (req: any, res: any) => {
 
 // Start up the Node server
 app.listen(PORT, () => {
-  console.log(`Node server listening on http://localhost:${PORT}`);
+  // tslint:disable-next-line
+  console.log(`Frontend server listening on http://localhost:${PORT}`);
 });

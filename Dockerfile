@@ -1,17 +1,14 @@
-FROM node:latest
+FROM node:lts as dist
+WORKDIR /tmp/
+COPY package.json package-lock.json tsconfig.json angular.json sitemap-generator.js ./
+COPY projects/ projects/
+RUN npm install
+RUN npm run main:build
 
-MAINTAINER Oleksa Novyk <oleksanovyk@gmail.com>
-
-ARG env
-
+FROM node:lts-alpine
 RUN npm install pm2 -g
-
-RUN mkdir -p /var/app
-
 WORKDIR /var/app
-
-COPY ./dist/ dist/
-
-EXPOSE 8000
-
-CMD ["pm2-docker", "./dist/server.js", "--name='uni'"]
+COPY --from=dist /tmp/dist ./dist
+COPY docker-entrypoint.sh ./
+EXPOSE 80
+ENTRYPOINT ["./docker-entrypoint.sh"]
