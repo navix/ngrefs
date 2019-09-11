@@ -9,6 +9,7 @@ import { UiModule } from 'ui';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CssVarModule } from './common/css-var/css-var.module';
+import { Error404Component } from './common/error404/error404.component';
 import { LangRedirectComponent } from './common/lang-redirect/lang-redirect.component';
 import { DemosModule } from './content/demos/demos.module';
 import { CommandParamEntryComponent } from './entry/command-param-entry/command-param-entry.component';
@@ -18,7 +19,6 @@ import { InterfaceOptionEntryComponent } from './entry/interface-option-entry/in
 import { TextEntryComponent } from './entry/text-entry/text-entry.component';
 import { TocEntryComponent } from './entry/toc-entry/toc-entry.component';
 import { TutorialsEntryComponent } from './entry/tutorials-entry/tutorials-entry.component';
-import { Error404Component } from './common/error404/error404.component';
 import { FragmentPipe } from './fragment/fragment.pipe';
 import { HomeComponent } from './home/home.component';
 import { FooterMenuComponent } from './menu/footer-menu/footer-menu.component';
@@ -26,7 +26,6 @@ import { HeadMenuComponent } from './menu/head-menu/head-menu.component';
 import { SectionIntroMenuComponent } from './menu/section-intro-menu/section-intro-menu.component';
 import { SectionMenuComponent } from './menu/section-menu/section-menu.component';
 import { MessageComponent } from './message/message/message.component';
-import { MsgPipe } from './message/msg.pipe';
 import { PageComponent } from './page/page.component';
 import { SearchComponent } from './search/search.component';
 import { SectionNavComponent } from './section/section-nav/section-nav.component';
@@ -49,7 +48,6 @@ import { VersionComponent } from './version/version.component';
     FooterMenuComponent,
     SectionNavComponent,
     HomeComponent,
-    MsgPipe,
     SearchComponent,
     InterfaceOptionEntryComponent,
     TocEntryComponent,

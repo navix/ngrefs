@@ -15,18 +15,18 @@
            [routerLink]="['.', item.url]"
            [routerLinkActive]="!item.urlFragment ? '-active' : 'noop'"
            [fragment]="item.urlFragment">
-          {{ item.label | msg }}
+          {{ item.label }}
         </a>
         <span *ngIf="!item.url">
-          {{ item.label | msg }}
+          {{ item.label }}
         </span>
       </ng-container>
       <ng-container *ngIf="item.usePageEntries">
         <ng-container *ngFor="let entryItem of getPageEntries(item.usePageUrl)">
-          <a *ngIf="entryItem.head && entryItem.headId"
+          <a *ngIf="entryItem.headId"
              [routerLink]="['.', item.usePageUrl]"
              [fragment]="entryItem.headId | fragment">
-            {{ entryItem.head | msg }}
+            {{ entryItem.head }}
           </a>
         </ng-container>
       </ng-container>

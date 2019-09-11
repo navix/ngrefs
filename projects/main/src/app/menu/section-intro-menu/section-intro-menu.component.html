@@ -14,10 +14,10 @@
         <a *ngIf="item.url"
            [routerLink]="['../', item.url]"
            [fragment]="item.urlFragment">
-          {{ item.label | msg }}
+          {{ item.label }}
         </a>
         <span *ngIf="!item.url">
-          {{ item.label | msg }}
+          {{ item.label }}
         </span>
       </ng-container>
       <ng-container *ngIf="item.usePageEntries">
@@ -25,7 +25,7 @@
           <a *ngIf="entryItem.head && entryItem.headId"
              [routerLink]="['../', item.usePageUrl]"
              [fragment]="entryItem.headId | fragment">
-            {{ entryItem.head | msg }}
+            {{ entryItem.head }}
           </a>
         </ng-container>
       </ng-container>

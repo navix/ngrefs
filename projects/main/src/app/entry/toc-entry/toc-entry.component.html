@@ -3,7 +3,7 @@
     <li *ngIf="entryItem.head && entryItem.headId">
       <a [routerLink]="['.']"
          [fragment]="entryItem.headId | fragment">
-        {{ entryItem.head | msg }}
+        {{ entryItem.head }}
       </a>
     </li>
   </ng-container>
