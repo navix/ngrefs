@@ -22,18 +22,6 @@
                    context="Link label">
       </app-message>
     </ui-form-field>
-
-    <ui-form-field label="Lang">
-      <select [(ngModel)]="link.lang"
-              uiSelect
-              name="lang"
-              required>
-        <option *ngFor="let lang of langs"
-                [value]="lang">
-          {{ lang }}
-        </option>
-      </select>
-    </ui-form-field>
   </form>
   <div class="actions">
     <button uiButton size="sm" (click)="delete(index)">Delete</button>

@@ -1,8 +1,7 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, forwardRef, Input, OnInit } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { uuid } from '@ngx-kit/core';
 import { Subject } from 'rxjs';
-import { ContentMessage, ContentMessageRef } from '../../../../../main/src/app/content/meta';
+import { ContentMessageRef } from '../../../../../main/src/app/content/meta';
 import { DataService } from '../../data.service';
 import { VersionComponent } from '../../version/version/version.component';
 
@@ -25,8 +24,6 @@ export class MessageComponent implements OnInit, ControlValueAccessor {
    */
   @Input() context: string;
 
-  readonly source = 'en';
-
   state?: ContentMessageRef;
 
   disabled = false;
@@ -44,17 +41,15 @@ export class MessageComponent implements OnInit, ControlValueAccessor {
   ) {
   }
 
-  get message() {
-    return this.state && this.state.id
-      ? this.findMessage()
-      : undefined;
-  }
-
-  get langs() {
-    return this.versionComponent.version.langs;
-  }
-
   ngOnInit() {
+  }
+
+  get message() {
+    return this.state;
+  }
+
+  save(value: string) {
+    this.stateChanges.next(value);
   }
 
   registerOnChange(fn: any) {
@@ -71,35 +66,6 @@ export class MessageComponent implements OnInit, ControlValueAccessor {
 
   writeValue(rawValue: any): void {
     this.state = rawValue;
-    if (!this.state || !this.state.id) {
-      this.createMessage();
-      this.stateChanges.next(this.state);
-    }
     this.cdr.detectChanges();
-  }
-
-  createLocale() {
-    const availableLangs = this.versionComponent.version.langs
-      .filter(l => !this.message.locales.find(loc => loc.lang === l));
-    this.message.locales.push({
-      lang: availableLangs.length > 0 ? availableLangs[0] : '',
-      text: '',
-    });
-  }
-
-  private findMessage() {
-    if (this.state && this.state.id) {
-      const message = this.versionComponent.version.messages
-        .find(m => m.id === this.state.id);
-      return message || this.createMessage();
-    }
-  }
-
-  private createMessage() {
-    const message: ContentMessage = this.data.createMessage(this.context);
-    this.versionComponent.version.messages.push(message);
-    this.state = {id: message.id};
-    this.stateChanges.next(this.state);
-    return message;
   }
 }

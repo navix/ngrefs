@@ -10,7 +10,7 @@
     <tr *ngFor="let page of pages; let index = index">
       <td>
         <a [routerLink]="[page.id]">
-          {{ (page.title | message) || page.id }}
+          {{ page.title || page.id }}
         </a>
       </td>
       <td>{{ page.url }}</td>

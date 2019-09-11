@@ -162,14 +162,12 @@ export class PageComponent implements OnInit {
     this.generationLog.forEach(l => {
       switch (l.action) {
         case 'add': {
-          const message = this.data.createMessage('Interface option description', l.description);
-          this.versionComponent.version.messages.push(message);
           const entry: ContentInterfaceOptionEntry = this.data.createEntry<ContentInterfaceOptionEntry>('interface-option');
           entry.name = l.name;
-          entry.head = {text: l.name};
+          entry.head = l.name;
           entry.headId = l.name;
           entry.interface = l.interface.new;
-          entry.description = {id: message.id};
+          entry.description = l.description;
           this.page.entries.push(entry);
           counter++;
           break;
@@ -214,7 +212,7 @@ export class PageComponent implements OnInit {
       if (entry) {
         const entryType = entry.paramType || '';
         const entryDefault = entry.default || '';
-        const entryDescription = this.versionComponent.messageByRef(entry.description);
+        const entryDescription = entry.description;
         if ((entryType != paramType || entryDefault != paramDefault)) {
           this.cliGenerationLog.push({
             action: 'update',
@@ -278,15 +276,13 @@ export class PageComponent implements OnInit {
   applyCliLog(log: any) {
     switch (log.action) {
       case 'add': {
-        const message = this.data.createMessage('Interface option description', log.description);
-        this.versionComponent.version.messages.push(message);
         const entry: ContentCommandParamEntry = this.data.createEntry<ContentCommandParamEntry>('command-param');
         entry.name = log.name;
-        entry.head = {text: log.name};
+        entry.head = log.name;
         entry.headId = log.name;
         entry.paramType = log.new.type;
         entry.default = log.new.default;
-        entry.description = {id: message.id};
+        entry.description = log.description;
         this.page.entries.push(entry);
         return true;
       }

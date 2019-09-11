@@ -1,5 +1,5 @@
 <div class="line">
-  <div *ngIf="!item.usePageEntries" class="label">{{ (item.label | message) || item.id }}</div>
+  <div *ngIf="!item.usePageEntries" class="label">{{ item.label || item.id }}</div>
   <div *ngIf="item.usePageEntries" class="label">Page entries of {{ item.usePageUrl }}</div>
   <div *ngIf="!item.usePageEntries">{{ item.url }} / {{ item.urlFragment }}</div>
   <div class="actions">

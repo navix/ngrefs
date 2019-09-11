@@ -1,6 +1,6 @@
 <div class="nav">
   <div class="title">
-    {{ (section.title | message) || section.id }}
+    {{ section.title || section.id }}
   </div>
   <div class="items">
     <a routerLink="./"

@@ -12,8 +12,6 @@ import { VersionComponent } from '../../version/version/version.component';
 export class TutorialsEntryComponent implements OnInit, OnChanges {
   @Input() entry: ContentTutorialsEntry;
 
-  langs: string[];
-
   constructor(
     private versionComponent: VersionComponent,
     private data: DataService,
@@ -21,7 +19,6 @@ export class TutorialsEntryComponent implements OnInit, OnChanges {
   }
 
   ngOnInit() {
-    this.langs = this.versionComponent.version.langs;
   }
 
   ngOnChanges() {
@@ -31,9 +28,7 @@ export class TutorialsEntryComponent implements OnInit, OnChanges {
   }
 
   create() {
-    this.entry.links.push({
-      lang: 'en',
-    });
+    this.entry.links.push({});
   }
 
   delete(index: number) {

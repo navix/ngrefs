@@ -9,7 +9,7 @@ export class Nl2brPipe implements PipeTransform {
     return typeof text === 'string' ? text.replace(/\n/g, '<br>') : '';
   }
 
-  transform(text: string, args: string[]): string {
+  transform(text: string): string {
     return Nl2brPipe.replace(text);
   }
 }

@@ -22,14 +22,4 @@ export class VersionComponent implements OnInit {
       this.version = this.data.data.versions.find(v => v.id === versionId);
     });
   }
-
-  messageByRef(ref?: ContentMessageRef) {
-    if (ref && ref.id) {
-      const message = this.version.messages
-        .find(m => m.id === ref.id);
-      if (message && message.locales[0]) {
-        return message.locales[0].text;
-      }
-    }
-  }
 }
