@@ -8062,7 +8062,7 @@
                 {
                   "id": "2baf0abe-eac2-ae3d-f3ae-b9ba30da4121",
                   "type": "text",
-                  "text": "```typescript\nimport {AfterContentInit, ContentChild, Directive} from '@angular/core';\n \n@Directive({selector: 'child-directive'})\nclass ChildDirective {\n}\n \n@Directive({selector: 'someDir'})\nclass SomeDir implements AfterContentInit {\n  @ContentChild(ChildDirective) contentChild: ChildDirective;\n \n  ngAfterContentInit() {\n    // contentChild is set\n  }\n}\n```"
+                  "text": "```typescript\nimport {AfterContentInit, ContentChild, Directive} from '@angular/core';\n \n@Directive({selector: 'child-directive'})\nclass ChildDirective {\n}\n \n@Directive({selector: 'someDir'})\nclass SomeDir implements AfterContentInit {\n  @ContentChild(ChildDirective, {static: true}) contentChild: ChildDirective;\n \n  ngAfterContentInit() {\n    // contentChild is set\n  }\n}\n```"
                 },
                 {
                   "id": "4096b4fb-3f1d-7fda-49f0-1ddc7df19d6a",
@@ -8072,7 +8072,7 @@
                 {
                   "id": "645ca80b-6223-4d75-73b7-c5b0f25a86d3",
                   "type": "text",
-                  "text": "```typescript\n@ContentChild(\n  selector: Type<any>|Function|string, \n  opts?: {read?: any},\n)\n```"
+                  "text": "```typescript\n@ContentChild(\n  selector: Type<any>|Function|string, \n  opts?: {read?: any, static: boolean},\n)\n```"
                 },
                 {
                   "id": "88c45db4-3a47-6e44-9d25-0fb0769e8ad4",
@@ -8094,7 +8094,17 @@
                   "headId": "opts",
                   "interface": "opts?: {read?: any}",
                   "showAdditional": true,
-                  "additional": "* `read` - read a different token from the queried element."
+                  "additional": "* `read` - read a different token from the queried element.\n* `static` - `true` to resolve query results before change detection runs, `false` to resolve after change detection.",
+                  "tutorialsEntry": {
+                    "id": "9e2feee8-2284-5289-6dd3-e5714dd9255c",
+                    "type": "tutorials",
+                    "links": [
+                      {
+                        "url": "https://www.thecodecampus.de/blog/angular-viewchild-static-property-in-ng8/",
+                        "label": "Angular ViewChild – static property in ng8"
+                      }
+                    ]
+                  }
                 }
               ],
               "title": "@ContentChild",
@@ -8186,7 +8196,7 @@
                 {
                   "id": "41a7b2e2-b3f4-6af7-f98f-740bbc5fb90e",
                   "type": "text",
-                  "text": "```typescript\nimport {AfterViewInit, Component, Directive, ViewChild} from '@angular/core';\n \n@Directive({selector: 'child-directive'})\nclass ChildDirective {\n}\n \n@Component({selector: 'someCmp', templateUrl: 'someCmp.html'})\nclass SomeCmp implements AfterViewInit {\n  @ViewChild(ChildDirective) child: ChildDirective;\n \n  ngAfterViewInit() {\n    // child is set\n  }\n}\n```"
+                  "text": "```typescript\nimport {AfterViewInit, Component, Directive, ViewChild} from '@angular/core';\n \n@Directive({selector: 'child-directive'})\nclass ChildDirective {\n}\n \n@Component({selector: 'someCmp', templateUrl: 'someCmp.html'})\nclass SomeCmp implements AfterViewInit {\n  @ViewChild(ChildDirective, {static: true}) child: ChildDirective;\n \n  ngAfterViewInit() {\n    // child is set\n  }\n}\n```"
                 },
                 {
                   "id": "0a22c14d-00f4-fedf-45e9-dc8b048f328a",
@@ -8212,7 +8222,7 @@
                 {
                   "id": "7269fda0-18e2-01b8-51a7-477a5e322f53",
                   "type": "text",
-                  "text": "```typescript\n@ViewChild(\n  selector: Type<any>|Function|string, \n  opts?: {read?: any},\n)\n```"
+                  "text": "```typescript\n@ViewChild(\n  selector: Type<any>|Function|string, \n  opts?: {read?: any, static: boolean},\n)\n```"
                 },
                 {
                   "id": "261dceec-30d4-2aea-2629-459654879900",
@@ -8234,7 +8244,17 @@
                   "headId": "opts",
                   "interface": "opts?: {read?: any}",
                   "showAdditional": true,
-                  "additional": "* `read` - read a different token from the queried elements."
+                  "additional": "* `read` - read a different token from the queried elements.\n* `static` - `true` to resolve query results before change detection runs.",
+                  "tutorialsEntry": {
+                    "id": "b7a2c9e4-7ce3-7e2f-2769-370b4dd3bd9d",
+                    "type": "tutorials",
+                    "links": [
+                      {
+                        "url": "https://www.thecodecampus.de/blog/angular-viewchild-static-property-in-ng8/",
+                        "label": "Angular ViewChild – static property in ng8"
+                      }
+                    ]
+                  }
                 }
               ],
               "title": "@ViewChild",
