@@ -49,7 +49,7 @@ export class UiFormFieldComponent implements OnInit {
    */
   @Input() required: boolean;
 
-  @ContentChild(NgControl, {static: false}) ngControl: NgControl;
+  @ContentChild(NgControl) ngControl: NgControl;
 
   @ContentChildren(KitFormErrorDirective) errorRefs: QueryList<KitFormErrorDirective>;
 

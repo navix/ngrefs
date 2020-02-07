@@ -18,6 +18,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "dist/main",
             "index": "projects/main/src/index.html",
             "main": "projects/main/src/main.ts",
@@ -42,6 +43,12 @@
           },
           "configurations": {
             "production": {
+              "budgets": [
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ],
               "fileReplacements": [
                 {
                   "replace": "projects/main/src/environments/environment.ts",
@@ -131,7 +138,8 @@
                   "with": "projects/main/src/environments/environment.prod.ts"
                 }
               ]
-            }
+            ,              "optimization": true
+}
           }
         }
       }
@@ -173,6 +181,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "dist/editor",
             "index": "projects/editor/src/index.html",
             "main": "projects/editor/src/main.ts",
@@ -194,6 +203,12 @@
           },
           "configurations": {
             "production": {
+              "budgets": [
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ],
               "fileReplacements": [
                 {
                   "replace": "projects/editor/src/environments/environment.ts",
@@ -304,7 +319,8 @@
           "configurations": {
             "production": {
               "project": "projects/ui/ng-package.prod.json"
-            }
+            ,              "tsConfig": "projects/ui/tsconfig.lib.prod.json"
+}
           }
         },
         "test": {

@@ -13,7 +13,7 @@ import { DataService } from './data.service';
 export class AppComponent {
   file: UiFileSelect;
 
-  @ViewChild('uiFile', {static: false}) uiFile: UiFileComponent;
+  @ViewChild('uiFile') uiFile: UiFileComponent;
 
   constructor(
     private data: DataService,

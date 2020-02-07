@@ -33,7 +33,7 @@ export class UiCheckboxComponent implements OnInit, OnChanges, AfterViewInit {
 
   @Input('disabled') disabledInput: boolean;
 
-  @ViewChild('checkTemplate', {static: false}) checkTemplate: TemplateRef<any>;
+  @ViewChild('checkTemplate') checkTemplate: TemplateRef<any>;
 
   @HostBinding('attr.id') idBinding = uuid();
 
