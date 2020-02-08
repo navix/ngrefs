@@ -20,6 +20,7 @@ const sitemap = {
     }
   ]
 };
+const routes = ['/'];
 
 content.versions.forEach(version => {
   sitemap._content.push({
@@ -29,6 +30,7 @@ content.versions.forEach(version => {
       changefreq: 'daily',
     },
   });
+  routes.push(`/${version.url}`);
   version.sections
     .filter(section => !section.disabled)
     .forEach(section => {
@@ -40,6 +42,7 @@ content.versions.forEach(version => {
             changefreq: 'daily',
           },
         });
+        routes.push(`/${version.url}/${section.url}/${page.url}`);
       });
     });
 });
@@ -51,4 +54,9 @@ fs.outputFileSync(
   })
 );
 
-console.log('Sitemap generated!');
+fs.outputFileSync(
+  path.resolve('./projects/main/src/routes.txt'),
+  routes.join(`\n`),
+);
+
+console.log('Routes & sitemap generated!');

@@ -19,7 +19,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "aot": true,
-            "outputPath": "dist/main",
+            "outputPath": "dist/main/browser",
             "index": "projects/main/src/index.html",
             "main": "projects/main/src/main.ts",
             "polyfills": "projects/main/src/polyfills.ts",
@@ -121,8 +121,8 @@
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/main-server",
-            "main": "projects/main/src/main.server.ts",
+            "outputPath": "dist/main/server",
+            "main": "projects/main/src/server.ts",
             "tsConfig": "projects/main/tsconfig.server.json",
             "stylePreprocessorOptions": {
               "includePaths": [
@@ -132,14 +132,40 @@
           },
           "configurations": {
             "production": {
+              "outputHashing": "media",
               "fileReplacements": [
                 {
                   "replace": "projects/main/src/environments/environment.ts",
                   "with": "projects/main/src/environments/environment.prod.ts"
                 }
-              ]
-            ,              "optimization": true
-}
+              ],
+              "sourceMap": false,
+              "optimization": true
+            }
+          }
+        },
+        "serve-ssr": {
+          "builder": "@nguniversal/builders:ssr-dev-server",
+          "options": {
+            "browserTarget": "main:build",
+            "serverTarget": "main:server"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "main:build:production",
+              "serverTarget": "main:server:production"
+            }
+          }
+        },
+        "prerender": {
+          "builder": "@nguniversal/builders:prerender",
+          "options": {
+            "browserTarget": "main:build:production",
+            "serverTarget": "main:server:production",
+            "routesFile": "projects/main/src/routes.txt"
+          },
+          "configurations": {
+            "production": {}
           }
         }
       }
@@ -318,9 +344,9 @@
           },
           "configurations": {
             "production": {
-              "project": "projects/ui/ng-package.prod.json"
-            ,              "tsConfig": "projects/ui/tsconfig.lib.prod.json"
-}
+              "project": "projects/ui/ng-package.prod.json",
+              "tsConfig": "projects/ui/tsconfig.lib.prod.json"
+            }
           }
         },
         "test": {
