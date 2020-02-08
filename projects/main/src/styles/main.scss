@@ -2,13 +2,27 @@
 @import "theme-night";
 @import "params";
 @import "mq";
+@import "typo";
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('JetBrains Mono'), local('JetBrains-Mono'), url(/assets/JetBrainsMono-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  src: local('JetBrains Mono'), local('JetBrains-Mono'), url(/assets/JetBrainsMono-Bold.woff2) format('woff2');
+}
 
 html {
   background: var(--bodyBg);
   color: var(--textColor);
-  font-family: var(--sansSerif);
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: var(--monospace);
+  font-size: var(--baseRem);
   margin: 0;
   padding: 0;
 }
@@ -16,11 +30,12 @@ html {
 body {
   margin: 0;
   padding: 0;
+  line-height: var(--f6Lh);
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--textColor);
-  font-family: var(--sansSerif);
+  font-family: var(--monospace);
   overflow-wrap: break-word;
 }
 
@@ -29,7 +44,7 @@ a {
 }
 
 button, input, textarea, select {
-  font-family: var(--sansSerif);
+  font-family: var(--monospace);
 }
 
 code, pre {

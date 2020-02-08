@@ -30,7 +30,8 @@ ul {
   a, span {
     border-radius: 3px;
     display: block;
-    font-size: .8rem;
+    font-size: var(--f8);
+    line-height: var(--f8Lh);
     margin: 2px 0;
     padding: $grid / 4 $grid / 2;
   }
@@ -58,7 +59,8 @@ ul {
     padding-bottom: $grid;
     li {
       a {
-        font-size: .7rem;
+        font-size: var(--f9);
+        line-height: var(--f9Lh);
       }
     }
   }
