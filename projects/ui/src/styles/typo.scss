@@ -1,22 +1,155 @@
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('JetBrains Mono'), local('JetBrains-Mono'), url(/assets/JetBrainsMono-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  src: local('JetBrains Mono'), local('JetBrains-Mono'), url(/assets/JetBrainsMono-Bold.woff2) format('woff2');
+}
+
 :root {
-  --baseRem: 16px;
   --f1: 4.5rem;
   --f1Lh: 4.5rem;
   --f2: 3rem;
   --f2Lh: 3.5rem;
   --f3: 2rem;
   --f3Lh: 2.5rem;
-  --f4: 1.5rem;
-  --f4Lh: 2rem;
-  --f5: 1.312rem; // 21px
-  --f5Lh: 2rem;
-  --f6: 1.125rem; // 18px
-  --f6Lh: 1.5rem;
-  --f7: 1rem; // 16px
-  --f7Lh: 1.5rem;
-  --f8: 0.812rem; // 13px
+  --fzLarge3: 1.5rem;
+  --lhLarge3: 2rem;
+  --fzLarge2: 1.312rem;
+  --lhLarge2: 2rem;
+  --fzLarge1: 1.125rem;
+  --lhLarge1: 1.5rem;
+  --fzBase: 14px;
+  --fzMain: 1rem;
+  --f8: 0.812rem;
   --f8Lh: 1rem;
-  --f9: 0.687rem; // 11px
+  --f9: 0.687rem;
   --f9Lh: 1rem;
-  --fBase: 16px;
+  --lhMain: 1.5rem;
+  --monospace: "JetBrains Mono", "Consolas", "Inconsolata", "Monaco", "Courier", monospace;
+}
+
+html {
+  font-family: var(--monospace);
+  font-size: var(--fzBase);
+  font-weight: 500;
+}
+
+body {
+  font-size: var(--fzMain);
+  line-height: var(--lhMain);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  p {
+    margin: 0;
+  }
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  margin: var(--m8) 0 var(--m4) 0;
+}
+
+h4 {
+  font-weight: bold;
+  margin: var(--m8) 0 var(--m3) 0;
+}
+
+h5, h6 {
+  font-weight: bold;
+  margin: var(--m8) 0 var(--m2) 0;
+}
+
+h1 {
+  font-size: var(--f1);
+  line-height: var(--f1Lh);
+}
+
+h2 {
+  font-size: var(--f2);
+  line-height: var(--f2Lh);
+}
+
+h3 {
+  font-size: var(--fzLarge3);
+  line-height: var(--lhLarge3);
+}
+
+h4 {
+  font-size: var(--fzLarge3);
+  line-height: var(--lhLarge3);
+}
+
+h5 {
+  font-size: var(--fzLarge1);
+  line-height: var(--lhLarge1);
+}
+
+h6 {
+  font-size: var(--fzMain);
+  line-height: var(--lhMain);
+}
+
+.subheader {
+  font-size: var(--fzLarge2);
+  line-height: var(--lhLarge2);
+}
+
+.caption {
+  font-size: var(--f8);
+  line-height: var(--f8Lh);
+}
+
+.label {
+  font-size: var(--f9);
+  line-height: var(--f9Lh);
+}
+
+code, pre {
+  border-radius: 3px;
+  font-family: var(--monospace);
+}
+
+pre {
+  background: #f8f8f8;
+}
+
+code {
+  background-color: var(--codeColor);
+  margin: 0;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+}
+
+pre {
+  padding: 1rem;
+  overflow: auto;
+}
+
+button {
+  font-family: var(--monospace);
+}
+
+p {
+  margin: 1em 0;
+}
+
+ul {
+  p {
+    margin: 0;
+  }
+  a p {
+    display: inline;
+  }
 }

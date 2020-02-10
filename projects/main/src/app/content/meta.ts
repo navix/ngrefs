@@ -57,7 +57,7 @@ export interface ContentPage {
   entries: (ContentEntry | ContentTextEntry | ContentCommandParamEntry | ContentHintEntry | ContentTutorialsEntry)[];
 }
 
-export type ContentGenerationType = 'none' | 'interface-options';
+export type ContentGenerationType = 'none' | 'interface-options' | 'cli-builder';
 
 export type ContentEntryType = 'text' | 'command-param' | 'hint' | 'tutorials' | 'interface-option' | 'toc' | 'demo';
 

@@ -3,7 +3,7 @@
       class="layout-aligned">
   <ui-form-field label="Name">
     <input [(ngModel)]="entry.name"
-           (ngModelChange)="entry.head = {text: $event}"
+           (ngModelChange)="entry.head = $event"
            (ngModelChange)="entry.headId = $event"
            uiText
            name="name"

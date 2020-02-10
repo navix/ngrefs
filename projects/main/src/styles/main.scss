@@ -1,28 +1,14 @@
+@import "ui";
 @import "theme-main";
 @import "theme-night";
 @import "params";
 @import "mq";
-@import "typo";
 
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: local('JetBrains Mono'), local('JetBrains-Mono'), url(/assets/JetBrainsMono-Regular.woff2) format('woff2');
-}
-
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 600;
-  src: local('JetBrains Mono'), local('JetBrains-Mono'), url(/assets/JetBrainsMono-Bold.woff2) format('woff2');
-}
 
 html {
   background: var(--bodyBg);
   color: var(--textColor);
   font-family: var(--monospace);
-  font-size: var(--baseRem);
   margin: 0;
   padding: 0;
 }
@@ -30,88 +16,18 @@ html {
 body {
   margin: 0;
   padding: 0;
-  line-height: var(--f6Lh);
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--textColor);
-  font-family: var(--monospace);
-  overflow-wrap: break-word;
 }
 
 a {
   color: var(--linkColor);
 }
 
-button, input, textarea, select {
-  font-family: var(--monospace);
-}
-
-code, pre {
-  border-radius: 3px;
-  font-family: var(--monospace);
-  font-size: 0.85em;
-}
-
-pre {
-  background: #f8f8f8;
-}
-
-code {
-  background-color: var(--codeColor);
-  margin: 0;
-  padding: 0.2em 0.4em;
-}
-
-pre code {
-  background: transparent;
-  padding: 0;
-  font-size: 1em;
-}
-
-pre {
-  padding: 16px;
-  overflow: auto;
-}
-
-p {
-  margin: 1em 0;
-}
-
-ul {
-  p {
-    margin: 0;
-  }
-  a p {
-    display: inline;
-  }
-}
-
 .page-content {
-  font-size: 1rem;
-  h1 {
-    font-size: 1.8rem;
-    margin: $grid * 3 0 $grid * 2;
-    p {
-      margin: 0;
-    }
-  }
-  h2 {
-    font-size: 1.5rem;
-    margin: $grid * 3 0 $grid 0;
-    padding-bottom: $grid / 2;
-    p {
-      margin: 0;
-    }
-  }
-  h3 {
-    font-size: 1.1rem;
-    margin: $grid * 2 0 $grid / 2 0;
-    padding-bottom: $grid / 2;
-    p {
-      margin: 0;
-    }
-  }
+  font-size: var(--fzMain);
   .-highlight {
     animation: 800ms linear highlight-effect;
   }
@@ -125,44 +41,6 @@ ul {
           min-width: 75px;
         }
       }
-    }
-  }
-}
-
-@include mq($from: tablet) {
-  .page-content {
-    h1 {
-      font-size: 1.9rem;
-      margin: $grid * 4 0 $grid * 2;
-    }
-    h2 {
-      font-size: 1.55rem;
-      margin: $grid * 4 0 $grid * 1.5 0;
-      padding-bottom: $grid * 1.5;
-    }
-    h3 {
-      font-size: 1.2rem;
-      margin: $grid * 3 0 $grid 0;
-      padding-bottom: $grid;
-    }
-  }
-}
-
-@include mq($from: desktop) {
-  .page-content {
-    h1 {
-      font-size: 2.2rem;
-      margin: $grid * 6 0 $grid * 2;
-    }
-    h2 {
-      font-size: 1.6rem;
-      margin: $grid * 6 0 $grid * 1.5 0;
-      padding-bottom: $grid * 1.5;
-    }
-    h3 {
-      font-size: 1.25rem;
-      margin: $grid * 4 0 $grid 0;
-      padding-bottom: $grid;
     }
   }
 }

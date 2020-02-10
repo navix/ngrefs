@@ -2,21 +2,20 @@
 
 :host {
   display: block;
-  margin-top: 3em;
+  margin-top: 3rem;
   overflow: hidden;
 }
 
 h3 {
-  font-size: 1.3rem;
   margin: 0;
   a {
     display: none;
-    font-size: 1.1rem;
     text-decoration: none;
   }
   code {
     background: var(--cliParamColor);
-    margin-right: 1em;
+    margin-right: 1rem;
+    padding: 0 .5rem;
   }
   &:hover {
     a {

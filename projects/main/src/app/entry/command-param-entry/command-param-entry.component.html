@@ -1,5 +1,5 @@
 <h3 [id]="entry.headId | fragment">
-  <code>{{ entry.name }}</code>
+  <code>--{{ entry.name }}</code>
   <a routerLink="." [fragment]="entry.headId | fragment">#</a>
 </h3>
 
@@ -7,7 +7,6 @@
   <main-message *ngIf="entry.description"
                 [ref]="entry.description">
   </main-message>
-
   <div class="table-wrapper">
     <table>
       <tr *ngIf="entry.paramType">
