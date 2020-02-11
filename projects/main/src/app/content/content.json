@@ -503,7 +503,7 @@
                 {
                   "id": "9dfcbb88-833c-a80b-e303-1a958ad42d16",
                   "type": "text",
-                  "text": "This easy Angular CLI reference for developers describes commands, features and Schematics.\n\n\n## Additional information\n\nExample of hints and tutorials links. You can switch off these panels in the sidebar."
+                  "text": "This simple Angular CLI reference for developers describes commands, features and Schematics.\n\n\n## Additional information\n\nExample of hints and tutorials links. You can switch off these panels in the sidebar."
                 },
                 {
                   "id": "f034a269-e9e3-007b-47a6-86d6e24447fa",
@@ -842,6 +842,16 @@
                   "headId": "skipTests",
                   "paramType": "boolean",
                   "default": "false"
+                },
+                {
+                  "id": "12e8d9c6-0fb2-7e9e-be16-2fbf1629c6c4",
+                  "type": "command-param",
+                  "head": "strict",
+                  "headId": "strict",
+                  "name": "strict",
+                  "description": "Creates a workspace with stricter TypeScript compiler options.",
+                  "default": "false",
+                  "paramType": "boolean"
                 },
                 {
                   "id": "5dd06b91-879d-770d-a72e-3ca185fbaf15",
@@ -1577,6 +1587,10 @@
                       "lang": "en",
                       "label": "Angular CLI — Demystifying the workspace",
                       "url": "https://blog.nrwl.io/angular-cli-demystifying-the-workspace-7f59ffaab4cb"
+                    },
+                    {
+                      "label": "Introducing CLI Builders",
+                      "url": "https://blog.angular.io/introducing-cli-builders-d012d4489f1b"
                     }
                   ]
                 }
@@ -1921,6 +1935,15 @@
                   "name": "lazyModules",
                   "headId": "lazyModules",
                   "paramType": "array"
+                },
+                {
+                  "id": "ab58ab24-340e-7b02-22dd-85d7f90dc20a",
+                  "type": "command-param",
+                  "name": "localize",
+                  "head": "localize",
+                  "headId": "localize",
+                  "paramType": "",
+                  "default": ""
                 },
                 {
                   "id": "e08219ed-d5cb-8316-18c8-a805797b8208",
@@ -2326,7 +2349,8 @@
                   "name": "host",
                   "headId": "host",
                   "paramType": "string",
-                  "aliases": "localhost"
+                  "aliases": "",
+                  "default": "localhost"
                 },
                 {
                   "id": "ab7df1a4-cbdd-baec-bbd9-1e5f291e8909",
@@ -2356,16 +2380,6 @@
                   "name": "optimization",
                   "headId": "optimization",
                   "paramType": "boolean"
-                },
-                {
-                  "id": "f2697050-d39e-27c3-3b69-8c9ea33b33c2",
-                  "type": "command-param",
-                  "head": "poll",
-                  "description": "Enable and define the file watching poll time period in milliseconds.",
-                  "headId": "poll",
-                  "name": "poll",
-                  "paramType": "number",
-                  "aliases": ""
                 },
                 {
                   "id": "d14c2ccd-19d8-2317-8009-0cbcc4e4386c",
@@ -2544,6 +2558,16 @@
                   "name": "browserTarget",
                   "headId": "browserTarget",
                   "paramType": "string"
+                },
+                {
+                  "id": "21362b1f-4c19-a11b-6554-af30d235d903",
+                  "type": "command-param",
+                  "name": "format",
+                  "head": "format",
+                  "headId": "format",
+                  "paramType": "string",
+                  "default": "xlf",
+                  "description": "Output format for the generated file."
                 },
                 {
                   "id": "718930fe-f18e-64d3-b852-a32b1d5df1da",
@@ -2794,16 +2818,6 @@
                   "paramType": "string"
                 },
                 {
-                  "id": "96cb850a-a492-589e-93a8-06cb519ec2f4",
-                  "type": "command-param",
-                  "head": "vendorSourceMap",
-                  "description": "Resolve vendor packages sourcemaps.",
-                  "headId": "vendorSourceMap",
-                  "name": "vendorSourceMap",
-                  "paramType": "boolean",
-                  "default": "false"
-                },
-                {
                   "id": "b6765b88-5745-23b0-283f-4387cb3a5046",
                   "type": "command-param",
                   "head": "watch",
@@ -3008,6 +3022,16 @@
                   "paramType": "boolean"
                 },
                 {
+                  "id": "d995e159-9c08-d669-8593-233e209ed88e",
+                  "type": "command-param",
+                  "name": "externalDependencies",
+                  "head": "externalDependencies",
+                  "headId": "externalDependencies",
+                  "paramType": "array",
+                  "default": [],
+                  "description": "Exclude the listed external dependencies from being bundled into the bundle. Instead, the created bundle relies on these dependencies to be available during runtime."
+                },
+                {
                   "id": "da2d51dc-eb41-daba-3dee-1a34cbfcbc46",
                   "type": "command-param",
                   "head": "extractLicenses",
@@ -3082,6 +3106,15 @@
                   "paramType": "array"
                 },
                 {
+                  "id": "cafa7e86-e3f3-51f2-db78-c7dbce0fbdc4",
+                  "type": "command-param",
+                  "name": "localize",
+                  "head": "localize",
+                  "headId": "localize",
+                  "paramType": "",
+                  "default": ""
+                },
+                {
                   "id": "16c265a7-d6a8-0f87-8450-7097d5992049",
                   "type": "command-param",
                   "head": "main",
@@ -3128,15 +3161,6 @@
                   "name": "outputPath",
                   "headId": "outputPath",
                   "paramType": "string"
-                },
-                {
-                  "id": "2b7ef3e2-5c2e-980c-1b17-98bdc1d0f875",
-                  "type": "command-param",
-                  "head": "poll",
-                  "description": "Enable and define the file watching poll time period in milliseconds.",
-                  "headId": "poll",
-                  "name": "poll",
-                  "paramType": "number"
                 },
                 {
                   "id": "cb897a11-e6f8-c9ad-ccd2-2eb5042e3dba",
@@ -3243,17 +3267,6 @@
                   "name": "verbose",
                   "headId": "verbose",
                   "paramType": "boolean"
-                },
-                {
-                  "id": "bd1da10d-9007-e955-de38-17c62473fa39",
-                  "type": "command-param",
-                  "head": "watch",
-                  "links": [],
-                  "description": "Run build when files change.",
-                  "headId": "watch",
-                  "name": "watch",
-                  "paramType": "boolean",
-                  "default": "false"
                 }
               ],
               "title": "Server builder",
@@ -3748,6 +3761,16 @@
                   "type": "toc"
                 },
                 {
+                  "id": "ac31c175-5719-0d6c-57fb-696e19874c62",
+                  "type": "command-param",
+                  "head": "lintFix",
+                  "headId": "lintFix",
+                  "name": "lintFix",
+                  "paramType": "boolean",
+                  "default": "false",
+                  "description": "When true, applies lint fixes after generating the class."
+                },
+                {
                   "id": "cc648df9-913d-e1ba-9589-d5301ed3364d",
                   "type": "command-param",
                   "head": "project",
@@ -3760,10 +3783,10 @@
                 {
                   "id": "b9c79253-cc54-4900-dc51-67f8109a2bf1",
                   "type": "command-param",
-                  "head": "spec",
-                  "description": "Specifies if a spec file is generated.",
-                  "name": "spec",
-                  "headId": "spec",
+                  "head": "skipTests",
+                  "description": "When true, does not create \"spec.ts\" test files for the new class.",
+                  "name": "skipTests",
+                  "headId": "skipTests",
                   "paramType": "boolean",
                   "default": "false"
                 },
@@ -3771,7 +3794,7 @@
                   "id": "6c242dcc-4e9c-d4af-c665-ccd93f66fdb0",
                   "type": "command-param",
                   "head": "type",
-                  "description": "Specifies the type of class.",
+                  "description": "Adds a developer-defined type to the filename, in the format `name.type.ts`.",
                   "name": "type",
                   "headId": "type",
                   "paramType": "string"
@@ -3808,16 +3831,6 @@
                   "values": "Default, OnPush",
                   "default": "Default",
                   "aliases": "c"
-                },
-                {
-                  "id": "7829c0ea-61aa-7bc4-8c71-b9cee818eb90",
-                  "type": "command-param",
-                  "head": "entryComponent",
-                  "description": "Specifies if the component is an entry component of declaring module.",
-                  "name": "entryComponent",
-                  "headId": "entryComponent",
-                  "paramType": "boolean",
-                  "default": "false"
                 },
                 {
                   "id": "18452ead-40b0-db90-8b17-b3fc6d1ae913",
@@ -3914,31 +3927,52 @@
                   "id": "b8293769-c45f-5700-f30f-a56bf21dfb51",
                   "type": "command-param",
                   "head": "skipImport",
-                  "description": "Flag to skip the module import.",
+                  "description": "When true, does not import this component into the owning `NgModule`.",
                   "name": "skipImport",
                   "headId": "skipImport",
                   "paramType": "boolean",
                   "default": "false"
                 },
                 {
+                  "id": "921f4373-a670-674e-e960-0a6806dbcea9",
+                  "type": "command-param",
+                  "head": "skipSelector",
+                  "headId": "skipSelector",
+                  "name": "skipSelector",
+                  "default": "false",
+                  "paramType": "boolean",
+                  "description": "Specifies if the component should have a selector or not."
+                },
+                {
                   "id": "54254e5e-3179-2da0-b872-3ed4d4f9ea17",
                   "type": "command-param",
-                  "head": "spec",
-                  "description": "Specifies if a spec file is generated.",
-                  "name": "spec",
-                  "headId": "spec",
+                  "head": "skipTests",
+                  "description": "When true, does not create \"spec.ts\" test files for the new component.",
+                  "name": "skipTests",
+                  "headId": "skipTests",
                   "paramType": "boolean",
-                  "default": "true"
+                  "default": "false"
                 },
                 {
                   "id": "845538b8-fde6-39b4-d56a-c5b6b11cc014",
                   "type": "command-param",
-                  "head": "styleext",
+                  "head": "style",
                   "description": "The file extension to be used for style files.",
-                  "name": "styleext",
-                  "headId": "styleext",
+                  "name": "style",
+                  "headId": "style",
                   "paramType": "string",
-                  "default": "css"
+                  "default": "css",
+                  "values": "css|scss|sass|less|styl"
+                },
+                {
+                  "id": "b16806ca-2a60-1161-97d5-460669ea5834",
+                  "type": "command-param",
+                  "head": "type",
+                  "headId": "type",
+                  "name": "type",
+                  "default": "Component",
+                  "paramType": "string",
+                  "description": "Adds a developer-defined type to the filename, in the format `name.type.ts`."
                 },
                 {
                   "id": "09194905-e88f-3d7f-a10a-afba98a7af68",
@@ -4055,12 +4089,12 @@
                 {
                   "id": "3b3da76b-d300-0b55-f73e-cbcbebb6008b",
                   "type": "command-param",
-                  "head": "spec",
-                  "description": "Specifies if a spec file is generated.",
-                  "name": "spec",
-                  "headId": "spec",
+                  "head": "skipTests",
+                  "description": "When true, does not create `spec.ts` test files for the new class.",
+                  "name": "skipTests",
+                  "headId": "skipTests",
                   "paramType": "boolean",
-                  "default": "true"
+                  "default": "false"
                 }
               ],
               "title": "Directive generator",
@@ -4145,6 +4179,16 @@
                   "default": "true"
                 },
                 {
+                  "id": "236502ad-46f3-b400-b33a-ef7f7414b902",
+                  "type": "command-param",
+                  "head": "implements",
+                  "headId": "implements",
+                  "name": "implements",
+                  "paramType": "string",
+                  "description": "Specifies which interfaces to implement.",
+                  "values": "CanActivate|CanActivateChild|CanLoad"
+                },
+                {
                   "id": "b984ec66-5e3e-8a3a-a090-479f2b81c448",
                   "type": "command-param",
                   "head": "lintFix",
@@ -4166,12 +4210,12 @@
                 {
                   "id": "598710a6-0dd5-c74f-ff8a-ea497382ea5c",
                   "type": "command-param",
-                  "head": "spec",
-                  "description": "Specifies if a spec file is generated.",
-                  "name": "spec",
-                  "headId": "spec",
+                  "head": "skipTests",
+                  "description": "When true, does not create `spec.ts` test files for the new guard.",
+                  "name": "skipTests",
+                  "headId": "skipTests",
                   "paramType": "boolean",
-                  "default": "true"
+                  "default": "false"
                 }
               ],
               "title": "Guard generator",
@@ -4332,6 +4376,16 @@
                   "default": "public_api"
                 },
                 {
+                  "id": "61769c5f-2c3b-5891-e38d-a40508f04e40",
+                  "type": "command-param",
+                  "head": "lintFix",
+                  "headId": "lintFix",
+                  "name": "lintFix",
+                  "paramType": "boolean",
+                  "default": "false",
+                  "description": "When true, applies lint fixes after generating the library."
+                },
+                {
                   "id": "42f5bba7-9507-690d-82e5-9cdf51b868db",
                   "type": "command-param",
                   "head": "prefix",
@@ -4341,16 +4395,6 @@
                   "paramType": "string",
                   "default": "lib",
                   "aliases": "p"
-                },
-                {
-                  "id": "02ff13e3-c953-a80d-f847-ed7705e1888b",
-                  "type": "command-param",
-                  "head": "skipPackageJson",
-                  "description": "Do not add dependencies to `package.json`.",
-                  "name": "skipPackageJson",
-                  "headId": "skipPackageJson",
-                  "paramType": "boolean",
-                  "default": "false"
                 },
                 {
                   "id": "65901907-0b2c-bfc7-95ee-1f23b0bedea2",
@@ -4363,10 +4407,20 @@
                   "default": "false"
                 },
                 {
+                  "id": "02ff13e3-c953-a80d-f847-ed7705e1888b",
+                  "type": "command-param",
+                  "head": "skipPackageJson",
+                  "description": "Do not add dependencies to `package.json`.",
+                  "name": "skipPackageJson",
+                  "headId": "skipPackageJson",
+                  "paramType": "boolean",
+                  "default": "false"
+                },
+                {
                   "id": "41c0c3c1-2967-e360-989c-a9baeba1463f",
                   "type": "command-param",
                   "head": "skipTsConfig",
-                  "description": "Do not update `tsconfig.json` for development experience.",
+                  "description": "When true, does not update `tsconfig.json` to add a path mapping for the new library. The path mapping is needed to use the library in an app, but can be disabled here to simplify development.",
                   "name": "skipTsConfig",
                   "headId": "skipTsConfig",
                   "paramType": "boolean",
@@ -4409,6 +4463,16 @@
                   "default": "false"
                 },
                 {
+                  "id": "dbb9cedd-31dc-38fe-f044-4be2b7ef505d",
+                  "type": "command-param",
+                  "head": "lintFix",
+                  "headId": "lintFix",
+                  "name": "lintFix",
+                  "paramType": "boolean",
+                  "default": "false",
+                  "description": "When true, applies lint fixes after generating the module."
+                },
+                {
                   "id": "1836733c-74d5-3385-22b4-e8f38e98f1ca",
                   "type": "command-param",
                   "head": "module",
@@ -4430,6 +4494,15 @@
                   "aliases": ""
                 },
                 {
+                  "id": "d1c5b2f2-338f-7cc5-4e91-f6fb7c19d75d",
+                  "type": "command-param",
+                  "head": "route",
+                  "headId": "route",
+                  "name": "route",
+                  "paramType": "string",
+                  "description": "The route path for a lazy-loaded module. When supplied, creates a component in the new module, and adds the route to that component in the `Routes` array declared in the module provided in the `--module` option."
+                },
+                {
                   "id": "e2d15cf2-f261-0e34-72cb-c9d9e8ee0d6f",
                   "type": "command-param",
                   "head": "routing",
@@ -4447,18 +4520,8 @@
                   "name": "routingScope",
                   "headId": "routingScope",
                   "paramType": "string",
-                  "values": "Child, Root",
+                  "values": "Child|Root",
                   "default": "Child"
-                },
-                {
-                  "id": "d6df7b69-fdac-31a7-4d6d-fba967de5d95",
-                  "type": "command-param",
-                  "head": "spec",
-                  "description": "Specifies if a spec file is generated.",
-                  "name": "spec",
-                  "headId": "spec",
-                  "paramType": "boolean",
-                  "default": "true"
                 }
               ],
               "title": "Module generator",
@@ -4549,12 +4612,12 @@
                 {
                   "id": "58366bde-b9ff-18d2-df52-1d41c8d8e912",
                   "type": "command-param",
-                  "head": "spec",
-                  "description": "Specifies if a spec file is generated.",
-                  "name": "spec",
-                  "headId": "spec",
+                  "head": "skipTests",
+                  "description": "When true, does not create `spec.ts` test files for the new pipe.",
+                  "name": "skipTests",
+                  "headId": "skipTests",
                   "paramType": "boolean",
-                  "default": "true"
+                  "default": "false"
                 }
               ],
               "title": "Pipe generator",
@@ -4614,12 +4677,12 @@
                 {
                   "id": "86a19f68-d7fd-f196-8d47-4468f05be98e",
                   "type": "command-param",
-                  "head": "spec",
-                  "description": "Specifies if a spec file is generated.",
-                  "name": "spec",
-                  "headId": "spec",
+                  "head": "skipTests",
+                  "description": "When true, does not create `spec.ts` test files for the new service.",
+                  "name": "skipTests",
+                  "headId": "skipTests",
                   "paramType": "boolean",
-                  "default": "true"
+                  "default": "false"
                 }
               ],
               "title": "Service generator",
@@ -5031,7 +5094,7 @@
                 {
                   "id": "c3413bcc-f5a2-8ec3-cbbc-af86aa408f99",
                   "type": "text",
-                  "text": "This easy Angular reference for developers describes templates syntax and built-in directives and pipes.\n"
+                  "text": "This simple Angular reference for developers describes templates syntax and built-in directives and pipes.\n"
                 },
                 {
                   "id": "585e6ca8-a67d-e946-0c07-893109e591d4",
@@ -5495,7 +5558,7 @@
                 {
                   "id": "07fcaca9-5425-5ec3-32f5-6848b73a303d",
                   "type": "text",
-                  "text": "Angular supports [Hammer.JS](https://hammerjs.github.io/) gestures. \n\nYou only need to install Hammer.JS:\n\n```\nnpm install hammerjs\n```\n\nAnd then import to `main.ts` file:\n\n```\nimport 'hammerjs';\n```\n\nAfter that you will be able to bind gesture events."
+                  "text": "Angular supports [Hammer.JS](https://hammerjs.github.io/) gestures. \n\nApplications need to include the HammerJS script itself.\n\n```\nnpm install hammerjs\n```\n\nImport to `main.ts` file:\n\n```\nimport 'hammerjs';\n```\n\nImport [`HammerModule`](https://angular.io/api/platform-browser/HammerModule) at the root of your application so that Angular can work with HammerJS to detect gesture events.\n\nAfter that you will be able to bind gesture events."
                 },
                 {
                   "id": "770e2f21-82b2-92f7-9cb0-f0a60e9816d3",
@@ -5509,13 +5572,17 @@
                   "links": [
                     {
                       "label": "Gestures in an Angular Application",
-                      "url": "https://blog.angularindepth.com/gestures-in-an-angular-application-dde71804c0d0",
+                      "url": "https://medium.com/angular-in-depth/gestures-in-an-angular-application-dde71804c0d0",
                       "lang": "en"
+                    },
+                    {
+                      "url": "https://github.com/angular/components/blob/master/guides/v9-hammerjs-migration.md",
+                      "label": "Angular Material - V9 HammerJS migration"
                     }
                   ]
                 }
               ],
-              "title": "Touch events",
+              "title": "Touch events / Gestures",
               "url": "touch-events"
             },
             {
@@ -6735,7 +6802,7 @@
                 {
                   "id": "7798374e-9faa-85f8-014b-3217764e257e",
                   "type": "text",
-                  "text": "This easy Angular reference for developers describes styling and view encapsulation."
+                  "text": "This simple Angular reference for developers describes styling and view encapsulation."
                 },
                 {
                   "id": "0ae8f8a0-0a9b-a600-e9f9-c81873387f9c",
@@ -7427,7 +7494,7 @@
                 {
                   "id": "063819d6-b465-e744-1397-c800ac6d8c22",
                   "type": "text",
-                  "text": "This easy Angular reference for developers describes core concepts, decorators and services.\n\n\n## Additional information\n\nExample of hints and tutorials links. You can switch off these panels in the sidebar."
+                  "text": "This simple Angular reference for developers describes core concepts, decorators and services.\n\n\n## Additional information\n\nExample of hints and tutorials links. You can switch off these panels in the sidebar."
                 },
                 {
                   "id": "8af43abe-c886-aa78-0c31-295c78628e18",
@@ -7579,8 +7646,8 @@
               "generationType": "interface-options",
               "generationFile": "core/src/metadata/ng_module.ts",
               "generationName": "NgModule",
-              "generationStartLine": 116,
-              "generationEndLine": 304
+              "generationStartLine": 118,
+              "generationEndLine": 307
             },
             {
               "id": "d4f9ba36-36cf-8a0f-4682-5e852b1883e9",
@@ -7848,7 +7915,7 @@
               "generationFile": "core/src/metadata/directives.ts",
               "generationName": "Component",
               "generationStartLine": 456,
-              "generationEndLine": 555
+              "generationEndLine": 556
             },
             {
               "id": "f626ff88-c7f9-2188-e343-0a177fa34f4e",
@@ -7894,8 +7961,8 @@
               "generationType": "interface-options",
               "generationFile": "core/src/metadata/directives.ts",
               "generationName": "Pipe",
-              "generationStartLine": 608,
-              "generationEndLine": 627
+              "generationStartLine": 609,
+              "generationEndLine": 628
             },
             {
               "id": "0f7b7b16-a596-37ab-2c4e-aea6a01c4b45",
@@ -7933,7 +8000,7 @@
               "generationFile": "core/src/di/injectable.ts",
               "generationName": "Injectable",
               "generationStartLine": 65,
-              "generationEndLine": 77
+              "generationEndLine": 78
             },
             {
               "id": "84169e02-37a1-9bd6-5960-a1303455d23a",
@@ -7975,8 +8042,8 @@
               "generationType": "interface-options",
               "generationFile": "core/src/metadata/directives.ts",
               "generationName": "Input",
-              "generationStartLine": 696,
-              "generationEndLine": 701
+              "generationStartLine": 697,
+              "generationEndLine": 702
             },
             {
               "id": "88bd94fe-05cc-f21d-2b49-9019162907ce",
@@ -8018,8 +8085,8 @@
               "generationType": "interface-options",
               "generationFile": "core/src/metadata/directives.ts",
               "generationName": "Output",
-              "generationStartLine": 741,
-              "generationEndLine": 746
+              "generationStartLine": 742,
+              "generationEndLine": 747
             },
             {
               "id": "5a891eec-d6ae-8611-539d-ff0bf398a30d",
@@ -8070,8 +8137,8 @@
               "generationType": "interface-options",
               "generationFile": "core/src/metadata/directives.ts",
               "generationName": "HostBinding",
-              "generationStartLine": 801,
-              "generationEndLine": 806
+              "generationStartLine": 802,
+              "generationEndLine": 807
             },
             {
               "id": "1f55b67c-8bec-f0d9-f22a-438bc1618746",
@@ -8141,8 +8208,8 @@
               "generationType": "interface-options",
               "generationFile": "core/src/metadata/directives.ts",
               "generationName": "HostListener",
-              "generationStartLine": 835,
-              "generationEndLine": 844
+              "generationStartLine": 836,
+              "generationEndLine": 845
             },
             {
               "id": "1328b290-53ab-ef6a-73cc-d9b0a511e1e4",
@@ -8182,8 +8249,8 @@
               "generationType": "interface-options",
               "generationFile": "core/src/metadata/di.ts",
               "generationName": "Attribute",
-              "generationStartLine": 86,
-              "generationEndLine": 91
+              "generationStartLine": 87,
+              "generationEndLine": 92
             },
             {
               "id": "04e30588-8dab-9d60-6615-8095ba5aa8eb",
@@ -8485,11 +8552,6 @@
                   "type": "tutorials",
                   "links": [
                     {
-                      "label": "The Dependency Injection pattern",
-                      "url": "https://angular.io/guide/dependency-injection-pattern",
-                      "lang": "en"
-                    },
-                    {
                       "label": "Angular Dependency Injection",
                       "url": "https://angular.io/guide/dependency-injection",
                       "lang": "en"
@@ -8506,8 +8568,16 @@
                     },
                     {
                       "label": "Everything you need to know about change detection in Angular",
-                      "url": "https://blog.angularindepth.com/everything-you-need-to-know-about-change-detection-in-angular-8006c51d206f",
+                      "url": "https://indepth.dev/everything-you-need-to-know-about-change-detection-in-angular/",
                       "lang": "en"
+                    },
+                    {
+                      "url": "https://medium.com/@tomastrajan/total-guide-to-angular-6-dependency-injection-providedin-vs-providers-85b7a347b59f",
+                      "label": "Total Guide To Angular 6+ Dependency Injection — providedIn vs providers:[ ] 💉"
+                    },
+                    {
+                      "label": "What you always wanted to know about Angular Dependency Injection tree",
+                      "url": "https://medium.com/angular-in-depth/angular-dependency-injection-and-tree-shakeable-tokens-4588a8f70d5d"
                     }
                   ]
                 }
@@ -9361,8 +9431,8 @@
               "generationType": "interface-options",
               "generationFile": "core/src/zone/ng_zone.ts",
               "generationName": "NgZone",
-              "generationStartLine": 85,
-              "generationEndLine": 220
+              "generationStartLine": 88,
+              "generationEndLine": 227
             },
             {
               "id": "11baf519-b274-048a-6bb6-95d589329a12",
@@ -9598,8 +9668,8 @@
               "generationType": "interface-options",
               "generationFile": "core/src/render/api.ts",
               "generationName": "Renderer2",
-              "generationStartLine": 214,
-              "generationEndLine": 384
+              "generationStartLine": 111,
+              "generationEndLine": 281
             },
             {
               "id": "8631a258-f7e2-0ea9-1a37-0a749733a6e9",
@@ -9921,7 +9991,7 @@
                 {
                   "id": "11501091-79c4-174e-d282-e212517205f9",
                   "type": "text",
-                  "text": "This easy Angular reference for developers describes routing and navigation."
+                  "text": "This simple Angular reference for developers describes routing and navigation."
                 },
                 {
                   "id": "5f4eb566-432d-2f42-35a4-a4a12c23e2d6",
@@ -10382,8 +10452,8 @@
               "generationType": "interface-options",
               "generationFile": "router/src/router_module.ts",
               "generationName": "ExtraOptions",
-              "generationStartLine": 260,
-              "generationEndLine": 415
+              "generationStartLine": 261,
+              "generationEndLine": 429
             },
             {
               "id": "cf30650f-684c-05bd-5321-203588ad4f4f",
@@ -10861,7 +10931,7 @@
               "generationFile": "router/src/router.ts",
               "generationName": "Router",
               "generationStartLine": 291,
-              "generationEndLine": 1126
+              "generationEndLine": 1152
             },
             {
               "id": "c9e70793-1acd-f124-03c1-150f8f918b4d",
@@ -11798,12 +11868,31 @@
                 {
                   "id": "27bcda32-2ec7-9c3d-99c7-44ec7bd02598",
                   "type": "text",
-                  "text": "This easy Angular reference for developers describes forms, controls and models."
+                  "text": "This simple Angular reference for developers describes forms, controls and models."
                 },
                 {
                   "id": "3304f320-fc16-107b-4250-661e8b5308df",
                   "type": "text",
-                  "text": "## WIP"
+                  "text": "## Additional information\n\nExample of hints and tutorials links. You can switch off these panels in the sidebar."
+                },
+                {
+                  "id": "22de26f5-eaf0-de61-17db-9f60e2344f6f",
+                  "type": "hint",
+                  "text": "Hint with additional explanation."
+                },
+                {
+                  "id": "1eb9a2b8-3f17-2317-a9b6-e2d2a75a6164",
+                  "type": "tutorials",
+                  "links": [
+                    {
+                      "url": "https://angular.io/start/forms",
+                      "label": "Angular - Forms"
+                    },
+                    {
+                      "url": "https://angular.io/guide/forms-overview",
+                      "label": "Angular - Introduction to forms"
+                    }
+                  ]
                 }
               ],
               "title": "Introduction",
@@ -12734,7 +12823,7 @@
           "title": "Forms",
           "color": "#714fe4",
           "url": "forms",
-          "disabled": true,
+          "disabled": false,
           "langs": {
             "en": true
           }

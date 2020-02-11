@@ -2,11 +2,7 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { isDefined } from '@ngx-kit/core';
 import { angularLifehooks } from '@ngx-kit/docgen/meta';
-import {
-  ContentCommandParamEntry,
-  ContentInterfaceOptionEntry,
-  ContentPage,
-} from '../../../../../main/src/app/content/meta';
+import { ContentCommandParamEntry, ContentInterfaceOptionEntry, ContentPage } from '../../../../../main/src/app/content/meta';
 import { AngularApiService } from '../../apis/angular-api.service';
 import { angularCliSchema } from '../../apis/apis';
 import { DataService } from '../../data.service';
@@ -38,12 +34,13 @@ export class PageComponent implements OnInit {
     current?: {
       type: string;
       default: string;
+      description: string;
     };
     new?: {
       type: string;
       default: string;
+      description: string;
     };
-    description?: string;
   }[] = [];
 
   constructor(
@@ -98,7 +95,7 @@ export class PageComponent implements OnInit {
     }
   }
 
-  prepareGeneration() {
+  prepareInterfaceOptionGeneration() {
     this.generationLog = [];
     const declar = this.angularApiGen.getDeclar(this.page.generationFile, this.page.generationName);
     if (declar) {
@@ -154,7 +151,7 @@ export class PageComponent implements OnInit {
     }
   }
 
-  applyGeneration() {
+  applyInterfaceOptionGeneration() {
     if (!confirm('Are you sure?')) {
       return;
     }
@@ -183,10 +180,10 @@ export class PageComponent implements OnInit {
       }
     });
     alert(`${counter} logs have been applied!`);
-    this.prepareGeneration();
+    this.prepareInterfaceOptionGeneration();
   }
 
-  prepareCliGeneration() {
+  prepareCommandParamGeneration() {
     this.cliGenerationLog = [];
     const def: {
       properties: {
@@ -208,11 +205,12 @@ export class PageComponent implements OnInit {
       const entry = entries.find(e => e.name === paramName);
       const paramType = param.type || '';
       const paramDefault = param.default || '';
+      const paramDescription = param.description || '';
       // to update
       if (entry) {
         const entryType = entry.paramType || '';
         const entryDefault = entry.default || '';
-        const entryDescription = entry.description;
+        const entryDescription = entry.description || '';
         if ((entryType != paramType || entryDefault != paramDefault)) {
           this.cliGenerationLog.push({
             action: 'update',
@@ -220,12 +218,13 @@ export class PageComponent implements OnInit {
             current: {
               type: entryType,
               default: entryDefault,
+              description: entryDescription,
             },
             new: {
               type: paramType,
               default: paramDefault,
+              description: paramDescription,
             },
-            description: entryDescription || param.description,
           });
         }
       }
@@ -237,8 +236,8 @@ export class PageComponent implements OnInit {
           new: {
             type: paramType,
             default: paramDefault,
+            description: paramDescription,
           },
-          description: param.description,
         });
       }
     }
@@ -257,7 +256,7 @@ export class PageComponent implements OnInit {
     }
   }
 
-  applyCliGeneration() {
+  applyCommandParamGeneration() {
     alert('It is a bad idea in the current condition of SCHEMA description');
     return;
     if (!confirm('Are you sure?')) {
@@ -265,15 +264,15 @@ export class PageComponent implements OnInit {
     }
     let counter = 0;
     this.cliGenerationLog.forEach(log => {
-      if (this.applyCliLog(log)) {
+      if (this.applyCommandParamLog(log)) {
         counter++;
       }
     });
     alert(`${counter} logs have been applied!`);
-    this.prepareGeneration();
+    this.prepareInterfaceOptionGeneration();
   }
 
-  applyCliLog(log: any) {
+  applyCommandParamLog(log: any) {
     switch (log.action) {
       case 'add': {
         const entry: ContentCommandParamEntry = this.data.createEntry<ContentCommandParamEntry>('command-param');
@@ -282,7 +281,7 @@ export class PageComponent implements OnInit {
         entry.headId = log.name;
         entry.paramType = log.new.type;
         entry.default = log.new.default;
-        entry.description = log.description;
+        entry.description = log.new.description;
         this.page.entries.push(entry);
         return true;
       }

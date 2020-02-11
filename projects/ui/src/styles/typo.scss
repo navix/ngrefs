@@ -13,12 +13,10 @@
 }
 
 :root {
-  --f1: 4.5rem;
-  --f1Lh: 4.5rem;
-  --f2: 3rem;
-  --f2Lh: 3.5rem;
-  --f3: 2rem;
-  --f3Lh: 2.5rem;
+  --fzLarge5: 3rem;
+  --lhLarge5: 3.5rem;
+  --fzLarge4: 2rem;
+  --lhLarge4: 2.5rem;
   --fzLarge3: 1.5rem;
   --lhLarge3: 2rem;
   --fzLarge2: 1.312rem;
@@ -69,13 +67,13 @@ h5, h6 {
 }
 
 h1 {
-  font-size: var(--f1);
-  line-height: var(--f1Lh);
+  font-size: var(--fzLarge5);
+  line-height: var(--lhLarge5);
 }
 
 h2 {
-  font-size: var(--f2);
-  line-height: var(--f2Lh);
+  font-size: var(--fzLarge4);
+  line-height: var(--lhLarge4);
 }
 
 h3 {
