@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { isDefined } from '@ngx-kit/core';
-import { angularLifehooks } from '@ngx-kit/docgen/meta';
+import { angularLifehooks, JsDoc } from '@ngx-kit/docgen/meta';
 import { ContentCommandParamEntry, ContentInterfaceOptionEntry, ContentPage } from '../../../../../main/src/app/content/meta';
 import { AngularApiService } from '../../apis/angular-api.service';
 import { angularCliSchema } from '../../apis/apis';
@@ -25,7 +25,10 @@ export class PageComponent implements OnInit {
       old?: string;
       new?: string;
     };
-    description?: string;
+    description?: {
+      old?: string;
+      new?: string;
+    };
   }[] = [];
 
   cliGenerationLog: {
@@ -107,6 +110,7 @@ export class PageComponent implements OnInit {
         .filter(m => !m.isInternal)
         .filter(m => !m.modifiers || m.modifiers.indexOf('private') === -1)
         .filter(m => ['constructor', ...angularLifehooks].indexOf(m.name) === -1);
+      console.log('Declar members', members);
       const entries = this.page.entries
         .filter((e): e is ContentInterfaceOptionEntry => e.type === 'interface-option');
       members.forEach(m => {
@@ -115,13 +119,19 @@ export class PageComponent implements OnInit {
           .replace('readonly ', '')
           .replace('abstract ', '')
           .replace('public ', '');
-        if (entry && entry.interface !== signature) {
+        const description = this.compileInterfaceOptionDescription(m.jsDoc);
+        console.log('GENRTD DESC', description);
+        if (entry && (entry.interface !== signature || entry.description !== description)) {
           this.generationLog.push({
             action: 'update',
             name: m.name,
             interface: {
               old: entry.interface,
               new: signature,
+            },
+            description: {
+              old: entry.description,
+              new: description,
             },
           });
         }
@@ -130,7 +140,7 @@ export class PageComponent implements OnInit {
             action: 'add',
             name: m.name,
             interface: {new: signature},
-            description: m.jsDoc[0] ? m.jsDoc[0].comment : undefined,
+            description: {new: description},
           });
         }
       });
@@ -151,6 +161,28 @@ export class PageComponent implements OnInit {
     }
   }
 
+  compileInterfaceOptionDescription(docs: JsDoc[] | undefined) {
+    console.log('CMPL', docs);
+    return docs
+      ?.map(d => {
+        return [
+          d.comment,
+          ...d.tags?.map(t => {
+            switch (t.name) {
+              case 'description':
+              case 'usageNotes':
+                return `${t.value}`;
+              case 'returns':
+                return `Returns ${t.value}`;
+            }
+          }),
+        ]
+          .filter(e => !!e)
+          .join(`\n\n`);
+      })
+      .join(`\n\n`);
+  }
+
   applyInterfaceOptionGeneration() {
     if (!confirm('Are you sure?')) {
       return;
@@ -164,7 +196,7 @@ export class PageComponent implements OnInit {
           entry.head = l.name;
           entry.headId = l.name;
           entry.interface = l.interface.new;
-          entry.description = l.description;
+          entry.description = l.description.new;
           this.page.entries.push(entry);
           counter++;
           break;
@@ -174,6 +206,7 @@ export class PageComponent implements OnInit {
             .filter((e): e is ContentInterfaceOptionEntry => e.type === 'interface-option')
             .find(e => e.name === l.name);
           entry.interface = l.interface.new;
+          entry.description = l.description.new;
           counter++;
           break;
         }

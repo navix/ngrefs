@@ -4,15 +4,13 @@
 </h3>
 
 <div class="body">
+  <div>
+    <pre><code>{{ entry.interface }}</code></pre>
+  </div>
+
   <main-message *ngIf="entry.description"
                 [ref]="entry.description">
   </main-message>
-
-  <div>
-    <code>
-      {{ entry.interface }}
-    </code>
-  </div>
 
   <main-message *ngIf="entry.showAdditional"
                 class="additional"

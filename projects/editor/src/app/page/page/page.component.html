@@ -58,9 +58,8 @@
                class="generation-log">
             <strong>[{{ log.action }}]: {{ log.name }}</strong><br>
             <i *ngIf="log.action === 'remove'">Removing is always manual.<br></i>
-            <span *ngIf="log.interface?.old">{{ log.interface?.old }}<br></span>
-            <span *ngIf="log.interface?.new">{{ log.interface?.new }}<br></span>
-            <span *ngIf="log.description">{{ log.description }}<br></span>
+            <span>Interface: {{ log.interface?.old }} &rarr; {{ log.interface?.new }}<br></span>
+            <span>Desc: {{ log.description?.old }} &rarr; {{ log.description?.new }}<br></span>
           </div>
           <button uiButton size="sm" (click)="applyInterfaceOptionGeneration()">Apply</button>
         </div>
