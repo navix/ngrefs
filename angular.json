@@ -25,8 +25,9 @@
             "polyfills": "projects/main/src/polyfills.ts",
             "tsConfig": "projects/main/tsconfig.app.json",
             "assets": [
-              "projects/main/src/favicon.ico",
               "projects/main/src/assets",
+              "projects/main/src/CNAME",
+              "projects/main/src/favicon.ico",
               "projects/main/src/robots.txt",
               "projects/main/src/sitemap.xml"
             ],
