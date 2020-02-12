@@ -13,8 +13,6 @@ export class HomeComponent implements OnInit {
 
   versionUrl?: string;
 
-  year = (new Date()).getFullYear();
-
   constructor(
     private route: ActivatedRoute,
   ) {

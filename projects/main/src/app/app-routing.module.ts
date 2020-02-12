@@ -63,7 +63,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: '/e404',
+    component: Error404Component,
   },
 ];
 

@@ -1,10 +1,9 @@
-import { Component, HostBinding, Input, OnChanges, OnDestroy, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnDestroy, OnInit } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
-import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { uuid } from '@ngx-kit/core';
 import { MdRenderService } from '@nvxme/ngx-md-render';
 import { Subject } from 'rxjs';
-import { takeUntil } from 'rxjs/operators';
 import { ContentMessageRef } from '../../content/meta';
 import { VersionComponent } from '../../version/version.component';
 
@@ -76,7 +75,7 @@ export class MessageComponent implements OnInit, OnChanges, OnDestroy {
     this.text = this.ref;
     const rendered = this.md.render(this.text);
     this.html = this.sanitizer.bypassSecurityTrustHtml(
-      rendered.replace(/href\=\"(.*)\"/g, this.hrefReplacer),
+      rendered.replace(/href\=\"(.*?)\"/g, this.hrefReplacer),
     );
   }
 }
