@@ -51,5 +51,9 @@ export class SeoService {
       name: 'keywords',
       content: [...this.keywords, this.prefix, this.page].filter(k => !!k).join(', '),
     });
+    // clean up rel=canonical
+    this.document?.head
+      ?.querySelectorAll('link[rel="canonical"]')
+      .forEach(e => e.parentNode.removeChild(e));
   }
 }

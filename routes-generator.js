@@ -23,6 +23,7 @@ const sitemap = {
 const routes = ['/'];
 
 content.versions.forEach(version => {
+  // main page
   sitemap._content.push({
     url: {
       loc: `${root}/${version.url}`,
@@ -31,6 +32,8 @@ content.versions.forEach(version => {
     },
   });
   routes.push(`/${version.url}`);
+  routes.push(`/en/${version.url}`);
+  // sections
   version.sections
     .filter(section => !section.disabled)
     .forEach(section => {
@@ -43,6 +46,7 @@ content.versions.forEach(version => {
           },
         });
         routes.push(`/${version.url}/${section.url}/${page.url}`);
+        routes.push(`/en/${version.url}/${section.url}/${page.url}`);
       });
     });
 });
