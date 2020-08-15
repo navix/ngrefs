@@ -1,7 +1,6 @@
 import { DOCUMENT } from '@angular/common';
 import { Inject, Injectable } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
-import { KitPlatformService } from '@ngx-kit/core';
 
 @Injectable({
   providedIn: 'root',
@@ -18,7 +17,6 @@ export class SeoService {
   constructor(
     private title: Title,
     private meta: Meta,
-    private platform: KitPlatformService,
     @Inject(DOCUMENT) private document: any,
   ) {
     this.compileMeta();

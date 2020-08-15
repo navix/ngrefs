@@ -1,5 +1,3 @@
-<div class="menu">
-  <main-head-menu [version]="version"></main-head-menu>
-  <main-section-menu [items]="section.menu.items"></main-section-menu>
-  <main-footer-menu [version]="version"></main-footer-menu>
-</div>
+<main-head-menu [version]="version" (close)="close.emit()"></main-head-menu>
+<main-section-menu [items]="section.menu.items" (swipeleft)="close.emit()"></main-section-menu>
+<main-footer-menu [version]="version"></main-footer-menu>

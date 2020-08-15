@@ -2,7 +2,7 @@ const path = require('path');
 const {toXML} = require('jstoxml');
 const fs = require('fs-extra');
 
-const content = require('./projects/main/src/app/content/content');
+const content = require('./projects/content/content.json');
 
 const root = 'https://ngrefs.com';
 const sitemap = {

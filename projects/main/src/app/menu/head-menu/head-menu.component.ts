@@ -1,6 +1,7 @@
-import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+import { Router } from '@angular/router';
 import { ContentVersion } from '../../content/meta';
-import { versions } from '../../content/versions';
+import { versionsDigest } from '../../content/versionsDigest';
 import { CrossLinkingService } from '../../cross-linking.service';
 import { SectionComponent } from '../../section/section/section.component';
 import { ThemeService } from '../../theme.service';
@@ -15,7 +16,9 @@ import { VersionComponent } from '../../version/version.component';
 export class HeadMenuComponent implements OnInit {
   @Input() version: ContentVersion;
 
-  versions = versions;
+  @Output() close = new EventEmitter();
+
+  versions = versionsDigest;
 
   showSearch = false;
 
@@ -24,16 +27,19 @@ export class HeadMenuComponent implements OnInit {
     public versionComponent: VersionComponent,
     public theme: ThemeService,
     private cls: CrossLinkingService,
+    private router: Router,
   ) {
   }
 
   ngOnInit() {
   }
 
-  genCrossLink(toVersion: ContentVersion) {
-    return this.cls.genCrossVersionsLink(toVersion, {
+  async moveTo(toId: string) {
+    const version = versionsDigest.find(v => v.id === toId);
+    const link = await this.cls.genCrossVersionsLink(version, {
       sectionUrl: this.versionComponent.currentSectionUrl,
       pageUrl: this.versionComponent.currentPageUrl,
     });
+    this.router.navigate(link);
   }
 }

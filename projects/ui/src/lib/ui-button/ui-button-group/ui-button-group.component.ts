@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input, OnChanges, OnInit, } from '@angular/core';
-import { KitClassService } from '@ngx-kit/core';
+import { SxClass } from '@novyk/sx-class';
 import { UiButtonGroupDirection } from '../meta';
 
 @Component({
@@ -10,13 +10,13 @@ import { UiButtonGroupDirection } from '../meta';
   styleUrls: ['./ui-button-group.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [
-    KitClassService,
+    SxClass,
   ],
 })
 export class UiButtonGroupComponent implements OnInit, OnChanges {
   @Input() direction: UiButtonGroupDirection = 'row';
 
-  constructor(private kitClass: KitClassService) {
+  constructor(private sxClass: SxClass) {
   }
 
   ngOnChanges() {
@@ -28,7 +28,7 @@ export class UiButtonGroupComponent implements OnInit, OnChanges {
   }
 
   private applyClass() {
-    this.kitClass.apply({
+    this.sxClass.apply({
       direction: this.direction,
     });
   }

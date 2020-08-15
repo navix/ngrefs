@@ -3,8 +3,8 @@ import { ChangeDetectorRef, Component, Inject, NgZone, OnDestroy, OnInit } from 
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { Subject } from 'rxjs';
 import { take, takeUntil } from 'rxjs/operators';
-import { ContentPage, ContentVersion } from '../content/meta';
-import { versions } from '../content/versions';
+import { ContentPage, VersionDigest } from '../content/meta';
+import { versionsDigest } from '../content/versionsDigest';
 import { CrossLinkingService } from '../cross-linking.service';
 import { SectionComponent } from '../section/section/section.component';
 import { SeoService } from '../seo.service';
@@ -19,6 +19,8 @@ export class PageComponent implements OnInit, OnDestroy {
   pageUrl: string;
 
   page?: ContentPage;
+
+  defaultVersionLink?: string[];
 
   private destroy = new Subject<void>();
 
@@ -73,16 +75,16 @@ export class PageComponent implements OnInit, OnDestroy {
     return this.versionComponent.version;
   }
 
-  get defaultVersion(): ContentVersion {
-    return versions.find(v => v.default);
+  get defaultVersion(): VersionDigest {
+    return versionsDigest.find(v => v.default);
   }
 
   get isForDefaultVersion() {
     return !!this.version.default;
   }
 
-  get defaultVersionLink() {
-    return this.cls.genCrossVersionsLink(this.defaultVersion, {
+  async genGefaultVersionLink() {
+    this.defaultVersionLink = await this.cls.genCrossVersionsLink(this.defaultVersion, {
       sectionUrl: this.section.url,
       pageUrl: this.page.url,
     });
@@ -97,9 +99,10 @@ export class PageComponent implements OnInit, OnDestroy {
   private loadPage() {
     if (this.pageUrl) {
       this.page = this.sectionComponent.section.pages.find(p => p.url === this.pageUrl);
+      this.genGefaultVersionLink();
       if (this.page) {
         this.seo.setPage(this.page.title);
-        this.cdr.detectChanges();
+        this.cdr.markForCheck();
       } else {
         this.router.navigate(['/e404']);
       }

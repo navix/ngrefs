@@ -4,7 +4,6 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AppComponent } from '../app.component';
 import { ContentMenu, ContentVersion } from '../content/meta';
-import { versions } from '../content/versions';
 import { SeoService } from '../seo.service';
 
 @Component({
@@ -36,10 +35,10 @@ export class VersionComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.route.params
-      .subscribe(({versionUrl}) => {
+    this.route.data
+      .subscribe(({version}: {version: ContentVersion}) => {
         this.seo.setLang('en');
-        this.version = versions.find(v => v.url === versionUrl);
+        this.version = version;
         if (this.version) {
           this.seo.setAffix(`${this.version.title} References`);
         } else {

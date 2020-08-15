@@ -4,7 +4,9 @@ import { Error404Component } from './common/error404/error404.component';
 import { LangRedirectComponent } from './common/lang-redirect/lang-redirect.component';
 import { HomeComponent } from './home/home.component';
 import { PageComponent } from './page/page.component';
+import { SearchComponent } from './search/search.component';
 import { SectionComponent } from './section/section/section.component';
+import { VersionResolver } from './version/version-resolver';
 import { VersionComponent } from './version/version.component';
 
 const routes: Routes = [
@@ -38,6 +40,9 @@ const routes: Routes = [
   },
   {
     path: ':versionUrl',
+    resolve: {
+      version: VersionResolver,
+    },
     component: VersionComponent,
     children: [
       {
@@ -52,6 +57,10 @@ const routes: Routes = [
             path: '',
             pathMatch: 'full',
             redirectTo: 'intro',
+          },
+          {
+            path: 'search',
+            component: SearchComponent,
           },
           {
             path: ':pageUrl',

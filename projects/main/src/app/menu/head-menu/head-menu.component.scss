@@ -1,19 +1,20 @@
 @import "params";
+@import "mq";
 
 :host {
   background: $darkBg;
+  border-bottom: 1px solid #dcf2f3;
   box-shadow: $mediumShadow;
   box-sizing: border-box;
   color: $white;
   display: flex;
   flex-direction: row;
-  padding: 0 $grid * 2;
   flex-shrink: 0;
-  border-bottom: 1px solid #dcf2f3;
+  padding: 0 $grid * 2;
 }
 
 .brand {
-  align-items: baseline;
+  align-items: center;
   display: flex;
   flex-direction: row;
   font-size: 1rem;
@@ -22,10 +23,27 @@
   .selector {
     background: transparent;
     border: 0;
-    border-bottom: 1px dashed $white;
-    color: $white;
-    font-size: 1em;
-    font-weight: 600;
+    border-bottom: 1px dashed #ffffff;
+    color: #ffffff;
+    flex-shrink: 0;
+    padding: .25rem;
+    margin-right: .5rem;
+    option {
+      color: #000000;
+    }
+  }
+  .title {
+    flex-grow: 1;
+  }
+  .close {
+    background: transparent;
+    border: 0;
+    color: #ffffff;
+    display: flex;
+    flex-shrink: 0;
+    @include mq($from: tablet) {
+      display: none;
+    }
   }
 }
 
@@ -40,10 +58,10 @@
     padding: 0;
   }
   button, a {
-    display: flex;
     background: rgba(255, 255, 255, .1);
     border-radius: 4px;
     color: $white;
+    display: flex;
     margin-right: $grid;
     padding: $grid / 2 $grid;
   }
@@ -59,27 +77,27 @@
   a {
     //--sectionColor: transparent;
     background: rgba(255, 255, 255, 0.05);
-    border-left: 2px solid var(--sectionColor);
+    border-left: 2px solid var(--section-color);
     border-radius: 2px;
     color: $white;
     display: inline-block;
     font-size: 0.8rem;
-    margin-right: $grid / 2;
     margin-bottom: $grid / 2;
+    margin-right: $grid / 2;
     padding: $grid / 2 $grid;
     text-decoration: none;
-    transition-property: background, box-shadow;
     transition-duration: .25s;
+    transition-property: background, box-shadow;
     &:hover {
       background: rgba(255, 255, 255, 0.1);
       border-radius: 3px;
       box-shadow: $smallShadow;
     }
     &.-active {
-      background: var(--sectionColor);
-      color: #ffffff;
+      background: var(--section-color);
       border-radius: 4px;
       box-shadow: $smallShadow;
+      color: #ffffff;
     }
   }
 }

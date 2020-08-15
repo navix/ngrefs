@@ -1,7 +1,6 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { isDefined } from '@ngx-kit/core';
-import { angularLifehooks, JsDoc } from '@ngx-kit/docgen/meta';
+import { angularLifehooks, DocGen } from '@ngx-kit/docgen/meta';
 import { ContentCommandParamEntry, ContentInterfaceOptionEntry, ContentPage } from '../../../../../main/src/app/content/meta';
 import { AngularApiService } from '../../apis/angular-api.service';
 import { angularCliSchema } from '../../apis/apis';
@@ -63,7 +62,7 @@ export class PageComponent implements OnInit {
 
   createEntry(index?: number) {
     this.page.entries.push(this.data.createEntry());
-    if (isDefined(index)) {
+    if (index !== undefined) {
       this.data.move(this.page.entries, this.page.entries.length - 1, index + 1);
     }
   }
@@ -161,7 +160,7 @@ export class PageComponent implements OnInit {
     }
   }
 
-  compileInterfaceOptionDescription(docs: JsDoc[] | undefined) {
+  compileInterfaceOptionDescription(docs: DocGen.JsDoc[] | undefined) {
     console.log('CMPL', docs);
     return docs
       ?.map(d => {

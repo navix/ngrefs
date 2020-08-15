@@ -1,15 +1,22 @@
 import { Injectable } from '@angular/core';
-import { ContentVersion } from './content/meta';
+import { ContentVersion, VersionDigest } from './content/meta';
+import { VersionLoader } from './version/version-loader';
 
 @Injectable({
   providedIn: 'root',
 })
 export class CrossLinkingService {
-  genCrossVersionsLink(toVersion: ContentVersion, url: {
+  constructor(
+    private loader: VersionLoader,
+  ) {
+  }
+
+  async genCrossVersionsLink(toVersionDigest: VersionDigest, url: {
     sectionUrl?: string,
     pageUrl?: string,
-  }): string[] {
-    if (url.sectionUrl) {
+  }): Promise<string[]> {
+    const toVersion = await this.loader.load(toVersionDigest.url);
+    if (toVersion && url.sectionUrl) {
       const section = toVersion.sections.find(s => s.url === url.sectionUrl);
       if (section) {
         if (url.pageUrl) {
@@ -26,17 +33,7 @@ export class CrossLinkingService {
         return ['/', toVersion.url];
       }
     } else {
-      return ['/', toVersion.url];
+      return ['/', toVersionDigest.url];
     }
-  }
-
-  genCrossLangLink(version: ContentVersion, toLang: string, url: {
-    sectionUrl?: string,
-    pageUrl?: string,
-  }) {
-    return this.genCrossVersionsLink(version, {
-      sectionUrl: url.sectionUrl,
-      pageUrl: url.pageUrl,
-    });
   }
 }

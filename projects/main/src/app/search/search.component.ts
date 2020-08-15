@@ -1,6 +1,5 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@angular/core';
-import { KitFocusManagerService, KitModalRef } from '@ngx-kit/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Subject } from 'rxjs';
 import { debounceTime, filter } from 'rxjs/operators';
 import { ContentEntry, ContentPage, ContentSection, ContentVersion } from '../content/meta';
 import { VersionComponent } from '../version/version.component';
@@ -10,9 +9,6 @@ import { VersionComponent } from '../version/version.component';
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  providers: [
-    KitFocusManagerService,
-  ],
 })
 export class SearchComponent implements OnInit {
   queryChanges = new BehaviorSubject<string>('');
@@ -53,14 +49,10 @@ export class SearchComponent implements OnInit {
   constructor(
     private versionComponent: VersionComponent,
     private cdr: ChangeDetectorRef,
-    private modalRef: KitModalRef<SearchComponent>,
-    private focusManager: KitFocusManagerService,
   ) {
   }
 
   ngOnInit() {
-    this.focusManager.autoCapture = true;
-    this.focusManager.init();
     // Prepare index
     this.version = this.versionComponent.version;
     this.versionComponent.version.sections
@@ -126,10 +118,6 @@ export class SearchComponent implements OnInit {
         this.query = query.toLowerCase();
         this.search();
       });
-  }
-
-  close() {
-    this.modalRef.close();
   }
 
   lc(value) {

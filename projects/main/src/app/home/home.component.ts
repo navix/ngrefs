@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { versions } from '../content/versions';
+import { versionsDigest } from '../content/versionsDigest';
 
 @Component({
   selector: 'main-home',
@@ -9,7 +9,7 @@ import { versions } from '../content/versions';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomeComponent implements OnInit {
-  versions = versions;
+  versions = versionsDigest;
 
   versionUrl?: string;
 

@@ -4,17 +4,13 @@
          autocomplete="off"
          ngModel
          (ngModelChange)="queryChanges.next($event)">
-  <button (click)="close()">
-    <kit-icon name="close" size="32px"></kit-icon>
-  </button>
 </div>
 
 <div class="results">
   <a *ngFor="let res of searchResults"
      [routerLink]="['/', version.url, res.sectionUrl, res.pageUrl]"
      [fragment]="res.fragment"
-     class="result"
-     (click)="close()">
+     class="result">
     {{ res.sectionTitle }}&nbsp;&rarr;
     {{ res.pageTitle }}<span *ngIf="res.entryTitle">, {{ res.entryTitle }}</span>
   </a>

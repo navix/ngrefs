@@ -3,6 +3,7 @@
   font-style: normal;
   font-weight: 400;
   src: local('JetBrains Mono'), local('JetBrains-Mono'), url(/assets/JetBrainsMono-Regular.woff2) format('woff2');
+  font-display: swap;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
   font-style: normal;
   font-weight: 600;
   src: local('JetBrains Mono'), local('JetBrains-Mono'), url(/assets/JetBrainsMono-Bold.woff2) format('woff2');
+  font-display: swap;
 }
 
 :root {
@@ -137,7 +139,7 @@ pre {
   overflow: auto;
 }
 
-button {
+button, input, select {
   font-family: var(--monospace);
 }
 

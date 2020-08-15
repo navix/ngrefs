@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { KitIconsRegistryService } from '@ngx-kit/core';
+import { SxIconsRegistry } from '@novyk/sx-icon';
 import { ContentVersion } from './content/meta';
-import { versions } from './content/versions';
+import { versionsDigest } from './content/versionsDigest';
 import { icons } from './icons';
 import { SeoService } from './seo.service';
 
@@ -11,14 +11,12 @@ import { SeoService } from './seo.service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  versions = versions;
+  versions = versionsDigest;
 
   constructor(
-    private iconsRegistry: KitIconsRegistryService,
+    private iconsRegistry: SxIconsRegistry,
     private seo: SeoService, // Inject to force title rendering
   ) {
     this.iconsRegistry.add(icons);
-
-
   }
 }

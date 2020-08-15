@@ -10,7 +10,7 @@
       "prefix": "main",
       "schematics": {
         "@schematics/angular:component": {
-          "styleext": "scss",
+          "style": "scss",
           "changeDetection": "OnPush"
         }
       },
@@ -200,7 +200,7 @@
       "prefix": "editor",
       "schematics": {
         "@schematics/angular:component": {
-          "styleext": "scss",
+          "style": "scss",
           "changeDetection": "OnPush"
         }
       },

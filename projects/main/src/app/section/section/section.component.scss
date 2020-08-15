@@ -1,11 +1,8 @@
 @import "params";
 @import "mq";
 
-.content-wrapper {
-  //box-sizing: border-box;
-  //margin: 0 auto;
-  //max-width: $contentWidth;
-  //padding: 0 $grid * 4 $grid * 8;
+:host {
+  --sideWidth: 20rem;
 }
 
 .menu-toggle {
@@ -16,6 +13,9 @@
   padding: $grid;
   background: transparent;
   border: none;
+  @include mq($from: tablet) {
+    display: none;
+  }
 }
 
 .mobile-header {
@@ -26,13 +26,38 @@
   display: flex;
   flex-direction: row;
   font-size: 0.95rem;
+  @include mq($from: tablet) {
+    display: none;
+  }
   span {
     margin-right: $grid;
   }
 }
 
-@include mq($from: tablet) {
-  .content {
-    margin-left: $sideWidth;
+.side {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateX(0);
+  transition: transform .15s ease-in-out;
+  @include mq($from: tablet) {
+    transition: none;
+    width: var(--sideWidth);
+    right: auto;
+  }
+  &.-mobile-hidden {
+    transform: translateX(-100%);
+    @include mq($from: tablet) {
+      transform: translateX(0);
+    }
+  }
+}
+
+.content {
+  @include mq($from: tablet) {
+    margin-left: var(--sideWidth);
   }
 }

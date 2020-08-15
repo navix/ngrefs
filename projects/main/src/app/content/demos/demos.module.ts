@@ -1,3 +1,4 @@
+import { PlatformModule } from '@angular/cdk/platform';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -67,6 +68,7 @@ import { V6StylingHostbindingDemoComponent } from './v6/v6-styling-hostbinding-d
   imports: [
     CommonModule,
     FormsModule,
+    PlatformModule,
   ],
   declarations: [
     V6TemplatesDeclarDemoComponent,

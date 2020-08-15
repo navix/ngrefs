@@ -1,9 +1,8 @@
 import { Component, Input, OnChanges, OnDestroy, OnInit } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
-import { uuid } from '@ngx-kit/core';
-import { MdRenderService } from '@nvxme/ngx-md-render';
 import { Subject } from 'rxjs';
+import { uuid } from '../../../../../editor/src/app/util/uuid';
 import { ContentMessageRef } from '../../content/meta';
 import { VersionComponent } from '../../version/version.component';
 
@@ -40,7 +39,6 @@ export class MessageComponent implements OnInit, OnChanges, OnDestroy {
   private destroy = new Subject<void>();
 
   constructor(
-    private md: MdRenderService,
     private versionPage: VersionComponent,
     private router: Router,
     private route: ActivatedRoute,
@@ -73,7 +71,7 @@ export class MessageComponent implements OnInit, OnChanges, OnDestroy {
 
   private update() {
     this.text = this.ref;
-    const rendered = this.md.render(this.text);
+    const rendered = this.text;
     this.html = this.sanitizer.bypassSecurityTrustHtml(
       rendered.replace(/href\=\"(.*?)\"/g, this.hrefReplacer),
     );

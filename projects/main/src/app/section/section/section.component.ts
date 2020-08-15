@@ -1,6 +1,7 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Platform } from '@angular/cdk/platform';
+import { DOCUMENT } from '@angular/common';
+import { Component, Inject, OnDestroy, OnInit, Renderer2 } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
-import { KitPlatformService } from '@ngx-kit/core';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { ContentSection } from '../../content/meta';
@@ -28,7 +29,9 @@ export class SectionComponent implements OnInit, OnDestroy {
     private router: Router,
     private versionComponent: VersionComponent,
     private seo: SeoService,
-    private platform: KitPlatformService,
+    private platform: Platform,
+    @Inject(DOCUMENT) document: any,
+    private renderer: Renderer2,
   ) {
     // Should be handle in the constructor for proper initial rendering
     this.route.params.subscribe(({sectionUrl}) => {
@@ -45,7 +48,7 @@ export class SectionComponent implements OnInit, OnDestroy {
       .pipe(takeUntil(this.destroy))
       .subscribe(e => {
         if (e instanceof NavigationEnd) {
-          this.displayNav = false;
+          this.toggleNav(false);
           this.loadSection();
         }
       });
@@ -61,7 +64,16 @@ export class SectionComponent implements OnInit, OnDestroy {
   }
 
   get isServer() {
-    return this.platform.isServer();
+    return !this.platform.isBrowser;
+  }
+
+  toggleNav(state?: boolean) {
+    this.displayNav = state === undefined ? !this.displayNav : state;
+    if (this.displayNav) {
+      this.renderer.addClass(document.body, '-mobile-scroll-block');
+    } else {
+      this.renderer.removeClass(document.body, '-mobile-scroll-block');
+    }
   }
 
   private loadSection() {

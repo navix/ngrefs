@@ -1,5 +1,5 @@
+import { Platform } from '@angular/cdk/platform';
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { KitPlatformService } from '@ngx-kit/core';
 import { from, Observable, Observer } from 'rxjs';
 
 @Component({
@@ -13,12 +13,12 @@ export class V6TemplatesAsyncpipeDemoComponent implements OnInit {
   time?: Observable<string>;
 
   constructor(
-    private platform: KitPlatformService,
+    private platform: Platform,
   ) {
   }
 
   ngOnInit() {
-    this.time = this.platform.isBrowser()
+    this.time = this.platform.isBrowser
       ? new Observable<string>((observer: Observer<string>) => {
         setInterval(() => observer.next(new Date().toString()), 1000);
       })

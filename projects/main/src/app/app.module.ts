@@ -1,14 +1,12 @@
-import { ErrorHandler, NgModule } from '@angular/core';
+import { PlatformModule } from '@angular/cdk/platform';
+import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { KitIconsModule, KitModalModule, kitMqBreakpoints, KitMqModule, KitOverlayModule } from '@ngx-kit/core';
-import { MonitErrorHandler } from '@nvxme/monit-ng-client';
-import { MdRenderModule, MdRenderService } from '@nvxme/ngx-md-render';
+import { BrowserModule, HAMMER_GESTURE_CONFIG, HAMMER_LOADER, HammerModule } from '@angular/platform-browser';
+import { SxIconModule } from '@novyk/sx-icon';
 import { UiModule } from 'ui';
+import { AppHammerConfig } from './app-hammer-config';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CssVarModule } from './common/css-var/css-var.module';
 import { Error404Component } from './common/error404/error404.component';
 import { LangRedirectComponent } from './common/lang-redirect/lang-redirect.component';
 import { DemosModule } from './content/demos/demos.module';
@@ -33,6 +31,28 @@ import { SectionComponent } from './section/section/section.component';
 import { VersionComponent } from './version/version.component';
 
 @NgModule({
+  imports: [
+    BrowserModule.withServerTransition({appId: 'serverApp'}),
+    FormsModule,
+    AppRoutingModule,
+    UiModule,
+    DemosModule,
+    PlatformModule,
+    SxIconModule,
+    HammerModule,
+  ],
+  providers: [
+    {
+      provide: HAMMER_LOADER,
+      useValue: async () => {
+        return import('hammerjs/hammer');
+      },
+    },
+    {
+      provide: HAMMER_GESTURE_CONFIG,
+      useClass: AppHammerConfig,
+    },
+  ],
   declarations: [
     AppComponent,
     VersionComponent,
@@ -56,36 +76,6 @@ import { VersionComponent } from './version/version.component';
     SectionIntroMenuComponent,
     Error404Component,
     LangRedirectComponent,
-  ],
-  imports: [
-    BrowserModule.withServerTransition({appId: 'serverApp'}),
-    BrowserAnimationsModule,
-    FormsModule,
-    AppRoutingModule,
-    MdRenderModule,
-    UiModule,
-    KitMqModule,
-    KitModalModule,
-    KitOverlayModule,
-    KitIconsModule,
-    DemosModule,
-    CssVarModule,
-  ],
-  providers: [
-    {
-      provide: ErrorHandler,
-      useClass: MonitErrorHandler,
-    },
-    MdRenderService,
-    {
-      provide: kitMqBreakpoints,
-      useValue: {
-        mobile: '320px',
-        tablet: '740px',
-        desktop: '980px',
-        wide: '1300px',
-      },
-    },
   ],
   bootstrap: [AppComponent],
 })

@@ -3,6 +3,19 @@ export interface ContentFile {
   versions: ContentVersion[];
 }
 
+export interface VersionDigest {
+  id: string;
+  title: string;
+  url: string;
+  default: boolean;
+  sections: {
+    id: string;
+    title: string;
+    url: string;
+    color: string;
+  };
+}
+
 export interface ContentVersion {
   id: string;
   title?: string;

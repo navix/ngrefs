@@ -1,48 +1,43 @@
 <div class="brand">
-  <button #toggle="toggle"
-          class="selector"
-          kitOverlayToggle>
-    {{ version.title }}
+  <select (ngModelChange)="moveTo($event)"
+          [ngModel]="version.id"
+          class="selector">
+    <option *ngFor="let v of versions"
+            [value]="v.id">
+      {{ v.title }}
+    </option>
+  </select>
+  <span class="title">References</span>
+  <button (click)="close.emit()" class="close">
+    <sx-icon name="close" size="32"></sx-icon>
   </button>
-  <span>References</span>
 </div>
 
-<ui-dropdown *kitOverlay="toggle.state"
-             [toggle]="toggle"
-             position="bottom-left">
-  <a *ngFor="let v of versions"
-     uiDropdownItem
-     [active]="v.id === version.id"
-     [routerLink]="genCrossLink(v)">
-    {{ v.title }}
-  </a>
-</ui-dropdown>
-
 <div class="controls">
-  <button (click)="showSearch = true">
-    <kit-icon name="search" size="24px"></kit-icon>
-  </button>
-  <button title="Show hints & tutorials"
-          [style.color]="sectionComponent.showHints ? '#fff' : '#777'"
-          (click)="sectionComponent.showHints = !sectionComponent.showHints">
-    <kit-icon name="hints" size="24px"></kit-icon>
+  <a routerLink="./search">
+    <sx-icon name="search" size="24px"></sx-icon>
+  </a>
+  <button (click)="sectionComponent.showHints = !sectionComponent.showHints"
+          [style.color]="sectionComponent.showHints ? '#ffffff' : '#777777'"
+          title="Show hints & tutorials">
+    <sx-icon name="hints" size="24px"></sx-icon>
   </button>
   <a href="mailto:oleksanovyk@gmail.com">
-    <kit-icon name="mail" size="24px"></kit-icon>
+    <sx-icon name="mail" size="24px"></sx-icon>
   </a>
-  <!--<button title="Night theme"
-          [style.color]="theme.theme === 'night' ? '#fff' : '#777'"
-          (click)="theme.theme = theme.theme === 'night' ? 'main' : 'night'">
-    <kit-icon name="night" size="24px"></kit-icon>
-  </button>-->
+  <button (click)="theme.theme = theme.theme === 'night' ? 'main' : 'night'"
+          [style.color]="theme.theme === 'night' ? '#ffffff' : '#777777'"
+          title="Night theme">
+    <sx-icon name="night" size="24px"></sx-icon>
+  </button>
 </div>
 
 <ul class="sections">
   <li *ngFor="let section of version.sections">
     <a *ngIf="!section.disabled"
        [routerLink]="['../', section.url]"
-       routerLinkActive="-active"
-       [cssVar]="{sectionColor: section.color}">
+       [style.--section-color]="section.color"
+       routerLinkActive="-active">
       {{ section.title }}
     </a>
   </li>

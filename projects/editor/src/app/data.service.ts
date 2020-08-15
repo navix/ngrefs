@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { uuid } from '@ngx-kit/core';
 import {
   ContentEntry,
   ContentEntryType,
@@ -9,6 +8,7 @@ import {
   ContentSection,
   ContentVersion,
 } from '../../../main/src/app/content/meta';
+import { uuid } from './util/uuid';
 
 export const contentFileVersion = '2';
 

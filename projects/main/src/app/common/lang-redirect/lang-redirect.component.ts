@@ -1,7 +1,7 @@
+import { Platform } from '@angular/cdk/platform';
 import { DOCUMENT } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Inject, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { KitPlatformService } from '@ngx-kit/core';
 
 @Component({
   selector: 'main-lang-redirect',
@@ -14,7 +14,7 @@ export class LangRedirectComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     @Inject(DOCUMENT) private doc,
-    private platform: KitPlatformService,
+    private platform: Platform,
   ) {
   }
 
@@ -28,7 +28,7 @@ export class LangRedirectComponent implements OnInit {
         link.setAttribute('href', `https://ngrefs.com/${newUrl.join('/')}`);
         this.doc.head.appendChild(link);
         // redirect
-        if (this.platform.isBrowser()) {
+        if (this.platform.isBrowser) {
           this.router.navigate(newUrl);
         }
       });
