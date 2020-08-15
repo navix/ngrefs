@@ -4,7 +4,7 @@
   "scripts": {
     "main:serve": "ng run main:serve",
     "main:serve-ssr": "ng run main:serve-ssr",
-    "main:prerender": "node routes-generator.js && ng run main:prerender",
+    "main:prerender": "node routes-generator.js && ng run main:prerender --routes=/en/latest/cli/command-ng-run",
     "main:deploy": "npm run main:prerender && gh-pages -d dist/main/browser",
     "editor:serve": "ng run editor:serve",
     "editor:docgen:angular": "docgen -p ./sources/angular/packages/ -o ./projects/editor/src/app/apis/angular.json -c ./docgen.json",
