@@ -9,4 +9,10 @@ export class AppHammerConfig extends HammerGestureConfig {
     'rotate': {enable: false},
     'pan': {enable: false},
   };
+
+  options = {
+    cssProps: {
+      userSelect: 'auto',
+    },
+  };
 }
