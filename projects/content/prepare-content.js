@@ -70,6 +70,8 @@ function deepRender(obj) {
   } else if (obj !== null || typeof obj === 'object') {
     if (obj.type === 'text') {
       obj.text = marked(obj.text);
+    } else if (obj.type === 'demo') {
+      obj.source = marked(obj.source);
     } else {
       for (const key in obj) {
         const val = obj[key];

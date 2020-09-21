@@ -5,9 +5,9 @@
   border-radius: 4px;
   box-shadow: $smallShadow;
   display: grid;
-  grid-template-areas: 'source-title' 'source' 'result-title' 'result';
   flex-direction: row;
   font-size: 0.9rem;
+  grid-template-areas: 'source-title' 'source' 'result-title' 'result';
   margin: $grid * 2 0 $grid * 4;
   overflow: hidden;
 }
@@ -28,6 +28,11 @@
   grid-area: source;
   overflow: hidden;
   padding: $grid $grid * 2;
+  &::ng-deep {
+    h1, h2, h3, h4, h5, h6 {
+      margin: 1rem;
+    }
+  }
 }
 
 .result {
