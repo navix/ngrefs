@@ -1,6 +1,7 @@
 /
 /latest
 /en/latest
+/latest/cli
 /latest/cli/intro
 /en/latest/cli/intro
 /latest/cli/quick-start
@@ -83,6 +84,7 @@
 /en/latest/cli/schematic-service-worker
 /latest/cli/schematic-web-worker
 /en/latest/cli/schematic-web-worker
+/latest/templates
 /latest/templates/intro
 /en/latest/templates/intro
 /latest/templates/interpolation
@@ -179,6 +181,7 @@
 /en/latest/templates/ngnonbindable
 /latest/templates/any-type-cast
 /en/latest/templates/any-type-cast
+/latest/styling
 /latest/styling/intro
 /en/latest/styling/intro
 /latest/styling/global-styles
@@ -205,6 +208,7 @@
 /en/latest/styling/styling-with-elementref-and-renderer2
 /latest/styling/domsanitizer-for-styling
 /en/latest/styling/domsanitizer-for-styling
+/latest/core
 /latest/core/intro
 /en/latest/core/intro
 /latest/core/ng-module
@@ -279,6 +283,7 @@
 /en/latest/core/renderer2
 /latest/core/dom-sanitizer
 /en/latest/core/dom-sanitizer
+/latest/router
 /latest/router/intro
 /en/latest/router/intro
 /latest/router/configuration
@@ -319,6 +324,7 @@
 /en/latest/router/routerlinkactive-directive
 /latest/router/router-outlet-directive
 /en/latest/router/router-outlet-directive
+/latest/forms
 /latest/forms/intro
 /en/latest/forms/intro
 /latest/forms/abstractcontroloptions
@@ -381,6 +387,7 @@
 /en/latest/forms/ngnativevalidate-directive
 /v9
 /en/v9
+/v9/cli
 /v9/cli/intro
 /en/v9/cli/intro
 /v9/cli/quick-start
@@ -463,6 +470,7 @@
 /en/v9/cli/schematic-service-worker
 /v9/cli/schematic-web-worker
 /en/v9/cli/schematic-web-worker
+/v9/templates
 /v9/templates/intro
 /en/v9/templates/intro
 /v9/templates/interpolation
@@ -559,6 +567,7 @@
 /en/v9/templates/ngnonbindable
 /v9/templates/any-type-cast
 /en/v9/templates/any-type-cast
+/v9/styling
 /v9/styling/intro
 /en/v9/styling/intro
 /v9/styling/global-styles
@@ -585,6 +594,7 @@
 /en/v9/styling/styling-with-elementref-and-renderer2
 /v9/styling/domsanitizer-for-styling
 /en/v9/styling/domsanitizer-for-styling
+/v9/core
 /v9/core/intro
 /en/v9/core/intro
 /v9/core/ng-module
@@ -659,6 +669,7 @@
 /en/v9/core/renderer2
 /v9/core/dom-sanitizer
 /en/v9/core/dom-sanitizer
+/v9/router
 /v9/router/intro
 /en/v9/router/intro
 /v9/router/configuration
@@ -699,6 +710,7 @@
 /en/v9/router/routerlinkactive-directive
 /v9/router/router-outlet-directive
 /en/v9/router/router-outlet-directive
+/v9/forms
 /v9/forms/intro
 /en/v9/forms/intro
 /v9/forms/abstractcontroloptions
@@ -761,6 +773,7 @@
 /en/v9/forms/ngnativevalidate-directive
 /v8
 /en/v8
+/v8/cli
 /v8/cli/intro
 /en/v8/cli/intro
 /v8/cli/quick-start
@@ -839,6 +852,7 @@
 /en/v8/cli/schematic-service
 /v8/cli/schematic-universal
 /en/v8/cli/schematic-universal
+/v8/templates
 /v8/templates/intro
 /en/v8/templates/intro
 /v8/templates/interpolation
@@ -935,6 +949,7 @@
 /en/v8/templates/ngnonbindable
 /v8/templates/any-type-cast
 /en/v8/templates/any-type-cast
+/v8/styling
 /v8/styling/intro
 /en/v8/styling/intro
 /v8/styling/global-styles
@@ -961,6 +976,7 @@
 /en/v8/styling/styling-with-elementref-and-renderer2
 /v8/styling/domsanitizer-for-styling
 /en/v8/styling/domsanitizer-for-styling
+/v8/core
 /v8/core/intro
 /en/v8/core/intro
 /v8/core/ng-module
@@ -1035,6 +1051,7 @@
 /en/v8/core/renderer2
 /v8/core/dom-sanitizer
 /en/v8/core/dom-sanitizer
+/v8/router
 /v8/router/intro
 /en/v8/router/intro
 /v8/router/configuration
@@ -1077,6 +1094,7 @@
 /en/v8/router/router-outlet-directive
 /v7
 /en/v7
+/v7/cli
 /v7/cli/intro
 /en/v7/cli/intro
 /v7/cli/quick-start
@@ -1155,6 +1173,7 @@
 /en/v7/cli/schematic-service
 /v7/cli/schematic-universal
 /en/v7/cli/schematic-universal
+/v7/templates
 /v7/templates/intro
 /en/v7/templates/intro
 /v7/templates/interpolation
@@ -1251,6 +1270,7 @@
 /en/v7/templates/ngnonbindable
 /v7/templates/any-type-cast
 /en/v7/templates/any-type-cast
+/v7/styling
 /v7/styling/intro
 /en/v7/styling/intro
 /v7/styling/global-styles
@@ -1277,6 +1297,7 @@
 /en/v7/styling/styling-with-elementref-and-renderer2
 /v7/styling/domsanitizer-for-styling
 /en/v7/styling/domsanitizer-for-styling
+/v7/core
 /v7/core/intro
 /en/v7/core/intro
 /v7/core/ng-module
@@ -1351,6 +1372,7 @@
 /en/v7/core/renderer2
 /v7/core/dom-sanitizer
 /en/v7/core/dom-sanitizer
+/v7/router
 /v7/router/intro
 /en/v7/router/intro
 /v7/router/configuration
@@ -1393,6 +1415,7 @@
 /en/v7/router/router-outlet-directive
 /v6
 /en/v6
+/v6/cli
 /v6/cli/intro
 /en/v6/cli/intro
 /v6/cli/quick-start
@@ -1471,6 +1494,7 @@
 /en/v6/cli/schematic-service
 /v6/cli/schematic-universal
 /en/v6/cli/schematic-universal
+/v6/templates
 /v6/templates/intro
 /en/v6/templates/intro
 /v6/templates/interpolation
@@ -1567,6 +1591,7 @@
 /en/v6/templates/ngnonbindable
 /v6/templates/any-type-cast
 /en/v6/templates/any-type-cast
+/v6/styling
 /v6/styling/intro
 /en/v6/styling/intro
 /v6/styling/global-styles
@@ -1593,6 +1618,7 @@
 /en/v6/styling/styling-with-elementref-and-renderer2
 /v6/styling/domsanitizer-for-styling
 /en/v6/styling/domsanitizer-for-styling
+/v6/core
 /v6/core/intro
 /en/v6/core/intro
 /v6/core/ng-module
@@ -1667,6 +1693,7 @@
 /en/v6/core/renderer2
 /v6/core/dom-sanitizer
 /en/v6/core/dom-sanitizer
+/v6/router
 /v6/router/intro
 /en/v6/router/intro
 /v6/router/configuration

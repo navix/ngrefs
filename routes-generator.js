@@ -37,6 +37,7 @@ content.versions.forEach(version => {
   version.sections
     .filter(section => !section.disabled)
     .forEach(section => {
+      routes.push(`/${version.url}/${section.url}`);
       section.pages.forEach(page => {
         sitemap._content.push({
           url: {
