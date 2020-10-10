@@ -3,7 +3,7 @@
 
 .demo {
   border-radius: 4px;
-  box-shadow: $smallShadow;
+  background: var(--demo-bg);
   display: grid;
   flex-direction: row;
   font-size: 0.9rem;
@@ -13,7 +13,7 @@
 }
 
 .title {
-  background: #eeeeee;
+  background: var(--demo-head-bg);
   font-size: 0.8rem;
   padding: $grid $grid * 2;
   &.-source {

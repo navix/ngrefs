@@ -1,5 +1,28 @@
 .theme-night {
-  --bodyBg: #1B1B1B;
-  --textColor: #ffffff;
-  --menuBodyBg: #323232;
+  @import "code/dracula";
+
+  --bodyBg: #1e2027;
+
+  --nav-footer-bg: #333642;
+  --nav-head-bg: #272A33;
+  --nav-head-color: #f1f1f1;
+  --nav-menu-bg: #474B5C;
+  --nav-separator-color: #52586B;
+  --nav-link-hover-bg: #52586B;
+  --nav-link-active-bg: #5E647A;
+
+  --scroll-bar-color: #474B5C;
+  --scroll-bg: #272A33;
+
+  --demo-bg: #272A33;
+  --demo-head-bg: #333642;
+
+  --cli-param-color: #793ba9;
+  --interfaceOptionColor: #94ceff;
+  --linkColor: #ffffff;
+
+  --linkColorLight: #e5e5e5;
+  --textColor: #f1f1f1;
+
+  --code-bg: #333642;
 }

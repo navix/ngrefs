@@ -1,0 +1,31 @@
+.theme-solar {
+  @import "code/solarized-light";
+
+  --bodyBg: #FDF6E3;
+
+  --nav-footer-bg: #ddd6c4;
+  --nav-head-bg: #292c32;
+  --nav-head-color: #fff;
+  --nav-menu-bg: #eee8d5;
+  --nav-separator-color: #ddd7c6;
+  --nav-link-hover-bg: #ddd6c4;
+  --nav-link-active-bg: #d9d4c2;
+
+  --scroll-bar-color: #cfcab5;
+  --scroll-bg: #eee8d5;
+
+  --demo-bg: #eee8d5;
+  --demo-head-bg: #dbd3c2;
+
+  --cli-param-color: #d2c6ee;
+  --hintColor: #36cadb;
+  --interfaceOptionColor: #94ceff;
+
+  --linkColor: #657b83;
+  --linkColorLight: #738b92;
+  --tableBdColor: #dddddd;
+  --textColor: #576b73;
+  --tutorialsColor: #2fd93f;
+
+  --code-bg: #e7e1cf;
+}

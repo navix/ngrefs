@@ -1,3 +1,4 @@
+import { Platform } from '@angular/cdk/platform';
 import { DOCUMENT } from '@angular/common';
 import { Inject, Injectable } from '@angular/core';
 
@@ -5,19 +6,24 @@ import { Inject, Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class ThemeService {
-  private _theme: string | null = null;
+  #storeKey = 'theme';
+
+  private _theme;
 
   constructor(
     @Inject(DOCUMENT) private document: any,
+    private platform: Platform,
   ) {
+    this.theme = (this.platform.isBrowser && localStorage.getItem(this.#storeKey)) ?? 'main';
   }
 
   get theme() {
     return this._theme;
   }
 
-  set theme(theme: string | null) {
-    if (this.document && this.document.documentElement) {
+  set theme(theme: string) {
+    if (this.platform.isBrowser && this.document && this.document.documentElement) {
+      localStorage.setItem(this.#storeKey, theme);
       if (this._theme) {
         this.document.documentElement.classList.remove(`theme-${this._theme}`);
       }

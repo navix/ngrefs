@@ -31,7 +31,7 @@ h3 {
     border-left: 2px solid #eeeeee;
   }
   a:hover {
-    background: $codeColor;
+    background: var(--code-bg);
   }
   span {
     color: #999999;

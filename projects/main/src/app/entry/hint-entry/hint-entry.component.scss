@@ -2,7 +2,7 @@
 
 .entry {
   display: block;
-  border: 2px solid $hintColor;
+  border: 2px solid var(--hintColor);
   border-radius: 5px;
   font-size: 0.9rem;
   margin: $grid 0;
@@ -10,7 +10,7 @@
 }
 
 .title {
-  background: $hintColor;
+  background: var(--hintColor);
   color: #ffffff;
   font-size: 0.8rem;
   padding: 0 $grid;

@@ -2,11 +2,11 @@
 @import "mq";
 
 :host {
-  background: $darkBg;
-  border-bottom: 1px solid #dcf2f3;
+  background: var(--nav-head-bg);
+  border-bottom: 1px solid var(--nav-separator-color);
   box-shadow: $mediumShadow;
   box-sizing: border-box;
-  color: $white;
+  color: #ffffff;
   display: flex;
   flex-direction: row;
   flex-shrink: 0;
@@ -26,8 +26,8 @@
     border-bottom: 1px dashed #ffffff;
     color: #ffffff;
     flex-shrink: 0;
-    padding: .25rem;
     margin-right: .5rem;
+    padding: .25rem;
     option {
       color: #000000;
     }
@@ -60,10 +60,31 @@
   button, a {
     background: rgba(255, 255, 255, .1);
     border-radius: 4px;
-    color: $white;
+    color: #ffffff;
     display: flex;
     margin-right: $grid;
     padding: $grid / 2 $grid;
+  }
+  .theme-picker {
+    align-items: center;
+    border-radius: .25rem;
+    display: flex;
+    overflow: hidden;
+    border: 2px solid #777;
+    button {
+      border: 0;
+      border-radius: 0;
+      height: 1.5rem;
+      margin: 0;
+      transition: width .2s;
+      width: 1rem;
+      &:hover {
+        width: 2rem;
+      }
+      &.-active {
+        width: 2rem;
+      }
+    }
   }
 }
 
@@ -79,7 +100,7 @@
     background: rgba(255, 255, 255, 0.05);
     border-left: 2px solid var(--section-color);
     border-radius: 2px;
-    color: $white;
+    color: #ffffff;
     display: inline-block;
     font-size: 0.8rem;
     margin-bottom: $grid / 2;

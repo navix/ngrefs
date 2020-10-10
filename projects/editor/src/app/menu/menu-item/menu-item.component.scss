@@ -2,7 +2,7 @@
 
 :host {
   display: block;
-  border-bottom: 1px solid $tableBdColor;
+  border-bottom: 1px solid var(--tableBdColor);
   padding: $grid 0;
 }
 

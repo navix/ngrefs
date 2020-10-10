@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import "mixins/scroll-colors";
+
 @font-face {
   font-family: 'JetBrains Mono';
   font-style: normal;
@@ -15,28 +18,30 @@
 }
 
 :root {
-  --fzLarge5: 3rem;
-  --lhLarge5: 3.5rem;
-  --fzLarge4: 2rem;
-  --lhLarge4: 2.5rem;
-  --fzLarge3: 1.5rem;
-  --lhLarge3: 2rem;
-  --fzLarge2: 1.312rem;
-  --lhLarge2: 2rem;
-  --fzLarge1: 1.125rem;
-  --lhLarge1: 1.5rem;
-  --fzBase: 14px;
-  --fzMain: 1rem;
   --f8: 0.812rem;
   --f8Lh: 1rem;
   --f9: 0.687rem;
   --f9Lh: 1rem;
+  --fzBase: 16px;
+  --fzLarge1: 1.125rem;
+  --fzLarge2: 1.312rem;
+  --fzLarge3: 1.5rem;
+  --fzLarge4: 2rem;
+  --fzLarge5: 3rem;
+  --fzMain: 1rem;
+  --lhLarge1: 1.5rem;
+  --lhLarge2: 2rem;
+  --lhLarge3: 2rem;
+  --lhLarge4: 2.5rem;
+  --lhLarge5: 3.5rem;
   --lhMain: 1.5rem;
+
   --monospace: "JetBrains Mono", "Consolas", "Inconsolata", "Monaco", "Courier", monospace;
+  --sansSerif: "Inter", "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 html {
-  font-family: var(--monospace);
+  font-family: var(--sansSerif);
   font-size: var(--fzBase);
   font-weight: 500;
 }
@@ -119,14 +124,14 @@ code, pre {
 }
 
 pre {
-  background: #f8f8f8;
+  background: var(--code-bg);
 }
 
 code {
-  background-color: var(--codeColor);
+  background-color: var(--code-bg);
+  font-size: .86em;
   margin: 0;
   padding: .07em .25em;
-  font-size: .86em;
 }
 
 pre code {
@@ -135,12 +140,13 @@ pre code {
 }
 
 pre {
-  padding: 1rem;
+  @include scroll-colors;
   overflow: auto;
+  padding: 1rem;
 }
 
 button, input, select {
-  font-family: var(--monospace);
+  font-family: var(--sansSerif);
 }
 
 p {

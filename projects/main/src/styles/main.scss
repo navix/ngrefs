@@ -1,14 +1,17 @@
 @import "ui";
 @import "theme-main";
 @import "theme-night";
+@import "theme-solar";
 @import "params";
 @import "mq";
-
+@import "code";
+@import "mixins/scroll-colors";
 
 html {
+  @include scroll-colors;
   background: var(--bodyBg);
   color: var(--textColor);
-  font-family: var(--monospace);
+  font-family: var(--sansSerif);
   margin: 0;
   padding: 0;
 }

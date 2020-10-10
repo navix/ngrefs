@@ -28,6 +28,6 @@ h3 {
 
 .additional {
   display: block;
-  border-top: 1px solid $tableBdColor;
+  border-top: 1px solid var(--tableBdColor);
   margin-top: $grid * 3;
 }

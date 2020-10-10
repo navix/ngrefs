@@ -25,11 +25,23 @@
   <a href="mailto:oleksanovyk@gmail.com">
     <sx-icon name="mail" size="24px"></sx-icon>
   </a>
-  <button (click)="theme.theme = theme.theme === 'night' ? 'main' : 'night'"
-          [style.color]="theme.theme === 'night' ? '#ffffff' : '#777777'"
-          title="Night theme">
-    <sx-icon name="night" size="24px"></sx-icon>
-  </button>
+  <div class="theme-picker">
+    <button (click)="theme.theme = 'main'"
+            [style.background]="'#ffffff'"
+            [class.-active]="theme.theme === 'main'"
+            title="Main theme">
+    </button>
+    <button (click)="theme.theme = 'solar'"
+            [style.background]="'#f3d32b'"
+            [class.-active]="theme.theme === 'solar'"
+            title="Solarized theme">
+    </button>
+    <button (click)="theme.theme = 'night'"
+            [style.background]="'#1e2027'"
+            [class.-active]="theme.theme === 'night'"
+            title="Night theme">
+    </button>
+  </div>
 </div>
 
 <ul class="sections">

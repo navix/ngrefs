@@ -38,9 +38,8 @@
     display: block;
     font-size: 1.15rem;
     padding: $grid $grid / 2;
-    border-bottom: 1px solid $tableBdColor;
     &:hover, &:active, &:focus {
-      background: #eeeeee;
+      background: rgba(0 0 0 /.2);
     }
   }
   .empty-search {

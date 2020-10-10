@@ -36,17 +36,17 @@ ul {
     padding: $grid / 4 $grid / 2;
   }
   a {
-    color: $linkColorLight;
+    color: var(--linkColorLight);
     transition: background .3s;
     text-overflow: ellipsis;
     overflow: hidden;
     &:hover {
-      background: #ebebeb;
-      color: $linkColor;
+      background: var(--nav-link-hover-bg);
+      color: var(--linkColor);
     }
     &.-active {
-      background: #e6e6e6;
-      color: $linkColor;
+      background: var(--nav-link-active-bg);
+      color: var(--linkColor);
     }
   }
   span {

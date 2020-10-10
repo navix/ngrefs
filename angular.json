@@ -32,8 +32,7 @@
               "projects/main/src/sitemap.xml"
             ],
             "styles": [
-              "projects/main/src/styles/main.scss",
-              "node_modules/highlight.js/styles/github.css"
+              "projects/main/src/styles/main.scss"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [

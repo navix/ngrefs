@@ -1,5 +1,6 @@
 @import "params";
 @import "mq";
+@import "mixins/scroll-colors";
 
 :host {
   display: flex;
@@ -8,19 +9,20 @@
 }
 
 main-head-menu {
+  background: var(--nav-head-bg);
+  color: var(--nav-head-color);
   display: block;
-  background: $darkBg;
-  color: $white;
 }
 
 main-section-menu {
-  background: #f9f9f9;
+  background: var(--nav-menu-bg);
   display: block;
   flex-grow: 1;
   overflow-y: auto;
   padding: $grid * 2;
+  @include scroll-colors;
 }
 
 main-footer-menu {
-  background: #f0f0f0;
+  background: var(--nav-footer-bg);
 }
