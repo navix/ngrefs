@@ -1,4 +1,4 @@
-# Angular References
+# ☘ Angular References
 
 References for Web developers describe tools and concepts of Angular framework.
 

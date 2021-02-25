@@ -6,7 +6,7 @@ import { Meta, Title } from '@angular/platform-browser';
   providedIn: 'root',
 })
 export class SeoService {
-  private affix = 'Angular References';
+  private affix = '☘ Angular References';
 
   private prefix = '';
 
