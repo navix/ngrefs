@@ -1,7 +1,10 @@
 import { DocGen } from '@ngx-kit/docgen/meta';
-import * as angularApiRaw from './angular.json';
-import * as angularCliSchemaRaw from './schema.json';
+import angularSchema from './angular.json';
+import angularCliSchemaJson from './workspace-schema.json';
 
-export const angularApi: DocGen.Doc = (angularApiRaw as any).default;
-export const angularCliSchema: any = (angularCliSchemaRaw as any).default;
-export const angularApiRev: string = angularApiRaw['rev'];
+export const angularApi: DocGen.Doc = {
+  files: angularSchema.files,
+  filesMap: angularSchema.filesMap,
+};
+export const angularCliSchema: any = angularCliSchemaJson;
+export const angularApiRev: string = angularSchema.rev;
