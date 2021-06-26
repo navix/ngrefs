@@ -22,32 +22,48 @@ const sitemap = {
 };
 const routes = ['/'];
 
+// @todo remove redirect only urls (after angular 13+)
 content.versions.forEach(version => {
   // main page
   sitemap._content.push({
     url: {
-      loc: `${root}/${version.url}`,
+      loc: `${root}`,
       priority: 0.9,
-      changefreq: 'daily',
+      changefreq: 'monthly',
     },
   });
-  routes.push(`/${version.url}`);
-  routes.push(`/en/${version.url}`);
+  routes.push(`/v6`);
+  routes.push(`/v7`);
+  routes.push(`/v8`);
+  routes.push(`/v9`);
+  routes.push(`/v10`);
+  routes.push(`/latest`);
   // sections
   version.sections
     .filter(section => !section.disabled)
     .forEach(section => {
-      routes.push(`/${version.url}/${section.url}`);
+      routes.push(`/${section.url}`);
+      routes.push(`/v6/${section.url}`);
+      routes.push(`/v7/${section.url}`);
+      routes.push(`/v8/${section.url}`);
+      routes.push(`/v9/${section.url}`);
+      routes.push(`/v10/${section.url}`);
+      routes.push(`/latest/${section.url}`);
       section.pages.forEach(page => {
         sitemap._content.push({
           url: {
-            loc: `${root}/${version.url}/${section.url}/${page.url}`,
+            loc: `${root}/${section.url}/${page.url}`,
             priority: 0.8,
-            changefreq: 'daily',
+            changefreq: 'monthly',
           },
         });
-        routes.push(`/${version.url}/${section.url}/${page.url}`);
-        routes.push(`/en/${version.url}/${section.url}/${page.url}`);
+        routes.push(`/${section.url}/${page.url}`);
+        routes.push(`/v6/${section.url}/${page.url}`);
+        routes.push(`/v7/${section.url}/${page.url}`);
+        routes.push(`/v8/${section.url}/${page.url}`);
+        routes.push(`/v9/${section.url}/${page.url}`);
+        routes.push(`/v10/${section.url}/${page.url}`);
+        routes.push(`/latest/${section.url}/${page.url}`);
       });
     });
 });

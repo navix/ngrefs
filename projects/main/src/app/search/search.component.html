@@ -8,7 +8,7 @@
 
 <div class="results">
   <a *ngFor="let res of searchResults"
-     [routerLink]="['/', version.url, res.sectionUrl, res.pageUrl]"
+     [routerLink]="['/', res.sectionUrl, res.pageUrl]"
      [fragment]="res.fragment"
      class="result">
     {{ res.sectionTitle }}&nbsp;&rarr;

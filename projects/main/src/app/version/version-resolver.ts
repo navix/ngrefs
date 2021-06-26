@@ -17,8 +17,7 @@ export class VersionResolver implements Resolve<any> {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot,
   ): Observable<any> | Promise<any> | any {
-    const {versionUrl} = route.params;
-    const content = this.loader.load(versionUrl);
+    const content = this.loader.load('latest');
     if (content) {
       return content;
     } else {

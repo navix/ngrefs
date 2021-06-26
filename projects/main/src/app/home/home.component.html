@@ -10,7 +10,7 @@
         <li *ngFor="let section of version.sections">
           <h3>
             <a *ngIf="!section.disabled"
-               [routerLink]="['/', version.url, section.url, 'intro']"
+               [routerLink]="['/', section.url, 'intro']"
                [style.border-color]="section.color">
               {{ section.title }}
             </a>

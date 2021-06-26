@@ -1,13 +1,5 @@
 <div class="brand">
-  <select (ngModelChange)="moveTo($event)"
-          [ngModel]="version.id"
-          class="selector">
-    <option *ngFor="let v of versions"
-            [value]="v.id">
-      {{ v.title }}
-    </option>
-  </select>
-  <span class="title">References</span>
+  <span class="title">🍀 Angular References</span>
   <button (click)="close.emit()" class="close">
     <sx-icon name="close" size="32"></sx-icon>
   </button>

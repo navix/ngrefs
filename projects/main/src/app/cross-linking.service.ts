@@ -22,15 +22,15 @@ export class CrossLinkingService {
         if (url.pageUrl) {
           const page = section.pages.find(p => p.url === url.pageUrl);
           if (page) {
-            return ['/', toVersion.url, section.url, page.url];
+            return ['/', section.url, page.url];
           } else {
-            return ['/', toVersion.url, section.url, 'intro'];
+            return ['/', section.url, 'intro'];
           }
         } else {
-          return ['/', toVersion.url, section.url, 'intro'];
+          return ['/', section.url, 'intro'];
         }
       } else {
-        return ['/', toVersion.url];
+        return ['/'];
       }
     } else {
       return ['/', toVersionDigest.url];

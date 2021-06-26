@@ -37,11 +37,8 @@ export class VersionComponent implements OnInit {
   ngOnInit() {
     this.route.data
       .subscribe(({version}: {version: ContentVersion}) => {
-        this.seo.setLang('en');
         this.version = version;
-        if (this.version) {
-          this.seo.setAffix(`${this.version.title} References`);
-        } else {
+        if (!this.version) {
           this.router.navigate(['/e404']);
         }
       });

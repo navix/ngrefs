@@ -28,7 +28,6 @@ const routes: Routes = [
       },
     ],
   },
-  // old versions redirects
   {
     path: 'en',
     children: [
@@ -39,7 +38,71 @@ const routes: Routes = [
     ],
   },
   {
-    path: ':versionUrl',
+    path: 'en',
+    children: [
+      {
+        path: '**',
+        component: LangRedirectComponent,
+      },
+    ],
+  },
+  {
+    path: 'v6',
+    children: [
+      {
+        path: '**',
+        component: LangRedirectComponent,
+      },
+    ],
+  },
+  {
+    path: 'v7',
+    children: [
+      {
+        path: '**',
+        component: LangRedirectComponent,
+      },
+    ],
+  },
+  {
+    path: 'v8',
+    children: [
+      {
+        path: '**',
+        component: LangRedirectComponent,
+      },
+    ],
+  },
+  {
+    path: 'v9',
+    children: [
+      {
+        path: '**',
+        component: LangRedirectComponent,
+      },
+    ],
+  },
+  {
+    path: 'v10',
+    children: [
+      {
+        path: '**',
+        component: LangRedirectComponent,
+      },
+    ],
+  },
+  {
+    path: 'latest',
+    children: [
+      {
+        path: '**',
+        component: LangRedirectComponent,
+      },
+    ],
+  },
+  // routes
+  {
+    path: '',
     resolve: {
       version: VersionResolver,
     },
