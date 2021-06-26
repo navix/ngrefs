@@ -72,6 +72,9 @@ function deepRender(obj) {
       obj.text = marked(obj.text);
     } else if (obj.type === 'demo') {
       obj.source = marked(obj.source);
+    } else if (obj.type === 'interface-option') {
+      obj.description = obj.description ? marked(obj.description) : undefined;
+      obj.additional = obj.additional ? marked(obj.additional) : undefined;
     } else {
       for (const key in obj) {
         const val = obj[key];
