@@ -2,29 +2,4 @@
 
 <p>References for Web developers describe tools and concepts of Angular framework.</p>
 
-<ul>
-  <ng-container *ngFor="let version of versions">
-    <li *ngIf="!versionUrl || version.url === versionUrl">
-      <h2>{{ version.title }}</h2>
-      <ul>
-        <li *ngFor="let section of version.sections">
-          <h3>
-            <a *ngIf="!section.disabled"
-               [routerLink]="['/', version.url, section.url, 'intro']"
-               [style.border-color]="section.color">
-              {{ section.title }}
-            </a>
-            <span *ngIf="section.disabled">
-              {{ section.title }} (Soon)
-            </span>
-          </h3>
-        </li>
-      </ul>
-    </li>
-  </ng-container>
-</ul>
-
-<div class="footer">
-  Crafted by <a href="https://github.com/navix" target="_blank">Oleksa Novyk</a>
-  | <a href="https://github.com/navix/ngrefs" target="_blank">GitHub</a>
-</div>
+<p>Sections list ??</p>

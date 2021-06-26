@@ -8,14 +8,14 @@
 
 html {
   @include scroll-colors;
-  background: var(--bodyBg);
-  color: var(--textColor);
-  font-family: var(--sansSerif);
   margin: 0;
   padding: 0;
 }
 
 body {
+  background: var(--body-bg);
+  color: var(--textColor);
+  font-family: var(--sansSerif);
   margin: 0;
   padding: 0;
   &.-mobile-scroll-block {
@@ -31,10 +31,24 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   color: var(--linkColor);
+  &.-active {
+    background: var(--link-active-bg);
+    color: var(--link-active-color);
+  }
+  &:hover {
+    background: var(--link-hover-bg);
+    color: var(--link-hover-color);
+  }
 }
 
 .page-content {
   font-size: var(--fzMain);
+  h1 {
+    margin-top: 0;
+  }
+  h2 {
+    margin: 2.5rem 0 1.5rem;
+  }
   .-highlight {
     animation: 800ms linear highlight-effect;
   }

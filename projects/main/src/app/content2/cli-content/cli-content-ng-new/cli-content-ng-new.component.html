@@ -1,0 +1,55 @@
+<h1>ng new</h1>
+
+<pre>
+$ ng new [name] [--[argument]=[value]]
+$ ng n
+</pre>
+
+<p>
+  Creates and initializes a new Angular app that is the default project for a new workspace.
+</p>
+
+<main-content-links-block>
+  <ul>
+    <li><a href="https://angular.io/guide/quickstart">Angular QuickStart</a>
+    <li><a href="https://angular.io/cli/new">Angular — ng new</a>
+  </ul>
+</main-content-links-block>
+
+<p>
+  Provides interactive prompts for optional configuration, such as adding routing support. All prompts can safely be
+  allowed to default.
+</p>
+
+<ul>
+  <li>
+    The new workspace folder is given the specified project name, and contains configuration files at the top level.
+  </li>
+  <li>
+    By default, the files for a new initial app (with the same name as the workspace) are placed in the
+    <code>src/</code>
+    subfolder. Corresponding end-to-end tests are placed in the <code>e2e/</code> subfolder.
+  </li>
+  <li>
+    The new app's configuration appears in the <code>projects</code> section of the <code>angular.json</code> workspace
+    configuration file, under its project name.
+  </li>
+  <li>
+    Subsequent apps that you generate in the workspace reside in the <code>projects/</code> subfolder.
+  </li>
+</ul>
+
+<p>
+  If you plan to have multiple apps in the workspace, you can create an empty workspace by setting the
+  <code>--createApplication</code> option to false. You can then use <code>ng generate application</code> to create an
+  initial app. This allows a workspace name different from the initial app name, and ensures that all apps reside in the
+  <code>/projects</code> subfolder, matching the structure of the configuration file.
+</p>
+
+
+<h2>Options</h2>
+
+<main-cli-content-option
+  *ngFor="let option of options"
+  [option]="option"
+></main-cli-content-option>

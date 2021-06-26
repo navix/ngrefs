@@ -1,0 +1,25 @@
+:host {
+  display: block;
+  margin: 2rem 0;
+}
+
+.meta {
+  font-size: .9rem;
+  margin-top: 1rem;
+  max-width: 100%;
+  overflow: auto;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  .alias {
+    margin-left: .5rem;
+    opacity: .75;
+  }
+}
+
+.description {
+  flex-grow: 1;
+  margin-top: 1rem;
+}

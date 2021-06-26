@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { SxIconsRegistry } from '@novyk/sx-icon';
-import { ContentVersion } from './content/meta';
 import { versionsDigest } from './content/versionsDigest';
+import { cliContentSettings } from './content2/cli-content/cli-content-settings';
+import { SectionSettings } from './content2/meta';
 import { icons } from './icons';
 import { SeoService } from './seo.service';
 
@@ -12,6 +13,10 @@ import { SeoService } from './seo.service';
 })
 export class AppComponent {
   versions = versionsDigest;
+
+  sections: SectionSettings[] = [
+    cliContentSettings,
+  ];
 
   constructor(
     private iconsRegistry: SxIconsRegistry,

@@ -1,0 +1,25 @@
+:host {
+  border: 2px solid var(--tutorials-color);
+  border-radius: 5px;
+  display: block;
+  font-size: 0.9rem;
+  margin: 2rem 0;
+  padding: 0;
+  &::ng-deep {
+    ul {
+      margin: 0 1rem;
+      padding: 0;
+    }
+  }
+}
+
+.title {
+  background: var(--tutorials-color);
+  font-size: 0.9rem;
+  padding: .5rem 1rem;
+}
+
+.content {
+  margin: 0;
+  padding: 1rem 1rem 1rem 1rem;
+}

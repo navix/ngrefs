@@ -1,1 +1,153 @@
-<router-outlet></router-outlet>
+<header>
+  <div class="name">🍀 Angular References</div>
+</header>
+
+<aside>
+  <nav>
+    <ul>
+      <li><a [routerLinkActiveOptions]="{exact: true}" routerLink="." routerLinkActive="-active">Introduction</a></li>
+      <li><a routerLink="./quick-start" routerLinkActive="-active">Quick Start</a></li>
+
+      <li class="-sep"></li>
+      <li class="-top">Angular CLI</li>
+      <li>
+        <ul>
+          <li><a routerLink="./cli/angular-json" routerLinkActive="-active">angular.json</a></li>
+          <li><a routerLink="./cli/commands" routerLinkActive="-active">Commands</a></li>
+          <li><a routerLink="./cli/builders" routerLinkActive="-active">Builders</a></li>
+          <li><a routerLink="./cli/schematics" routerLinkActive="-active">Schematics</a></li>
+          <li><a routerLink="./cli/update" routerLinkActive="-active">Update</a></li>
+        </ul>
+      </li>
+
+      <li class="-sep"></li>
+      <li class="-top">Templates</li>
+      <li>
+        <ul>
+          <li><a ngNonBindable routerLink="./templates/interpolation" routerLinkActive="-active">Interpolation
+            {{...}}</a></li>
+          <li><a routerLink="./templates/directive" routerLinkActive="-active">Write @Directive</a></li>
+          <li><a routerLink="./templates/component" routerLinkActive="-active">Write @Component</a></li>
+          <li class="-sep"></li>
+          <li><a routerLink="./templates/" routerLinkActive="-active">Property Binding []</a>
+          <li>
+            <ul>
+              <li><a routerLink="./templates/" routerLinkActive="-active">@Input</a></li>
+              <li><a routerLink="./templates/" routerLinkActive="-active">[attr.]</a></li>
+              <li><a routerLink="./templates/" routerLinkActive="-active">[class.]</a></li>
+              <li><a routerLink="./templates/" routerLinkActive="-active">[ngClass]</a></li>
+              <li><a routerLink="./templates/" routerLinkActive="-active">[style.]</a></li>
+              <li><a routerLink="./templates/" routerLinkActive="-active">[ngStyle]</a></li>
+            </ul>
+          </li>
+          <li class="-sep"></li>
+          <li><a routerLink="./templates/" routerLinkActive="-active">Event Bindings ()</a></li>
+          <li>
+            <ul>
+              <li><a routerLink="./templates/" routerLinkActive="-active">@Output</a></li>
+              <li><a routerLink="./templates/" routerLinkActive="-active">Pseudo-events</a></li>
+              <li><a routerLink="./templates/" routerLinkActive="-active">Touch Events / Gestures</a></li>
+            </ul>
+          </li>
+          <li class="-sep"></li>
+          <li><a routerLink="./templates/" routerLinkActive="-active">Two-way binding [()]</a></li>
+          <li>
+            <ul>
+              <li><a routerLink="./templates/" routerLinkActive="-active">[(ngModel)]</a></li>
+            </ul>
+          </li>
+          <li class="-sep"></li>
+          <li><a routerLink="./templates/" routerLinkActive="-active">Structural directives *</a></li>
+          <li>
+            <ul>
+              <li><a routerLink="./templates/" routerLinkActive="-active">*ngIf</a></li>
+              <li><a routerLink="./templates/" routerLinkActive="-active">*ngFor</a></li>
+              <li><a routerLink="./templates/" routerLinkActive="-active">*ngSwitch</a></li>
+              <li><a routerLink="./templates/" routerLinkActive="-active">*ngPlural</a></li>
+              <li><a routerLink="./templates/" routerLinkActive="-active">*ngTemplateOutlet</a></li>
+              <li><a routerLink="./templates/" routerLinkActive="-active">*ngComponentOutlet</a></li>
+            </ul>
+          </li>
+          <li class="-sep"></li>
+          <li><a routerLink="./templates/" routerLinkActive="-active">&lt;ng-template&gt;</a></li>
+          <li><a routerLink="./templates/" routerLinkActive="-active">&lt;ng-container&gt;</a></li>
+          <li><a routerLink="./templates/" routerLinkActive="-active">&lt;ng-content&gt;</a></li>
+          <li><a routerLink="./templates/" routerLinkActive="-active">Reference #</a></li>
+          <li class="-sep"></li>
+          <li><a routerLink="./templates/" routerLinkActive="-active">Pipe |</a></li>
+          <li><a routerLink="./templates/" routerLinkActive="-active">Write @Pipe</a></li>
+          <li>Built-in pipes</li>
+          <li>
+            <ul>
+              <li><a routerLink="./templates/" routerLinkActive="-active">keyvalue</a></li>
+              <li><a routerLink="./templates/" routerLinkActive="-active">slice</a></li>
+              <li><a routerLink="./templates/" routerLinkActive="-active">async</a></li>
+              <li><a routerLink="./templates/" routerLinkActive="-active">lowerCase</a></li>
+              <li><a routerLink="./templates/" routerLinkActive="-active">upperCase</a></li>
+              <li><a routerLink="./templates/" routerLinkActive="-active">titleCase</a></li>
+              <li><a routerLink="./templates/" routerLinkActive="-active">date</a></li>
+              <li><a routerLink="./templates/" routerLinkActive="-active">number</a></li>
+              <li><a routerLink="./templates/" routerLinkActive="-active">currency</a></li>
+              <li><a routerLink="./templates/" routerLinkActive="-active">percent</a></li>
+              <li><a routerLink="./templates/" routerLinkActive="-active">i18nPlural</a></li>
+              <li><a routerLink="./templates/" routerLinkActive="-active">json</a></li>
+            </ul>
+          </li>
+          <li class="-sep"></li>
+          <li>Operators</li>
+          <li>
+            <ul>
+              <li><a routerLink="./templates/" routerLinkActive="-active">Safe Navigation ?.</a></li>
+              <li><a routerLink="./templates/" routerLinkActive="-active">Non-null Assertion !.</a></li>
+            </ul>
+          </li>
+          <li class="-sep"></li>
+          <li><a routerLink="./templates/" routerLinkActive="-active">Animation @</a></li>
+          <li><a routerLink="./templates/" routerLinkActive="-active">svg: Prefix</a></li>
+          <li><a routerLink="./templates/" routerLinkActive="-active">ngNonBindable</a></li>
+          <li><a routerLink="./templates/" routerLinkActive="-active">$any() Type Cast</a></li>
+        </ul>
+      </li>
+
+      <li class="-sep"></li>
+      <li class="-top">Styling</li>
+      <li>
+        <ul>
+          <li><a routerLink="./styling/" routerLinkActive="-active">Global Styles</a>
+          <li><a routerLink="./styling/" routerLinkActive="-active">Component Inline</a>
+          <li><a routerLink="./styling/" routerLinkActive="-active">Component External</a>
+          <li><a routerLink="./styling/" routerLinkActive="-active">Template Inline</a>
+          <li><a routerLink="./styling/" routerLinkActive="-active">Encapsulation</a>
+          <li class="-sep"></li>
+          <li>Special Selectors</li>
+          <li>
+            <ul>
+              <li><a routerLink="./styling/" routerLinkActive="-active">:host</a></li>
+              <li><a routerLink="./styling/" routerLinkActive="-active">:host-context</a></li>
+              <li><a routerLink="./styling/" routerLinkActive="-active">::ng-deep</a></li>
+            </ul>
+          </li>
+          <li class="-sep"></li>
+          <li><a routerLink="./styling/" routerLinkActive="-active">Binding</a></li>
+          <li>
+            <ul>
+              <li><a routerLink="./styling/" routerLinkActive="-active">[style.] and @HostBinding</a></li>
+              <li><a routerLink="./styling/" routerLinkActive="-active">ngStyle directive</a></li>
+              <li><a routerLink="./styling/" routerLinkActive="-active">ElementRef & Renderer2</a></li>
+              <li><a routerLink="./styling/" routerLinkActive="-active">DomSanitizer</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</aside>
+
+<main class="page-content">
+  <router-outlet></router-outlet>
+</main>
+
+<footer>
+  Crafted by <a href="https://github.com/navix" target="_blank">Oleksa Novyk</a>
+  | <a href="https://github.com/navix/ngrefs" target="_blank">GitHub</a>
+</footer>

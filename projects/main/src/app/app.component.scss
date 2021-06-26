@@ -1,1 +1,69 @@
-@import "params";
+:host {
+  box-sizing: border-box;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-areas:
+    "head head"
+    "aside main"
+    "footer footer";
+  grid-template-columns: 15rem 1fr;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 4rem;
+}
+
+header {
+  background: var(--header-bg);
+  border-bottom: 2px solid #e4e7e7;
+  font-size: 1.5rem;
+  grid-area: head;
+  line-height: 2.5rem;
+  padding: 1.5rem 0;
+  text-align: center;
+  .name {
+    font-weight: 600;
+  }
+  .sections {
+  }
+}
+
+aside {
+  flex-shrink: 0;
+  grid-area: aside;
+  width: 15rem;
+  nav {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      ul {
+        font-size: .9em;
+        margin-left: 1rem;
+      }
+    }
+    li.-sep {
+      border-bottom: 1px solid var(--nav-separator-color);
+      margin: .5rem 0;
+    }
+    li.-top {
+      font-weight: 600;
+    }
+  }
+}
+
+main {
+  grid-area: main;
+}
+
+.content {
+  background: var(--content-bg);
+  padding: 3rem 0;
+}
+
+footer {
+  border-top: 2px solid #e4e7e7;
+  font-size: .8rem;
+  grid-area: footer;
+  padding: 2rem;
+  text-align: center;
+}

@@ -1,7 +1,7 @@
 .theme-main {
   @import "code/github";
 
-  --bodyBg: #f8f8f8;
+  --body-bg: #fff;
 
   --nav-footer-bg: #f0f0f0;
   --nav-head-bg: #292c32;
@@ -23,9 +23,14 @@
 
   --linkColor: #27304e;
   --linkColorLight: #345678;
+  --link-hover-bg: #bcf5db;
+  --link-hover-color: #26c970;
+  --link-active-bg: #effafd;
+  --link-active-color: #36cadb;
+
   --tableBdColor: #dddddd;
   --textColor: #292c32;
-  --tutorialsColor: #2fd93f;
+  --tutorials-color: #bcf5db;
 
-  --code-bg: #dddddd;
+  --code-bg: #e3e7e7;
 }

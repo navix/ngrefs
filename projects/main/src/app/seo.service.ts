@@ -6,13 +6,13 @@ import { Meta, Title } from '@angular/platform-browser';
   providedIn: 'root',
 })
 export class SeoService {
-  private affix = '☘ Angular References';
+  private affix = 'Angular References';
 
   private prefix = '';
 
   private page = '';
 
-  private keywords = ['angular', 'angular 2', 'angular 6', 'references', 'web', 'typescript', 'javascript', 'web-framework'];
+  private keywords = ['angular', 'angular 2', 'angularjs 2', 'references', 'web', 'typescript', 'javascript', 'web-framework'];
 
   constructor(
     private title: Title,
@@ -37,14 +37,14 @@ export class SeoService {
     this.compileMeta();
   }
 
-  setLang(lang: string) {
-    if (this.document && this.document.documentElement && this.document.documentElement.setAttribute) {
-      this.document.documentElement.setAttribute('lang', lang);
-    }
+  setup({title}: {
+    title: string;
+  }) {
+    this.title.setTitle(title + ' | ' + this.affix);
   }
 
   private compileMeta() {
-    this.title.setTitle(this.page ? `${this.prefix}: ${this.page} — ${this.affix}` : this.affix);
+    this.title.setTitle(this.page || this.prefix ? `${this.prefix}${this.page ? ': ' : ''}${this.page} — ${this.affix}` : this.affix);
     this.meta.updateTag({
       name: 'keywords',
       content: [...this.keywords, this.prefix, this.page].filter(k => !!k).join(', '),

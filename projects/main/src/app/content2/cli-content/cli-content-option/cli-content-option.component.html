@@ -1,0 +1,33 @@
+<h3>
+  --{{ option.name }}
+  <span class="alias" *ngFor="let alias of option?.aliases">
+    -{{ alias }}
+  </span>
+</h3>
+
+<div class="description">{{ option.description }}</div>
+
+<div class="meta">
+  <table>
+    <tr *ngIf="option.type">
+      <td>
+        Type
+      </td>
+      <td><code>{{ option.type }}</code></td>
+    </tr>
+
+    <tr *ngIf="option.values">
+      <td>
+        Values
+      </td>
+      <td><code>{{ option.values }}</code></td>
+    </tr>
+
+    <tr *ngIf="option.default">
+      <td>
+        Default
+      </td>
+      <td><code>{{ option.default }}</code></td>
+    </tr>
+  </table>
+</div>

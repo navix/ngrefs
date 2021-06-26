@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { Error404Component } from './common/error404/error404.component';
 import { LangRedirectComponent } from './common/lang-redirect/lang-redirect.component';
 import { DemosModule } from './content/demos/demos.module';
+import { ContentIntroComponent } from './content2/content-intro/content-intro.component';
 import { CommandParamEntryComponent } from './entry/command-param-entry/command-param-entry.component';
 import { DemoEntryComponent } from './entry/demo-entry/demo-entry.component';
 import { HintEntryComponent } from './entry/hint-entry/hint-entry.component';
@@ -76,6 +77,7 @@ import { VersionComponent } from './version/version.component';
     SectionIntroMenuComponent,
     Error404Component,
     LangRedirectComponent,
+    ContentIntroComponent,
   ],
   bootstrap: [AppComponent],
 })

@@ -1,0 +1,128 @@
+<h1>{{ title }}</h1>
+
+<p>
+  Main Angular CLI configuration file.
+</p>
+
+<main-content-links-block>
+  <ul>
+    <li><a href="https://nitayneeman.com/posts/understanding-the-angular-cli-workspace-file/">
+      Understanding the Angular CLI Workspace File
+    </a></li>
+    <li><a href="https://blog.nrwl.io/angular-cli-demystifying-the-workspace-7f59ffaab4cb">
+      Angular CLI — Demystifying the workspace
+    </a></li>
+  </ul>
+</main-content-links-block>
+
+<h2>Schema</h2>
+
+<ul>
+  <li>
+    <p><strong>version</strong> (<code>integer</code>): File format version. This is currently <code>"1"</code>.</p>
+  </li>
+  <li><p><strong>newProjectRoot</strong> (<code>string</code>): Path where new projects will be created.</p>
+  </li>
+  <li><p><strong>defaultProject</strong> (<code>string</code>): Default project name used in commands.</p>
+  </li>
+  <li><p><strong>cli</strong>: Workspace configuration options for Angular CLI.</p>
+    <ul>
+      <li><em>defaultCollection</em> (<code>string</code>): The default schematics collection to use.</li>
+      <li><em>packageManager</em> (<code>string</code>): Specify which package manager tool to use.</li>
+      <li><em>warnings</em> (<code>object</code>): Warning configuration.
+        <ul>
+          <li><em>versionMismatch</em> (<code>boolean</code>): Show a warning when the global version is newer than the
+            local one.
+          </li>
+          <li><em>typescriptMismatch</em> (<code>boolean</code>): Check TypeScript version.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><p><strong>schematics</strong> (<code>object</code>): Workspace configuration options for Schematics.</p>
+    <ul>
+      <li><em>schematic-package:schematic-name</em> (<code>object</code>): Object containing options for this schematic.
+        JSON Schema for default schematics:
+        <ul>
+          <li><a
+            href="https://github.com/angular/angular-cli/blob/v6.0.0-rc.8/packages/%40angular/cli/lib/config/schema.json#L74-L144"
+            target="_blank"
+          >@schematics/angular:component</a></li>
+          <li><a
+            href="https://github.com/angular/angular-cli/blob/v6.0.0-rc.8/packages/%40angular/cli/lib/config/schema.json#L145-L186"
+            target="_blank"
+          >@schematics/angular:directive</a></li>
+          <li><a
+            href="https://github.com/angular/angular-cli/blob/v6.0.0-rc.8/packages/%40angular/cli/lib/config/schema.json#L187-L223"
+            target="_blank"
+          >@schematics/angular:module</a></li>
+          <li><a
+            href="https://github.com/angular/angular-cli/blob/v6.0.0-rc.8/packages/%40angular/cli/lib/config/schema.json#L224-L238"
+            target="_blank"
+          >@schematics/angular:service</a></li>
+          <li><a
+            href="https://github.com/angular/angular-cli/blob/v6.0.0-rc.8/packages/%40angular/cli/lib/config/schema.json#L239-L269"
+            target="_blank"
+          >@schematics/angular:pipe</a></li>
+          <li><a
+            href="https://github.com/angular/angular-cli/blob/v6.0.0-rc.8/packages/%40angular/cli/lib/config/schema.json#L270-L279"
+            target="_blank"
+          >@schematics/angular:class</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<ul>
+  <li><strong>projects</strong>: Configuration options for each project in the workspace.
+    <ul>
+      <li><em>root</em> (<code>string</code>): Root of the project files.</li>
+      <li><em>sourceRoot</em> (<code>string</code>): The root of the source files, assets and index.html file
+        structure..
+      </li>
+      <li><em>projectType</em> (<code>string</code>): the type of this project, <code>application</code> or <code>library</code>.
+      </li>
+      <li><em>prefix</em> (<code>string</code>): The prefix to apply to generated selectors.</li>
+      <li><em>schematics</em> (<code>object</code>): Project configuration options for Schematics. Has the same format
+        as top level Schematics configuration).
+      </li>
+      <li><em>architect</em> (<code>string</code>): Project configuration for Architect targets.
+        <ul>
+          <li><em>targetName</em> (<code>string</code>): Name of this target.
+            <ul>
+              <li><em>builder</em> (<code>string</code>): Builder for this target, in the format <code>package-name:builder-name</code>.
+              </li>
+              <li><em>options</em> (<code>string</code>): Options for this builder.
+                Default schematics options:
+                <ul>
+                  <li><a href="/latest/cli/builder-app-shell" router-link="694567fd-93aa-6679-a748-5b5f6368c1b2">@angular-devkit/build-angular:app-shell</a>
+                  </li>
+                  <li><a href="/latest/cli/builder-browser" router-link="f148fe84-6888-5687-cb49-e7a7cc8085d2">@angular-devkit/build-angular:browser</a>
+                  </li>
+                  <li><a href="/latest/cli/builder-dev-server" router-link="87b721c0-3834-846c-b0f7-9d28658288b4">@angular-devkit/build-angular:dev-server</a>
+                  </li>
+                  <li><a href="/latest/cli/builder-extract-i18n" router-link="3f5514f3-ec1b-4160-4a8e-279ee375374c">@angular-devkit/build-angular:extract-i18n</a>
+                  </li>
+                  <li><a href="/latest/cli/builder-karma" router-link="85393d51-bca3-e2ab-0668-9efac70d5436">@angular-devkit/build-angular:karma</a>
+                  </li>
+                  <li><a href="/latest/cli/builder-protractor" router-link="847d282e-b0d9-5fad-5a63-a1be2d5a7e17">@angular-devkit/build-angular:protractor</a>
+                  </li>
+                  <li><a href="/latest/cli/builder-server" router-link="a0cb1ae0-4f13-545d-2864-1475f96c991d">@angular-devkit/build-angular:server</a>
+                  </li>
+                  <li><a href="/latest/cli/builder-tslint" router-link="39d00b03-3943-9734-8169-14f6a152b9a6">@angular-devkit/build-angular:tslint</a>
+                  </li>
+                </ul>
+              </li>
+              <li><em>configurations</em> (<code>object</code>): A map of alternative target options.
+                <ul>
+                  <li><em>configurationName</em> (<code>object</code>): Partial options override for this builder.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
