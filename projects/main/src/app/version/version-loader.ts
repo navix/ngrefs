@@ -16,6 +16,8 @@ export class VersionLoader {
         return (await import('../content/dist/v8.json')).default as any;
       case 'v9':
         return (await import('../content/dist/v9.json')).default as any;
+      case 'v10':
+        return (await import('../content/dist/v10.json')).default as any;
       case 'latest':
         return (await import('../content/dist/latest.json')).default as any;
       default:
