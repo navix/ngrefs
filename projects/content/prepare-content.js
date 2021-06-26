@@ -75,12 +75,15 @@ function deepRender(obj) {
     } else if (obj.type === 'interface-option') {
       obj.description = obj.description ? marked(obj.description) : undefined;
       obj.additional = obj.additional ? marked(obj.additional) : undefined;
-    } else {
-      for (const key in obj) {
-        const val = obj[key];
-        if (val !== null && typeof val === 'object') {
-          deepRender(val);
-        }
+    } else if (obj.type === 'command-param') {
+      obj.description = obj.description ? marked(obj.description) : undefined;
+    } else if (obj.type === 'hint') {
+      obj.text = obj.text ? marked(obj.text) : undefined;
+    }
+    for (const key in obj) {
+      const val = obj[key];
+      if (val !== null && typeof val === 'object') {
+        deepRender(val);
       }
     }
   }
