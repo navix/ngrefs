@@ -1,0 +1,34 @@
+title: $any() type cast
+url: any-type-cast
+entries:
+  - type: text
+    text: >-
+      Sometimes a binding expression will be reported as a type error and it is
+      not possible or difficult to fully specify the type. To silence the error,
+      you can use the `$any` cast function to cast the expression to the `any`
+      type.
+
+
+      ```html
+
+      <!-- Accessing an undeclared member -->
+
+      <div>
+        The hero's marker is {{$any(hero).marker}}
+      </div>
+
+      ```
+
+
+      The $any cast function can be used in conjunction with this to allow access to undeclared members of the component.
+
+
+      ```html
+
+      <!-- Accessing an undeclared member -->
+
+      <div>
+        Undeclared members is {{$any(this).member}}
+      </div>
+
+      ```

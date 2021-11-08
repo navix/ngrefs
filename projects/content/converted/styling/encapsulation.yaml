@@ -1,0 +1,53 @@
+title: Styles encapsulation
+url: encapsulation
+entries:
+  - type: text
+    text: >-
+      Component CSS styles are encapsulated into the component's view and don't
+      affect the rest of the application.
+
+
+      To control how this encapsulation happens on a per component basis, you can set the view encapsulation mode in the component metadata.
+
+
+      ```
+
+      @Component({
+        ...
+        encapsulation: ViewEncapsulation.Native
+      })
+
+      ```
+
+
+
+      ### Emulated (default)
+
+
+      `Emulated` view encapsulation (the default) emulates the behavior of shadow DOM by preprocessing (and renaming) the CSS code to effectively scope the CSS to the component's view. For details, see [Appendix 1](https://angular.io/guide/component-styles#inspect-generated-css).
+
+
+
+      ### ShadowDom
+
+
+      `ShadowDom` view encapsulation uses the browser's native shadow DOM implementation (see [Shadow DOM](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Shadow_DOM)) to attach a shadow DOM to the component's host element, and then puts the component view inside that shadow DOM. The component's styles are included within the shadow DOM.
+
+
+
+      ### Native
+
+
+      `Native` view encapsulation uses a now deprecated version of the browser's native shadow DOM implementation - [learn about the changes](https://hayato.io/2016/shadowdomv1/).
+
+
+
+      ### None
+
+
+      `None` means that Angular does no view encapsulation. Angular adds the CSS to the global styles. The scoping rules, isolations, and protections discussed earlier don't apply. This is essentially the same as pasting the component's styles into the HTML.
+  - type: tutorials
+    links:
+      - label: View Encapsulation in Angular by thoughtram
+        url: https://blog.thoughtram.io/angular/2015/06/29/shadow-dom-strategies-in-angular2.html
+        lang: en

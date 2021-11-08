@@ -1,0 +1,90 @@
+title: Resolve interface
+url: resolve-interface
+entries:
+  - type: text
+    text: Interface that class can implement to be a data provider.
+  - type: text
+    text: >-
+      ```typescript
+
+      interface Resolve<T> {
+        resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<T> | Promise<T> | T
+      }
+
+      ```
+  - type: tutorials
+    links:
+      - label: Resolving route data in Angular by thoughtram
+        url: https://blog.thoughtram.io/angular/2016/10/10/resolving-route-data-in-angular-2.html
+        lang: en
+      - label: "Angular Router: Route Resolvers"
+        url: https://alligator.io/angular/route-resolvers/
+        lang: en
+  - type: text
+    text: "#### Example"
+  - type: text
+    text: |-
+      ```typescript
+      class Backend {
+        fetchTeam(id: string) {
+          return 'someTeam';
+        }
+      }
+       
+      @Injectable()
+      class TeamResolver implements Resolve<Team> {
+        constructor(private backend: Backend) {}
+       
+        resolve(
+          route: ActivatedRouteSnapshot,
+          state: RouterStateSnapshot
+        ): Observable<any>|Promise<any>|any {
+          return this.backend.fetchTeam(route.params.id);
+        }
+      }
+       
+      @NgModule({
+        imports: [
+          RouterModule.forRoot([
+            {
+              path: 'team/:id',
+              component: TeamCmp,
+              resolve: {
+                team: TeamResolver
+              }
+            }
+          ])
+        ],
+        providers: [TeamResolver]
+      })
+      class AppModule {}
+      ```
+  - type: text
+    text: "You can alternatively provide a function with the `resolve` signature:"
+  - type: text
+    text: >-
+      ```typescript
+
+      @NgModule({
+        imports: [
+          RouterModule.forRoot([
+            {
+              path: 'team/:id',
+              component: TeamCmp,
+              resolve: {
+                team: 'teamResolver'
+              }
+            }
+          ])
+        ],
+        providers: [
+          {
+            provide: 'teamResolver',
+            useValue: (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => 'team'
+          }
+        ]
+      })
+
+      class AppModule {}
+
+      ```

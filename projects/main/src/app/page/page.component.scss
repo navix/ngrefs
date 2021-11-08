@@ -1,44 +1,58 @@
 @import "params";
 @import "mq";
+@import "mixins/scroll-colors";
 
 :host {
-}
-
-.page-content {
-  display: grid;
-  grid-template: auto / 0 0 1fr 1fr 0 0;
-  padding: 0 $grid * 4 $grid * 8;
-}
-
-.title {
-  align-items: center;
-  grid-column: 3 / 5;
+  align-items: flex-start;
   display: flex;
-  flex-direction: row;
-  main-message {
-    flex-grow: 1;
+  flex-flow: row;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 4rem 2rem;
+}
+
+article {
+  @include scroll-colors;
+  overflow-y: auto;
+  .wrapper {
+  }
+  h1 {
+    margin: 0 0 2rem 0;
+  }
+  ::ng-deep {
+    .tutorials {
+      border: 1px solid var(--tutorialsColor);
+      border-radius: .3rem;
+      overflow: hidden;
+      padding: 1.75rem 1rem .5rem;
+      position: relative;
+      &:before {
+        background: var(--tutorialsColor);
+        color: #fff;
+        content: "Read more…";
+        font-size: .8rem;
+        padding: 0 .5rem;
+        height: 1.25rem;
+        left: 0;
+        line-height: 1.25rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      a {
+        font-size: .9rem;
+      }
+    }
   }
 }
 
-.entry {
-  grid-column: 3 / 5;
-  max-width: 100%;
-
-  &.-wide {
-    grid-column: 2 / 6;
-  }
-
-  &.-non-default {
-    padding: $grid * 3;
-    background: #ffdede;
-    border: 1px solid #ff9799;
-    border-radius: 3px;
-    margin: $grid * 2 0;
-  }
-}
-
-@include mq($from: wide) {
-  .page-content {
-    grid-template: auto / 1fr 1fr 400px 400px 1fr 1fr;
-  }
+nav {
+  @include scroll-colors;
+  border-left: 1px solid var(--main-border-color);
+  flex-shrink: 0;
+  margin-left: 2rem;
+  padding: 2rem 3rem 2rem 2rem;
+  position: sticky;
+  top: var(--header-height);
+  width: var(--toc-width);
 }

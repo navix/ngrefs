@@ -1,78 +1,64 @@
-<div *ngIf="page"
-     class="page-content">
-  <h1 class="title">
-    <main-message [ref]="page.title"></main-message>
-    <a *ngIf="version.githubUrl && page.generationFile"
-       uiButton
-       [href]="sourceUrl"
-       target="_blank">
-      <sx-icon name="code"></sx-icon>
-    </a>
-  </h1>
-
-  <div *ngIf="!isForDefaultVersion"
-       class="entry -non-default">
-    This is the documentation for {{ version.title }}.<br>
-    You can switch to the
-    <strong><a [routerLink]="defaultVersionLink">latest version {{ defaultVersion.title }}</a></strong>.
-  </div>
-
-  <ng-container *ngFor="let entry of page.entries">
-    <ng-container [ngSwitch]="entry.type">
-      <ng-container *ngSwitchCase="'text'">
-        <main-text-entry [entry]="entry" class="entry"></main-text-entry>
-      </ng-container>
-      <ng-container *ngSwitchCase="'toc'">
-        <main-toc-entry [page]="page" class="entry"></main-toc-entry>
-      </ng-container>
-      <ng-container *ngSwitchCase="'command-param'">
-        <main-command-param-entry [entry]="entry" class="entry"></main-command-param-entry>
-        <main-hint-entry *ngIf="showHints && entry.hintEntry"
-                         [entry]="entry.hintEntry"
-                         class="entry">
-        </main-hint-entry>
-        <main-tutorials-entry *ngIf="showHints && entry.tutorialsEntry"
-                              [entry]="entry.tutorialsEntry"
-                              class="entry">
-        </main-tutorials-entry>
-      </ng-container>
-      <ng-container *ngSwitchCase="'hint'">
-        <ng-container *ngIf="showHints">
-          <main-hint-entry [entry]="entry" class="entry"></main-hint-entry>
+<article>
+  <div class="wrapper">
+    <h1>{{ page.title }}</h1>
+    <ng-container [ngSwitch]="page.type">
+      <main-page-simple *ngSwitchCase="'simple'" [content]="page.content"></main-page-simple>
+      <ng-container *ngSwitchDefault>
+        <ng-container *ngFor="let entry of page.entries">
+          <ng-container [ngSwitch]="entry.type">
+            <ng-container *ngSwitchCase="'text'">
+              <main-text-entry [entry]="entry" class="entry"></main-text-entry>
+            </ng-container>
+            <ng-container *ngSwitchCase="'toc'">
+              <main-toc-entry [page]="page" class="entry"></main-toc-entry>
+            </ng-container>
+            <ng-container *ngSwitchCase="'command-param'">
+              <main-command-param-entry [entry]="entry" class="entry"></main-command-param-entry>
+              <main-hint-entry *ngIf="showHints && entry.hintEntry"
+                               [entry]="entry.hintEntry"
+                               class="entry">
+              </main-hint-entry>
+              <main-tutorials-entry *ngIf="showHints && entry.tutorialsEntry"
+                                    [entry]="entry.tutorialsEntry"
+                                    class="entry">
+              </main-tutorials-entry>
+            </ng-container>
+            <ng-container *ngSwitchCase="'hint'">
+              <ng-container *ngIf="showHints">
+                <main-hint-entry [entry]="entry" class="entry"></main-hint-entry>
+              </ng-container>
+            </ng-container>
+            <ng-container *ngSwitchCase="'tutorials'">
+              <ng-container *ngIf="showHints">
+                <main-tutorials-entry [entry]="entry" class="entry"></main-tutorials-entry>
+              </ng-container>
+            </ng-container>
+            <ng-container *ngSwitchCase="'interface-option'">
+              <main-interface-option-entry [entry]="entry" class="entry"></main-interface-option-entry>
+              <main-hint-entry *ngIf="showHints && entry.hintEntry"
+                               [entry]="entry.hintEntry"
+                               class="entry">
+              </main-hint-entry>
+              <main-tutorials-entry *ngIf="showHints && entry.tutorialsEntry"
+                                    [entry]="entry.tutorialsEntry"
+                                    class="entry">
+              </main-tutorials-entry>
+            </ng-container>
+            <ng-container *ngSwitchCase="'demo'">
+              <main-demo-entry [entry]="entry" class="entry -wide"></main-demo-entry>
+            </ng-container>
+            <div *ngSwitchDefault>
+              <div class="entry">
+                {{ entry | json }}
+              </div>
+            </div>
+          </ng-container>
         </ng-container>
       </ng-container>
-      <ng-container *ngSwitchCase="'tutorials'">
-        <ng-container *ngIf="showHints">
-          <main-tutorials-entry [entry]="entry" class="entry"></main-tutorials-entry>
-        </ng-container>
-      </ng-container>
-      <ng-container *ngSwitchCase="'interface-option'">
-        <main-interface-option-entry [entry]="entry" class="entry"></main-interface-option-entry>
-        <main-hint-entry *ngIf="showHints && entry.hintEntry"
-                         [entry]="entry.hintEntry"
-                         class="entry">
-        </main-hint-entry>
-        <main-tutorials-entry *ngIf="showHints && entry.tutorialsEntry"
-                              [entry]="entry.tutorialsEntry"
-                              class="entry">
-        </main-tutorials-entry>
-      </ng-container>
-      <ng-container *ngSwitchCase="'demo'">
-        <main-demo-entry [entry]="entry" class="entry -wide"></main-demo-entry>
-      </ng-container>
-      <div *ngSwitchDefault>
-        <div class="entry">
-          {{ entry | json }}
-        </div>
-      </div>
     </ng-container>
-  </ng-container>
-
-  <div *ngIf="pageUrl === 'intro'"
-       class="entry">
-    <h2>Table of contents</h2>
-    <main-section-intro-menu [items]="section.menu.items"
-                             class="entry">
-    </main-section-intro-menu>
   </div>
-</div>
+</article>
+
+<nav>
+  <div>On this page</div>
+</nav>

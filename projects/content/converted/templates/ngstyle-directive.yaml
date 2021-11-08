@@ -1,0 +1,19 @@
+title: "[ngStyle] directive"
+url: ngstyle-directive
+entries:
+  - type: text
+    text: >-
+      Update an HTML element styles.
+
+
+      The styles are updated according to the value of the expression evaluation:
+        - keys are style names with an optional `.<unit>` suffix (ie 'top.px', 'font-style.em'),
+        - values are the values assigned to those properties (expressed in the given unit).
+  - type: demo
+    source: |-
+      ```html
+      <div [ngStyle]="{'font-size.px': 20, color: 'white', background: 'red'}">
+        Text in this div is 20px size, white color on red background.
+      </div>
+      ```
+    demo: V6TemplatesNgstyleDemoComponent

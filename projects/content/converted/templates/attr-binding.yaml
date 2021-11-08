@@ -1,0 +1,17 @@
+title: "[attr.] binding"
+url: attr-binding
+entries:
+  - type: text
+    text: >-
+      You can set the value of an attribute directly with an attribute binding.
+
+
+      Interpolation and property binding can set only properties, not attributes. You can check out list of registered properties in [the element schema registry](https://github.com/angular/angular/blob/master/packages/compiler/src/schema/dom_element_schema_registry.ts#L78).
+
+
+      You need attribute bindings to create and bind to custom attributes:
+  - type: text
+    text: |-
+      ```html
+      <button [attr.aria-label]="actionName">{{actionName}} with Aria</button>
+      ```

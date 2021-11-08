@@ -1,0 +1,46 @@
+title: DomSanitizer for styling
+url: domsanitizer-for-styling
+entries:
+  - type: text
+    text: >-
+      To avoid cross-site scripting or XSS some styling expressions might be
+      flagged as unsafe by Angular.
+
+
+      ```
+
+      unsafe value used in a resource URL context.
+
+      ```
+
+
+      If you face this particular issue, you can flag the expression as safe by using the `bypassSecurityTrustStyle` API on the [`DomSanitizer`](../../core/dom-sanitizer).
+  - type: text
+    text: >-
+      ##### demo.component.html
+
+
+      ```html
+
+      <div *ngIf="image" [style.background-image]="image"></div>
+
+      ```
+
+
+      ##### demo.component.ts
+
+
+      ```typescript
+
+      export class DemoComponent {
+        constructor(private sanitizer: DomSanitizer){
+          this.image = this.sanitizer.bypassSecurityTrustStyle(`url(${someImgUrl})`);
+        }
+      }
+
+      ```
+  - type: tutorials
+    links:
+      - label: Angular 2 Security — The DomSanitizer Service
+        url: https://netbasal.com/angular-2-security-the-domsanitizer-service-2202c83bd90
+        lang: en

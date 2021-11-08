@@ -1,0 +1,84 @@
+title: "@ContentChild"
+url: content-child
+entries:
+  - type: text
+    text: >
+      You can use `ContentChild` to get the first element or the directive
+      matching the selector from the content DOM. If the content DOM changes,
+      and a new child matches the selector, the property will be updated.
+
+
+      Content queries are set before the `ngAfterContentInit` callback is called.
+  - type: text
+    text: "#### Example"
+  - type: text
+    text: >-
+      ```typescript
+
+      import {AfterContentInit, ContentChild, Directive} from '@angular/core';
+       
+      @Directive({selector: 'child-directive'})
+
+      class ChildDirective {
+
+      }
+       
+      @Directive({selector: 'someDir'})
+
+      class SomeDir implements AfterContentInit {
+        @ContentChild(ChildDirective, {static: true}) contentChild: ChildDirective;
+       
+        ngAfterContentInit() {
+          // contentChild is set
+        }
+      }
+
+      ```
+  - type: text
+    text: "## Options"
+  - type: text
+    text: |-
+      ```typescript
+      @ContentChild(
+        selector: Type<any>|Function|string, 
+        opts?: {read?: any, static: boolean},
+      )
+      ```
+  - type: interface-option
+    head: selector
+    description: The directive type or the name used for querying.
+    name: selector
+    headId: selector
+    interface: "selector: Type<any>|Function|string"
+    showAdditional: true
+    additional: >-
+      Supported selectors include:
+
+
+      * any class with the `@Component` or `@Directive` decorator
+
+      * a template reference variable as a string (e.g. query `<my-component #cmp></my-component>` with `@ViewChild('cmp')`)
+
+      * any provider defined in the child component tree of the current component (e.g. `@ViewChild(SomeService) someService: SomeService`)
+
+      * any provider defined through a string token (e.g. `@ViewChild('someToken') someTokenVal: any`)
+
+      * a `TemplateRef` (e.g. query `<ng-template></ng-template>` with `@ViewChild(TemplateRef) template;`)
+  - type: interface-option
+    head: opts
+    description: |
+      Additional options.
+    name: opts
+    headId: opts
+    interface: "opts?: {read?: any}"
+    showAdditional: true
+    additional: >-
+      * `read` - read a different token from the queried element.
+
+      * `static` - `true` to resolve query results before change detection runs, `false` to resolve after change detection.
+    tutorialsEntry:
+      id: 9e2feee8-2284-5289-6dd3-e5714dd9255c
+      type: tutorials
+      links:
+        - url: https://www.thecodecampus.de/blog/angular-viewchild-static-property-in-ng8/
+          label: Angular ViewChild – static property in ng8

@@ -1,0 +1,96 @@
+title: CanActivateChild interface
+url: canactivatechild-interface
+entries:
+  - type: text
+    text: Interface that a class can implement to be a guard deciding if a child
+      route can be activated.
+  - type: text
+    text: >-
+      ```typescript
+
+      interface CanActivateChild {
+        canActivateChild(childRoute: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean
+      }
+
+      ```
+  - type: text
+    text: "#### Example"
+  - type: text
+    text: >-
+      ```typescript
+
+      class UserToken {}
+
+      class Permissions {
+        canActivate(user: UserToken, id: string): boolean {
+          return true;
+        }
+      }
+       
+      @Injectable()
+
+      class CanActivateTeam implements CanActivateChild {
+        constructor(private permissions: Permissions, private currentUser: UserToken) {}
+       
+        canActivateChild(
+          route: ActivatedRouteSnapshot,
+          state: RouterStateSnapshot
+        ): Observable<boolean>|Promise<boolean>|boolean {
+          return this.permissions.canActivate(this.currentUser, route.params.id);
+        }
+      }
+       
+      @NgModule({
+        imports: [
+          RouterModule.forRoot([
+            {
+              path: 'root',
+              canActivateChild: [CanActivateTeam],
+              children: [
+                {
+                   path: 'team/:id',
+                   component: Team
+                }
+              ]
+            }
+          ])
+        ],
+        providers: [CanActivateTeam, UserToken, Permissions]
+      })
+
+      class AppModule {}
+
+      ```
+  - type: text
+    text: "You can alternatively provide a function with the `canActivateChild`
+      signature:"
+  - type: text
+    text: >-
+      ```typescript
+
+      @NgModule({
+        imports: [
+          RouterModule.forRoot([
+            {
+              path: 'root',
+              canActivateChild: ['canActivateTeam'],
+              children: [
+                {
+                  path: 'team/:id',
+                  component: Team
+                }
+              ]
+            }
+          ])
+        ],
+        providers: [
+          {
+            provide: 'canActivateTeam',
+            useValue: (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => true
+          }
+        ]
+      })
+
+      class AppModule {}
+
+      ```

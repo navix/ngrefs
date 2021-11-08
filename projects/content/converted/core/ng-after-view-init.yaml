@@ -1,0 +1,27 @@
+title: ngAfterViewInit()
+url: ng-after-view-init
+entries:
+  - type: text
+    text: A callback method that is invoked immediately after Angular has completed
+      initialization of a component's view. It is invoked only once when the
+      view is instantiated.
+  - type: text
+    text: |-
+      ```typescript
+      ngAfterViewInit(): void
+      ```
+  - type: text
+    text: "#### Example"
+  - type: text
+    text: The following snippet shows how a component can implement this interface
+      to define its own view initialization method.
+  - type: text
+    text: |-
+      ```typescript
+      @Component({selector: 'my-cmp', template: `...`})
+      class MyComponent implements AfterViewInit {
+        ngAfterViewInit() {
+          // ...
+        }
+      }
+      ```

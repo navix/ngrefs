@@ -1,0 +1,79 @@
+title: "[ngClass] directive"
+url: ngclass-directive
+entries:
+  - type: text
+    text: >-
+      Adds and removes CSS classes on an HTML element.
+
+
+      The CSS classes are updated depending on the type of the expression evaluation.
+  - type: text
+    text: |-
+      ### String
+
+      The CSS classes listed in the string (space delimited) are added.
+  - type: demo
+    source: |-
+      ```html
+      <div [ngClass]="'bold italic'">
+        Text in this div is bold and italic.
+      </div>
+      ```
+
+      ```css
+      .bold {
+        font-weight: 600;
+      }
+
+      .italic {
+        font-style: italic;
+      }
+      ```
+    demo: V6TemplatesNgclass1DemoComponent
+  - type: text
+    text: |-
+      ### Array
+
+      The CSS classes declared as Array elements are added.
+  - type: demo
+    source: |-
+      ```html
+      <div [ngClass]="['bold', 'italic']">
+        Text in this div is bold and italic.
+      </div>
+      ```
+
+      ```css
+      .bold {
+        font-weight: 600;
+      }
+
+      .italic {
+        font-style: italic;
+      }
+      ```
+    demo: V6TemplatesNgclass2DemoComponent
+  - type: text
+    text: >-
+      ### Object
+
+
+      Keys are CSS classes that get added when the expression given in the value evaluates to a truthy value, otherwise they are removed.
+  - type: demo
+    source: |-
+      ```html
+      <div [ngClass]="{bold: true, italic: false}">
+        Text in this div is bold and not italic.
+      </div>
+      ```
+
+      ```css
+      .bold {
+        font-weight: 600;
+      }
+
+      .italic {
+        font-style: italic;
+      }
+      ```
+    demo: V6TemplatesNgclass3DemoComponent

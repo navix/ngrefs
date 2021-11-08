@@ -1,0 +1,32 @@
+title: Pipe |
+url: pipe
+entries:
+  - type: text
+    text: >-
+      The result of an expression might require some transformation before
+      you're ready to use it in a binding.
+
+
+      Angular pipes are a good choice for small transformations such as these. Pipes are simple functions that accept an input value and return a transformed value. They're easy to apply within template expressions, using the pipe operator (|):
+  - type: text
+    text: |-
+      ```html
+      Title through uppercase pipe: 
+      {{title | uppercase}}
+      ```
+  - type: text
+    text: "You can chain expressions through multiple pipes:"
+  - type: text
+    text: |-
+      ```html
+      Title through a pipe chain:
+      {{title | uppercase | lowercase}}
+      ```
+  - type: text
+    text: "And you can also apply parameters to a pipe:"
+  - type: text
+    text: |-
+      ```html
+      Birthdate: 
+      {{currentHero?.birthdate | date:'longDate'}}
+      ```

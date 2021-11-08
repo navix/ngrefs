@@ -4,9 +4,9 @@ import { Component, Inject, OnDestroy, OnInit, Renderer2 } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
-import { ContentSection } from '../../content/meta';
+import { Content } from '../../content/content';
+import { Content2Section } from '../../content/meta2';
 import { SeoService } from '../../seo.service';
-import { VersionComponent } from '../../version/version.component';
 
 @Component({
   selector: 'main-section',
@@ -16,7 +16,7 @@ import { VersionComponent } from '../../version/version.component';
 export class SectionComponent implements OnInit, OnDestroy {
   sectionUrl: string;
 
-  section: ContentSection;
+  section: Content2Section;
 
   showHints = true;
 
@@ -25,18 +25,14 @@ export class SectionComponent implements OnInit, OnDestroy {
   private destroy = new Subject<void>();
 
   constructor(
+    private content: Content,
     private route: ActivatedRoute,
     private router: Router,
-    private versionComponent: VersionComponent,
     private seo: SeoService,
     private platform: Platform,
     @Inject(DOCUMENT) document: any,
     private renderer: Renderer2,
   ) {
-    // Should be handle in the constructor for proper initial rendering
-    this.route.params.subscribe(({sectionUrl}) => {
-      this.versionComponent.currentSectionUrl = sectionUrl;
-    });
   }
 
   ngOnInit() {
@@ -55,18 +51,14 @@ export class SectionComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    this.versionComponent.currentSectionUrl = undefined;
     this.destroy.next();
-  }
-
-  get version() {
-    return this.versionComponent.version;
   }
 
   get isServer() {
     return !this.platform.isBrowser;
   }
 
+  // @todo rm
   toggleNav(state?: boolean) {
     this.displayNav = state === undefined ? !this.displayNav : state;
     if (this.displayNav) {
@@ -77,14 +69,9 @@ export class SectionComponent implements OnInit, OnDestroy {
   }
 
   private loadSection() {
-    if (this.version) {
-      this.section = Object.values(this.version.sections)
-        .find(s => s.url === this.sectionUrl);
-      if (this.section) {
-        this.seo.setPrefix(this.section.title);
-      } else {
-        this.router.navigate(['/e404']);
-      }
+    this.section = this.content.sections.find(s => s.url === this.sectionUrl);
+    if (this.section) {
+      this.seo.setPrefix(this.section.title);
     } else {
       this.router.navigate(['/e404']);
     }

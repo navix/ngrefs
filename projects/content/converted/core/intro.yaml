@@ -1,0 +1,26 @@
+title: Introduction
+url: intro
+entries:
+  - type: text
+    text: >-
+      This simple Angular reference for developers describes core concepts,
+      decorators and services.
+
+
+
+      ## Additional information
+
+
+      Example of hints and tutorials links. You can switch off these panels in the sidebar.
+  - type: hint
+    text: Hint with additional explanation.
+  - type: tutorials
+    links:
+      - label: Angular Quick Start
+        url: https://angular.io/guide/quickstart
+        lang: en
+  - type: text
+    text: |-
+      ## Early version
+
+      Currently ngrefs.com in active development. Thank you for understanding.

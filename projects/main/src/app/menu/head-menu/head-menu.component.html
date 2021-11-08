@@ -1,21 +1,21 @@
 <div class="brand">
   <span class="title">🍀 Angular References</span>
   <button (click)="close.emit()" class="close">
-    <sx-icon name="close" size="32"></sx-icon>
+    ❌
   </button>
 </div>
 
 <div class="controls">
   <a routerLink="./search">
-    <sx-icon name="search" size="24px"></sx-icon>
+    🔎
   </a>
   <button (click)="sectionComponent.showHints = !sectionComponent.showHints"
           [style.color]="sectionComponent.showHints ? '#ffffff' : '#777777'"
           title="Show hints & tutorials">
-    <sx-icon name="hints" size="24px"></sx-icon>
+    ℹ️
   </button>
   <a href="mailto:oleksanovyk@gmail.com">
-    <sx-icon name="mail" size="24px"></sx-icon>
+    ✉️
   </a>
   <div class="theme-picker">
     <button (click)="theme.theme = 'main'"
@@ -46,7 +46,3 @@
     </a>
   </li>
 </ul>
-
-<kit-modal (close)="showSearch = false">
-  <main-search *kitOverlay="showSearch"></main-search>
-</kit-modal>

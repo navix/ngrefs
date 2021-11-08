@@ -1,5 +1,5 @@
+import { NgClass } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input, OnChanges, OnInit, Optional } from '@angular/core';
-import { SxClass } from '@novyk/sx-class';
 import { UiButtonColor, UiButtonSize } from '../meta';
 import { UiButtonGroupComponent } from '../ui-button-group/ui-button-group.component';
 
@@ -9,7 +9,7 @@ import { UiButtonGroupComponent } from '../ui-button-group/ui-button-group.compo
   templateUrl: './ui-button.component.html',
   styleUrls: ['./ui-button.component.scss'],
   providers: [
-    SxClass,
+    NgClass,
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
@@ -22,10 +22,8 @@ export class UiButtonComponent implements OnInit, OnChanges {
 
   @Input() size: UiButtonSize = 'm';
 
-  @Input() icon: string;
-
   constructor(
-    private sxClass: SxClass,
+    private ngClass: NgClass,
     @Optional() private group: UiButtonGroupComponent,
   ) {
   }
@@ -39,11 +37,11 @@ export class UiButtonComponent implements OnInit, OnChanges {
   }
 
   private applyClass() {
-    this.sxClass.apply({
+    this.ngClass.ngClass = {
       disabled: this.disabled,
-      color: this.color,
-      size: this.size,
-      groupDirection: !!this.group ? this.group.direction : null,
-    });
+      ['color-' + this.color]: true,
+      ['size-' + this.size]: true,
+      ['groupDirection-' + this.group?.direction]: !!this.group,
+    };
   }
 }

@@ -1,0 +1,96 @@
+title: date pipe
+url: date-pipe
+entries:
+  - type: text
+    text: |
+      Formats a date value according to locale rules.
+  - type: demo
+    source: |
+      ```html
+      <p>Today is {{today | date}}</p>
+      <p>Or if you prefer, {{today | date:'fullDate'}}</p>
+      <p>The time is {{today | date:'h:mm a z'}}</p>
+      ```
+
+      ```typescript
+      export class AppComponent {
+        today = Date.now();
+      }
+      ```
+    demo: V6TemplatesDatepipeDemoComponent
+  - type: text
+    text: >
+      Only the `en-US` locale data comes with Angular. To localize dates in
+      another language, you must import the corresponding locale data.
+  - type: text
+    text: "## Parameters"
+  - type: text
+    text: |-
+      ```
+      {{ value_expression | date [ : format [ : timezone [ : locale ] ] ] }}
+      ```
+  - type: toc
+  - type: interface-option
+    head: format
+    description: >
+      The date/time components to include, using predefined options or a custom
+      format string.
+    name: format
+    headId: format
+    interface: "format: string = 'mediumDate'"
+    showAdditional: true
+    additional: >-
+      #### Pre-defined format options
+
+
+      Examples are given in `en-US` locale.
+
+
+      * `short`: equivalent to 'M/d/yy, h:mm a' (6/15/15, 9:03 AM).
+
+      * `medium`: equivalent to 'MMM d, y, h:mm:ss a' (Jun 15, 2015, 9:03:01 AM).
+
+      * `long`: equivalent to 'MMMM d, y, h:mm:ss a z' (June 15, 2015 at 9:03:01 AM GMT+1).
+
+      * `full`: equivalent to 'EEEE, MMMM d, y, h:mm:ss a zzzz' (Monday, June 15, 2015 at 9:03:01 AM GMT+01:00).
+
+      * `shortDate`: equivalent to 'M/d/yy' (6/15/15).
+
+      * `mediumDate`: equivalent to 'MMM d, y' (Jun 15, 2015).
+
+      * `longDate`: equivalent to 'MMMM d, y' (June 15, 2015).
+
+      * `fullDate`: equivalent to 'EEEE, MMMM d, y' (Monday, June 15, 2015).
+
+      * `shortTime`: equivalent to 'h:mm a' (9:03 AM).
+
+      * `mediumTime`: equivalent to 'h:mm:ss a' (9:03:01 AM).
+
+      * `longTime`: equivalent to 'h:mm:ss a z' (9:03:01 AM GMT+1).
+
+      * `fullTime`: equivalent to 'h:mm:ss a zzzz' (9:03:01 AM GMT+01:00).
+
+
+      #### Custom format options
+
+
+      You can construct a format string using symbols to specify the components of a date-time value, as described in the [official documentation](https://angular.io/api/common/DatePipe#custom-format-options).
+  - type: interface-option
+    head: timezone
+    description: >
+      A timezone offset (such as '+0430'), or a standard UTC/GMT or continental
+      US timezone abbreviation. Default is the local system timezone of the
+      end-user's machine.
+    name: timezone
+    headId: timezone
+    interface: "timezone?: string"
+  - type: interface-option
+    head: locale
+    description: "A locale code for the locale format rules to use. "
+    name: locale
+    headId: locale
+    interface: "locale?: string"
+    showAdditional: true
+    additional: When not supplied, uses the value of `LOCALE_ID`, which is `en-US`
+      by default. See [Setting your app
+      locale](https://angular.io/guide/i18n#setting-up-the-locale-of-your-app).

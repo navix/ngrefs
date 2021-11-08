@@ -1,0 +1,43 @@
+title: |
+  Interceptor generator
+url: schematic-interceptor
+entries:
+  - type: text
+    text: >-
+      ```
+
+      ng generate interceptor <name> [--[option]=[value]]
+
+      ```
+
+
+      Creates a new, generic interceptor definition in the given or default project.
+  - type: text
+    text: "## Options"
+  - type: command-param
+    head: flat
+    headId: flat
+    name: flat
+    paramType: boolean
+    default: "true"
+    description: When true (the default), creates files at the top level of the project.
+  - type: command-param
+    head: lintFix
+    headId: lintFix
+    name: lintFix
+    paramType: boolean
+    default: "false"
+    description: When true, applies lint fixes after generating the interceptor.
+  - type: command-param
+    head: project
+    headId: project
+    name: project
+    paramType: string
+    description: The name of the project.
+  - type: command-param
+    head: skipTests
+    headId: skipTests
+    name: skipTests
+    paramType: boolean
+    default: "false"
+    description: When true, does not create `spec.ts` test files for the new interceptor.

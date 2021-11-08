@@ -1,0 +1,71 @@
+title: ng add
+url: command-ng-add
+entries:
+  - type: text
+    text: |+
+      ```
+      ng add [name]
+      ```
+
+      Add support for a library to your project.
+
+  - type: hint
+    text: >-
+      `ng add` helps you add new capabilities to your app — this command will
+      install the dependencies and then 
+
+      invoke the installation script which will take care of all the rest.
+  - type: text
+    text: >-
+      Adds the npm package for a published library to your workspace, and
+      configures your default app project to use that library, in whatever way
+      is specified by the library's schematic.
+
+
+      The default app project is the value of `defaultProject` in `angular.json`. 
+  - type: tutorials
+    links:
+      - label: Version 6 of Angular Now Available
+        url: https://blog.angular.io/version-6-of-angular-now-available-cc56b0efa7a4
+        lang: en
+  - type: text
+    text: "## Options"
+  - type: toc
+  - type: command-param
+    head: defaults
+    description: When true, disables interactive input prompts for options with a default.
+    name: defaults
+    headId: defaults
+    paramType: boolean
+    default: "false"
+  - type: command-param
+    head: dryRun
+    description: When true, run through and report activity without writing out results.
+    name: dryRun
+    headId: dryRun
+    paramType: boolean
+    default: "false"
+    aliases: d
+  - type: command-param
+    head: force
+    description: When true, force overwriting of existing files.
+    name: force
+    headId: force
+    paramType: boolean
+    default: "false"
+    aliases: f
+  - type: command-param
+    head: help
+    description: Shows a help message for this command in the console.
+    name: help
+    headId: help
+    values: true|false|json|JSON
+    default: "false"
+    paramType: ""
+  - type: command-param
+    head: interactive
+    description: When false, disables interactive input prompts.
+    name: interactive
+    headId: interactive
+    paramType: boolean
+    default: "false"

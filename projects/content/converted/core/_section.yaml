@@ -1,0 +1,79 @@
+title: Core
+url: core
+color: "#1fd8e4"
+menu:
+  - label: Introduction
+    file: intro
+  - label: "@NgModule"
+    file: ng-module
+  - label: "@Directive"
+    file: directive
+  - label: "@Component"
+    file: component
+  - label: "@Pipe"
+    file: pipe
+  - label: "@Injectable"
+    file: injectable
+  - label: "@Input"
+    file: input
+  - label: "@Output"
+    file: output
+  - label: "@HostBinding"
+    file: host-binding
+  - label: "@HostListener"
+    file: host-listener
+  - label: "@Attribute"
+    file: attribute
+  - label: "@ContentChildren"
+    file: content-children
+  - label: "@ContentChild"
+    file: content-child
+  - label: "@ViewChildren"
+    file: view-children
+  - label: "@ViewChild"
+    file: view-child
+  - label: Dependency Injection
+    file: dependency-injection
+  - label: |
+      ChangeDetectorRef
+    file: change-detector-ref
+  - label: InjectionToken
+    file: injection-token
+  - label: forwardRef
+    file: forward-ref
+  - label: Providers
+    file: providers
+  - label: "@Inject"
+    file: inject
+  - label: "@Optional"
+    file: optional
+  - label: "@Self"
+    file: self
+  - label: "@SkipSelf"
+    file: skip-self
+  - label: "@Host"
+    file: host
+  - label: Lifecycle Hooks
+    file: lifecycle-hooks
+  - label: ngOnChanges()
+    file: ng-on-changes
+  - label: ngOnInit()
+    file: ng-on-init
+  - label: ngDoCheck()
+    file: ng-do-check
+  - label: ngAfterContentInit()
+    file: ng-after-content-init
+  - label: ngAfterContentChecked()
+    file: ng-after-content-checked
+  - label: ngAfterViewInit()
+    file: ng-after-view-init
+  - label: ngAfterViewChecked()
+    file: ng-after-view-checked
+  - label: ngOnDestroy()
+    file: ng-on-destroy
+  - label: NgZone
+    file: ng-zone
+  - label: Renderer2
+    file: renderer2
+  - label: DomSanitizer
+    file: dom-sanitizer

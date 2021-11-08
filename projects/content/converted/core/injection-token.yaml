@@ -1,0 +1,100 @@
+title: InjectionToken
+url: injection-token
+entries:
+  - type: text
+    text: >-
+      Use an `InjectionToken` whenever the type you are injecting is not reified
+      (does not have a runtime representation) such as when injecting an
+      interface, callable type, array or parametrized type.
+
+
+      `InjectionToken` is parameterized on `T` which is the type of object which will be returned by the `Injector`. This provides additional level of type safety.
+
+
+      ```typescript
+
+      interface MyInterface {...}
+
+      var myInterface = injector.get(new InjectionToken<MyInterface>('SomeToken'));
+
+      // myInterface is inferred to be MyInterface.
+
+      ```
+  - type: text
+    text: "#### Example"
+  - type: text
+    text: >-
+      Plain `InjectionToken`:
+
+
+      ```typescript
+
+      const BASE_URL = new InjectionToken<string>('BaseUrl');
+
+      const injector =
+          Injector.create({providers: [{provide: BASE_URL, useValue: 'http://localhost'}]});
+      const url = injector.get(BASE_URL);
+
+      // here `url` is inferred to be `string` because `BASE_URL` is `InjectionToken<string>`.
+
+      expect(url).toBe('http://localhost');
+
+      ```
+  - type: text
+    text: >-
+      Tree-shakable `InjectionToken`:
+
+
+      ```typescript
+
+      class MyService {
+        constructor(readonly myDep: MyDep) {}
+      }
+       
+      const MY_SERVICE_TOKEN = new InjectionToken<MyService>('Manually constructed MyService', {
+        providedIn: 'root',
+        factory: () => new MyService(inject(MyDep)),
+      });
+       
+      const instance = injector.get(MY_SERVICE_TOKEN);
+
+      expect(instance instanceof MyService).toBeTruthy();
+
+      expect(instance.myDep instanceof MyDep).toBeTruthy();
+
+      ```
+  - type: text
+    text: "## Costructor parameters"
+  - type: text
+    text: |-
+      ```typescript
+      InjectionToken<T>(
+        _desc: string,
+        options?: { providedIn?: Type<any> | 'root' | null; factory: () => T; },
+      );
+      ```
+  - type: interface-option
+    head: _desc
+    description: Description.
+    name: _desc
+    headId: _desc
+    interface: "_desc: string"
+  - type: interface-option
+    head: options
+    description: Additional options.
+    name: options
+    headId: options
+    interface: "options?: {     providedIn?: Type<any> | 'root' | null;     factory:
+      () => T; }"
+    showAdditional: true
+    additional: >-
+      When creating an `InjectionToken`, you can optionally specify a factory
+      function which returns (possibly by creating) a default value of the
+      parameterized type `T`. This sets up the `InjectionToken` using this
+      factory as a provider as if it was defined explicitly in the application's
+      root injector. If the factory function, which takes zero arguments, needs
+      to inject dependencies, it can do so using the inject function. See below
+      for an example.
+
+
+      Additionally, if a factory is specified you can also specify the providedIn option, which overrides the above behavior and marks the token as belonging to a particular `@NgModule`. As mentioned above, 'root' is the default value for `providedIn`.

@@ -1,0 +1,64 @@
+title: Tslint builder
+url: builder-tslint
+entries:
+  - type: text
+    text: |
+      ID: `@angular-devkit/build-angular:tslint`
+  - type: text
+    text: "## Options"
+  - type: toc
+  - type: command-param
+    head: exclude
+    description: Files to exclude from linting.
+    name: exclude
+    headId: exclude
+    paramType: array
+  - type: command-param
+    head: files
+    description: Files to include in linting.
+    name: files
+    headId: files
+    paramType: array
+  - type: command-param
+    head: fix
+    description: Fixes linting errors (may overwrite linted files).
+    name: fix
+    headId: fix
+    paramType: boolean
+  - type: command-param
+    head: force
+    description: Succeeds even if there was linting errors.
+    name: force
+    headId: force
+    paramType: boolean
+  - type: command-param
+    head: format
+    description: Output format.
+    name: format
+    headId: format
+    paramType: string
+    values: prose,json,stylish,verbose,pmd,msbuild,checkstyle,vso,fileslist
+    default: prose
+  - type: command-param
+    head: silent
+    description: Show output text.
+    name: silent
+    headId: silent
+    paramType: boolean
+  - type: command-param
+    head: tsConfig
+    description: The name of the TypeScript configuration file.
+    name: tsConfig
+    headId: tsConfig
+  - type: command-param
+    head: tslintConfig
+    description: The name of the TSLint configuration file.
+    name: tslintConfig
+    headId: tslintConfig
+    paramType: string
+  - type: command-param
+    head: typeCheck
+    description: Controls the type check for linting.
+    name: typeCheck
+    headId: typeCheck
+    paramType: boolean

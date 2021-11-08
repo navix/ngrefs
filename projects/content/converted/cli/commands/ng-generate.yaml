@@ -1,0 +1,81 @@
+title: ng generate
+url: command-ng-generate
+entries:
+  - type: text
+    text: >+
+      ```
+
+      ng generate [schematic] [name] [--[option]=[value]]
+
+      ng g
+
+      ```
+
+
+      Generates the specified schematic.
+
+
+
+      Also Angular CLI provides a mechanism to generate code from any package (`schematic-package` points to an npm package name):
+
+
+      ```
+
+      ng generate [schematic-package]:[schematic-name] [name]
+
+      ```
+
+
+
+      ## Configuration
+
+
+      The list of the default generators you can find in the section [Schematics](../schematics).
+
+
+      Default values of generators options can be added to your `angular.json` file.
+
+  - type: tutorials
+    links:
+      - url: https://angular.io/cli/generate
+        label: Angular - ng generate
+  - type: text
+    text: |-
+      ## Options
+
+      The next options can be applied to any generator.
+  - type: command-param
+    head: defaults
+    headId: defaults
+    name: defaults
+    paramType: boolean
+    description: When true, disables interactive input prompts for options with a default.
+  - type: command-param
+    head: dryRun
+    description: Run through without making any changes.
+    name: dryRun
+    headId: dryRun
+    paramType: boolean
+    aliases: -d
+    default: "false"
+  - type: command-param
+    head: force
+    description: "Forces overwriting of files. "
+    name: force
+    headId: force
+    paramType: boolean
+    aliases: -f
+    default: "false"
+  - type: command-param
+    head: help
+    headId: help
+    name: help
+    values: true|false|json|JSON
+    default: "false"
+    description: Shows a help message for this command in the console.
+  - type: command-param
+    head: interactive
+    headId: interactive
+    name: interactive
+    paramType: boolean
+    description: When false, disables interactive input prompts.

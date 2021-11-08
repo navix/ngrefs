@@ -102,34 +102,21 @@ const routes: Routes = [
   },
   // routes
   {
-    path: '',
-    resolve: {
-      version: VersionResolver,
-    },
-    component: VersionComponent,
+    path: 'search',
+    component: SearchComponent,
+  },
+  {
+    path: ':sectionUrl',
+    component: SectionComponent,
     children: [
       {
         path: '',
-        component: HomeComponent,
+        pathMatch: 'full',
+        redirectTo: 'intro',
       },
       {
-        path: ':sectionUrl',
-        component: SectionComponent,
-        children: [
-          {
-            path: '',
-            pathMatch: 'full',
-            redirectTo: 'intro',
-          },
-          {
-            path: 'search',
-            component: SearchComponent,
-          },
-          {
-            path: ':pageUrl',
-            component: PageComponent,
-          },
-        ],
+        path: ':pageUrl',
+        component: PageComponent,
       },
     ],
   },

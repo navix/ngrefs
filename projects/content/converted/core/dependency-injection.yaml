@@ -1,0 +1,27 @@
+title: Dependency Injection
+url: dependency-injection
+entries:
+  - type: text
+    text: Dependency Injection (DI) is a way to create objects that depend upon
+      other objects. A Dependency Injection system supplies the dependent
+      objects (called the dependencies) when it creates an instance of an
+      object.
+  - type: tutorials
+    links:
+      - label: Angular Dependency Injection
+        url: https://angular.io/guide/dependency-injection
+        lang: en
+      - label: Angular — Hierarchical Dependency Injectors
+        url: https://angular.io/guide/hierarchical-dependency-injection
+        lang: en
+      - label: Angular — DI in Action
+        url: https://angular.io/guide/dependency-injection-in-action
+        lang: en
+      - label: Everything you need to know about change detection in Angular
+        url: https://indepth.dev/everything-you-need-to-know-about-change-detection-in-angular/
+        lang: en
+      - url: https://medium.com/@tomastrajan/total-guide-to-angular-6-dependency-injection-providedin-vs-providers-85b7a347b59f
+        label: Total Guide To Angular 6+ Dependency Injection — providedIn vs
+          providers:[ ] 💉
+      - label: What you always wanted to know about Angular Dependency Injection tree
+        url: https://medium.com/angular-in-depth/angular-dependency-injection-and-tree-shakeable-tokens-4588a8f70d5d

@@ -1,0 +1,46 @@
+title: "[minlength] validation directive"
+url: minlength-directive
+entries:
+  - type: text
+    text: >-
+      A directive that adds minimum length validation to controls marked with
+      the
+
+      `minlength` attribute. The directive is provided with the `NG_VALIDATORS` multi-provider list.
+  - type: text
+    text: >-
+      ### Adding a minimum length validator
+
+
+      The following example shows how to add a minimum length validator to an input attached to an
+
+      ngModel binding.
+
+
+      ```html
+
+      <input name="firstName" ngModel minlength="4">
+
+      ```
+  - type: interface-option
+    name: minlength
+    head: minlength
+    headId: minlength
+    interface: "@Input() minlength: string|number"
+    description: Tracks changes to the minimum length bound to this directive.
+  - type: interface-option
+    name: validate
+    head: validate
+    headId: validate
+    interface: "validate(control: AbstractControl): ValidationErrors|null"
+    description: >-
+      Method that validates whether the value meets a minimum length
+      requirement.
+
+      Returns the validation result if enabled, otherwise null.
+  - type: interface-option
+    name: registerOnValidatorChange
+    head: registerOnValidatorChange
+    headId: registerOnValidatorChange
+    interface: "registerOnValidatorChange(fn: () => void): void"
+    description: Registers a callback function to call when the validator inputs change.

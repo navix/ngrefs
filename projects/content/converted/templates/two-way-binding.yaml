@@ -1,0 +1,61 @@
+title: Two-way binding [()]
+url: two-way-binding
+entries:
+  - type: text
+    text: The `[(x)]` syntax is easy to demonstrate when the element has a settable
+      property called `x` and a corresponding event named `xChange`.
+  - type: demo
+    source: |-
+      ##### sizer.component.html
+
+      ```html
+      <button (click)="dec()" title="smaller">-</button>
+      <button (click)="inc()" title="bigger">+</button>
+      ```
+
+      ##### sizer.component.ts
+
+      ```
+      export class SizerComponent {
+        @Input() size: number;
+
+        @Output() sizeChange = new EventEmitter<number>();
+       
+        dec() { 
+          this.resize(-1); 
+        }
+
+        inc() { 
+          this.resize(+1); 
+        }
+       
+        resize(delta: number) {
+          this.size = this.size + delta;
+          this.sizeChange.emit(this.size);
+        }
+      }
+      ```
+
+      ##### app.component.html
+
+      ```html
+      <sizer [(size)]="size"></sizer>
+      <label [style.font-size.px]="size">FontSize: {{size}}px</label>
+      ```
+
+      ##### app.component.ts
+
+      ```typescript
+      export class AppComponent {
+        size = 13;
+      }
+      ```
+    demo: V6TemplatesTwoWayDemoComponent
+  - type: text
+    text: >-
+      It would be convenient to use two-way binding with HTML form elements like
+      `<input>` and `<select>`. However, no native HTML element follows the `x`
+      value and `xChange` event pattern.
+
+
+      Fortunately, the Angular [NgModel directive](../ngmodel-directive) is a bridge that enables two-way binding to form elements.

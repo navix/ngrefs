@@ -1,0 +1,83 @@
+title: ng update
+url: command-ng-update
+entries:
+  - type: text
+    text: |
+      ```
+      ng update [package] [--[argument]=[value]]
+      ```
+
+      Updates the current application to latest versions.
+  - type: tutorials
+    links:
+      - label: Updating your Angular projects
+        url: https://angular.io/guide/updating
+        lang: en
+      - label: Angular Update Guide
+        url: https://update.angular.io/
+        lang: en
+  - type: text
+    text: "## Options"
+  - type: toc
+  - type: command-param
+    head: all
+    description: Whether to update all packages in `package.json`.
+    name: all
+    headId: all
+    paramType: boolean
+    default: "false"
+  - type: command-param
+    head: dryRun
+    description: "Run through without making any changes. "
+    name: dryRun
+    headId: dryRun
+    paramType: boolean
+    aliases: d
+    default: "false"
+  - type: command-param
+    head: force
+    description: "If false, will error out if installed packages are incompatible
+      with the update. "
+    name: force
+    headId: force
+    paramType: boolean
+    aliases: f
+    default: "false"
+  - type: command-param
+    head: from
+    description: Version from which to migrate from. Only available with a single
+      package being updated, and only on migration only.
+    name: from
+    headId: from
+    paramType: string
+  - type: command-param
+    head: migrateOnly
+    description: Only perform a migration, does not update the installed version.
+    name: migrateOnly
+    headId: migrateOnly
+    paramType: boolean
+  - type: command-param
+    head: next
+    description: Use the largest version, including beta and RCs.
+    name: next
+    headId: next
+    paramType: boolean
+  - type: command-param
+    head: packages
+    description: The names of package(s) to update.
+    name: packages
+    headId: packages
+  - type: command-param
+    head: registry
+    description: The NPM registry to use.
+    name: registry
+    headId: registry
+    paramType: string
+  - type: command-param
+    head: to
+    description: Version up to which to apply migrations. Only available with a
+      single package being updated, and only on migrations only. Requires from
+      to be specified. Default to the installed version detected.
+    name: to
+    headId: to
+    paramType: string

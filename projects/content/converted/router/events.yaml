@@ -1,0 +1,63 @@
+title: Events
+url: events
+entries:
+  - type: text
+    text: During each navigation, the `Router` emits navigation events through the
+      `Router.events` property. These events range from when the navigation
+      starts and ends to many points in between.
+  - type: text
+    text: >-
+      * `NavigationStart` — An event triggered when navigation starts.
+
+      * `RouteConfigLoadStart` — An event triggered before the Router lazy loads a route configuration.
+
+      * `RouteConfigLoadEnd` — An event triggered after a route has been lazy loaded.
+
+      * `RoutesRecognized` — An event triggered when the Router parses the URL and the routes are recognized.
+
+      * `GuardsCheckStart` — An event triggered when the Router begins the Guards phase of routing.
+
+      * `ChildActivationStart` — An event triggered when the Router begins activating a route's children.
+
+      * `ActivationStart` — An event triggered when the Router begins activating a route.
+
+      * `GuardsCheckEnd` — An event triggered when the Router finishes the Guards phase of routing successfully.
+
+      * `ResolveStart` — An event triggered when the Router begins the Resolve phase of routing.
+
+      * `ResolveEnd` — An event triggered when the Router finishes the Resolve phase of routing successfuly.
+
+      * `ChildActivationEnd` — An event triggered when the Router finishes activating a route's children.
+
+      * `ActivationEnd` — An event triggered when the Router finishes activating a route.
+
+      * `NavigationEnd` — An event triggered when navigation ends successfully.
+
+      * `NavigationCancel` — An event triggered when navigation is canceled. This is due to a Route Guard returning false during navigation.
+
+      * `NavigationError` — An event triggered when navigation fails due to an unexpected error.
+
+      * `Scroll` —  An event that represents a scrolling event.
+  - type: text
+    text: |+
+      #### Example
+
+
+  - type: text
+    text: "Subscribe on `NavigationEnd` event:"
+  - type: text
+    text: |-
+      ```typescript
+      export class AppComponent {
+        constructor(private router: Router) {
+        }
+
+        ngOnInit() {
+          this.router.events
+            .pipe(filter(event => event instanceof NavigationEnd))
+            .subscribe(() => {
+              ...
+            });
+          }
+        }
+      ```

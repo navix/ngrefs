@@ -1,28 +1,26 @@
-@import "params";
-@import "mq";
-@import "mixins/scroll-colors";
-
 :host {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-main-head-menu {
-  background: var(--nav-head-bg);
-  color: var(--nav-head-color);
   display: block;
+  font-size: .9rem;
+  padding: 2rem 2rem 2rem 3rem;
 }
 
-main-section-menu {
-  background: var(--nav-menu-bg);
-  display: block;
-  flex-grow: 1;
-  overflow-y: auto;
-  padding: $grid * 2;
-  @include scroll-colors;
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-main-footer-menu {
-  background: var(--nav-footer-bg);
+li {
+  &.-has-subs {
+    > a, > span {
+      font-weight: 600;
+    }
+  }
+  span {
+    color: #777;
+  }
+}
+
+.sub {
+  margin-left: 1rem;
 }

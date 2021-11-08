@@ -1,0 +1,37 @@
+title: |
+  WebWorker generator
+url: schematic-web-worker
+entries:
+  - type: text
+    text: >-
+      ```
+
+      ng generate webWorker <name> [--[option]=[value]]
+
+      ```
+
+
+      Creates a new generic web worker definition in the given or default project.
+  - type: text
+    text: "## Options"
+  - type: command-param
+    text: ""
+    head: project
+    headId: project
+    name: project
+    paramType: string
+    description: The name of the project.
+  - type: command-param
+    head: snippet
+    headId: snippet
+    name: snippet
+    paramType: boolean
+    default: "true"
+    description: Add a worker creation snippet in a sibling file of the same name.
+  - type: command-param
+    head: target
+    headId: target
+    name: target
+    paramType: string
+    default: build
+    description: The target to apply web worker to.

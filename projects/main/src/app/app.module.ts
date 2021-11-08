@@ -2,8 +2,6 @@ import { PlatformModule } from '@angular/cdk/platform';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule, HAMMER_GESTURE_CONFIG, HAMMER_LOADER, HammerModule } from '@angular/platform-browser';
-import { SxIconModule } from '@novyk/sx-icon';
-import { UiModule } from 'ui';
 import { AppHammerConfig } from './app-hammer-config';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,7 +23,9 @@ import { SectionIntroMenuComponent } from './menu/section-intro-menu/section-int
 import { SectionMenuComponent } from './menu/section-menu/section-menu.component';
 import { MessageComponent } from './message/message/message.component';
 import { PageComponent } from './page/page.component';
+import { PageSimpleComponent } from './page/types/page-simple/page-simple.component';
 import { SearchComponent } from './search/search.component';
+import { SectionHeaderComponent } from './section/section-header/section-header.component';
 import { SectionNavComponent } from './section/section-nav/section-nav.component';
 import { SectionComponent } from './section/section/section.component';
 import { VersionComponent } from './version/version.component';
@@ -35,10 +35,8 @@ import { VersionComponent } from './version/version.component';
     BrowserModule.withServerTransition({appId: 'serverApp'}),
     FormsModule,
     AppRoutingModule,
-    UiModule,
     DemosModule,
     PlatformModule,
-    SxIconModule,
     HammerModule,
   ],
   providers: [
@@ -66,7 +64,7 @@ import { VersionComponent } from './version/version.component';
     TutorialsEntryComponent,
     HeadMenuComponent,
     FooterMenuComponent,
-    SectionNavComponent,
+    SectionHeaderComponent,
     HomeComponent,
     SearchComponent,
     InterfaceOptionEntryComponent,
@@ -76,6 +74,8 @@ import { VersionComponent } from './version/version.component';
     SectionIntroMenuComponent,
     Error404Component,
     LangRedirectComponent,
+    SectionNavComponent,
+    PageSimpleComponent,
   ],
   bootstrap: [AppComponent],
 })

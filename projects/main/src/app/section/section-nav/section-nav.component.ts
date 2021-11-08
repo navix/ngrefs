@@ -1,22 +1,23 @@
-import { ChangeDetectionStrategy, Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
-import { ContentSection, ContentVersion } from '../../content/meta';
+import { ChangeDetectionStrategy, Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { Content2Section } from '../../content/meta2';
 
 @Component({
-  selector: 'main-section-nav',
+  selector: 'nav[section]',
   templateUrl: './section-nav.component.html',
   styleUrls: ['./section-nav.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SectionNavComponent implements OnInit {
-  @Input() version: ContentVersion;
+export class SectionNavComponent implements OnChanges {
+  @Input() section!: Content2Section;
 
-  @Input() section: ContentSection;
+  pagesUrls: {[key: string]: string} = {};
 
-  @Output() close = new EventEmitter();
-
-  constructor() {
-  }
-
-  ngOnInit() {
+  ngOnChanges(changes: SimpleChanges) {
+    console.log('PGS', this.section.pages);
+    this.pagesUrls = {};
+    for (const page of this.section.pages) {
+      this.pagesUrls[page.file] = page.url;
+    }
+    console.log('P_URLS', this.pagesUrls);
   }
 }

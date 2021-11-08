@@ -1,0 +1,73 @@
+title: Animation binding @
+url: animation-binding
+entries:
+  - type: text
+    text: >-
+      You can build a simple animation that transitions an element between two
+      states driven by a model attribute.
+
+
+      Animations can be defined inside `@Component` metadata.
+
+
+      Then using the `[@triggerName]` syntax, attach the animation that you just defined to one or more elements in the component's template.
+  - type: demo
+    source: |-
+      ```html
+      Click to change active state:
+      <ul>
+        <li *ngFor="let hero of heroes"
+            [@heroState]="hero.active ? 'active' : 'inactive'"
+            (click)="hero.active = !hero.active">
+          {{hero.name}}
+        </li>
+      </ul>
+      ```
+
+      ```typescript
+      @Component({
+        ...
+        animations: [
+          trigger('heroState', [
+            state('inactive', style({
+              backgroundColor: '#eee',
+              transform: 'scale(1)',
+            })),
+            state('active', style({
+              backgroundColor: '#cfd8dc',
+              transform: 'scale(1.1)',
+            })),
+            transition('inactive => active', animate('100ms ease-in')),
+            transition('active => inactive', animate('100ms ease-out')),
+          ]),
+        ],
+      })
+      export class AppComponent {
+        heroes = [
+          {
+            name: 'Superman',
+            active: true,
+          },
+          {
+            name: 'Batman',
+            active: true,
+          },
+          {
+            name: 'Aquaman',
+            active: false,
+          },
+        ];
+      }
+      ```
+    demo: V6TemplatesAnimationDemoComponent
+  - type: tutorials
+    links:
+      - label: Angular — Animations
+        url: https://angular.io/guide/animations
+        lang: en
+      - label: Introduction to Animations in Angular
+        lang: en
+        url: https://alligator.io/angular/animation-angular/
+      - label: A New Wave of Animation Features in Angular
+        url: https://www.yearofmoo.com/2017/06/new-wave-of-animation-features.html
+        lang: en

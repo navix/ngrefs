@@ -39,7 +39,6 @@ export class MessageComponent implements OnInit, OnChanges, OnDestroy {
   private destroy = new Subject<void>();
 
   constructor(
-    private versionPage: VersionComponent,
     private router: Router,
     private route: ActivatedRoute,
     private sanitizer: DomSanitizer,

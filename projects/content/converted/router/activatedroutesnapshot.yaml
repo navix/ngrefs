@@ -1,0 +1,125 @@
+title: ActivatedRouteSnapshot
+url: activatedroutesnapshot
+entries:
+  - type: text
+    text: Contains the information about a route associated with a component loaded
+      in an outlet at a particular moment in time. `ActivatedRouteSnapshot` can
+      also be used to traverse the router state tree.
+  - type: text
+    text: "#### Example"
+  - type: text
+    text: |-
+      ```typescript
+      @Component({templateUrl:'./my-component.html'})
+      class MyComponent {
+        constructor(route: ActivatedRoute) {
+          const id: string = route.snapshot.params.id;
+          const url: string = route.snapshot.url.join('');
+          const user = route.snapshot.data.user;
+        }
+      }
+      ```
+  - type: tutorials
+    links:
+      - label: "Angular Router: Understanding Router State"
+        url: https://vsavkin.com/angular-router-understanding-router-state-7b5b95a12eab
+        lang: en
+  - type: text
+    text: "## Properties"
+  - type: toc
+  - type: interface-option
+    head: children
+    description: "The children of this route in the router state tree "
+    interface: "get children(): ActivatedRouteSnapshot[]"
+    name: children
+    headId: children
+  - type: interface-option
+    head: component
+    description: The component of the route.
+    interface: "component: Type<any> | string | null"
+    name: component
+    headId: component
+  - type: interface-option
+    head: data
+    description: The static and resolved data of this route.
+    interface: "data: Data"
+    name: data
+    headId: data
+  - type: interface-option
+    head: firstChild
+    description: "The first child of this route in the router state tree "
+    interface: "get firstChild(): ActivatedRouteSnapshot|null"
+    name: firstChild
+    headId: firstChild
+  - type: interface-option
+    head: fragment
+    description: The URL fragment shared by all the routes.
+    interface: "fragment: string"
+    name: fragment
+    headId: fragment
+  - type: interface-option
+    head: outlet
+    description: The outlet name of the route.
+    name: outlet
+    headId: outlet
+    interface: "outlet: string"
+  - type: interface-option
+    head: paramMap
+    description: ""
+    interface: "get paramMap(): ParamMap"
+    name: paramMap
+    headId: paramMap
+  - type: interface-option
+    head: params
+    description: The matrix parameters scoped to this route.
+    interface: "params: Params"
+    name: params
+    headId: params
+  - type: interface-option
+    head: parent
+    description: "The parent of this route in the router state tree "
+    interface: "get parent(): ActivatedRouteSnapshot|null"
+    name: parent
+    headId: parent
+  - type: interface-option
+    head: pathFromRoot
+    description: "The path from the root of the router state tree to this route "
+    interface: "get pathFromRoot(): ActivatedRouteSnapshot[]"
+    name: pathFromRoot
+    headId: pathFromRoot
+  - type: interface-option
+    head: queryParamMap
+    description: ""
+    interface: "get queryParamMap(): ParamMap"
+    name: queryParamMap
+    headId: queryParamMap
+  - type: interface-option
+    head: queryParams
+    description: The query parameters shared by all the routes.
+    interface: "queryParams: Params"
+    name: queryParams
+    headId: queryParams
+  - type: interface-option
+    head: root
+    description: "The root of the router state "
+    interface: "get root(): ActivatedRouteSnapshot"
+    name: root
+    headId: root
+  - type: interface-option
+    head: routeConfig
+    description: The configuration used to match this route *
+    interface: "routeConfig: Route|null"
+    name: routeConfig
+    headId: routeConfig
+  - type: interface-option
+    name: toString
+    head: toString
+    headId: toString
+    interface: "toString(): string"
+    description: ""
+  - type: interface-option
+    head: url
+    description: The URL segments matched by this route.
+    interface: "url: UrlSegment[]"
+    name: url
+    headId: url

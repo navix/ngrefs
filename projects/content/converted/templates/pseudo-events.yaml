@@ -1,0 +1,40 @@
+title: Pseudo-events
+url: pseudo-events
+entries:
+  - type: text
+    text: >+
+      You can filter keyboard events in a template by [event
+      key](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values).
+
+
+      Angular allows you to directly bind to a specific keystroke or keystroke combination. That means a keyboard event will be only fired on that specific key or key combination instead of on all key events.
+
+  - type: demo
+    source: |
+      ```html
+      <input (keyup.enter)="enterHandler()">
+      <input (keydown.esc)="escHandler()">
+      <input (keyup.shift.f)="shiftFHandler()">
+      ```
+
+      ```typescript
+      export class AppComponent {
+        enterHandler() {
+          alert('Enter pressed!');
+        }
+
+        escHandler() {
+          alert('ESC pressed!');
+        }
+
+        shiftFHandler() {
+          alert('Shift+F pressed!');
+        }
+      }
+      ```
+    demo: V6TemplatesPseudoEventsDemoComponent
+  - type: tutorials
+    links:
+      - label: Angular Pseudo-Events
+        url: https://medium.com/claritydesignsystem/angular-pseudo-events-d4e7f89247ee
+        lang: en

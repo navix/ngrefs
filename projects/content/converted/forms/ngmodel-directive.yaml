@@ -1,0 +1,166 @@
+title: "[ngModel] directive"
+url: ngmodel-directive
+entries:
+  - type: text
+    text: >
+      Creates a [`FormControl`](../formcontrol) instance from a domain model and
+      binds it to a form control element.
+
+
+      The [`FormControl`](../formcontrol) instance tracks the value, user interaction, and
+
+      validation status of the control and keeps the view synced with the model. If used
+
+      within a parent form, the directive also registers itself with the form as a child
+
+      control.
+
+
+      This directive is used by itself or as part of a larger form. Use the
+
+      `ngModel` selector to activate it.
+
+
+      It accepts a domain model as an optional `Input`. If you have a one-way binding
+
+      to `ngModel` with `[]` syntax, changing the value of the domain model in the component
+
+      class sets the value in the view. If you have a two-way binding with `[()]` syntax
+
+      (also known as 'banana-box syntax'), the value in the UI always syncs back to
+
+      the domain model in your class.
+
+
+      To inspect the properties of the associated [`FormControl`](../formcontrol) (like validity state), 
+
+      export the directive into a local template variable using `ngModel` as the key (ex: `#myVar="ngModel"`).
+
+      You then access the control using the directive's `control` property, 
+
+      but most properties used (like `valid` and `dirty`) fall through to the control anyway for direct access. 
+
+      See a full list of properties directly available in [`AbstractControlDirective`](../abstractcontroldirective).
+  - type: demo
+    demo: V6TemplatesNgmodel1DemoComponent
+    source: |
+      ```html
+      <input [(ngModel)]="name">
+      {{ name }}
+      ```
+  - type: text
+    text: "## Interface, extends [NgControl](../ngcontrol)"
+  - type: toc
+  - type: interface-option
+    name: control
+    head: control
+    headId: control
+    interface: "control: FormControl"
+    description: ""
+  - type: interface-option
+    name: ngAcceptInputType_isDisabled
+    head: ngAcceptInputType_isDisabled
+    headId: ngAcceptInputType_isDisabled
+    interface: "static ngAcceptInputType_isDisabled: boolean|string"
+    description: ""
+  - type: interface-option
+    name: viewModel
+    head: viewModel
+    headId: viewModel
+    interface: "viewModel: any"
+    description: Internal reference to the view model value.
+  - type: interface-option
+    name: name
+    head: name
+    headId: name
+    interface: "@Input() name: string"
+    description: |-
+      Tracks the name bound to the directive. If a parent form exists, it
+      uses this name as a key to retrieve this control's value.
+  - type: interface-option
+    name: isDisabled
+    head: isDisabled
+    headId: isDisabled
+    interface: "@Input('disabled') isDisabled: boolean"
+    description: Tracks whether the control is disabled.
+  - type: interface-option
+    name: model
+    head: model
+    headId: model
+    interface: "@Input('ngModel') model: any"
+    description: Tracks the value bound to this directive.
+  - type: interface-option
+    name: options
+    head: options
+    headId: options
+    interface: "@Input('ngModelOptions') options: {name?: string, standalone?:
+      boolean, updateOn?: FormHooks}"
+    description: >-
+      Tracks the configuration options for this `ngModel` instance.
+
+
+      **name**: An alternative to setting the name attribute on the form control element. See
+
+      the [example](api/forms/NgModel#using-ngmodel-on-a-standalone-control) for using `NgModel`
+
+      as a standalone control.
+
+
+      **standalone**: When set to true, the `ngModel` will not register itself with its parent form,
+
+      and acts as if it's not in the form. Defaults to false. If no parent form exists, this option
+
+      has no effect.
+
+
+      **updateOn**: Defines the event upon which the form control value and validity update.
+
+      Defaults to 'change'. Possible values: `'change'` | `'blur'` | `'submit'`.
+  - type: interface-option
+    name: update
+    head: update
+    headId: update
+    interface: "@Output('ngModelChange') update"
+    description: |-
+      Event emitter for producing the `ngModelChange` event after
+      the view model updates.
+  - type: interface-option
+    name: path
+    head: path
+    headId: path
+    interface: "get path(): string[]"
+    description: >-
+      Returns an array that represents the path from the top-level form to this
+      control.
+
+      Each index is the string name of the control on that level.
+  - type: interface-option
+    name: formDirective
+    head: formDirective
+    headId: formDirective
+    interface: "get formDirective(): any"
+    description: The top-level directive for this control if present, otherwise null.
+  - type: interface-option
+    name: validator
+    head: validator
+    headId: validator
+    interface: "get validator(): ValidatorFn|null"
+    description: |-
+      Synchronous validator function composed of all the synchronous validators
+      registered with this directive.
+  - type: interface-option
+    name: asyncValidator
+    head: asyncValidator
+    headId: asyncValidator
+    interface: "get asyncValidator(): AsyncValidatorFn|null"
+    description: >-
+      Async validator function composed of all the async validators registered
+      with this
+
+      directive.
+  - type: interface-option
+    name: viewToModelUpdate
+    head: viewToModelUpdate
+    headId: viewToModelUpdate
+    interface: "viewToModelUpdate(newValue: any): void"
+    description: Sets the new value for the view model and emits an `ngModelChange` event.

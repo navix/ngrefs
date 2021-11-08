@@ -1,0 +1,128 @@
+title: "[formGroupName] directive"
+url: formgroupname-directive
+entries:
+  - type: text
+    text: >-
+      Syncs a nested [`FormGroup`](../formgroup) to a DOM element.
+
+
+      This directive can only be used with a parent [`FormGroupDirective`](../formgroup-directive).
+
+      It accepts the string name of the nested [`FormGroup`](../formgroup) to link, and
+
+      looks for a [`FormGroup`](../formgroup) registered with that name in the parent
+
+      [`FormGroup`](../formgroup) instance you passed into [`FormGroupDirective`](../formgroup-directive).
+
+
+      Use nested form groups to validate a sub-group of a
+
+      form separately from the rest or to group the values of certain
+
+      controls into their own nested object.
+  - type: text
+    text: >
+      ### Access the group by name
+
+
+      The following example uses the [get](../abstractcontrol#get) method to access the associated `FormGroup`.
+
+
+      ```ts
+        this.form.get('name');
+      ```
+  - type: text
+    text: >
+      ### Access individual controls in the group
+
+
+      The following example uses the [get](../abstractcontrol#get) method to access
+
+      individual controls within the group using dot syntax.
+
+
+      ```ts
+        this.form.get('name.first');
+      ```
+  - type: text
+    text: >-
+      ### Register a nested `FormGroup`.
+
+
+      The following example registers a nested *name* `FormGroup` within an existing `FormGroup`,
+
+      and provides methods to retrieve the nested `FormGroup` and individual controls.
+
+
+      ```
+
+      import {Component} from '@angular/core';
+
+      import {FormControl, FormGroup, Validators} from '@angular/forms';
+
+
+      @Component({
+        selector: 'example-app',
+        template: `
+          <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <p *ngIf="name.invalid">Name is invalid.</p>
+
+            <div formGroupName="name">
+              <input formControlName="first" placeholder="First name">
+              <input formControlName="last" placeholder="Last name">
+            </div>
+            <input formControlName="email" placeholder="Email">
+            <button type="submit">Submit</button>
+          </form>
+
+          <button (click)="setPreset()">Set preset</button>
+      `,
+
+      })
+
+      export class NestedFormGroupComp {
+        form = new FormGroup({
+          name: new FormGroup({
+            first: new FormControl('Nancy', Validators.minLength(2)),
+            last: new FormControl('Drew', Validators.required)
+          }),
+          email: new FormControl()
+        });
+
+        get first(): any { return this.form.get('name.first'); }
+
+        get name(): any { return this.form.get('name'); }
+
+        onSubmit() {
+          console.log(this.first.value);  // 'Nancy'
+          console.log(this.name.value);   // {first: 'Nancy', last: 'Drew'}
+          console.log(this.form.value);   // {name: {first: 'Nancy', last: 'Drew'}, email: ''}
+          console.log(this.form.status);  // VALID
+        }
+
+        setPreset() { this.name.setValue({first: 'Bess', last: 'Marvin'}); }
+      }
+
+      ```
+  - type: text
+    text: >
+      ## Interface, extends
+      [AbstractFormGroupDirective](../abstractformgroupdirective)
+  - type: interface-option
+    name: name
+    head: name
+    headId: name
+    interface: "@Input('formGroupName') name: string|number|null"
+    description: >-
+      Tracks the name of the `FormGroup` bound to the directive. The name
+      corresponds
+
+      to a key in the parent `FormGroup` or `FormArray`.
+
+      Accepts a name as a string or a number.
+
+      The name in the form of a string is useful for individual forms,
+
+      while the numerical form allows for form groups to be bound
+
+      to indices when iterating over groups in a `FormArray`.

@@ -1,0 +1,23 @@
+title: Schematics
+url: schematics
+entries:
+  - type: text
+    text: >
+      Schematics is a workflow tool for the modern web; it can apply transforms
+      to your project, such as create a new component, or updating your code to
+      fix breaking changes in a dependency. Or maybe you want to add a new
+      configuration option or framework to an existing project.
+
+
+      In Angular CLI you can run schematics by [`ng generate`](../command-ng-generate).
+
+
+      Also [`ng add`](../command-ng-add) uses Schematics.
+  - type: tutorials
+    links:
+      - label: Schematics — An Introduction
+        url: https://blog.angular.io/schematics-an-introduction-dc1dfbc2a2b2
+        lang: en
+      - label: Using schematics in WebStorm
+        url: https://blog.angular.io/whats-new-in-webstorm-for-angular-acd804b84ec9
+        lang: en

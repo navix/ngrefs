@@ -1,0 +1,89 @@
+title: ng serve
+url: command-ng-serve
+entries:
+  - type: text
+    text: >-
+      ```
+
+      ng serve [project] [--[option]=[value]]
+
+      ng s
+
+      ```
+
+
+      Build the application and start a web server.
+
+
+      Alias for the command:
+       
+      ```
+
+      ng run [project]:serve
+
+      ```
+
+
+      `[project]` — the name of the project to build. Can be an application or a library.
+
+
+      ---
+
+
+      By default for `ng serve` CLI uses builder [`dev-server`](../builder-dev-server).
+
+
+      A builder runs with default configuration options specified in the workspace configuration file (`angular.json`) or with a named alternative configuration.
+
+
+      The configuration options generally correspond to the command options.
+
+      You can override individual configuration defaults by specifying the corresponding options on the command line.
+
+      The command can accept option names given in either dash-case or camelCase.
+
+      Note that in the configuration file, you must specify names in camelCase.
+
+
+      Some additional options can only be set through the configuration file,
+
+      either by direct editing or with the `ng config` command.
+  - type: tutorials
+    links:
+      - url: https://angular.io/cli/serve
+        label: Angular - ng serve
+  - type: text
+    text: "## Options"
+  - type: command-param
+    head: prod
+    description: >-
+      Flag to set configuration to "prod". 
+
+
+      Alias for the command:
+
+
+      ```
+
+      ng run [default-project]:serve:production
+
+      ```
+
+
+      By default, the production target is set up in the workspace configuration such that all builds make use of bundling, limited tree-shaking, and also limited dead code elimination.
+    name: prod
+    headId: prod
+    paramType: boolean
+    default: "false"
+  - type: command-param
+    head: configuration
+    description: A named build target, as specified in the `configurations` section
+      of `angular.json`. Each named target is accompanied by a configuration of
+      option defaults for that target. Setting this explicitly overrides the
+      `--prod` flag.
+    name: configuration
+    headId: configuration
+    aliases: -c
+    paramType: string
+  - type: text
+    text: "### Go to [`dev-server` builder options](../builder-dev-server)."

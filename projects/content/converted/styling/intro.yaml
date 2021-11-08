@@ -1,0 +1,19 @@
+title: Introduction
+url: intro
+entries:
+  - type: text
+    text: This simple Angular reference for developers describes styling and view
+      encapsulation.
+  - type: text
+    text: >-
+      ## Additional information
+
+
+      Example of hints and tutorials links. You can switch off these panels in the sidebar.
+  - type: hint
+    text: "Hint with additional explanation. "
+  - type: tutorials
+    links:
+      - label: Angular — Component Styles
+        url: https://angular.io/guide/component-styles
+        lang: en

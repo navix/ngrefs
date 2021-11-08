@@ -1,0 +1,40 @@
+title: Component external styles
+url: component-external-styles
+entries:
+  - type: text
+    text: >
+      You can load styles from external CSS files by adding a `styleUrls`
+      property to a component's `@Component` decorator:
+  - type: text
+    text: |-
+      ```typescript
+      @Component({
+        selector: 'app-demo',
+        template: `
+          Demo component.
+        `,
+        styleUrls: ['./demo.component.css'],
+      })
+      export class DemoComponent {
+        ...
+      }
+      ```
+  - type: text
+    text: "Also you can include several style files:"
+  - type: text
+    text: |-
+      ```typescript
+      @Component({
+        selector: 'app-demo',
+        template: `
+          Demo component.
+        `,
+        styleUrls: [
+          '../styles/layout.css',
+          './demo.component.css',
+        ],
+      })
+      export class DemoComponent {
+        ...
+      }
+      ```

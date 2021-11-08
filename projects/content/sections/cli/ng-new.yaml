@@ -1,0 +1,24 @@
+type: CliCommand
+title: ng new
+interface: |
+  ng new [name] [--[argument]=[value]]
+  ng n
+short: Creates a new angular application.
+full: |
+  Creates and initializes a new Angular app that is the default project for a new workspace.
+
+  Provides interactive prompts for optional configuration, such as adding routing support. All prompts can safely be allowed to default.
+
+  If you plan to have multiple apps in the workspace, you can create an empty workspace by setting the `--createApplication` option to false.
+  You can then use `ng generate application` to create an initial app. This allows a workspace name different from the initial app name,
+  and ensures that all apps reside in the `/projects` subfolder, matching the structure of the configuration file.
+options:
+  - name: collection
+    short: Schematics collection to use.
+    type: String
+    default: "@schematics/angular"
+    aliases: c
+  - name: commit
+    short: Initial repository commit information.
+    type: boolean
+    default: true

@@ -1,0 +1,89 @@
+title: CanDeactivate interface
+url: candeactivate-interface
+entries:
+  - type: text
+    text: Interface that a class can implement to be a guard deciding if a route can
+      be deactivated.
+  - type: text
+    text: >-
+      ```typescript
+
+      interface CanDeactivate<T> {
+        canDeactivate(component: T, currentRoute: ActivatedRouteSnapshot, currentState: RouterStateSnapshot, nextState?: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean
+      }
+
+      ```
+  - type: text
+    text: "#### Example"
+  - type: text
+    text: >-
+      ```typescript
+
+      class UserToken {}
+
+      class Permissions {
+        canDeactivate(user: UserToken, id: string): boolean {
+          return true;
+        }
+      }
+       
+      @Injectable()
+
+      class CanDeactivateTeam implements CanDeactivate<TeamComponent> {
+        constructor(private permissions: Permissions, private currentUser: UserToken) {}
+       
+        canDeactivate(
+          component: TeamComponent,
+          currentRoute: ActivatedRouteSnapshot,
+          currentState: RouterStateSnapshot,
+          nextState: RouterStateSnapshot
+        ): Observable<boolean>|Promise<boolean>|boolean {
+          return this.permissions.canDeactivate(this.currentUser, route.params.id);
+        }
+      }
+       
+      @NgModule({
+        imports: [
+          RouterModule.forRoot([
+            {
+              path: 'team/:id',
+              component: TeamCmp,
+              canDeactivate: [CanDeactivateTeam]
+            }
+          ])
+        ],
+        providers: [CanDeactivateTeam, UserToken, Permissions]
+      })
+
+      class AppModule {}
+
+      ```
+  - type: text
+    text: "You can alternatively provide a function with the `canDeactivate`
+      signature:"
+  - type: text
+    text: >-
+      ```typescript
+
+      @NgModule({
+        imports: [
+          RouterModule.forRoot([
+            {
+              path: 'team/:id',
+              component: TeamCmp,
+              canDeactivate: ['canDeactivateTeam']
+            }
+          ])
+        ],
+        providers: [
+          {
+            provide: 'canDeactivateTeam',
+            useValue: (component: TeamComponent, currentRoute: ActivatedRouteSnapshot, currentState:
+      RouterStateSnapshot, nextState: RouterStateSnapshot) => true
+          }
+        ]
+      })
+
+      class AppModule {}
+
+      ```

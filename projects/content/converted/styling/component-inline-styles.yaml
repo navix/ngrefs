@@ -1,0 +1,21 @@
+title: Component inline styles
+url: component-inline-styles
+entries:
+  - type: text
+    text: |-
+      You can add a `styles` array property to the `@Component` decorator.
+
+      Each string in the array defines some CSS for this component.
+
+      ```typescript
+      @Component({
+        selector: 'app-demo',
+        template: `
+          <p>Demo component</p>
+        `,
+        styles: ['p { font-weight: bold; }']
+      })
+      export class DemoComponent {
+      /* . . . */
+      }
+      ```

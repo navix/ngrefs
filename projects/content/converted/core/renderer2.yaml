@@ -1,0 +1,222 @@
+title: Renderer2
+url: renderer2
+entries:
+  - type: text
+    text: >
+      The Renderer class is a service that provides an abstraction for UI
+      rendering manipulations. Using it is the recommended approach because it
+      then makes it easier to develop apps that can be rendered in different
+      environments.
+  - type: tutorials
+    links:
+      - label: "Angular: Stop manipulating DOM with ElementRef!"
+        url: https://medium.com/@kmathy/angular-manipulate-properly-the-dom-with-renderer-16a756508cba
+        lang: en
+      - label: Using Renderer2 in Angular
+        url: https://alligator.io/angular/using-renderer2/
+        lang: en
+  - type: toc
+  - type: interface-option
+    head: addClass
+    description: Implement this callback to add a class to an element in the DOM.
+    name: addClass
+    headId: addClass
+    interface: "addClass(el: any, name: string): void"
+  - type: interface-option
+    head: appendChild
+    description: Appends a child to a given parent node in the host element DOM.
+    name: appendChild
+    headId: appendChild
+    interface: "appendChild(parent: any, newChild: any): void"
+  - type: interface-option
+    head: createComment
+    description: |-
+      Implement this callback to add a comment to the DOM of the host element.
+
+      Returns The modified element.
+    name: createComment
+    headId: createComment
+    interface: "createComment(value: string): any"
+  - type: interface-option
+    head: createElement
+    description: |-
+      Implement this callback to create an instance of the host element.
+
+      Returns The new element.
+    name: createElement
+    headId: createElement
+    interface: "createElement(name: string, namespace?: string|null): any"
+    showAdditional: true
+    additional: >-
+      * `name` — an identifying name for the new element, unique within the
+      namespace.
+
+      * `namespace` - the namespace for the new element.
+  - type: interface-option
+    head: createText
+    description: |-
+      Implement this callback to add text to the DOM of the host element.
+
+      Returns The modified element.
+    name: createText
+    headId: createText
+    interface: "createText(value: string): any"
+  - type: interface-option
+    name: data
+    head: data
+    headId: data
+    interface: "get data(): {[key: string]: any}"
+    description: |-
+      Use to store arbitrary developer-defined data on a renderer instance,
+      as an object containing key-value pairs.
+      This is useful for renderers that delegate to other renderers.
+  - type: interface-option
+    head: destroy
+    description: Implement this callback to destroy the renderer or the host element.
+    name: destroy
+    headId: destroy
+    interface: "destroy(): void"
+  - type: interface-option
+    name: destroyNode
+    head: destroyNode
+    headId: destroyNode
+    interface: "destroyNode: ((node: any) => void)|null"
+    description: |-
+      If null or undefined, the view engine won't call it.
+      This is used as a performance optimization for production mode.
+  - type: interface-option
+    head: insertBefore
+    description: >-
+      Implement this callback to insert a child node at a given position in a
+      parent node
+
+      in the host element DOM.
+    name: insertBefore
+    headId: insertBefore
+    interface: "insertBefore(parent: any, newChild: any, refChild: any, isMove?:
+      boolean): void"
+    showAdditional: true
+    additional: |-
+      * `parent` — the parent node.
+      * `newChild` — the new child nodes.
+      * `refChild` — the existing child node that should precede the new node.
+  - type: interface-option
+    head: listen
+    description: |-
+      Implement this callback to start an event listener.
+
+      Returns An "unlisten" function for disposing of this handler.
+    name: listen
+    headId: listen
+    interface: "listen(target: 'window'|'document'|'body'|any, eventName: string,
+      callback: (event: any) => boolean | void): () => void"
+    showAdditional: true
+    additional: >-
+      * `target` — The context in which to listen for events. Can be the entire
+      window or document, the body of the document, or a specific DOM element.
+
+
+      * `eventName` — The event to listen for.
+
+
+      * `callback` — A handler function to invoke when the event occurs.
+  - type: interface-option
+    head: nextSibling
+    description: |-
+      Implement this callback to get the next sibling node of a given node
+      in the host element's DOM.
+
+      Returns The sibling node, or null if there is no sibling.
+      For WebWorkers, always returns a value.
+      This is because the check is synchronous,
+      and the caller can't rely on checking for null.
+    name: nextSibling
+    headId: nextSibling
+    interface: "nextSibling(node: any): any"
+    showAdditional: true
+    additional: >
+      Returns the sibling node, or null if there is no sibling. For WebWorkers,
+      always returns a value. This is because the check is synchronous, and the
+      caller can't rely on checking for null.
+  - type: interface-option
+    head: parentNode
+    description: |-
+      Implement this callback to get the parent of a given node
+      in the host element's DOM.
+
+      Returns The parent node, or null if there is no parent.
+      For WebWorkers, always returns true.
+      This is because the check is synchronous,
+      and the caller can't rely on checking for null.
+    name: parentNode
+    headId: parentNode
+    interface: "parentNode(node: any): any"
+    showAdditional: true
+    additional: Returns the parent node, or null if there is no parent. For
+      WebWorkers, always returns true. This is because the check is synchronous,
+      and the caller can't rely on checking for null.
+  - type: interface-option
+    head: removeAttribute
+    description: Implement this callback to remove an attribute from an element in the DOM.
+    name: removeAttribute
+    headId: removeAttribute
+    interface: "removeAttribute(el: any, name: string, namespace?: string|null): void"
+  - type: interface-option
+    head: removeChild
+    description: Implement this callback to remove a child node from the host element's DOM.
+    name: removeChild
+    headId: removeChild
+    interface: "removeChild(parent: any, oldChild: any, isHostElement?: boolean): void"
+  - type: interface-option
+    head: removeClass
+    description: Implement this callback to remove a class from an element in the DOM.
+    name: removeClass
+    headId: removeClass
+    interface: "removeClass(el: any, name: string): void"
+  - type: interface-option
+    head: removeStyle
+    description: Implement this callback to remove the value from a CSS style for an
+      element in the DOM.
+    name: removeStyle
+    headId: removeStyle
+    interface: "removeStyle(el: any, style: string, flags?: RendererStyleFlags2): void"
+  - type: interface-option
+    head: selectRootElement
+    description: |-
+      Implement this callback to prepare an element to be bootstrapped
+      as a root element, and return the element instance.
+
+      Returns The root element.
+    name: selectRootElement
+    headId: selectRootElement
+    interface: "selectRootElement(selectorOrNode: string|any, preserveContent?:
+      boolean): any"
+  - type: interface-option
+    head: setAttribute
+    description: Implement this callback to set an attribute value for an element in
+      the DOM.
+    name: setAttribute
+    headId: setAttribute
+    interface: "setAttribute(el: any, name: string, value: string, namespace?:
+      string|null): void"
+    showAdditional: false
+  - type: interface-option
+    head: setProperty
+    description: Implement this callback to set the value of a property of an
+      element in the DOM.
+    name: setProperty
+    headId: setProperty
+    interface: "setProperty(el: any, name: string, value: any): void"
+  - type: interface-option
+    head: setStyle
+    description: Implement this callback to set a CSS style for an element in the DOM.
+    name: setStyle
+    headId: setStyle
+    interface: "setStyle(el: any, style: string, value: any, flags?:
+      RendererStyleFlags2): void"
+  - type: interface-option
+    head: setValue
+    description: Implement this callback to set the value of a node in the host element.
+    name: setValue
+    headId: setValue
+    interface: "setValue(node: any, value: string): void"

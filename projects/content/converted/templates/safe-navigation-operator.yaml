@@ -1,0 +1,42 @@
+title: Safe navigation operator .?
+url: safe-navigation-operator
+entries:
+  - type: text
+    text: >
+      The Angular safe navigation operator (`?.`) is a fluent and convenient way
+      to guard against `null` and `undefined` values in property paths. 
+
+
+      Here it is, protecting against a view render failure if the `currentHero` is null:
+
+
+      ```html
+
+      The current hero's name is {{currentHero?.name}}
+
+      ```
+
+
+      It works perfectly with long property paths:
+
+
+      ```html
+
+      The current hero's name is {{currentHero?.info?.name}}
+
+      ```
+
+
+      And methods:
+
+
+      ```html
+
+      The current hero's name is {{currentHero?.getInfo()?.name}}
+
+      ```
+  - type: tutorials
+    links:
+      - label: Angular — The safe navigation operator ( ?. ) and null property paths
+        url: https://angular.io/guide/template-syntax#the-safe-navigation-operator----and-null-property-paths
+        lang: en

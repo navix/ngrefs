@@ -1,0 +1,39 @@
+title: ControlContainer
+url: controlcontainer
+entries:
+  - type: text
+    text: A base class for directives that contain multiple registered instances of
+      [`NgControl`](../ngcontrol). Only used by the forms module.
+  - type: text
+    text: |-
+      ### Subclasses
+
+      * [AbstractFormGroupDirective](../abstractformgroupdirective)
+          * [NgModelGroup](../ngmodelgroup-directive)
+          * [FormGroupName](../formgroupname-directive)
+      * [NgForm](../ngform-directive)
+      * [FormGroupDirective](../formgroup-directive)
+      * [FormArrayName](../formarrayname-directive)
+  - type: text
+    text: >
+      ## Interface, extends
+      [AbstractControlDirective](../abstractcontroldirective)
+  - type: toc
+  - type: interface-option
+    name: name
+    head: name
+    headId: name
+    interface: "name: string|number|null"
+    description: The name for the control
+  - type: interface-option
+    name: formDirective
+    head: formDirective
+    headId: formDirective
+    interface: "get formDirective(): Form|null"
+    description: The top-level form directive for the control.
+  - type: interface-option
+    name: path
+    head: path
+    headId: path
+    interface: "get path(): string[]|null"
+    description: The path to this group.

@@ -1,0 +1,133 @@
+title: ngFor directive
+url: ngfor-directive
+entries:
+  - type: text
+    text: NgForOf is a repeater directive — a way to present a list of items. You
+      define a block of HTML that defines how a single item should be displayed.
+      You tell Angular to use that block as a template for rendering each item
+      in the list.
+  - type: demo
+    source: |
+      ```html
+      <div *ngFor="let item of items">
+        {{ item }}
+      </div>
+      ```
+
+      ```typescript
+      export class AppComponent {
+        items = ['One', 'Two', 'Three'];
+      }
+      ```
+    demo: V6TemplatesNgfor1DemoComponent
+  - type: text
+    text: "You can also apply an `NgForOf` to a component element, as in this demo:"
+  - type: demo
+    source: |+
+      ##### app.component.ts
+
+      ```html
+      <my-component *ngFor="let item of items" 
+                    [item]="item">
+      </my-component>
+      ```
+
+      ##### app.component.ts
+
+      ```typescript
+      export class AppComponent {
+        items = ['One', 'Two', 'Three'];
+      }
+      ```
+
+      ##### my.component.html
+
+      ```html
+      <div>{{ item }}</div> 
+      ```
+
+      ##### my.component.ts
+
+      ```typescript
+      export class MyComponent {
+        @Input() item: string;
+      }
+      ```
+
+    demo: V6TemplatesNgfor1DemoComponent
+  - type: text
+    text: >-
+      ### Local Variables
+
+
+      `NgForOf` provides several exported values that can be aliased to local variables:
+
+
+      - `$implicit: T`: The value of the individual items in the iterable (`ngForOf`).
+
+      - `ngForOf: NgIterable<T>`: The value of the iterable expression. Useful when the expression is more complex then a property access, for example when using the async pipe (`userStreams | async`).
+
+      - `index: number`: The index of the current item in the iterable.
+
+      - `first: boolean`: True when the item is the first item in the iterable.
+
+      - `last: boolean`: True when the item is the last item in the iterable.
+
+      - `even: boolean`: True when the item has an even index in the iterable.
+
+      - `odd: boolean`: True when the item has an odd index in the iterable.
+  - type: demo
+    source: >
+      ```html
+
+      <li *ngFor="let item of itemsObservable | async as items; index as i; first as isFirst">
+        {{i}}/{{items.length}}. {{ item }} <span *ngIf="isFirst">default</span>
+      </li>
+
+      ```
+
+
+      ```typescript
+
+      export class AppComponent {
+        itemsObservable = from([['One', 'Two', 'Three']]);
+      }
+
+      ```
+    demo: V6TemplatesNgfor2DemoComponent
+  - type: text
+    text: >-
+      ### *ngFor with trackBy
+
+
+      The `NgForOf` directive may perform poorly, especially with large lists. A small change to one item, an item removed, or an item added can trigger a cascade of DOM manipulations.
+
+
+      Angular can avoid this churn with `trackBy`. Add a method to the component that returns the value `NgForOf` should track.
+  - type: demo
+    source: |
+      ```html
+      <div *ngFor="let item of items; trackBy: trackById">
+        ({{item.id}}) {{item.title}}
+      </div>
+      ```
+
+      ```typescript
+      export class AppComponent {
+        items = [
+          {id: 1, title: 'One'},
+          {id: 2, title: 'Two'},
+          {id: 3, title: 'Three'},
+        ];
+
+        trackById(index: number, item: any): number {
+          return item.id;
+        }
+      }
+      ```
+    demo: V6TemplatesNgfor3DemoComponent
+  - type: tutorials
+    links:
+      - label: Angular 2 — Improve performance with trackBy
+        url: https://netbasal.com/angular-2-improve-performance-with-trackby-cc147b5104e5
+        lang: en

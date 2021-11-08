@@ -1,0 +1,72 @@
+title: ng lint
+url: command-ng-lint
+entries:
+  - type: text
+    text: >
+      ```
+
+      ng lint [project] [--[argument]=[value]]
+
+      ng l
+
+      ```
+
+
+      Runs linting tools on Angular app code in a given project folder.
+
+
+      Alias for the command:
+       
+      ```
+
+      ng run [project]:lint
+
+      ```
+
+
+      `[project]` — the name of the project to build.
+
+
+      When a project name is not supplied, it will execute for all projects.
+
+
+      ---
+
+
+      By default for applications CLI uses builder [`tslint`](../builder-tslint).
+
+
+      The default linting tool is [TSLint](https://palantir.github.io/tslint/), and the default configuration is specified in the project's `tslint.json` file.
+
+
+      A builder runs with default configuration options specified in the workspace configuration file (`angular.json`) or with a named alternative configuration.
+
+
+      The configuration options generally correspond to the command options.
+
+      You can override individual configuration defaults by specifying the corresponding options on the command line.
+
+      The command can accept option names given in either dash-case or camelCase.
+
+      Note that in the configuration file, you must specify names in camelCase.
+
+
+      Some additional options can only be set through the configuration file,
+
+      either by direct editing or with the `ng config` command.
+  - type: tutorials
+    links:
+      - url: https://angular.io/cli/lint
+        label: Angular - ng lint
+  - type: text
+    text: "## Options"
+  - type: command-param
+    head: configuration
+    description: "Specify the configuration to use. "
+    name: configuration
+    headId: configuration
+    paramType: string
+    aliases: c
+  - type: text
+    text: |
+      ### Go to [`tslint` builder options](../builder-tslint).

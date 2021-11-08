@@ -1,0 +1,27 @@
+title: UrlSegment
+url: urlsegment
+entries:
+  - type: text
+    text: >-
+      Represents a single URL segment.
+
+
+      A `UrlSegment` is a part of a URL between the two slashes. It contains a path and the matrix
+
+      parameters associated with the segment.
+  - type: text
+    text: "#### Example"
+  - type: text
+    text: |-
+      ```typescript
+      @Component({templateUrl:'template.html'})
+      class MyComponent {
+        constructor(router: Router) {
+          const tree: UrlTree = router.parseUrl('/team;id=33');
+          const g: UrlSegmentGroup = tree.root.children[PRIMARY_OUTLET];
+          const s: UrlSegment[] = g.segments;
+          s[0].path; // returns 'team'
+          s[0].parameters; // returns {id: 33}
+        }
+      }
+      ```

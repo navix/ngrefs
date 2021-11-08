@@ -1,0 +1,79 @@
+title: Protractor builder
+url: builder-protractor
+entries:
+  - type: text
+    text: |
+      ID: `@angular-devkit/build-angular:protractor`
+  - type: tutorials
+    links:
+      - label: Introduction to E2E Testing with the Angular CLI and Protractor
+        url: https://coryrylan.com/blog/introduction-to-e2e-testing-with-the-angular-cli-and-protractor
+        lang: en
+  - type: text
+    text: "## Options"
+  - type: toc
+  - type: command-param
+    head: baseUrl
+    description: Base URL for protractor to connect to.
+    name: baseUrl
+    headId: baseUrl
+    paramType: string
+  - type: command-param
+    head: devServerTarget
+    description: Dev server target to run tests against.
+    name: devServerTarget
+    headId: devServerTarget
+    paramType: string
+  - type: command-param
+    head: elementExplorer
+    description: Start Protractor's [Element
+      Explorer](https://github.com/angular/protractor/blob/master/docs/debugging.md#testing-out-protractor-interactively)
+      for debugging.
+    name: elementExplorer
+    headId: elementExplorer
+    paramType: boolean
+  - type: command-param
+    head: host
+    description: Host to listen on.
+    name: host
+    headId: host
+    paramType: string
+    default: localhost
+  - type: command-param
+    head: port
+    description: The port to use to serve the application.
+    name: port
+    headId: port
+    paramType: number
+  - type: command-param
+    head: protractorConfig
+    description: The name of the Protractor configuration file.
+    name: protractorConfig
+    headId: protractorConfig
+    paramType: string
+  - type: command-param
+    head: specs
+    description: Override specs in the protractor config.
+    name: specs
+    headId: specs
+    paramType: array
+  - type: command-param
+    head: suite
+    description: Override suite in the protractor config.
+    name: suite
+    headId: suite
+    paramType: string
+  - type: command-param
+    head: webdriverUpdate
+    description: Try to update webdriver.
+    name: webdriverUpdate
+    headId: webdriverUpdate
+    paramType: boolean
+    default: "true"
+  - type: command-param
+    name: serve
+    head: serve
+    headId: serve
+    paramType: boolean
+    default: true
+    description: Compile and Serve the app.

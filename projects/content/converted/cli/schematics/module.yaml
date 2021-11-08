@@ -1,0 +1,67 @@
+title: Module generator
+url: schematic-module
+entries:
+  - type: text
+    text: |
+      ```
+      ng generate module [name] [--[argument]=[value]]
+      ng generate m
+      ```
+  - type: text
+    text: |
+      Create an Angular module.
+  - type: text
+    text: "## Options"
+  - type: toc
+  - type: command-param
+    head: flat
+    description: Flag to indicate if a dir is created.
+    name: flat
+    headId: flat
+    paramType: boolean
+    default: "false"
+  - type: command-param
+    head: lintFix
+    headId: lintFix
+    name: lintFix
+    paramType: boolean
+    default: "false"
+    description: When true, applies lint fixes after generating the module.
+  - type: command-param
+    head: module
+    description: Allows specification of the declaring module.
+    name: module
+    headId: module
+    paramType: string
+    default: ""
+    aliases: m
+  - type: command-param
+    head: project
+    description: The name of the project.
+    name: project
+    headId: project
+    paramType: string
+    aliases: ""
+  - type: command-param
+    head: route
+    headId: route
+    name: route
+    paramType: string
+    description: The route path for a lazy-loaded module. When supplied, creates a
+      component in the new module, and adds the route to that component in the
+      `Routes` array declared in the module provided in the `--module` option.
+  - type: command-param
+    head: routing
+    description: Generates a routing module.
+    name: routing
+    headId: routing
+    paramType: boolean
+    default: "false"
+  - type: command-param
+    head: routingScope
+    description: The scope for the generated routing.
+    name: routingScope
+    headId: routingScope
+    paramType: string
+    values: Child|Root
+    default: Child

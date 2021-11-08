@@ -1,0 +1,72 @@
+title: "@Output"
+url: output
+entries:
+  - type: text
+    text: An Output property is an observable property annotated with an `@Output`
+      decorator. The property almost always returns an Angular `EventEmitter`.
+      Values flow out of the component as events bound with an event binding.
+  - type: text
+    text: >-
+      #### Example
+
+
+      ```typescript
+
+      @Output() testEvent = new EventEmitter<any>();
+
+      ```
+
+
+      Alternatively, you can identify members in the outputs array of the directive metadata, as in this example:
+
+
+      ```typescript
+
+      @Component({
+        outputs: ['testEvent'],
+      })
+
+      ```
+  - type: text
+    text: "## Options"
+  - type: text
+    text: |-
+      ```typescript
+      @Output(propertyBindingName: string)
+      ```
+  - type: interface-option
+    head: bindingPropertyName
+    description: |-
+      You can supply an optional name to use in templates when the
+      component is instantiated, that maps to the
+      name of the bound property. By default, the original
+      name of the bound property is used for output binding.
+    name: bindingPropertyName
+    headId: bindingPropertyName
+    interface: "bindingPropertyName?: string"
+    showAdditional: true
+    additional: |-
+      The following example creates a component with two output properties,
+      one of which is given a special binding name.
+
+      ```typescript
+      @Component({
+        selector: 'output-test',
+        ...
+      })
+      class BankAccount {
+        // This property is bound using its original name.
+        @Output() test = new EventEmitter();
+        // this property value is bound to a different property name
+        // when this component is instantiated in a template.
+        @Input('test-2') test2 = new EventEmitter();
+      }
+
+      @Component({
+        selector: 'app',
+        template: `
+          <output-test (test)="..." (test-2)="..."></output-test>
+        `
+      })
+      class App {}
+      ```

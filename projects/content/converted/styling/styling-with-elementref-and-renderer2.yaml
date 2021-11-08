@@ -1,0 +1,50 @@
+title: Styling with ElementRef and Renderer2
+url: styling-with-elementref-and-renderer2
+entries:
+  - type: text
+    text: If we want to access the DOM element directly to manipulate its styles. In
+      order to do that we need to inject `ElementRef` and access to the
+      `nativeElement` property. This will give us access to the DOM APIs.
+  - type: text
+    text: |-
+      ```typescript
+      export class DemoComponent {
+        constructor(private element: ElementRef){
+          let el = this.element.nativeElement;
+          // Option 1
+          el.style.color = 'white';
+          el.style.background = 'red';
+          // Option 2
+          el.style.cssText = 'color: white; background: red;";
+          // Option 3
+          el.setAttribute('style', 'color: white; background: red');
+        }
+      }
+      ```
+  - type: text
+    text: "### Renderer2"
+  - type: text
+    text: The [`Renderer2`](../../core/renderer2) class is a service that provides
+      an abstraction for UI rendering manipulations. Using it is the recommended
+      approach because it then makes it easier to develop apps that can be
+      rendered in different environments.
+  - type: text
+    text: |
+      ```typescript
+      export class DemoComponent {
+        constructor(
+          private element: ElementRef,
+          private renderer: Renderer2,
+        ){
+          let el = this.element.nativeElement;
+          renderer.setElementStyle(el, 'color', 'white');
+          renderer.setElementStyle(el, 'background', 'red');
+        }
+      }
+      ```
+  - type: tutorials
+    links:
+      - {}
+      - label: "Angular: Stop manipulating DOM with ElementRef!"
+        url: https://medium.com/@kmathy/angular-manipulate-properly-the-dom-with-renderer-16a756508cba
+        lang: en

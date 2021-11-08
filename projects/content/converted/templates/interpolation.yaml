@@ -1,0 +1,80 @@
+title: Interpolation
+url: interpolation
+entries:
+  - type: text
+    text: HTML is the language of the Angular template. Almost all HTML syntax is
+      valid template syntax.
+  - type: demo
+    source: |
+      ```typescript
+      Just a regular <strong>html</strong>!
+      ```
+    demo: v6-templates-interpolation1-demo
+  - type: tutorials
+    links:
+      - label: Angular Template Syntax
+        url: https://angular.io/guide/template-syntax
+        lang: en
+  - type: text
+    text: You use interpolation to weave calculated strings into the text between
+      HTML element tags and within attribute assignments.
+  - type: demo
+    source: |
+      ```html
+      {{title}}
+      <div>
+        <img src="{{imageUrl}}" style="height:150px">
+      </div>
+      ```
+
+      ```typescript
+      export class MyComponent {
+        title = 'Angular';
+        imageUrl = 'https://angular.io/assets/images/logos/angular/angular.svg';
+      }
+      ```
+    demo: v6-templates-interpolation2-demo
+  - type: text
+    text: "More generally, the text between the braces is a template expression that
+      Angular first evaluates and then converts to a string. "
+  - type: demo
+    source: |-
+      ```html
+      The sum of 1 + 1 is {{1 + 1}}
+      ```
+    demo: v6-templates-interpolation3-demo
+  - type: text
+    text: "The expression can invoke methods of the host component such as
+      `getVal()`, seen here:"
+  - type: demo
+    source: |
+      ```html
+      The sum of 1 + 1 is not {{1 + 1 + getVal()}}
+      ```
+
+      ```typescript
+      export class MyComponent {
+        getVal() {
+          return 2;
+        }
+      }
+      ```
+    demo: v6-templates-interpolation4-demo
+  - type: text
+    text: >-
+      You write these template expressions in a language that looks like
+      JavaScript. Many JavaScript expressions are legal template expressions,
+      but not all.
+
+
+      JavaScript expressions that have or promote side effects are prohibited, including:
+
+        * assignments (`=`, `+=`, `-=`, ...)
+        * `new`
+        * chaining expressions with `;` or `,`
+        * increment and decrement operators (`++` and `--`)
+
+      Other notable differences from JavaScript syntax include:
+
+        * no support for the bitwise operators `|` and `&`
+        * new template expression operators, such as `|`, `?.` and `!`.

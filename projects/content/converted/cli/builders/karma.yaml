@@ -1,0 +1,140 @@
+title: Karma builder
+url: builder-karma
+entries:
+  - type: text
+    text: |
+      ID: `@angular-devkit/build-angular:karma`
+  - type: tutorials
+    links:
+      - label: Angular Testing
+        url: https://angular.io/guide/testing
+        lang: en
+  - type: text
+    text: "## Options"
+  - type: toc
+  - type: command-param
+    head: assets
+    description: List of static application assets.
+    name: assets
+    headId: assets
+    paramType: array
+  - type: command-param
+    head: browsers
+    description: Override which browsers tests are run against.
+    name: browsers
+    headId: browsers
+    default: ""
+    paramType: string
+  - type: command-param
+    head: codeCoverage
+    description: Output a code coverage report.
+    name: codeCoverage
+    headId: codeCoverage
+    paramType: boolean
+  - type: command-param
+    head: codeCoverageExclude
+    description: Globs to exclude from code coverage.
+    name: codeCoverageExclude
+    headId: codeCoverageExclude
+    paramType: array
+  - type: command-param
+    head: environment
+    description: Defines the build environment.
+    name: environment
+    headId: environment
+    paramType: string
+  - type: command-param
+    head: fileReplacements
+    description: Replace files with other files in the build.
+    name: fileReplacements
+    headId: fileReplacements
+    paramType: array
+  - type: command-param
+    head: karmaConfig
+    description: The name of the Karma configuration file.
+    name: karmaConfig
+    headId: karmaConfig
+    paramType: string
+  - type: command-param
+    head: main
+    description: The name of the main entry-point file.
+    name: main
+    headId: main
+    paramType: string
+  - type: command-param
+    head: poll
+    description: Enable and define the file watching poll time period in milliseconds.
+    name: poll
+    headId: poll
+    paramType: number
+  - type: command-param
+    head: polyfills
+    description: The name of the polyfills file.
+    name: polyfills
+    headId: polyfills
+    paramType: string
+  - type: command-param
+    head: preserveSymlinks
+    description: Do not use the real path when resolving modules.
+    name: preserveSymlinks
+    headId: preserveSymlinks
+    paramType: boolean
+  - type: command-param
+    head: progress
+    description: Log progress to the console while building.
+    name: progress
+    headId: progress
+    paramType: boolean
+    default: "true"
+  - type: command-param
+    name: reporters
+    head: reporters
+    headId: reporters
+    paramType: array
+    default: ""
+    description: Karma reporters to use. Directly passed to the karma runner.
+  - type: command-param
+    head: scripts
+    description: Global scripts to be included in the build.
+    name: scripts
+    headId: scripts
+    paramType: array
+  - type: command-param
+    head: sourceMap
+    description: Output sourcemaps.
+    name: sourceMap
+    headId: sourceMap
+    paramType: boolean
+    default: "true"
+  - type: command-param
+    head: stylePreprocessorOptions
+    description: Options to pass to style preprocessors.
+    name: stylePreprocessorOptions
+    headId: stylePreprocessorOptions
+    paramType: object
+  - type: command-param
+    head: styles
+    description: Global styles to be included in the build.
+    name: styles
+    headId: styles
+    paramType: array
+  - type: command-param
+    head: tsConfig
+    description: |
+      The name of the TypeScript configuration file.
+    name: tsConfig
+    headId: tsConfig
+    paramType: string
+  - type: command-param
+    head: watch
+    description: Run build when files change.
+    name: watch
+    headId: watch
+    paramType: boolean
+  - type: command-param
+    name: webWorkerTsConfig
+    head: webWorkerTsConfig
+    headId: webWorkerTsConfig
+    paramType: string
+    default: ""
+    description: TypeScript configuration for Web Worker modules.

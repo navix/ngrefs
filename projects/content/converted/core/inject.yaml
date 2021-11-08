@@ -1,0 +1,61 @@
+title: "@Inject"
+url: inject
+entries:
+  - type: text
+    text: >
+      A constructor parameter decorator that specifies a custom provider of a
+      dependency.
+  - type: text
+    text: |-
+      ```typescript
+      constructor(@Inject(ServiceToken) service: Service) {}
+      ```
+  - type: text
+    text: "#### Example"
+  - type: text
+    text: >-
+      The following example shows a class constructor that specifies a custom
+      provider of a dependency using the parameter decorator.
+
+
+      ```typescript
+
+      class Engine {}
+
+
+      @Injectable()
+
+      class Car {
+        constructor(@Inject('MyEngine') public engine: Engine) {}
+      }
+
+
+      const injector = ReflectiveInjector.resolveAndCreate([{provide: 'MyEngine', useClass: Engine}, Car]);
+
+
+      expect(injector.get(Car).engine instanceof Engine).toBe(true);
+
+      ```
+
+
+      When `@Inject()` is not present, the `Injector` uses the type annotation of the parameter as the provider.
+
+
+      ```typescript
+
+      class Engine {}
+
+
+      @Injectable()
+
+      class Car {
+        constructor(public engine: Engine) {
+        }  // same as constructor(@Inject(Engine) engine:Engine)
+      }
+
+
+      const injector = ReflectiveInjector.resolveAndCreate([Engine, Car]);
+
+      expect(injector.get(Car).engine instanceof Engine).toBe(true);
+
+      ```

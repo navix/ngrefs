@@ -1,0 +1,45 @@
+title: Router
+url: router
+color: "#386ef3"
+menu:
+  - label: Introduction
+    file: intro
+  - label: Configuration
+    file: configuration
+  - label: Route interface
+    file: route-interface
+  - label: ExtraOptions interface
+    file: extraoptions-interface
+  - label: CanActivate interface
+    file: canactivate-interface
+  - label: CanActivateChild interface
+    file: canactivatechild-interface
+  - label: CanDeactivate interface
+    file: candeactivate-interface
+  - label: Resolve interface
+    file: resolve-interface
+  - label: CanLoad interface
+    file: canload-interface
+  - label: Router
+    file: router
+  - label: |
+      NavigationExtras
+    file: navigationextras
+  - label: Events
+    file: events
+  - label: UrlTree
+    file: urltree
+  - label: UrlSegment
+    file: urlsegment
+  - label: UrlMatcher
+    file: urlmatcher
+  - label: ActivatedRoute
+    file: activatedroute
+  - label: ActivatedRouteSnapshot
+    file: activatedroutesnapshot
+  - label: "[routerLink] directive"
+    file: routerlink-directive
+  - label: "[routerLinkActive] directive"
+    file: routerlinkactive-directive
+  - label: router-outlet directive
+    file: router-outlet-directive

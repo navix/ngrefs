@@ -1,0 +1,29 @@
+title: i18nPlural pipe
+url: plural-pipe
+entries:
+  - type: text
+    text: >
+      Maps a value to a string that pluralizes the value according to locale
+      rules.
+
+
+      See [CLDR — Plural Rules](http://cldr.unicode.org/index/cldr-spec/plural-rules).
+  - type: demo
+    source: |-
+      ```html
+      <input [(ngModel)]="value">
+      {{ value | i18nPlural: mapping }}
+      ```
+
+      ```typescript
+      export class AppComponent {
+        value = 1;
+
+        mapping: {[k: string]: string} = {
+          '=0': 'No messages.',
+          '=1': 'One message.',
+          'other': '# messages.',
+        };
+      }
+      ```
+    demo: V6TemplatesPluralpipeDemoComponent

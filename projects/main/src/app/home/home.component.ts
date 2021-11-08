@@ -1,6 +1,5 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { versionsDigest } from '../content/versionsDigest';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Content } from '../content/content';
 
 @Component({
   selector: 'main-home',
@@ -8,20 +7,9 @@ import { versionsDigest } from '../content/versionsDigest';
   styleUrls: ['./home.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomeComponent implements OnInit {
-  versions = versionsDigest;
-
-  versionUrl?: string;
-
+export class HomeComponent {
   constructor(
-    private route: ActivatedRoute,
+    public content: Content,
   ) {
-  }
-
-  ngOnInit() {
-    this.route.params
-      .subscribe(({versionUrl}) => {
-        this.versionUrl = versionUrl;
-      });
   }
 }

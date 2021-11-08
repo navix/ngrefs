@@ -1,0 +1,158 @@
+title: Route interface
+url: route-interface
+entries:
+  - type: text
+    text: >
+      `Routes` is an array of route configurations. Pass it to the
+      `RouterModule.forRoot` or `forChild` method in the module imports to
+      configure the router.
+  - type: text
+    text: "#### Example"
+  - type: text
+    text: |-
+      ```typescript
+      ...
+      RouterModule.forRoot([
+        {
+          path: 'team/:id',
+          component: Team,
+          children: [{
+            path: 'user/:name',
+            component: User,
+          }],
+        },
+      ]),
+      ```
+  - type: text
+    text: "## Options"
+  - type: toc
+  - type: interface-option
+    head: canActivate
+    description: An array of DI tokens used to look up
+      [`CanActivate`](../canactivate-interface) handlers.
+    name: canActivate
+    headId: canActivate
+    interface: "canActivate?: any[]"
+  - type: interface-option
+    head: canActivateChild
+    description: An array of DI tokens used to look up
+      [`CanActivateChild`](../canactivatechild-interface) handlers.
+    name: canActivateChild
+    headId: canActivateChild
+    interface: "canActivateChild?: any[]"
+  - type: interface-option
+    head: canDeactivate
+    description: An array of DI tokens used to look up
+      [`CanDeactivate`](../candeactivate-interface) handlers.
+    name: canDeactivate
+    headId: canDeactivate
+    interface: "canDeactivate?: any[]"
+  - type: interface-option
+    head: canLoad
+    description: An array of DI tokens used to look up
+      [`CanLoad`](../canload-interface) handlers.
+    name: canLoad
+    headId: canLoad
+    interface: "canLoad?: any[]"
+  - type: interface-option
+    head: children
+    description: An array of child route definitions.
+    name: children
+    headId: children
+    interface: "children?: Routes"
+  - type: interface-option
+    head: component
+    description: A component type.
+    name: component
+    headId: component
+    interface: "component?: Type<any>"
+  - type: interface-option
+    head: data
+    description: Additional data provided to the component via
+      [`ActivatedRoute`](../activatedroute).
+    name: data
+    headId: data
+    interface: "data?: Data"
+  - type: interface-option
+    head: loadChildren
+    description: A reference to lazy loaded child routes.
+    name: loadChildren
+    headId: loadChildren
+    interface: "loadChildren?: LoadChildren"
+    tutorialsEntry:
+      id: c09e1015-c7e3-8317-a39e-476f57d4e617
+      type: tutorials
+      links:
+        - lang: en
+          label: Angular — Lazy Loading Feature Modules
+          url: https://angular.io/guide/lazy-loading-ngmodules
+  - type: interface-option
+    head: matcher
+    description: Defines a [custom strategy for path matching](../urlmatcher) and
+      supersedes `path` and `pathMatch`.
+    name: matcher
+    headId: matcher
+    interface: "matcher?: UrlMatcher"
+  - type: interface-option
+    head: outlet
+    description: The name of the outlet the component should be placed into.
+    name: outlet
+    headId: outlet
+    interface: "outlet?: string"
+    tutorialsEntry:
+      id: d1ff2467-f801-6ece-b628-ab8480eff608
+      type: tutorials
+      links:
+        - lang: en
+          label: Using Auxiliary Routes
+          url: https://angular-2-training-book.rangle.io/handout/routing/aux-routes.html
+  - type: interface-option
+    head: path
+    description: A string that uses the [route matcher DSL](../urlmatcher).
+    name: path
+    headId: path
+    interface: "path?: string"
+  - type: interface-option
+    head: pathMatch
+    description: A string that specifies the matching strategy.
+    name: pathMatch
+    headId: pathMatch
+    interface: "pathMatch?: string"
+  - type: interface-option
+    head: redirectTo
+    description: The url fragment which will replace the current matched segment.
+    name: redirectTo
+    headId: redirectTo
+    interface: "redirectTo?: string"
+    tutorialsEntry:
+      id: 92d3d916-dcbe-d8a8-a98a-968b4798f999
+      type: tutorials
+      links:
+        - lang: en
+          label: "Angular Router: Understanding Redirects"
+          url: https://vsavkin.com/angular-router-understanding-redirects-2826177761fc
+  - type: interface-option
+    head: resolve
+    description: A map of DI tokens used to look up [data resolvers](../resolve-interface).
+    name: resolve
+    headId: resolve
+    interface: "resolve?: ResolveData"
+    tutorialsEntry:
+      id: 609eb76b-582a-42e8-2ea6-f9e6511cb099
+      type: tutorials
+      links:
+        - lang: en
+          label: Resolving route data in Angular by thoughtram
+          url: https://blog.thoughtram.io/angular/2016/10/10/resolving-route-data-in-angular-2.html
+        - lang: en
+          label: "Angular Router: Route Resolvers"
+          url: https://alligator.io/angular/route-resolvers/
+  - type: interface-option
+    head: runGuardsAndResolvers
+    description: Defines when guards and resolvers will be run. By default they run
+      only when the matrix parameters of the route change. When set to
+      `paramsOrQueryParamsChange` they will also run when query params change.
+      And when set to always, they will run every time.
+    name: runGuardsAndResolvers
+    headId: runGuardsAndResolvers
+    interface: "runGuardsAndResolvers?: RunGuardsAndResolvers"

@@ -1,0 +1,26 @@
+title: Quick start
+url: quick-start
+type: simple
+content:
+  text: |
+    Install Angular CLI:
+    ```
+    npm i @angular/cli -g
+    ```
+
+    Create a new project:
+    ```
+    ng new my-app
+    ```
+
+    Serve the application:
+    ```
+    cd my-app
+    ng serve
+    ```
+
+    Now open `localhost:4200` in your browser.
+
+    <div class="tutorials">
+      <a href="https://angular.io/guide/quickstart" target="blank">Angular QuickStart</a>
+    </div>

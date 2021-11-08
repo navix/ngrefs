@@ -1,0 +1,62 @@
+title: App-shell builder
+url: builder-app-shell
+entries:
+  - type: text
+    text: |+
+      ID: `@angular-devkit/build-angular:app-shell`
+
+  - type: hint
+    text: App shell is a way to render a portion of your application via a route at
+      build time. This gives users a meaningful first paint of your application
+      because the browser does not need to initialize any JavaScript, just
+      rendering the HTML.
+  - type: tutorials
+    links:
+      - label: Angular App Shell - Boosting Application Startup Performance
+        url: https://blog.angular-university.io/angular-app-shell/
+        lang: en
+  - type: text
+    text: "## Options"
+  - type: toc
+  - type: command-param
+    head: appModuleBundle
+    description: Script that exports the Server AppModule to render. This should be
+      the main JavaScript outputted by the server target. By default we will
+      resolve the outputPath of the serverTarget and find a bundle named 'main'
+      in it (whether or not there's a hash tag).
+    name: appModuleBundle
+    headId: appModuleBundle
+    paramType: string
+  - type: command-param
+    head: browserTarget
+    description: Target to build.
+    name: browserTarget
+    headId: browserTarget
+    paramType: string
+  - type: command-param
+    head: inputIndexPath
+    description: The input path for the `index.html` file. By default uses the
+      output index.html of the browser target.
+    name: inputIndexPath
+    headId: inputIndexPath
+    paramType: string
+  - type: command-param
+    head: outputIndexPath
+    description: The output path of the index.html file. By default will overwrite
+      the input file.
+    name: outputIndexPath
+    headId: outputIndexPath
+    paramType: string
+  - type: command-param
+    head: route
+    description: The route to render.
+    name: route
+    headId: route
+    paramType: string
+    default: /
+  - type: command-param
+    head: serverTarget
+    description: Server target to use for rendering the app shell.
+    name: serverTarget
+    headId: serverTarget
+    paramType: string

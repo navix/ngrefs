@@ -1,0 +1,36 @@
+title: UrlTree
+url: urltree
+entries:
+  - type: text
+    text: >-
+      Represents the parsed URL.
+
+
+      Since a router state is a tree, and the URL is nothing but a serialized state, the URL is a
+
+      serialized tree.
+
+
+      `UrlTree` is a data structure that provides a lot of affordances in dealing with URLs.
+  - type: text
+    text: "#### Example"
+  - type: text
+    text: >-
+      ```typescript
+
+      @Component({templateUrl:'template.html'})
+
+      class MyComponent {
+        constructor(router: Router) {
+          const tree: UrlTree =
+            router.parseUrl('/team/33/(user/victor//support:help)?debug=true#fragment');
+          const f = tree.fragment; // return 'fragment'
+          const q = tree.queryParams; // returns {debug: 'true'}
+          const g: UrlSegmentGroup = tree.root.children[PRIMARY_OUTLET];
+          const s: UrlSegment[] = g.segments; // returns 2 segments 'team' and '33'
+          g.children[PRIMARY_OUTLET].segments; // returns 2 segments 'user' and 'victor'
+          g.children['support'].segments; // return 1 segment 'help'
+        }
+      }
+
+      ```

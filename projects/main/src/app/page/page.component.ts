@@ -3,12 +3,12 @@ import { ChangeDetectorRef, Component, Inject, NgZone, OnDestroy, OnInit } from 
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { Subject } from 'rxjs';
 import { take, takeUntil } from 'rxjs/operators';
-import { ContentPage, VersionDigest } from '../content/meta';
+import { VersionDigest } from '../content/meta';
+import { Content2Page } from '../content/meta2';
 import { versionsDigest } from '../content/versionsDigest';
 import { CrossLinkingService } from '../cross-linking.service';
 import { SectionComponent } from '../section/section/section.component';
 import { SeoService } from '../seo.service';
-import { VersionComponent } from '../version/version.component';
 
 @Component({
   selector: 'main-page',
@@ -18,7 +18,7 @@ import { VersionComponent } from '../version/version.component';
 export class PageComponent implements OnInit, OnDestroy {
   pageUrl: string;
 
-  page?: ContentPage;
+  page?: Content2Page;
 
   defaultVersionLink?: string[];
 
@@ -30,15 +30,10 @@ export class PageComponent implements OnInit, OnDestroy {
     private zone: NgZone,
     @Inject(DOCUMENT) private document: any,
     private sectionComponent: SectionComponent,
-    private versionComponent: VersionComponent,
     private seo: SeoService,
     private cls: CrossLinkingService,
     private cdr: ChangeDetectorRef,
   ) {
-    // Should be handle in the constructor for proper initial rendering
-    this.route.params.subscribe(({pageUrl}) => {
-      this.versionComponent.currentPageUrl = pageUrl;
-    });
   }
 
   ngOnInit() {
@@ -59,7 +54,6 @@ export class PageComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    this.versionComponent.currentPageUrl = undefined;
     this.destroy.next();
   }
 
@@ -71,16 +65,8 @@ export class PageComponent implements OnInit, OnDestroy {
     return this.sectionComponent.showHints;
   }
 
-  get version() {
-    return this.versionComponent.version;
-  }
-
   get defaultVersion(): VersionDigest {
     return versionsDigest.find(v => v.default);
-  }
-
-  get isForDefaultVersion() {
-    return !!this.version.default;
   }
 
   async genGefaultVersionLink() {
@@ -91,9 +77,10 @@ export class PageComponent implements OnInit, OnDestroy {
   }
 
   get sourceUrl() {
-    const start = this.page.generationStartLine ? `#L${this.page.generationStartLine}` : '';
-    const end = this.page.generationEndLine ? `-L${this.page.generationEndLine}` : '';
-    return `${this.version.githubUrl}/${this.page.generationFile}${start}${end}`;
+    return '';
+    // const start = this.page.generationStartLine ? `#L${this.page.generationStartLine}` : '';
+    // const end = this.page.generationEndLine ? `-L${this.page.generationEndLine}` : '';
+    // return `${this.version.githubUrl}/${this.page.generationFile}${start}${end}`;
   }
 
   private loadPage() {

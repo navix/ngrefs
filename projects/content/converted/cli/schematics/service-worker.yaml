@@ -1,0 +1,33 @@
+title: |
+  ServiceWorker generator
+url: schematic-service-worker
+entries:
+  - type: text
+    text: |-
+      ```
+      ng generate serviceWorker [--[option]=[value]]
+      ```
+
+      Pass this schematic to the "run" command to create a service worker.
+  - type: text
+    text: "## Options"
+  - type: command-param
+    head: configuration
+    headId: configuration
+    name: configuration
+    paramType: string
+    default: production
+    description: The configuration to apply service worker to.
+  - type: command-param
+    head: project
+    headId: project
+    name: project
+    paramType: string
+    description: The name of the project.
+  - type: command-param
+    head: target
+    headId: target
+    name: target
+    paramType: string
+    description: The target to apply service worker to.
+    default: build

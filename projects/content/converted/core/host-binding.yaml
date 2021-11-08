@@ -1,0 +1,37 @@
+title: "@HostBinding"
+url: host-binding
+entries:
+  - type: text
+    text: Binds a host element property to a directive/component property.
+  - type: text
+    text: "#### Example"
+  - type: text
+    text: |
+      ```typescript
+      export class MyComponent {
+        @HostBinding('class.valid') isValid;
+      }
+      ```
+
+      Or use getter for binding:
+
+      ```typescript
+      export class MyComponent {
+        @HostBinding('class.error') get isError() {
+          ...
+        }
+      }
+      ```
+  - type: tutorials
+    links:
+      - label: Using @HostBinding and @HostListener in Custom Angular Directives
+        url: https://alligator.io/angular/hostbinding-hostlistener/
+        lang: en
+  - type: text
+    text: "## Options"
+  - type: interface-option
+    name: hostPropertyName
+    head: hostPropertyName
+    headId: hostPropertyName
+    interface: "hostPropertyName?: string"
+    description: Property name.

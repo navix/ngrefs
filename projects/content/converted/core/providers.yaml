@@ -1,0 +1,144 @@
+title: Providers
+url: providers
+entries:
+  - type: text
+    text: >-
+      Providers tell the injector how to create the service. Without a provider,
+      the injector would not know that it is responsible for injecting the
+      service nor be able to create the service.
+
+
+      ```typescript
+
+      providers: [Logger]
+
+      ```
+
+
+      ---
+
+
+      You can configure the injector with alternative providers that can deliver an object that behaves. You could provide a substitute class. You could provide a service-like object. You could give it a provider that calls a factory function. Any of these approaches might be a good choice under the right circumstances.
+
+
+      What matters is that the injector has a provider to go to when it needs a service.
+  - type: toc
+  - type: tutorials
+    links:
+      - label: Angular Dependency Injection
+        url: https://angular.io/guide/dependency-injection
+        lang: en
+  - type: text
+    head: useValue
+    text: >
+      Sometimes it's easier to provide a ready-made object rather than ask the
+      injector to create it from a class.
+
+
+      Then you register a provider with the `useValue` option:
+
+
+      ```typescript
+
+      [{ 
+        provide: Config, 
+        useValue: {option1: true, options2: false},
+      }]
+
+      ```
+    headId: use-value
+  - type: text
+    head: useClass
+    text: >+
+      Here's the class-provider syntax:
+
+
+      ```typescript
+
+      providers: [Logger]
+
+      ```
+
+
+      This is actually a shorthand expression for a provider registration using a provider object literal with two properties:
+
+
+      ```typescript
+
+      [{ provide: Logger, useClass: Logger }]
+
+      ```
+
+
+      The `provide` property holds the token that serves as the key for both locating a dependency value and registering the provider.
+
+
+      The second property is always a provider definition object, which you can think of as a recipe for creating the dependency value. There are many ways to create dependency values just as there are many ways to write a recipe.
+
+
+      Occasionally you'll ask a different class to provide the service. The following code tells the injector to return a `BetterLogger` when something asks for the `Logger`.
+
+
+      ```typescript
+
+      [{ provide: Logger, useClass: BetterLogger }]
+
+      ```
+
+    headId: use-class
+  - type: text
+    head: useExisting
+    text: >
+      Allows to declare two providers for the same class with two different
+      tokens.
+
+
+      ```typescript
+
+      [ 
+        NewLogger,
+        // Alias OldLogger w/ reference to NewLogger
+        { provide: OldLogger, useExisting: NewLogger},
+      ]
+
+      ```
+    headId: use-existing
+  - type: text
+    head: useFactory
+    text: >-
+      Sometimes you need to create the dependent value dynamically, based on
+      information you won't have until the last possible moment. Maybe the
+      information changes repeatedly in the course of the browser session.
+
+
+      Suppose also that the injectable service has no independent access to the source of this information.
+
+
+      This situation calls for a factory provider.
+
+
+      A factory provider needs a factory function:
+
+
+      ```typescript
+
+      let heroServiceFactory = (logger: Logger, userService: UserService) => {
+        return new HeroService(logger, userService.user.isAuthorized);
+      };
+
+      ```
+
+
+      You inject both the `Logger` and the `UserService` into the factory provider and let the injector pass them along to the factory function:
+
+
+      ```typescript
+
+      [{ 
+        provide: HeroService,
+        useFactory: heroServiceFactory,
+        deps: [Logger, UserService],
+      }]
+
+      ```
+    headId: use-factory

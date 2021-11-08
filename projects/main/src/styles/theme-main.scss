@@ -1,7 +1,19 @@
 .theme-main {
   @import "code/github";
 
-  --bodyBg: #f8f8f8;
+  --body-bg: #fff;
+  --text-color: #292c32;
+  --main-border-color: #dedfe0;
+
+  --header-bg: #fff;
+  --header-color: #000;
+  --header-links-color: #666;
+  --header-height: 5rem;
+
+  --nav-width: 20rem;
+  --nav-link-color: #777;
+
+  --toc-width: 12rem;
 
   --nav-footer-bg: #f0f0f0;
   --nav-head-bg: #292c32;
@@ -11,8 +23,8 @@
   --nav-link-hover-bg: #ebebeb;
   --nav-link-active-bg: #e6e6e6;
 
-  --scroll-bar-color: #a8a8a8;
-  --scroll-bg: #f1f1f1;
+  --scroll-bar-color: #e0dfdf;
+  --scroll-bg: #f5f5f5;
 
   --demo-bg: #efefef;
   --demo-head-bg: #e9e9e9;
@@ -21,7 +33,8 @@
   --hintColor: #36cadb;
   --interfaceOptionColor: #94ceff;
 
-  --linkColor: #27304e;
+  --link-color: #6634ea;
+  --link-active-color: #9063ef;
   --linkColorLight: #345678;
   --tableBdColor: #dddddd;
   --textColor: #292c32;

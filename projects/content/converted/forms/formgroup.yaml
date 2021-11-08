@@ -1,0 +1,222 @@
+title: FormGroup
+url: formgroup
+entries:
+  - type: text
+    text: >-
+      Tracks the value and validity state of a group of
+      [`FormControl`](../formcontrol) instances.
+
+
+      A `FormGroup` aggregates the values of each child [`FormControl`](../formcontrol) into one object,
+
+      with each control name as the key.  It calculates its status by reducing the status values
+
+      of its children. For example, if one of the controls in a group is invalid, the entire
+
+      group becomes invalid.
+
+
+      `FormGroup` is one of the three fundamental building blocks used to define forms in Angular,
+
+      along with [`FormControl`](../formcontrol) and [`FormArray`](../formarray).
+
+
+      When instantiating a `FormGroup`, pass in a collection of child controls as the first
+
+      argument. The key for each child registers the name for the control.
+  - type: text
+    text: "## Interface, extends [AbstractControl](../abstractcontrol)"
+  - type: toc
+  - type: interface-option
+    name: registerControl
+    head: registerControl
+    headId: registerControl
+    interface: "registerControl(name: string, control: AbstractControl): AbstractControl"
+    description: |-
+      Registers a control with the group's list of controls.
+
+      This method does not update the value or validity of the control.
+      Use {@link FormGroup#addControl addControl} instead.
+  - type: interface-option
+    name: addControl
+    head: addControl
+    headId: addControl
+    interface: "addControl(name: string, control: AbstractControl, options:
+      {emitEvent?: boolean} = {}): void"
+    description: |-
+      Add a control to this group.
+
+      This method also updates the value and validity of the control.
+  - type: interface-option
+    name: removeControl
+    head: removeControl
+    headId: removeControl
+    interface: "removeControl(name: string, options: {emitEvent?: boolean} = {}): void"
+    description: |-
+      Remove a control from this group.
+
+      This method also updates the value and validity of the control.
+  - type: interface-option
+    name: setControl
+    head: setControl
+    headId: setControl
+    interface: "setControl(name: string, control: AbstractControl, options:
+      {emitEvent?: boolean} = {}): void"
+    description: Replace an existing control.
+  - type: interface-option
+    name: contains
+    head: contains
+    headId: contains
+    interface: "contains(controlName: string): boolean"
+    description: >-
+      Check whether there is an enabled control with the given name in the
+      group.
+
+
+      Reports false for disabled controls. If you'd like to check for existence in the group
+
+      only, use {@link AbstractControl#get get} instead.
+
+
+      Returns false for disabled controls, true otherwise.
+  - type: interface-option
+    name: setValue
+    head: setValue
+    headId: setValue
+    interface: "setValue(value: {[key: string]: any}, options: {onlySelf?: boolean,
+      emitEvent?: boolean} = {}): void"
+    description: |-
+      Sets the value of the `FormGroup`. It accepts an object that matches
+      the structure of the group, with control names as keys.
+
+      ### Set the complete value for the form group
+
+      ```
+      const form = new FormGroup({
+      first: new FormControl(),
+      last: new FormControl()
+      });
+
+      console.log(form.value);   // {first: null, last: null}
+
+      form.setValue({first: 'Nancy', last: 'Drew'});
+      console.log(form.value);   // {first: 'Nancy', last: 'Drew'}
+      ```
+  - type: interface-option
+    name: patchValue
+    head: patchValue
+    headId: patchValue
+    interface: "patchValue(value: {[key: string]: any}, options: {onlySelf?:
+      boolean, emitEvent?: boolean} = {}): void"
+    description: >-
+      Patches the value of the `FormGroup`. It accepts an object with control
+
+      names as keys, and does its best to match the values to the correct controls
+
+      in the group.
+
+
+      It accepts both super-sets and sub-sets of the group without throwing an error.
+
+
+      ### Patch the value for a form group
+
+
+      ```
+
+      const form = new FormGroup({
+
+      first: new FormControl(),
+
+      last: new FormControl()
+
+      });
+
+      console.log(form.value);   // {first: null, last: null}
+
+
+      form.patchValue({first: 'Nancy'});
+
+      console.log(form.value);   // {first: 'Nancy', last: null}
+
+      ```
+  - type: interface-option
+    name: reset
+    head: reset
+    headId: reset
+    interface: "reset(value: any = {}, options: {onlySelf?: boolean, emitEvent?:
+      boolean} = {}): void"
+    description: >-
+      Resets the `FormGroup`, marks all descendants `pristine` and `untouched`
+      and sets
+
+      the value of all descendants to null.
+
+
+      You reset to a specific form state by passing in a map of states
+
+      that matches the structure of your form, with control names as keys. The state
+
+      is a standalone value or a form state object with both a value and a disabled
+
+      status.
+
+
+      ### Reset the form group values
+
+
+      ```ts
+
+      const form = new FormGroup({
+         first: new FormControl('first name'),
+         last: new FormControl('last name')
+      });
+
+
+      console.log(form.value);  // {first: 'first name', last: 'last name'}
+
+
+      form.reset({ first: 'name', last: 'last name' });
+
+
+      console.log(form.value);  // {first: 'name', last: 'last name'}
+
+      ```
+
+
+      ### Reset the form group values and disabled status
+
+
+      ```
+
+      const form = new FormGroup({
+         first: new FormControl('first name'),
+         last: new FormControl('last name')
+      });
+
+
+      form.reset({
+         first: {value: 'name', disabled: true},
+         last: 'last'
+      });
+
+
+      console.log(form.value);  // {last: 'last'}
+
+      console.log(form.get('first').status);  // 'DISABLED'
+
+      ```
+  - type: interface-option
+    name: getRawValue
+    head: getRawValue
+    headId: getRawValue
+    interface: "getRawValue(): any"
+    description: >-
+      The aggregate value of the `FormGroup`, including any disabled controls.
+
+
+      Retrieves all values regardless of disabled status.
+
+      The `value` property is the best way to get the value of the group, because
+
+      it excludes disabled controls in the `FormGroup`.

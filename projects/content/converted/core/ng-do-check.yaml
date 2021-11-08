@@ -1,0 +1,33 @@
+title: ngDoCheck()
+url: ng-do-check
+entries:
+  - type: text
+    text: >-
+      A callback method that performs change-detection, invoked after the
+      default change-detector runs.
+
+
+      The default change-detection algorithm looks for differences by comparing bound-property values by reference across change detection runs. You can use this hook to check for and respond to changes by some other means.
+
+
+      When the default change detector detects changes, it invokes `ngOnChanges()` if supplied, regardless of whether you perform additional change detection. Typically, you should not use both `DoCheck` and `OnChanges` to respond to changes on the same input.
+  - type: text
+    text: |-
+      ```typescript
+      ngDoCheck(): void
+      ```
+  - type: text
+    text: "#### Example"
+  - type: text
+    text: The following snippet shows how a component can implement this interface
+      to invoke it own change-detection cycle.
+  - type: text
+    text: |-
+      ```typescript
+      @Component({selector: 'my-cmp', template: `...`})
+      class MyComponent implements DoCheck {
+        ngDoCheck() {
+          // ...
+        }
+      }
+      ```

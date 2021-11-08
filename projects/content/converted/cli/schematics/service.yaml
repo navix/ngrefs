@@ -1,0 +1,42 @@
+title: Service generator
+url: schematic-service
+entries:
+  - type: text
+    text: |
+      ```
+      ng generate service [name] [--[argument]=[value]]
+      ng generate s
+      ```
+  - type: text
+    text: |
+      Create an Angular service.
+  - type: text
+    text: "## Options"
+  - type: toc
+  - type: command-param
+    head: flat
+    description: Flag to indicate if a dir is created.
+    name: flat
+    headId: flat
+    paramType: boolean
+    default: "true"
+  - type: command-param
+    head: lintFix
+    description: Specifies whether to apply lint fixes after generating.
+    name: lintFix
+    headId: lintFix
+    paramType: boolean
+    default: "false"
+  - type: command-param
+    head: project
+    description: The name of the project.
+    name: project
+    headId: project
+    paramType: string
+  - type: command-param
+    head: skipTests
+    description: When true, does not create `spec.ts` test files for the new service.
+    name: skipTests
+    headId: skipTests
+    paramType: boolean
+    default: "false"

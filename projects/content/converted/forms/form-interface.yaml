@@ -1,0 +1,55 @@
+title: Form interface
+url: form-interface
+entries:
+  - type: text
+    text: >-
+      An interface implemented by [`FormGroupDirective`](../formgroup-directive)
+      and [`NgForm`](../ngform-directive) directives.
+
+
+      Only used by the `ReactiveFormsModule` and `FormsModule`.
+  - type: text
+    text: "## Interface"
+  - type: toc
+  - type: interface-option
+    name: addControl
+    head: addControl
+    headId: addControl
+    interface: "addControl(dir: NgControl): void"
+    description: Add a control to this form.
+  - type: interface-option
+    name: removeControl
+    head: removeControl
+    headId: removeControl
+    interface: "removeControl(dir: NgControl): void"
+    description: Remove a control from this form.
+  - type: interface-option
+    name: getControl
+    head: getControl
+    headId: getControl
+    interface: "getControl(dir: NgControl): FormControl"
+    description: The control directive from which to get the `FormControl`.
+  - type: interface-option
+    name: addFormGroup
+    head: addFormGroup
+    headId: addFormGroup
+    interface: "addFormGroup(dir: AbstractFormGroupDirective): void"
+    description: Add a group of controls to this form.
+  - type: interface-option
+    name: removeFormGroup
+    head: removeFormGroup
+    headId: removeFormGroup
+    interface: "removeFormGroup(dir: AbstractFormGroupDirective): void"
+    description: Remove a group of controls to this form.
+  - type: interface-option
+    name: getFormGroup
+    head: getFormGroup
+    headId: getFormGroup
+    interface: "getFormGroup(dir: AbstractFormGroupDirective): FormGroup"
+    description: The `FormGroup` associated with a particular `AbstractFormGroupDirective`.
+  - type: interface-option
+    name: updateModel
+    head: updateModel
+    headId: updateModel
+    interface: "updateModel(dir: NgControl, value: any): void"
+    description: Update the model for a particular control with a new value.

@@ -1,0 +1,45 @@
+title: "[email] validation directive"
+url: email-directive
+entries:
+  - type: text
+    text: >-
+      A directive that adds the `email` validator to controls marked with the
+
+      `email` attribute. The directive is provided with the `NG_VALIDATORS` multi-provider list.
+  - type: text
+    text: >-
+      ### Adding an email validator
+
+
+      The following example shows how to add an email validator to an input attached to an ngModel binding.
+
+
+      ```
+
+      <input type="email" name="email" ngModel email>
+
+      <input type="email" name="email" ngModel email="true">
+
+      <input type="email" name="email" ngModel [email]="true">
+
+      ```
+  - type: interface-option
+    name: email
+    head: email
+    headId: email
+    interface: "@Input() set email(value: boolean|string)"
+    description: Tracks changes to the email attribute bound to this directive.
+  - type: interface-option
+    name: validate
+    head: validate
+    headId: validate
+    interface: "validate(control: AbstractControl): ValidationErrors|null"
+    description: |-
+      Method that validates whether an email address is valid.
+      Returns the validation result if enabled, otherwise null.
+  - type: interface-option
+    name: registerOnValidatorChange
+    head: registerOnValidatorChange
+    headId: registerOnValidatorChange
+    interface: "registerOnValidatorChange(fn: () => void): void"
+    description: Registers a callback function to call when the validator inputs change.

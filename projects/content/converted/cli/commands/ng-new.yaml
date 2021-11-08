@@ -1,0 +1,233 @@
+title: ng new
+url: command-ng-new
+entries:
+  - type: text
+    text: |
+      ```
+      ng new [name] [--[argument]=[value]]
+      ng n
+      ```
+
+      Creates a new angular application.
+  - type: tutorials
+    links:
+      - label: Agnular QuickStart
+        url: https://angular.io/guide/quickstart
+        lang: en
+      - url: https://angular.io/cli/new
+        label: Angular — ng new
+  - type: text
+    text: >-
+      Creates and initializes a new Angular app that is the default project for
+      a new workspace.
+
+
+      Provides interactive prompts for optional configuration, such as adding routing support.
+
+      All prompts can safely be allowed to default.
+
+
+      * The new workspace folder is given the specified project name, and contains configuration files at the top level.
+
+
+      * By default, the files for a new initial app (with the same name as the workspace) are placed in the `src/` subfolder. Corresponding end-to-end tests are placed in the `e2e/` subfolder.
+
+
+      * The new app's configuration appears in the `projects` section of the `angular.json` workspace configuration file, under its project name.
+
+
+      * Subsequent apps that you generate in the workspace reside in the `projects/` subfolder.
+
+
+      If you plan to have multiple apps in the workspace, you can create an empty workspace by setting the `--createApplication` option to false.
+
+      You can then use `ng generate application` to create an initial app.
+
+      This allows a workspace name different from the initial app name, and ensures that all apps reside in the `/projects` subfolder, matching the structure of the configuration file.
+  - type: text
+    text: "## Options"
+  - type: toc
+  - type: command-param
+    head: collection
+    description: Schematics collection to use.
+    name: collection
+    headId: collection
+    aliases: c
+    paramType: string
+    default: "@schematics/angular"
+  - type: command-param
+    head: commit
+    description: Initial repository commit information.
+    name: commit
+    headId: commit
+    paramType: boolean
+    default: "true"
+  - type: command-param
+    head: createApplication
+    description: Flag to toggle creation of an application in the new workspace.
+    name: createApplication
+    headId: createApplication
+    paramType: boolean
+    default: "true"
+    tutorialsEntry:
+      id: 91cd65f3-fe93-ad9e-df30-0cb2743a3b2f
+      type: tutorials
+      links:
+        - lang: en
+          label: "Angular Workspace: No Application for You!"
+          url: https://blog.angularindepth.com/angular-workspace-no-application-for-you-4b451afcc2ba
+  - type: command-param
+    head: defaults
+    description: When true, disables interactive input prompts for options with a default.
+    name: defaults
+    headId: defaults
+    default: "false"
+    paramType: boolean
+  - type: command-param
+    head: directory
+    description: The directory name to create the workspace in.
+    name: directory
+    headId: directory
+    paramType: string
+  - type: command-param
+    description: Run through without making any changes.
+    name: dryRun
+    paramType: boolean
+    aliases: d
+    default: "false"
+    head: dryRun
+    headId: dryRun
+  - type: command-param
+    description: Forces overwriting of files.
+    name: force
+    paramType: boolean
+    aliases: f
+    default: "false"
+    head: force
+    headId: force
+  - type: command-param
+    head: help
+    description: Shows a help message for this command in the console.
+    name: help
+    headId: help
+    values: true|false|json|JSON
+    default: "false"
+  - type: command-param
+    head: inlineStyle
+    description: Specifies if the style will be in the ts file.
+    name: inlineStyle
+    headId: inlineStyle
+    aliases: s
+    paramType: boolean
+    default: "false"
+  - type: command-param
+    head: inlineTemplate
+    description: Specifies if the template will be in the ts file.
+    name: inlineTemplate
+    headId: inlineTemplate
+    aliases: t
+    paramType: boolean
+    default: "false"
+  - type: command-param
+    head: interactive
+    description: When false, disables interactive input prompts.
+    name: interactive
+    headId: interactive
+    paramType: boolean
+    default: "false"
+  - type: command-param
+    head: minimal
+    description: Create a barebones project without any testing frameworks.
+    name: minimal
+    headId: minimal
+    paramType: boolean
+    default: "false"
+  - type: command-param
+    head: newProjectRoot
+    description: The path where new projects will be created.
+    name: newProjectRoot
+    headId: newProjectRoot
+    paramType: string
+    default: projects
+  - type: command-param
+    head: packageManager
+    headId: packageManager
+    name: packageManager
+    values: npm|yarn|pnpm|cnpm
+    description: The package manager used to install dependencies.
+    paramType: string
+  - type: command-param
+    head: prefix
+    description: The prefix to apply to generated selectors.
+    name: prefix
+    headId: prefix
+    aliases: p
+    paramType: string
+    default: app
+  - type: command-param
+    head: routing
+    description: When true, generates a routing module for the initial project.
+    name: routing
+    headId: routing
+    paramType: boolean
+    default: "false"
+  - type: command-param
+    head: skipGit
+    description: Skip initializing a git repository.
+    name: skipGit
+    headId: skipGit
+    paramType: boolean
+    default: "false"
+    aliases: g
+  - type: command-param
+    head: skipPackageJson
+    description: Do not add dependencies to `package.json`.
+    aliases: skip-package-json
+    name: skipPackageJson
+    headId: skipPackageJson
+  - type: command-param
+    head: skipInstall
+    description: Skip installing dependency packages.
+    name: skipInstall
+    headId: skipInstall
+    paramType: boolean
+    default: "false"
+  - type: command-param
+    head: skipTests
+    description: Skip creating spec files.
+    aliases: S
+    name: skipTests
+    headId: skipTests
+    paramType: boolean
+    default: "false"
+  - type: command-param
+    head: strict
+    headId: strict
+    name: strict
+    description: Creates a workspace with stricter TypeScript compiler options.
+    default: "false"
+    paramType: boolean
+  - type: command-param
+    head: style
+    description: The file extension to be used for style files.
+    name: style
+    headId: style
+    aliases: ""
+    paramType: string
+    values: css, scss, less, sass, styl
+    default: css
+  - type: command-param
+    description: Adds more details to output logging.
+    name: verbose
+    paramType: boolean
+    aliases: v
+    default: "false"
+    head: verbose
+    headId: verbose
+  - type: command-param
+    head: viewEncapsulation
+    description: Specifies the view encapsulation strategy.
+    aliases: view-encapsulation
+    name: viewEncapsulation
+    headId: viewEncapsulation
+    values: Emulated|Native|None|ShadowDom

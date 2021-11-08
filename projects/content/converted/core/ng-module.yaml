@@ -1,0 +1,264 @@
+title: "@NgModule"
+url: ng-module
+entries:
+  - type: text
+    text: >+
+      `NgModule` configures the injector and the compiler and help organize
+      related things together.
+
+  - type: text
+    text: |-
+      #### Example
+
+      The CLI generates the following basic app module when creating a new app.
+
+      ```typescript
+      @NgModule({
+        declarations: [
+          AppComponent,
+          ItemDirective
+        ],
+        imports: [
+          BrowserModule,
+          FormsModule,
+          HttpClientModule
+        ],
+        providers: [],
+        bootstrap: [AppComponent]
+      })
+      export class AppModule { }
+      ```
+  - type: text
+    text: "## Options"
+  - type: toc
+  - type: interface-option
+    head: bootstrap
+    description: |-
+      The set of components that are bootstrapped when
+      this module is bootstrapped. The components listed here
+      are automatically added to `entryComponents`.
+    name: bootstrap
+    headId: bootstrap
+    interface: "bootstrap?: Array<Type<any>|any[]>"
+    showAdditional: false
+  - type: interface-option
+    head: declarations
+    description: The set of components, directives, and pipes (declarables) that
+      belong to this module.
+    additional: >-
+      The set of selectors that are available to a template include those
+      declared here, and
+
+      those that are exported from imported NgModules.
+
+
+      #### Example
+
+
+      The following example allows the CommonModule to use the `NgFor`
+
+      directive.
+
+
+      ```typescript
+
+      @NgModule({
+        declarations: [NgFor]
+      })
+
+      class CommonModule {
+
+      }
+
+      ```
+    name: declarations
+    headId: declarations
+    interface: "declarations?: Array<Type<any>|any[]>"
+    showAdditional: true
+  - type: interface-option
+    head: entryComponents
+    description: |-
+      The set of components to compile when this `NgModule` is defined,
+      so that they can be dynamically loaded into the view.
+    additional: >-
+      For each component listed here, Angular creates a `ComponentFactory`
+
+      and stores it in the `ComponentFactoryResolver`.
+
+
+      Angular automatically adds components in the module's bootstrap
+
+      and route definitions into the `entryComponents` list. Use this
+
+      option to add components that are bootstrapped
+
+      using one of the imperative techniques, such as `ViewContainerRef.createComponent()` or with `ngComponentOutlet` directive.
+    name: entryComponents
+    headId: entryComponents
+    interface: "entryComponents?: Array<Type<any>|any[]>"
+    showAdditional: true
+  - type: interface-option
+    head: exports
+    description: >-
+      The set of components, directives, and pipes declared in this
+
+      NgModule that can be used in the template of any component that is part of an
+
+      NgModule that imports this NgModule. Exported declarations are the module's public API.
+    additional: >-
+      A declarable belongs to one and only one `NgModule`.
+
+      A module can list another module among its exports, in which case all of that module's
+
+      public declaration are exported.
+
+
+      Declarations are private by default.
+
+      If this `ModuleA` does not export `UserComponent`, then only the components within this
+
+      `ModuleA` can use `UserComponent`.
+
+
+      `ModuleA` can import `ModuleB` and also export it, making exports from `ModuleB`
+
+      available to an `NgModule` that imports `ModuleA`.
+
+
+      #### Example
+
+
+      The following example exports the `NgFor` directive from `CommonModule`.
+
+
+      ```javascript
+
+      @NgModule({
+        exports: [NgFor]
+      })
+
+      class CommonModule {
+
+      }
+
+      ```
+    name: exports
+    headId: exports
+    interface: "exports?: Array<Type<any>|any[]>"
+    showAdditional: true
+  - type: interface-option
+    head: id
+    description: >-
+      A name or path that uniquely identifies this `NgModule` in
+      `getModuleFactory`.
+
+      If left `undefined`, the `NgModule` is not registered with `getModuleFactory`.
+    name: id
+    headId: id
+    interface: "id?: string"
+    showAdditional: false
+  - type: interface-option
+    head: imports
+    description: The set of NgModules whose exported declarables are available to
+      templates in this module.
+    additional: |-
+      A template can use exported declarables from any
+      imported module, including those from modules that are imported indirectly
+      and re-exported.
+      For example, `ModuleA` imports `ModuleB`, and also exports
+      it, which makes the declarables from `ModuleB` available
+      wherever `ModuleA` is imported.
+
+      #### Example
+
+      The following example allows MainModule to use anthing exported by
+      `CommonModule`:
+
+      ```typescript
+      @NgModule({
+        imports: [CommonModule]
+      })
+      class MainModule {
+      }
+      ```
+    name: imports
+    headId: imports
+    interface: "imports?: Array<Type<any>|ModuleWithProviders<{}>|any[]>"
+    showAdditional: true
+  - type: interface-option
+    head: jit
+    description: If `true`, this module will be skipped by the AOT compiler and so
+      will always be compiled using JIT.
+    additional: This exists to support future Ivy work and has no effect currently.
+    name: jit
+    headId: jit
+    interface: "jit?: true"
+    showAdditional: true
+  - type: interface-option
+    head: providers
+    description: The set of injectable objects that are available in the injector of
+      this module.
+    additional: >-
+      Dependencies whose providers are listed here become available for
+      injection
+
+      into any component, directive, pipe or service that is a child of this injector.
+
+      The `NgModule` used for bootstrapping uses the root injector, and can provide dependencies
+
+      to any part of the app.
+
+
+      #### Example
+
+
+      The following example defines a class that is injected in
+
+      the `HelloWorld` `NgModule`:
+
+
+      ```typescript
+
+      class Greeter {
+         greet(name:string) {
+           return 'Hello ' + name + '!';
+         }
+      }
+
+
+      @NgModule({
+        providers: [
+          Greeter
+        ]
+      })
+
+      class HelloWorld {
+        greeter:Greeter;
+
+        constructor(greeter:Greeter) {
+          this.greeter = greeter;
+        }
+      }
+
+      ```
+    name: providers
+    headId: providers
+    interface: "providers?: Provider[]"
+    showAdditional: true
+  - type: interface-option
+    head: schemas
+    description: |-
+      The set of schemas that declare elements to be allowed in the `NgModule`.
+      Elements and properties that are neither Angular components nor directives
+      must be declared in a schema.
+    additional: >-
+      Allowed value are `NO_ERRORS_SCHEMA` and `CUSTOM_ELEMENTS_SCHEMA`.
+
+
+      When using one of `NO_ERRORS_SCHEMA` or `CUSTOM_ELEMENTS_SCHEMA`
+
+      you must ensure that allowed elements and properties securely escape inputs.
+    name: schemas
+    headId: schemas
+    interface: "schemas?: Array<SchemaMetadata|any[]>"
+    showAdditional: true

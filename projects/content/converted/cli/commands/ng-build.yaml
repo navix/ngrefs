@@ -1,0 +1,94 @@
+title: ng build
+url: command-ng-build
+entries:
+  - type: text
+    text: >+
+      ```
+
+      ng build [project] [--[option]=[value]]
+
+      ng b
+
+      ```
+
+
+      Compiles an Angular app into an output directory named `dist/` at the given output path. Must be executed from within a workspace directory.
+
+
+      Alias for the command:
+       
+      ```
+
+      ng run [project]:build
+
+      ```
+
+
+      `[project]` — the name of the project to build.
+
+
+      ---
+
+
+      By default for applications CLI uses builder [`browser`](../builder-browser). And `@angular-devkit/build-ng-packagr:build` for libraries.
+
+
+      A builder runs with default configuration options specified in the workspace configuration file (`angular.json`) or with a named alternative configuration.
+
+
+      The configuration options generally correspond to the command options.
+
+      You can override individual configuration defaults by specifying the corresponding options on the command line.
+
+      The command can accept option names given in either dash-case or camelCase.
+
+      Note that in the configuration file, you must specify names in camelCase.
+
+
+      Some additional options can only be set through the configuration file,
+
+      either by direct editing or with the `ng config` command.
+
+  - type: tutorials
+    links:
+      - label: Angular Deployment
+        url: https://angular.io/guide/deployment
+        lang: en
+      - url: https://angular.io/cli/build
+        label: Angular - ng build
+  - type: text
+    text: "## Options"
+  - type: command-param
+    head: prod
+    description: >
+      Flag to set configuration to `production`. 
+
+
+      Alias for the command:
+
+
+      ```
+
+      ng run [default-project]:build:production
+
+      ```
+
+
+      By default, the production target is set up in the workspace configuration such that all builds make use of bundling, limited tree-shaking, and also limited dead code elimination.
+    name: prod
+    headId: prod
+    paramType: boolean
+    default: ""
+  - type: command-param
+    head: configuration
+    headId: configuration
+    name: configuration
+    paramType: string
+    aliases: -c
+    description: A named build target, as specified in the `configurations` section
+      of `angular.json`. Each named target is accompanied by a configuration of
+      option defaults for that target. Setting this explicitly overrides the
+      `--prod` flag.
+  - type: text
+    text: |
+      ### Go to [`browser` builder options](../builder-browser).

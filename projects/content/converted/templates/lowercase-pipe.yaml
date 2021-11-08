@@ -1,0 +1,12 @@
+title: lowerCase pipe
+url: lowercase-pipe
+entries:
+  - type: text
+    text: Transforms text to all lower case.
+  - type: demo
+    source: |
+      ```html
+      <input [(ngModel)]="value">
+      <p>In lowercase: <pre>{{value | lowercase}}</pre>
+      ```
+    demo: V6TemplatesLowercasepipeDemoComponent

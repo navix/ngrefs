@@ -1,0 +1,59 @@
+title: percent pipe
+url: percent-pipe
+entries:
+  - type: text
+    text: Transforms a number to a percentage string, formatted according to locale
+      rules that determine group sizing and separator, decimal-point character,
+      and other locale-specific configurations.
+  - type: demo
+    source: |-
+      ```html
+      <p>A: {{a | percent}}</p>
+      <p>B: {{b | percent:'4.3-5'}}</p>
+      ```
+
+      ```typescript
+      export class AppComponent {
+        a = 0.259;
+        b = 1.3495;
+      }
+      ```
+    demo: V6TemplatesPercentpipeDemoComponent
+  - type: text
+    text: |
+      ## Parameters
+  - type: text
+    text: |-
+      ```
+      {{ value_expression | percent [ : digitsInfo [ : locale ] ] }}
+      ```
+  - type: interface-option
+    head: digitsInfo
+    description: Decimal representation options.
+    name: digitsInfo
+    headId: digitsInfo
+    interface: "digitsInfo?: string"
+    showAdditional: true
+    additional: >-
+      Specified by a string in the following format:
+
+
+      ```
+
+      {minIntegerDigits}.{minFractionDigits}-{maxFractionDigits}
+
+      ```
+
+        - `minIntegerDigits`: The minimum number of integer digits before the decimal point. Default is `1`.
+        - `minFractionDigits`: The minimum number of digits after the decimal point. Default is `0`.
+        - `maxFractionDigits`: The maximum number of digits after the decimal point. Default is `3`.
+  - type: interface-option
+    head: locale
+    description: A locale code for the locale format rules to use.
+    name: locale
+    headId: locale
+    interface: "locale?: string"
+    showAdditional: true
+    additional: When not supplied, uses the value of `LOCALE_ID`, which is `en-US`
+      by default. See [Setting your app
+      locale](https://angular.io/guide/i18n#setting-up-the-locale-of-your-app).

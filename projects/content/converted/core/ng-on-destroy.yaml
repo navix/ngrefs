@@ -1,0 +1,31 @@
+title: ngOnDestroy()
+url: ng-on-destroy
+entries:
+  - type: text
+    text: A callback method that performs custom clean-up, invoked immediately after
+      a **directive**, **pipe**, or **service** instance is destroyed.
+  - type: text
+    text: |-
+      ```typescript
+      ngOnDestroy(): void
+      ```
+  - type: tutorials
+    links:
+      - lang: en
+        label: Exploring Angular Lifecycle Hooks – OnDestroy
+        url: https://ultimatecourses.com/blog/exploring-angular-lifecycle-hooks-ondestroy
+  - type: text
+    text: "#### Example"
+  - type: text
+    text: The following snippet shows how a component can implement this interface
+      to define its own custom clean-up method.
+  - type: text
+    text: |-
+      ```typescript
+      @Component({selector: 'my-cmp', template: `...`})
+      class MyComponent implements OnDestroy {
+        ngOnDestroy() {
+          // ...
+        }
+      }
+      ```

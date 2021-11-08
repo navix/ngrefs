@@ -1,0 +1,24 @@
+title: Introduction
+url: intro
+entries:
+  - type: text
+    text: This simple Angular reference for developers describes forms, controls and
+      models.
+  - type: text
+    text: >-
+      ## Additional information
+
+
+      Example of hints and tutorials links. You can switch off these panels in the sidebar.
+  - type: hint
+    text: Hint with additional explanation.
+  - type: tutorials
+    links:
+      - url: https://angular.io/start/forms
+        label: Angular - Forms
+      - url: https://angular.io/guide/forms-overview
+        label: Angular - Introduction to forms
+      - url: https://blog.angular-university.io/introduction-to-angular-2-forms-template-driven-vs-model-driven/
+        label: Angular Forms Guide - Template Driven and Reactive Forms
+      - url: https://blog.nrwl.io/angular-forms-in-depth-ecb7c58166b5
+        label: Angular Forms in Depth

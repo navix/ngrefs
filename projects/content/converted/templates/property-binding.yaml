@@ -1,0 +1,41 @@
+title: Property binding []
+url: property-binding
+entries:
+  - type: text
+    text: >-
+      Write a template property binding to set a property of a view element. The
+      binding sets the property to the value of a template expression.
+
+
+      The most common property binding sets an element property to a component property value:
+  - type: text
+    text: |-
+      ```typescript
+      <img [src]="imageUrl" style="height:150px">
+      ```
+    source: "\n"
+  - type: text
+    text: "Another is setting a property of a directive:"
+  - type: text
+    text: |
+      ```html
+      <div [ngClass]="classes">
+        [ngClass] binding to the classes property
+      </div>
+      ```
+  - type: text
+    text: "Or setting the model property of a custom component (a great way for
+      parent and child components to communicate):"
+  - type: text
+    text: |-
+      ```html
+      <user-panel [name]="userName"></user-panel>
+      ```
+  - type: text
+    text: "Some people prefer the `bind-` prefix alternative, known as the
+      _canonical form_:"
+  - type: text
+    text: |-
+      ```html
+      <user-panel bind-name="userName"></user-panel>
+      ```

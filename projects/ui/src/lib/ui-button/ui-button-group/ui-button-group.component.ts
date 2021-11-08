@@ -1,5 +1,5 @@
-import { ChangeDetectionStrategy, Component, Input, OnChanges, OnInit, } from '@angular/core';
-import { SxClass } from '@novyk/sx-class';
+import { NgClass } from '@angular/common';
+import { ChangeDetectionStrategy, Component, Input, OnChanges, OnInit } from '@angular/core';
 import { UiButtonGroupDirection } from '../meta';
 
 @Component({
@@ -9,14 +9,12 @@ import { UiButtonGroupDirection } from '../meta';
   `,
   styleUrls: ['./ui-button-group.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  providers: [
-    SxClass,
-  ],
+  providers: [NgClass],
 })
 export class UiButtonGroupComponent implements OnInit, OnChanges {
   @Input() direction: UiButtonGroupDirection = 'row';
 
-  constructor(private sxClass: SxClass) {
+  constructor(private ngClass: NgClass) {
   }
 
   ngOnChanges() {
@@ -28,8 +26,8 @@ export class UiButtonGroupComponent implements OnInit, OnChanges {
   }
 
   private applyClass() {
-    this.sxClass.apply({
-      direction: this.direction,
-    });
+    this.ngClass.ngClass = {
+      ['direction-' + this.direction]: true,
+    };
   }
 }

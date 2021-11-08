@@ -1,0 +1,10 @@
+<div class="brand">
+  {{ content.title }} ※ {{ currentSection.title }}
+</div>
+<nav class="sections">
+  <a
+    *ngFor="let section of content.sections"
+    [routerLink]="['/', section.url, 'intro']"
+    routerLinkActive="-active"
+  >{{ section.title }}</a>
+</nav>

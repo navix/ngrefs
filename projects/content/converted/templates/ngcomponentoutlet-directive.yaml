@@ -1,0 +1,87 @@
+title: ngComponentOutlet directive
+url: ngcomponentoutlet-directive
+entries:
+  - type: text
+    text: Instantiates a single Component type and inserts its Host View into
+      current View. `NgComponentOutlet` provides a declarative approach for
+      dynamic component creation.
+  - type: text
+    text: >-
+      ```typescript
+
+      @Component({selector: 'hello-world', template: 'Hello World!'})
+
+      class HelloWorld {
+
+      }
+       
+      @Component({
+        selector: 'ng-component-outlet-simple-example',
+        template: `<ng-container *ngComponentOutlet="HelloWorld"></ng-container>`
+      })
+
+      class NgTemplateOutletSimpleExample {
+        // This field is necessary to expose HelloWorld to the template.
+        HelloWorld = HelloWorld;
+      }
+
+      ```
+  - type: text
+    text: >-
+      You can control the component creation process by using the following
+      optional attributes:
+
+
+      * `ngComponentOutletInjector`: Optional custom Injector that will be used as parent for the Component. Defaults to the injector of the current view container.
+
+      * `ngComponentOutletContent`: Optional list of projectable nodes to insert into the content section of the component, if exists.
+
+      * `ngComponentOutletNgModuleFactory`: Optional module factory to allow dynamically loading other module, then load a component from that module.
+  - type: text
+    text: >-
+      ```typescript
+
+      @Injectable()
+
+      class Greeter {
+        suffix = '!';
+      }
+       
+      @Component({
+        selector: 'complete-component',
+        template: `Complete: <ng-content></ng-content> <ng-content></ng-content>{{ greeter.suffix }}`
+      })
+
+      class CompleteComponent {
+        constructor(public greeter: Greeter) {}
+      }
+       
+      @Component({
+        selector: 'ng-component-outlet-complete-example',
+        template: `
+          <ng-container *ngComponentOutlet="CompleteComponent; 
+                                            injector: myInjector; 
+                                            content: myContent"></ng-container>`
+      })
+
+      class NgTemplateOutletCompleteExample {
+        // This field is necessary to expose CompleteComponent to the template.
+        CompleteComponent = CompleteComponent;
+        myInjector: Injector;
+       
+        myContent = [[document.createTextNode('Ahoj')], [document.createTextNode('Svet')]];
+       
+        constructor(injector: Injector) {
+          this.myInjector = ReflectiveInjector.resolveAndCreate([Greeter], injector);
+        }
+      }
+
+      ```
+  - type: tutorials
+    links:
+      - label: Dynamic component rendering in Angular 5 with NgComponentOutlet
+        url: https://medium.com/@symposia/dynamic-component-rendering-in-angular-5-with-ngcomponentoutlet-410bec3ece75
+        lang: en
+      - label: Here is what you need to know about dynamic components in Angular
+        url: https://blog.angularindepth.com/here-is-what-you-need-to-know-about-dynamic-components-in-angular-ac1e96167f9e
+        lang: en

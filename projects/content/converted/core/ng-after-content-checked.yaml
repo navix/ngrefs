@@ -1,0 +1,26 @@
+title: ngAfterContentChecked()
+url: ng-after-content-checked
+entries:
+  - type: text
+    text: A callback method that is invoked immediately after the default change
+      detector has completed checking all of the directive's content.
+  - type: text
+    text: |-
+      ```typescript
+      ngAfterContentChecked(): void
+      ```
+  - type: text
+    text: "#### Example"
+  - type: text
+    text: The following snippet shows how a component can implement this interface
+      to define its own after-check functionality.
+  - type: text
+    text: |-
+      ```typescript
+      @Component({selector: 'my-cmp', template: `...`})
+      class MyComponent implements AfterContentChecked {
+        ngAfterContentChecked() {
+          // ...
+        }
+      }
+      ```

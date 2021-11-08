@@ -1,3 +1,19 @@
-<main-head-menu [version]="version" (close)="close.emit()"></main-head-menu>
-<main-section-menu [items]="section.menu.items" (swipeleft)="close.emit()"></main-section-menu>
-<main-footer-menu [version]="version"></main-footer-menu>
+<ng-container *ngTemplateOutlet="list; context: {$implicit: section.menu}"></ng-container>
+
+<ng-template #list let-items>
+  <ul>
+    <li *ngFor="let item of items" [class.-has-subs]="item.children">
+      <a
+        *ngIf="item.file"
+        [routerLink]="[pagesUrls[item.file]]"
+        routerLinkActive="-active"
+      >{{ item.label }}</a>
+      <span *ngIf="!item.file">
+        {{ item.label }}
+      </span>
+      <div *ngIf="item.children" class="sub">
+        <ng-container *ngTemplateOutlet="list; context: {$implicit: item.children}"></ng-container>
+      </div>
+    </li>
+  </ul>
+</ng-template>

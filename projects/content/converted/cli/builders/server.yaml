@@ -1,0 +1,216 @@
+title: Server builder
+url: builder-server
+entries:
+  - type: text
+    text: |
+      ID: `@angular-devkit/build-angular:server`
+
+      ## Options
+  - type: toc
+  - type: command-param
+    head: bundleDependencies
+    description: Available on server platform only. Which external dependencies to
+      bundle into the module. By default, all of node_modules will be kept as
+      requires.
+    name: bundleDependencies
+    headId: bundleDependencies
+    paramType: string
+    values: none,all
+    default: none
+  - type: command-param
+    head: commonChunk
+    description: Use a separate bundle containing code used across multiple bundles.
+    name: commonChunk
+    headId: commonChunk
+    paramType: boolean
+    default: "true"
+  - type: command-param
+    head: deleteOutputPath
+    description: Delete the output path before building.
+    name: deleteOutputPath
+    headId: deleteOutputPath
+    paramType: boolean
+    default: "true"
+  - type: command-param
+    head: evalSourceMap
+    description: |
+      Output in-file eval sourcemaps.
+    name: evalSourceMap
+    headId: evalSourceMap
+    paramType: boolean
+  - type: command-param
+    name: externalDependencies
+    head: externalDependencies
+    headId: externalDependencies
+    paramType: array
+    default: []
+    description: Exclude the listed external dependencies from being bundled into
+      the bundle. Instead, the created bundle relies on these dependencies to be
+      available during runtime.
+  - type: command-param
+    head: extractLicenses
+    description: Extract all licenses in a separate file, in the case of production
+      builds only.
+    name: extractLicenses
+    headId: extractLicenses
+    paramType: boolean
+    default: "true"
+  - type: command-param
+    head: fileReplacements
+    description: Replace files with other files in the build.
+    name: fileReplacements
+    headId: fileReplacements
+    paramType: array
+  - type: command-param
+    head: forkTypeChecker
+    description: Run the TypeScript type checker in a forked process.
+    name: forkTypeChecker
+    headId: forkTypeChecker
+    paramType: boolean
+    default: "true"
+  - type: command-param
+    head: i18nFile
+    description: Localization file to use for i18n.
+    name: i18nFile
+    headId: i18nFile
+    paramType: string
+  - type: command-param
+    head: i18nFormat
+    description: Format of the localization file specified with --i18n-file.
+    name: i18nFormat
+    headId: i18nFormat
+    paramType: string
+  - type: command-param
+    head: i18nLocale
+    description: Locale to use for i18n.
+    name: i18nLocale
+    headId: i18nLocale
+    paramType: string
+  - type: command-param
+    head: i18nMissingTranslation
+    description: |
+      How to handle missing translations for i18n.
+    name: i18nMissingTranslation
+    headId: i18nMissingTranslation
+    paramType: string
+  - type: command-param
+    head: lazyModules
+    description: List of additional NgModule files that will be lazy loaded. Lazy
+      router modules with be discovered automatically.
+    name: lazyModules
+    headId: lazyModules
+    paramType: array
+  - type: command-param
+    name: localize
+    head: localize
+    headId: localize
+    paramType: ""
+    default: ""
+  - type: command-param
+    head: main
+    description: The name of the main entry-point file.
+    name: main
+    headId: main
+    paramType: string
+  - type: command-param
+    head: namedChunks
+    description: Use file name for lazy loaded chunks.
+    name: namedChunks
+    headId: namedChunks
+    paramType: boolean
+    default: "true"
+  - type: command-param
+    head: optimization
+    description: Defines the optimization level of the build.
+    name: optimization
+    headId: optimization
+    paramType: boolean
+  - type: command-param
+    head: outputHashing
+    description: Define the output filename cache-busting hashing mode.
+    name: outputHashing
+    headId: outputHashing
+    paramType: string
+    values: none,all,media,bundles
+    default: none
+  - type: command-param
+    head: outputPath
+    description: Path where output will be placed.
+    name: outputPath
+    headId: outputPath
+    paramType: string
+  - type: command-param
+    head: preserveSymlinks
+    description: Do not use the real path when resolving modules.
+    name: preserveSymlinks
+    headId: preserveSymlinks
+    paramType: boolean
+  - type: command-param
+    head: progress
+    description: Log progress to the console while building.
+    name: progress
+    headId: progress
+    paramType: boolean
+    default: "true"
+  - type: command-param
+    name: resourcesOutputPath
+    head: resourcesOutputPath
+    headId: resourcesOutputPath
+    paramType: string
+    default: ""
+    description: The path where style resources will be placed, relative to outputPath.
+  - type: command-param
+    head: showCircularDependencies
+    description: Show circular dependency warnings on builds.
+    name: showCircularDependencies
+    headId: showCircularDependencies
+    paramType: boolean
+    default: "true"
+  - type: command-param
+    head: sourceMap
+    description: Output sourcemaps.
+    name: sourceMap
+    headId: sourceMap
+    paramType: boolean
+    default: "true"
+  - type: command-param
+    head: statsJson
+    description: "Generates a 'stats.json' file which can be analyzed using tools
+      such as: `#webpack-bundle-analyzer` or https://webpack.github.io/analyse."
+    name: statsJson
+    headId: statsJson
+    paramType: boolean
+  - type: command-param
+    head: stylePreprocessorOptions
+    description: |
+      Options to pass to style preprocessors.
+    name: stylePreprocessorOptions
+    headId: stylePreprocessorOptions
+    paramType: object
+  - type: command-param
+    head: tsConfig
+    description: The name of the TypeScript configuration file.
+    name: tsConfig
+    headId: tsConfig
+    paramType: string
+    default: tsconfig.app.json
+  - type: command-param
+    head: vendorChunk
+    description: Use a separate bundle containing only vendor libraries.
+    name: vendorChunk
+    headId: vendorChunk
+    paramType: boolean
+    default: "true"
+  - type: command-param
+    head: vendorSourceMap
+    description: Resolve vendor packages sourcemaps.
+    headId: vendorSourceMap
+    name: vendorSourceMap
+    paramType: boolean
+    default: "false"
+  - type: command-param
+    head: verbose
+    description: Adds more details to output logging.
+    name: verbose
+    headId: verbose
+    paramType: boolean

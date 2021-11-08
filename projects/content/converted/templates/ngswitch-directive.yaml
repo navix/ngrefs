@@ -1,0 +1,29 @@
+title: ngSwitch directive
+url: ngswitch-directive
+entries:
+  - type: text
+    text: >-
+      `NgSwitch` is like the JavaScript `switch` statement. It can display one
+      element from among several possible elements, based on a `switch`
+      condition. Angular puts only the selected element into the DOM.
+
+
+      `NgSwitch` is actually a set of three, cooperating directives: `NgSwitch`, `NgSwitchCase`, and `NgSwitchDefault` as seen in this demo.
+  - type: demo
+    source: |-
+      ```html
+      <select [(ngModel)]="type">
+        <option [value]="1">First</option>
+        <option [value]="2">Second</option>
+        <option [value]="3">Third</option>
+        <option [value]="99">Other</option>
+      </select>
+
+      <div [ngSwitch]="type">
+        <div *ngSwitchCase="1">First</div>
+        <div *ngSwitchCase="2">Second</div>
+        <div *ngSwitchCase="3">Third</div>
+        <div *ngSwitchDefault>Default</div>
+      </div>
+      ```
+    demo: V6TemplatesSwitchDemoComponent

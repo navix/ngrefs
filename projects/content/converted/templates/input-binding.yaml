@@ -1,0 +1,66 @@
+title: "@Input binding"
+url: input-binding
+entries:
+  - type: text
+    text: >-
+      An Input property is a settable property annotated with an `@Input`
+      decorator. Values flow into the property when it is data bound with a
+      property binding.
+
+
+      ```typescript
+
+      @Input() testInput: string;
+
+      ```
+  - type: text
+    text: "Setting a property of a directive (the same mechanic for components):"
+  - type: demo
+    source: |
+      ##### app.component.html
+
+      ```html
+      <button clickAlert [message]="alertMessage">Click me!</button>
+      ```
+
+      ##### app.component.ts
+
+      ```
+      export class AppComponent {
+        alertMessage = 'Hi, there.';
+      }
+      ```
+
+      ##### click-alert.directive.ts
+
+      ```typescript
+      @Directive({
+        selector: '[clickAlert]',
+      })
+      export class ClickAlertDirective {
+        @Input message: string;
+
+        @HostListener('click') clickHandler() {
+          alert(this.message);
+        }
+      }
+      ```
+    demo: V6TemplatesInputComponent
+  - type: text
+    text: >
+      Alternatively, you can identify members in the inputs array of the
+      directive metadata:
+
+
+      ```typescript
+
+      @Directive({
+        ...
+        inputs: ['message'],
+      })
+
+      export class ClickAlertDirective {
+        message: string;
+      }
+
+      ```

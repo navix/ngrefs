@@ -1,0 +1,12 @@
+title: upperCase pipe
+url: uppercase-pipe
+entries:
+  - type: text
+    text: Transforms text to all upper case.
+  - type: demo
+    source: |
+      ```html
+      <input [(ngModel)]="value">
+      <p>In uppercase: <pre>{{value | uppercase}}</pre>
+      ```
+    demo: V6TemplatesUppercasepipeDemoComponent

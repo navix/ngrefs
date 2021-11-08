@@ -1,0 +1,29 @@
+title: ngOnChanges()
+url: ng-on-changes
+entries:
+  - type: text
+    text: A callback method that is invoked immediately after the default change
+      detector has checked data-bound properties if at least one has changed,
+      and before the view and content children are checked.
+  - type: text
+    text: |-
+      ```typescript
+      ngOnChanges(changes: SimpleChanges): void
+      ```
+  - type: text
+    text: "#### Example"
+  - type: text
+    text: The following snippet shows how a component can implement this interface
+      to define an on-changes handler for an input property.
+  - type: text
+    text: |-
+      ```typescript
+      @Component({selector: 'my-cmp', template: `...`})
+      class MyComponent implements OnChanges {
+        @Input() prop: number;
+
+        ngOnChanges(changes: SimpleChanges) {
+          // changes.prop contains the old and the new value...
+        }
+      }
+      ```

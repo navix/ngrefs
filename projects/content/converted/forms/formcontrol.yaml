@@ -1,0 +1,67 @@
+title: FormControl
+url: formcontrol
+entries:
+  - type: text
+    text: >-
+      Tracks the value and validation status of an individual form control.
+
+
+      This is one of the three fundamental building blocks of Angular forms, along with [`FormGroup`](../formgroup) and [`FormArray`](../formarray). It extends the [`AbstractControl`](../abstractcontrol) class that implements most of the base functionality for accessing the value, validation status, user interactions and events.
+  - type: text
+    text: "## Interface, extends [AbstractControl](../abstractcontrol)"
+  - type: toc
+  - type: interface-option
+    name: setValue
+    head: setValue
+    headId: setValue
+    interface: |-
+      setValue(value: any, options: {
+          onlySelf?: boolean,
+          emitEvent?: boolean,
+          emitModelToViewChange?: boolean,
+          emitViewToModelChange?: boolean
+        } = {}): void
+    description: Sets a new value for the form control.
+  - type: interface-option
+    name: patchValue
+    head: patchValue
+    headId: patchValue
+    interface: |-
+      patchValue(value: any, options: {
+          onlySelf?: boolean,
+          emitEvent?: boolean,
+          emitModelToViewChange?: boolean,
+          emitViewToModelChange?: boolean
+        } = {}): void
+    description: >-
+      Patches the value of a control.
+
+
+      This function is functionally the same as {@link FormControl#setValue setValue} at this level.
+
+      It exists for symmetry with {@link FormGroup#patchValue patchValue} on `FormGroups` and
+
+      `FormArrays`, where it does behave differently.
+  - type: interface-option
+    name: reset
+    head: reset
+    headId: reset
+    interface: "reset(formState: any = null, options: {onlySelf?: boolean,
+      emitEvent?: boolean} = {}): void"
+    description: >-
+      Resets the form control, marking it `pristine` and `untouched`, and
+      setting
+
+      the value to null.
+  - type: interface-option
+    name: registerOnChange
+    head: registerOnChange
+    headId: registerOnChange
+    interface: "registerOnChange(fn: Function): void"
+    description: Register a listener for change events.
+  - type: interface-option
+    name: registerOnDisabledChange
+    head: registerOnDisabledChange
+    headId: registerOnDisabledChange
+    interface: "registerOnDisabledChange(fn: (isDisabled: boolean) => void): void"
+    description: Register a listener for disabled events.

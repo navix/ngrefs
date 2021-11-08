@@ -1,0 +1,82 @@
+title: CanLoad interface
+url: canload-interface
+entries:
+  - type: text
+    text: Interface that a class can implement to be a guard deciding if a children
+      can be loaded.
+  - type: text
+    text: |-
+      ```typescript
+      interface CanLoad {
+        canLoad(route: Route, segments: UrlSegment[]): 
+          Observable<boolean>|Promise<boolean>|boolean;
+      }
+      ```
+  - type: text
+    text: "#### Example"
+  - type: text
+    text: >-
+      ```typescript
+
+      class UserToken {}
+
+      class Permissions {
+        canLoadChildren(user: UserToken, id: string, segments: UrlSegment[]): boolean {
+          return true;
+        }
+      }
+
+
+      @Injectable()
+
+      class CanLoadTeamSection implements CanLoad {
+        constructor(private permissions: Permissions, private currentUser: UserToken) {}
+
+        canLoad(route: Route, segments: UrlSegment[]): Observable<boolean>|Promise<boolean>|boolean {
+          return this.permissions.canLoadChildren(this.currentUser, route, segments);
+        }
+      }
+
+
+      @NgModule({
+        imports: [
+          RouterModule.forRoot([
+            {
+              path: 'team/:id',
+              component: TeamCmp,
+              loadChildren: 'team.js',
+              canLoad: [CanLoadTeamSection]
+            }
+          ])
+        ],
+        providers: [CanLoadTeamSection, UserToken, Permissions]
+      })
+
+      class AppModule {}
+
+      ```
+  - type: text
+    text: "You can alternatively provide a function with the `canLoad` signature:"
+  - type: text
+    text: |-
+      ```typescript
+      @NgModule({
+        imports: [
+          RouterModule.forRoot([
+            {
+              path: 'team/:id',
+              component: TeamCmp,
+              loadChildren: 'team.js',
+              canLoad: ['canLoadTeamSection']
+            }
+          ])
+        ],
+        providers: [
+          {
+            provide: 'canLoadTeamSection',
+            useValue: (route: Route, segments: UrlSegment[]) => true,
+          }
+        ]
+      })
+      class AppModule {}
+      ```

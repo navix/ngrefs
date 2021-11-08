@@ -1,0 +1,26 @@
+@import "params";
+@import "mq";
+@import "mixins/scroll-colors";
+
+:host {
+  background: var(--header-bg);
+  border-top: 3px solid var(--section-color);
+  color: var(--header-color);
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+  transition: .3s border-top-color;
+  align-items: center;
+}
+
+.brand {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.sections {
+  a {
+    margin: 0 .5rem;
+  }
+}

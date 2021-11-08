@@ -1,0 +1,208 @@
+title: "[formGroup] directive"
+url: formgroup-directive
+entries:
+  - type: text
+    text: >-
+      Binds an existing [`FormGroup`](../formgroup) to a DOM element.
+
+
+      This directive accepts an existing [`FormGroup`](../formgroup) instance. It will then use this
+
+      [`FormGroup`](../formgroup) instance to match any child [`FormControl`](../formcontrol), [`FormGroup`](../formgroup),
+
+      and [`FormArray`](../formarray) instances to child [`FormControlName`](../formcontrolname-directive), [`FormGroupName`](../formgroupname-directive),
+
+      and [`FormArrayName`](../formarrayname-directive) directives.
+  - type: text
+    text: >-
+      ### Register Form Group
+
+
+      The following example registers a `FormGroup` with first name and last name controls,
+
+      and listens for the *ngSubmit* event when the button is clicked.
+
+
+      ```
+
+      import {Component} from '@angular/core';
+
+      import {FormControl, FormGroup, Validators} from '@angular/forms';
+
+
+      @Component({
+        selector: 'example-app',
+        template: `
+          <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <div *ngIf="first.invalid"> Name is too short. </div>
+
+            <input formControlName="first" placeholder="First name">
+            <input formControlName="last" placeholder="Last name">
+
+            <button type="submit">Submit</button>
+         </form>
+         <button (click)="setValue()">Set preset value</button>
+        `,
+      })
+
+      export class SimpleFormGroup {
+        form = new FormGroup({
+          first: new FormControl('Nancy', Validators.minLength(2)),
+          last: new FormControl('Drew'),
+        });
+
+        get first(): any { return this.form.get('first'); }
+
+        onSubmit(): void {
+          console.log(this.form.value);  // {first: 'Nancy', last: 'Drew'}
+        }
+
+        setValue() { this.form.setValue({first: 'Carson', last: 'Drew'}); }
+      }
+
+      ```
+  - type: text
+    text: |
+      ## Interface, extends [ControlContainer](../controlcontainer)
+  - type: toc
+  - type: interface-option
+    name: submitted
+    head: submitted
+    headId: submitted
+    interface: "submitted: boolean"
+    description: Reports whether the form submission has been triggered.
+  - type: interface-option
+    name: directives
+    head: directives
+    headId: directives
+    interface: "directives: FormControlName[]"
+    description: Tracks the list of added `FormControlName` instances
+  - type: interface-option
+    name: form
+    head: form
+    headId: form
+    interface: "@Input('formGroup') form: FormGroup"
+    description: Tracks the `FormGroup` bound to this directive.
+  - type: interface-option
+    name: ngSubmit
+    head: ngSubmit
+    headId: ngSubmit
+    interface: "@Output() ngSubmit"
+    description: Emits an event when the form submission has been triggered.
+  - type: interface-option
+    name: formDirective
+    head: formDirective
+    headId: formDirective
+    interface: "get formDirective(): Form"
+    description: Returns this directive's instance.
+  - type: interface-option
+    name: control
+    head: control
+    headId: control
+    interface: "get control(): FormGroup"
+    description: Returns the `FormGroup` bound to this directive.
+  - type: interface-option
+    name: path
+    head: path
+    headId: path
+    interface: "get path(): string[]"
+    description: >-
+      Returns an array representing the path to this group. Because this
+      directive
+
+      always lives at the top level of a form, it always an empty array.
+  - type: interface-option
+    name: addControl
+    head: addControl
+    headId: addControl
+    interface: "addControl(dir: FormControlName): FormControl"
+    description: >-
+      Method that sets up the control directive in this group, re-calculates its
+      value
+
+      and validity, and adds the instance to the internal list of directives.
+  - type: interface-option
+    name: getControl
+    head: getControl
+    headId: getControl
+    interface: "getControl(dir: FormControlName): FormControl"
+    description: Retrieves the `FormControl` instance from the provided
+      `FormControlName` directive
+  - type: interface-option
+    name: removeControl
+    head: removeControl
+    headId: removeControl
+    interface: "removeControl(dir: FormControlName): void"
+    description: Removes the `FormControlName` instance from the internal list of directives
+  - type: interface-option
+    name: addFormGroup
+    head: addFormGroup
+    headId: addFormGroup
+    interface: "addFormGroup(dir: FormGroupName): void"
+    description: Adds a new `FormGroupName` directive instance to the form.
+  - type: interface-option
+    name: removeFormGroup
+    head: removeFormGroup
+    headId: removeFormGroup
+    interface: "removeFormGroup(dir: FormGroupName): void"
+    description: >-
+      Performs the necessary cleanup when a `FormGroupName` directive instance
+      is removed from the
+
+      view.
+  - type: interface-option
+    name: getFormGroup
+    head: getFormGroup
+    headId: getFormGroup
+    interface: "getFormGroup(dir: FormGroupName): FormGroup"
+    description: Retrieves the `FormGroup` for a provided `FormGroupName` directive instance
+  - type: interface-option
+    name: addFormArray
+    head: addFormArray
+    headId: addFormArray
+    interface: "addFormArray(dir: FormArrayName): void"
+    description: Performs the necessary setup when a `FormArrayName` directive
+      instance is added to the view.
+  - type: interface-option
+    name: removeFormArray
+    head: removeFormArray
+    headId: removeFormArray
+    interface: "removeFormArray(dir: FormArrayName): void"
+    description: >-
+      Performs the necessary cleanup when a `FormArrayName` directive instance
+      is removed from the
+
+      view.
+  - type: interface-option
+    name: getFormArray
+    head: getFormArray
+    headId: getFormArray
+    interface: "getFormArray(dir: FormArrayName): FormArray"
+    description: Retrieves the `FormArray` for a provided `FormArrayName` directive
+      instance.
+  - type: interface-option
+    name: updateModel
+    head: updateModel
+    headId: updateModel
+    interface: "updateModel(dir: FormControlName, value: any): void"
+    description: Sets the new value for the provided `FormControlName` directive.
+  - type: interface-option
+    name: onSubmit
+    head: onSubmit
+    headId: onSubmit
+    interface: "onSubmit($event: Event): boolean"
+    description: |-
+      Method called with the "submit" event is triggered on the form.
+      Triggers the `ngSubmit` emitter to emit the "submit" event as its payload.
+  - type: interface-option
+    name: onReset
+    head: onReset
+    headId: onReset
+    interface: "onReset(): void"
+    description: Method called when the "reset" event is triggered on the form.
+  - type: interface-option
+    name: resetForm
+    head: resetForm
+    headId: resetForm
+    interface: "resetForm(value: any = undefined): void"
+    description: Resets the form to an initial value and resets its submitted status.

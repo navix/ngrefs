@@ -1,0 +1,42 @@
+title: Global styles
+url: global-styles
+entries:
+  - type: text
+    text: >-
+      When building with the CLI, you must configure the `angular.json` to
+      include all external assets, including external style files.
+
+
+      Register global style files in the `styles` section which, by default, is pre-configured with the global `styles.css` file.
+
+
+      You can add more global styles via the `styles` option inside your project's build target options in `angular.json`. These will be loaded exactly as if you had added them in a `<link>` tag inside `index.html`.
+
+
+      ```
+
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "styles": [
+              "src/styles.css",
+              "src/more-styles.css",
+            ],
+            ...
+      ```
+
+
+      You can also rename the output and lazy load it by using the object format:
+
+
+      ```
+
+      "styles": [
+        "src/styles.css",
+        "src/more-styles.css",
+        { "input": "src/lazy-style.scss", "lazy": true },
+        { "input": "src/pre-rename-style.scss", "bundleName": "renamed-style" },
+      ],
+
+      ```

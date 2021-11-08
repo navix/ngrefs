@@ -1,0 +1,111 @@
+title: ngIf directive
+url: ngif-directive
+entries:
+  - type: text
+    text: You can add or remove an element from the DOM by applying an NgIf
+      directive to that element (called the host element). Bind the directive to
+      a condition expression like `isActive` in this demo.
+  - type: demo
+    source: |-
+      ```html
+      <div *ngIf="isActive">
+        This text is displayed when active.
+      </div>
+      <div *ngIf="!isActive">
+        This text is displayed when not active.
+      </div>
+
+      <label>
+        <input type="checkbox" [(ngModel)]="isActive">
+        Is active
+      </label>
+      ```
+
+      ```typescript
+      export class AppComponent {
+        isActive = true;
+      }
+      ```
+    demo: V6TemplatesNgif1DemoComponent
+  - type: text
+    text: >-
+      The `ngIf` directive doesn't hide elements with CSS. It adds and removes
+      them physically from the DOM.
+
+
+      When the `isActive` expression returns a truthy value, `NgIf` adds the `div` to the DOM. When the expression is falsy, `NgIf` removes the `div` from the DOM, destroying that element.
+  - type: text
+    text: |
+      ### *ngIf with else
+  - type: demo
+    source: |-
+      ```html
+      <div *ngIf="isActive; else elseBlock">
+        This text is displayed when active.
+      </div>
+      <ng-template #elseBlock>
+        This text is displayed when not active.
+      </ng-template>
+
+      <label>
+        <input type="checkbox" [(ngModel)]="isActive">
+        Is active
+      </label>
+      ```
+
+      ```typescript
+      export class AppComponent {
+        isActive = true;
+      }
+      ```
+    demo: V6TemplatesNgif2DemoComponent
+  - type: text
+    text: |
+      ### *ngIf with then/else
+  - type: demo
+    source: |
+      ```html
+      <div *ngIf="isActive; then thenBlock else elseBlock"></div>
+      <ng-template #thenBlock>
+        This text is displayed when active.
+      </ng-template>
+      <ng-template #elseBlock>
+        This text is displayed when not active.
+      </ng-template>
+
+      <label>
+        <input type="checkbox" [(ngModel)]="isActive">
+        Is active
+      </label>
+      ```
+
+      ```typescript
+      export class AppComponent {
+        isActive = true;
+      }
+      ```
+    demo: V6TemplatesNgif3DemoComponent
+  - type: text
+    text: >-
+      ### *ngIf with as
+
+
+      Store the value locally. Handy when you check value or get it from `async` pipe.
+  - type: demo
+    source: |
+      ```html
+      <div *ngIf="data?.user as user">
+        User name: {{ user.name }}
+      </div>
+      ```
+
+      ```typescript
+      export class AppComponent {
+        data = {
+          user: {
+            name: 'Superman',
+          },
+        };
+      }
+      ```
+    demo: V6TemplatesNgif4DemoComponent

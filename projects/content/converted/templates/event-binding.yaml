@@ -1,0 +1,55 @@
+title: Event binding ()
+url: event-binding
+entries:
+  - type: text
+    text: >-
+      Event binding syntax consists of a target event name within parentheses on
+      the left of an equal sign, and a quoted template statement on the right.
+      The following event binding listens for the button's click events, calling
+      the component's `onSave()` method whenever a click occurs:
+
+
+      ```html
+
+      <button (click)="onSave()">Save</button>
+
+      ```
+  - type: text
+    text: >-
+      You can also bind an unlimited number of event handlers on the same event
+      by separating them with a semi-colon:
+
+
+      ```html
+
+      <button (click)="onSave1(); onSave2(); …">Save</button>
+
+      ```
+  - type: text
+    text: >-
+      In an event binding, Angular sets up an event handler for the target
+      event.
+
+
+      When the event is raised, the handler executes the template statement. The template statement typically involves a receiver, which performs an action in response to the event, such as storing a value from the HTML control into a model.
+
+
+      The binding conveys information about the event, including data values, through an event object named `$event`.
+
+
+      ```html
+
+      <input [value]="currentHero.name"
+             (input)="currentHero.name=$event.target.value">
+      ```
+  - type: text
+    text: >-
+      Some people prefer the `on-` prefix alternative, known as the canonical
+      form:
+
+
+      ```html
+
+      <button on-click="onSave()">On Save</button>
+
+      ```

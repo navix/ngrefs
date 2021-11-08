@@ -1,0 +1,30 @@
+title: Styling
+url: styling
+color: rgb(255, 154, 3)
+menu:
+  - label: Introduction
+    file: intro
+  - label: Global styles
+    file: global-styles
+  - label: Component inline styles
+    file: component-inline-styles
+  - label: Component external styles
+    file: component-external-styles
+  - label: Template inline styles
+    file: template-inline-styles
+  - label: Styles encapsulation
+    file: encapsulation
+  - label: :host selector
+    file: host-selector
+  - label: :host-context selector
+    file: host-context-selector
+  - label: ::ng-deep selector
+    file: ng-deep-selector
+  - label: "[style.] and @HostBinding"
+    file: style-and-host-binding
+  - label: ngStyle directive
+    file: ngstyle-directive
+  - label: Styling with ElementRef and Renderer2
+    file: styling-with-elementref-and-renderer2
+  - label: DomSanitizer for styling
+    file: domsanitizer-for-styling

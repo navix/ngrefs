@@ -8,7 +8,7 @@
 
 html {
   @include scroll-colors;
-  background: var(--bodyBg);
+  background: var(--body-bg);
   color: var(--textColor);
   font-family: var(--sansSerif);
   margin: 0;
@@ -30,7 +30,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: var(--linkColor);
+  color: var(--link-color);
+  text-decoration: none;
+  transition: .25s;
+  &.-active {
+    color: var(--link-active-color);
+    text-decoration: underline;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .page-content {

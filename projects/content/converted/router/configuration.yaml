@@ -1,0 +1,63 @@
+title: Configuration
+url: configuration
+entries:
+  - type: text
+    text: >
+      A routed Angular application has one singleton instance of the `Router`
+      service. When the browser's URL changes, that router looks for a
+      corresponding `Route` from which it can determine the component to
+      display.
+
+
+      Pass array of routes to the `RouterModule.forRoot` method in the module imports to configure the router.
+  - type: text
+    text: |-
+      ```typescript
+      const appRoutes: Routes = [
+        { path: 'home', component: HomeComponent },
+        { path: 'contacts', component: ContactsComponent },
+      ];
+
+      @NgModule({
+        imports: [
+          RouterModule.forRoot(appRoutes)
+        ],
+        ...
+      })
+      export class AppModule { }
+      ```
+  - type: text
+    text: "### forChild"
+  - type: text
+    text: Only call `RouterModule.forRoot` in the root module. In any other module,
+      you must call the `RouterModule.forChild` method to register additional
+      routes.
+  - type: text
+    text: |
+      ```typescript
+      const blogRoutes: Routes = [
+        { path: 'blog',  component: BlogComponent },
+        { path: 'blog/post/:id', component: BlogPostComponent }
+      ];
+       
+      @NgModule({
+        imports: [
+          RouterModule.forChild(heroesRoutes)
+        ],
+        exports: [
+          RouterModule,
+        ]
+      })
+      export class BlogRoutingModule { }
+      ```
+  - type: tutorials
+    links:
+      - label: Angular — Routing & Navigation
+        url: https://angular.io/guide/router
+        lang: en
+      - label: An Introduction to Component Routing with Angular Router
+        url: https://www.sitepoint.com/component-routing-angular-router/
+        lang: en
+      - label: The Powerful URL Matching Engine of Angular Router
+        url: https://vsavkin.com/the-powerful-url-matching-engine-of-angular-router-775dad593b03
+        lang: en

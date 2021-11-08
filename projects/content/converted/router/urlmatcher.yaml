@@ -1,0 +1,59 @@
+title: UrlMatcher
+url: urlmatcher
+entries:
+  - type: text
+    text: >+
+      Router uses `UrlMatcher` to decide that `Route.path` from configuration is
+      fit to a current navigation URL. Router splits `url` to
+      [segments](../urlsegment) and calls `UrlMatcher` function.
+
+
+
+
+  - type: text
+    text: >-
+      ```typescript
+
+      type UrlMatcher = (segments: UrlSegment[], group: UrlSegmentGroup, route: Route) => UrlMatchResult;
+
+      ```
+  - type: text
+    text: >-
+      A custom URL matcher can be provided when a combination of `path` and
+      `pathMatch` isn't expressive enough.
+
+
+      For instance, the following matcher matches html files.
+  - type: text
+    text: >-
+      ```typescript
+
+      export function htmlFiles(url: UrlSegment[]) {
+        return url.length === 1 && url[0].path.endsWith('.html') ? ({consumed: url}) : null;
+      }
+
+
+      export const routes = [{ matcher: htmlFiles, component: AnyComponent }];
+
+      ```
+  - type: text
+    text: >-
+      ## defaultUrlMatcher
+
+
+      If `Route.urlMatcher` is not defined, will be used `defaultUrlMatcher`. 
+
+
+      `defaultUrlMatcher` splits `path` to segments usign delimeter `/`. If segment starts from `:` it marks as parameter with the same name (except `:` at beginning).
+  - type: text
+    text: |
+      | Path | URL |
+      |---|---|
+      | `blog` | /blog |
+      | `blog/post` | /blog/post |
+      | `blog/post/:id` | /blog/post/123 |
+  - type: tutorials
+    links:
+      - label: The Powerful URL Matching Engine of Angular Router
+        url: https://vsavkin.com/the-powerful-url-matching-engine-of-angular-router-775dad593b03
+        lang: en

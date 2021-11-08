@@ -1,0 +1,67 @@
+title: "Reference #"
+url: reference
+entries:
+  - type: text
+    text: >-
+      A template reference variable is often a reference to a DOM element within
+      a template. It can also be a reference to an Angular component or
+      directive or a web component.
+
+
+      Use the hash symbol (#) to declare a reference variable. You can refer to a template reference variable anywhere in the template. 
+  - type: demo
+    source: >-
+      ```html
+
+      <input #phone placeholder="phone number">
+
+
+      <!-- phone refers to the input element; pass its `value` to an event handler -->
+
+      <button (click)="callPhone(phone.value)">Call</button>
+
+      ```
+
+
+      ```typescript
+
+      export class AppComponent {
+        callPhone(phone: string) {
+          alert(phone);
+        }
+      }
+
+      ```
+    demo: V6TemplatesReferenceDemoComponent
+  - type: text
+    text: |-
+      You can use the `ref-` prefix alternative to `#`.
+
+      ```html
+      <input ref-fax placeholder="fax number">
+      <button (click)="callFax(fax.value)">Fax</button>
+      ```
+  - type: text
+    text: >-
+      ## exportAs
+
+
+      In most cases, Angular sets the reference variable's value to the element on which it was declared. But a directive can change that behavior and set the value to something else, such as itself.
+  - type: text
+    text: |-
+      ```typescript
+      @Directive({
+       selector: '[tooltip]',
+       exportAs: 'tooltip'
+      })
+      ```
+
+      ```html
+      <a tooltip="I'm a tooltip!!" #tooltip="tooltip">I'm a link</a>
+      <button (click)="tooltip.toggleTooltip()">Toggle tooltip</button>
+      ```
+  - type: tutorials
+    links:
+      - label: Angular 2 — Take Advantage Of The exportAs Property
+        lang: en
+        url: https://netbasal.com/angular-2-take-advantage-of-the-exportas-property-81374ce24d26

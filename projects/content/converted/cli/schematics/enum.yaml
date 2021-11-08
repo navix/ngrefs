@@ -1,0 +1,28 @@
+title: Enum generator
+url: schematic-enum
+entries:
+  - type: text
+    text: |
+      ```
+      ng generate enum [name] [--[argument]=[value]]
+      ng generate e
+      ```
+  - type: text
+    text: Create an enumeration.
+  - type: text
+    text: "## Options"
+  - type: toc
+  - type: command-param
+    head: lintFix
+    description: Specifies whether to apply lint fixes after generating the enum.
+    name: lintFix
+    headId: lintFix
+    paramType: boolean
+    default: "false"
+  - type: command-param
+    head: project
+    description: The name of the project.
+    name: project
+    headId: project
+    paramType: string
+    default: ""

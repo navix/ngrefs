@@ -1,0 +1,72 @@
+title: "[class.] binding"
+url: class-binding
+entries:
+  - type: text
+    text: >-
+      You can add and remove CSS class names from an element's `class` attribute
+      with a class binding.
+
+
+      Class binding syntax resembles property binding. Instead of an element property between brackets, start with the prefix `class`, optionally followed by a dot (`.`) and the name of a CSS class: `[class.class-name]`.
+  - type: text
+    text: "You can replace that with a binding to a string of the desired class
+      names; this is an all-or-nothing, replacement binding:"
+  - type: demo
+    source: |-
+      ```html
+      <div class="bold italic red"
+           [class]="textClass">
+        Demo text
+      </div>
+      ```
+
+      ```typescript
+      export class AppComponent {
+        textClass = 'bold italic';
+      }
+      ```
+
+      ```css
+      .bold {
+        font-weight: 600;
+      }
+
+      .italic {
+        font-style: italic;
+      }
+      ```
+    demo: V6TemplatesClass1DemoComponent
+  - type: text
+    text: Finally, you can bind to a specific class name. Angular adds the class
+      when the template expression evaluates to truthy. It removes the class
+      when the expression is falsy.
+  - type: demo
+    source: |-
+      ```html
+      <div [class.special]="isSpecial">
+        The class binding is special
+      </div>
+
+      <div class="special"
+           [class.special]="!isSpecial">
+        This one is not so special
+      </div>
+      ```
+
+      ```typescript
+      export class AppComponent {
+        isSpecial = true;
+      }
+      ```
+
+      ```css
+      .special {
+        background: #36cadb;
+        color: #ffffff;
+      }
+      ```
+    demo: V6TemplatesClass2DemoComponent
+  - type: text
+    text: While this is a fine way to toggle a single class name, the [NgClass
+      directive](../ngclass-directive) is usually preferred when managing
+      multiple class names at the same time.

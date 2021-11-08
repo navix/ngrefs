@@ -1,0 +1,91 @@
+title: "@ViewChild"
+url: view-child
+entries:
+  - type: text
+    text: >-
+      Property decorator that configures a view query. The change detector looks
+      for the first element or the directive matching the selector in the view
+      DOM. If the view DOM changes, and a new child matches the selector, the
+      property is updated.
+
+
+      View queries are set before the ngAfterViewInit callback is called.
+  - type: text
+    text: "#### Example"
+  - type: text
+    text: >-
+      ```typescript
+
+      import {AfterViewInit, Component, Directive, ViewChild} from '@angular/core';
+       
+      @Directive({selector: 'child-directive'})
+
+      class ChildDirective {
+
+      }
+       
+      @Component({selector: 'someCmp', templateUrl: 'someCmp.html'})
+
+      class SomeCmp implements AfterViewInit {
+        @ViewChild(ChildDirective, {static: true}) child: ChildDirective;
+       
+        ngAfterViewInit() {
+          // child is set
+        }
+      }
+
+      ```
+  - type: tutorials
+    links:
+      - lang: en
+        label: "Angular @ViewChild: In-Depth Explanation (All Features Covered)"
+        url: https://blog.angular-university.io/angular-viewchild/
+      - lang: en
+        label: Hidden behavior of @ViewChidlren
+        url: https://stackoverflow.com/a/49167289/2500707
+  - type: text
+    text: "## Options"
+  - type: text
+    text: |-
+      ```typescript
+      @ViewChild(
+        selector: Type<any>|Function|string, 
+        opts?: {read?: any, static: boolean},
+      )
+      ```
+  - type: interface-option
+    head: selector
+    description: The directive type or the name used for querying.
+    name: selector
+    headId: selector
+    interface: "selector: Type<any>|Function|string"
+    showAdditional: true
+    additional: >-
+      Supported selectors include:
+
+
+      * any class with the `@Component` or `@Directive` decorator
+
+      * a template reference variable as a string (e.g. query `<my-component #cmp></my-component>` with `@ViewChild('cmp')`)
+
+      * any provider defined in the child component tree of the current component (e.g. `@ViewChild(SomeService) someService: SomeService`)
+
+      * any provider defined through a string token (e.g. `@ViewChild('someToken') someTokenVal: any`)
+
+      * a `TemplateRef` (e.g. query `<ng-template></ng-template>` with `@ViewChild(TemplateRef) template;`)
+  - type: interface-option
+    head: opts
+    description: Additional options.
+    name: opts
+    headId: opts
+    interface: "opts?: {read?: any}"
+    showAdditional: true
+    additional: |-
+      * `read` - read a different token from the queried elements.
+      * `static` - `true` to resolve query results before change detection runs.
+    tutorialsEntry:
+      id: b7a2c9e4-7ce3-7e2f-2769-370b4dd3bd9d
+      type: tutorials
+      links:
+        - url: https://www.thecodecampus.de/blog/angular-viewchild-static-property-in-ng8/
+          label: Angular ViewChild – static property in ng8

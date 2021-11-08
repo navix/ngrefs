@@ -1,0 +1,409 @@
+title: Browser builder
+url: builder-browser
+entries:
+  - type: text
+    text: |
+      ID: `@angular-devkit/build-angular:browser`
+  - type: text
+    text: "## Options"
+  - type: toc
+  - type: command-param
+    head: aot
+    description: Build using Ahead of Time compilation.
+    name: aot
+    headId: aot
+    paramType: boolean
+  - type: command-param
+    head: assets
+    description: List of static application assets.
+    name: assets
+    headId: assets
+    paramType: array
+  - type: command-param
+    head: baseHref
+    description: Base URL for the application being built.
+    name: baseHref
+    headId: baseHref
+    paramType: ""
+  - type: command-param
+    head: budgets
+    description: >
+      Budget thresholds to ensure parts of your application stay within
+      boundaries which you set.
+    name: budgets
+    headId: budgets
+    paramType: array
+  - type: command-param
+    head: buildEventLog
+    description: Output file path for [Build Event
+      Protocol](https://docs.bazel.build/versions/master/build-event-protocol.html)
+      events.
+    headId: buildEventLog
+    name: buildEventLog
+    paramType: string
+  - type: command-param
+    head: buildOptimizer
+    description: Enables @angular-devkit/build-optimizer optimizations when using
+      the 'aot' option.
+    name: buildOptimizer
+    headId: buildOptimizer
+    paramType: boolean
+  - type: command-param
+    head: commonChunk
+    description: Use a separate bundle containing code used across multiple bundles.
+    name: commonChunk
+    headId: commonChunk
+    paramType: boolean
+    default: "true"
+  - type: command-param
+    name: crossOrigin
+    head: crossOrigin
+    headId: crossOrigin
+    paramType: string
+    default: none
+    description: Define the crossorigin attribute setting of elements that provide
+      CORS support.
+  - type: command-param
+    head: deleteOutputPath
+    description: Delete the output path before building.
+    name: deleteOutputPath
+    headId: deleteOutputPath
+    paramType: boolean
+    default: "true"
+  - type: command-param
+    head: deployUrl
+    description: URL where files will be deployed.
+    name: deployUrl
+    headId: deployUrl
+    paramType: string
+  - type: command-param
+    head: es5BrowserSupport
+    description: Enables conditionally loaded ES2015 polyfills.
+    headId: es5BrowserSupport
+    name: es5BrowserSupport
+    paramType: boolean
+    default: "false"
+    tutorialsEntry:
+      id: 16222192-4f32-bb6d-12fa-ebbb8d9c0c5e
+      type: tutorials
+      links:
+        - lang: en
+          label: https://netbasal.com/prevent-loading-redundant-es2015-browser-polyfills-thanks-to-angular-cli-177494c5244d
+          url: https://netbasal.com/prevent-loading-redundant-es2015-browser-polyfills-thanks-to-angular-cli-177494c5244d
+  - type: command-param
+    head: evalSourceMap
+    description: Output in-file eval sourcemaps.
+    name: evalSourceMap
+    headId: evalSourceMap
+    paramType: boolean
+  - type: command-param
+    head: extractCss
+    description: Extract css from global styles onto css files instead of js ones.
+    name: extractCss
+    headId: extractCss
+    paramType: boolean
+    default: "false"
+  - type: command-param
+    head: extractLicenses
+    description: Extract all licenses in a separate file, in the case of production
+      builds only.
+    name: extractLicenses
+    headId: extractLicenses
+    paramType: boolean
+    default: "true"
+  - type: command-param
+    head: fileReplacements
+    description: Replace files with other files in the build.
+    name: fileReplacements
+    headId: fileReplacements
+    paramType: array
+    tutorialsEntry:
+      id: 8ee63a8b-dfeb-d6b2-5577-0c75d485c011
+      type: tutorials
+      links:
+        - label: Becoming an Angular Environmentalist
+          url: https://blog.angularindepth.com/becoming-an-angular-environmentalist-45a48f7c20d8
+          lang: en
+  - type: command-param
+    head: forkTypeChecker
+    description: Run the TypeScript type checker in a forked process.
+    name: forkTypeChecker
+    headId: forkTypeChecker
+    paramType: boolean
+    default: "true"
+  - type: command-param
+    head: i18nFile
+    description: Localization file to use for i18n.
+    name: i18nFile
+    headId: i18nFile
+    paramType: string
+  - type: command-param
+    head: i18nFormat
+    description: Format of the localization file specified with `i18nFile`.
+    name: i18nFormat
+    headId: i18nFormat
+    paramType: string
+  - type: command-param
+    head: i18nLocale
+    description: Locale to use for i18n.
+    name: i18nLocale
+    headId: i18nLocale
+    paramType: string
+  - type: command-param
+    head: i18nMissingTranslation
+    description: How to handle missing translations for i18n.
+    name: i18nMissingTranslation
+    headId: i18nMissingTranslation
+    paramType: string
+  - type: command-param
+    head: index
+    description: The name of the index HTML file.
+    name: index
+    headId: index
+    paramType: string
+  - type: command-param
+    head: lazyModules
+    description: List of additional NgModule files that will be lazy loaded. Lazy
+      router modules with be discovered automatically.
+    name: lazyModules
+    headId: lazyModules
+    paramType: array
+  - type: command-param
+    name: localize
+    head: localize
+    headId: localize
+    paramType: ""
+    default: ""
+  - type: command-param
+    head: main
+    description: The name of the main entry-point file.
+    name: main
+    headId: main
+    paramType: string
+  - type: command-param
+    head: namedChunks
+    description: Use file name for lazy loaded chunks.
+    name: namedChunks
+    headId: namedChunks
+    paramType: boolean
+    default: "true"
+  - type: command-param
+    head: ngswConfigPath
+    description: Path to ngsw-config.json.
+    headId: ngswConfigPath
+    name: ngswConfigPath
+    paramType: string
+  - type: command-param
+    head: optimization
+    description: >-
+      Defines the optimization level of the build.
+
+
+      It also can take a more fine-grained value, as you can now give an object to configure if you want optimize only the scripts or styles.
+
+
+      ```json
+
+      "optimization": {
+        "scripts": true,
+        "styles": true
+      }
+
+      ```
+    name: optimization
+    headId: optimization
+    paramType: boolean | Object
+    default: "false"
+  - type: command-param
+    head: outputHashing
+    description: Define the output filename cache-busting hashing mode.
+    name: outputHashing
+    headId: outputHashing
+    paramType: string
+    values: none,all,media,bundles
+    default: none
+  - type: command-param
+    head: outputPath
+    description: Path where output will be placed.
+    name: outputPath
+    headId: outputPath
+    paramType: string
+  - type: command-param
+    head: poll
+    description: Enable and define the file watching poll time period in milliseconds.
+    name: poll
+    headId: poll
+    paramType: number
+  - type: command-param
+    head: polyfills
+    description: The name of the polyfills file.
+    name: polyfills
+    headId: polyfills
+    paramType: string
+  - type: command-param
+    head: preserveSymlinks
+    description: Do not use the real path when resolving modules.
+    name: preserveSymlinks
+    headId: preserveSymlinks
+    paramType: boolean
+  - type: command-param
+    head: progress
+    description: Log progress to the console while building.
+    name: progress
+    headId: progress
+    paramType: boolean
+    default: "true"
+  - type: command-param
+    name: rebaseRootRelativeCssUrls
+    head: rebaseRootRelativeCssUrls
+    headId: rebaseRootRelativeCssUrls
+    paramType: boolean
+    default: ""
+    description: Change root relative URLs in stylesheets to include base HREF and
+      deploy URL. Use only for compatibility and transition. The behavior of
+      this option is non-standard and will be removed in the next major release.
+  - type: command-param
+    head: resourcesOutputPath
+    description: Specify where resources will be placed, relative to `outputPath`.
+    headId: resourcesOutputPath
+    name: resourcesOutputPath
+    paramType: string
+    hintEntry:
+      id: f857b0a7-6cc3-a7de-fcef-f0c91e196265
+      type: hint
+      text: You can ouput your CSS in other folder.
+  - type: command-param
+    head: scripts
+    description: Global scripts to be included in the build.
+    name: scripts
+    headId: scripts
+    paramType: array
+  - type: command-param
+    head: serviceWorker
+    description: Generates a service worker config for production builds.
+    name: serviceWorker
+    headId: serviceWorker
+    paramType: boolean
+  - type: command-param
+    head: showCircularDependencies
+    description: Show circular dependency warnings on builds.
+    name: showCircularDependencies
+    headId: showCircularDependencies
+    paramType: boolean
+    default: "true"
+  - type: command-param
+    head: skipAppShell
+    description: Flag to prevent building an app shell.
+    name: skipAppShell
+    headId: skipAppShell
+    paramType: boolean
+  - type: command-param
+    head: sourceMap
+    description: >-
+      Output sourcemaps.
+
+
+      It also can take a more fine-grained value, as you can now give an object to configure if you want only the scripts source maps, the styles source maps, the vendor source maps, or the hidden source maps.
+
+
+      ```json
+
+      "sourceMap": {
+        "scripts": true,
+        "styles": true,
+        "hidden": true,
+        "vendor": true
+      }
+
+      ```
+    name: sourceMap
+    headId: sourceMap
+    paramType: boolean | Object
+    default: "true"
+  - type: command-param
+    head: statsJson
+    description: "Generates a 'stats.json' file which can be analyzed using tools
+      such as: `#webpack-bundle-analyzer` or https://webpack.github.io/analyse."
+    name: statsJson
+    headId: statsJson
+    paramType: boolean
+    hintEntry:
+      id: 039be725-791f-efe7-5849-096cee915618
+      type: hint
+      text: |-
+        View generated stats:
+        * `npm install -g webpack-bundle-analyzer`
+        * `webpack-bundle-analyzer dist/stats.json`
+    tutorialsEntry:
+      id: a94cd89d-672e-6cbb-1971-578c4747f825
+      type: tutorials
+      links:
+        - label: Analyzing bundle size with the Angular CLI and Webpack
+          url: https://coryrylan.com/blog/analyzing-bundle-size-with-the-angular-cli-and-webpack
+          lang: en
+  - type: command-param
+    head: stylePreprocessorOptions
+    description: Options to pass to style preprocessors.
+    name: stylePreprocessorOptions
+    headId: stylePreprocessorOptions
+    paramType: object
+    tutorialsEntry:
+      id: fbd57d86-08f5-7ea2-1078-74aaf32d0bdf
+      type: tutorials
+      links:
+        - lang: en
+          label: Shortcut to Importing Styles Files in Components
+          url: https://scotch.io/tutorials/angular-shortcut-to-importing-styles-files-in-components
+  - type: command-param
+    head: styles
+    description: Global styles to be included in the build.
+    name: styles
+    headId: styles
+    paramType: array
+  - type: command-param
+    head: subresourceIntegrity
+    description: Enables the use of [subresource
+      integrity](https://www.maxcdn.com/one/visual-glossary/subresource-integrity/)
+      validation.
+    name: subresourceIntegrity
+    headId: subresourceIntegrity
+    paramType: boolean
+  - type: command-param
+    head: tsConfig
+    description: The name of the TypeScript configuration file.
+    name: tsConfig
+    headId: tsConfig
+    paramType: string
+  - type: command-param
+    head: vendorChunk
+    description: Use a separate bundle containing only vendor libraries.
+    name: vendorChunk
+    headId: vendorChunk
+    paramType: boolean
+    default: "true"
+  - type: command-param
+    head: vendorSourceMap
+    description: Resolve vendor packages sourcemaps.
+    headId: vendorSourceMap
+    name: vendorSourceMap
+    paramType: boolean
+    default: "false"
+  - type: command-param
+    head: verbose
+    description: Adds more details to output logging.
+    name: verbose
+    headId: verbose
+    paramType: boolean
+  - type: command-param
+    head: watch
+    description: Run build when files change.
+    name: watch
+    headId: watch
+    paramType: boolean
+  - type: command-param
+    name: webWorkerTsConfig
+    head: webWorkerTsConfig
+    headId: webWorkerTsConfig
+    paramType: string
+    default: ""
+    description: TypeScript configuration for Web Worker modules.

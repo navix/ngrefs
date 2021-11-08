@@ -1,0 +1,64 @@
+title: Forms
+url: forms
+color: "#714fe4"
+menu:
+  - label: Introduction
+    file: intro
+  - label: AbstractControlOptions
+    file: abstractcontroloptions
+  - label: AbstractControl
+    file: abstractcontrol
+  - label: FormControl
+    file: formcontrol
+  - label: FormGroup
+    file: formgroup
+  - label: FormArray
+    file: formarray
+  - label: AbstractControlDirective
+    file: abstractcontroldirective
+  - label: NgControl
+    file: ngcontrol
+  - label: ControlContainer
+    file: controlcontainer
+  - label: AbstractFormGroupDirective
+    file: abstractformgroupdirective
+  - label: ControlValueAccessor
+    file: controlvalueaccessor
+  - label: "[ngModel] directive"
+    file: ngmodel-directive
+  - label: "[ngModelGroup] directive"
+    file: ngmodelgroup-directive
+  - label: "[formControl] directive"
+    file: formcontrol-directive
+  - label: "[formControlName] directive"
+    file: formcontrolname-directive
+  - label: "[formGroup] directive"
+    file: formgroup-directive
+  - label: "[formGroupName] directive"
+    file: formgroupname-directive
+  - label: "[formArrayName] directive"
+    file: formarrayname-directive
+  - label: Form interface
+    file: form-interface
+  - label: "[ngForm] directive"
+    file: ngform-directive
+  - label: FormBuilder
+    file: formbuilder
+  - label: Validators
+    file: validators
+  - label: Validator interface
+    file: validator-interface
+  - label: AsyncValidator interface
+    file: asyncvalidator-interface
+  - label: "[required] validation directive"
+    file: required-directive
+  - label: "[email] validation directive"
+    file: email-directive
+  - label: "[minlength] validation directive"
+    file: minlength-directive
+  - label: "[maxlength] validation directive"
+    file: maxlength-directive
+  - label: "[pattern] validation directive"
+    file: pattern-directive
+  - label: "[ngNativeValidate] directive"
+    file: ngnativevalidate-directive

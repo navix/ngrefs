@@ -1,0 +1,42 @@
+title: AbstractFormGroupDirective
+url: abstractformgroupdirective
+entries:
+  - type: text
+    text: A base class for code shared between the
+      [`NgModelGroup`](../ngmodelgroup-directive) and
+      [`FormGroupName`](../formgroupname-directive) directives.
+  - type: text
+    text: |+
+      ## Interface, extends [ControlContainer](../controlcontainer)
+
+  - type: toc
+  - type: interface-option
+    name: control
+    head: control
+    headId: control
+    interface: "get control(): FormGroup"
+    description: The `FormGroup` bound to this directive.
+  - type: interface-option
+    name: path
+    head: path
+    headId: path
+    interface: "get path(): string[]"
+    description: The path to this group from the top-level directive.
+  - type: interface-option
+    name: formDirective
+    head: formDirective
+    headId: formDirective
+    interface: "get formDirective(): Form|null"
+    description: The top-level directive for this group if present, otherwise null.
+  - type: interface-option
+    name: validator
+    head: validator
+    headId: validator
+    interface: "get validator(): ValidatorFn|null"
+    description: The synchronous validators registered with this group.
+  - type: interface-option
+    name: asyncValidator
+    head: asyncValidator
+    headId: asyncValidator
+    interface: "get asyncValidator(): AsyncValidatorFn|null"
+    description: The async validators registered with this group.

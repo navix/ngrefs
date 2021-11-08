@@ -1,0 +1,48 @@
+title: NgControl
+url: ngcontrol
+entries:
+  - type: text
+    text: A base class that all control `FormControl`-based directives extend. It
+      binds a [`FormControl`](../formcontrol) object to a DOM element.
+  - type: text
+    text: |-
+      ### Subclasses
+
+      * [NgModel](../ngmodel-directive)
+      * [FormControlDirective](../formcontrol-directive)
+      * [FormControlName](../formcontrolname-directive)
+  - type: text
+    text: >
+      ## Interface, extends
+      [AbstractControlDirective](../abstractcontroldirective)
+  - type: toc
+  - type: interface-option
+    name: name
+    head: name
+    headId: name
+    interface: "name: string|number|null"
+    description: The name for the control
+  - type: interface-option
+    name: valueAccessor
+    head: valueAccessor
+    headId: valueAccessor
+    interface: "valueAccessor: ControlValueAccessor|null"
+    description: The value accessor for the control
+  - type: interface-option
+    name: validator
+    head: validator
+    headId: validator
+    interface: "get validator(): ValidatorFn|null"
+    description: The registered synchronous validator function for the control
+  - type: interface-option
+    name: asyncValidator
+    head: asyncValidator
+    headId: asyncValidator
+    interface: "get asyncValidator(): AsyncValidatorFn|null"
+    description: The registered async validator function for the control
+  - type: interface-option
+    name: viewToModelUpdate
+    head: viewToModelUpdate
+    headId: viewToModelUpdate
+    interface: "viewToModelUpdate(newValue: any): void"
+    description: The callback method to update the model from the view when requested

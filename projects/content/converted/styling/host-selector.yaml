@@ -1,0 +1,65 @@
+title: :host selector
+url: host-selector
+entries:
+  - type: text
+    text: >
+      Use the `:host` pseudo-class selector to target styles in the element that
+      hosts the component (as opposed to targeting elements inside the
+      component's template).
+  - type: demo
+    source: |-
+      ##### demo.component.html
+
+      ```html
+      Demo component!
+      ```
+
+      ##### demo.component.css
+
+      ```css
+      :host {
+        display: block;
+        border: 1px solid black;
+      }
+      ```
+    demo: V6StylingHost1DemoComponent
+  - type: text
+    text: >-
+      The `:host` selector is the only way to target the host element. You can't
+      reach the host element from inside the component with other selectors
+      because it's not part of the component's own template. The host element is
+      in a parent component's template.
+
+
+      Use the function form to apply host styles conditionally by including another selector inside parentheses after `:host`.
+
+
+      The next example targets the host element again, but only when it also has the `active` CSS class.
+  - type: demo
+    source: |-
+      ##### app.component.html
+
+      ```html
+      <app-demo></app-demo>
+      <app-demo class="active"></app-demo>
+      ```
+
+      ##### demo.component.html
+
+      ```html
+      Demo component!
+      ```
+
+      ##### demo.component.css
+
+      ```css
+      :host {
+        display: block;
+        border: 1px solid black;
+      }
+
+      :host(.active) {
+        border-width: 3px;
+      }
+      ```
+    demo: V6StylingHost2DemoComponent

@@ -1,0 +1,72 @@
+title: Touch events / Gestures
+url: touch-events
+entries:
+  - type: text
+    text: >-
+      Angular supports [Hammer.JS](https://hammerjs.github.io/) gestures. 
+
+
+      Applications need to include the HammerJS script itself.
+
+
+      ```
+
+      npm install hammerjs
+
+      ```
+
+
+      Import [`HammerModule`](https://angular.io/api/platform-browser/HammerModule) at the root of your application so that Angular can work with HammerJS to detect gesture events.
+
+
+      Define lazy Hammer loader provider:
+
+
+      ```typescript
+
+      providers: [
+        {
+          provide: HAMMER_LOADER,
+          useValue: async () => {
+            return import('hammerjs/hammer');
+          },
+        },
+      ...
+
+      ```
+
+
+      Or import the library directly to `main.ts` file:
+
+
+      ```
+
+      import 'hammerjs';
+
+      ```
+
+
+      After that you will be able to bind gesture events.
+  - type: demo
+    source: |-
+      ```html
+      <div (swipe)="swipeHandler()">
+        Swipe me!
+      </div>
+      ```
+
+      ```typescript
+      export class AppComponent {
+        swipeHandler() {
+          alert('Swipe handled!');
+        }
+      }
+      ```
+    demo: V6TemplatesTouchEventsDemoComponent
+  - type: tutorials
+    links:
+      - label: Gestures in an Angular Application
+        url: https://medium.com/angular-in-depth/gestures-in-an-angular-application-dde71804c0d0
+        lang: en
+      - url: https://github.com/angular/components/blob/master/guides/v9-hammerjs-migration.md
+        label: Angular Material - V9 HammerJS migration

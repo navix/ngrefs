@@ -1,0 +1,36 @@
+title: "@Injectable"
+url: injectable
+entries:
+  - type: text
+    text: The `@Injectable` decorator identifies services and other classes that are
+      intended to be injected. It can also be used to configure a provider for
+      those services.
+  - type: text
+    text: |
+      #### Example
+
+      ```typescript
+      import { Injectable } from '@angular/core';
+
+      @Injectable()
+      export class MyService {
+        constructor() { }
+      }
+      ```
+  - type: text
+    text: "## Options"
+  - type: interface-option
+    head: providedIn
+    description: Tells Angular that the root injector is responsible for creating an
+      instance of the service (by invoking its constructor) and making it
+      available across the application.
+    name: providedIn
+    headId: providedIn
+    interface: "providedIn?: Type<any>|'root'|'platform'|'any'|null"
+    showAdditional: true
+    additional: Sometimes it's not desirable to have a service always be provided in
+      the application root injector. Perhaps users should explicitly opt-in to
+      using the service, or the service should be provided in a lazily-loaded
+      context. In this case, the provider should be associated with a specific
+      `@NgModule` class, and will be used by whichever injector includes that
+      module.

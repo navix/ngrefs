@@ -1,0 +1,24 @@
+title: ng doc
+url: command-ng-doc
+entries:
+  - type: text
+    text: >-
+      ```
+
+      ng doc [search term]
+
+      ```
+
+
+      Opens the official Angular API documentation for a given keyword on [angular.io](https://angular.io).
+
+
+
+      ## Options
+  - type: command-param
+    head: search
+    description: "Search whole angular.io instead of just api. "
+    name: search
+    headId: search
+    aliases: s
+    paramType: boolean

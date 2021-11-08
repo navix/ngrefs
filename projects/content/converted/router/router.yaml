@@ -1,0 +1,395 @@
+title: Router
+url: router
+entries:
+  - type: text
+    text: Provides the navigation and url manipulation capabilities.
+  - type: text
+    text: "#### Example"
+  - type: text
+    text: "Imperative navigation:"
+  - type: text
+    text: |
+      ```typescript
+      export class AppComponent {
+        constructor(private router: Router) {
+        }
+
+        navigateToHome() {
+          this.router.navigate('/home');
+        }
+      }
+      ```
+  - type: text
+    text: "## Interface"
+  - type: toc
+  - type: interface-option
+    head: config
+    description: "[Routes configuration](../route-interface)."
+    name: config
+    headId: config
+    interface: "config: Routes"
+  - type: interface-option
+    head: createUrlTree
+    description: >-
+      Appends URL segments to the current URL tree to create a new URL tree.
+
+
+      Returns The new URL tree.
+
+
+      ```
+
+      // create /team/33/user/11
+
+      router.createUrlTree(['/team', 33, 'user', 11]);
+
+
+      // create /team/33;expand=true/user/11
+
+      router.createUrlTree(['/team', 33, {expand: true}, 'user', 11]);
+
+
+      // you can collapse static segments like this (this works only with the first passed-in value):
+
+      router.createUrlTree(['/team/33/user', userId]);
+
+
+      // If the first segment can contain slashes, and you do not want the router to split it,
+
+      // you can do the following:
+
+      router.createUrlTree([{segmentPath: '/one/two'}]);
+
+
+      // create /team/33/(user/11//right:chat)
+
+      router.createUrlTree(['/team', 33, {outlets: {primary: 'user/11', right: 'chat'}}]);
+
+
+      // remove the right secondary node
+
+      router.createUrlTree(['/team', 33, {outlets: {primary: 'user/11', right: null}}]);
+
+
+      // assuming the current url is `/team/33/user/11` and the route points to `user/11`
+
+
+      // navigate to /team/33/user/11/details
+
+      router.createUrlTree(['details'], {relativeTo: route});
+
+
+      // navigate to /team/33/user/22
+
+      router.createUrlTree(['../22'], {relativeTo: route});
+
+
+      // navigate to /team/44/user/22
+
+      router.createUrlTree(['../../team/44/user/22'], {relativeTo: route});
+
+
+      Note that a value of `null` or `undefined` for `relativeTo` indicates that the
+
+      tree should be created relative to the root.
+
+      ```
+    interface: "createUrlTree(commands: any[], navigationExtras: UrlCreationOptions
+      = {}): UrlTree"
+    name: createUrlTree
+    headId: createUrlTree
+  - type: interface-option
+    head: dispose
+    description: "Disposes of the router. "
+    interface: "dispose(): void"
+    name: dispose
+    headId: dispose
+  - type: interface-option
+    head: errorHandler
+    description: A handler for navigation errors in this NgModule.
+    interface: "errorHandler: ErrorHandler"
+    name: errorHandler
+    headId: errorHandler
+  - type: interface-option
+    head: events
+    description: An event stream for routing events in this NgModule.
+    interface: "events: Observable<Event>"
+    name: events
+    headId: events
+  - type: interface-option
+    name: getCurrentNavigation
+    head: getCurrentNavigation
+    headId: getCurrentNavigation
+    interface: "getCurrentNavigation(): Navigation|null"
+    description: |-
+      Returns the current `Navigation` object when the router is navigating,
+      and `null` when idle.
+  - type: interface-option
+    head: initialNavigation
+    description: Sets up the location change listener and performs the initial navigation.
+    interface: "initialNavigation(): void"
+    name: initialNavigation
+    headId: initialNavigation
+  - type: interface-option
+    head: isActive
+    description: ""
+    interface: "isActive(url: string|UrlTree, matchOptions:
+      boolean|IsActiveMatchOptions): boolean"
+    name: isActive
+    headId: isActive
+  - type: interface-option
+    head: malformedUriErrorHandler
+    description: |-
+      A handler for errors thrown by `Router.parseUrl(url)`
+      when `url` contains an invalid character.
+      The most common case is a `%` sign
+      that's not encoded and is not part of a percent encoded sequence.
+    interface: |-
+      malformedUriErrorHandler: (error: URIError, urlSerializer: UrlSerializer,
+             url: string) => UrlTree
+    name: malformedUriErrorHandler
+    headId: malformedUriErrorHandler
+  - type: interface-option
+    head: navigate
+    description: >-
+      Navigate based on the provided array of commands and a starting point.
+
+      If no starting route is provided, the navigation is absolute.
+
+
+      Returns A Promise that resolves to `true` when navigation succeeds, to `false` when navigation
+
+      fails,
+
+      or is rejected on error.
+
+
+      The following calls request navigation to a dynamic route path relative to the current URL.
+
+
+      ```
+
+      router.navigate(['team', 33, 'user', 11], {relativeTo: route});
+
+
+      // Navigate without updating the URL, overriding the default behavior
+
+      router.navigate(['team', 33, 'user', 11], {relativeTo: route, skipLocationChange: true});
+
+      ```
+    interface: "navigate(commands: any[], extras: NavigationExtras =
+      {skipLocationChange: false}): Promise<boolean>"
+    name: navigate
+    headId: navigate
+    showAdditional: true
+    additional: >-
+      Returns a `Promise` that:
+
+
+      * resolves to `true` when navigation succeeds,
+
+      * resolves to `false` when navigation fails,
+
+      * is rejected when an error happens.
+
+
+      #### Example
+
+
+      ```typescript
+
+      router.navigate(['team', 33, 'user', 11], {relativeTo: route});
+
+
+      // Navigate without updating the URL
+
+      router.navigate(['team', 33, 'user', 11], {relativeTo: route, skipLocationChange: true});
+
+      ```
+
+
+      The first parameter of `navigate()` is a delta to be applied to the current URL or the one provided in the `relativeTo` property of the second parameter (the [NavigationExtras](../navigationextras)).
+  - type: interface-option
+    head: navigateByUrl
+    description: |-
+      Navigates to a view using an absolute route path.
+
+      Returns A Promise that resolves to 'true' when navigation succeeds,
+      to 'false' when navigation fails, or is rejected on error.
+
+      The following calls request navigation to an absolute path.
+
+      ```
+      router.navigateByUrl("/team/33/user/11");
+
+      // Navigate without updating the URL
+      router.navigateByUrl("/team/33/user/11", { skipLocationChange: true });
+      ```
+    interface: |-
+      navigateByUrl(url: string|UrlTree, extras: NavigationBehaviorOptions = {
+          skipLocationChange: false
+        }): Promise<boolean>
+    name: navigateByUrl
+    headId: navigateByUrl
+    showAdditional: true
+    additional: >-
+      Returns a `Promise` that:
+
+
+      * resolves to `true` when navigation succeeds,
+
+      * resolves to `false` when navigation fails,
+
+      * is rejected when an error happens.
+
+
+      #### Example
+
+
+      ```typescript
+
+      router.navigateByUrl("/team/33/user/11");
+
+
+      // Navigate without updating the URL
+
+      router.navigateByUrl("/team/33/user/11", { skipLocationChange: true });
+
+      ```
+
+
+      Since `navigateByUrl()` takes an absolute URL as the first parameter, it will not apply any delta to the current URL and ignores any properties in the second parameter (the [`NavigationExtras`](../extraoptions-interface) that would change the provided URL.
+  - type: interface-option
+    head: navigated
+    description: |-
+      True if at least one navigation event has occurred,
+      false otherwise.
+    interface: "navigated: boolean"
+    name: navigated
+    headId: navigated
+  - type: interface-option
+    head: onSameUrlNavigation
+    description: >-
+      How to handle a navigation request to the current URL. One of:
+
+
+      - `'ignore'` :  The router ignores the request.
+
+      - `'reload'` : The router reloads the URL. Use to implement a "refresh" feature.
+
+
+      Note that this only configures whether the Route reprocesses the URL and triggers related
+
+      action and events like redirects, guards, and resolvers. By default, the router re-uses a
+
+      component instance when it re-navigates to the same component type without visiting a different
+
+      component first. This behavior is configured by the `RouteReuseStrategy`. In order to reload
+
+      routed components on same url navigation, you need to set `onSameUrlNavigation` to `'reload'`
+
+      _and_ provide a `RouteReuseStrategy` which returns `false` for `shouldReuseRoute`.
+    interface: "onSameUrlNavigation: 'reload'|'ignore'"
+    name: onSameUrlNavigation
+    headId: onSameUrlNavigation
+  - type: interface-option
+    head: paramsInheritanceStrategy
+    description: |-
+      How to merge parameters, data, and resolved data from parent to child
+      routes. One of:
+
+      - `'emptyOnly'` : Inherit parent parameters, data, and resolved data
+      for path-less or component-less routes.
+      - `'always'` : Inherit parent parameters, data, and resolved data
+      for all child routes.
+    interface: "paramsInheritanceStrategy: 'emptyOnly'|'always'"
+    name: paramsInheritanceStrategy
+    headId: paramsInheritanceStrategy
+  - type: interface-option
+    head: parseUrl
+    description: "Parses a string into a `UrlTree` "
+    interface: "parseUrl(url: string): UrlTree"
+    name: parseUrl
+    headId: parseUrl
+  - type: interface-option
+    name: relativeLinkResolution
+    head: relativeLinkResolution
+    headId: relativeLinkResolution
+    interface: "relativeLinkResolution: 'legacy'|'corrected'"
+    description: Enables a bug fix that corrects relative link resolution in
+      components with empty paths.
+  - type: interface-option
+    head: resetConfig
+    description: |-
+      Resets the route configuration used for navigation and generating links.
+
+      ```
+      router.resetConfig([
+        { path: 'team/:id', component: TeamCmp, children: [
+          { path: 'simple', component: SimpleCmp },
+          { path: 'user/:name', component: UserCmp }
+        ]}
+      ]);
+      ```
+    interface: "resetConfig(config: Routes): void"
+    name: resetConfig
+    headId: resetConfig
+  - type: interface-option
+    head: routeReuseStrategy
+    description: A strategy for re-using routes.
+    interface: "routeReuseStrategy: RouteReuseStrategy"
+    name: routeReuseStrategy
+    headId: routeReuseStrategy
+  - type: interface-option
+    head: routerState
+    description: The current state of routing in this NgModule.
+    interface: "routerState: RouterState"
+    name: routerState
+    headId: routerState
+  - type: interface-option
+    head: serializeUrl
+    description: "Serializes a `UrlTree` into a string "
+    interface: "serializeUrl(url: UrlTree): string"
+    name: serializeUrl
+    headId: serializeUrl
+  - type: interface-option
+    head: setUpLocationChangeListener
+    description: >-
+      Sets up the location change listener. This listener detects navigations
+      triggered from outside
+
+      the Router (the browser back/forward buttons, for example) and schedules a corresponding Router
+
+      navigation so that the correct events, guards, etc. are triggered.
+    interface: "setUpLocationChangeListener(): void"
+    name: setUpLocationChangeListener
+    headId: setUpLocationChangeListener
+  - type: interface-option
+    head: url
+    description: "The current URL. "
+    interface: "get url(): string"
+    name: url
+    headId: url
+  - type: interface-option
+    head: urlHandlingStrategy
+    description: |-
+      A strategy for extracting and merging URLs.
+      Used for AngularJS to Angular migrations.
+    interface: "urlHandlingStrategy: UrlHandlingStrategy"
+    name: urlHandlingStrategy
+    headId: urlHandlingStrategy
+  - type: interface-option
+    head: urlUpdateStrategy
+    description: >-
+      Determines when the router updates the browser URL.
+
+      By default (`"deferred"`), updates the browser URL after navigation has finished.
+
+      Set to `'eager'` to update the browser URL at the beginning of navigation.
+
+      You can choose to update early so that, if navigation fails,
+
+      you can show an error message with the URL that failed.
+    interface: "urlUpdateStrategy: 'deferred'|'eager'"
+    name: urlUpdateStrategy
+    headId: urlUpdateStrategy

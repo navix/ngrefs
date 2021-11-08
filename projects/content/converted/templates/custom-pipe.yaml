@@ -1,0 +1,42 @@
+title: "@Pipe"
+url: custom-pipe
+entries:
+  - type: text
+    text: >-
+      You can create your own custom pipes.
+
+
+      The pipe class implements the `PipeTransform` interface's `transform` method that accepts an input value followed by optional parameters and returns the transformed value.
+  - type: demo
+    source: |-
+      ```typescript
+      @Pipe({name: 'multi'})
+      export class MultiPipe implements PipeTransform {
+        transform(value: number, multiplier: number = 2): number {
+          return value * multiplier;
+        }
+      }
+      ```
+
+      ```html
+      <div>{{ 2 | multi }}</div>
+      <div>{{ 10 | multi:5 }}</div>
+      ```
+    demo: V6TemplatesCustompipeDemoComponent
+  - type: text
+    text: >-
+      Note the following:
+
+
+      * You use your custom pipe the same way you use built-in pipes.
+
+      * You must include your pipe in the `declarations` array of the `AppModule` or in a module where you need it.
+  - type: tutorials
+    links:
+      - label: Step by Step Custom Pipes in Angular
+        url: https://toddmotto.com/angular-pipes-custom-pipes
+        lang: en
+      - label: The essential difference between pure and impure pipes in Angular and why
+          that matters
+        url: https://blog.angularindepth.com/the-essential-difference-between-pure-and-impure-pipes-and-why-that-matters-999818aa068
+        lang: en

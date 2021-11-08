@@ -1,0 +1,27 @@
+title: AbstractControlOptions
+url: abstractcontroloptions
+entries:
+  - type: text
+    text: Interface for options provided to an
+      [`AbstractControl`](../abstractcontrol).
+  - type: text
+    text: "### Properties"
+  - type: toc
+  - type: interface-option
+    head: validators
+    description: The list of validators applied to a control.
+    interface: "validators?: ValidatorFn|ValidatorFn[]|null"
+    name: validators
+    headId: validators
+  - type: interface-option
+    head: asyncValidators
+    description: The list of async validators applied to control.
+    interface: "asyncValidators?: AsyncValidatorFn|AsyncValidatorFn[]|null"
+    name: asyncValidators
+    headId: asyncValidators
+  - type: interface-option
+    head: updateOn
+    description: The event name for control to update upon.
+    interface: "updateOn?: 'change'|'blur'|'submit'"
+    name: updateOn
+    headId: updateOn

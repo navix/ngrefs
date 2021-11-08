@@ -1,0 +1,42 @@
+title: "[required] validation directive"
+url: required-directive
+entries:
+  - type: text
+    text: >
+      A directive that adds the `required` validator to any controls marked with
+      the
+
+      `required` attribute. The directive is provided with the `NG_VALIDATORS` multi-provider list.
+  - type: text
+    text: |-
+      ### Adding a required validator using template-driven forms
+
+      ```
+      <input name="fullName" ngModel required>
+      ```
+  - type: interface-option
+    name: required
+    head: required
+    headId: required
+    interface: "@Input() get required(): boolean|string"
+    description: Tracks changes to the required attribute bound to this directive.
+  - type: interface-option
+    name: required
+    head: required
+    headId: required
+    interface: "set required(value: boolean|string)"
+    description: ""
+  - type: interface-option
+    name: validate
+    head: validate
+    headId: validate
+    interface: "validate(control: AbstractControl): ValidationErrors|null"
+    description: |-
+      Method that validates whether the control is empty.
+      Returns the validation result if enabled, otherwise null.
+  - type: interface-option
+    name: registerOnValidatorChange
+    head: registerOnValidatorChange
+    headId: registerOnValidatorChange
+    interface: "registerOnValidatorChange(fn: () => void): void"
+    description: Registers a callback function to call when the validator inputs change.

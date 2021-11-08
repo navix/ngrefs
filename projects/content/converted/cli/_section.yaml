@@ -1,0 +1,90 @@
+title: CLI
+url: cli
+color: rgb(234, 37, 37)
+menu:
+  - label: Introduction
+    file: intro
+  - label: Quick start
+    file: quick-start
+  - label: angular.json
+    file: angular-json
+  - label: Commands
+    children:
+    - label: ng new
+      file: commands/ng-new
+    - label: ng serve
+      file: commands/ng-serve
+    - label: ng build
+      file: commands/ng-build
+    - label: ng test
+      file: commands/ng-test
+    - label: ng e2e
+      file: commands/ng-e2e
+    - label: ng lint
+      file: commands/ng-lint
+    - label: ng run
+      file: commands/ng-run
+    - label: ng generate
+      file: commands/ng-generate
+    - label: ng add
+      file: commands/ng-add
+    - label: ng xi18n
+      file: commands/ng-xi18n
+    - label: ng update
+      file: commands/ng-update
+    - label: ng config
+      file: commands/ng-config
+    - label: ng doc
+      file: commands/ng-doc
+  - label: Builders
+    file: builders
+    children:
+    - label: App-shell builder
+      file: builders/app-shell
+    - label: Browser builder
+      file: builders/browser
+    - label: Dev-server builder
+      file: builders/dev-server
+    - label: Extract-i18n builder
+      file: builders/extract-i18n
+    - label: Karma builder
+      file: builders/karma
+    - label: Protractor builder
+      file: builders/protractor
+    - label: Server builder
+      file: builders/server
+    - label: Tslint builder
+      file: builders/tslint
+  - label: Schematics
+    file: schematics
+    children:
+    - label: Application generator
+      file: schematics/application
+    - label: AppShell generator
+      file: schematics/app-shell
+    - label: Class generator
+      file: schematics/class
+    - label: Component generator
+      file: schematics/component
+    - label: Directive generator
+      file: schematics/directive
+    - label: Enum generator
+      file: schematics/enum
+    - label: Guard generator
+      file: schematics/guard
+    - label: Interceptor generator
+      file: schematics/interceptor
+    - label: Interface generator
+      file: schematics/interface
+    - label: Library generator
+      file: schematics/library
+    - label: Module generator
+      file: schematics/module
+    - label: Pipe generator
+      file: schematics/pipe
+    - label: Service generator
+      file: schematics/service
+    - label: ServiceWorker generator
+      file: schematics/service-worker
+    - label: WebWorker generator
+      file: schematics/web-worker

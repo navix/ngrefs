@@ -1,0 +1,42 @@
+title: "[pattern] validation directive"
+url: pattern-directive
+entries:
+  - type: text
+    text: |-
+      A directive that adds regex pattern validation to controls marked with the
+      `pattern` attribute. The regex must match the entire control value.
+
+      The directive is provided with the `NG_VALIDATORS` multi-provider list.
+  - type: text
+    text: >-
+      ### Adding a pattern validator
+
+
+      The following example shows how to add a pattern validator to an input attached to an
+
+      ngModel binding.
+
+
+      ```html
+
+      <input name="firstName" ngModel pattern="[a-zA-Z ]*">
+
+      ```
+  - type: interface-option
+    name: pattern
+    head: pattern
+    headId: pattern
+    interface: "@Input() pattern: string|RegExp"
+    description: Tracks changes to the pattern bound to this directive.
+  - type: interface-option
+    name: validate
+    head: validate
+    headId: validate
+    interface: "validate(control: AbstractControl): ValidationErrors|null"
+    description: Method that validates whether the value matches the pattern requirement.
+  - type: interface-option
+    name: registerOnValidatorChange
+    head: registerOnValidatorChange
+    headId: registerOnValidatorChange
+    interface: "registerOnValidatorChange(fn: () => void): void"
+    description: Registers a callback function to call when the validator inputs change.

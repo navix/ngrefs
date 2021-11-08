@@ -1,0 +1,108 @@
+title: FormBuilder
+url: formbuilder
+entries:
+  - type: text
+    text: >
+      Creates an [`AbstractControl`](../abstractcontrol) from a user-specified
+      configuration.
+
+
+      The `FormBuilder` provides syntactic sugar that shortens creating instances of a [`FormControl`](../formcontrol),
+
+      [`FormGroup`](../formgroup), or [`FormArray`](../formarray). It reduces the amount of boilerplate needed to build complex
+
+      forms.
+  - type: tutorials
+    links:
+      - url: https://angular.io/guide/reactive-forms
+        label: Angular - Reactive forms
+      - url: https://medium.com/angular-in-depth/dive-into-reactive-forms-cfc9adbb4467
+        label: Dive into Reactive Forms
+      - label: Understanding Angular Reactive Forms
+        url: https://itnext.io/understanding-angular-reactive-forms-241f9ed42c56
+      - label: Angular Form Builder and Validation Management
+        url: https://coryrylan.com/blog/angular-form-builder-and-validation-management
+  - type: text
+    text: >-
+      ### Generating form controls
+
+
+      The `FormBuilder` service has three methods: `control()`, `group()`, and `array()`. These are factory methods for generating instances in your component classes including form controls, form groups, and form arrays.
+
+
+      ```
+
+      import { Component } from '@angular/core';
+
+      import { FormBuilder, Validators } from '@angular/forms';
+
+      import { ValidationService } from 'app/validation.service';
+
+
+      @Component({
+        selector: 'demo-app',
+        templateUrl: 'app/app.component.html'
+      })
+
+      export class AppComponent {
+        userForm: any;
+
+        constructor(private formBuilder: FormBuilder) {
+          this.userForm = this.formBuilder.group({
+            name: ['', Validators.required],
+            email: ['', [Validators.required, ValidationService.emailValidator]],
+            profile: ['', [Validators.required, Validators.minLength(10)]]
+          });
+        }
+
+        saveUser() {
+          if (this.userForm.dirty && this.userForm.valid) {
+            alert(
+              `Name: ${this.userForm.value.name} Email: ${this.userForm.value.email}`
+            );
+          }
+        }
+      }
+
+      ```
+  - type: text
+    text: "## Interface"
+  - type: toc
+  - type: interface-option
+    name: group
+    head: group
+    headId: group
+    interface: "group(controlsConfig: {[key: string]: any}, options:
+      AbstractControlOptions|{[key: string]: any}|null = null): FormGroup"
+    description: ""
+  - type: interface-option
+    name: control
+    head: control
+    headId: control
+    interface: "control(formState: any, validatorOrOpts?:
+      ValidatorFn|ValidatorFn[]|AbstractControlOptions|null, asyncValidator?:
+      AsyncValidatorFn|AsyncValidatorFn[]|null): FormControl"
+    description: >-
+      Construct a new `FormControl` with the given state, validators and
+      options.
+
+
+      ### Initialize a control as disabled
+
+
+      The following example returns a control with an initial value in a disabled state.
+
+
+      <code-example path="forms/ts/formBuilder/form_builder_example.ts" region="disabled-control">
+
+      </code-example>
+  - type: interface-option
+    name: array
+    head: array
+    headId: array
+    interface: "array(controlsConfig: any[], validatorOrOpts?:
+      ValidatorFn|ValidatorFn[]|AbstractControlOptions|null, asyncValidator?:
+      AsyncValidatorFn|AsyncValidatorFn[]|null): FormArray"
+    description: |-
+      Constructs a new `FormArray` from the given array of configurations,
+      validators and options.

@@ -1,0 +1,48 @@
+title: "@Pipe"
+url: pipe
+entries:
+  - type: text
+    text: A pipe takes in data as input and transforms it to a desired output.
+  - type: text
+    text: |-
+      #### Example
+
+      Here's a custom pipe that doubles a value:
+
+      ```typescript
+      import { Pipe, PipeTransform } from '@angular/core';
+
+      @Pipe({name: 'double'})
+      export class DoublePipe implements PipeTransform {
+        transform(value: number): number {
+          return value * 2;
+        }
+      }
+      ```
+
+      Usage:
+
+      ```html
+      {{ value | double }} 
+      ```
+  - type: text
+    text: "## Options"
+  - type: interface-option
+    head: name
+    description: The pipe name to use in template bindings.
+    name: name
+    headId: name
+    interface: "name: string"
+  - type: interface-option
+    head: pure
+    description: When true, the pipe is pure, meaning that the `transform()` method
+      is invoked only when its input arguments change. Pipes are pure by
+      default.
+    name: pure
+    headId: pure
+    interface: "pure?: boolean"
+    showAdditional: true
+    additional: If the pipe has internal state (that is, the result depends on state
+      other than its arguments), set pure to false. In this case, the pipe is
+      invoked on each change-detection cycle, even if the arguments have not
+      changed.

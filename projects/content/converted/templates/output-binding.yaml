@@ -1,0 +1,73 @@
+title: "@Output binding"
+url: output-binding
+entries:
+  - type: text
+    text: >-
+      An Output property is an observable property annotated with an `@Output`
+      decorator. The property almost always returns an Angular `EventEmitter`.
+      Values flow out of the component as events bound with an event binding.
+
+
+      ```typescript
+
+      @Output() testEvent = new EventEmitter<any>();
+
+      ```
+  - type: demo
+    source: |-
+      ##### test-output.component.html
+
+      ```html
+      <button (click)="emitTest()">Click me!</button>
+      ```
+
+      ##### test-output.component.ts
+
+      ```typescript
+      @Component({
+        selector: 'test-output',
+        ...
+      })
+      export component TestOutputComponent {
+        @Output() test = new EventEmitter();
+
+        emitTest() {
+          this.test.emit('test');
+        }
+      }
+      ```
+
+      ##### app.component.html
+
+      ```html
+      <test-output (test)="handleTest($event)"></test-output>
+      ```
+
+      ##### app.component.ts
+
+      ```typescript
+      export class AppComponent {
+        handleTest(value) {
+          alert(`Test event handled with value: ${value}`);
+        }
+      }
+      ```
+    demo: V6TemplatesOutputDemoComponent
+  - type: text
+    text: >-
+      Alternatively, you can identify members in the outputs array of the
+      directive metadata, as in this example:
+
+
+      ```typescript
+
+      @Component({
+        ...
+        outputs: ['test'],
+      })
+
+      export class TestOutputComponent {
+        test = new EventEmitter();
+      }
+
+      ```

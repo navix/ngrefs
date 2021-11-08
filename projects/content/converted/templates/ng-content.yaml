@@ -1,0 +1,88 @@
+title: Content projection with ng-content
+url: ng-content
+entries:
+  - type: text
+    text: Content projection is a way to import HTML content from outside the
+      component and insert that content into the component's template in a
+      designated spot.
+  - type: demo
+    source: |
+      ##### app.component.ts
+
+      ```html
+      <my-component>
+        Some content
+      </my-component>
+      ```
+
+      ##### my.component.ts
+
+      ```html
+      Projected content: <ng-content></ng-content>
+      ```
+    demo: V6TemplatesNgcontent1DemoComponent
+  - type: text
+    text: |
+      ### ng-content with select
+  - type: demo
+    source: |-
+      ##### app.component.ts
+
+      ```html
+      <my-component>
+        <div class="primary">Primary content</div>
+        <div secondary>Secondary content</div>
+        <div>Div content</div>
+        Non selected content.
+      </my-component>
+      ```
+
+      ##### my.component.ts
+
+      ```html
+      <div><ng-content></ng-content></div>
+      <div>
+        Primary content: 
+        <ng-content select=".primary"></ng-content>
+      </div>
+      <div>
+        Secondary content: 
+        <ng-content select="[secondary]"></ng-content>
+      </div>
+      <div>
+        Div content: 
+        <ng-content select="div"></ng-content>
+      </div>
+      ```
+    demo: V6TemplatesNgcontent2DemoComponent
+  - type: text
+    text: "### ng-content with pojectAs"
+  - type: text
+    text: You can define which selector will be used with `<ng-content>`.
+  - type: demo
+    source: |-
+      ##### app.component.ts
+
+      ```html
+      <my-component>
+        <ng-container ngProjectAs="custom">
+         Projected As.
+        </ng-container>
+        Non selected content.
+      </my-component>
+      ```
+
+      ##### my.component.ts
+
+      ```html
+      <div><ng-content></ng-content></div>
+      <div>
+        <ng-content select="custom"></ng-content>
+      </div>
+      ```
+    demo: V6TemplatesNgcontent3DemoComponent
+  - type: tutorials
+    links:
+      - label: "ng-content: The hidden docs"
+        lang: en
+        url: https://medium.com/claritydesignsystem/ng-content-the-hidden-docs-96a29d70d11b

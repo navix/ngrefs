@@ -1,0 +1,99 @@
+title: currency pipe
+url: currency-pipe
+entries:
+  - type: text
+    text: Transforms a number to a currency string, formatted according to locale
+      rules that determine group sizing and separator, decimal-point character,
+      and other locale-specific configurations.
+  - type: demo
+    source: |-
+      ```html
+      <p>A: {{a | currency}}</p>
+      <p>A: {{a | currency:'CAD'}}</p>
+      <p>A: {{a | currency:'CAD':'code'}}</p>
+      <p>B: {{b | currency:'CAD':'symbol':'4.2-2'}}</p>
+      <p>B: {{b | currency:'CAD':'symbol-narrow':'4.2-2'}}</p>
+      <p>B: {{b | currency:'CLP'}}</p>
+      ```
+
+      ```typescript
+      export class AppComponent {
+        a = 0.259;
+        b = 1.3495;
+      }
+      ```
+    demo: V6TemplatesCurrencypipeDemoComponent
+  - type: text
+    text: |
+      ## Parameters
+  - type: text
+    text: >-
+      ```
+
+      {{ value_expression | currency [ : currencyCode [ : display [ : digitsInfo [ : locale ] ] ] ] }}
+
+      ```
+  - type: toc
+  - type: interface-option
+    head: currencyCode
+    description: >
+      The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code, such
+      as `USD` for the US dollar and `EUR` for the euro.
+    name: currencyCode
+    headId: currencyCode
+    interface: "currencyCode?: string"
+  - type: interface-option
+    head: display
+    description: The format for the currency indicator.
+    interface: "display: 'code'|'symbol'|'symbol-narrow'|string|boolean = 'symbol'"
+    name: display
+    headId: display
+    showAdditional: true
+    additional: >-
+      One of the following:
+        - `code`: Show the code (such as `USD`).
+        - `symbol`(default): Show the symbol (such as `$`).
+        - `symbol-narrow`: Use the narrow symbol for locales that have two symbols for their currency.
+
+      For example, the Canadian dollar CAD has the symbol `CA$` and the symbol-narrow `$`. If the locale has no narrow symbol, uses the standard symbol for the locale.
+        - String: Use the given string value instead of a code or a symbol.
+        - Boolean (marked deprecated in v5): `true` for symbol and false for `code`.
+  - type: interface-option
+    head: digitsInfo
+    description: Decimal representation options.
+    interface: "digitsInfo?: string"
+    name: digitsInfo
+    headId: digitsInfo
+    showAdditional: true
+    additional: >-
+      Specified by a string in the following format:
+
+
+      ```
+
+      {minIntegerDigits}.{minFractionDigits}-{maxFractionDigits}
+
+      ```
+
+
+      - `minIntegerDigits`: The minimum number of integer digits before the decimal point. Default is `1`.
+
+      - `minFractionDigits`: The minimum number of digits after the decimal point. Default is `0`.
+
+      - `maxFractionDigits`: The maximum number of digits after the decimal point. Default is `3`.
+
+
+      If not provided, the number will be formatted with the proper amount of digits, depending on what the [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) specifies.
+
+
+      For example, the Canadian dollar has 2 digits, whereas the Chilean peso has none.
+  - type: interface-option
+    head: locale
+    description: A locale code for the locale format rules to use.
+    name: locale
+    headId: locale
+    interface: "locale?: string"
+    showAdditional: true
+    additional: When not supplied, uses the value of `LOCALE_ID`, which is `en-US`
+      by default. See [Setting your app
+      locale](https://angular.io/guide/i18n#setting-up-the-locale-of-your-app).

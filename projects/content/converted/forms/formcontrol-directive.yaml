@@ -1,0 +1,116 @@
+title: "[formControl] directive"
+url: formcontrol-directive
+entries:
+  - type: text
+    text: >
+      Syncs a standalone [`FormControl`](../formcontrol) instance to a form
+      control element.
+  - type: text
+    text: >-
+      ### Registering a single form control
+
+
+      The following examples shows how to register a standalone control and set its value.
+
+
+      ```
+
+      import {Component} from '@angular/core';
+
+      import {FormControl, Validators} from '@angular/forms';
+
+
+      @Component({
+        selector: 'example-app',
+        template: `
+           <input [formControl]="control">
+            
+           <p>Value: {{ control.value }}</p>
+           <p>Validation status: {{ control.status }}</p>
+           
+           <button (click)="setValue()">Set value</button>
+        `,
+      })
+
+      export class SimpleFormControl {
+        control: FormControl = new FormControl('value', Validators.minLength(2));
+
+        setValue() { this.control.setValue('new value'); }
+      }
+
+      ```
+  - type: text
+    text: |
+      ## Interface, extends [NgControl](../ngcontrol)
+  - type: toc
+  - type: interface-option
+    name: viewModel
+    head: viewModel
+    headId: viewModel
+    interface: "viewModel: any"
+    description: Internal reference to the view model value.
+  - type: interface-option
+    name: form
+    head: form
+    headId: form
+    interface: "@Input('formControl') form: FormControl"
+    description: Tracks the `FormControl` instance bound to the directive.
+  - type: interface-option
+    name: isDisabled
+    head: isDisabled
+    headId: isDisabled
+    interface: "@Input('disabled') set isDisabled(isDisabled: boolean)"
+    description: Triggers a warning in dev mode that this input should not be used
+      with reactive forms.
+  - type: interface-option
+    name: model
+    head: model
+    headId: model
+    interface: "@Input('ngModel') model: any"
+    description: ""
+  - type: interface-option
+    name: update
+    head: update
+    headId: update
+    interface: "@Output('ngModelChange') update"
+    description: ""
+  - type: interface-option
+    name: path
+    head: path
+    headId: path
+    interface: "get path(): string[]"
+    description: >-
+      Returns an array that represents the path from the top-level form to this
+      control.
+
+      Each index is the string name of the control on that level.
+  - type: interface-option
+    name: validator
+    head: validator
+    headId: validator
+    interface: "get validator(): ValidatorFn|null"
+    description: |-
+      Synchronous validator function composed of all the synchronous validators
+      registered with this directive.
+  - type: interface-option
+    name: asyncValidator
+    head: asyncValidator
+    headId: asyncValidator
+    interface: "get asyncValidator(): AsyncValidatorFn|null"
+    description: >-
+      Async validator function composed of all the async validators registered
+      with this
+
+      directive.
+  - type: interface-option
+    name: control
+    head: control
+    headId: control
+    interface: "get control(): FormControl"
+    description: The `FormControl` bound to this directive.
+  - type: interface-option
+    name: viewToModelUpdate
+    head: viewToModelUpdate
+    headId: viewToModelUpdate
+    interface: "viewToModelUpdate(newValue: any): void"
+    description: Sets the new value for the view model and emits an `ngModelChange` event.

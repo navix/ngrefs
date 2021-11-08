@@ -1,0 +1,161 @@
+title: "@Component"
+url: component
+entries:
+  - type: text
+    text: >
+      Components are the most basic UI building block of an Angular app.
+
+
+      Angular components are a subset of directives, always associated with a template. Unlike other directives, only one component can be instantiated per an element in a template.
+
+
+      A component must belong to an `NgModule` in order for it to be available to another component or application. To make it a member of an `NgModule`, list it in the `declarations` field of the `@NgModule` metadata.
+  - type: text
+    text: |-
+      #### Example
+
+      ```typescript
+      import {Component} from '@angular/core';
+
+      @Component({
+        selector: 'my-component',
+        template: `Hello there!`
+      })
+      export class MyComponent {
+      ...
+      }
+      ```
+  - type: text
+    text: "## Options"
+  - type: toc
+  - type: text
+    text: |-
+      ### Inherited from Directive decorator
+
+      * [selector](../directive#selector)
+      * [inputs](../directive#inputs)
+      * [outputs](../directive#outputs)
+      * [providers](../directive#providers)
+      * [exportAs](../directive#exportAs)
+      * [queries](../directive#queries)
+      * [jit](../directive#jit)
+      * [host](../directive#host)
+  - type: interface-option
+    head: animations
+    description: One or more animation `trigger()` calls, containing `state()` and
+      `transition()` definitions.
+    name: animations
+    headId: animations
+    interface: "animations?: any[]"
+  - type: interface-option
+    head: changeDetection
+    description: The change-detection strategy to use for this component.
+    name: changeDetection
+    headId: changeDetection
+    interface: "changeDetection?: ChangeDetectionStrategy"
+    showAdditional: true
+    additional: >-
+      When a component is instantiated, Angular creates a change detector,
+
+      which is responsible for propagating the component's bindings.
+
+      The strategy is one of:
+
+      - `ChangeDetectionStrategy#OnPush` sets the strategy to `CheckOnce` (on demand).
+
+      - `ChangeDetectionStrategy#Default` sets the strategy to `CheckAlways`.
+  - type: interface-option
+    head: encapsulation
+    description: |-
+      An encapsulation policy for the template and CSS styles. One of:
+      - `ViewEncapsulation.Native`: Use shadow roots. This works
+      only if natively available on the platform.
+      - `ViewEncapsulation.Emulated`: Use shimmed CSS that
+      emulates the native behavior.
+      - `ViewEncapsulation.None`: Use global CSS without any
+      encapsulation.
+    name: encapsulation
+    headId: encapsulation
+    interface: "encapsulation?: ViewEncapsulation"
+    showAdditional: true
+    additional: >-
+      If not supplied, the value is taken from `CompilerOptions`. The default
+      compiler option is
+
+      `ViewEncapsulation.Emulated`.
+
+
+      If the policy is set to `ViewEncapsulation.Emulated` and the component has no `styles`
+
+      or `styleUrls` specified, the policy is automatically switched to `ViewEncapsulation.None`.
+  - type: interface-option
+    head: entryComponents
+    description: A set of components that should be compiled along with this
+      component. For each component listed here, Angular creates a
+      `ComponentFactory` and stores it in the `ComponentFactoryResolver`.
+    name: entryComponents
+    headId: entryComponents
+    interface: "entryComponents?: Array<Type<any>|any[]>"
+  - type: interface-option
+    head: interpolation
+    description: Overrides the default encapsulation start and end delimiters (`{{`
+      and `}}`)
+    name: interpolation
+    headId: interpolation
+    interface: "interpolation?: [string, string]"
+  - type: interface-option
+    head: moduleId
+    description: >-
+      The module ID of the module that contains the component.
+
+      The component must be able to resolve relative URLs for templates and styles.
+
+      SystemJS exposes the `__moduleName` variable within each module.
+
+      In CommonJS, this can  be set to `module.id`.
+    name: moduleId
+    headId: moduleId
+    interface: "moduleId?: string"
+  - type: interface-option
+    head: preserveWhitespaces
+    description: True to preserve or false to remove potentially superfluous
+      whitespace characters from the compiled template. Whitespace characters
+      are those matching the `\s` character class in JavaScript regular
+      expressions. Default is false, unless overridden in compiler options.
+    name: preserveWhitespaces
+    headId: preserveWhitespaces
+    interface: "preserveWhitespaces?: boolean"
+  - type: interface-option
+    head: styleUrls
+    description: One or more URLs for files containing CSS stylesheets to use in
+      this component.
+    name: styleUrls
+    headId: styleUrls
+    interface: "styleUrls?: string[]"
+  - type: interface-option
+    head: styles
+    description: One or more inline CSS stylesheets to use in this component.
+    name: styles
+    headId: styles
+    interface: "styles?: string[]"
+  - type: interface-option
+    head: template
+    description: An inline template for an Angular component. If provided, do not
+      supply a template file using `templateUrl`.
+    name: template
+    headId: template
+    interface: "template?: string"
+  - type: interface-option
+    head: templateUrl
+    description: The URL of a template file for an Angular component. If provided,
+      do not supply an inline template using `template`.
+    name: templateUrl
+    headId: templateUrl
+    interface: "templateUrl?: string"
+  - type: interface-option
+    head: viewProviders
+    description: Defines the set of injectable objects that are visible to its view
+      DOM children.
+    name: viewProviders
+    headId: viewProviders
+    interface: "viewProviders?: Provider[]"

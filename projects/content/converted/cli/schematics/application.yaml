@@ -1,0 +1,90 @@
+title: Application generator
+url: schematic-application
+entries:
+  - type: text
+    text: |
+      ```
+      ng generate application [name] [--[argument]=[value]]
+      ng generate app
+      ```
+  - type: text
+    text: Create an Angular application.
+  - type: text
+    text: "## Options"
+  - type: toc
+  - type: command-param
+    head: experimentalIvy
+    description: "EXPERIMENTAL: Specifies whether to create a new application which
+      uses the Ivy rendering engine."
+    headId: experimentalIvy
+    name: experimentalIvy
+    paramType: boolean
+    default: "false"
+  - type: command-param
+    head: inlineStyle
+    description: Specifies if the style will be in the ts file.
+    name: inlineStyle
+    headId: inlineStyle
+    paramType: boolean
+    default: "false"
+    aliases: s
+  - type: command-param
+    head: inlineTemplate
+    description: Specifies if the template will be in the ts file.
+    name: inlineTemplate
+    headId: inlineTemplate
+    paramType: boolean
+    default: "false"
+    aliases: t
+  - type: command-param
+    head: minimal
+    description: Create a barebones project without any testing frameworks.
+    headId: minimal
+    name: minimal
+    paramType: boolean
+    default: "false"
+  - type: command-param
+    head: prefix
+    description: The prefix to apply to generated selectors.
+    name: prefix
+    headId: prefix
+    paramType: string
+    default: app
+    aliases: p
+  - type: command-param
+    head: routing
+    description: Generates a routing module.
+    name: routing
+    headId: routing
+    paramType: boolean
+    default: "false"
+  - type: command-param
+    head: skipPackageJson
+    description: Do not add dependencies to `package.json`.
+    name: skipPackageJson
+    headId: skipPackageJson
+    paramType: boolean
+    default: "false"
+  - type: command-param
+    head: skipTests
+    description: Skip creating spec files.
+    name: skipTests
+    headId: skipTests
+    paramType: boolean
+    default: "false"
+    aliases: S
+  - type: command-param
+    head: style
+    description: The file extension to be used for style files.
+    name: style
+    headId: style
+    paramType: string
+    default: css
+  - type: command-param
+    head: viewEncapsulation
+    description: Specifies the view encapsulation strategy.
+    name: viewEncapsulation
+    headId: viewEncapsulation
+    paramType: string
+    values: Emulated, Native, None
+    default: Emulated

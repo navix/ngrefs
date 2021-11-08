@@ -1,0 +1,100 @@
+title: Templates
+url: templates
+color: rgb(255, 154, 3)
+menu:
+  - label: Introduction
+    file: intro
+  - label: Interpolation
+    file: interpolation
+  - label: "@Directive"
+    file: directive
+  - label: "@Component"
+    file: component
+  - label: Property binding []
+    file: property-binding
+  - label: "@Input binding"
+    file: input-binding
+  - label: "[attr.] binding"
+    file: attr-binding
+  - label: "[class.] binding"
+    file: class-binding
+  - label: "[ngClass] directive"
+    file: ngclass-directive
+  - label: "[style.] binding"
+    file: style-binding
+  - label: "[ngStyle] directive"
+    file: ngstyle-directive
+  - label: Event binding ()
+    file: event-binding
+  - label: "@Output binding"
+    file: output-binding
+  - label: Pseudo-events
+    file: pseudo-events
+  - label: Touch events / Gestures
+    file: touch-events
+  - label: Two-way binding [()]
+    file: two-way-binding
+  - label: "[(ngModel)] directive"
+    file: ngmodel-directive
+  - label: Structural directive *
+    file: structural-directive
+  - label: ngIf directive
+    file: ngif-directive
+  - label: ngFor directive
+    file: ngfor-directive
+  - label: ngSwitch directive
+    file: ngswitch-directive
+  - label: ngPlural directive
+    file: ngplural-directive
+  - label: ngTemplateOutlet directive
+    file: ngtemplateoutlet-directive
+  - label: ngComponentOutlet directive
+    file: ngcomponentoutlet-directive
+  - label: ng-template
+    file: ng-template
+  - label: ng-container
+    file: ng-container
+  - label: Content projection with ng-content
+    file: ng-content
+  - label: "Reference #"
+    file: reference
+  - label: Pipe |
+    file: pipe
+  - label: "@Pipe"
+    file: custom-pipe
+  - label: keyvalue pipe
+    file: keyvalue-pipe
+  - label: slice pipe
+    file: slice-pipe
+  - label: async pipe
+    file: async-pipe
+  - label: lowerCase pipe
+    file: lowercase-pipe
+  - label: upperCase pipe
+    file: uppercase-pipe
+  - label: titleCase pipe
+    file: titlecase-pipe
+  - label: date pipe
+    file: date-pipe
+  - label: number (decimal) pipe
+    file: number-pipe
+  - label: currency pipe
+    file: currency-pipe
+  - label: percent pipe
+    file: percent-pipe
+  - label: i18nPlural pipe
+    file: plural-pipe
+  - label: json pipe
+    file: json-pipe
+  - label: Safe navigation operator .?
+    file: safe-navigation-operator
+  - label: Non-null assertion operator !.
+    file: non-null-assertion-operator
+  - label: Animation binding @
+    file: animation-binding
+  - label: "svg: prefix"
+    file: svg-prefix
+  - label: ngNonBindable
+    file: ngnonbindable
+  - label: $any() type cast
+    file: any-type-cast

@@ -1,0 +1,35 @@
+title: ngTemplateOutlet directive
+url: ngtemplateoutlet-directive
+entries:
+  - type: text
+    text: Inserts an embedded view from a prepared TemplateRef.
+  - type: demo
+    source: |
+      ```html
+      <ng-container *ngTemplateOutlet="greet"></ng-container>
+      <hr>
+      <ng-container *ngTemplateOutlet="eng; context: myContext"></ng-container>
+      <hr>
+      <ng-container *ngTemplateOutlet="svk; context: myContext"></ng-container>
+      <hr>
+          
+      <ng-template #greet>
+        <span>Hello</span>
+      </ng-template>
+      <ng-template #eng let-name>
+        <span>Hello {{name}}!</span>
+      </ng-template>
+      <ng-template #svk let-person="localSk">
+        <span>Ahoj {{person}}!</span>
+      </ng-template>
+      ```
+
+      ```typescript
+      export class AppComponent {
+        myContext = {$implicit: 'World', localSk: 'Svet'};
+      }
+      ```
+    demo: V6TemplatesNgtemplateoutletDemoComponent
+  - type: text
+    text: Using the key `$implicit` in the context object will set its value as
+      default.

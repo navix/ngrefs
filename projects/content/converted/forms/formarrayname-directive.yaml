@@ -1,0 +1,126 @@
+title: "[formArrayName] directive"
+url: formarrayname-directive
+entries:
+  - type: text
+    text: >-
+      Syncs a nested [`FormArray`](../formarray) to a DOM element.
+
+
+      This directive is designed to be used with a parent `FormGroupDirective` (selector:
+
+      `[formGroup]`).
+
+
+      It accepts the string name of the nested [`FormArray`](../formarray) you want to link, and
+
+      will look for a [`FormArray`](../formarray) registered with that name in the parent
+
+      [`FormGroup`](../formgroup) instance you passed into [`FormGroupDirective`](../formgroup-directive).
+
+
+      ```
+
+      import {Component} from '@angular/core';
+
+      import {FormArray, FormControl, FormGroup} from '@angular/forms';
+
+
+      @Component({
+        selector: 'example-app',
+        template: `
+          <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <div formArrayName="cities">
+              <div *ngFor="let city of cities.controls; index as i">
+                <input [formControlName]="i" placeholder="City">
+              </div>
+            </div>
+            <button>Submit</button>
+          </form>
+          
+          <button (click)="addCity()">Add City</button>
+          <button (click)="setPreset()">Set preset</button>
+        `,
+      })
+
+      export class NestedFormArray {
+        form = new FormGroup({
+          cities: new FormArray([
+            new FormControl('SF'),
+            new FormControl('NY'),
+          ]),
+        });
+
+        get cities(): FormArray { return this.form.get('cities') as FormArray; }
+
+        addCity() { this.cities.push(new FormControl()); }
+
+        onSubmit() {
+          console.log(this.cities.value);  // ['SF', 'NY']
+          console.log(this.form.value);    // { cities: ['SF', 'NY'] }
+        }
+
+        setPreset() { this.cities.patchValue(['LA', 'MTV']); }
+      }
+
+      ```
+  - type: text
+    text: |
+      ## Interface, extends [ControlContainer](../controlcontainer)
+  - type: toc
+  - type: interface-option
+    name: name
+    head: name
+    headId: name
+    interface: "@Input('formArrayName') name: string|number|null"
+    description: >-
+      Tracks the name of the `FormArray` bound to the directive. The name
+      corresponds
+
+      to a key in the parent `FormGroup` or `FormArray`.
+
+      Accepts a name as a string or a number.
+
+      The name in the form of a string is useful for individual forms,
+
+      while the numerical form allows for form arrays to be bound
+
+      to indices when iterating over arrays in a `FormArray`.
+  - type: interface-option
+    name: control
+    head: control
+    headId: control
+    interface: "get control(): FormArray"
+    description: The `FormArray` bound to this directive.
+  - type: interface-option
+    name: formDirective
+    head: formDirective
+    headId: formDirective
+    interface: "get formDirective(): FormGroupDirective|null"
+    description: The top-level directive for this group if present, otherwise null.
+  - type: interface-option
+    name: path
+    head: path
+    headId: path
+    interface: "get path(): string[]"
+    description: >-
+      Returns an array that represents the path from the top-level form to this
+      control.
+
+      Each index is the string name of the control on that level.
+  - type: interface-option
+    name: validator
+    head: validator
+    headId: validator
+    interface: "get validator(): ValidatorFn|null"
+    description: >-
+      Synchronous validator function composed of all the synchronous validators
+      registered with this
+
+      directive.
+  - type: interface-option
+    name: asyncValidator
+    head: asyncValidator
+    headId: asyncValidator
+    interface: "get asyncValidator(): AsyncValidatorFn|null"
+    description: Async validator function composed of all the async validators
+      registered with this directive.

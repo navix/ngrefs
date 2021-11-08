@@ -1,0 +1,86 @@
+title: "@ContentChildren"
+url: content-children
+entries:
+  - type: text
+    text: >
+      You can use `ContentChildren` to get the `QueryList` of elements or
+      directives from the content DOM. Any time a child element is added,
+      removed, or moved, the query list will be updated, and the changes
+      observable of the query list will emit a new value.
+
+
+      Content queries are set before the `ngAfterContentInit` callback is called.
+  - type: text
+    text: "#### Example"
+  - type: text
+    text: Here is a simple demonstration of how the ContentChildren decorator can be
+      used.
+  - type: text
+    text: >-
+      ```typescript
+
+      import {AfterContentInit, ContentChildren, Directive, QueryList} from '@angular/core';
+       
+      @Directive({selector: 'child-directive'})
+
+      class ChildDirective {
+
+      }
+       
+      @Directive({selector: 'someDir'})
+
+      class SomeDir implements AfterContentInit {
+        @ContentChildren(ChildDirective) contentChildren: QueryList<ChildDirective>;
+       
+        ngAfterContentInit() {
+          // contentChildren is set
+        }
+      }
+
+      ```
+  - type: tutorials
+    links:
+      - label: Understanding ViewChildren, ContentChildren, and QueryList in Angular
+        url: https://netbasal.com/understanding-viewchildren-contentchildren-and-querylist-in-angular-896b0c689f6e
+        lang: en
+  - type: text
+    text: "## Options"
+  - type: text
+    text: |-
+      ```typescript
+      @ContentChildren(
+        selector: Type<any>|Function|string, 
+        opts?: {descendants?: boolean, read?: any},
+      )
+      ```
+  - type: interface-option
+    head: selector
+    description: The directive type or the name used for querying.
+    name: selector
+    headId: selector
+    interface: "selector: Type<any>|Function|string"
+    showAdditional: true
+    additional: >-
+      Supported selectors include:
+
+
+      * any class with the `@Component` or `@Directive` decorator
+
+      * a template reference variable as a string (e.g. query `<my-component #cmp></my-component>` with `@ViewChild('cmp')`)
+
+      * any provider defined in the child component tree of the current component (e.g. `@ViewChild(SomeService) someService: SomeService`)
+
+      * any provider defined through a string token (e.g. `@ViewChild('someToken') someTokenVal: any`)
+
+      * a `TemplateRef` (e.g. query `<ng-template></ng-template>` with `@ViewChild(TemplateRef) template;`)
+  - type: interface-option
+    head: opts
+    description: |
+      Additional options.
+    name: opts
+    headId: opts
+    interface: "opts?: {descendants?: boolean, read?: any}"
+    showAdditional: true
+    additional: |-
+      * `descendants` - include only direct children or all descendants.
+      * `read` - read a different token from the queried elements.

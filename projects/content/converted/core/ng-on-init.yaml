@@ -1,0 +1,28 @@
+title: ngOnInit()
+url: ng-on-init
+entries:
+  - type: text
+    text: A callback method that is invoked immediately after the default change
+      detector has checked the directive's data-bound properties for the first
+      time, and before any of the view or content children have been checked. It
+      is invoked only once when the directive is instantiated.
+  - type: text
+    text: |-
+      ```typescript
+      ngOnInit(): void
+      ```
+  - type: text
+    text: "#### Example"
+  - type: text
+    text: The following snippet shows how a component can implement this interface
+      to define its own initialization method.
+  - type: text
+    text: |-
+      ```typescript
+      @Component({selector: 'my-cmp', template: `...`})
+      class MyComponent implements OnInit {
+        ngOnInit() {
+          // ...
+        }
+      }
+      ```

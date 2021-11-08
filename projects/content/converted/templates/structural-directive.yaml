@@ -1,0 +1,68 @@
+title: Structural directive *
+url: structural-directive
+entries:
+  - type: text
+    text: >-
+      Structural directives are responsible for HTML layout. They shape or
+      reshape the DOM's structure, typically by adding, removing, and
+      manipulating the host elements to which they are attached.
+
+
+      Structural directives are easy to recognize. An asterisk (*) precedes the directive attribute name as in this example.
+
+
+      ```html
+
+      <div *ngIf="hero" class="name">{{hero.name}}</div>
+
+      ```
+  - type: text
+    text: >-
+      ### The asterisk (*) prefix
+
+
+      Surely you noticed the asterisk (*) prefix to the directive name and wondered why it is necessary and what it does.
+
+
+      Here is `*ngIf` displaying the hero's name if hero exists.
+
+
+      ```html
+
+      <div *ngIf="hero" class="name">{{hero.name}}</div>
+
+      ```
+
+
+      The asterisk is "syntactic sugar" for something a bit more complicated. Internally, Angular translates the `*ngIf` attribute into a `<ng-template>` element, wrapped around the host element, like this.
+
+
+      ```html
+
+      <ng-template [ngIf]="hero">
+        <div class="name">{{hero.name}}</div>
+      </ng-template>
+
+      ```
+
+
+      Here's a full-featured application of NgFor, written both ways:
+
+
+      ```html
+
+      <div *ngFor="let hero of heroes; let i=index; let odd=odd; trackBy: trackById" [class.odd]="odd">
+        ({{i}}) {{hero.name}}
+      </div>
+
+
+      <ng-template ngFor let-hero [ngForOf]="heroes" let-i="index" let-odd="odd" [ngForTrackBy]="trackById">
+        <div [class.odd]="odd">({{i}}) {{hero.name}}</div>
+      </ng-template>
+
+      ```
+  - type: tutorials
+    links:
+      - label: Angular — Structural Directives
+        url: https://angular.io/guide/structural-directives
+        lang: en

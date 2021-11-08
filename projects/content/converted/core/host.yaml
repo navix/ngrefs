@@ -1,0 +1,56 @@
+title: "@Host"
+url: host
+entries:
+  - type: text
+    text: A constructor parameter decorator that tells the DI framework to retrieve
+      a dependency from any injector until reaching the host element of the
+      current component.
+  - type: text
+    text: |-
+      ```typescript
+      constructor(@Host() service: Service) {}
+      ```
+  - type: text
+    text: "#### Example"
+  - type: text
+    text: >-
+      ```typescript
+
+      class OtherService {}
+
+      class HostService {}
+       
+      @Directive({selector: 'child-directive'})
+
+      class ChildDirective {
+        logs: string[] = [];
+       
+        constructor(@Optional() @Host() os: OtherService, @Optional() @Host() hs: HostService) {
+          // os is null: true
+          this.logs.push(`os is null: ${os === null}`);
+          // hs is an instance of HostService: true
+          this.logs.push(`hs is an instance of HostService: ${hs instanceof HostService}`);
+        }
+      }
+       
+      @Component({
+        selector: 'parent-cmp',
+        viewProviders: [HostService],
+        template: '<child-directive></child-directive>',
+      })
+
+      class ParentCmp {
+
+      }
+       
+      @Component({
+        selector: 'app',
+        viewProviders: [OtherService],
+        template: '<parent-cmp></parent-cmp>',
+      })
+
+      class App {
+
+      }
+
+      ```

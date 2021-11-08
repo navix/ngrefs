@@ -1,0 +1,34 @@
+title: Interface generator
+url: schematic-interface
+entries:
+  - type: text
+    text: |
+      ```
+      ng generate interface [name] [type] [--[argument]=[value]]
+      ng generate i
+      ```
+  - type: text
+    text: |
+      Create an interface.
+  - type: text
+    text: "## Options"
+  - type: toc
+  - type: command-param
+    head: lintFix
+    description: Specifies whether to apply lint fixes after generating.
+    name: lintFix
+    headId: lintFix
+    paramType: boolean
+    default: "false"
+  - type: command-param
+    head: prefix
+    description: Specifies the prefix to use.
+    name: prefix
+    headId: prefix
+    paramType: string
+  - type: command-param
+    head: project
+    description: The name of the project.
+    name: project
+    headId: project
+    paramType: string

@@ -1,0 +1,187 @@
+title: Dev-server builder
+url: builder-dev-server
+entries:
+  - type: text
+    text: |-
+      ID: `@angular-devkit/build-angular:dev-server`
+
+      ## Options
+  - type: toc
+  - type: command-param
+    name: allowedHosts
+    head: allowedHosts
+    headId: allowedHosts
+    paramType: array
+    default: []
+    description: Whitelist of hosts that are allowed to access the dev server.
+  - type: command-param
+    head: aot
+    description: Build using Ahead of Time compilation.
+    name: aot
+    headId: aot
+    paramType: boolean
+  - type: command-param
+    head: baseHref
+    description: Base url for the application being built.
+    name: baseHref
+    headId: baseHref
+    paramType: string
+  - type: command-param
+    head: browserTarget
+    description: Target to serve.
+    name: browserTarget
+    headId: browserTarget
+    paramType: string
+  - type: command-param
+    head: commonChunk
+    description: Use a separate bundle containing code used across multiple bundles.
+    name: commonChunk
+    headId: commonChunk
+    paramType: boolean
+  - type: command-param
+    head: deployUrl
+    description: URL where files will be deployed.
+    name: deployUrl
+    headId: deployUrl
+    paramType: string
+  - type: command-param
+    head: disableHostCheck
+    description: Don't verify connected clients are part of allowed hosts.
+    name: disableHostCheck
+    headId: disableHostCheck
+    paramType: boolean
+  - type: command-param
+    head: evalSourceMap
+    description: Output in-file eval sourcemaps.
+    name: evalSourceMap
+    headId: evalSourceMap
+    paramType: boolean
+  - type: command-param
+    head: hmr
+    description: Enable hot module replacement.
+    name: hmr
+    headId: hmr
+    paramType: boolean
+  - type: command-param
+    head: hmrWarning
+    description: Show a warning when the --hmr option is enabled.
+    name: hmrWarning
+    headId: hmrWarning
+    paramType: boolean
+    default: "true"
+  - type: command-param
+    head: host
+    description: Host to listen on.
+    name: host
+    headId: host
+    paramType: string
+    aliases: ""
+    default: localhost
+  - type: command-param
+    head: liveReload
+    description: Whether to reload the page on change, using live-reload.
+    name: liveReload
+    headId: liveReload
+    paramType: boolean
+    default: "true"
+  - type: command-param
+    head: open
+    description: Opens the url in default browser.
+    name: open
+    headId: open
+    aliases: o
+    paramType: boolean
+  - type: command-param
+    head: optimization
+    description: Defines the optimization level of the build.
+    name: optimization
+    headId: optimization
+    paramType: boolean
+  - type: command-param
+    head: port
+    description: Port to listen on.
+    name: port
+    headId: port
+    paramType: number
+    default: "4200"
+  - type: command-param
+    head: progress
+    description: Log progress to the console while building.
+    name: progress
+    headId: progress
+    paramType: boolean
+  - type: command-param
+    head: proxyConfig
+    description: Proxy configuration file.
+    name: proxyConfig
+    headId: proxyConfig
+    paramType: string
+  - type: command-param
+    head: publicHost
+    description: Specify the URL that the browser client will use.
+    name: publicHost
+    headId: publicHost
+    paramType: string
+  - type: command-param
+    head: servePath
+    description: The pathname where the app will be served.
+    name: servePath
+    headId: servePath
+    paramType: string
+  - type: command-param
+    head: servePathDefaultWarning
+    description: Show a warning when deploy-url/base-href use unsupported serve path values.
+    name: servePathDefaultWarning
+    headId: servePathDefaultWarning
+    paramType: boolean
+    default: "true"
+  - type: command-param
+    head: sourceMap
+    description: Output sourcemaps.
+    name: sourceMap
+    headId: sourceMap
+    paramType: boolean
+  - type: command-param
+    head: ssl
+    description: Serve using HTTPS.
+    name: ssl
+    headId: ssl
+    paramType: boolean
+  - type: command-param
+    head: sslCert
+    description: SSL certificate to use for serving HTTPS.
+    name: sslCert
+    headId: sslCert
+    paramType: string
+  - type: command-param
+    head: sslKey
+    description: SSL key to use for serving HTTPS.
+    name: sslKey
+    headId: sslKey
+    paramType: string
+  - type: command-param
+    head: vendorChunk
+    description: Use a separate bundle containing only vendor libraries.
+    name: vendorChunk
+    headId: vendorChunk
+    paramType: boolean
+  - type: command-param
+    head: vendorSourceMap
+    description: Resolve vendor packages sourcemaps.
+    headId: vendorSourceMap
+    name: vendorSourceMap
+    paramType: boolean
+    default: "false"
+  - type: command-param
+    head: verbose
+    description: Adds more details to output logging.
+    name: verbose
+    headId: verbose
+    paramType: boolean
+  - type: command-param
+    head: watch
+    description: Rebuild on change.
+    name: watch
+    headId: watch
+    paramType: boolean
+    default: "true"

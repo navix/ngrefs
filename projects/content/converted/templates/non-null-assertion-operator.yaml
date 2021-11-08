@@ -1,0 +1,25 @@
+title: Non-null assertion operator !.
+url: non-null-assertion-operator
+entries:
+  - type: text
+    text: >
+      As of Typescript 2.0, you can enforce strict null checking with the
+      `--strictNullChecks` flag.
+
+
+      Type checker throws an error if it can't determine whether a variable will be `null` or `undefined` at runtime. You may know that can't happen but the type checker doesn't know. You tell the type checker that it can't happen by applying the post-fix non-null assertion operator (`!`).
+
+
+      For example, after you use `*ngIf` to check that hero is defined, you can assert that hero properties are also defined:
+
+
+      ```html
+
+      <div *ngIf="hero">
+        The hero's name is {{hero!.name}}
+      </div>
+
+      ```
+
+
+      Unlike the [safe navigation operator](../safe-navigation-operator), the non-null assertion operator does not guard against `null` or `undefined`.

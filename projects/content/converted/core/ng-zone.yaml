@@ -1,0 +1,212 @@
+title: NgZone
+url: ng-zone
+entries:
+  - type: text
+    text: >-
+      An injectable service for executing work inside or outside of the Angular
+      zone.
+
+
+      The most common use of this service is to optimize performance when starting a work consisting of one or more asynchronous tasks that don't require UI updates or error handling to be handled by Angular. Such tasks can be kicked off via `runOutsideAngular` and if needed, these tasks can reenter the Angular zone via `run`.
+  - type: tutorials
+    links:
+      - label: Using Zones an Angular for Better Performance
+        url: https://blog.thoughtram.io/angular/2017/02/21/using-zones-in-angular-for-better-performance.html
+        lang: en
+      - label: I reverse-engineered Zones (zone.js) and here is what I’ve found
+        url: https://blog.angularindepth.com/i-reverse-engineered-zones-zone-js-and-here-is-what-ive-found-1f48dc87659b
+        lang: en
+      - label: Do you still think that NgZone (zone.js) is required for change detection
+          in Angular?
+        url: https://blog.angularindepth.com/do-you-still-think-that-ngzone-zone-js-is-required-for-change-detection-in-angular-16f7a575afef
+        lang: en
+  - type: text
+    text: "## Interface"
+  - type: toc
+  - type: interface-option
+    head: hasPendingMacrotasks
+    description: ""
+    name: hasPendingMacrotasks
+    headId: hasPendingMacrotasks
+    interface: "hasPendingMacrotasks: boolean"
+  - type: interface-option
+    head: hasPendingMicrotasks
+    description: ""
+    name: hasPendingMicrotasks
+    headId: hasPendingMicrotasks
+    interface: "hasPendingMicrotasks: boolean"
+  - type: interface-option
+    head: isStable
+    description: Whether there are no outstanding microtasks or macrotasks.
+    name: isStable
+    headId: isStable
+    interface: "isStable: boolean"
+  - type: interface-option
+    head: onError
+    description: Notifies that an error has been delivered.
+    name: onError
+    headId: onError
+    interface: "onError: EventEmitter<any>"
+  - type: interface-option
+    head: onMicrotaskEmpty
+    description: >-
+      Notifies when there is no more microtasks enqueued in the current VM Turn.
+
+      This is a hint for Angular to do change detection, which may enqueue more microtasks.
+
+      For this reason this event can fire multiple times per VM Turn.
+    name: onMicrotaskEmpty
+    headId: onMicrotaskEmpty
+    interface: "onMicrotaskEmpty: EventEmitter<any>"
+  - type: interface-option
+    head: onStable
+    description: >-
+      Notifies when the last `onMicrotaskEmpty` has run and there are no more
+      microtasks, which
+
+      implies we are about to relinquish VM turn.
+
+      This event gets called just once.
+    name: onStable
+    headId: onStable
+    interface: "onStable: EventEmitter<any>"
+  - type: interface-option
+    head: onUnstable
+    description: Notifies when code enters Angular Zone. This gets fired first on VM Turn.
+    name: onUnstable
+    headId: onUnstable
+    interface: "onUnstable: EventEmitter<any>"
+  - type: interface-option
+    head: run
+    description: >-
+      Executes the `fn` function synchronously within the Angular zone and
+      returns value returned by
+
+      the function.
+
+
+      Running functions via `run` allows you to reenter Angular zone from a task that was executed
+
+      outside of the Angular zone (typically started via {@link #runOutsideAngular}).
+
+
+      Any future tasks or microtasks scheduled from within this function will continue executing from
+
+      within the Angular zone.
+
+
+      If a synchronous error happens it will be rethrown and not reported via `onError`.
+    name: run
+    headId: run
+    interface: "run(fn: (...args: any[]) => T, applyThis?: any, applyArgs?: any[]): T"
+    showAdditional: true
+    additional: >-
+      Running functions via `run` allows you to reenter Angular zone from a task
+      that was executed outside of the Angular zone (typically started via
+      `runOutsideAngular`).
+
+
+      Any future tasks or microtasks scheduled from within this function will continue executing from within the Angular zone.
+
+
+      If a synchronous error happens it will be rethrown and not reported via `onError`.
+  - type: interface-option
+    head: runGuarded
+    description: >-
+      Same as `run`, except that synchronous errors are caught and forwarded via
+      `onError` and not
+
+      rethrown.
+    name: runGuarded
+    headId: runGuarded
+    interface: "runGuarded(fn: (...args: any[]) => T, applyThis?: any, applyArgs?:
+      any[]): T"
+  - type: interface-option
+    head: runOutsideAngular
+    description: >-
+      Executes the `fn` function synchronously in Angular's parent zone and
+      returns value returned by
+
+      the function.
+
+
+      Running functions via {@link #runOutsideAngular} allows you to escape Angular's zone and do
+
+      work that
+
+      doesn't trigger Angular change-detection or is subject to Angular's error handling.
+
+
+      Any future tasks or microtasks scheduled from within this function will continue executing from
+
+      outside of the Angular zone.
+
+
+      Use {@link #run} to reenter the Angular zone and do work that updates the application model.
+    name: runOutsideAngular
+    headId: runOutsideAngular
+    interface: "runOutsideAngular(fn: (...args: any[]) => T): T"
+    showAdditional: true
+    additional: >-
+      Running functions via `runOutsideAngular` allows you to escape Angular's
+      zone and do work that doesn't trigger Angular change-detection or is
+      subject to Angular's error handling.
+
+
+      Any future tasks or microtasks scheduled from within this function will continue executing from outside of the Angular zone.
+
+
+      Use `run` to reenter the Angular zone and do work that updates the application model.
+  - type: interface-option
+    head: runTask
+    description: >-
+      Executes the `fn` function synchronously within the Angular zone as a task
+      and returns value
+
+      returned by the function.
+
+
+      Running functions via `run` allows you to reenter Angular zone from a task that was executed
+
+      outside of the Angular zone (typically started via {@link #runOutsideAngular}).
+
+
+      Any future tasks or microtasks scheduled from within this function will continue executing from
+
+      within the Angular zone.
+
+
+      If a synchronous error happens it will be rethrown and not reported via `onError`.
+    name: runTask
+    headId: runTask
+    interface: "runTask(fn: (...args: any[]) => T, applyThis?: any, applyArgs?:
+      any[], name?: string): T"
+    showAdditional: true
+    additional: >-
+      Running functions via `run` allows you to reenter Angular zone from a task
+      that was executed outside of the Angular zone (typically started via
+      `runOutsideAngular`).
+
+
+      Any future tasks or microtasks scheduled from within this function will continue executing from within the Angular zone.
+
+
+      If a synchronous error happens it will be rethrown and not reported via `onError`.
+  - type: interface-option
+    name: isInAngularZone
+    head: isInAngularZone
+    headId: isInAngularZone
+    interface: "static isInAngularZone(): boolean"
+    description: ""
+  - type: interface-option
+    name: assertInAngularZone
+    head: assertInAngularZone
+    headId: assertInAngularZone
+    interface: "static assertInAngularZone(): void"
+    description: ""
+  - type: interface-option
+    name: assertNotInAngularZone
+    head: assertNotInAngularZone
+    headId: assertNotInAngularZone
+    interface: "static assertNotInAngularZone(): void"
+    description: ""

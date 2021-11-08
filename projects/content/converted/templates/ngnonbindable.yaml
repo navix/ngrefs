@@ -1,0 +1,14 @@
+title: ngNonBindable
+url: ngnonbindable
+entries:
+  - type: text
+    text: >
+      The `ngNonBindable` tells Angular not to compile or bind the contents of
+      the current DOM element.
+  - type: demo
+    source: |-
+      ```html
+      <div>{{ 1 + 1 }}</div>
+      <div ngNonBindable>{{ 1 + 1 }}</div>
+      ```
+    demo: V6TemplatesNgnonbindableDemoComponent

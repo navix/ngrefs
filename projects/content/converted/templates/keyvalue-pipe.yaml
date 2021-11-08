@@ -1,0 +1,32 @@
+title: keyvalue pipe
+url: keyvalue-pipe
+entries:
+  - type: text
+    text: Transforms Object or Map into an array of key value pairs.
+  - type: text
+    text: This examples show how an Object or a Map and be iterated by ngFor with
+      the use of this keyvalue pipe.
+  - type: demo
+    source: |-
+      ```html
+      <p>Object</p>
+      <div *ngFor="let item of object | keyvalue">
+        {{item.key}}:{{item.value}}
+      </div>
+      <p>Map</p>
+      <div *ngFor="let item of map | keyvalue">
+        {{item.key}}:{{item.value}}
+      </div>
+      ```
+
+      ```typescript
+      export class AppComponent {
+        object: {[key: number]: string} = {2: 'foo', 1: 'bar'};
+        map = new Map([[2, 'foo'], [1, 'bar']]);
+      }
+      ```
+    demo: V6TemplatesKeyvaluepipeDemoComponent
+  - type: text
+    text: The output array will be ordered by keys. By default the comparator will
+      be by Unicode point value. You can optionally pass a compareFn if your
+      keys are complex types.

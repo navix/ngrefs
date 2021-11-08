@@ -1,0 +1,22 @@
+title: json pipe
+url: json-pipe
+entries:
+  - type: text
+    text: "The json pipe is particularly helpful for debugging bindings:"
+  - type: demo
+    source: |-
+      ```html
+      <div>{{data | json}}</div>
+      ```
+
+      ```typescript
+      export class AppComponent {
+        data = {
+          field: 'value',
+          obj: {
+            innerField: '123',
+          },
+        };
+      }
+      ```
+    demo: V6TemplatesJsonpipeDemoComponent

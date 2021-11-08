@@ -1,0 +1,63 @@
+title: "@HostListener"
+url: host-listener
+entries:
+  - type: text
+    text: >-
+      Binds a CSS event to a host listener and supplies configuration metadata.
+      Angular invokes the supplied handler method when the host element emits
+      the specified event, and updates the bound element with the result. 
+
+
+      If the handler method returns false, applies `preventDefault` on the bound element.
+  - type: text
+    text: "#### Example"
+  - type: text
+    text: The following example declares a directive that attaches a click listener
+      to a button and counts clicks.
+  - type: text
+    text: >-
+      ```typescript
+
+      @Directive({selector: 'button[counting]'})
+
+      class CountClicks {
+        numberOfClicks = 0;
+       
+        @HostListener('click', ['$event.target'])
+        onClick(btn) {
+          console.log('button', btn, 'number of clicks:', this.numberOfClicks++);
+       }
+      }
+       
+      @Component({
+        selector: 'app',
+        template: '<button counting>Increment</button>',
+      })
+
+      class App {}
+
+      ```
+  - type: tutorials
+    links:
+      - label: Using @HostBinding and @HostListener in Custom Angular Directives
+        url: https://alligator.io/angular/hostbinding-hostlistener/
+        lang: en
+  - type: text
+    text: "## Options"
+  - type: text
+    text: |-
+      ```typescript
+      @HostListener(eventName: string, args: string[])
+      ```
+  - type: interface-option
+    head: eventName
+    description: The JavaScript event to listen for.
+    name: eventName
+    headId: eventName
+    interface: "eventName?: string"
+  - type: interface-option
+    head: args
+    description: A set of arguments to pass to the handler method when the event occurs.
+    name: args
+    headId: args
+    interface: "args?: string[]"

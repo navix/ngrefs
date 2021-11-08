@@ -1,0 +1,241 @@
+title: "[ngForm] directive"
+url: ngform-directive
+entries:
+  - type: text
+    text: >-
+      Creates a top-level [`FormGroup`](../formgroup) instance and binds it to a
+      form
+
+      to track aggregate form value and validation status.
+
+
+      As soon as you import the `FormsModule`, this directive becomes active by default on
+
+      all `<form>` tags.  You don't need to add a special selector.
+
+
+      You optionally export the directive into a local template variable using `ngForm` as the key
+
+      (ex: `#myForm="ngForm"`). This is optional, but useful.  Many properties from the underlying
+
+      [`FormGroup`](../formgroup) instance are duplicated on the directive itself, so a reference to it
+
+      gives you access to the aggregate value and validity status of the form, as well as
+
+      user interaction properties like `dirty` and `touched`.
+
+
+      To register child controls with the form, use [`NgModel`](../ngmodel-directive) with a `name`
+
+      attribute. You may use [`NgModelGroup`](../ngmodelgroup-directive) to create sub-groups within the form.
+
+
+      If necessary, listen to the directive's `ngSubmit` event to be notified when the user has
+
+      triggered a form submission. The `ngSubmit` event emits the original form
+
+      submission event.
+
+
+      In template driven forms, all `<form>` tags are automatically tagged as `NgForm`.
+
+      To import the `FormsModule` but skip its usage in some forms,
+
+      for example, to use native HTML5 validation, add the `ngNoForm` and the `<form>`
+
+      tags won't create an `NgForm` directive. In reactive forms, using `ngNoForm` is
+
+      unnecessary because the `<form>` tags are inert. In that case, you would
+
+      refrain from using the [`formGroup` directive](../formgroup-directive).
+  - type: text
+    text: >
+      ### Listening for form submission
+
+
+      The following example shows how to capture the form values from the "ngSubmit" event.
+
+
+      ```
+
+      import {Component} from '@angular/core';
+
+      import {NgForm} from '@angular/forms';
+
+
+      @Component({
+        selector: 'example-app',
+        template: `
+          <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+            <input name="first" ngModel required #first="ngModel">
+            <input name="last" ngModel>
+            <button>Submit</button>
+          </form>
+          
+          <p>First name value: {{ first.value }}</p>
+          <p>First name valid: {{ first.valid }}</p>
+          <p>Form value: {{ f.value | json }}</p>
+          <p>Form valid: {{ f.valid }}</p>
+        `,
+      })
+
+      export class SimpleFormComp {
+        onSubmit(f: NgForm) {
+          console.log(f.value);  // { first: '', last: '' }
+          console.log(f.valid);  // false
+        }
+      }
+
+      ```
+  - type: text
+    text: >
+      ### Setting the update options
+
+
+      The following example shows you how to change the `updateOn` option from its default using
+
+      `ngFormOptions`.
+
+
+      ```html
+
+      <form [ngFormOptions]="{updateOn: 'blur'}">
+         <input name="one" ngModel>  <!-- this ngModel will update on blur -->
+      </form>
+
+      ```
+  - type: text
+    text: "## Interface, extends [ControlContainer](../controlcontainer)"
+  - type: toc
+  - type: interface-option
+    name: submitted
+    head: submitted
+    headId: submitted
+    interface: "submitted: boolean"
+    description: Returns whether the form submission has been triggered.
+  - type: interface-option
+    name: form
+    head: form
+    headId: form
+    interface: "form: FormGroup"
+    description: The `FormGroup` instance created for this form.
+  - type: interface-option
+    name: ngSubmit
+    head: ngSubmit
+    headId: ngSubmit
+    interface: ngSubmit
+    description: Event emitter for the "ngSubmit" event
+  - type: interface-option
+    name: options
+    head: options
+    headId: options
+    interface: "@Input('ngFormOptions') options: {updateOn?: FormHooks}"
+    description: >-
+      Tracks options for the `NgForm` instance.
+
+
+      **updateOn**: Sets the default `updateOn` value for all child `NgModels` below it
+
+      unless explicitly set by a child `NgModel` using `ngModelOptions`). Defaults to 'change'.
+
+      Possible values: `'change'` | `'blur'` | `'submit'`.
+  - type: interface-option
+    name: formDirective
+    head: formDirective
+    headId: formDirective
+    interface: "get formDirective(): Form"
+    description: The directive instance.
+  - type: interface-option
+    name: control
+    head: control
+    headId: control
+    interface: "get control(): FormGroup"
+    description: The internal `FormGroup` instance.
+  - type: interface-option
+    name: path
+    head: path
+    headId: path
+    interface: "get path(): string[]"
+    description: >-
+      Returns an array representing the path to this group. Because this
+      directive
+
+      always lives at the top level of a form, it is always an empty array.
+  - type: interface-option
+    name: controls
+    head: controls
+    headId: controls
+    interface: "get controls(): {[key: string]: AbstractControl}"
+    description: Returns a map of the controls in this group.
+  - type: interface-option
+    name: addControl
+    head: addControl
+    headId: addControl
+    interface: "addControl(dir: NgModel): void"
+    description: >-
+      Method that sets up the control directive in this group, re-calculates its
+      value
+
+      and validity, and adds the instance to the internal list of directives.
+  - type: interface-option
+    name: getControl
+    head: getControl
+    headId: getControl
+    interface: "getControl(dir: NgModel): FormControl"
+    description: Retrieves the `FormControl` instance from the provided `NgModel` directive.
+  - type: interface-option
+    name: removeControl
+    head: removeControl
+    headId: removeControl
+    interface: "removeControl(dir: NgModel): void"
+    description: Removes the `NgModel` instance from the internal list of directives
+  - type: interface-option
+    name: addFormGroup
+    head: addFormGroup
+    headId: addFormGroup
+    interface: "addFormGroup(dir: NgModelGroup): void"
+    description: Adds a new `NgModelGroup` directive instance to the form.
+  - type: interface-option
+    name: removeFormGroup
+    head: removeFormGroup
+    headId: removeFormGroup
+    interface: "removeFormGroup(dir: NgModelGroup): void"
+    description: Removes the `NgModelGroup` directive instance from the form.
+  - type: interface-option
+    name: getFormGroup
+    head: getFormGroup
+    headId: getFormGroup
+    interface: "getFormGroup(dir: NgModelGroup): FormGroup"
+    description: Retrieves the `FormGroup` for a provided `NgModelGroup` directive instance
+  - type: interface-option
+    name: updateModel
+    head: updateModel
+    headId: updateModel
+    interface: "updateModel(dir: NgControl, value: any): void"
+    description: Sets the new value for the provided `NgControl` directive.
+  - type: interface-option
+    name: setValue
+    head: setValue
+    headId: setValue
+    interface: "setValue(value: {[key: string]: any}): void"
+    description: Sets the value for this `FormGroup`.
+  - type: interface-option
+    name: onSubmit
+    head: onSubmit
+    headId: onSubmit
+    interface: "onSubmit($event: Event): boolean"
+    description: |-
+      Method called when the "submit" event is triggered on the form.
+      Triggers the `ngSubmit` emitter to emit the "submit" event as its payload.
+  - type: interface-option
+    name: onReset
+    head: onReset
+    headId: onReset
+    interface: "onReset(): void"
+    description: Method called when the "reset" event is triggered on the form.
+  - type: interface-option
+    name: resetForm
+    head: resetForm
+    headId: resetForm
+    interface: "resetForm(value: any = undefined): void"
+    description: Resets the form to an initial value and resets its submitted status.

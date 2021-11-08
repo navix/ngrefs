@@ -30,7 +30,6 @@ export class VersionComponent implements OnInit {
     private zone: NgZone,
     private app: AppComponent,
     private cdr: ChangeDetectorRef,
-    private seo: SeoService,
   ) {
   }
 

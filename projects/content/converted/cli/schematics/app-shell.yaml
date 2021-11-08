@@ -1,0 +1,138 @@
+title: AppShell generator
+url: schematic-app-shell
+entries:
+  - type: text
+    text: |-
+      ```
+      ng generate appShell [name] [--[argument]=[value]]
+      ng generate app-shell
+      ```
+  - type: text
+    text: |
+      Create an app shell.
+  - type: hint
+    text: App shell is a way to render a portion of your application via a route at
+      build time. This gives users a meaningful first paint of your application
+      because the browser does not need to initialize any JavaScript, just
+      rendering the HTML.
+  - type: tutorials
+    links:
+      - label: App shell documentation in angular-cli repository
+        url: https://github.com/angular/angular-cli/blob/master/docs/documentation/stories/app-shell.md
+        lang: en
+      - label: Angular App Shell - Boosting Application Startup Performance
+        lang: en
+        url: https://blog.angular-university.io/angular-app-shell/
+  - type: text
+    text: "## Options"
+  - type: toc
+  - type: command-param
+    head: appDir
+    description: The name of the application directory.
+    name: appDir
+    headId: appDir
+    paramType: string
+    default: app
+  - type: command-param
+    head: appId
+    description: The appId to use withServerTransition.
+    name: appId
+    headId: appId
+    paramType: string
+    default: serverApp
+  - type: command-param
+    head: clientProject
+    description: Name of related client app.
+    name: clientProject
+    headId: clientProject
+    paramType: string
+  - type: command-param
+    head: index
+    description: Name of the index file.
+    name: index
+    headId: index
+    paramType: string
+    default: index.html
+  - type: command-param
+    head: main
+    description: The name of the main entry-point file.
+    name: main
+    headId: main
+    paramType: string
+    default: main.server.ts
+  - type: command-param
+    head: name
+    description: Name of the app.
+    name: name
+    headId: name
+    paramType: string
+  - type: command-param
+    head: outDir
+    description: The output directory for build results.
+    name: outDir
+    headId: outDir
+    paramType: string
+    default: dist-server
+  - type: command-param
+    head: root
+    description: The root directory of the app.
+    name: root
+    headId: root
+    paramType: string
+    default: src
+  - type: command-param
+    head: rootModuleClassName
+    description: The name of the root module class.
+    name: rootModuleClassName
+    headId: rootModuleClassName
+    paramType: string
+    default: AppServerModule
+  - type: command-param
+    head: rootModuleFileName
+    description: The name of the root module file.
+    name: rootModuleFileName
+    headId: rootModuleFileName
+    paramType: string
+    default: app.server.module.ts
+  - type: command-param
+    head: route
+    description: Route path used to produce the app shell.
+    name: route
+    headId: route
+    paramType: string
+    default: shell
+  - type: command-param
+    head: sourceDir
+    description: The path of the source directory.
+    name: sourceDir
+    headId: sourceDir
+    paramType: string
+    default: src
+    aliases: D
+  - type: command-param
+    head: test
+    description: The name of the test entry-point file.
+    name: test
+    headId: test
+    paramType: string
+  - type: command-param
+    head: testTsconfigFileName
+    description: The name of the TypeScript configuration file for tests.
+    name: testTsconfigFileName
+    headId: testTsconfigFileName
+    paramType: string
+    default: tsconfig.spec
+  - type: command-param
+    head: tsconfigFileName
+    links: []
+    description: The name of the TypeScript configuration file.
+    name: tsconfigFileName
+    headId: tsconfigFileName
+    paramType: string
+    default: tsconfig.server
+  - type: command-param
+    head: universalProject
+    description: Name of related universal app.
+    name: universalProject
+    headId: universalProject
+    paramType: string

@@ -1,0 +1,46 @@
+title: :host-context selector
+url: host-context-selector
+entries:
+  - type: text
+    text: >-
+      Sometimes it's useful to apply styles based on some condition outside of a
+      component's view. For example, a CSS theme class could be applied to the
+      document `<body>` element, and you want to change how your component looks
+      based on that.
+
+
+      Use the `:host-context()` pseudo-class selector, which works just like the function form of `:host()`. The `:host-context()` selector looks for a CSS class in any ancestor of the component host element, up to the document root. The `:host-context()` selector is useful when combined with another selector.
+
+
+      The following example applies a `background-color` style to all `.demo` elements inside the component, only if some ancestor element has the CSS class `theme-light`.
+  - type: demo
+    source: |-
+      ##### demo.component.css
+
+      ```css
+      .demo {
+        border: 1px solid #666;
+      }
+
+      :host-context(.theme-light) .demo {
+        background-color: #eef;
+      }
+      ```
+
+      ##### demo.component.html
+
+      ```html
+      <div class="demo">Demo block</demo>
+      ```
+
+      ##### index.html
+
+      ```html
+      <!doctype html>
+      ...
+      <body class="theme-light">
+        <app-root></app-root>
+      </body>
+      </html>
+      ```
+    demo: V6StylingHostcontextDemoComponent

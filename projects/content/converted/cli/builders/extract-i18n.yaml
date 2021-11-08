@@ -1,0 +1,62 @@
+title: Extract-i18n builder
+url: builder-extract-i18n
+entries:
+  - type: text
+    text: "ID: `@angular-devkit/build-angular:extract-i18n`"
+  - type: tutorials
+    links:
+      - label: Angular Internationalization (i18n)
+        url: https://angular.io/guide/i18n
+        lang: en
+      - label: "Angular: Introduction to Internationalization (i18n)"
+        url: https://medium.com/frontend-fun/angular-introduction-to-internationalization-i18n-28226a85e04e
+        lang: en
+  - type: text
+    text: "## Options"
+  - type: toc
+  - type: command-param
+    head: browserTarget
+    description: Target to extract from.
+    name: browserTarget
+    headId: browserTarget
+    paramType: string
+  - type: command-param
+    name: format
+    head: format
+    headId: format
+    paramType: string
+    default: xlf
+    description: Output format for the generated file.
+  - type: command-param
+    head: i18nFormat
+    description: Output format for the generated file.
+    name: i18nFormat
+    headId: i18nFormat
+    paramType: string
+    values: xmb,xlf,xlif,xliff,xlf2,xliff2
+    default: xlf
+  - type: command-param
+    head: i18nLocale
+    description: Specifies the source language of the application.
+    name: i18nLocale
+    headId: i18nLocale
+    paramType: string
+  - type: command-param
+    head: outFile
+    description: Name of the file to output.
+    name: outFile
+    headId: outFile
+    paramType: string
+  - type: command-param
+    head: outputPath
+    description: Path where output will be placed.
+    name: outputPath
+    headId: outputPath
+    paramType: string
+  - type: command-param
+    name: progress
+    head: progress
+    headId: progress
+    paramType: boolean
+    default: true
+    description: Log progress to the console.

@@ -1,7 +1,8 @@
 @mixin scroll-colors {
   scrollbar-color: var(--scroll-bar-color) var(--scroll-bg);
+  scrollbar-width: thin;
   &::-webkit-scrollbar {
-    width: 18px;
+    width: 9px;
   }
   &::-webkit-scrollbar-track {
     background: var(--scroll-bg);

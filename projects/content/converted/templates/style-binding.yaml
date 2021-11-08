@@ -1,0 +1,48 @@
+title: "[style.] binding"
+url: style-binding
+entries:
+  - type: text
+    text: |
+      You can set inline styles with a style binding.
+  - type: text
+    text: >
+      Style binding syntax resembles property binding. Instead of an element
+      property between brackets, start with the prefix `style`, followed by a
+      dot (`.`) and the name of a CSS style property: `[style.style-property]`.
+  - type: demo
+    source: |-
+      ```html
+      <button [style.color]="isSpecial ? 'red': 'green'">Red</button>
+      <button [style.background-color]="canSave ? 'cyan': 'grey'" >Save</button>
+      ```
+
+      ```typescript
+      export class AppComponent {
+        isSpecial = true;
+        canSave = false;
+      }
+      ```
+    demo: V6TemplateStyle1DemoComponent
+  - type: text
+    text: Some style binding styles have a unit extension. The following example
+      conditionally sets the font size in “em” and “%” units .
+  - type: demo
+    source: |
+      ```html
+      <button [style.font-size.em]="isSpecial ? 3 : 1" >Big</button>
+      <button [style.font-size.%]="!isSpecial ? 150 : 50" >Small</button>
+      ```
+
+      ```typescript
+      export class AppComponent {
+        isSpecial = true;
+      }
+      ```
+    demo: V6TemplateStyle2DemoComponent
+  - type: text
+    text: >-
+      Note that a style property name can be written in either dash-case, as
+      shown above, or camelCase, such as `fontSize`.
+
+
+      While this is a fine way to set a single style, the [NgStyle directive](../ngstyle-directive) is generally preferred when setting several inline styles at the same time.

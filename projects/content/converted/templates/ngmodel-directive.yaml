@@ -1,0 +1,42 @@
+title: "[(ngModel)] directive"
+url: ngmodel-directive
+entries:
+  - type: text
+    text: Two-way data binding with the `NgModel` directive makes easy to display a
+      data property and update that property when the user makes changes.
+  - type: demo
+    source: |
+      ```html
+      <input [(ngModel)]="name">
+      {{ name }}
+      ```
+    demo: V6TemplatesNgmodel1DemoComponent
+  - type: text
+    text: Before using the `ngModel` directive in a two-way data binding, you must
+      import the `FormsModule` and add it to the `NgModule` imports list.
+  - type: text
+    text: >-
+      The `[(ngModel)]` syntax can only set a data-bound property. If you need
+      to do something more or something different, you can write the expanded
+      form.
+
+
+      The following contrived demo forces the input value to uppercase.
+  - type: demo
+    source: |-
+      ```html
+      <input [ngModel]="name"
+             (ngModelChange)="setUppercaseName($event)">
+      {{ name }}
+      ```
+
+      ```typescript
+      export class AppComponent {
+        name: string;
+
+        setUppercaseName(name: string) {
+          this.name = name.toUpperCase();
+        }
+      }
+      ```
+    demo: V6TemplatesNgmodel2DemoComponent

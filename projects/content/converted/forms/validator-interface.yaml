@@ -1,0 +1,53 @@
+title: Validator interface
+url: validator-interface
+entries:
+  - type: text
+    text: |
+      An interface implemented by classes that perform synchronous validation.
+  - type: text
+    text: >-
+      ### Provide a custom validator
+
+
+      The following example implements the `Validator` interface to create a
+
+      validator directive with a custom error key.
+
+
+      ```typescript
+
+      @Directive({
+        selector: '[customValidator]',
+        providers: [{provide: NG_VALIDATORS, useExisting: CustomValidatorDirective, multi: true}
+      })
+
+      class CustomValidatorDirective implements Validator {
+        validate(control: AbstractControl): ValidationErrors|null {
+          return {'custom': true};
+        }
+      }
+
+      ```
+  - type: tutorials
+    links:
+      - url: https://blog.thoughtram.io/angular/2016/03/14/custom-validators-in-angular-2.html
+        label: Custom Validators in Angular
+  - type: text
+    text: |
+      ## Interface
+  - type: interface-option
+    name: validate
+    head: validate
+    headId: validate
+    interface: "validate(control: AbstractControl): ValidationErrors|null"
+    description: |-
+      Method that performs synchronous validation against the provided control.
+
+      Returns A map of validation errors if validation fails,
+      otherwise null.
+  - type: interface-option
+    name: registerOnValidatorChange
+    head: registerOnValidatorChange
+    headId: registerOnValidatorChange
+    interface: "registerOnValidatorChange(fn: () => void)?: void"
+    description: Registers a callback function to call when the validator inputs change.

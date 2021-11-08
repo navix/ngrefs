@@ -1,0 +1,17 @@
+title: ng-container
+url: ng-container
+entries:
+  - type: text
+    text: The Angular `<ng-container>` is a grouping element that doesn't interfere
+      with styles or layout because Angular doesn't put it in the DOM.
+  - type: text
+    text: |-
+      ```html
+      <p>
+        I turned the corner
+        <ng-container *ngIf="hero">
+          and saw {{hero.name}}. I waved
+        </ng-container>
+        and continued on my way.
+      </p>
+      ```

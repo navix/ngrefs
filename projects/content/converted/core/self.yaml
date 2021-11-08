@@ -1,0 +1,43 @@
+title: "@Self"
+url: self
+entries:
+  - type: text
+    text: A constructor parameter decorator that tells the DI framework to retrieve
+      a dependency only from the local injector.
+  - type: text
+    text: |-
+      ```typescript
+      constructor(@Self() service: Service) {}
+      ```
+  - type: text
+    text: "#### Example"
+  - type: text
+    text: >
+      In the following example, the dependency can be resolved by the local
+      injector when instantiating the class itself, but not when instantiating a
+      child.
+
+
+      ```typescript
+
+      class Dependency {}
+       
+      @Injectable()
+
+      class NeedsDependency {
+        constructor(@Self() public dependency: Dependency) {}
+      }
+       
+      let inj = ReflectiveInjector.resolveAndCreate([Dependency, NeedsDependency]);
+
+      const nd = inj.get(NeedsDependency);
+       
+      expect(nd.dependency instanceof Dependency).toBe(true);
+       
+      inj = ReflectiveInjector.resolveAndCreate([Dependency]);
+
+      const child = inj.resolveAndCreateChild([NeedsDependency]);
+
+      expect(() => child.get(NeedsDependency)).toThrowError();
+
+      ```

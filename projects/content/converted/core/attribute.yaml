@@ -1,0 +1,32 @@
+title: "@Attribute"
+url: attribute
+entries:
+  - type: text
+    text: >
+      The `@Attribute` decorator returns the value of the specified attribute
+      from the host.
+  - type: text
+    text: |-
+      #### Example
+
+      ```typescript
+      export class MyComponent {
+        constructor(@Attribute('test') public test: string) { }
+      }
+      ```
+
+      Will read value from declaration:
+
+      ```html
+      <my-component test="hello"></my-component>
+      ```
+  - type: tutorials
+    links:
+      - label: Getting to Know the @Attribute Decorator in Angular
+        url: https://netbasal.com/getting-to-know-the-attribute-decorator-in-angular-4f7c9fb61243
+        lang: en
+  - type: interface-option
+    name: attributeName
+    head: attributeName
+    headId: attributeName
+    interface: "attributeName?: string"

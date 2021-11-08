@@ -1,0 +1,43 @@
+title: ng-template
+url: ng-template
+entries:
+  - type: text
+    text: >-
+      The `<ng-template>` is an Angular element for rendering HTML. It is never
+      displayed directly. In fact, before rendering the view, Angular replaces
+      the `<ng-template>` and its contents with a comment.
+
+
+      If there is no structural directive and you merely wrap some elements in a `<ng-template>`, those elements disappear.
+  - type: demo
+    source: |-
+      ```html
+      <p>Hip!</p>
+      <ng-template>
+        <p>Hip!</p>
+      </ng-template>
+      <p>Hooray!</p>
+      ```
+    demo: V6TemplatesNgtemplate1DemoComponent
+  - type: text
+    text: >-
+      ### ng-template with *ngTemplateOutlet
+
+
+      Save template to a `ref` and then output with `*ngTemplateOutlet` directive.
+  - type: demo
+    source: |-
+      ```html
+      <ng-template #templateRef>Hello!</ng-template>
+      <div *ngTemplateOutlet="templateRef"></div>
+      ```
+    demo: V6TemplatesNgtemplate2DemoComponent
+  - type: tutorials
+    links:
+      - label: Angular ng-template, ng-container and ngTemplateOutlet - The Complete
+          Guide To Angular Templates
+        lang: en
+        url: https://blog.angular-university.io/angular-ng-template-ng-container-ngtemplateoutlet/
+      - label: Use <ng-template>
+        url: https://blog.angularindepth.com/use-ng-template-c72852c37fba
+        lang: en

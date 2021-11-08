@@ -1,0 +1,40 @@
+title: "@SkipSelf"
+url: skip-self
+entries:
+  - type: text
+    text: A constructor parameter decorator that tells the DI framework that
+      dependency resolution should start from the parent injector.
+  - type: text
+    text: |-
+      ```typescript
+      constructor(@SkipSelf() service: Service) {}
+      ```
+  - type: text
+    text: "#### Example"
+  - type: text
+    text: >-
+      In the following example, the dependency can be resolved when
+      instantiating a child, but not when instantiating the class itself.
+
+
+      ```typescript
+
+      class Dependency {}
+       
+      @Injectable()
+
+      class NeedsDependency {
+        constructor(@SkipSelf() public dependency: Dependency) { this.dependency = dependency; }
+      }
+       
+      const parent = ReflectiveInjector.resolveAndCreate([Dependency]);
+
+      const child = parent.resolveAndCreateChild([NeedsDependency]);
+
+      expect(child.get(NeedsDependency).dependency instanceof Dependency).toBe(true);
+       
+      const inj = ReflectiveInjector.resolveAndCreate([Dependency, NeedsDependency]);
+
+      expect(() => inj.get(NeedsDependency)).toThrowError();
+
+      ```

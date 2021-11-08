@@ -1,5 +1,5 @@
 <div class="modal"
-     [sxClass]="{size: size}"
+     [ngClass]="'size-' + size"
      [@fade]="true">
   <div *ngIf="header" class="header">
     <div class="title">{{ header }}</div>
