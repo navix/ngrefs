@@ -1,0 +1,71 @@
+<div
+  (mouseleave)="leave$.next()"
+  (mouseover)="enter$.next()"
+  class="crumbs"
+>
+  <button
+    #trigger="cdkOverlayOrigin"
+    cdkOverlayOrigin
+    type="button"
+  >
+    <svg icon="menu"></svg>
+    Menu
+  </button>
+  <span *ngIf="crumbs.length === 0" class="tip">
+    (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ hover me
+  </span>
+  <div *ngFor="let entry of crumbs; let index = index; let last = last" class="crumb">
+    <span class="separator">⇢</span><a [routerLink]="entry.link">{{ entry.title }}</a>
+  </div>
+</div>
+
+<ng-template
+  [cdkConnectedOverlayOpen]="isOpen"
+  [cdkConnectedOverlayOrigin]="trigger"
+  cdkConnectedOverlay
+>
+  <div
+    (mouseleave)="leave$.next()"
+    (mouseover)="enter$.next()"
+    class="floating"
+  >
+    <ul *ngFor="let block of blocks; let index = index">
+      <li (mouseover)="activateBlock(index, entry)" *ngFor="let entry of block">
+        <a
+          (click)="isOpen = false"
+          [class.-sub-hover]="blockHovers[index] === entry"
+          [routerLinkActiveOptions]="{exact: entry.exactActive}"
+          [routerLink]="entry.link"
+          routerLinkActive="-active"
+        >
+          {{ entry.title }}
+        </a>
+      </li>
+    </ul>
+  </div>
+</ng-template>
+
+<ng-template #list let-entries>
+  <ng-container *ngIf="{ curr: undefined } as local">
+    <ul>
+      <li
+        (mouseover)="local.curr = entry"
+        *ngFor="let entry of entries"
+      >
+        <a
+          (click)="isOpen = false"
+          [class.-sub-hover]="local.curr === entry && entry.children"
+          [routerLink]="entry.link"
+        >
+          {{ entry.title }}
+        </a>
+      </li>
+    </ul>
+    <ng-container *ngIf="local.curr?.children">
+      <ng-container
+        [ngTemplateOutletContext]="{ $implicit: local.curr.children }"
+        [ngTemplateOutlet]="list"
+      ></ng-container>
+    </ng-container>
+  </ng-container>
+</ng-template>

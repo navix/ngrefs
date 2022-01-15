@@ -7,13 +7,15 @@
     "main:build:stats": "npm run prepare && ng run main:build:production --statsJson",
     "main:prerender": "npm run prepare && node routes-generator.js && ng run main:prerender --routes=/en/latest/cli/command-ng-run",
     "main:deploy": "npm run main:prerender && gh-pages -d dist/main/browser",
+    "main2:serve": "ng run main2:serve",
     "editor:serve": "ng run editor:serve",
     "editor:docgen:angular": "docgen -p ./sources/angular/packages/ -o ./projects/editor/src/app/apis/angular.json -c ./docgen.json",
     "editor:docgen:angular-cli": "cpx \"./sources/angular-cli/packages/angular/cli/lib/config/workspace-schema.json\" \"./projects/editor/src/app/apis\"",
     "posteditor:docgen:angular": "node ./projects/editor/angular-api-post-gen.js",
     "prepare": "node projects/content/prepare-content.js",
     "prepare-content2": "node projects/content/prepare-content2.js",
-    "convert-content": "node projects/content/convert-content.jsxxx"
+    "convert-content": "node projects/content/convert-content.js",
+    "main2:extract-meta": "node projects/main2/src/extract-angular-meta.js"
   },
   "private": true,
   "dependencies": {
@@ -29,6 +31,7 @@
     "@angular/platform-server": "^13.0.0",
     "@angular/router": "^13.0.0",
     "@nguniversal/express-engine": "^13.0.0",
+    "@novyk/ikong": "^13.0.0",
     "@nvxme/ngx-md-render": "^1.0.0-alpha.5",
     "express": "^4.15.2",
     "file-saver": "^2.0.5",

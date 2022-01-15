@@ -4,9 +4,13 @@ References for Web developers describe tools and concepts of Angular framework.
 
 Live: https://ngrefs.com
 
-## Editor
+## Sections
 
-### Parse Angular sources
+*
+*
+*
+
+## Parse Angular sources
 
 * `git clone https://github.com/angular/angular.git ./sources/angular`
 * `git clone https://github.com/angular/angular-cli.git ./sources/angular-cli`

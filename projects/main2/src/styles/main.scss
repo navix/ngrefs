@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@import '@angular/cdk/overlay-prebuilt.css';
+@import "themes/theme-main";
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('JetBrains Mono'), local('JetBrains-Mono'), url(/assets/JetBrainsMono-Regular.woff2) format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  src: local('JetBrains Mono'), local('JetBrains-Mono'), url(/assets/JetBrainsMono-Bold.woff2) format('woff2');
+  font-display: swap;
+}
+
+:root {
+  --monospace: "JetBrains Mono", "Consolas", "Inconsolata", "Monaco", "Courier", monospace;
+  --sans-serif: "Inter", "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+html {
+  font-family: var(--sans-serif);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.5em;
+  background: var(--body-bg);
+  color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  p {
+    margin: 0;
+  }
+}
+
+code, pre {
+  border-radius: 3px;
+  font-family: var(--monospace);
+}
+
+pre {
+  background: var(--code-bg);
+}
+
+code {
+  background-color: var(--code-bg);
+  font-size: .86em;
+  margin: 0;
+  padding: .07em .25em;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+}
+
+pre {
+  //@include scroll-colors;
+  overflow: auto;
+  padding: 1rem;
+}
+
+button, input, select {
+  font-family: var(--sans-serif);
+}
+
+p {
+  margin: 1em 0;
+}
+
+ul {
+  p {
+    margin: 0;
+  }
+  a p {
+    display: inline;
+  }
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: .25s;
+  //&.-active {
+  //  color: var(--link-active-color);
+  //  text-decoration: underline;
+  //}
+  &:hover {
+    text-decoration: underline;
+  }
+}

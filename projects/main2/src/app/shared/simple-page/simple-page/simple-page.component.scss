@@ -1,0 +1,27 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  &::ng-deep {
+    article {
+      flex-grow: 1;
+      h1 {
+        line-height: 3rem;
+        margin: 0 0 1rem 0;
+      }
+    }
+    aside {
+      flex-shrink: 0;
+      font-size: .9rem;
+      font-weight: 600;
+      line-height: 1.7rem;
+      margin-left: 4rem;
+      margin-top: 4rem;
+      width: 24rem;
+      a {
+        display: block;
+      }
+    }
+  }
+}
+
+

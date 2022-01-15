@@ -1,0 +1,71 @@
+.crumbs {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  button {
+    align-items: center;
+    background: transparent;
+    border: 0;
+    border-radius: .2rem;
+    display: flex;
+    font-size: inherit;
+    margin-right: .3rem;
+    padding-left: 0;
+    svg {
+      height: 1.2rem;
+      margin-right: .1rem;
+      width: 1.2rem;
+    }
+  }
+  .tip {
+    color: #888888;
+    font-size: .75rem;
+    margin-left: .5rem;
+  }
+  .crumb {
+    a {
+      padding: 0 .3rem;
+    }
+    .separator {
+      color: #888888;
+    }
+    &:last-child {
+      a {
+        color: inherit;
+      }
+    }
+  }
+}
+
+.floating {
+  background: #ffffff;
+  border: 2px solid #eeeeee;
+  border-radius: .5rem;
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-flow: row;
+  margin-top: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 1rem 2rem;
+  &:not(:last-child) {
+    border-right: 2px solid #eeeeee;
+  }
+  a {
+    &.-active {
+      font-weight: 600;
+    }
+    &.-sub-hover {
+      text-decoration: underline;
+    }
+  }
+}
+

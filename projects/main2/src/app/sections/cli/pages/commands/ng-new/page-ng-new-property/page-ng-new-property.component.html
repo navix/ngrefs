@@ -1,0 +1,18 @@
+<app-simple-page>
+  <h1>$ <a routerLink="..">ng new</a> … --{{ property.cliName }}</h1>
+  <div class="meta">
+    <div *ngIf="property.alias">
+      Alias: <strong>{{ property.alias }}</strong><br>
+    </div>
+    <div>
+      Type: <strong>{{ property.type }}</strong>
+    </div>
+    <div *ngIf="property.default">
+      Default: <strong>{{ property.default }}</strong>
+    </div>
+  </div>
+  <p>
+    {{ property.description }}
+  </p>
+</app-simple-page>
+

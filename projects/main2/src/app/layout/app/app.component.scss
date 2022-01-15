@@ -1,0 +1,35 @@
+:host {
+  display: block;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+header {
+  border-bottom: 2px solid #eeeeee;
+  padding: 2rem 0;
+}
+
+.top-line {
+  align-items: center;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  .brand {
+    font-size: 1.3rem;
+    font-weight: 600;
+    a {
+      color: var(--text-color);
+    }
+  }
+  .search {
+    input {
+      border: 2px solid #eeeeee;
+      border-radius: .2rem;
+      padding: .4rem .6rem;
+    }
+  }
+}
+
+main {
+  padding: 2rem 0;
+}

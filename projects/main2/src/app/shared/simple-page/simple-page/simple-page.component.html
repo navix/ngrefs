@@ -1,0 +1,15 @@
+<article>
+  <ng-content></ng-content>
+</article>
+
+<aside *ngIf="nav">
+  <ul>
+    <li *ngFor="let entry of nav">
+      <a [routerLink]="entry.link">
+        {{ entry.title }}
+      </a>
+    </li>
+  </ul>
+  <ng-content select="[aside]"></ng-content>
+</aside>
+
